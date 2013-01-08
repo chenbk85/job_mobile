@@ -1,0 +1,84 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>DT_1.5._setting</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="6">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>36</objId>
+            <ptul X="57" Y="52" />
+            <ptdr X="125" Y="92" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="1">
+                <actBox id="42" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>37</objId>
+            <ptul X="403" Y="50" />
+            <ptdr X="481" Y="90" />
+            <links num="0" />
+            <objectName>DummyServer</objectName>
+            <className>DT</className>
+            <actBoxes num="1">
+                <actBox id="40" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>40</objId>
+            <ptul X="434" Y="157" />
+            <ptdr X="449" Y="187" />
+            <links num="1">
+                <link id="47" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>42</objId>
+            <ptul X="84" Y="171" />
+            <ptdr X="99" Y="201" />
+            <links num="1">
+                <link id="47" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>47</objId>
+            <points num="2">
+                <pt x="434" y="176" />
+                <pt x="99" y="176" />
+            </points>
+            <objStart id="40" />
+            <objEnd id="42" />
+            <message messType="MGEN">DT2X_SET_TEST_ENV</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>¸í·É : set_env 100 127.0.0.1:1234</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>48</objId>
+            <ptul X="448" Y="119" />
+            <ptdr X="699" Y="138" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

@@ -1,0 +1,126 @@
+
+//----------------------------------------------------------------------------
+// DEFINES
+//----------------------------------------------------------------------------
+#define PI								3.14159265359f
+#define TWOxPI							(2.0f * PI)
+#define PI_OVER_TWO						(PI / 2.0f)
+#define PI_OVER_FOUR					(PI / 4.0f)
+
+#define MAX_RADIAN						((360.0f * PI) / 180.0f)
+#define MIN_RADIAN						(0.0f)
+
+#define KILO							1024
+#define MEGA							(KILO * KILO)
+#define GIGA							(MEGA * KILO)
+
+#define CLOCKWISE						1
+#define COUNTER_CLOCKWISE				-1
+#define LINE							0
+
+#define FLOAT_PCT_MULTIPLIER			(0.01f)
+
+#define EPSILON							(0.00001f)
+#define INFINITY						(9999999.9f)
+#define INVALID_FLOAT					(FLT_MAX)
+
+
+
+//-----------------------------------------------------------------------------
+// CONSTANTS
+//-----------------------------------------------------------------------------
+unsigned int SPIN_WAIT_INTERVAL	=				512;
+
+
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
+void InitCritSectSpinWaitInterval(
+	void)
+{
+	CPU_INFO info;
+	ASSERT_RETURN(CPUInfo(info));
+	if (info.m_AvailCore <= 1)
+	{
+		SPIN_WAIT_INTERVAL = 1;
+	}
+}
+
+
+//----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
+static BOOL MeetsMinimumMemoryRequirements(
+	void)
+{
+	MEMORYSTATUSEX memory_status;
+	if (!PGetMemoryStatus(memory_status))
+	{
+		return FALSE;
+	}
+	return (memory_status.ullTotalPhys >= (DWORDLONG)MINIMUM_PHYSICAL_MEMORY);
+}
+
+
+
+
+	// make sure fpu is set to round near
+	unsigned int control_word;
+    _clearfp();
+	int err = _controlfp_s(&control_word, _RC_NEAR, _MCW_RC);
+	if (err != 0)
+	{
+		perror = PRIME_ERROR_COULDNT_SET_ROUNDING_MODE;
+		DebugBreak();
+	}
+
+
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
+static BOOL CheckOperatingSystemRequirements(
+	void)
+{
+	// check OS version
+	OSVERSIONINFOEX osvi;
+	structclear(osvi);
+	osvi.dwOSVersionInfoSize = sizeof(osvi);
+
+	if (!GetVersionEx((LPOSVERSIONINFO)&osvi))
+	{
+		return FALSE;
+	}
+	if (osvi.dwMajorVersion <= 4)		// NT 4.0 or earlier
+	{
+		return FALSE;
+	}
+	else if (osvi.dwMajorVersion == 5)	// Server 2003, XP, 2000
+	{
+		if (osvi.dwMinorVersion == 0)	// 2000
+		{
+			return FALSE;
+		}
+		else if (osvi.dwMinorVersion == 1)	// XP
+		{
+			if (osvi.wServicePackMajor < 2)		// not service pack 2 or greater
+			{
+				return FALSE;
+			}
+		}
+		else if (osvi.dwMinorVersion == 2)		// Server 2003, XP Pro x64
+		{
+			if (osvi.wServicePackMajor < 2)		// not service pack 2 or greater
+			{
+				return FALSE;
+			}
+		}
+		else							// else unknown.
+		{
+			;
+		}
+	}
+	else if (osvi.dwMajorVersion > 5)	// Vista, Server 2008
+	{
+		;
+	}
+
+	return TRUE;
+}
+

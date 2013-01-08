@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<PROTOCAL HEADER="CentralServer" VERSION="1000" i_DebugPrint="3" b_jxDEFINE="true" TAG="C">
+	<!-- CODE에서 개행문자 지원안됨. anpersent # x 0 A ; 를 사용할것-->
+	<CODE TYPE="ENUM_FILE">../my_PT_TServer.h</CODE>
+	<STRUCT_LIST/>
+	<PROTOCAL_LIST>
+		<C_HELLO USD="c_01_01_serverconnect.usd">
+			<si TYPE="jServerInfo"/>
+		</C_HELLO>
+		<SS2C_ONLINE USD="c_01_01_serverconnect.usd" HELP="주의 : Command서버를 제외한 모든서버는&#xA;Central restart시에도 보낸다.&#xA;이때 s.m_sid는 0이 아니다.">
+			<your_sid TYPE="serverid_t"/>
+			<my TYPE="jServerInfo"/>
+		</SS2C_ONLINE>
+		<C_SERVER_ONLINE USD="c_01_01_serverconnect.usd" HELP="어떤 서버가 CentralServer에 접속했다.">
+			<s TYPE="jServerInfo"/>
+		</C_SERVER_ONLINE>
+		<C2SS_ONLINE_OK USD="c_01_01_serverconnect.usd" HELP="새로운 sid를 발급하고&#xA;Central에 접속하고 있는 다른서버들정보를 보낸다.">
+			<you TYPE="jServerInfo" HELP="새로세팅된정보를다시보냄"/>
+			<s TYPE="jServerInfo" i_Length="-1"/>
+		</C2SS_ONLINE_OK>
+		<C_SERVERINFO_ACK USD="c_01_01_serverconnect.usd" HELP="Central에서는 C_SERVERINFO_ACK와&#xA;SS2C_SERVERINFO_ACK는&#xA;사용하지 않지만 지우지는 말것&#xA;">
+			<si TYPE="jServerInfo"/>
+		</C_SERVERINFO_ACK>
+		<SS2C_SERVERINFO_ACK USD="\c_01_01_serverconnect.usd">
+			<si TYPE="jServerInfo"/>
+		</SS2C_SERVERINFO_ACK>
+		<C_SERVER_OFFLINE USD="\c_01_02_server_disconnect.usd">
+			<sid TYPE="serverid_t"/>
+		</C_SERVER_OFFLINE>
+		<C_ECHO USD="\c_01_02_server_disconnect.usd">
+			<msg TYPE="tname256_t"/>
+			<type TYPE="int8"/>
+		</C_ECHO>
+		<C2_LOG_FILE_DAY_CHANGE/>
+		<C_ERROR USD="c_01_02_server_disconnect.usd">
+			<ei TYPE="jErrorInfo"/>
+		</C_ERROR>
+		<CD2C_WELCOME USD="c_02_05_central_restart.usd" HELP="센트랄 서버가 재접속시 보냄">
+			<my TYPE="jServerInfo"/>
+			<s TYPE="jServerInfo" i_Length="-1"/>
+		</CD2C_WELCOME>
+		<C4_USER_CONNECTION_NOTIFY USD="c_09_03_notifyusercnt.usd" HELP="6초정도의 딜레이후 보낸다.">
+			<userCnt TYPE="uint16"/>
+		</C4_USER_CONNECTION_NOTIFY>
+		<C2_USER_CONNECTION_NOTIFY USD="c_09_03_notifyusercnt.usd" HELP="약 3~6초간 딜레이후 전달&#xA;던젼서버의 경우 해당 월드의 모든 Town서버에 전달&#xA;마을서버의 경우 모든 로긴서버에 전달.">
+			<sid TYPE="serverid_t" i_Length="-1"/>
+			<userCnt TYPE="uint16" i_Length="-1"/>
+		</C2_USER_CONNECTION_NOTIFY>
+		<C2_NOTICE USD="c_09_05_notify.usd">
+			<info TYPE="jNoticeInfo"/>
+			<msg TYPE="wname1024_t"/>
+			<date TYPE="aname32_t"/>
+		</C2_NOTICE>
+		<C2_SERVER_LOG_LEVEL USD="\c_09_05_notify.usd">
+			<type TYPE="tname32_t"/>
+			<enable TYPE="bool"/>
+		</C2_SERVER_LOG_LEVEL>
+		<C2L_DO_USER_DISSCONNECT USD="\l_01_03_03_select_chennal.usd">
+			<pid TYPE="player_id_t" i_Length="-1"/>
+		</C2L_DO_USER_DISSCONNECT>
+	</PROTOCAL_LIST>
+	<CODE TYPE="ENUM_FILE"/>
+</PROTOCAL>

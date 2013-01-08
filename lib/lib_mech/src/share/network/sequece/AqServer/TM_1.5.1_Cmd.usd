@@ -1,0 +1,320 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>TM_1.5.1_Cmd</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="25">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>61</objId>
+            <ptul X="135" Y="80" />
+            <ptdr X="203" Y="120" />
+            <links num="0" />
+            <objectName>TestClient</objectName>
+            <className>TC</className>
+            <actBoxes num="3">
+                <actBox id="68" />
+                <actBox id="70" />
+                <actBox id="83" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>62</objId>
+            <ptul X="803" Y="76" />
+            <ptdr X="872" Y="116" />
+            <links num="0" />
+            <objectName>AqMonitor</objectName>
+            <className>TM</className>
+            <actBoxes num="3">
+                <actBox id="64" />
+                <actBox id="74" />
+                <actBox id="79" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>63</objId>
+            <ptul X="457" Y="78" />
+            <ptdr X="528" Y="118" />
+            <links num="0" />
+            <objectName>TestServer</objectName>
+            <className>TS</className>
+            <actBoxes num="6">
+                <actBox id="65" />
+                <actBox id="67" />
+                <actBox id="71" />
+                <actBox id="73" />
+                <actBox id="80" />
+                <actBox id="82" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>64</objId>
+            <ptul X="830" Y="193" />
+            <ptdr X="845" Y="223" />
+            <links num="1">
+                <link id="66" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>65</objId>
+            <ptul X="485" Y="193" />
+            <ptdr X="500" Y="223" />
+            <links num="1">
+                <link id="66" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>66</objId>
+            <points num="2">
+                <pt x="830" y="198" />
+                <pt x="500" y="198" />
+            </points>
+            <objStart id="64" />
+            <objEnd id="65" />
+            <message messType="MGEN">TM2_UPDATE_XPATH_VALUE</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>67</objId>
+            <ptul X="485" Y="228" />
+            <ptdr X="500" Y="258" />
+            <links num="1">
+                <link id="69" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>68</objId>
+            <ptul X="162" Y="228" />
+            <ptdr X="177" Y="258" />
+            <links num="1">
+                <link id="69" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>69</objId>
+            <points num="2">
+                <pt x="485" y="233" />
+                <pt x="177" y="233" />
+            </points>
+            <objStart id="67" />
+            <objEnd id="68" />
+            <message messType="MGEN">TM2_UPDATE_XPATH_VALUE</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>70</objId>
+            <ptul X="162" Y="395" />
+            <ptdr X="177" Y="425" />
+            <links num="1">
+                <link id="72" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>71</objId>
+            <ptul X="485" Y="395" />
+            <ptdr X="500" Y="425" />
+            <links num="1">
+                <link id="72" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>72</objId>
+            <points num="2">
+                <pt x="177" y="400" />
+                <pt x="485" y="400" />
+            </points>
+            <objStart id="70" />
+            <objEnd id="71" />
+            <message messType="MGEN">TM4_UPDATE_XPATH_VALUE_OK</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>73</objId>
+            <ptul X="485" Y="430" />
+            <ptdr X="500" Y="460" />
+            <links num="1">
+                <link id="75" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>74</objId>
+            <ptul X="830" Y="430" />
+            <ptdr X="845" Y="460" />
+            <links num="1">
+                <link id="75" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>75</objId>
+            <points num="2">
+                <pt x="500" y="435" />
+                <pt x="830" y="435" />
+            </points>
+            <objStart id="73" />
+            <objEnd id="74" />
+            <message messType="MGEN">TM4_UPDATE_XPATH_VALUE_OK</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[TM4_UPDATE_XPATH_VALUE_OK]&#x0A;&#x0A;{PARAM}&#x0A;target_name-tname256_t&#x0A;doc-tname256_t&#x0A;xpath-tname256_t&#x0A;value-tname256_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>76</objId>
+            <ptul X="529" Y="454" />
+            <ptdr X="753" Y="578" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>&lt;enum TestServer::EXpathTarget&gt;&#x0A;XT_TestCentral&#x0A;XT_TestDummy</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>77</objId>
+            <ptul X="228" Y="249" />
+            <ptdr X="434" Y="309" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[TM_UPDATE_XPATH_VALUE]&#x0A;target : TestServer::EXpathTarget&#x0A;strlen(value) ==0 이면 해당 값을 리턴한다.&#x0A;&#x0A;{PARAM}&#x0A;target-uint8&#x0A;doc-tname256_t&#x0A;xpath-tname256_t&#x0A;value-tname256_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>78</objId>
+            <ptul X="552" Y="226" />
+            <ptdr X="826" Y="382" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>79</objId>
+            <ptul X="830" Y="677" />
+            <ptdr X="845" Y="707" />
+            <links num="1">
+                <link id="81" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>80</objId>
+            <ptul X="485" Y="677" />
+            <ptdr X="500" Y="707" />
+            <links num="1">
+                <link id="81" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>81</objId>
+            <points num="2">
+                <pt x="830" y="682" />
+                <pt x="500" y="682" />
+            </points>
+            <objStart id="79" />
+            <objEnd id="80" />
+            <message messType="MGEN">TM_RUN_CONSOLE_CMD</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>82</objId>
+            <ptul X="485" Y="715" />
+            <ptdr X="500" Y="745" />
+            <links num="1">
+                <link id="84" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>83</objId>
+            <ptul X="162" Y="715" />
+            <ptdr X="177" Y="745" />
+            <links num="1">
+                <link id="84" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>84</objId>
+            <points num="2">
+                <pt x="485" y="720" />
+                <pt x="177" y="720" />
+            </points>
+            <objStart id="82" />
+            <objEnd id="83" />
+            <message messType="MGEN">TM_RUN_CONSOLE_CMD</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[TM_RUN_CONSOLE_CMD]&#x0A;isCentral=false이면 모든더미에대해 &#x0A;콘솔명령을 실행.&#x0A;&#x0A;{PARAM}&#x0A;dummy_id-dummy_id_t&#x0A;category-tname32_t&#x0A;cmd-tname32_t&#x0A;arg-tstring[?]</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>85</objId>
+            <ptul X="567" Y="692" />
+            <ptdr X="804" Y="848" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

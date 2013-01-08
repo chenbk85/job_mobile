@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='euc-kr'?>
+<jGame DOC_TYPE='APP'>
+  <jIConsoleVar Original_FILE='xml\jConsoleVar.xml'>
+    <exe>
+      <UserInfo     FLAG='' HELP=''>xml\user\UserInfo.xml</UserInfo>
+    </exe>
+  </jIConsoleVar>
+	<DLL>
+    <Com_Util b_ENABLE='1'>Com_Util.dll</Com_Util>
+		<jIPak b_ENABLE='1'>jPak.dll</jIPak>
+	</DLL>
+	<LANGAGE_FILES USING='KOREA'>
+		<KOREA LOCALE='kor' FONT='Arial'>XML\LANG_KOR.XML</KOREA>
+		<TAIWAN LOCALE='Chinese_Taiwan' FONT='mingliu'>XML\LANG_TIW.XML</TAIWAN>
+		<ENGLISH LOCALE='kor' FONT='mingliu'>XML\LANG_ENG.XML</ENGLISH>
+	</LANGAGE_FILES>
+</jGame>

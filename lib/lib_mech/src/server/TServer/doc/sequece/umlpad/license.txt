@@ -1,0 +1,26 @@
+AUTHOR
+Luigi Bignami.
+email: bignamil@tiscali.it
+home page: http://web.tiscali.it/ggbhome
+
+LICENSE
+This program is freeware. You can use or 
+distribute it for any purpose in respect of the 
+following conditions:
+You can't change the copyright of the author.
+You can't sell, rent or lease it as a product 
+itself or as part of a product, unless that 
+product is freeware or a shareware/freeware 
+collection.
+
+WARRANTY
+None.
+The author of this program accepts no 
+responsibility for damages resulting from its 
+use and makes no warranty or representation, 
+either express or implied, including but not 
+limited to, any implied warranty of 
+merchantability or fitness for a particular 
+purpose.
+This software is provided "as is", and you, its 
+user, assume all risks when using it.

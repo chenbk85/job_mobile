@@ -1,0 +1,274 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>L_01_01_worldserver_list</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="21">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>311</objId>
+            <ptul X="80" Y="79" />
+            <ptdr X="148" Y="119" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="6">
+                <actBox id="313" />
+                <actBox id="317" />
+                <actBox id="319" />
+                <actBox id="323" />
+                <actBox id="326" />
+                <actBox id="330" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>312</objId>
+            <ptul X="454" Y="77" />
+            <ptdr X="530" Y="117" />
+            <links num="0" />
+            <objectName>LoginServer</objectName>
+            <className>L</className>
+            <actBoxes num="6">
+                <actBox id="314" />
+                <actBox id="316" />
+                <actBox id="320" />
+                <actBox id="322" />
+                <actBox id="327" />
+                <actBox id="329" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>313</objId>
+            <ptul X="106" Y="409" />
+            <ptdr X="121" Y="439" />
+            <links num="1">
+                <link id="315" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>314</objId>
+            <ptul X="484" Y="409" />
+            <ptdr X="499" Y="439" />
+            <links num="1">
+                <link id="315" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>315</objId>
+            <points num="2">
+                <pt x="121" y="414" />
+                <pt x="484" y="414" />
+            </points>
+            <objStart id="313" />
+            <objEnd id="314" />
+            <message messType="MGEN">X2L_GET_CHANNEL_LIST</message>
+            <guardCond>world-aname32_t</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>316</objId>
+            <ptul X="484" Y="478" />
+            <ptdr X="499" Y="508" />
+            <links num="1">
+                <link id="318" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>317</objId>
+            <ptul X="106" Y="478" />
+            <ptdr X="121" Y="508" />
+            <links num="1">
+                <link id="318" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>318</objId>
+            <points num="2">
+                <pt x="484" y="483" />
+                <pt x="121" y="483" />
+            </points>
+            <objStart id="316" />
+            <objEnd id="317" />
+            <message messType="MGEN">L2X_CHANNEL_LIST</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>319</objId>
+            <ptul X="106" Y="624" />
+            <ptdr X="121" Y="654" />
+            <links num="1">
+                <link id="321" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>320</objId>
+            <ptul X="484" Y="624" />
+            <ptdr X="499" Y="654" />
+            <links num="1">
+                <link id="321" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>321</objId>
+            <points num="2">
+                <pt x="121" y="629" />
+                <pt x="484" y="629" />
+            </points>
+            <objStart id="319" />
+            <objEnd id="320" />
+            <message messType="MGEN">L_ECHO</message>
+            <guardCond>type-uint8,msg-tname256_t</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>322</objId>
+            <ptul X="484" Y="680" />
+            <ptdr X="499" Y="710" />
+            <links num="1">
+                <link id="324" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>323</objId>
+            <ptul X="106" Y="680" />
+            <ptdr X="121" Y="710" />
+            <links num="1">
+                <link id="324" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>324</objId>
+            <points num="2">
+                <pt x="484" y="685" />
+                <pt x="121" y="685" />
+            </points>
+            <objStart id="322" />
+            <objEnd id="323" />
+            <message messType="MGEN">L_ECHO</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[L2X_CHANNEL_LIST]&#x0A;각 인터넷업체별(또한 성별) 개설된 월드리스트받기&#x0A;&#x0A;world이름은 xml로 존재한다. data/xml/world_servers.xml&#x0A;해당 월드서버리스트를 보냄( 클라이언트에서는 캐슁하세요)&#x0A;약 5분이 경과했을때 다시 요청하는게 좋음.&#x0A;&#x0A;{PARAM}&#x0A;channel-serverid_t[?]&#x0A;channel_name-astring[?]&#x0A;buzy_level-uint8[?]</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>325</objId>
+            <ptul X="501" Y="376" />
+            <ptdr X="908" Y="564" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>326</objId>
+            <ptul X="106" Y="158" />
+            <ptdr X="121" Y="188" />
+            <links num="1">
+                <link id="328" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>327</objId>
+            <ptul X="484" Y="158" />
+            <ptdr X="499" Y="188" />
+            <links num="1">
+                <link id="328" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>328</objId>
+            <points num="2">
+                <pt x="121" y="163" />
+                <pt x="484" y="163" />
+            </points>
+            <objStart id="326" />
+            <objEnd id="327" />
+            <message messType="MGEN">X2L_GET_WORLD_LIST</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>329</objId>
+            <ptul X="484" Y="208" />
+            <ptdr X="499" Y="238" />
+            <links num="1">
+                <link id="331" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>330</objId>
+            <ptul X="106" Y="208" />
+            <ptdr X="121" Y="238" />
+            <links num="1">
+                <link id="331" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>331</objId>
+            <points num="2">
+                <pt x="484" y="213" />
+                <pt x="121" y="213" />
+            </points>
+            <objStart id="329" />
+            <objEnd id="330" />
+            <message messType="MGEN">L2X_WORLD_LIST</message>
+            <guardCond>worlds-jWorldServerInfo[?]</guardCond>
+        </element>
+    </elements>
+</diagram>

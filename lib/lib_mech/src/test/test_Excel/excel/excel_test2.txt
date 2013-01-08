@@ -1,0 +1,19 @@
+nEXCEL ,@#, D:\svn\lib\lib_mech\src\test\test_Excel\excel ,@#, excel_test2
+
+Sys ,@#, Sys_T_Test4 ,@#, 테스트용4
+
+SysItem ,@#, 상속테이블 ,@#, <<Sys__T_Base>> ,@#,  ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물 기본 정보 상속
+SysItem ,@#, 333최대 생성수 ,@#, maxbuild2 ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 한 마을에 최대 생성 가능한 건물 수
+SysItem ,@#, 자신테이블참조 ,@#, sys_test3_ref ,@#, Sys_T_Test4* ,@#,  ,@#, Sys_T_Test4 ,@#,  ,@#,  ,@#, 다운될때 레벨. 레벨이 0이 되면 건물은 없어짐
+SysItem ,@#, 자신테이블참조배열 ,@#, sys_test2_arrary ,@#, Sys_T_Test2*[] ,@#,  ,@#, Sys_T_Test2 ,@#,  ,@#,  ,@#, 건물을 다운시킬 때 자원의 50%가 반환됨. (창고의 남은양만큼 반환됨)
+SysItem ,@#, enum_val ,@#, enum_val ,@#, EBuildTypeTest ,@#,  ,@#, EBuildTypeTest ,@#,  ,@#,  ,@#, 
+SysItem ,@#, populationreturn4 ,@#, populationreturn4 ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물을 다운시킬 때 인구가 반환됨. 인구 100% 반환되며 민가 최대 인구수 만큼만 반환됨.
+SysItem ,@#, test4 ,@#, test4 ,@#, EBuildTypeTest ,@#,  ,@#, EBuildTypeTest ,@#,  ,@#,  ,@#, 
+SysItem ,@#, getgold4 ,@#, getgold4 ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 징수 명령
+SysItem ,@#, 자신테이블참조고정배열3 ,@#, test3_array_id ,@#, Sys_T_Test2*[3] ,@#,  ,@#, Sys_T_Test2 ,@#,  ,@#,  ,@#, 
+SysItem ,@#, int어레이3 ,@#, field_array ,@#, int32[3] ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, int어레이 ,@#, field_vector ,@#, int32[] ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 사용자자료형 ,@#, itemObj1 ,@#, jItemObj1 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, int변수 ,@#, val_int ,@#, int32 ,@#,  0  ,@#,  60000  ,@#,  ,@#,  ,@#, 
+
+

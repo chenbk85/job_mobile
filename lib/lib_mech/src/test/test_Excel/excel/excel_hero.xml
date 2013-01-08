@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<excel_hero>
+	<enum>
+		<EDeckYear HELP="설명없음">
+			<DY_189>
+				<name>189년 카드 덱</name>
+				<value>1</value>
+				<name_eng>DY_189</name_eng>
+				<help>189년 카드 덱</help>
+			</DY_189>
+			<DY_192>
+				<name>192년 카드 덱</name>
+				<value>2</value>
+				<name_eng>DY_192</name_eng>
+				<help>192년 카드 덱</help>
+			</DY_192>
+		</EDeckYear>
+		<EHeroCategory HELP="설명없음">
+			<HC_HISTORICAL>
+				<name>역사 장수</name>
+				<value>1</value>
+				<name_eng>HC_HISTORICAL</name_eng>
+				<help>역사 장수</help>
+			</HC_HISTORICAL>
+			<HC_VIRTAUL>
+				<name>가상 장수</name>
+				<value>2</value>
+				<name_eng>HC_VIRTAUL</name_eng>
+				<help>가상 장수</help>
+			</HC_VIRTAUL>
+		</EHeroCategory>
+		<EHeroEngagementtype HELP="설명없음">
+			<HE_COMMON>
+				<name>일반</name>
+				<value>1</value>
+				<name_eng>HE_COMMON</name_eng>
+				<help>일반</help>
+			</HE_COMMON>
+			<HE_RARE>
+				<name>희귀</name>
+				<value>2</value>
+				<name_eng>HE_RARE</name_eng>
+				<help>희귀</help>
+			</HE_RARE>
+		</EHeroEngagementtype>
+		<EHeroFacetype HELP="설명없음">
+			<HF_ORIGINAL>
+				<name>얼굴이미지사용</name>
+				<value>1</value>
+				<name_eng>HF_ORIGINAL</name_eng>
+				<help>고유 이미지, 유명 장수</help>
+			</HF_ORIGINAL>
+			<HF_COMMON>
+				<name>범용이미지사용</name>
+				<value>2</value>
+				<name_eng>HF_COMMON</name_eng>
+				<help>중복 사용가능한 이미지, 일반 장수</help>
+			</HF_COMMON>
+			<HF_MONTAGE>
+				<name>조합(몽타쥬) 이미지</name>
+				<value>3</value>
+				<name_eng>HF_MONTAGE</name_eng>
+				<help>얼굴 조합기를 이용한 형태</help>
+			</HF_MONTAGE>
+			<HF_UPLOAD>
+				<name>유저 등록 이미지</name>
+				<value>4</value>
+				<name_eng>HF_UPLOAD</name_eng>
+				<help>유저가 업로드한 이미지</help>
+			</HF_UPLOAD>
+		</EHeroFacetype>
+		<EHeroPersonality HELP="설명없음">
+			<HP_TOUGH>
+				<name>저돌</name>
+				<value>1</value>
+				<name_eng>HP_TOUGH</name_eng>
+				<help>저돌</help>
+			</HP_TOUGH>
+			<HP_BRAVE>
+				<name>용맹</name>
+				<value>2</value>
+				<name_eng>HP_BRAVE</name_eng>
+				<help>용맹</help>
+			</HP_BRAVE>
+			<HP_COOL>
+				<name>냉정</name>
+				<value>3</value>
+				<name_eng>HP_COOL</name_eng>
+				<help>냉정</help>
+			</HP_COOL>
+			<HP_WEAK>
+				<name>소심</name>
+				<value>4</value>
+				<name_eng>HP_WEAK</name_eng>
+				<help>소심</help>
+			</HP_WEAK>
+		</EHeroPersonality>
+		<EHeroSex HELP="설명없음">
+			<HS_MALE>
+				<name>남성</name>
+				<value>1</value>
+				<name_eng>HS_MALE</name_eng>
+				<help>남자 장수</help>
+			</HS_MALE>
+			<HS_FEMALE>
+				<name>여성</name>
+				<value>2</value>
+				<name_eng>HS_FEMALE</name_eng>
+				<help>여자 장수</help>
+			</HS_FEMALE>
+		</EHeroSex>
+		<EHeroWorkState HELP="설명없음">
+			<HWS_REST>
+				<name>휴식</name>
+				<value>1</value>
+				<name_eng>HWS_REST</name_eng>
+				<help>아무 일도 하지 않고 있음</help>
+			</HWS_REST>
+			<HWS_CONSTRUCTION>
+				<name>건물 건설</name>
+				<value>2</value>
+				<name_eng>HWS_CONSTRUCTION</name_eng>
+				<help>건물 건설을 수행 중</help>
+			</HWS_CONSTRUCTION>
+			<HWS_EXPLORATION>
+				<name>탐색 활동</name>
+				<value>3</value>
+				<name_eng>HWS_EXPLORATION</name_eng>
+				<help>탐색 활동을 수행 중</help>
+			</HWS_EXPLORATION>
+			<HWS_COMBAT>
+				<name>부대 출전</name>
+				<value>4</value>
+				<name_eng>HWS_COMBAT</name_eng>
+				<help>부대를 이끌고 필드에 나간 상태</help>
+			</HWS_COMBAT>
+		</EHeroWorkState>
+	</enum>
+	<Sys>
+		<Sys_Hero HELP="장수 테이블">
+			<hsid>
+				<name>sid</name>
+				<name_eng>hsid</name_eng>
+				<data_type>Sys_Hero_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>장수가 소속한 세력(소유 유저의 소속 세력과 같음)</help>
+			</hsid>
+			<category>
+				<name>장수 분류</name>
+				<name_eng>category</name_eng>
+				<data_type>EHeroCategory</data_type>
+				<min/>
+				<max>EHeroCategory</max>
+				<db_type/>
+				<type_note/>
+				<help>장수 분류 형태, 역사 장수, 가상 장수</help>
+			</category>
+			<deck_year>
+				<name>카드 연도</name>
+				<name_eng>deck_year</name_eng>
+				<data_type>EDeckYear</data_type>
+				<min/>
+				<max>EDeckYear</max>
+				<db_type/>
+				<type_note/>
+				<help>장수 연도별 카드 덱 이름</help>
+			</deck_year>
+			<name>
+				<name>장수 영문 이름</name>
+				<name_eng>name</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>장수 영문 이름</help>
+			</name>
+			<name_kor>
+				<name>장수 한글 이름</name>
+				<name_eng>name_kor</name_eng>
+				<data_type>wname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>장수 한글 이름</help>
+			</name_kor>
+			<image_file>
+				<name>얼굴 이미지</name>
+				<name_eng>image_file</name_eng>
+				<data_type>tname256_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>장수 초상화 이미지</help>
+			</image_file>
+			<grade>
+				<name>장수 등급</name>
+				<name_eng>grade</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>장수 등급, 1성 ~ 7성까지 ( 차후 Sys_HeroGrade_id_t)</help>
+			</grade>
+			<age>
+				<name>나이</name>
+				<name_eng>age</name_eng>
+				<data_type>int32</data_type>
+				<min>1</min>
+				<max>99</max>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</age>
+			<leadership>
+				<name>통솔</name>
+				<name_eng>leadership</name_eng>
+				<data_type>int32</data_type>
+				<min>1</min>
+				<max>200</max>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</leadership>
+			<power>
+				<name>무력</name>
+				<name_eng>power</name_eng>
+				<data_type>int32</data_type>
+				<min>1</min>
+				<max>200</max>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</power>
+			<intelligent>
+				<name>지모</name>
+				<name_eng>intelligent</name_eng>
+				<data_type>int32</data_type>
+				<min>1</min>
+				<max>200</max>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</intelligent>
+			<politic>
+				<name>정치</name>
+				<name_eng>politic</name_eng>
+				<data_type>int32</data_type>
+				<min>1</min>
+				<max>200</max>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</politic>
+			<charm>
+				<name>매력</name>
+				<name_eng>charm</name_eng>
+				<data_type>int32</data_type>
+				<min>1</min>
+				<max>200</max>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</charm>
+			<is_male>
+				<name>성별</name>
+				<name_eng>is_male</name_eng>
+				<data_type>bool</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>성별</help>
+			</is_male>
+			<personality>
+				<name>성격</name>
+				<name_eng>personality</name_eng>
+				<data_type>EHeroPersonality</data_type>
+				<min/>
+				<max>EHeroPersonality</max>
+				<db_type/>
+				<type_note/>
+				<help>장수 성격</help>
+			</personality>
+		</Sys_Hero>
+	</Sys>
+</excel_hero>

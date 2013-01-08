@@ -1,0 +1,345 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>T_03_50_50_build.usd</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="27">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>207</objId>
+            <ptul X="417" Y="32" />
+            <ptdr X="485" Y="72" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="7">
+                <actBox id="209" />
+                <actBox id="212" />
+                <actBox id="216" />
+                <actBox id="220" />
+                <actBox id="492" />
+                <actBox id="494" />
+                <actBox id="499" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>208</objId>
+            <ptul X="715" Y="29" />
+            <ptdr X="791" Y="69" />
+            <links num="0" />
+            <objectName>TownServer</objectName>
+            <className>T</className>
+            <actBoxes num="7">
+                <actBox id="210" />
+                <actBox id="213" />
+                <actBox id="215" />
+                <actBox id="221" />
+                <actBox id="491" />
+                <actBox id="495" />
+                <actBox id="498" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>209</objId>
+            <ptul X="443" Y="116" />
+            <ptdr X="458" Y="146" />
+            <links num="1">
+                <link id="211" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>210</objId>
+            <ptul X="745" Y="116" />
+            <ptdr X="760" Y="146" />
+            <links num="1">
+                <link id="211" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>211</objId>
+            <points num="2">
+                <pt x="458" y="126" />
+                <pt x="745" y="126" />
+            </points>
+            <objStart id="209" />
+            <objEnd id="210" />
+            <message messType="MGEN">X2T_NEW_BUILD</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>212</objId>
+            <ptul X="443" Y="182" />
+            <ptdr X="458" Y="212" />
+            <links num="1">
+                <link id="214" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>213</objId>
+            <ptul X="745" Y="182" />
+            <ptdr X="760" Y="212" />
+            <links num="1">
+                <link id="214" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>214</objId>
+            <points num="2">
+                <pt x="458" y="187" />
+                <pt x="745" y="187" />
+            </points>
+            <objStart id="212" />
+            <objEnd id="213" />
+            <message messType="MGEN">X2T_BUILD_UPGRADE</message>
+            <guardCond>build_slot-tname32_t,hero_id-uint8</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>215</objId>
+            <ptul X="745" Y="240" />
+            <ptdr X="760" Y="270" />
+            <links num="1">
+                <link id="217" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>216</objId>
+            <ptul X="443" Y="240" />
+            <ptdr X="458" Y="270" />
+            <links num="1">
+                <link id="217" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>217</objId>
+            <points num="2">
+                <pt x="745" y="245" />
+                <pt x="458" y="245" />
+            </points>
+            <objStart id="215" />
+            <objEnd id="216" />
+            <message messType="MGEN">T2X_BUILD_UPGRADE_RESULT</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[X2T_NEW_BUILD]&#x0A;{PARAM}&#x0A;build_slot-tname32_t&#x0A;_EBuildType-uint8&#x0A;hero_id-uint8</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>219</objId>
+            <ptul X="296" Y="97" />
+            <ptdr X="424" Y="189" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[T2X_BUILD_UPGRADE_RESULT]&#x0A;{PARAM}&#x0A;build_slot-tname32_t&#x0A;_EBuildType-uint8&#x0A;level-uint8&#x0A;e-jError&#x0A;curr_server_time-j_time_t&#x0A;upgrade_sec-int32&#x0A;hero_id-uint8</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>218</objId>
+            <ptul X="784" Y="114" />
+            <ptdr X="993" Y="270" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>220</objId>
+            <ptul X="443" Y="334" />
+            <ptdr X="458" Y="364" />
+            <links num="1">
+                <link id="222" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>221</objId>
+            <ptul X="745" Y="334" />
+            <ptdr X="760" Y="364" />
+            <links num="1">
+                <link id="222" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>222</objId>
+            <points num="2">
+                <pt x="458" y="339" />
+                <pt x="745" y="339" />
+            </points>
+            <objStart id="220" />
+            <objEnd id="221" />
+            <message messType="MGEN">X2T_BUILD_UPGRADE_CANCLE</message>
+            <guardCond>build_slot-tname32_t</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>491</objId>
+            <ptul X="745" Y="368" />
+            <ptdr X="760" Y="407" />
+            <links num="1">
+                <link id="493" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>492</objId>
+            <ptul X="443" Y="377" />
+            <ptdr X="458" Y="407" />
+            <links num="1">
+                <link id="493" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>493</objId>
+            <points num="2">
+                <pt x="745" y="382" />
+                <pt x="458" y="382" />
+            </points>
+            <objStart id="491" />
+            <objEnd id="492" />
+            <message messType="MGEN">X2T_BUILD_UPGRADE_CANCLE_OK</message>
+            <guardCond>build_slot-tname32_t</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>494</objId>
+            <ptul X="443" Y="531" />
+            <ptdr X="458" Y="561" />
+            <links num="1">
+                <link id="496" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>495</objId>
+            <ptul X="745" Y="531" />
+            <ptdr X="760" Y="561" />
+            <links num="1">
+                <link id="496" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>496</objId>
+            <points num="2">
+                <pt x="458" y="536" />
+                <pt x="745" y="536" />
+            </points>
+            <objStart id="494" />
+            <objEnd id="495" />
+            <message messType="MGEN">X2T_BUILD_UPGRADE_CHECK</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[X2T_BUILD_UPGRADE_CHECK]&#x0A;&#x0A;업글 서버종료시간을 클라가 알기때문에&#x0A;업글 종료시간에 맞추어 이패킷을 보내자.&#x0A;&#x0A;이패킷을 불법적으로 보내면 클라 종료시키자.&#x0A;&#x0A;{PARAM}&#x0A;build_slot-tname32_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>497</objId>
+            <ptul X="118" Y="503" />
+            <ptdr X="431" Y="659" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>498</objId>
+            <ptul X="745" Y="596" />
+            <ptdr X="760" Y="626" />
+            <links num="1">
+                <link id="500" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>499</objId>
+            <ptul X="443" Y="596" />
+            <ptdr X="458" Y="626" />
+            <links num="1">
+                <link id="500" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>500</objId>
+            <points num="2">
+                <pt x="745" y="601" />
+                <pt x="458" y="601" />
+            </points>
+            <objStart id="498" />
+            <objEnd id="499" />
+            <message messType="MGEN">X2T_BUILD_UPGRADE_CHECK_RESULT</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[X2T_BUILD_UPGRADE_CHECK_RESULT]&#x0A;&#x0A;{PARAM}&#x0A;build_slot-tname32_t&#x0A;e-jError&#x0A;left_sec-int32-남은시간(sec)</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>501</objId>
+            <ptul X="794" Y="521" />
+            <ptdr X="1055" Y="629" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

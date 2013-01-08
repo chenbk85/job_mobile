@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="What are Regular Expressions?">
+		<param name="Local" value="WhatAre.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Syntax">
+		<param name="Local" value="Syntax.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Sets">
+		<param name="Local" value="Syntax.html#sets">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Escape Operator">
+		<param name="Local" value="Syntax.html#escape_operator">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Shortcuts">
+		<param name="Local" value="Syntax.html#shortcuts">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Word Operators">
+		<param name="Local" value="Syntax.html#word_operators">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Line Anchors">
+		<param name="Local" value="Syntax.html#line_anchors">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Back References">
+		<param name="Local" value="Syntax.html#back_references">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Escape Sequences">
+		<param name="Local" value="Syntax.html#escape_sequences">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Replace Syntax">
+		<param name="Local" value="Syntax.html#replace_syntax">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="References">
+		<param name="Local" value="References.html">
+		</OBJECT>
+</UL>
+</BODY></HTML>

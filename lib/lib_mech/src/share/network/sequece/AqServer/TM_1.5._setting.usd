@@ -1,0 +1,200 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>TM_1.5._setting</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="15">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>36</objId>
+            <ptul X="57" Y="52" />
+            <ptdr X="125" Y="92" />
+            <links num="0" />
+            <objectName>TestClient</objectName>
+            <className>TC</className>
+            <actBoxes num="1">
+                <actBox id="42" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>37</objId>
+            <ptul X="403" Y="50" />
+            <ptdr X="474" Y="90" />
+            <links num="0" />
+            <objectName>TestServer</objectName>
+            <className>TS</className>
+            <actBoxes num="2">
+                <actBox id="40" />
+                <actBox id="45" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>38</objId>
+            <ptul X="725" Y="48" />
+            <ptdr X="794" Y="88" />
+            <links num="0" />
+            <objectName>AqMonitor</objectName>
+            <className>TM</className>
+            <actBoxes num="2">
+                <actBox id="39" />
+                <actBox id="44" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>39</objId>
+            <ptul X="752" Y="157" />
+            <ptdr X="767" Y="187" />
+            <links num="1">
+                <link id="41" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>40</objId>
+            <ptul X="431" Y="157" />
+            <ptdr X="446" Y="187" />
+            <links num="2">
+                <link id="41" />
+                <link id="47" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>41</objId>
+            <points num="2">
+                <pt x="752" y="163" />
+                <pt x="446" y="163" />
+            </points>
+            <objStart id="39" />
+            <objEnd id="40" />
+            <message messType="MGEN">TM_SET_TEST_ENV</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>42</objId>
+            <ptul X="84" Y="171" />
+            <ptdr X="99" Y="201" />
+            <links num="1">
+                <link id="47" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>43</objId>
+            <points num="2">
+                <pt x="752" y="262" />
+                <pt x="446" y="262" />
+            </points>
+            <objStart id="44" />
+            <objEnd id="45" />
+            <message messType="MGEN">TM2TS_GET_TEST_ENV</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>44</objId>
+            <ptul X="752" Y="257" />
+            <ptdr X="767" Y="304" />
+            <links num="2">
+                <link id="43" />
+                <link id="46" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>45</objId>
+            <ptul X="431" Y="257" />
+            <ptdr X="446" Y="304" />
+            <links num="2">
+                <link id="43" />
+                <link id="46" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>46</objId>
+            <points num="2">
+                <pt x="446" y="294" />
+                <pt x="752" y="294" />
+            </points>
+            <objStart id="45" />
+            <objEnd id="44" />
+            <message messType="MGEN">TM_SET_TEST_ENV</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>47</objId>
+            <points num="2">
+                <pt x="431" y="176" />
+                <pt x="99" y="176" />
+            </points>
+            <objStart id="40" />
+            <objEnd id="42" />
+            <message messType="MGEN">TM_SET_TEST_ENV</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>명령 : set_env 100 127.0.0.1:1234</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>48</objId>
+            <ptul X="795" Y="120" />
+            <ptdr X="1046" Y="139" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>명령 : get_env</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>49</objId>
+            <ptul X="794" Y="205" />
+            <ptdr X="907" Y="224" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[TM_SET_TEST_ENV]&#x0A;&#x0A;테스트 환경세팅&#x0A;&#x0A;{PARAM}&#x0A;&#x0A;i_DummySessionCount-int16-더미클라이언트의 세션갯수&#x0A;sLoginIP-net_string64&#x0A;iLoginPort-uint32&#x0A;&#x0A;{OPTION}&#x0A;i_DebugPrint=2</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>50</objId>
+            <ptul X="817" Y="227" />
+            <ptdr X="1181" Y="431" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

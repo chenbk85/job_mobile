@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding="euc-kr"?>
+<jIConsoleVar b_AUTOSAVE="0">
+  <!--
+	<AI b_jMX_SKIP_THIS="1">
+		<b_CV NAME="ai_SkipMindControl" FLAG="">0</b_CV>
+   -->
+  <test_category>
+    <i_test_var FLAG="" HELP="">0</i_test_var>
+    <test_var2 FLAG="" HELP="">23</test_var2>
+  </test_category>
+  <!-- 
+    FLAG에 올수 있는것 : jIConsoleVar.h에서
+  
+		#define for_each_EConsoleVarType(X)\
+			\
+			X(eDONT_SAVE2FILE , jBIT_0)\
+					/* 콘솔XML로 콘솔변수 내용이 저장되지 않는다.\
+					INI파일로 부터 로딩한 콘솔변수들은 이플레그를 사용하여 콘솔XML파일에 저장되지 않는다. */\
+			\
+			X(eCPP_ONLY_DEFINE, jBIT_1)\
+					/*이 콘솔변수는 CPP모듈에서만 정의되며 초기값이 세팅됨. \
+					콘솔XML에서 값을 수정해도 로딩시 값적용이 안됨.\
+					콘솔XML에는 단지 값을 출력하기 위해 저장되는것임.*/\
+			\
+			X(eFROM_DEFINED_INI,jBIT_2)\
+					/* ini파일로 부터 생성된 변수. 기본적으로 read only데이타이다.\
+					변수의 값은 ini로 부터 값 적용을 받은후 최종적으로 실행파일 인자로 부터 적용됨*/\
+
+  -->  
+  <DEFAULT>
+    
+  </DEFAULT>
+  <exe>
+    <b_DELETE_USERSETTING FLAG="" HELP="">0</b_DELETE_USERSETTING>
+    <b_USE_JXML           FLAG="" HELP="">0</b_USE_JXML>
+    <b_GENERATE_JXML      FLAG="" HELP="">0</b_GENERATE_JXML>
+    <b_USE_FIRST_JXML     FLAG="" HELP="">0</b_USE_FIRST_JXML>
+    <i_SaveFileBackupCount FLAG="" HELP="">5</i_SaveFileBackupCount>
+    <b_SkipAutoSave       FLAG="" HELP="">0</b_SkipAutoSave>
+    <MODULE_OWNER         FLAG="" HELP="">icandoit</MODULE_OWNER>
+  </exe>
+  <jILog>
+	  <ERROR_CHECK_TYPE     FLAG="" HELP="에러 행동정의 : NULL, EXIT, MSGBOX, MAIL">MSGBOX</ERROR_CHECK_TYPE>
+	  <LogFile              FLAG="" HELP="확장자는 붙이지 말것">temp\log_default</LogFile>
+	  <b_RunConsole         FLAG="" HELP="">0</b_RunConsole>
+	  <LoggerType           FLAG="" HELP="NULL , CONSOLE(콘솔창) , PIPE 이렇게 3가지가 올수있다.">CONSOLE</LoggerType>
+	  <LogLevel_FILE        FLAG="" HELP="">xml\user\LogLevel.xml</LogLevel_FILE>
+  </jILog>
+  <jINet_OGS>
+    <f_OnPacketSize_UsageInfo_TIME FLAG='' HELP='현제 패킷사용량 정보 통보 시간간격(SEC)'>10.000</f_OnPacketSize_UsageInfo_TIME>
+  </jINet_OGS>
+</jIConsoleVar>

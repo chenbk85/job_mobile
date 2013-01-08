@@ -1,0 +1,524 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>m_2.5.1_cmd</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="41">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>111</objId>
+            <ptul X="72" Y="25" />
+            <ptdr X="140" Y="65" />
+            <links num="0" />
+            <objectName>Agent</objectName>
+            <className>A</className>
+            <actBoxes num="12">
+                <actBox id="116" />
+                <actBox id="119" />
+                <actBox id="120" />
+                <actBox id="123" />
+                <actBox id="127" />
+                <actBox id="114" />
+                <actBox id="132" />
+                <actBox id="140" />
+                <actBox id="139" />
+                <actBox id="141" />
+                <actBox id="145" />
+                <actBox id="148" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>112</objId>
+            <ptul X="501" Y="23" />
+            <ptdr X="589" Y="63" />
+            <links num="0" />
+            <objectName>MonitorServer</objectName>
+            <className>M</className>
+            <actBoxes num="12">
+                <actBox id="113" />
+                <actBox id="118" />
+                <actBox id="121" />
+                <actBox id="124" />
+                <actBox id="126" />
+                <actBox id="130" />
+                <actBox id="133" />
+                <actBox id="136" />
+                <actBox id="138" />
+                <actBox id="142" />
+                <actBox id="144" />
+                <actBox id="147" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>113</objId>
+            <ptul X="537" Y="109" />
+            <ptdr X="552" Y="139" />
+            <links num="1">
+                <link id="115" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>114</objId>
+            <ptul X="98" Y="401" />
+            <ptdr X="113" Y="451" />
+            <links num="1">
+                <link id="129" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>115</objId>
+            <points num="2">
+                <pt x="537" y="119" />
+                <pt x="113" y="119" />
+            </points>
+            <objStart id="113" />
+            <objEnd id="116" />
+            <message messType="MGEN">M2A_CALL_CMD_RQ</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>116</objId>
+            <ptul X="98" Y="109" />
+            <ptdr X="113" Y="147" />
+            <links num="1">
+                <link id="115" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>117</objId>
+            <points num="2">
+                <pt x="113" y="195" />
+                <pt x="537" y="195" />
+            </points>
+            <objStart id="119" />
+            <objEnd id="118" />
+            <message messType="MGEN">A2M_CALL_CMD_RS</message>
+            <guardCond>eServerType-tstring,cmd-wstring</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>118</objId>
+            <ptul X="537" Y="186" />
+            <ptdr X="552" Y="216" />
+            <links num="1">
+                <link id="117" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>119</objId>
+            <ptul X="98" Y="145" />
+            <ptdr X="113" Y="216" />
+            <links num="1">
+                <link id="117" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>120</objId>
+            <ptul X="98" Y="310" />
+            <ptdr X="113" Y="340" />
+            <links num="1">
+                <link id="122" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>121</objId>
+            <ptul X="537" Y="310" />
+            <ptdr X="552" Y="340" />
+            <links num="1">
+                <link id="122" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>122</objId>
+            <points num="2">
+                <pt x="113" y="315" />
+                <pt x="537" y="315" />
+            </points>
+            <objStart id="120" />
+            <objEnd id="121" />
+            <message messType="MGEN">A2M_NOTIFY_SERVER_INFO</message>
+            <guardCond>eServerType-tstring,info-wstring,eState-tstring</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>123</objId>
+            <ptul X="98" Y="260" />
+            <ptdr X="113" Y="290" />
+            <links num="1">
+                <link id="125" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>124</objId>
+            <ptul X="537" Y="260" />
+            <ptdr X="552" Y="290" />
+            <links num="1">
+                <link id="125" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>125</objId>
+            <points num="2">
+                <pt x="113" y="265" />
+                <pt x="537" y="265" />
+            </points>
+            <objStart id="123" />
+            <objEnd id="124" />
+            <message messType="MGEN">A2M_SERVER_CONNECTED</message>
+            <guardCond>eServerType-tstring,eServerState-tstring</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>126</objId>
+            <ptul X="537" Y="373" />
+            <ptdr X="552" Y="403" />
+            <links num="1">
+                <link id="128" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>127</objId>
+            <ptul X="98" Y="373" />
+            <ptdr X="113" Y="403" />
+            <links num="1">
+                <link id="128" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>128</objId>
+            <points num="2">
+                <pt x="537" y="380" />
+                <pt x="113" y="380" />
+            </points>
+            <objStart id="126" />
+            <objEnd id="127" />
+            <message messType="MGEN">M2A_MYTHOLOGY_MENU_RQ</message>
+            <guardCond>eServerType-tstring,cmd-astring</guardCond>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>129</objId>
+            <points num="2">
+                <pt x="113" y="433" />
+                <pt x="537" y="433" />
+            </points>
+            <objStart id="114" />
+            <objEnd id="130" />
+            <message messType="MGEN">A2M_MYTHOLOGY_MENU_RS</message>
+            <guardCond>eServerType-tstring,cmd-astring</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>130</objId>
+            <ptul X="537" Y="421" />
+            <ptdr X="552" Y="451" />
+            <links num="1">
+                <link id="129" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[M2A_CALL_CMD_RQ]&#x0A;&#x0A;type이 eSS_AGENT이면 AGENT에 대한 콘솔명령실행&#x0A;&#x0A;{PARAM}&#x0A;eServerType-tstring&#x0A;cmd-wstring</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>131</objId>
+            <ptul X="564" Y="80" />
+            <ptdr X="913" Y="204" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>132</objId>
+            <ptul X="98" Y="507" />
+            <ptdr X="113" Y="537" />
+            <links num="1">
+                <link id="134" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>133</objId>
+            <ptul X="537" Y="507" />
+            <ptdr X="552" Y="537" />
+            <links num="1">
+                <link id="134" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>134</objId>
+            <points num="2">
+                <pt x="113" y="519" />
+                <pt x="537" y="519" />
+            </points>
+            <objStart id="132" />
+            <objEnd id="133" />
+            <message messType="MGEN">A2M_PROCESS_STATUS_NOTIFY</message>
+            <guardCond>eServerType-astring,eState-astring</guardCond>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>135</objId>
+            <points num="2">
+                <pt x="537" y="574" />
+                <pt x="113" y="574" />
+            </points>
+            <objStart id="138" />
+            <objEnd id="139" />
+            <message messType="MGEN">M2A_PROCESS_INFO_UPDATE</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>136</objId>
+            <ptul X="537" Y="600" />
+            <ptdr X="552" Y="630" />
+            <links num="1">
+                <link id="137" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>137</objId>
+            <points num="2">
+                <pt x="113" y="614" />
+                <pt x="537" y="614" />
+            </points>
+            <objStart id="140" />
+            <objEnd id="136" />
+            <message messType="MGEN">A2M_PROCESS_INFO_NOTIFY</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>138</objId>
+            <ptul X="537" Y="565" />
+            <ptdr X="552" Y="595" />
+            <links num="1">
+                <link id="135" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>139</objId>
+            <ptul X="98" Y="565" />
+            <ptdr X="113" Y="595" />
+            <links num="1">
+                <link id="135" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>140</objId>
+            <ptul X="98" Y="591" />
+            <ptdr X="113" Y="630" />
+            <links num="1">
+                <link id="137" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>141</objId>
+            <ptul X="98" Y="688" />
+            <ptdr X="113" Y="718" />
+            <links num="1">
+                <link id="143" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>142</objId>
+            <ptul X="537" Y="688" />
+            <ptdr X="552" Y="718" />
+            <links num="1">
+                <link id="143" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>143</objId>
+            <points num="2">
+                <pt x="113" y="693" />
+                <pt x="537" y="693" />
+            </points>
+            <objStart id="141" />
+            <objEnd id="142" />
+            <message messType="MGEN">A2M_SEND_ERROR_LOG</message>
+            <guardCond>eServerType-aname32_t,log-wstring</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>144</objId>
+            <ptul X="537" Y="751" />
+            <ptdr X="552" Y="781" />
+            <links num="1">
+                <link id="146" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>145</objId>
+            <ptul X="98" Y="751" />
+            <ptdr X="113" Y="781" />
+            <links num="1">
+                <link id="146" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>146</objId>
+            <points num="2">
+                <pt x="537" y="760" />
+                <pt x="113" y="760" />
+            </points>
+            <objStart id="144" />
+            <objEnd id="145" />
+            <message messType="MGEN">M2A_RESET_ERROR_LOG_COUNT</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>147</objId>
+            <ptul X="537" Y="827" />
+            <ptdr X="552" Y="857" />
+            <links num="1">
+                <link id="149" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>148</objId>
+            <ptul X="98" Y="827" />
+            <ptdr X="113" Y="857" />
+            <links num="1">
+                <link id="149" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>149</objId>
+            <points num="2">
+                <pt x="537" y="836" />
+                <pt x="113" y="836" />
+            </points>
+            <objStart id="147" />
+            <objEnd id="148" />
+            <message messType="MGEN">M2A_RUN_EXE</message>
+            <guardCond>type-int,option-wstring,cmd-wstring</guardCond>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[A2M_PROCESS_INFO_NOTIFY]&#x0A;&#x0A;{PARAM}&#x0A;eServerType-aname32_t&#x0A;name-wstring&#x0A;value-wstring&#x0A;&#x0A;{OPTION}&#x0A;i_DebugPrint=0</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>150</objId>
+            <ptul X="561" Y="507" />
+            <ptdr X="765" Y="663" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[M2A_PROCESS_INFO_UPDATE]&#x0A;&#x0A;{PARAM}&#x0A;eServerType-tstring&#x0A;name-wstring&#x0A;value-wstring&#x0A;&#x0A;{OPTION}&#x0A;i_DebugPrint=0</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>151</objId>
+            <ptul X="776" Y="507" />
+            <ptdr X="986" Y="663" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

@@ -1,0 +1,46 @@
+#include "yVector.h"
+
+//---------------------------------------------------------------
+class jNetMessage : public yVectorNode<jNetMessage>
+//----------------------------------------------------------------
+{
+	jDECLEAR_YVECTOR_MANAGER(jNetMessage)
+
+	jMessage()
+	{
+	}
+	
+	void CopyFrom(const jNetMessage& ){ // 객체 복사시 호출
+		assert(0);
+	}
+	void Create() // 생성자역활 _push_back()시 호출
+	{ 	
+	}
+	void Destroy() // 소멸자역활 _erase()시 호출
+	{
+	}
+	int i[1024];
+	fname_t buf[1024];
+};
+
+// 아래줄은 cpp모듈에 있어야함.
+jDEFINE_YVECTOR_MANAGER(jNetMessage, 1024, 10);
+
+
+void testunit_jNetMessage()
+{
+	jNetMessage* s_Net[1024*20];
+	jNetMessage* pNet = jNetMessage::_push_back();
+	jNetMessage::_erase(pNet);
+
+	for(int i=0; i<1024*20 ; ++i)
+	{
+		s_Net[i] = jNetMessage::_push_back();
+	}
+	CDebug sDebug("c:\\a.txt");
+	sDebug.SaveValue("_size = %d", jNetMessage::_size());
+	sDebug.SaveValue("_GetObjSize = %d", jNetMessage::_GetObjSize());
+	sDebug.SaveValue("_GetSlotCount = %d", jNetMessage::_GetSlotCount());
+	sDebug.SaveValue("_capacity = %d", jNetMessage::_capacity());
+
+}

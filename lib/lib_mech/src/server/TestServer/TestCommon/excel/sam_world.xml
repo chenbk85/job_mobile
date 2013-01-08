@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<sam_world>
+	<enum>
+		<EIssue_Info HELP="설명없음">
+			<EII_NORMAL>
+				<name>일반</name>
+				<value>1</value>
+				<name_eng>EII_NORMAL</name_eng>
+				<help>일반 서버</help>
+			</EII_NORMAL>
+			<EII_NEW>
+				<name>신규</name>
+				<value>2</value>
+				<name_eng>EII_NEW</name_eng>
+				<help>신규 서버</help>
+			</EII_NEW>
+			<EII_RECOMMEND>
+				<name>추천</name>
+				<value>3</value>
+				<name_eng>EII_RECOMMEND</name_eng>
+				<help>추천 서버</help>
+			</EII_RECOMMEND>
+			<EII_TEST>
+				<name>테스트용</name>
+				<value>4</value>
+				<name_eng>EII_TEST</name_eng>
+				<help>테스트용 서버</help>
+			</EII_TEST>
+		</EIssue_Info>
+		<ETile_Sort HELP="설명없음">
+			<ETS_ROAD>
+				<name>도로</name>
+				<value>1</value>
+				<name_eng>ETS_ROAD</name_eng>
+				<help>성과 성 사이의 길</help>
+			</ETS_ROAD>
+			<ETS_MEADOW>
+				<name>초원</name>
+				<value>2</value>
+				<name_eng>ETS_MEADOW</name_eng>
+				<help>숲</help>
+			</ETS_MEADOW>
+			<ETS_LAND>
+				<name>평지</name>
+				<value>3</value>
+				<name_eng>ETS_LAND</name_eng>
+				<help>평지</help>
+			</ETS_LAND>
+			<ETS_MOUNT>
+				<name>산악</name>
+				<value>4</value>
+				<name_eng>ETS_MOUNT</name_eng>
+				<help>산악</help>
+			</ETS_MOUNT>
+			<ETS_RIVER>
+				<name>강</name>
+				<value>5</value>
+				<name_eng>ETS_RIVER</name_eng>
+				<help>강물</help>
+			</ETS_RIVER>
+			<ETS_SEA>
+				<name>바다</name>
+				<value>6</value>
+				<name_eng>ETS_SEA</name_eng>
+				<help>바다</help>
+			</ETS_SEA>
+			<ETS_SWAMP>
+				<name>늪</name>
+				<value>7</value>
+				<name_eng>ETS_SWAMP</name_eng>
+				<help>늪</help>
+			</ETS_SWAMP>
+		</ETile_Sort>
+	</enum>
+	<Sys>
+		<Sys_Tile HELP="설명없음">
+			<tisid>
+				<name>숫자ID</name>
+				<name_eng>tisid</name_eng>
+				<data_type>Sys_Tile_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</tisid>
+			<name>
+				<name>이름ID</name>
+				<name_eng>name</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</name>
+			<name_kor>
+				<name>타일_이름</name>
+				<name_eng>name_kor</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</name_kor>
+			<client_file>
+				<name>타일 이미지</name>
+				<name_eng>client_file</name_eng>
+				<data_type>tname256_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</client_file>
+			<sort>
+				<name>분류</name>
+				<name_eng>sort</name_eng>
+				<data_type>ETile_Sort</data_type>
+				<min/>
+				<max>ETile_Sort</max>
+				<db_type/>
+				<type_note/>
+				<help>세부 텍스쳐 종류</help>
+			</sort>
+			<mspeed>
+				<name>이동속도보정</name>
+				<name_eng>mspeed</name_eng>
+				<data_type>int16</data_type>
+				<min>0</min>
+				<max>5000</max>
+				<db_type/>
+				<type_note/>
+				<help>유저 이동속도 보정 (%보정값으로 500.0% 가능)</help>
+			</mspeed>
+			<visibility>
+				<name>가시거리</name>
+				<name_eng>visibility</name_eng>
+				<data_type>int16</data_type>
+				<min>-100</min>
+				<max>100</max>
+				<db_type/>
+				<type_note/>
+				<help>유닛의 시야 보정</help>
+			</visibility>
+			<build>
+				<name>건설여부</name>
+				<name_eng>build</name_eng>
+				<data_type>bool</data_type>
+				<min>0</min>
+				<max>1</max>
+				<db_type/>
+				<type_note/>
+				<help>건설 개념이 안들어갈 때는 삭제</help>
+			</build>
+			<fskill>
+				<name>화계_스킬_보정</name>
+				<name_eng>fskill</name_eng>
+				<data_type>int16</data_type>
+				<min>-999</min>
+				<max>999</max>
+				<db_type/>
+				<type_note>%랜덤 (xx.x%)</type_note>
+				<help>불 속성 스킬 보정값</help>
+			</fskill>
+			<wskill>
+				<name>수계_스킬_보정</name>
+				<name_eng>wskill</name_eng>
+				<data_type>int16</data_type>
+				<min>-999</min>
+				<max>999</max>
+				<db_type/>
+				<type_note>%랜덤 (xx.x%)</type_note>
+				<help>물 속성 스킬 보정값</help>
+			</wskill>
+			<rskill>
+				<name>낙석_스킬_보정</name>
+				<name_eng>rskill</name_eng>
+				<data_type>int16</data_type>
+				<min>-999</min>
+				<max>999</max>
+				<db_type/>
+				<type_note>%랜덤 (xx.x%)</type_note>
+				<help>돌 속성 스킬 보정값</help>
+			</rskill>
+			<hiskill>
+				<name>은신_스킬_보정</name>
+				<name_eng>hiskill</name_eng>
+				<data_type>int16</data_type>
+				<min>-999</min>
+				<max>999</max>
+				<db_type/>
+				<type_note>%랜덤 (xx.x%)</type_note>
+				<help>은신 스킬 보정값</help>
+			</hiskill>
+		</Sys_Tile>
+		<Sys_World HELP="설명없음">
+			<wsid>
+				<name>숫자 ID</name>
+				<name_eng>wsid</name_eng>
+				<data_type>Sys_World_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>서버 오픈 순서별로 번호 지정</help>
+			</wsid>
+			<name>
+				<name>이름 ID</name>
+				<name_eng>name</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>서버이름 ID</help>
+			</name>
+			<name_kor>
+				<name>서버 이름</name>
+				<name_eng>name_kor</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>서버 선택 리스트에 표시되는 서버 이름</help>
+			</name_kor>
+			<issue>
+				<name>이슈 상항</name>
+				<name_eng>issue</name_eng>
+				<data_type>EIssue_Info</data_type>
+				<min/>
+				<max>EIssue_Info</max>
+				<db_type/>
+				<type_note/>
+				<help>유저에게 알리는 서버 상황. 아이콘 이미지로 표현</help>
+			</issue>
+			<address>
+				<name>접속IP</name>
+				<name_eng>address</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>접속 주소</help>
+			</address>
+			<help>
+				<name>서버설명</name>
+				<name_eng>help</name_eng>
+				<data_type>tname64_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>기타설명</help>
+			</help>
+			<goldstart>
+				<name>금 시작자원</name>
+				<name_eng>goldstart</name_eng>
+				<data_type>int16</data_type>
+				<min>0</min>
+				<max>999</max>
+				<db_type/>
+				<type_note/>
+				<help>처음 시작시의 금자원량</help>
+			</goldstart>
+			<ricestart>
+				<name>식량 시작자원</name>
+				<name_eng>ricestart</name_eng>
+				<data_type>int16</data_type>
+				<min>0</min>
+				<max>999</max>
+				<db_type/>
+				<type_note/>
+				<help>처음 시작시의 나무자원량</help>
+			</ricestart>
+			<treestart>
+				<name>나무 시작자원</name>
+				<name_eng>treestart</name_eng>
+				<data_type>int16</data_type>
+				<min>0</min>
+				<max>999</max>
+				<db_type/>
+				<type_note/>
+				<help>처음 시작시의 금자원량</help>
+			</treestart>
+			<stonestart>
+				<name>돌 시작자원</name>
+				<name_eng>stonestart</name_eng>
+				<data_type>int16</data_type>
+				<min>0</min>
+				<max>999</max>
+				<db_type/>
+				<type_note/>
+				<help>처음 시작시의 금자원량</help>
+			</stonestart>
+			<ironstart>
+				<name>철 시작자원</name>
+				<name_eng>ironstart</name_eng>
+				<data_type>int16</data_type>
+				<min>0</min>
+				<max>999</max>
+				<db_type/>
+				<type_note/>
+				<help>처음 시작시의 금자원량</help>
+			</ironstart>
+			<silkstart>
+				<name>비단 시작자원</name>
+				<name_eng>silkstart</name_eng>
+				<data_type>int16</data_type>
+				<min>0</min>
+				<max>999</max>
+				<db_type/>
+				<type_note/>
+				<help>처음 시작시의 금자원량</help>
+			</silkstart>
+			<mspeed>
+				<name>부대이동속도보정</name>
+				<name_eng>mspeed</name_eng>
+				<data_type>int16</data_type>
+				<min>-999</min>
+				<max>999</max>
+				<db_type/>
+				<type_note/>
+				<help>전략맵에서의 부대 이동 속도 (기본 100으로 지정) 1000초에 100타일 이동</help>
+			</mspeed>
+			<re_increase>
+				<name>자원 증가량</name>
+				<name_eng>re_increase</name_eng>
+				<data_type>int16</data_type>
+				<min>-999</min>
+				<max>999</max>
+				<db_type/>
+				<type_note/>
+				<help>각 자원채취용 건물에서의 시간당 자원 채취량 보정값. (기본 100으로 지정)</help>
+			</re_increase>
+			<buildtime>
+				<name>건축 시간</name>
+				<name_eng>buildtime</name_eng>
+				<data_type>int16</data_type>
+				<min>-999</min>
+				<max>999</max>
+				<db_type/>
+				<type_note/>
+				<help>건물의 건축, 업그레이드 소요 시간 보정값. (기본 100으로 지정)</help>
+			</buildtime>
+			<produtime>
+				<name>생산 시간</name>
+				<name_eng>produtime</name_eng>
+				<data_type>int16</data_type>
+				<min>-999</min>
+				<max>999</max>
+				<db_type/>
+				<type_note/>
+				<help>건물에서의 무기, 기타 생산품들의 생산 시간 보정값. (기본 100으로 지정)</help>
+			</produtime>
+			<recrutime>
+				<name>모집 시간</name>
+				<name_eng>recrutime</name_eng>
+				<data_type>int16</data_type>
+				<min>-999</min>
+				<max>999</max>
+				<db_type/>
+				<type_note/>
+				<help>건물에서의 병사 모집 시간 보정값. (기본 100으로 지정)</help>
+			</recrutime>
+			<researchtime>
+				<name>연구 시간</name>
+				<name_eng>researchtime</name_eng>
+				<data_type>int16</data_type>
+				<min>-999</min>
+				<max>999</max>
+				<db_type/>
+				<type_note/>
+				<help>연구 진행 시간 보정값. (기본 100으로 지정)</help>
+			</researchtime>
+			<goldamount>
+				<name>금 획득량</name>
+				<name_eng>goldamount</name_eng>
+				<data_type>int16</data_type>
+				<min>-999</min>
+				<max>999</max>
+				<db_type/>
+				<type_note/>
+				<help>건물에서의 세금 징수등의 금 획득량 보정값. (기본 100으로 지정)</help>
+			</goldamount>
+			<peo_increase>
+				<name>인구 증가</name>
+				<name_eng>peo_increase</name_eng>
+				<data_type>int16</data_type>
+				<min>-999</min>
+				<max>999</max>
+				<db_type/>
+				<type_note/>
+				<help>건물에서의 인구 증가량 보정값. (기본 100으로 지정)</help>
+			</peo_increase>
+			<questbenefit>
+				<name>퀘스트 보상</name>
+				<name_eng>questbenefit</name_eng>
+				<data_type>int16</data_type>
+				<min>-999</min>
+				<max>999</max>
+				<db_type/>
+				<type_note/>
+				<help>퀘스트 수행 후의 보상내용 보정값. (기본 100으로 지정)</help>
+			</questbenefit>
+			<huntbenefit>
+				<name>사냥 보상</name>
+				<name_eng>huntbenefit</name_eng>
+				<data_type>int16</data_type>
+				<min>-999</min>
+				<max>999</max>
+				<db_type/>
+				<type_note/>
+				<help>사냥(PVE)에서 승리 후의 보상내용 보정값. (기본 100으로 지정)</help>
+			</huntbenefit>
+			<appoint_ratio>
+				<name>장수 등용 확률</name>
+				<name_eng>appoint_ratio</name_eng>
+				<data_type>int16</data_type>
+				<min>-999</min>
+				<max>999</max>
+				<db_type/>
+				<type_note/>
+				<help>장수 등용 시도시 성공할 확률 보정값. (기본 100으로 지정)</help>
+			</appoint_ratio>
+		</Sys_World>
+	</Sys>
+</sam_world>

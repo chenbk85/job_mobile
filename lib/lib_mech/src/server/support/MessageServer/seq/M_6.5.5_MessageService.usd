@@ -1,0 +1,440 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>M_6.5.5_MessageService</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>2.1</Version>
+    <forceTimeSync />
+    <elements num="35">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>234</objId>
+            <ptul X="350" Y="26" />
+            <ptdr X="447" Y="66" />
+            <links num="0" />
+            <objectName>MessageServer</objectName>
+            <className>MS</className>
+            <actBoxes num="8">
+                <actBox id="237" />
+                <actBox id="240" />
+                <actBox id="248" />
+                <actBox id="251" />
+                <actBox id="255" />
+                <actBox id="258" />
+                <actBox id="262" />
+                <actBox id="264" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>235</objId>
+            <ptul X="47" Y="23" />
+            <ptdr X="115" Y="63" />
+            <links num="0" />
+            <objectName>MsgClient</objectName>
+            <className>MC</className>
+            <actBoxes num="4">
+                <actBox id="236" />
+                <actBox id="247" />
+                <actBox id="254" />
+                <actBox id="261" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>236</objId>
+            <ptul X="73" Y="120" />
+            <ptdr X="88" Y="150" />
+            <links num="1">
+                <link id="238" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>237</objId>
+            <ptul X="391" Y="120" />
+            <ptdr X="406" Y="150" />
+            <links num="1">
+                <link id="238" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>238</objId>
+            <points num="2">
+                <pt x="88" y="125" />
+                <pt x="391" y="125" />
+            </points>
+            <objStart id="236" />
+            <objEnd id="237" />
+            <message messType="MGEN">MC_BROADCAST_MESSAGE</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>239</objId>
+            <ptul X="653" Y="24" />
+            <ptdr X="728" Y="64" />
+            <links num="0" />
+            <objectName>MsgClient&apos;s</objectName>
+            <className>MC</className>
+            <actBoxes num="4">
+                <actBox id="241" />
+                <actBox id="252" />
+                <actBox id="259" />
+                <actBox id="265" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>240</objId>
+            <ptul X="391" Y="165" />
+            <ptdr X="406" Y="195" />
+            <links num="1">
+                <link id="242" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>241</objId>
+            <ptul X="683" Y="165" />
+            <ptdr X="698" Y="195" />
+            <links num="1">
+                <link id="242" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>242</objId>
+            <points num="2">
+                <pt x="406" y="170" />
+                <pt x="683" y="170" />
+            </points>
+            <objStart id="240" />
+            <objEnd id="241" />
+            <message messType="MGEN">MS_BROADCAST_MESSAGE</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>247</objId>
+            <ptul X="73" Y="335" />
+            <ptdr X="88" Y="365" />
+            <links num="1">
+                <link id="249" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>248</objId>
+            <ptul X="391" Y="335" />
+            <ptdr X="406" Y="365" />
+            <links num="1">
+                <link id="249" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>249</objId>
+            <points num="2">
+                <pt x="88" y="340" />
+                <pt x="391" y="340" />
+            </points>
+            <objStart id="247" />
+            <objEnd id="248" />
+            <message messType="MGEN">MC_BROADCAST_MESSAGE_GROUP</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[MC_BROADCAST_MESSAGE_GROUP]&#x0A;&#x0A;{PARAM}&#x0A;group-group_id_t&#x0A;msg-jServerMsg&#x0A;wmsg-wname256_t&#x0A;amsg-aname1024_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>250</objId>
+            <ptul X="96" Y="349" />
+            <ptdr X="346" Y="473" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[MC_BROADCAST_MESSAGE]&#x0A;&#x0A;{PARAM}&#x0A;sid_target-serverid_t&#x0A;msg-jServerMsg&#x0A;wmsg-wname256_t&#x0A;amsg-aname1024_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>243</objId>
+            <ptul X="96" Y="131" />
+            <ptdr X="292" Y="255" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>251</objId>
+            <ptul X="391" Y="383" />
+            <ptdr X="406" Y="413" />
+            <links num="1">
+                <link id="253" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>252</objId>
+            <ptul X="683" Y="383" />
+            <ptdr X="698" Y="413" />
+            <links num="1">
+                <link id="253" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>253</objId>
+            <points num="2">
+                <pt x="406" y="388" />
+                <pt x="683" y="388" />
+            </points>
+            <objStart id="251" />
+            <objEnd id="252" />
+            <message messType="MGEN">MS_BROADCAST_MESSAGE_GROUP</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>254</objId>
+            <ptul X="73" Y="541" />
+            <ptdr X="88" Y="571" />
+            <links num="1">
+                <link id="256" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>255</objId>
+            <ptul X="391" Y="541" />
+            <ptdr X="406" Y="571" />
+            <links num="1">
+                <link id="256" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>256</objId>
+            <points num="2">
+                <pt x="88" y="546" />
+                <pt x="391" y="546" />
+            </points>
+            <objStart id="254" />
+            <objEnd id="255" />
+            <message messType="MGEN">MC_BROADCAST_MESSAGE_MULTI</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[MC_BROADCAST_MESSAGE_GROUP]&#x0A;&#x0A;{PARAM}&#x0A;servers-serverid_t[?]&#x0A;msg-jServerMsg&#x0A;wmsg-wname256_t&#x0A;amsg-aname1024_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>257</objId>
+            <ptul X="95" Y="558" />
+            <ptdr X="345" Y="682" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>258</objId>
+            <ptul X="391" Y="582" />
+            <ptdr X="406" Y="612" />
+            <links num="1">
+                <link id="260" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>259</objId>
+            <ptul X="683" Y="582" />
+            <ptdr X="698" Y="612" />
+            <links num="1">
+                <link id="260" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>260</objId>
+            <points num="2">
+                <pt x="406" y="587" />
+                <pt x="683" y="587" />
+            </points>
+            <objStart id="258" />
+            <objEnd id="259" />
+            <message messType="MGEN">MS_BROADCAST_MESSAGE_MULTI</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>261</objId>
+            <ptul X="73" Y="757" />
+            <ptdr X="88" Y="787" />
+            <links num="1">
+                <link id="263" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>262</objId>
+            <ptul X="391" Y="757" />
+            <ptdr X="406" Y="787" />
+            <links num="1">
+                <link id="263" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>263</objId>
+            <points num="2">
+                <pt x="88" y="762" />
+                <pt x="391" y="762" />
+            </points>
+            <objStart id="261" />
+            <objEnd id="262" />
+            <message messType="MGEN">MC_BROADCAST_MESSAGE_ALL</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>264</objId>
+            <ptul X="391" Y="801" />
+            <ptdr X="406" Y="831" />
+            <links num="1">
+                <link id="266" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>265</objId>
+            <ptul X="683" Y="801" />
+            <ptdr X="698" Y="831" />
+            <links num="1">
+                <link id="266" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>266</objId>
+            <points num="2">
+                <pt x="406" y="806" />
+                <pt x="683" y="806" />
+            </points>
+            <objStart id="264" />
+            <objEnd id="265" />
+            <message messType="MGEN">MS_BROADCAST_MESSAGE_ALL</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[MC_BROADCAST_MESSAGE_ALL]&#x0A;&#x0A;{PARAM}&#x0A;msg-jServerMsg&#x0A;wmsg-wname256_t&#x0A;amsg-aname1024_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>267</objId>
+            <ptul X="99" Y="775" />
+            <ptdr X="325" Y="883" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[MS_BROADCAST_MESSAGE]&#x0A;&#x0A;{PARAM}&#x0A;sid_who-serverid_t&#x0A;msg-jServerMsg&#x0A;wmsg-wname256_t&#x0A;amsg-aname1024_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>268</objId>
+            <ptul X="424" Y="178" />
+            <ptdr X="620" Y="302" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[MC_BROADCAST_MESSAGE_GROUP]&#x0A;&#x0A;{PARAM}&#x0A;sid_who_serverid_t&#x0A;msg-jServerMsg&#x0A;wmsg-wname256_t&#x0A;amsg-aname1024_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>271</objId>
+            <ptul X="415" Y="403" />
+            <ptdr X="665" Y="527" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[MC_BROADCAST_MESSAGE_GROUP]&#x0A;&#x0A;{PARAM}&#x0A;sid_who_serverid_t&#x0A;msg-jServerMsg&#x0A;wmsg-wname256_t&#x0A;amsg-aname1024_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>272</objId>
+            <ptul X="414" Y="610" />
+            <ptdr X="664" Y="734" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[MC_BROADCAST_MESSAGE_ALL]&#x0A;&#x0A;{PARAM}&#x0A;sid_who_serverid_t&#x0A;msg-jServerMsg&#x0A;wmsg-wname256_t&#x0A;amsg-aname1024_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>273</objId>
+            <ptul X="420" Y="818" />
+            <ptdr X="646" Y="942" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

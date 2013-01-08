@@ -1,0 +1,46 @@
+nTESTSERVER ,@#, D:\svn\lib\lib_mech\src\server\TestServer\TestCommon\excel ,@#, sam_npc
+
+enum ,@#, EMobRank ,@#, 설명없음
+
+enumItem ,@#, 일반형 ,@#,  0  ,@#, MOB_RANK_NORMAL ,@#, 몬스터 등급에 따른 분류
+enumItem ,@#, 강화형 ,@#,  1  ,@#, MOB_RANK_REINFORCE ,@#, 
+enumItem ,@#, 준보스형 ,@#,  2  ,@#, MOB_RANK_SEMIBOSS ,@#, 
+enumItem ,@#, 보스형 ,@#,  3  ,@#, MOB_RANK_BOSS ,@#, 
+
+
+Sys ,@#, Sys_Monster ,@#, 설명없음
+
+SysItem ,@#, ID ,@#, msid ,@#, Sys_Monster_id_t ,@#,  ,@#,  ,@#, PK ,@#,  ,@#, 몬스터 sid
+SysItem ,@#, 이름 ,@#, name ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 몬스터 uid
+SysItem ,@#, 등급 ,@#, rank ,@#, EMobRank ,@#,  ,@#, EMobRank ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 레벨 ,@#, level ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 보상경험치 ,@#, rewardExp ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, HP ,@#, hp_max ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, HP 회복속도 ,@#, hp_regen ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 어그로 범위 ,@#, aggro_distance ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 공격 범위 ,@#, attack_distance ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 이동 범위 ,@#, approach_distance ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 적중률 ,@#, hit_chance ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 회피률 ,@#, avoid_chance ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 이동속도 ,@#, move_speed ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, Aerial 타입 ,@#, aerial_type ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스킬1 ,@#, skill1 ,@#, skill_sid_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스킬2 ,@#, skill2 ,@#, skill_sid_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스킬3 ,@#, skill3 ,@#, skill_sid_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스킬4 ,@#, skill4 ,@#, skill_sid_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스킬5 ,@#, skill5 ,@#, skill_sid_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스킬6 ,@#, skill6 ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스킬7 ,@#, skill7 ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스킬8 ,@#, skill8 ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스킬9 ,@#, skill9 ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스킬10 ,@#, skill10 ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 물리공격력 ,@#, physic_atk ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 마법공격력 ,@#, magic_atk ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 아이콘 이름 ,@#, iconname ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 몬스터 아이콘
+SysItem ,@#, 드랍오브젝트 이름 ,@#, dropname ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 몬스터가 죽었을때 드랍되는 Element 이름. Item_drop_patten.xml
+SysItem ,@#, AI Filename ,@#, fsmname ,@#, tname256_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, AI 패턴명
+SysItem ,@#, 죽는 애니메이션 ,@#, deathfx ,@#, tname256_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 설명창 ,@#, description ,@#, tname256_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, KFM Filename ,@#, kfmname ,@#, tname256_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+
+

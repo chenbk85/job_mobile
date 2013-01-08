@@ -1,0 +1,74 @@
+nEXCEL ,@#, D:\svn\lib\lib_mech\src\test\test_Excel\excel ,@#, excel_force
+
+enum ,@#, E_ClassItemA ,@#, 설명없음
+
+enumItem ,@#, 병기 없음 ,@#,  1  ,@#, CIA_NOT ,@#, 보병 병과 자동 분류
+enumItem ,@#, 창 병기 ,@#,  2  ,@#, CIA_PIKE ,@#, 
+enumItem ,@#, 중갑 병기 ,@#,  3  ,@#, CIA_HEAVY ,@#, 
+enumItem ,@#, 언월도 병기  ,@#,  4  ,@#, CIA_HALBERD ,@#, 근위병 (철 소모 위주)
+enumItem ,@#, 궁 병기 ,@#,  5  ,@#, CIA_BOW ,@#, 
+enumItem ,@#, 노 병기 ,@#,  6  ,@#, CIA_CROSSBOW ,@#, 
+enumItem ,@#, 강노 병기 ,@#,  7  ,@#, CIA_BOWGUN ,@#, 
+enumItem ,@#, 노포 병기 ,@#,  8  ,@#, CIA_BALLISTA ,@#, 
+enumItem ,@#, 전차 병기 ,@#,  9  ,@#, CIA_CHARIOT ,@#, 군마랑 조합해서만 가능 (개수 늘어나야)
+enumItem ,@#, 마차 ,@#,  10  ,@#, CIA_WAGON ,@#, 군마랑 조합해서만 가능 (개수 늘어나야)
+
+
+enum ,@#, E_ClassItemB ,@#, 설명없음
+
+enumItem ,@#, 탈것 없음 ,@#,  1  ,@#, CIB_NOT ,@#, 
+enumItem ,@#, 군마 ,@#,  2  ,@#, CIB_HORSE ,@#, Eunit_ClassItemA 와 조합 가능
+enumItem ,@#, 수레 ,@#,  3  ,@#, CIB_WHEELBARROW ,@#, 공작, 수송, 보급 용도 
+enumItem ,@#, 목우 ,@#,  4  ,@#, CIB_CART ,@#, 
+enumItem ,@#, 운제 ,@#,  5  ,@#, CIB_SIEGE_LADDER ,@#, B만 활용 가능
+enumItem ,@#, 충차 ,@#,  6  ,@#, CIB_SIEGE_RAM ,@#, 
+enumItem ,@#, 정란 ,@#,  7  ,@#, CIB_SIEGE_TOWER ,@#, 
+enumItem ,@#, 투석기 ,@#,  8  ,@#, CIB_SIEGE_TREBUCHET ,@#, 
+
+
+enum ,@#, E_W_Event ,@#, 설명없음
+
+enumItem ,@#, 맑음 ,@#,  1  ,@#, ENV_SUNNY ,@#, 속성 없는 경우
+enumItem ,@#, 비 속성 ,@#,  2  ,@#, ENV_RAIN ,@#, 화계 힘듬, 수계 좋음
+enumItem ,@#, 안개 속성 ,@#,  3  ,@#, ENV_MIST ,@#, 시야 감소  / 사거리 변화
+enumItem ,@#, 밤낮 속성 ,@#,  4  ,@#, ENV_TIME ,@#, 시야 감소  / 사거리 변화
+enumItem ,@#, 천재 지변 ,@#,  5  ,@#, ENV_CALAMITY ,@#, 지진/역병/가뭄/폭염/홍수/태풍/흉작/메뚜기떼/한파
+enumItem ,@#, 축복 ,@#,  6  ,@#, ENV_LUCK ,@#, 풍작/다산
+
+
+enum ,@#, EForceClass ,@#, 설명없음
+
+enumItem ,@#, 공용 ,@#,  1  ,@#, FC_COMMON ,@#, 
+enumItem ,@#, 보병 ,@#,  2  ,@#, FC_INFANTRY ,@#, 
+enumItem ,@#, 궁병 ,@#,  3  ,@#, FC_ARCHER ,@#, 
+enumItem ,@#, 기병 ,@#,  4  ,@#, FC_CABALRY ,@#, 
+enumItem ,@#, 공성무기 ,@#,  5  ,@#, FC_SIEGE ,@#, 
+
+
+enum ,@#, EForcePosType ,@#, 설명없음
+
+enumItem ,@#, 마을 ,@#,  1  ,@#, FPT_TOWN ,@#, 마을
+enumItem ,@#, 성 ,@#,  2  ,@#, FPT_CASTLE ,@#, 성
+enumItem ,@#, 성지역맵 ,@#,  3  ,@#, FPT_CASTLEMAP ,@#, 성지역맵
+enumItem ,@#, 월드맵 ,@#,  4  ,@#, FPT_WORLDMAP ,@#, 월드맵
+
+
+Sys ,@#, Sys_Force ,@#, 설명없음
+
+SysItem ,@#, 숫자_ID ,@#, fsid ,@#, Sys_Force_id_t ,@#,  ,@#,  ,@#, PK ,@#,  ,@#, 병과 ID
+SysItem ,@#, 이름_ID ,@#, name ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 이름 ID
+SysItem ,@#, 병과이름 ,@#, name_kor ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 병과 이름
+SysItem ,@#, 병과분류 ,@#, force_class ,@#, EForceClass ,@#,  ,@#, EForceClass ,@#,  ,@#,  ,@#, 병과 분류
+SysItem ,@#, 병과슬롯_아이템 A ,@#, forceClassItemA ,@#, E_ClassItemA ,@#,  ,@#, E_ClassItemA ,@#,  ,@#,  ,@#, 병기 슬롯 A
+SysItem ,@#, 병과슬롯_아이템 B ,@#, forceClassItemB ,@#, E_ClassItemB ,@#,  ,@#, E_ClassItemB ,@#,  ,@#,  ,@#, 병기 슬롯 B
+SysItem ,@#, 공격력 ,@#, att ,@#, int16 ,@#, 0 ,@#, 100 ,@#,  ,@#,  ,@#, 공격력 보정
+SysItem ,@#, 방어력 ,@#, def ,@#, int16 ,@#, 0 ,@#, 100 ,@#,  ,@#,  ,@#, 방어력 보정
+SysItem ,@#, 이동_속도 ,@#, mspeed ,@#, int16 ,@#, 0 ,@#, 1000 ,@#,  ,@#,  ,@#, 이동 속도 보정
+SysItem ,@#, 공격_속도 ,@#, aspeed ,@#, int16 ,@#, 0 ,@#, 10000 ,@#,  ,@#,  ,@#, 공격 속도 보정 / msec 보정
+SysItem ,@#, 가시거리 ,@#, srange ,@#, int16 ,@#, 0 ,@#, 100 ,@#,  ,@#,  ,@#, 가시거리
+SysItem ,@#, 생존율 ,@#, suvival_ratio ,@#, int16 ,@#, 0 ,@#, 1000 ,@#,  ,@#,  ,@#, 살아날 확률 / % 랜덤값 (xx.x%)
+SysItem ,@#, 살상율 ,@#, kill_ratio ,@#, int16 ,@#, 0 ,@#, 1000 ,@#,  ,@#,  ,@#, 사망시킬 확률 / % 랜덤값 (xx.x%)
+SysItem ,@#, 클라이언트ID ,@#, client_id ,@#, int16 ,@#, 0 ,@#, 100 ,@#,  ,@#,  ,@#, 클라이언트에서 나오는 유닛 이미지 id 번호
+SysItem ,@#, 적재량 ,@#, unit_load ,@#, int16 ,@#, 0 ,@#, 100000 ,@#,  ,@#,  ,@#, 물품 적재량
+
+

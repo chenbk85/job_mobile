@@ -1,0 +1,110 @@
+
+//from(d:\svn\lib\lib_mech\src\server\testserver\sequence\testserver\..\..\protocal\pt_testserver.xml)
+
+// Basic type specification
+
+
+// Packet type specification
+
+option optimize_for = LITE_RUNTIME;
+
+
+enum EAddAccount {
+	AA_SUCCESS = 0;
+	AA_AccountDuple = 1;
+	AA_Auth = 2;
+	AA_Unkown = 3;
+} // end of enum EAddAccount
+
+
+
+message S_S_HELLO {
+}
+
+//\s_1.1.1_login.usd
+message S_X2S_LOGIN {
+	required wname32_t name = 1;
+}
+
+//\s_1.1.1_login.usd
+message S_S2X_LOGIN_OK {
+	required wname32_t server_name = 1;
+}
+
+//s_1.1.1_login.usd
+message S_S_ECHO {
+	enum EAddAccount1 {
+		AA1_SUCCESS = 0;
+		AA1_AccountDuple = 1;
+		AA1_Auth = 2;
+		AA1_Unkown = 3;
+	} // end of enum EAddAccount1
+
+	required uint8 type = 1;
+	required wstring msg = 2;
+}
+
+//\s_1.1.1_login.usd
+message S_S2X_ECHO {
+	required uint8 type = 1;
+	required wstring msg = 2;
+}
+
+//s_1.1.1_login.usd
+message S_X2S_THREAD_TEST1 {
+	required uint8 type = 1;
+	required wstring msg = 2;
+}
+
+//s_1.1.1_login.usd
+message S_X2S_THREAD_TEST2 {
+	required uint8 type = 1;
+	required wstring msg = 2;
+}
+
+//\s_1.1.1_login.usd
+message S_X2S_TEST_PACKET {
+	required int32 val = 1;
+	required string msg = 2;
+}
+
+
+message TestServer_TestClient {
+	enum Type {
+		NONE = 1;
+
+		S_HELLO = 2;
+		S2X_LOGIN_OK = 3;
+		S2X_ECHO = 4;
+	}
+
+	required Type type = 1;
+
+	optional S_S_HELLO m_S_HELLO = 2;
+	optional S_S2X_LOGIN_OK m_S2X_LOGIN_OK = 3;
+	optional S_S2X_ECHO m_S2X_ECHO = 4;
+}
+//end of message TestServer_TestClient
+
+
+message TestClient_TestServer {
+	enum Type {
+		NONE = 1;
+
+		X2S_LOGIN = 2;
+		S_ECHO = 3;
+		X2S_THREAD_TEST1 = 4;
+		X2S_THREAD_TEST2 = 5;
+		X2S_TEST_PACKET = 6;
+	}
+
+	required Type type = 1;
+
+	optional S_X2S_LOGIN m_X2S_LOGIN = 2;
+	optional S_S_ECHO m_S_ECHO = 3;
+	optional S_X2S_THREAD_TEST1 m_X2S_THREAD_TEST1 = 4;
+	optional S_X2S_THREAD_TEST2 m_X2S_THREAD_TEST2 = 5;
+	optional S_X2S_TEST_PACKET m_X2S_TEST_PACKET = 6;
+}
+//end of message TestClient_TestServer
+

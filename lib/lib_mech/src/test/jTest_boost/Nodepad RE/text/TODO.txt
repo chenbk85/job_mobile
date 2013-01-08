@@ -1,0 +1,11 @@
+- Write lots of test cases for FindTextRE and test.
+- Clean up the code (const wherever possible etc - see Effective C++ and More Effective C++)
+- Make printing like Windows Notepad
+- combo box for Find and Replace fields (save 16 most recently used to registry, display 8 without scrolling)
+- Add regex tokens to Find and Replace dlgs and extra help similar to ED for Windows
+
+HELP FILE
+=========
+
+- Table of meta characters for a quick reference
+- Advanced Examples section

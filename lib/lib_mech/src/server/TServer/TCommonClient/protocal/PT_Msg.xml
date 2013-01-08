@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<PROTOCAL HEADER="MsgServer" VERSION="1900" i_DebugPrint="3" b_jxDEFINE="true" TAG="MG">
+	<!-- CODE에서 개행문자 지원안됨. anpersent # x 0 A ; 를 사용할것-->
+	<CODE TYPE="ENUM_FILE">../my_PT_TServer.h</CODE>
+	<STRUCT_LIST/>
+	<PROTOCAL_LIST>
+		<MG_HELLO USD="c_01_03_msgserver.usd" thread_name="Job_MsgServer">
+			<si TYPE="jServerInfo"/>
+		</MG_HELLO>
+		<SS2MG_ONLINE USD="c_01_03_msgserver.usd">
+			<your_sid TYPE="serverid_t" HELP="패킷확인용&#xA;"/>
+			<my TYPE="jServerInfo"/>
+		</SS2MG_ONLINE>
+		<MG_ECHO USD="\c_01_03_msgserver.usd">
+			<msg TYPE="tname256_t"/>
+			<type TYPE="int8"/>
+		</MG_ECHO>
+		<MG_SERVERINFO_ACK USD="c_01_03_msgserver.usd" HELP="SS2MG_ONLINE을 받았을때 보낸쪽의 sid=0일때&#xA;다시 요청하여 받음.&#xA;왜냐면 sid=0이라는예기는 아직 central이나 command로&#xA;부터 sid를 발급받는중이기때문이다.">
+			<si TYPE="jServerInfo"/>
+		</MG_SERVERINFO_ACK>
+		<SS2MG_SERVERINFO_ACK USD="\c_01_03_msgserver.usd">
+			<si TYPE="jServerInfo"/>
+		</SS2MG_SERVERINFO_ACK>
+		<MG_ERROR USD="c_01_03_msgserver.usd">
+			<ei TYPE="jErrorInfo"/>
+		</MG_ERROR>
+	</PROTOCAL_LIST>
+	<CODE TYPE="ENUM_FILE"/>
+</PROTOCAL>

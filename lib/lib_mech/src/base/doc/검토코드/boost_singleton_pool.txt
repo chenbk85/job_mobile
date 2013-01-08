@@ -1,0 +1,17 @@
+
+#include <boost/pool/singleton_pool.hpp>
+
+template<class T>
+class BoostMemoryAllocT
+{
+public:
+	static void* operator new(size_t size)
+	{
+		return boost::singleton_pool<T, sizeof(T)>::malloc();
+	}
+
+	static void operator delete(void* p)
+	{
+		boost::singleton_pool<T, sizeof(T)>::free(p);
+	}
+};

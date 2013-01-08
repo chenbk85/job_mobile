@@ -1,0 +1,705 @@
+=====================================================
+<<< spirit >>>
+=	정의
+>>	항의 연결
+|	항의 선택
+*	0회 이상의 항의 반복
++	1회이상의 항의 반복
+!	0회나 1회의 항의 반복
+
+int_p		정수에 성냥
+real_p		실수에 성냥
+ch_p('X')		문자'X'에 성냥
+str_p("str")	문자열"str"에 성냥
+anychar_p	모든 무엇인가 1 문자에 성냥
+blank_p		공백이나 탭 1 문자에 성냥
+space_p		공백인가 탭이나 개행 1 문자에 성냥
+alpha_p		알파벳 1 문자에 성냥
+
+=======================================================
+
+<<< regex >>>
+기호      의미
+c         특수문자가 아니라면 문자 c를 한 번 매치한다.
+^         줄의 시작을 매치한다.
+.         새 라인이 아닌 모든 문자를 매치한다
+$         줄의 끝을 매치한다
+|         식들의 논리 OR
+()        그룹 표현
+[]        문자 클래스 정의
+*         0번 또는 그 이상의 매치
++         1번 또는 그 이상의 매치
+?         0 또는 1번의 매치
+{n}       표현식을 n번 매치
+{n,}      표현식을 최소한 n번 매치
+{n, m}    최소 n번에서 최대 m번까지 매치하는 식
+\d        숫자
+\D        숫자를 제외한 문자
+\w        _을 포함한 알파벳 문자
+\W        알파벳이 아닌 문자
+\s        공백 문자(\t, \n, \r, \f)
+\S        공백 문자가 아닌 것
+\t        탭
+\n        새 라인
+\r        캐리지 리턴
+\f        폼 피드(Form Feed)
+\m        메타 문자(^, ., $, |, (), [], *, +, ?, \, or /)들을 이스케이프
+
+
+regex_match
+(match_default|format_all) 
+원문: /downloads/w32/utils
+패턴: ([\w\d]+\/{0,1})+
+Result: False
+=================================
+regex_search
+(match_default|format_all) 
+원문: /downloads/w32/utils
+패턴: ([\w\d]+\/{0,1})+
+Result: Ok
+(0)downloads/w32/utils = 1~20
+=================================
+regex_match
+(match_default|format_all) 
+원문: /downloads/w32/utils
+패턴: ([\w\d]+\/{0,1})+
+Result: False
+=================================
+regex_match
+(match_default|format_all) 
+원문: downloads/w32/utils
+패턴: ([\w\d]+\/{0,1})+
+Result: True : [downloads/w32/utils]
+[1]utils====-12417896~-12417891
+=================================
+regex_search
+(match_default|format_all) 
+원문: downloads/w32/utils
+패턴: ([\w\d]+\/{0,1})+
+Result: Ok
+(0)downloads/w32/utils = 0~19
+=================================
+regex_match
+(match_default|format_all) 
+원문: downloads/w32/utils
+패턴: ([\w\d]+\/{0,1})+
+Result: True : [downloads/w32/utils]
+[1]utils====-12417896~-12417891
+=================================
+regex_match
+(match_default|format_all) 
+원문: 32/23/2343
+패턴: (\d{1,2})\/(\d{1,2})\/(\d{2}|\d{4})
+Result: True : [32/23/2343]
+[1]32====-140~-138
+[2]23====-140~-138
+[3]2343====-140~-136
+=================================
+regex_search
+(match_default|format_all) 
+원문: 32/23/2343
+패턴: (\d{1,2})\/(\d{1,2})\/(\d{2}|\d{4})
+Result: Ok
+(0)32/23/23 = 0~8
+=================================
+regex_match
+(match_default|format_all) 
+원문: 32/23/23433
+패턴: (\d{1,2})\/(\d{1,2})\/(\d{2}|\d{4})
+Result: False
+=================================
+regex_search
+(match_default|format_all) 
+원문: 32/23/23433
+패턴: (\d{1,2})\/(\d{1,2})\/(\d{2}|\d{4})
+Result: Ok
+(0)32/23/23 = 0~8
+=================================
+regex_match
+(match_default|format_all) 
+원문: 32/23/2343
+패턴: (\d{1,2})\/(\d{1,2})\/(\d{2}|\d{4})
+Result: True : [32/23/2343]
+[1]32====-140~-138
+[2]23====-140~-138
+[3]2343====-140~-136
+=================================
+regex_match
+(match_default|format_all) 
+원문: http://www.foo.com/bar
+패턴: (ftp|http|https):\/\/(\w+\.)*(\w*)\/([\w\d]+\/{0,1})+
+Result: True : [http://www.foo.com/bar]
+[1]http====-12420472~-12420468
+[2]foo.====-12420472~-12420468
+[3]com====-12420472~-12420469
+[4]bar====-12420472~-12420469
+=================================
+regex_search
+(match_default|format_all) 
+원문: http://www.foo.com/bar
+패턴: (ftp|http|https):\/\/(\w+\.)*(\w*)\/([\w\d]+\/{0,1})+
+Result: Ok
+(0)http://www.foo.com/bar = 0~22
+=================================
+regex_match
+(match_default|format_all) 
+원문: ftp://downloads.foo.com/apps/linux/patch.gz
+패턴: (ftp|http|https):\/\/(\w+\.)*(\w*)\/([\w\d]+\/{0,1})+
+Result: False
+=================================
+regex_match
+(match_default|format_all) 
+원문: ftp://downloads.foo.com/apps/linux/patch
+패턴: (ftp|http|https):\/\/(\w+\.)*(\w*)\/([\w\d]+\/{0,1})+
+Result: True : [ftp://downloads.foo.com/apps/linux/patch]
+[1]ftp====-12420512~-12420509
+[2]foo.====-12420512~-12420508
+[3]com====-12420512~-12420509
+[4]patch====-12420512~-12420507
+=================================
+regex_match
+(match_default|format_all) 
+원문: ftp://downloads.foo.com/apps/linux/patch.zip
+패턴: (ftp|http|https):\/\/(\w+\.)*(\w*)\/([\w\d]+\/{0,1})+
+Result: False
+=================================
+regex_match
+(match_default|format_all) 
+원문: ftp://downloads.foo.com/apps/linux/patch.zip
+패턴: (ftp|http|https):\/\/(\w+\.)*(\w*)\/([\w\d]+\/{0,1})*
+Result: False
+=================================
+regex_match
+(match_default|format_all) 
+원문: http://www.foo.com/bar
+패턴: (ftp|http|https):\/\/(\w+\.)*(\w*)\/([\w\d]+\/{0,1})+
+Result: True : [http://www.foo.com/bar]
+[1]http====-12420512~-12420508
+[2]foo.====-12420512~-12420508
+[3]com====-12420512~-12420509
+[4]bar====-12420512~-12420509
+=================================
+regex_match
+(match_default|format_all) 
+원문: http://www.foo.com/bar
+패턴: (ftp|http|https):\/\/((\w+\.)*(\w*))\/([\w\d]+\/{0,1})+
+Result: True : [http://www.foo.com/bar]
+[1]http====-12420512~-12420508
+[2]www.foo.com====-12420512~-12420501
+[3]foo.====-12420512~-12420508
+[4]com====-12420512~-12420509
+[5]bar====-12420512~-12420509
+=================================
+regex_match
+(match_default|format_all) 
+원문:   <td width="294" align="left" rowspan="3">          <a href="http://network.hanbitbook.co.kr"><img src="http://image.hanbitbook.co.kr/graphics/hanbit_network_main.jpg" border="0"></a><BR>          </td>          <td align="right" valign="top">            <!-- 회원메뉴 시작 -->            <table cellspacing="0" cellpadding="0" border="0">
+패턴: <a\s+href="([\-:\w\d\.\/]+)">
+Result: False
+=================================
+regex_search
+(match_default|format_all) 
+원문:   <td width="294" align="left" rowspan="3">          <a href="http://network.hanbitbook.co.kr"><img src="http://image.hanbitbook.co.kr/graphics/hanbit_network_main.jpg" border="0"></a><BR>          </td>          <td align="right" valign="top">            <!-- 회원메뉴 시작 -->            <table cellspacing="0" cellpadding="0" border="0">
+패턴: <a\s+href="([\-:\w\d\.\/]+)">
+Result: Ok
+(0)<a href="http://network.hanbitbook.co.kr"> = 55~97
+=================================
+regex_search
+(match_default|format_all) 
+원문:   <td width="294" align="left" rowspan="3">          <a href="http://network.hanbitbook.co.kr"><img src="http://image.hanbitbook.co.kr/graphics/hanbit_network_main.jpg" border="0"></a><BR>          </td>          <td align="right" valign="top">            <!-- 회원메뉴 시작 -->            <table cellspacing="0" cellpadding="0" border="0">
+패턴: 회원메뉴
+Result: Ok
+(0)회원메뉴 = 269~277
+=================================
+regex_match[case ok]
+(match_default|format_all) 
+원문: aaa
+패턴: a+
+Result: True : [aaa]
+=================================
+regex_search[case ok]
+(match_default|format_all) 
+원문: aaa
+패턴: a+
+Result: Ok
+(0)aaa = 0~3
+=================================
+regex_match[case ok]
+(match_default|format_all) 
+원문: aaA
+패턴: a+
+Result: False
+=================================
+regex_search[case ok]
+(match_default|format_all) 
+원문: aaA
+패턴: a+
+Result: Ok
+(0)aaA = 0~3
+=================================
+regex_search[no case]
+(match_default|format_all) 
+원문: aaA
+패턴: a+
+Result: Ok
+(0)aa = 0~2
+=================================
+regex_match[no case]
+(match_default|format_all) 
+원문: aaA
+패턴: a+
+Result: False
+=================================
+regex_search[no case]
+(match_default|format_all) 
+원문: aaA
+패턴: a+
+Result: Ok
+(0)aa = 0~2
+=================================
+regex_match[case ok]
+(match_default|format_all) 
+원문: AA
+패턴: a+
+Result: False
+=================================
+regex_search[case ok]
+(match_default|format_all) 
+원문: AA
+패턴: a+
+Result: Fail
+=================================
+regex_search[no case]
+(match_default|format_all) 
+원문: AA
+패턴: a+
+Result: Ok
+(0)AA = 0~2
+=================================
+regex_match[no case]
+(match_default|format_all) 
+원문: AA
+패턴: a+
+Result: False
+=================================
+regex_search[no case]
+(match_default|format_all) 
+원문: AA
+패턴: a+
+Result: Ok
+(0)AA = 0~2
+=================================
+regex_match[no case]
+(match_default|format_all) 
+원문: a
+패턴: a+
+Result: True : [a]
+=================================
+regex_search[no case]
+(match_default|format_all) 
+원문: a
+패턴: a+
+Result: Ok
+(0)a = 0~1
+=================================
+regex_match[no case]
+(match_default|format_all) 
+원문: A
+패턴: a+
+Result: False
+=================================
+regex_search[no case]
+(match_default|format_all) 
+원문: A
+패턴: a+
+Result: Ok
+(0)A = 0~1
+=================================
+regex_match[case ok]
+(match_default|format_all) 
+원문: A
+패턴: a+
+Result: False
+=================================
+regex_match[case ok]
+(match_default|format_all) 
+원문: a
+패턴: a+
+바꾸기: 
+Result: True : [a]
+=================================
+regex_search[case ok]
+(match_default|format_all) 
+원문: a
+패턴: a+
+바꾸기: 
+Result: Ok
+(0)a = 0~1
+=================================
+regex_match[case ok]
+(match_default|format_all) 
+원문: aA
+패턴: a+
+바꾸기: 
+Result: False
+=================================
+regex_search[case ok]
+(match_default|format_all) 
+원문: aA
+패턴: a+
+바꾸기: 
+Result: Ok
+(0)a = 0~1
+=================================
+regex_search[no case]
+(match_default|format_all) 
+원문: aA
+패턴: a+
+바꾸기: 
+Result: Ok
+(0)aA = 0~2
+=================================
+regex_match[no case]
+(match_default|format_all) 
+원문: aA
+패턴: a+
+바꾸기: 
+Result: False
+=================================
+regex_search[no case]
+(match_default|format_all) 
+원문: aA
+패턴: a+
+바꾸기: 
+Result: Ok
+(0)aA = 0~2
+=================================
+regex_match[case ok]
+(match_default|format_all) 
+원문: a
+패턴: a+
+바꾸기: 
+Result: True : [a]
+=================================
+regex_search[case ok]
+(match_default|format_all) 
+원문: a
+패턴: a+
+바꾸기: 
+Result: Ok
+(0)a = 0~1
+=================================
+regex_replace[case ok]
+(match_default|format_all) 
+원문: a
+패턴: a+
+바꾸기: 
+Result: 
+=================================
+regex_search[case ok]
+(match_default|format_all) 
+원문: A
+패턴: a+
+바꾸기: 
+Result: Fail
+=================================
+regex_match[case ok]
+(match_default|format_all) 
+원문: A
+패턴: a+
+바꾸기: 
+Result: False
+=================================
+regex_search[no case]
+(match_default|format_all) 
+원문: A
+패턴: a+
+바꾸기: 
+Result: Ok
+(0)A = 0~1
+=================================
+regex_match[no case]
+(match_default|format_all) 
+원문: A
+패턴: a+
+바꾸기: 
+Result: True : [A]
+=================================
+regex_search[no case]
+(match_default|format_all) 
+원문: Aa
+패턴: a+
+바꾸기: 
+Result: Ok
+(0)Aa = 0~2
+=================================
+regex_match[no case]
+(match_default|format_all) 
+원문: Aa
+패턴: a+
+바꾸기: 
+Result: True : [Aa]
+=================================
+regex_search[case ok]
+(match_default|format_all) 
+원문: Aa
+패턴: a+
+바꾸기: 
+Result: Ok
+(0)a = 1~2
+=================================
+regex_match[case ok]
+(match_default|format_all) 
+원문: Aa
+패턴: a+
+바꾸기: 
+Result: False
+=================================
+regex_search[case ok]
+(match_default|format_all) 
+원문: Aa
+패턴: a+
+바꾸기: 
+Result: Ok
+(0)a = 1~2
+=================================
+regex_search[case ok]
+(match_default|format_all) 
+원문: 2344-2344 9832 3432
+패턴: (\d{4}[- ]){3}\d{4}
+바꾸기: 
+결과: Ok
+(0)2344-2344 9832 3432 = 0~19
+설명: 
+=================================
+regex_match[case ok]
+(match_default|format_all) 
+원문: 2344-2344 9832 3432
+패턴: (\d{4}[- ]){3}\d{4}
+바꾸기: 
+결과: True : [2344-2344 9832 3432]
+[1]9832 ====-12418628~-12418623
+설명: 괄호는 그룹을 나타내기 위한 것이다. {4}가 나타내는 것은 "정확히 4번 반복"한다는 말이다
+=================================
+regex_match[case ok]
+(match_default|format_all) 
+원문: 2344-2344 9832 3432
+패턴: (\d{4}[- ]){3}\d{4}
+바꾸기: 
+결과: True : [2344-2344 9832 3432]
+[1]9832 ====-12418500~-12418495
+설명: 설명: 괄호는 그룹을 나타내기 위한 것이다. 23
+{4}가 나타내는 것은 "정확히 4번 반복"한다는 말이다
+=================================
+regex_search[case ok]
+(match_default|format_all) 
+원문: 2344-2344 9832 3432
+패턴: (\d{4}[- ]){3}\d{4}
+바꾸기: 
+결과: Ok
+(0)2344-2344 9832 3432 = 0~19
+설명: 설명: 괄호는 그룹을 나타내기 위한 것이다. 23
+{4}가 나타내는 것은 "정확히 4번 반복"한다는 말이다
+=================================
+regex_replace[case ok]
+(match_default|format_all) 
+원문: 2344-2344 9832 3432
+패턴: \A(\d{3,4})[- ]?(\d{4})[- ]?(\d{4})[- ]?(\d{4})\z
+바꾸기: \1\2\3\4
+결과: 2344234498323432
+설명: 신용 카드 번호를 기계용으로.
+=================================
+regex_replace[case ok]
+(match_default|format_all) 
+원문: 2344-2344 9832 3432
+패턴: \A(\d{3,4})[- ]?(\d{4})[- ]?(\d{4})[- ]?(\d{4})\z
+바꾸기: \1-\2-\3-\4
+결과: 2344-2344-9832-3432
+설명: 기계용을 신용 카드 번호로
+=================================
+regex_search[case ok]
+(match_default|format_all) 
+원문: TestCase is WikiName. but TESTCase is not WikiName! Is [this] WikiName?
+패턴: ([A-Z][a-z]+[A-Z][a-z]+|\[.*\])
+결과: Ok
+(0)TestCase = 0~8
+(1)WikiName = 12~20
+(2)WikiName = 42~50
+(3)[this] = 55~61
+(4)WikiName = 62~70
+설명: 문자열 내부에서 표현식에 일치하는 부분 모두 출력하기
+
+=================================
+regex_match[case ok]
+(match_default|format_all) 
+원문: TestCase is WikiName. but TESTCase is not WikiName! Is [this] WikiName?
+패턴: ([A-Z][a-z]+[A-Z][a-z]+|\[.*\])
+결과: False
+설명: 문자열 내부에서 표현식에 일치하는 부분 모두 출력하기
+
+=================================
+regex_replace[case ok]
+(match_default|format_all) 
+원문: TestCase is WikiName. but TESTCase is not WikiName! Is [this] WikiName?
+패턴: ([A-Z][a-z]+[A-Z][a-z]+|\[.*\])
+바꾸기: {{$0}}
+결과: {{TestCase}} is {{WikiName}}. but TESTCase is not {{WikiName}}! Is {{[this]}} {{WikiName}}?
+설명: 일치하는 문자열 치환하기
+http://serious-code.net/moin.cgi/BoostRegex
+=================================
+regex_match[case ok]
+(match_default|format_all) 
+원문: Johnston
+패턴: Johnst{0,1}on
+결과: True : [Johnston]
+설명: 어떤 사람의 이름이 Johnson인지, Johnston인지 찾아보고 싶다면 다음과 같이 쓸 수 있다
+Johnst{0,1}on
+Johnson|Johnston
+Johns(on|ton)
+=================================
+regex_search[case ok]
+(match_default|format_all) 
+원문: Johnston
+패턴: Johnst{0,1}on
+결과: Ok
+(0)Johnston = 0~8
+설명: 어떤 사람의 이름이 Johnson인지, Johnston인지 찾아보고 싶다면 다음과 같이 쓸 수 있다
+Johnst{0,1}on
+Johnson|Johnston
+Johns(on|ton)
+=================================
+regex_search[case ok]
+(match_default|format_all) 
+원문: Johnston Johnson
+패턴: Johnst{0,1}on
+결과: Ok
+(0)Johnston = 0~8
+(1)Johnson = 9~16
+설명: 어떤 사람의 이름이 Johnson인지, Johnston인지 찾아보고 싶다면 다음과 같이 쓸 수 있다
+Johnst{0,1}on
+Johnson|Johnston
+Johns(on|ton)
+=================================
+regex_match[case ok]
+(match_default|format_all) 
+원문: Johnston Johnson
+패턴: Johnst{0,1}on
+결과: False
+설명: 어떤 사람의 이름이 Johnson인지, Johnston인지 찾아보고 싶다면 다음과 같이 쓸 수 있다
+Johnst{0,1}on
+Johnson|Johnston
+Johns(on|ton)
+=================================
+regex_search[case ok]
+(match_default|format_all) 
+원문: aaaaaabbbbb
+패턴: a+|b+
+결과: Ok
+(0)a = 0~1
+(1)aaaaa = 3~8
+(2)b = 10~11
+(3)bbbb = 13~17
+설명: a가 한 번 이상 나오거나 b가 한 번 이상 나오는 문자열을 매치한다
+=================================
+regex_match[case ok]
+(match_default|format_all) 
+원문: aaaaaabbbbb
+패턴: a+|b+
+결과: False
+설명: a가 한 번 이상 나오거나 b가 한 번 이상 나오는 문자열을 매치한다
+=================================
+regex_match[case ok]
+(match_default|format_all) 
+원문: a
+패턴: a+|b+
+결과: True : [a]
+설명: a가 한 번 이상 나오거나 b가 한 번 이상 나오는 문자열을 매치한다
+=================================
+regex_search[case ok]
+(match_default|format_all) 
+원문: ftp://downloads.foo.com/apps/linux/patch.gz
+패턴: (ftp|http|https):\/\/(\w+\.)*(\w*)\/([\w\d]+\/{0,1})+
+결과: Ok
+(0)ftp://downloads.foo.com/apps/linux/patch = 0~40
+설명: FTP, HTTP, HTTPS 프로토콜을 사용할 수 있으며, URL을 검사하는 정규식은 다음과 같다
+=================================
+regex_match[case ok]
+(match_default|format_all) 
+원문: ftp://downloads.foo.com/apps/linux/patch.gz
+패턴: (ftp|http|https):\/\/(\w+\.)*(\w*)\/([\w\d]+\/{0,1})+
+결과: False
+설명: FTP, HTTP, HTTPS 프로토콜을 사용할 수 있으며, URL을 검사하는 정규식은 다음과 같다
+=================================
+regex_search[case ok]
+(match_default|format_all) 
+원문: foo.com
+패턴: (\w+W.)*(\w*)
+결과: Ok
+(0)foo = 0~3
+설명: foo.com 또는 foo와 같은 형태를 허용하는 
+=================================
+regex_match[case ok]
+(match_default|format_all) 
+원문: foo.com
+패턴: (\w+W.)*(\w*)
+결과: False
+설명: foo.com 또는 foo와 같은 형태를 허용하는 
+=================================
+regex_search[case ok]
+(match_default|format_all) 
+원문: /downloads/w32/utils
+패턴: ([\w\d]+\/{0,1})+
+결과: Ok
+(0)downloads/w32/utils = 1~20
+설명: /downloads/w32/utils와 같은 형태의 경로 이름을 매치한다
+=================================
+regex_match[case ok]
+(match_default|format_all) 
+원문: /downloads/w32/utils
+패턴: ([\w\d]+\/{0,1})+
+결과: False
+설명: /downloads/w32/utils와 같은 형태의 경로 이름을 매치한다
+=================================
+regex_match[case ok]
+(match_default|format_all) 
+원문: 23/23/4322
+패턴: (\d{1,2})\/(\d{1,2})\/(\d{2}|\d{4})
+결과: True : [23/23/4322]
+[1]23====-140~-138
+[2]23====-140~-138
+[3]4322====-140~-136
+설명: MM/DD/YY 또는 MM/DD/YYYY의 형태로 된 날짜들을 매치한다
+=================================
+regex_search[case ok]
+(match_default|format_all) 
+원문: 23/23/4322
+패턴: (\d{1,2})\/(\d{1,2})\/(\d{2}|\d{4})
+결과: Ok
+(0)23/23/43 = 0~8
+설명: MM/DD/YY 또는 MM/DD/YYYY의 형태로 된 날짜들을 매치한다
+=================================
+regex_match[case ok]
+(match_default|format_all) 
+원문: 23/23/43
+패턴: (\d{1,2})\/(\d{1,2})\/(\d{2}|\d{4})
+결과: True : [23/23/43]
+[1]23====-140~-138
+[2]23====-140~-138
+[3]43====-140~-138
+설명: MM/DD/YY 또는 MM/DD/YYYY의 형태로 된 날짜들을 매치한다
+=================================
+regex_search[case ok]
+(match_default|format_all) 
+원문:           <a href="http://network.hanbitbook.co.kr"><img src="http://image.hanbitbook.co.kr/graphics/hanbit_network_main.jpg" border="0"></a><BR>          </td>
+패턴: <a\s+href="([\-:\w\d\.\/]+)">
+결과: Ok
+(0)<a href="http://network.hanbitbook.co.kr"> = 10~52
+설명: URL링크검색
+=================================
+regex_search[case ok]
+(match_default|format_all) 
+원문: The HTML tag <title > means that ...
+패턴: <[^>]+>
+결과: Ok
+(0)<title > = 13~21
+설명: <로 시작하고 >로 끝나는 문자열 찾기
+=================================

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<excel_castle>
+	<enum>
+		<Evillage_Condition HELP="설명없음">
+			<EVC_Normal>
+				<name>일반</name>
+				<value>1</value>
+				<name_eng>EVC_Normal</name_eng>
+				<help>보통 상태</help>
+			</EVC_Normal>
+			<EVC_OCCUPY>
+				<name>점령중</name>
+				<value>2</value>
+				<name_eng>EVC_OCCUPY</name_eng>
+				<help>점령중인 상태</help>
+			</EVC_OCCUPY>
+			<EVC_INACTIVE>
+				<name>장기비접속</name>
+				<value>3</value>
+				<name_eng>EVC_INACTIVE</name_eng>
+				<help>장기비적속유저</help>
+			</EVC_INACTIVE>
+			<EVC_ONLINE>
+				<name>온라인</name>
+				<value>4</value>
+				<name_eng>EVC_ONLINE</name_eng>
+				<help>온라인 유저</help>
+			</EVC_ONLINE>
+			<EVC_OFFLINE>
+				<name>오프라인</name>
+				<value>5</value>
+				<name_eng>EVC_OFFLINE</name_eng>
+				<help>오프라인 유저</help>
+			</EVC_OFFLINE>
+		</Evillage_Condition>
+	</enum>
+	<Sys>
+		<Sys_Castle HELP="설명없음">
+			<csid>
+				<name>숫자_ID</name>
+				<name_eng>csid</name_eng>
+				<data_type>uint16</data_type>
+				<min/>
+				<max/>
+				<db_type>PK</db_type>
+				<type_note/>
+				<help/>
+			</csid>
+			<name>
+				<name>이름_ID</name>
+				<name_eng>name</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>월드랑 연동</help>
+			</name>
+			<name_kor>
+				<name>성_이름</name>
+				<name_eng>name_kor</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</name_kor>
+			<default_gsid>
+				<name>기본_태수</name>
+				<name_eng>default_gsid</name_eng>
+				<data_type>Sys_Hero_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>제너럴 sid 입력</help>
+			</default_gsid>
+			<force_gen_name>
+				<name>부대생성규칙이름</name>
+				<name_eng>force_gen_name</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>bin/server/xml/NpcCastle.xml</help>
+			</force_gen_name>
+		</Sys_Castle>
+		<Sys_CastlePos HELP="설명없음">
+			<cpsid>
+				<name>성 sid</name>
+				<name_eng>cpsid</name_eng>
+				<data_type>Sys_Castle_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type>PK</db_type>
+				<type_note/>
+				<help/>
+			</cpsid>
+			<x>
+				<name>x</name>
+				<name_eng>x</name_eng>
+				<data_type>uint16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</x>
+			<y>
+				<name>y</name>
+				<name_eng>y</name_eng>
+				<data_type>uint16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</y>
+			<castle_map>
+				<name>castle_map파일</name>
+				<name_eng>castle_map</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>성지역의 마을 배치정보파일</help>
+			</castle_map>
+		</Sys_CastlePos>
+		<Sys_TownPos HELP="설명없음">
+			<tpsid>
+				<name>숫자_ID</name>
+				<name_eng>tpsid</name_eng>
+				<data_type>Sys_TownPos_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type>PK</db_type>
+				<type_note/>
+				<help/>
+			</tpsid>
+			<x>
+				<name>x</name>
+				<name_eng>x</name_eng>
+				<data_type>uint16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</x>
+			<y>
+				<name>y</name>
+				<name_eng>y</name_eng>
+				<data_type>uint16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</y>
+			<town_map_type>
+				<name>타운맵파일명</name>
+				<name_eng>town_map_type</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물슬롯배치정보가 포함된 타운맵파일명</help>
+			</town_map_type>
+			<object_id>
+				<name>오브젝트 ID</name>
+				<name_eng>object_id</name_eng>
+				<data_type>uint16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>오브젝트 정보</help>
+			</object_id>
+		</Sys_TownPos>
+	</Sys>
+</excel_castle>

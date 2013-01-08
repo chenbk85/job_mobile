@@ -1,0 +1,733 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>C_01_03_CommandServer</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="58">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>232</objId>
+            <ptul X="566" Y="12" />
+            <ptdr X="652" Y="52" />
+            <links num="0" />
+            <objectName>CentralServer</objectName>
+            <className>C</className>
+            <actBoxes num="5">
+                <actBox id="236" />
+                <actBox id="238" />
+                <actBox id="242" />
+                <actBox id="243" />
+                <actBox id="247" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>233</objId>
+            <ptul X="284" Y="8" />
+            <ptdr X="388" Y="48" />
+            <links num="0" />
+            <objectName>CommandServer</objectName>
+            <className>CD</className>
+            <actBoxes num="15">
+                <actBox id="235" />
+                <actBox id="239" />
+                <actBox id="241" />
+                <actBox id="244" />
+                <actBox id="251" />
+                <actBox id="253" />
+                <actBox id="267" />
+                <actBox id="268" />
+                <actBox id="264" />
+                <actBox id="259" />
+                <actBox id="272" />
+                <actBox id="276" />
+                <actBox id="279" />
+                <actBox id="283" />
+                <actBox id="286" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>234</objId>
+            <points num="2">
+                <pt x="343" y="67" />
+                <pt x="601" y="67" />
+            </points>
+            <objStart id="235" />
+            <objEnd id="236" />
+            <message messType="MRET">tcp connect</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>235</objId>
+            <ptul X="328" Y="62" />
+            <ptdr X="343" Y="92" />
+            <links num="1">
+                <link id="234" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>236</objId>
+            <ptul X="601" Y="62" />
+            <ptdr X="616" Y="92" />
+            <links num="1">
+                <link id="234" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>237</objId>
+            <points num="2">
+                <pt x="343" y="136" />
+                <pt x="601" y="136" />
+            </points>
+            <objStart id="241" />
+            <objEnd id="242" />
+            <message messType="MGEN">SS2C_ONLINE</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>238</objId>
+            <ptul X="601" Y="97" />
+            <ptdr X="616" Y="127" />
+            <links num="1">
+                <link id="240" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>239</objId>
+            <ptul X="328" Y="97" />
+            <ptdr X="343" Y="127" />
+            <links num="1">
+                <link id="240" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>240</objId>
+            <points num="2">
+                <pt x="601" y="102" />
+                <pt x="343" y="102" />
+            </points>
+            <objStart id="238" />
+            <objEnd id="239" />
+            <message messType="MGEN">C_HELLO</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>241</objId>
+            <ptul X="328" Y="131" />
+            <ptdr X="343" Y="161" />
+            <links num="1">
+                <link id="237" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>242</objId>
+            <ptul X="601" Y="131" />
+            <ptdr X="616" Y="161" />
+            <links num="1">
+                <link id="237" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>243</objId>
+            <ptul X="601" Y="168" />
+            <ptdr X="616" Y="198" />
+            <links num="1">
+                <link id="245" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>244</objId>
+            <ptul X="328" Y="168" />
+            <ptdr X="343" Y="198" />
+            <links num="1">
+                <link id="245" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>245</objId>
+            <points num="2">
+                <pt x="601" y="173" />
+                <pt x="343" y="173" />
+            </points>
+            <objStart id="243" />
+            <objEnd id="244" />
+            <message messType="MGEN">C2SS_ONLINE_OK</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>246</objId>
+            <ptul X="780" Y="14" />
+            <ptdr X="848" Y="54" />
+            <links num="0" />
+            <objectName>Servers</objectName>
+            <className>SS</className>
+            <actBoxes num="12">
+                <actBox id="248" />
+                <actBox id="250" />
+                <actBox id="254" />
+                <actBox id="257" />
+                <actBox id="261" />
+                <actBox id="263" />
+                <actBox id="269" />
+                <actBox id="271" />
+                <actBox id="275" />
+                <actBox id="280" />
+                <actBox id="282" />
+                <actBox id="287" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>247</objId>
+            <ptul X="601" Y="197" />
+            <ptdr X="616" Y="227" />
+            <links num="1">
+                <link id="249" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>248</objId>
+            <ptul X="806" Y="197" />
+            <ptdr X="821" Y="227" />
+            <links num="1">
+                <link id="249" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>249</objId>
+            <points num="2">
+                <pt x="616" y="202" />
+                <pt x="806" y="202" />
+            </points>
+            <objStart id="247" />
+            <objEnd id="248" />
+            <message messType="MGEN">C_SERVER_ONLINE</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>250</objId>
+            <ptul X="806" Y="228" />
+            <ptdr X="821" Y="258" />
+            <links num="1">
+                <link id="252" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>251</objId>
+            <ptul X="328" Y="228" />
+            <ptdr X="343" Y="258" />
+            <links num="1">
+                <link id="252" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>252</objId>
+            <points num="2">
+                <pt x="806" y="233" />
+                <pt x="343" y="233" />
+            </points>
+            <objStart id="250" />
+            <objEnd id="251" />
+            <message messType="MRET">tcp connect</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>253</objId>
+            <ptul X="328" Y="288" />
+            <ptdr X="343" Y="318" />
+            <links num="1">
+                <link id="255" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>254</objId>
+            <ptul X="806" Y="288" />
+            <ptdr X="821" Y="318" />
+            <links num="1">
+                <link id="255" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>255</objId>
+            <points num="2">
+                <pt x="343" y="293" />
+                <pt x="806" y="293" />
+            </points>
+            <objStart id="253" />
+            <objEnd id="254" />
+            <message messType="MGEN">CD_HELLO</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>256</objId>
+            <points num="2">
+                <pt x="806" y="340" />
+                <pt x="343" y="340" />
+            </points>
+            <objStart id="257" />
+            <objEnd id="267" />
+            <message messType="MGEN">SS2CD_ONLINE</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>257</objId>
+            <ptul X="806" Y="335" />
+            <ptdr X="821" Y="365" />
+            <links num="1">
+                <link id="256" />
+            </links>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>if (central not exist)</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>258</objId>
+            <ptul X="173" Y="404" />
+            <ptdr X="317" Y="423" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>259</objId>
+            <ptul X="328" Y="407" />
+            <ptdr X="343" Y="447" />
+            <links num="1">
+                <link id="270" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>260</objId>
+            <points num="2">
+                <pt x="343" y="763" />
+                <pt x="806" y="763" />
+            </points>
+            <objStart id="286" />
+            <objEnd id="287" />
+            <message messType="MGEN">CD_ERROR</message>
+            <guardCond>ei-jErrorInfo</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>261</objId>
+            <ptul X="806" Y="371" />
+            <ptdr X="821" Y="401" />
+            <links num="1">
+                <link id="262" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>262</objId>
+            <points num="2">
+                <pt x="343" y="376" />
+                <pt x="806" y="376" />
+            </points>
+            <objStart id="268" />
+            <objEnd id="261" />
+            <message messType="MGEN">CD2SS_ONLINE_OK</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>263</objId>
+            <ptul X="806" Y="706" />
+            <ptdr X="821" Y="736" />
+            <links num="1">
+                <link id="265" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>264</objId>
+            <ptul X="328" Y="706" />
+            <ptdr X="343" Y="736" />
+            <links num="1">
+                <link id="265" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>265</objId>
+            <points num="2">
+                <pt x="806" y="711" />
+                <pt x="343" y="711" />
+            </points>
+            <objStart id="263" />
+            <objEnd id="264" />
+            <message messType="MGEN">CD_ECHO</message>
+            <guardCond>msg-tname256_t,type-int8</guardCond>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[CD2SS_ONLINE_OK]&#x0A;Central서버가 죽었을때만 대신 해서 보냄.&#x0A;Command에 접속하고 있는 다른서버들정보를 보낸다.&#x0A;{PARAM}&#x0A;you-jServerInfo&#x0A;s-jServerInfo[?]</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>266</objId>
+            <ptul X="832" Y="313" />
+            <ptdr X="1189" Y="421" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>267</objId>
+            <ptul X="328" Y="335" />
+            <ptdr X="343" Y="360" />
+            <links num="1">
+                <link id="256" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>268</objId>
+            <ptul X="328" Y="373" />
+            <ptdr X="343" Y="398" />
+            <links num="1">
+                <link id="262" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>269</objId>
+            <ptul X="806" Y="417" />
+            <ptdr X="821" Y="447" />
+            <links num="1">
+                <link id="270" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>270</objId>
+            <points num="2">
+                <pt x="343" y="422" />
+                <pt x="806" y="422" />
+            </points>
+            <objStart id="259" />
+            <objEnd id="269" />
+            <message messType="MGEN">CD_SERVER_ONLINE</message>
+            <guardCond>s-jServerInfo</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>271</objId>
+            <ptul X="806" Y="596" />
+            <ptdr X="821" Y="626" />
+            <links num="1">
+                <link id="273" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>272</objId>
+            <ptul X="328" Y="596" />
+            <ptdr X="343" Y="626" />
+            <links num="1">
+                <link id="273" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>273</objId>
+            <points num="2">
+                <pt x="806" y="601" />
+                <pt x="343" y="601" />
+            </points>
+            <objStart id="271" />
+            <objEnd id="272" />
+            <message messType="MRET">tcp disconnect</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>274</objId>
+            <points num="2">
+                <pt x="343" y="646" />
+                <pt x="806" y="646" />
+            </points>
+            <objStart id="276" />
+            <objEnd id="275" />
+            <message messType="MGEN">CD_SERVER_OFFLINE</message>
+            <guardCond>sid-serverid_t</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>275</objId>
+            <ptul X="806" Y="641" />
+            <ptdr X="821" Y="671" />
+            <links num="1">
+                <link id="274" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>276</objId>
+            <ptul X="328" Y="621" />
+            <ptdr X="343" Y="671" />
+            <links num="1">
+                <link id="274" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[SS2CD_ONLINE]&#x0A;어떤 서버가 CommandServer에 접속했다.&#x0A;만약 CentralServer가 죽었고 si.m_sid==0이면 &#x0A;Command가 sid를 발급해준다.&#x0A;{PARAM}&#x0A;your_sid-serverid_t&#x0A;my-jServerInfo</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>277</objId>
+            <ptul X="28" Y="429" />
+            <ptdr X="321" Y="553" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[CD_SERVERINFO_ACK]&#x0A;SS2CD_ONLINE을 받았을때 보낸쪽의 sid=0일때&#x0A;다시 요청하여 받음.&#x0A;&#x0A;{PARAM}&#x0A;si-jServerInfo</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>278</objId>
+            <ptul X="835" Y="467" />
+            <ptdr X="1149" Y="575" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>279</objId>
+            <ptul X="328" Y="487" />
+            <ptdr X="343" Y="517" />
+            <links num="1">
+                <link id="284" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>280</objId>
+            <ptul X="806" Y="487" />
+            <ptdr X="821" Y="517" />
+            <links num="1">
+                <link id="284" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>281</objId>
+            <points num="2">
+                <pt x="806" y="533" />
+                <pt x="343" y="533" />
+            </points>
+            <objStart id="282" />
+            <objEnd id="283" />
+            <message messType="MGEN">SS2CD_SERVERINFO_ACK</message>
+            <guardCond>si-jServerInfo</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>282</objId>
+            <ptul X="806" Y="528" />
+            <ptdr X="821" Y="558" />
+            <links num="1">
+                <link id="281" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>283</objId>
+            <ptul X="328" Y="528" />
+            <ptdr X="343" Y="558" />
+            <links num="1">
+                <link id="281" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>284</objId>
+            <points num="2">
+                <pt x="343" y="495" />
+                <pt x="806" y="495" />
+            </points>
+            <objStart id="279" />
+            <objEnd id="280" />
+            <message messType="MGEN">CD_SERVERINFO_ACK</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[CD_HELLO]&#x0A;{PARAM}&#x0A;si-jServerInfo&#x0A;&#x0A;{OPTION}&#x0A;thread_name=Job_CommandServer</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>285</objId>
+            <ptul X="98" Y="257" />
+            <ptdr X="312" Y="365" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>286</objId>
+            <ptul X="328" Y="758" />
+            <ptdr X="343" Y="788" />
+            <links num="1">
+                <link id="260" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>287</objId>
+            <ptul X="806" Y="758" />
+            <ptdr X="821" Y="788" />
+            <links num="1">
+                <link id="260" />
+            </links>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>if (central not exist)</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>288</objId>
+            <ptul X="216" Y="572" />
+            <ptdr X="360" Y="591" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[CD_ERROR]&#x0A;{PARAM}&#x0A;ei-jErrorInfo</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>289</objId>
+            <ptul X="833" Y="711" />
+            <ptdr X="920" Y="771" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

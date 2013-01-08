@@ -1,0 +1,111 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>Orb_2_5_5_XML</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="8">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>60</objId>
+            <ptul X="85" Y="48" />
+            <ptdr X="153" Y="88" />
+            <links num="0" />
+            <objectName>OrbTool</objectName>
+            <className>T</className>
+            <actBoxes num="2">
+                <actBox id="95" />
+                <actBox id="104" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>61</objId>
+            <ptul X="436" Y="47" />
+            <ptdr X="504" Y="87" />
+            <links num="0" />
+            <objectName>OrbHost</objectName>
+            <className>H</className>
+            <actBoxes num="2">
+                <actBox id="96" />
+                <actBox id="105" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>95</objId>
+            <ptul X="111" Y="142" />
+            <ptdr X="126" Y="172" />
+            <links num="1">
+                <link id="97" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>96</objId>
+            <ptul X="462" Y="142" />
+            <ptdr X="477" Y="172" />
+            <links num="1">
+                <link id="97" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>97</objId>
+            <points num="2">
+                <pt x="126" y="147" />
+                <pt x="462" y="147" />
+            </points>
+            <objStart id="95" />
+            <objEnd id="96" />
+            <message messType="MGEN">ORB_SEND_XML</message>
+            <guardCond>xml-jIE*</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>104</objId>
+            <ptul X="111" Y="228" />
+            <ptdr X="126" Y="258" />
+            <links num="1">
+                <link id="106" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>105</objId>
+            <ptul X="462" Y="228" />
+            <ptdr X="477" Y="258" />
+            <links num="1">
+                <link id="106" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>106</objId>
+            <points num="2">
+                <pt x="126" y="233" />
+                <pt x="462" y="233" />
+            </points>
+            <objStart id="104" />
+            <objEnd id="105" />
+            <message messType="MGEN">ORB_SEND_DATA</message>
+            <guardCond>name-tname32_t,data-BYTE[?]</guardCond>
+        </element>
+    </elements>
+</diagram>

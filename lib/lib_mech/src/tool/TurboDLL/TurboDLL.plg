@@ -1,0 +1,129 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TurboDLL - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE5.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"..\temp\TurboDLL\Release/TurboDLL.pch" /Yu"stdafx.h" /Fo"..\temp\TurboDLL\Release/" /Fd"..\temp\TurboDLL\Release/" /FD /c 
+"E:\Projects\TurboDLL\TurboDLL\TLCDragWnd.cpp"
+"E:\Projects\TurboDLL\TurboDLL\TLCDropWnd.cpp"
+"E:\Projects\TurboDLL\TurboDLL\TLHDragWnd.cpp"
+"E:\Projects\TurboDLL\TurboDLL\TLHDropWnd.cpp"
+"E:\Projects\TurboDLL\TurboDLL\TreeListComboCtrl.cpp"
+"E:\Projects\TurboDLL\TurboDLL\TreeListCtrl.cpp"
+"E:\Projects\TurboDLL\TurboDLL\TreeListEditCtrl.cpp"
+"E:\Projects\TurboDLL\TurboDLL\TreeListHeaderCtrl.cpp"
+"E:\Projects\TurboDLL\TurboDLL\TreeListStaticCtrl.cpp"
+"E:\Projects\TurboDLL\TurboDLL\TreeListTipCtrl.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE5.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE6.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"..\lib\release/TurboDLL.pdb" /machine:I386 /def:".\TurboDLL.def" /out:"..\bin\release/TurboDLL.dll" /implib:"..\lib\release/TurboDLL.lib" 
+\Projects\TurboDLL\temp\TurboDLL\Release\StdAfx.obj
+\Projects\TurboDLL\temp\TurboDLL\Release\TLCDragWnd.obj
+\Projects\TurboDLL\temp\TurboDLL\Release\TLCDropWnd.obj
+\Projects\TurboDLL\temp\TurboDLL\Release\TLHDragWnd.obj
+\Projects\TurboDLL\temp\TurboDLL\Release\TLHDropWnd.obj
+\Projects\TurboDLL\temp\TurboDLL\Release\TreeListColumnInfo.obj
+\Projects\TurboDLL\temp\TurboDLL\Release\TreeListComboCtrl.obj
+\Projects\TurboDLL\temp\TurboDLL\Release\TreeListCtrl.obj
+\Projects\TurboDLL\temp\TurboDLL\Release\TreeListDC.obj
+\Projects\TurboDLL\temp\TurboDLL\Release\TreeListEditCtrl.obj
+\Projects\TurboDLL\temp\TurboDLL\Release\TreeListHeaderCtrl.obj
+\Projects\TurboDLL\temp\TurboDLL\Release\TreeListItem.obj
+\Projects\TurboDLL\temp\TurboDLL\Release\TreeListStaticCtrl.obj
+\Projects\TurboDLL\temp\TurboDLL\Release\TreeListTipCtrl.obj
+\Projects\TurboDLL\temp\TurboDLL\Release\TurboDLL.obj
+\Projects\TurboDLL\temp\TurboDLL\Release\TurboDLL.res
+]
+Creating command line "link.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE6.tmp"
+<h3>Output Window</h3>
+Compiling...
+TLCDragWnd.cpp
+TLCDropWnd.cpp
+TLHDragWnd.cpp
+TLHDropWnd.cpp
+TreeListComboCtrl.cpp
+TreeListCtrl.cpp
+TreeListEditCtrl.cpp
+TreeListHeaderCtrl.cpp
+TreeListStaticCtrl.cpp
+TreeListTipCtrl.cpp
+Generating Code...
+Linking...
+   Creating library ..\lib\release/TurboDLL.lib and object ..\lib\release/TurboDLL.exp
+
+
+
+<h3>Results</h3>
+TurboDLL.dll - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: TurboDLL - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPEA.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"..\temp\TurboDLL\Debug/TurboDLL.pch" /Yu"stdafx.h" /Fo"..\temp\TurboDLL\Debug/" /Fd"..\temp\TurboDLL\Debug/" /FD /GZ /c 
+"E:\Projects\TurboDLL\TurboDLL\TLCDragWnd.cpp"
+"E:\Projects\TurboDLL\TurboDLL\TLCDropWnd.cpp"
+"E:\Projects\TurboDLL\TurboDLL\TLHDragWnd.cpp"
+"E:\Projects\TurboDLL\TurboDLL\TLHDropWnd.cpp"
+"E:\Projects\TurboDLL\TurboDLL\TreeListComboCtrl.cpp"
+"E:\Projects\TurboDLL\TurboDLL\TreeListCtrl.cpp"
+"E:\Projects\TurboDLL\TurboDLL\TreeListEditCtrl.cpp"
+"E:\Projects\TurboDLL\TurboDLL\TreeListHeaderCtrl.cpp"
+"E:\Projects\TurboDLL\TurboDLL\TreeListStaticCtrl.cpp"
+"E:\Projects\TurboDLL\TurboDLL\TreeListTipCtrl.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPEA.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPEB.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"..\lib\debug/TurboDLLD.pdb" /debug /machine:I386 /def:".\TurboDLLD.def" /out:"..\bin\debug/TurboDLLD.dll" /implib:"..\lib\debug/TurboDLLD.lib" /pdbtype:sept 
+\Projects\TurboDLL\temp\TurboDLL\Debug\StdAfx.obj
+\Projects\TurboDLL\temp\TurboDLL\Debug\TLCDragWnd.obj
+\Projects\TurboDLL\temp\TurboDLL\Debug\TLCDropWnd.obj
+\Projects\TurboDLL\temp\TurboDLL\Debug\TLHDragWnd.obj
+\Projects\TurboDLL\temp\TurboDLL\Debug\TLHDropWnd.obj
+\Projects\TurboDLL\temp\TurboDLL\Debug\TreeListColumnInfo.obj
+\Projects\TurboDLL\temp\TurboDLL\Debug\TreeListComboCtrl.obj
+\Projects\TurboDLL\temp\TurboDLL\Debug\TreeListCtrl.obj
+\Projects\TurboDLL\temp\TurboDLL\Debug\TreeListDC.obj
+\Projects\TurboDLL\temp\TurboDLL\Debug\TreeListEditCtrl.obj
+\Projects\TurboDLL\temp\TurboDLL\Debug\TreeListHeaderCtrl.obj
+\Projects\TurboDLL\temp\TurboDLL\Debug\TreeListItem.obj
+\Projects\TurboDLL\temp\TurboDLL\Debug\TreeListStaticCtrl.obj
+\Projects\TurboDLL\temp\TurboDLL\Debug\TreeListTipCtrl.obj
+\Projects\TurboDLL\temp\TurboDLL\Debug\TurboDLL.obj
+\Projects\TurboDLL\temp\TurboDLL\Debug\TurboDLL.res
+]
+Creating command line "link.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPEB.tmp"
+<h3>Output Window</h3>
+Compiling...
+TLCDragWnd.cpp
+Generating Code...
+Compiling...
+TLCDropWnd.cpp
+TLHDragWnd.cpp
+TLHDropWnd.cpp
+TreeListComboCtrl.cpp
+TreeListCtrl.cpp
+TreeListEditCtrl.cpp
+TreeListHeaderCtrl.cpp
+TreeListStaticCtrl.cpp
+TreeListTipCtrl.cpp
+Generating Code...
+Linking...
+   Creating library ..\lib\debug/TurboDLLD.lib and object ..\lib\debug/TurboDLLD.exp
+
+
+
+<h3>Results</h3>
+TurboDLLD.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

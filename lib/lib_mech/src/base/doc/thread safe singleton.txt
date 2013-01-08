@@ -1,0 +1,147 @@
+_ReadWriteBarrier();
+http://www.sysnet.pe.kr/Default.aspx?mode=2&sub=0&pageno=2&detail=1&wid=846
+
+우연히 아래의 글을 읽게 되었습니다. (사실 이제는 거의 .NET 에서 놀고 있지만, 여전히 C/C++을 관심 범위에 두고는 있습니다. ^^)
+
+C++에서 싱글톤 구현하기
+; http://agbird.egloos.com/4730538
+
+
+일단, 위의 글과 함께 댓글들을 읽어보면서 한가지 놀란 점이 있습니다. 의외로 "Thread-Safe"하냐는 것에 대해서는 아무도 관심을 갖고 있지 않았기 때문입니다.
+
+알려진 바에 의하면, 초기화 순서가 불분명하다는 단점에도 불구하고 Singleton 과 같이 구현하는 경우에는 Thread-safe합니다. 하지만, 겉으로 좋아보이는 DynamicSingleton 의 경우에는 Thread-safe하지 않다는 다소 치명적인 단점이 있습니다.
+
+이 문제를 해결하는 것이 생각보다 만만치 않은데 아래의 문서에서 아주 자세히 설명해 주고 있습니다.
+
+C++ and the Perils of Double-Checked Locking
+; http://www.aristeia.com/Papers/DDJ_Jul_Aug_2004_revised.pdf
+
+
+DynamicSingleton 을 위의 문서대로 thread-safe하게 다시 구현해 볼까요? ^^
+
+우선, 잠금을 통해서 Thread-safe하게 바꿉니다.
+
+class DynamicSingleton {
+  private:
+  ... [생략] ...
+  public:
+    static DynamicSingleton* getInstance() 
+    {
+      Lock lock;
+      if (inst == 0) inst = new DynamicSingleton();
+      return inst;
+    }
+};
+
+
+하지만, 매번 getInstance 때마다 쓰레드 경합이 발생할 여지를 두는 것은 좋지 않기 때문에 다음과 같이 DCLP(Double Chceked Locking Pattern)을 이용해서 개선할 수 있습니다.
+
+static DynamicSingleton* getInstance() 
+{
+  if (inst == 0)
+  {
+    Lock lock;
+    if (inst == 0) 
+    {
+      inst = new DynamicSingleton();
+    }
+    return inst;
+  }
+}
+
+
+그래도 여전히 헛점이 있습니다. 명령어 재배열과 같은 최적화 기법에 의해 inst = new DynamicSingleton 이라는 구문에 오류를 발생할 수 있는 여지가 존재하게 됩니다. 즉, 생성자가 불리지 않았음에도 불구하고 inst 변수에 값이 할당되어져 있는 상황이 발생하게 되고 연이은 쓰레드의 호출에서 생성자가 호출되지 않는 상태의 그 inst 변수가 사용되어져 버리는 것입니다. 그래서 다음과 같이 바뀌어야 합니다.
+
+class DynamicSingleton
+{
+private:
+    static volatile DynamicSingleton* volatile inst;
+
+    static volatile DynamicSingleton* volatile getInstance() 
+    {
+      if (inst == 0)
+      {
+        Lock lock;
+        if (inst == 0) 
+        {
+          volatile DynamicSingleton* volatile temp = new volatile DynamicSingleton;
+          inst = temp;
+        }
+        return inst;
+      }
+    }
+}
+
+
+위와 같이 volatile 로 하는 경우 말고도 다중 프로세서에서의 메모리 캐쉬 문제를 해결하기 위해 Memory Barrier를 직접 사용하는 방법을 택하는 것도 가능합니다. 그래서... 다음과 같이 구현해도 됩니다.
+
+#include <intrin.h>
+#pragma intrinsic(_ReadWriteBarrier)
+
+class DynamicSingleton
+{
+private:
+    static DynamicSingleton* inst;
+
+    static DynamicSingleton* getInstance() 
+    {
+      DynamicSingleton* volatile temp = inst;
+      _ReadWriteBarrier();
+      if (temp == 0)
+      {
+        Lock lock;
+        temp = inst;
+        if (temp == 0) 
+        {
+          temp = new DynamicSingleton;
+          _ReadWriteBarrier();
+          inst = temp;
+        }
+        return inst;
+      }
+    }
+}
+
+
+PhoenixSingleton 은, 바로 위의 코드와 같이 Thread-safe 문제를 어느 정도 해결한 상태에서 살을 붙여야 할테니... "C/C++ 에서 thread-safe 한 Singleton 개체"를 사용하는 것이 그다지 녹록치만은 않습니다. (사실 이것은 C/C++ 만의 문제는 아닙니다.)
+
+위의 PDF 문서에 의하면, (학문적으로 파고들기에는 제가 실력이 모자라서 이해하기 힘들지만) C++의 abstract machine 자체가 단일 쓰레드이기 때문에 위와 같은 소스 코드의 보정에도 불구하고 thread-unsafe한 기계어를 생산하는 C++ 컴파일러도 있다고 합니다. VC++이 그런 경우에 포함되는 것인지는 확인할 길이 없고. (이런 거 보면... 저도 어쩔 수 없는 "응용 개발자"에 속해 있지요. ^^ 그래서 가끔 이런 것들을 학문적으로 파헤치는 분들이 부러울 때가 있습니다.)
+
+그나 저나, abstract machine 이 다중 쓰레드인 언어는 그럼 또 뭐가 있는 건가요?
+
+
+
+참고로, "C++에서 싱글톤 구현하기" 에서 소개된 코드 중에 "명시적인 해제 작업을 피하기 위해서는 static 지역 객체를 사용하면 됩니다" 라면서 소개한 코드가 있는데요. 그것 역시 Thread-safe 하지 않다는 문제가 있습니다. 이에 대해서는 다음의 글에서 설명되어져 있습니다.
+
+C++ scoped static initialization is not thread-safe, on purpose!
+; http://blogs.msdn.com/oldnewthing/archive/2004/03/08/85901.aspx
+
+
+재미있게도, scoped-static 초기화가 C++ 표준에 의해서 구현되었기 때문에 thread-safe하지 않은 것이 일단은 당연하다고 되어 있는데 댓글들을 보면 C++ 표준이 아닌 마이크로소프트 임의 구현이라는 비난이 있습니다.
+
+표준이든 아니든, VC++은 일단 그렇게 구현되어 있기 때문에 주의하는 것이 좋겠습니다. ^^
+(그런데, 위의 글이 2004년도에 씌여진 것이라서 VC++ 10 에서는 어떻게 바뀌었을지... 모를 일이군요)
+
+
+
+끝으로. 한가지 더!
+
+만약 저한테 Thread-safe한 C/C++ 코드를 만들라고 하면.
+차라리 주 Thread-safe 개체와 그에 종속된 Thread-safe 한 개체를 만들도록 기본 방침을 정할 것 같습니다. 무슨 소리냐면. 전역적인 static 초기화가 Thread-safe함에도 불구하고 그 순서를 알 수 없다는 이유로 때로 사용이 기피되는데 이것만이 그 이유라면 다음과 같은 식으로 해결할 수 있다는 것입니다.
+
+// ThreadSafeSingleton 개체는 전역 static 으로 등록하고.
+class ThreadSafeSingleton
+{
+   ThreadSafeSingleton()
+   {
+       // 순서 대로!
+       SingletonA()->Initialize();
+       SingletonB()->Initialize();
+       SingletonC()->Initialize();
+   }
+}
+
+
+물론, 초기화 비용이 큰 singleton 개체라면 어쩔 수 없이 지금까지 설명한 복잡한 방법대로 해야겠지만.
+
+(첨부된 문서는 C++ and the Perils of Double-Checked Locking 문서를 다운로드 받아서 첨부한 것입니다.)

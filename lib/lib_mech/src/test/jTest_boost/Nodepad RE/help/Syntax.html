@@ -1,0 +1,526 @@
+<html>
+<link rel="STYLESHEET" type="text/css" href="style/global.css">
+<h4>Regular Expression Syntax</h4>
+<p>
+This section is taken directly from the boost::regex documentation and is only reproduced here for your convenience.  The original document can be accessed at <a href="http://www.boost.org/libs/regex/doc/syntax.html">http://www.boost.org/libs/regex/doc/syntax.html</a>.  As can be seen from his document, Dr John Maddock retains all copyright to his software (and presumably his documentation), but grants permission to copy, modify and distribute it for any purpose.
+</p>
+<h5>Literals</h5>
+<p>
+A literal is a character that matches itself.  All characters are literals except: ".", "|", "*", "?", "+", "(", ")", "{", "}", "[", "]", "^", "$" and "\".  These characters are literals when preceded by an "\".  Note that the use of one of the characters listed may imply that a number of following characters are no longer treated as literals.  See the Metacharacters section for details.</p>
+<h5>Wildcard</h5>
+<p>
+The dot character "." matches any single character.<br><br>
+</p>
+<h5>Repeats</h5>
+<p>
+A repeat is an expression that is repeated an arbitrary number of times.  An expression followed by "*" can be repeated any number of times including zero.  An expression followed by "+" can be repeated any number of times, but at least once.  An expression followed by "?" may be repeated zero or one times only.  When it is necessary to to specify the minimum and maximum number of repeats explicitly, the bounds operator "{}" may be used, thus "a{2}" is the letter "a" repeated exactly twice, "a{2,4}" represents the letter "a" repeated between 2 and 4 times, and "a{2,}" represents the letter "a" repeated at least twice with no upper limit.  Note that there must be no white-space inside the {}, and there is no upper limit on the values of the lower and upper bounds.  All repeat expressions refer to the shortest possible previous sub-expression: a single character, a character set, or a sub-expression grouped with "()" for example.<br><br>
+Examples:<br><br>
+"ba*" will match all of "b", "ba", "baa", "baaa" etc.<br>
+"ba+" will match "ba" or "baa" for example but not "b".<br>
+"ba?" will match "b" or "ba".<br>
+"ba{2,4}" will match "baa", "baaa" and "baaaa".</p>
+<h5>Parenthesis</h5>
+<p>
+Parenthesis serve two purposes, to group items together into a sub-expression, and to mark what generated the match.  For example the expression "(ab)*" would match all of the string "ababab".</p>
+<h5>Alternatives</h5>
+<p>
+Alternatives occur when the expression can match either one sub-expression or another, each alternative is separated by a "|".  Each alternative is the largest possible previous sub-expression; this is the opposite behaviour from the repetition operators.<br><br>
+Examples:<br><br>
+"a(b|c)" could match "ab" or "ac".<br>
+"abc|def" could match "abc" or "def".</p>
+<h5><a name="sets"></a>Sets</h5>
+<p>
+A set is a set of characters that can match any single character that is a member of the set.  Sets are delimited by "[" and "]" and can contain literals, character ranges, character classes, collating elements and equivalence classes.  Set declarations that start with "^" contain the compliment of the elements that follow.<br><br>
+Examples:<br><br>
+Characters literals:<br><br>
+"[abc]" will match either of "a", "b", or "c".<br>
+"[^abc]" will match any character other than "a", "b" or "c".<br><br>
+Character ranges:<br><br>
+"[a-z]" will match any character in the range "a" to "z".<br>
+"[^A-Z]" will match any character other than those in the range "A" to "Z".<br><br>
+Character classes:<br><br>
+Character classes are denoted using the syntax "[:<i>classname</i>:]" within a set declaration.  For example  "[[:space:]]" is the set of all whitespace characters.  The available character classes are:<br><br>
+<table border="0" cellpadding="7" cellspacing="0" width="100%">
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="50%">alnum</td>
+        <td valign="top" width="50%">Any alpha numeric character.</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="50%">alpha</td>
+        <td valign="top" width="50%">Any alphabetical character a-z
+        and A-Z. Other characters may also be included depending
+        upon the locale.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="50%">blank</td>
+        <td valign="top" width="50%">Any blank character, either
+        a space or a tab.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="50%">cntrl</td>
+        <td valign="top" width="50%">Any control character.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="50%">digit</td>
+        <td valign="top" width="50%">Any digit 0-9.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="50%">graph</td>
+        <td valign="top" width="50%">Any graphical character.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="50%">lower</td>
+        <td valign="top" width="50%">Any lower case character a-z.
+        Other characters may also be included depending upon the
+        locale.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="50%">print</td>
+        <td valign="top" width="50%">Any printable character.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="50%">punct</td>
+        <td valign="top" width="50%">Any punctuation character.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="50%">space</td>
+        <td valign="top" width="50%">Any whitespace character.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="50%">upper</td>
+        <td valign="top" width="50%">Any upper case character A-Z.
+        Other characters may also be included depending upon the
+        locale.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="50%">xdigit</td>
+        <td valign="top" width="50%">Any hexadecimal digit
+        character, 0-9, a-f and A-F.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="50%">word</td>
+        <td valign="top" width="50%">Any word character - all
+        alphanumeric characters plus the underscore.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="50%">unicode</td>
+        <td valign="top" width="50%">Any character whose code is
+        greater than 255, this applies to the wide character
+        traits classes only.</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+<a name="shortcuts"></a>
+There are some shortcuts that can be used in place of the character classes:<br><br>
+\w in place of [:word:]<br>
+\s in place of [:space:]<br>
+\d in place of [:digit:]<br>
+\l in place of [:lower:]<br>
+\u in place of [:upper:]<br><br>
+To include a literal "-" in a set declaration then: make it the first character after the opening "[" or "[^", the endpoint of a range, or precede it with an escape character as in "[\-]".  To include a litteral "[" or "]" or "^" in a set then make them the endpoint of a range, or precede them with an escape character.</p>
+<h5><a name="line_anchors"></a>Line Anchors</h5>
+<p>
+An anchor is something that matches the null string at the start or end of a line: "^" matches the null string at the start of a line, "$" matches the null string at the end of a line.</p>
+<h5><a name="back_references"></a>Back References</h5>
+<p>
+A back reference is a reference to a previous sub-expression that has already been matched, the reference is to what the sub-expression matched, not to the expression itself.  A back reference consists of the escape character "\" followed by a digit "1" to "9", "\1" refers to the first sub-expression, "\2" to the second etc.  For example the expression "([a-z]+)\1" matches any string of lower case letters that is repeated about its mid-point for example "abcabc" or "xyzxyz".  A back reference to a sub-expression that did not participate in any match, matches the null string:  NB this is different to some other regular expression matchers.</p>
+<h5>Characters by Code</h5>
+<p>
+This is an extension to the algorithm that is not available in other libraries.  It consists of the escape character followed by the digit "0" followed by the octal character code.  For example "\023" represents the character whose octal code is 23.  Where ambiguity could occur use parenthesis to break the expression up: "\0103" represents the character whose code is 103, "(\010)3 represents the character 10 followed by "3".  To match characters by their hexadecimal code, use "\x" followed by a string of hexadecimal digits, optionally enclosed inside "{}".  For example "\xf0" or "\x{aff}".  Notice the latter example is a Unicode character.</p>
+<h5><a name="word_operators"></a>Word Operators</h5>
+<p>
+The following operators are provided for compatibility with the GNU regular expression library.<br><br>
+"\w" matches any single character that is a member of the "word" character class.  This is identical to the expression "[[:word:]]".<br>
+"\W" matches any single character that is not a member of the "word" character class.  This is identical to the expression "[^[:word:]]".<br>
+"\&lt" matches the null string at the start of a word.<br>
+"\>" matches the null string at the end of a word.<br>
+"\b" matches the null string at either the start or the end of a word.<br>
+"\B" matches the null string within a word.</p>
+<h5>Buffer Operators</h5>
+<p>
+A buffer is considered to consist of the whole sequence passed to the matching algorithms.  The following operators are provided for compatibility with the GNU regular expression library and Perl regular expressions:<br><br>
+"\`" matches the start of a buffer.<br>
+"\A" matches the start of the buffer.<br>
+"\"" matches the end of a buffer.<br>
+"\z" matches the end of a buffer.<br>
+"\Z" matches the end of a buffer, or possibly one or more new line characters followed by the end of the buffer.</p>
+<h5><a name="escape_operator"></a>Escape Operator</h5>
+<p>The escape character "\" has several meanings:</p>
+<ul>
+<li><p>Take the next character as a literal, for example "\*" represents a literal "*" rather than the repeat operator.</li>
+<li><p>Introduce an operator, for example a back reference or a word operator.</li>
+<li><p>Introduce a special character, such as the newline character "\n".</li>
+</ul>
+<h5><a name="escape_sequences"></a>Single Character Escape Sequences</h5>
+<p>
+The following escape sequences are aliases for single characters:<br><br>
+<table border="0" cellpadding="7" cellspacing="0" width="100%">
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="33%">Escape sequence</td>
+        <td valign="top" width="33%">Character code</td>
+        <td valign="top" width="33%">Meaning</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="33%">\a</td>
+        <td valign="top" width="33%">0x07</td>
+        <td valign="top" width="33%">Bell character.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="33%">\f</td>
+        <td valign="top" width="33%">0x0C</td>
+        <td valign="top" width="33%">Form feed.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="33%">\n</td>
+        <td valign="top" width="33%">0x0A</td>
+        <td valign="top" width="33%">Newline character.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="33%">\r</td>
+        <td valign="top" width="33%">0x0D</td>
+        <td valign="top" width="33%">Carriage return.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="33%">\t</td>
+        <td valign="top" width="33%">0x09</td>
+        <td valign="top" width="33%">Tab character.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="33%">\v</td>
+        <td valign="top" width="33%">0x0B</td>
+        <td valign="top" width="33%">Vertical tab.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="33%">\e</td>
+        <td valign="top" width="33%">0x1B</td>
+        <td valign="top" width="33%">ASCII Escape character.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="33%">\0dd</td>
+        <td valign="top" width="33%">0dd</td>
+        <td valign="top" width="33%">An octal character code,
+        where <i>dd</i> is one or more octal digits.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="33%">\xXX</td>
+        <td valign="top" width="33%">0xXX</td>
+        <td valign="top" width="33%">A hexadecimal character
+        code, where XX is one or more hexadecimal digits.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="33%">\x{XX}</td>
+        <td valign="top" width="33%">0xXX</td>
+        <td valign="top" width="33%">A hexadecimal character
+        code, where XX is one or more hexadecimal digits,
+        optionally a unicode character.</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td valign="top" width="33%">\cZ</td>
+        <td valign="top" width="33%">z-@</td>
+        <td valign="top" width="33%">An ASCII escape sequence
+        control-Z, where Z is any ASCII character greater than or
+        equal to the character code for '@'.</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+<p>
+<h5>Miscellaneous Escape Sequences:</h5>
+<p>
+The following are provided mostly for Perl compatibility, but note that there are some differences in the meanings of "\1" "\L" "\u" and "\U":<br><br>
+<table border="0" cellpadding="6" cellspacing="0" width="100%">
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\w</td>
+        <td valign="top" width="45%">Equivalent to [[:word:]].</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\W</td>
+        <td valign="top" width="45%">Equivalent to [^[:word:]].</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\s</td>
+        <td valign="top" width="45%">Equivalent to [[:space:]].</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\S</td>
+        <td valign="top" width="45%">Equivalent to [^[:space:]].</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\d</td>
+        <td valign="top" width="45%">Equivalent to [[:digit:]].</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\D</td>
+        <td valign="top" width="45%">Equivalent to [^[:digit:]].</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\l</td>
+        <td valign="top" width="45%">Equivalent to [[:lower:]].</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\L</td>
+        <td valign="top" width="45%">Equivalent to [^[:lower:]].</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\u</td>
+        <td valign="top" width="45%">Equivalent to [[:upper:]].</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\U</td>
+        <td valign="top" width="45%">Equivalent to [^[:upper:]].</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\C</td>
+        <td valign="top" width="45%">Any single character,
+        equivalent to '.'.</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\X</td>
+        <td valign="top" width="45%">Match any Unicode combining
+        character sequence, for example &quot;a\x 0301&quot; (a
+        letter a with an acute).</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\Q</td>
+        <td valign="top" width="45%">The begin quote operator,
+        everything that follows is treated as a literal character
+        until a \E end quote operator is found.</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\E</td>
+        <td valign="top" width="45%">The end quote operator,
+        terminates a sequence begun with \Q.</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+</table>
+</p>
+<h5>What Gets Matched?</h5>
+<p>
+The regular expression library will match the first possible matching string.  If more than one string starting at a given location can match then it matches the longest possible string.  In the case where there are multiple possible matches all starting at the same location and all of the same length, then the match chosen is the one with the longest first sub-expression, if that is the same for two or more matches, then the second sub-expression will be examined and so on.
+</p>
+<h5><a name="replace_syntax"></a>Replace Syntax</h5>
+<p>
+In replace strings, all characters are treated as literals except: "(", ")", "$", "\", "?" and ":".  To use any of these as literals you must prefix them with the escape character "\".<br><br>
+<i>Grouping:</i><br><br>
+Use the parenthesis characters "(" and ")" to group sub-expressions within the format string.  Use "\(" and "\)" to represent literal '(' and ')'.<br><br>
+<i>Sub-expression expansions:</i><br><br>
+The following Perl like expressions expand to a particular matched sub-expression:
+</p>
+<table border="0" cellpadding="6" cellspacing="0" width="100%">
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">$`</td>
+        <td valign="top" width="45%">Expands to all the text from the end of the previous match to the start of the current match, if there was no previous match in the current operation, then everything from the start of the input string to the start of the match.</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">$'</td>
+        <td valign="top" width="45%">Expands to all the text from the end of the match to the end of the input string.</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">$&</td>
+        <td valign="top" width="45%">Expands to all of the current match.</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">$0</td>
+        <td valign="top" width="45%">Expands to all of the current match.</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">$<i>N</i></td>
+        <td valign="top" width="45%">Expands to the text that matched sub-expression <i>N.</i></td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+</table>
+<p>
+<i>Notepad RE extensions:</i><br><br>
+<table border="0" cellpadding="6" cellspacing="0" width="100%">
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">$=</td>
+        <td valign="top" width="45%">Expands to the current line number.</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">$d<i>N</i></td>
+        <td valign="top" width="45%">Expands to the text that matched sub-expression N, decremented (treats $<i>N</i> as int).</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">$i<i>N</i></td>
+        <td valign="top" width="45%">Expands to the text that matched sub-expression N, incremented (treats $<i>N</i> as int).</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">$l<i>N</i></td>
+        <td valign="top" width="45%">Expands to the text that matched sub-expression N, in lower case.</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">$u<i>N</i></td>
+        <td valign="top" width="45%">Expands to the text that matched sub-expression N, in upper case.</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+</table>
+<i>Conditional expressions:</i><br><br>
+Conditional expressions allow two different format strings to be selected dependent upon whether a sub-expression participated in the match or not:<br><br>
+?Ntrue_expression:false_expression<br><br>
+Executes true_expression if sub-expression N participated in the match, otherwise executes false_expression.  Example: suppose we search for "(while)|(for)" then the format string "?1WHILE:FOR" would output what matched, but in upper case.<br><br>
+<i>Escape sequences:</i><br><br>
+The following escape sequences are also allowed:
+</p>
+<table border="0" cellpadding="6" cellspacing="0" width="100%">
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\a</td>
+        <td valign="top" width="45%">The bell character.</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\f</td>
+        <td valign="top" width="45%">The form feed character.</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\r</td>
+        <td valign="top" width="45%">The carriage return character.</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\n</td>
+        <td valign="top" width="45%">The newline character.</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\t</td>
+        <td valign="top" width="45%">The tab character.</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\v</td>
+        <td valign="top" width="45%">A vertical tab character.</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\x</td>
+        <td valign="top" width="45%">A hexadecimal character - for example \x0D.</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\x{}</td>
+        <td valign="top" width="45%">A possible Unicode hexadecimal character - for example \x{1A0}</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\cx</td>
+        <td valign="top" width="45%">The ASCII escape character x, for example \c@ is equivalent to escape-@.</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\e</td>
+        <td valign="top" width="45%">The ASCII escape character.</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="5%">&nbsp;</td>
+        <td valign="top" width="45%">\dd</td>
+        <td valign="top" width="45%">An octal character constant, for example \10.</td>
+        <td width="5%">&nbsp;</td>
+    </tr>
+</table>
+</html>

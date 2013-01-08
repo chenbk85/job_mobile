@@ -1,0 +1,28 @@
+<HTML>
+<BODY BGCOLOR=#C0C0C0>
+
+<SCRIPT LANGUAGE="VBScript">
+  Sub Monitor_OnCounterAdded(index)
+    Monitor.Counters.Item(1).Width = 8
+  End Sub
+</Script>
+<OBJECT
+  CLASSID="clsid:C4D2D8E0-D1DD-11CE-940F-008029004347"
+  ID="Monitor"
+  HEIGHT=80%
+  WIDTH=100%>
+</OBJECT>
+
+<SCRIPT LANGUAGE="VBScript">
+  Sub Window_OnLoad
+    On Error Resume Next
+    Monitor.ShowValueBar = False
+    Monitor.ShowHorizontalGrid = True
+    Monitor.Counters.Add("\Process(*)\% Processor Time")
+    Monitor.DisplayType=sysmonLineGraph
+    Monitor.GraphTitle="System Performance Overview"
+  End Sub
+</SCRIPT>
+
+</BODY>
+</HTML>

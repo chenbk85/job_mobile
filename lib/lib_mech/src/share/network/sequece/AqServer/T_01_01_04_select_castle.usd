@@ -1,0 +1,458 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>T_01_01_04_select_castle</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="36">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>721</objId>
+            <ptul X="363" Y="64" />
+            <ptdr X="439" Y="104" />
+            <links num="0" />
+            <objectName>TownServer</objectName>
+            <className>T</className>
+            <actBoxes num="7">
+                <actBox id="727" />
+                <actBox id="745" />
+                <actBox id="733" />
+                <actBox id="736" />
+                <actBox id="744" />
+                <actBox id="747" />
+                <actBox id="755" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>722</objId>
+            <ptul X="39" Y="62" />
+            <ptdr X="107" Y="102" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="4">
+                <actBox id="726" />
+                <actBox id="734" />
+                <actBox id="732" />
+                <actBox id="748" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>723</objId>
+            <ptul X="957" Y="64" />
+            <ptdr X="1057" Y="104" />
+            <links num="0" />
+            <objectName>DBCacheServer</objectName>
+            <className>DC</className>
+            <actBoxes num="3">
+                <actBox id="740" />
+                <actBox id="743" />
+                <actBox id="751" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>724</objId>
+            <ptul X="723" Y="64" />
+            <ptdr X="802" Y="104" />
+            <links num="0" />
+            <objectName>WorldServer</objectName>
+            <className>W</className>
+            <actBoxes num="4">
+                <actBox id="725" />
+                <actBox id="739" />
+                <actBox id="752" />
+                <actBox id="754" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>725</objId>
+            <ptul X="755" Y="452" />
+            <ptdr X="770" Y="482" />
+            <links num="1">
+                <link id="741" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>726</objId>
+            <ptul X="65" Y="129" />
+            <ptdr X="80" Y="159" />
+            <links num="1">
+                <link id="728" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>727</objId>
+            <ptul X="393" Y="129" />
+            <ptdr X="408" Y="159" />
+            <links num="1">
+                <link id="728" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>728</objId>
+            <points num="2">
+                <pt x="80" y="134" />
+                <pt x="393" y="134" />
+            </points>
+            <objStart id="726" />
+            <objEnd id="727" />
+            <message messType="MGEN">X2T_USER_LOGIN_CHANNEL</message>
+            <guardCond>uid-userid_t,id-aname64_t</guardCond>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>729</objId>
+            <points num="2">
+                <pt x="999" y="537" />
+                <pt x="408" y="537" />
+            </points>
+            <objStart id="743" />
+            <objEnd id="744" />
+            <message messType="MGEN">DC2T_NEW_TOWN_OK</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>L_01_03_03_select_chennal.usd 참조&#x0A;Get_capital_town()==0이면 성선택</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>730</objId>
+            <ptul X="109" Y="215" />
+            <ptdr X="340" Y="259" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>731</objId>
+            <points num="2">
+                <pt x="393" y="578" />
+                <pt x="80" y="578" />
+            </points>
+            <objStart id="745" />
+            <objEnd id="734" />
+            <message messType="MGEN">T2X_NEW_TOWN_OK</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>732</objId>
+            <ptul X="65" Y="411" />
+            <ptdr X="80" Y="441" />
+            <links num="1">
+                <link id="742" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>733</objId>
+            <ptul X="393" Y="411" />
+            <ptdr X="408" Y="441" />
+            <links num="1">
+                <link id="742" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>734</objId>
+            <ptul X="65" Y="566" />
+            <ptdr X="80" Y="596" />
+            <links num="1">
+                <link id="731" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>736</objId>
+            <ptul X="393" Y="452" />
+            <ptdr X="408" Y="482" />
+            <links num="1">
+                <link id="741" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>737</objId>
+            <points num="2">
+                <pt x="393" y="317" />
+                <pt x="80" y="317" />
+            </points>
+            <objStart id="747" />
+            <objEnd id="748" />
+            <message messType="MGEN">T2X_SELECT_CASTLE</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>738</objId>
+            <points num="2">
+                <pt x="770" y="502" />
+                <pt x="999" y="502" />
+            </points>
+            <objStart id="739" />
+            <objEnd id="740" />
+            <message messType="MGEN">W2DC_NEW_TOWN</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>739</objId>
+            <ptul X="755" Y="491" />
+            <ptdr X="770" Y="521" />
+            <links num="1">
+                <link id="738" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>740</objId>
+            <ptul X="999" Y="491" />
+            <ptdr X="1014" Y="521" />
+            <links num="1">
+                <link id="738" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>741</objId>
+            <points num="2">
+                <pt x="408" y="462" />
+                <pt x="755" y="462" />
+            </points>
+            <objStart id="736" />
+            <objEnd id="725" />
+            <message messType="MGEN">T2W_NEW_TOWN</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>742</objId>
+            <points num="2">
+                <pt x="80" y="412" />
+                <pt x="393" y="412" />
+            </points>
+            <objStart id="732" />
+            <objEnd id="733" />
+            <message messType="MGEN">X2T_NEW_TOWN</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>743</objId>
+            <ptul X="999" Y="532" />
+            <ptdr X="1014" Y="562" />
+            <links num="1">
+                <link id="729" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>744</objId>
+            <ptul X="393" Y="532" />
+            <ptdr X="408" Y="562" />
+            <links num="1">
+                <link id="729" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>745</objId>
+            <ptul X="393" Y="566" />
+            <ptdr X="408" Y="589" />
+            <links num="1">
+                <link id="731" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>746</objId>
+            <points num="2">
+                <pt x="755" y="718" />
+                <pt x="408" y="718" />
+            </points>
+            <objStart id="754" />
+            <objEnd id="755" />
+            <message messType="MGEN">W_ERROR</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>747</objId>
+            <ptul X="393" Y="312" />
+            <ptdr X="408" Y="342" />
+            <links num="1">
+                <link id="737" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>748</objId>
+            <ptul X="65" Y="312" />
+            <ptdr X="80" Y="342" />
+            <links num="1">
+                <link id="737" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[T2W_NEW_TOWN]&#x0A;유저가 새로운 마을확장 , tpid=0이면 서버가 결정&#x0A;{PARAM}&#x0A;uid-userid_t&#x0A;csid-Sys_Castle_id_t&#x0A;tpsid-Sys_TownPos_id_t&#x0A;town_name-wname32_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>749</objId>
+            <ptul X="421" Y="313" />
+            <ptdr X="748" Y="437" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[W2DC_NEW_TOWN]&#x0A;선택된성에서 랜덤하게 마을선택&#x0A;사용하지 않는 Sys_TownPos_id_t를 결정&#x0A;{PARAM}&#x0A;uid-userid_t&#x0A;csid-Sys_Castle_id_t&#x0A;tpsid-Sys_TownPos_id_t&#x0A;name-wname32_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>750</objId>
+            <ptul X="781" Y="326" />
+            <ptdr X="1047" Y="466" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>751</objId>
+            <ptul X="999" Y="679" />
+            <ptdr X="1014" Y="709" />
+            <links num="1">
+                <link id="753" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>752</objId>
+            <ptul X="755" Y="679" />
+            <ptdr X="770" Y="709" />
+            <links num="1">
+                <link id="753" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>753</objId>
+            <points num="2">
+                <pt x="999" y="684" />
+                <pt x="770" y="684" />
+            </points>
+            <objStart id="751" />
+            <objEnd id="752" />
+            <message messType="MGEN">DC2W_NEW_TOWN_ERROR</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>754</objId>
+            <ptul X="755" Y="713" />
+            <ptdr X="770" Y="743" />
+            <links num="1">
+                <link id="746" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>755</objId>
+            <ptul X="393" Y="713" />
+            <ptdr X="408" Y="743" />
+            <links num="1">
+                <link id="746" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[DC2T_NEW_TOWN_OK]&#x0A;&#x0A;{PARAM}&#x0A;uid-userid_t&#x0A;index-townid_t&#x0A;town-Use_Town&#x0A;isCapital-bool</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>756</objId>
+            <ptul X="464" Y="496" />
+            <ptdr X="622" Y="620" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[T2X_NEW_TOWN_OK]&#x0A;{PARAM}&#x0A;index-townid_t&#x0A;town-Use_Town</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>757</objId>
+            <ptul X="155" Y="606" />
+            <ptdr X="302" Y="682" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

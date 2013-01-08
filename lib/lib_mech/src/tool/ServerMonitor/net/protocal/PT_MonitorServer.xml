@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<PROTOCAL HEADER="MonitorServer" VERSION="1000" i_DebugPrint="3" b_jxDEFINE="true" TAG="M">
+	<!-- CODE에서 개행문자 지원안됨. anpersent # x 0 A ; 를 사용할것-->
+	<CODE TYPE="ENUM_FILE">network/my_pt_aq_server.h</CODE>
+	<STRUCT_LIST/>
+	<PROTOCAL_LIST>
+		<M2A_SEND_FILE USD="\m_2.5.2_file.usd">
+			<type TYPE="int"/>
+			<target_dir TYPE="tstring"/>
+		</M2A_SEND_FILE>
+		<S_HELLO/>
+		<X2S_LOGIN USD="m_1.1.1_login.usd" HELP="콤마로 구분된 스트링 : eLOGIN콤마EXE_NAME">
+			<name TYPE="wname32_t"/>
+			<ip TYPE="aname32_t"/>
+			<servers TYPE="astring" i_Length="-1"/>
+			<states TYPE="tstring" i_Length="-1"/>
+		</X2S_LOGIN>
+		<S2X_LOGIN_OK USD="\m_1.1.1_login.usd">
+			<did TYPE="int32"/>
+		</S2X_LOGIN_OK>
+		<S_ECHO USD="m_1.1.1_login.usd">
+			<type TYPE="uint8"/>
+			<msg TYPE="wstring"/>
+		</S_ECHO>
+		<X2S_THREAD_TEST1 USD="m_1.1.1_login.usd" thread_name="JOBTHREAD1">
+			<type TYPE="uint8"/>
+			<msg TYPE="wstring"/>
+		</X2S_THREAD_TEST1>
+		<X2S_THREAD_TEST2 USD="m_1.1.1_login.usd" thread_name="JOBTHREAD2">
+			<type TYPE="uint8"/>
+			<msg TYPE="wstring"/>
+		</X2S_THREAD_TEST2>
+		<M2A_CALL_CMD_RQ USD="m_2.5.1_cmd.usd" HELP="type이 eSS_AGENT이면 AGENT에 대한 콘솔명령실행&#xA;">
+			<eServerType TYPE="tstring"/>
+			<cmd TYPE="wstring"/>
+		</M2A_CALL_CMD_RQ>
+		<A2M_CALL_CMD_RS USD="\m_2.5.1_cmd.usd">
+			<eServerType TYPE="tstring"/>
+			<cmd TYPE="wstring"/>
+		</A2M_CALL_CMD_RS>
+		<A2M_NOTIFY_SERVER_INFO USD="\m_2.5.1_cmd.usd">
+			<eServerType TYPE="tstring"/>
+			<info TYPE="wstring"/>
+			<eState TYPE="tstring"/>
+		</A2M_NOTIFY_SERVER_INFO>
+		<A2M_SERVER_CONNECTED USD="\m_2.5.1_cmd.usd">
+			<eServerType TYPE="tstring"/>
+			<eServerState TYPE="tstring"/>
+		</A2M_SERVER_CONNECTED>
+		<M2A_MYTHOLOGY_MENU_RQ USD="\m_2.5.1_cmd.usd">
+			<eServerType TYPE="tstring"/>
+			<cmd TYPE="astring"/>
+		</M2A_MYTHOLOGY_MENU_RQ>
+		<A2M_MYTHOLOGY_MENU_RS USD="\m_2.5.1_cmd.usd">
+			<eServerType TYPE="tstring"/>
+			<cmd TYPE="astring"/>
+		</A2M_MYTHOLOGY_MENU_RS>
+		<A2M_PROCESS_STATUS_NOTIFY USD="\m_2.5.1_cmd.usd">
+			<eServerType TYPE="astring"/>
+			<eState TYPE="astring"/>
+		</A2M_PROCESS_STATUS_NOTIFY>
+		<A2M_PROCESS_INFO_NOTIFY USD="m_2.5.1_cmd.usd" i_DebugPrint="0">
+			<eServerType TYPE="aname32_t"/>
+			<name TYPE="wstring"/>
+			<value TYPE="wstring"/>
+		</A2M_PROCESS_INFO_NOTIFY>
+		<M2A_PROCESS_INFO_UPDATE USD="m_2.5.1_cmd.usd" i_DebugPrint="0">
+			<eServerType TYPE="tstring"/>
+			<name TYPE="wstring"/>
+			<value TYPE="wstring"/>
+		</M2A_PROCESS_INFO_UPDATE>
+		<A2M_SEND_ERROR_LOG USD="\m_2.5.1_cmd.usd">
+			<eServerType TYPE="aname32_t"/>
+			<log TYPE="wstring"/>
+		</A2M_SEND_ERROR_LOG>
+		<M2A_RESET_ERROR_LOG_COUNT/>
+		<M2A_RUN_EXE USD="\m_2.5.1_cmd.usd">
+			<type TYPE="int"/>
+			<option TYPE="wstring"/>
+			<cmd TYPE="wstring"/>
+		</M2A_RUN_EXE>
+	</PROTOCAL_LIST>
+	<CODE TYPE="ENUM_FILE"/>
+</PROTOCAL>

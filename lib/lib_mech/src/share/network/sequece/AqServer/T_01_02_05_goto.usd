@@ -1,0 +1,427 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>T_01_02_05_goto</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="34">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>68</objId>
+            <ptul X="70" Y="15" />
+            <ptdr X="138" Y="55" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="8">
+                <actBox id="70" />
+                <actBox id="74" />
+                <actBox id="77" />
+                <actBox id="81" />
+                <actBox id="955" />
+                <actBox id="958" />
+                <actBox id="964" />
+                <actBox id="968" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>69</objId>
+            <ptul X="516" Y="12" />
+            <ptdr X="592" Y="52" />
+            <links num="0" />
+            <objectName>TownServer</objectName>
+            <className>T</className>
+            <actBoxes num="8">
+                <actBox id="71" />
+                <actBox id="73" />
+                <actBox id="78" />
+                <actBox id="80" />
+                <actBox id="954" />
+                <actBox id="957" />
+                <actBox id="965" />
+                <actBox id="967" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>70</objId>
+            <ptul X="96" Y="338" />
+            <ptdr X="111" Y="368" />
+            <links num="1">
+                <link id="72" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>71</objId>
+            <ptul X="546" Y="338" />
+            <ptdr X="561" Y="368" />
+            <links num="1">
+                <link id="72" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>72</objId>
+            <points num="2">
+                <pt x="111" y="343" />
+                <pt x="546" y="343" />
+            </points>
+            <objStart id="70" />
+            <objEnd id="71" />
+            <message messType="MGEN">X2T_GOTO_CASTLE_MAP</message>
+            <guardCond>tid-uint8</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>73</objId>
+            <ptul X="546" Y="380" />
+            <ptdr X="561" Y="410" />
+            <links num="1">
+                <link id="75" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>74</objId>
+            <ptul X="96" Y="380" />
+            <ptdr X="111" Y="410" />
+            <links num="1">
+                <link id="75" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>75</objId>
+            <points num="2">
+                <pt x="546" y="385" />
+                <pt x="111" y="385" />
+            </points>
+            <objStart id="73" />
+            <objEnd id="74" />
+            <message messType="MGEN">T2X_GOTO_CASTLE_MAP</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>959</objId>
+            <points num="2">
+                <pt x="546" y="785" />
+                <pt x="111" y="785" />
+            </points>
+            <objStart id="957" />
+            <objEnd id="958" />
+            <message messType="MGEN">T2X_UDPATE_WORLD_MAP</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>77</objId>
+            <ptul X="96" Y="644" />
+            <ptdr X="111" Y="674" />
+            <links num="1">
+                <link id="79" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>78</objId>
+            <ptul X="546" Y="644" />
+            <ptdr X="561" Y="674" />
+            <links num="1">
+                <link id="79" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>79</objId>
+            <points num="2">
+                <pt x="111" y="649" />
+                <pt x="546" y="649" />
+            </points>
+            <objStart id="77" />
+            <objEnd id="78" />
+            <message messType="MGEN">X2T_GOTO_WORLD_MAP</message>
+            <guardCond>tid-uint8</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>80</objId>
+            <ptul X="546" Y="694" />
+            <ptdr X="561" Y="724" />
+            <links num="1">
+                <link id="82" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>81</objId>
+            <ptul X="96" Y="694" />
+            <ptdr X="111" Y="724" />
+            <links num="1">
+                <link id="82" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>82</objId>
+            <points num="2">
+                <pt x="546" y="699" />
+                <pt x="111" y="699" />
+            </points>
+            <objStart id="80" />
+            <objEnd id="81" />
+            <message messType="MGEN">T2X_GOTO_WORLD_MAP</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[T2X_UPDATE_CASTLE_MAP]&#x0A;새로운 유닛등장시 보냄&#x0A;{PARAM}&#x0A;castle_map_info-jIE*</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>100</objId>
+            <ptul X="577" Y="421" />
+            <ptdr X="766" Y="497" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>월드맵으로 이동&#x0A;@TestClient.goto_world_map</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>112</objId>
+            <ptul X="31" Y="570" />
+            <ptdr X="208" Y="614" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[T2X_GOTO_CASTLE_MAP]&#x0A;반경 이내의 마을정보를미리 보냄&#x0A;{PARAM}&#x0A;tid-uint8&#x0A;castle_map_info-jIE*</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>89</objId>
+            <ptul X="566" Y="293" />
+            <ptdr X="796" Y="385" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>956</objId>
+            <points num="2">
+                <pt x="546" y="471" />
+                <pt x="111" y="471" />
+            </points>
+            <objStart id="954" />
+            <objEnd id="955" />
+            <message messType="MGEN">T2X_UPDATE_CASTLE_MAP</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>966</objId>
+            <points num="2">
+                <pt x="111" y="170" />
+                <pt x="546" y="170" />
+            </points>
+            <objStart id="964" />
+            <objEnd id="965" />
+            <message messType="MGEN">X2T_GOTO_TOWN_MAP</message>
+            <guardCond>tid-uint8</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>954</objId>
+            <ptul X="546" Y="466" />
+            <ptdr X="561" Y="496" />
+            <links num="1">
+                <link id="956" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>955</objId>
+            <ptul X="96" Y="466" />
+            <ptdr X="111" Y="496" />
+            <links num="1">
+                <link id="956" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>성지역뷰로 이동&#x0A;@TestClient.goto_castle_map</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>101</objId>
+            <ptul X="27" Y="274" />
+            <ptdr X="209" Y="318" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>957</objId>
+            <ptul X="546" Y="780" />
+            <ptdr X="561" Y="810" />
+            <links num="1">
+                <link id="959" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>958</objId>
+            <ptul X="96" Y="780" />
+            <ptdr X="111" Y="810" />
+            <links num="1">
+                <link id="959" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[T2X_GOTO_WORLD_MAP]&#x0A;반경이내의 성정보를 보냄&#x0A;{PARAM}&#x0A;tid-uint8&#x0A;world_map_info-jIE*</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>76</objId>
+            <ptul X="580" Y="593" />
+            <ptdr X="761" Y="685" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[T2X_GOTO_TOWN_MAP]&#x0A;&#x0A;{PARAM}&#x0A;tid-uint8</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>961</objId>
+            <ptul X="583" Y="144" />
+            <ptdr X="746" Y="220" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>969</objId>
+            <points num="2">
+                <pt x="546" y="214" />
+                <pt x="111" y="214" />
+            </points>
+            <objStart id="967" />
+            <objEnd id="968" />
+            <message messType="MGEN">T2X_GOTO_TOWN_MAP</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>964</objId>
+            <ptul X="96" Y="153" />
+            <ptdr X="111" Y="183" />
+            <links num="1">
+                <link id="966" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>965</objId>
+            <ptul X="546" Y="153" />
+            <ptdr X="561" Y="183" />
+            <links num="1">
+                <link id="966" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>타운맵으로 이동&#x0A;@TestClient.goto_town_map</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>962</objId>
+            <ptul X="21" Y="94" />
+            <ptdr X="195" Y="138" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>967</objId>
+            <ptul X="546" Y="201" />
+            <ptdr X="561" Y="231" />
+            <links num="1">
+                <link id="969" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>968</objId>
+            <ptul X="96" Y="201" />
+            <ptdr X="111" Y="231" />
+            <links num="1">
+                <link id="969" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[T2X_UDPATE_WORLD_MAP]&#x0A;새로운유닛등장시&#x0A;{PARAM}&#x0A;world_map_info-jIE*</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>105</objId>
+            <ptul X="587" Y="707" />
+            <ptdr X="774" Y="783" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

@@ -1,0 +1,171 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>M_1.3.5_CentralServer_Login</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>2.1</Version>
+    <forceTimeSync />
+    <elements num="13">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>31</objId>
+            <ptul X="580" Y="108" />
+            <ptdr X="677" Y="148" />
+            <links num="0" />
+            <objectName>MessageServer</objectName>
+            <className>MS</className>
+            <actBoxes num="3">
+                <actBox id="34" />
+                <actBox id="37" />
+                <actBox id="39" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>32</objId>
+            <ptul X="189" Y="105" />
+            <ptdr X="274" Y="145" />
+            <links num="0" />
+            <objectName>CentralServer</objectName>
+            <className>C</className>
+            <actBoxes num="3">
+                <actBox id="33" />
+                <actBox id="36" />
+                <actBox id="40" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>33</objId>
+            <ptul X="224" Y="290" />
+            <ptdr X="239" Y="320" />
+            <links num="1">
+                <link id="35" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>34</objId>
+            <ptul X="621" Y="290" />
+            <ptdr X="636" Y="320" />
+            <links num="1">
+                <link id="35" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>35</objId>
+            <points num="2">
+                <pt x="239" y="295" />
+                <pt x="621" y="295" />
+            </points>
+            <objStart id="33" />
+            <objEnd id="34" />
+            <message messType="MGEN">C2MS_I_AM_ADMIN</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>36</objId>
+            <ptul X="224" Y="188" />
+            <ptdr X="239" Y="218" />
+            <links num="1">
+                <link id="38" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>37</objId>
+            <ptul X="621" Y="188" />
+            <ptdr X="636" Y="218" />
+            <links num="1">
+                <link id="38" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>38</objId>
+            <points num="2">
+                <pt x="239" y="193" />
+                <pt x="621" y="193" />
+            </points>
+            <objStart id="36" />
+            <objEnd id="37" />
+            <message messType="MRET">tcp connect to ( 200003 )</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>39</objId>
+            <ptul X="621" Y="243" />
+            <ptdr X="636" Y="273" />
+            <links num="1">
+                <link id="41" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>40</objId>
+            <ptul X="224" Y="243" />
+            <ptdr X="239" Y="273" />
+            <links num="1">
+                <link id="41" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>41</objId>
+            <points num="2">
+                <pt x="621" y="248" />
+                <pt x="239" y="248" />
+            </points>
+            <objStart id="39" />
+            <objEnd id="40" />
+            <message messType="MGEN">MS_HELLO</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[MS_HELLO]&#x0A;&#x0A;{PARAM}&#x0A;totUser-uint16&#x0A;currUser-uint16&#x0A;name-aname32_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>42</objId>
+            <ptul X="650" Y="171" />
+            <ptdr X="758" Y="279" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[C2MS_I_AM_ADMIN]&#x0A;sid=0을 보낸다.&#x0A;{PARAM}&#x0A;group-group_id_t&#x0A;sid-serverid_t&#x0A;name-aname32_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>43</objId>
+            <ptul X="64" Y="244" />
+            <ptdr X="201" Y="352" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

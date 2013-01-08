@@ -1,0 +1,37 @@
+nEXCEL ,@#, D:\svn\lib\lib_mech\src\test\test_Excel\excel ,@#, excel_castle
+
+enum ,@#, Evillage_Condition ,@#, 설명없음
+
+enumItem ,@#, 일반 ,@#,  1  ,@#, EVC_Normal ,@#, 보통 상태
+enumItem ,@#, 점령중 ,@#,  2  ,@#, EVC_OCCUPY ,@#, 점령중인 상태
+enumItem ,@#, 장기비접속 ,@#,  3  ,@#, EVC_INACTIVE ,@#, 장기비적속유저
+enumItem ,@#, 온라인 ,@#,  4  ,@#, EVC_ONLINE ,@#, 온라인 유저
+enumItem ,@#, 오프라인 ,@#,  5  ,@#, EVC_OFFLINE ,@#, 오프라인 유저
+
+
+Sys ,@#, Sys_Castle ,@#, 설명없음
+
+SysItem ,@#, 숫자_ID ,@#, csid ,@#, uint16 ,@#,  ,@#,  ,@#, PK ,@#,  ,@#, 
+SysItem ,@#, 이름_ID ,@#, name ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 월드랑 연동
+SysItem ,@#, 성_이름 ,@#, name_kor ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 기본_태수 ,@#, default_gsid ,@#, Sys_Hero_id_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 제너럴 sid 입력
+SysItem ,@#, 부대생성규칙이름 ,@#, force_gen_name ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, bin/server/xml/NpcCastle.xml
+
+
+Sys ,@#, Sys_CastlePos ,@#, 설명없음
+
+SysItem ,@#, 성 sid ,@#, cpsid ,@#, Sys_Castle_id_t ,@#,  ,@#,  ,@#, PK ,@#,  ,@#, 
+SysItem ,@#, x ,@#, x ,@#, uint16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, y ,@#, y ,@#, uint16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, castle_map파일 ,@#, castle_map ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 성지역의 마을 배치정보파일
+
+
+Sys ,@#, Sys_TownPos ,@#, 설명없음
+
+SysItem ,@#, 숫자_ID ,@#, tpsid ,@#, Sys_TownPos_id_t ,@#,  ,@#,  ,@#, PK ,@#,  ,@#, 
+SysItem ,@#, x ,@#, x ,@#, uint16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, y ,@#, y ,@#, uint16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 타운맵파일명 ,@#, town_map_type ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물슬롯배치정보가 포함된 타운맵파일명
+SysItem ,@#, 오브젝트 ID ,@#, object_id ,@#, uint16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 오브젝트 정보
+
+

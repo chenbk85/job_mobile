@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="UDebug|x64">
+      <Configuration>UDebug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="URelease|x64">
+      <Configuration>URelease</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>jBase</ProjectName>
+    <ProjectGuid>{BABA64F8-065B-463E-A5FB-51BB914AA35B}</ProjectGuid>
+    <RootNamespace>jBase</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='URelease|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='URelease|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\mech_vc2010.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\mech_vc2010.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">$(MECH_BIN)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">$(MECH_TEMP)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">$(MECH_BIN)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">$(MECH_TEMP)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;JBASE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;ws2_32.lib;Mswsock.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(WindowsSdkDir)\lib\x64;$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(MECH_BIN)\$(ProjectName).pdb</ProgramDatabaseFile>
+      <StripPrivateSymbols>
+      </StripPrivateSymbols>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>$(MECH_LIB_OUT)\$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Xdcmake>
+      <OutputFile>$(OUT)\$(TargetName).xml</OutputFile>
+    </Xdcmake>
+    <Bscmake>
+      <OutputFile>$(OUT)/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;JBASE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;ws2_32.lib;Mswsock.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(WindowsSdkDir)\lib\x64;$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(MECH_BIN)\$(ProjectName).pdb</ProgramDatabaseFile>
+      <StripPrivateSymbols>
+      </StripPrivateSymbols>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(ProjectName).map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <BaseAddress>0x18000000</BaseAddress>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>$(MECH_LIB_OUT)\$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Xdcmake>
+      <OutputFile>$(OUT)\$(TargetName).xml</OutputFile>
+    </Xdcmake>
+    <Bscmake>
+      <OutputFile>$(OUT)/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="jBase.cpp" />
+    <ClCompile Include="jBase_Log.cpp" />
+    <ClCompile Include="jConsoleVar.cpp" />
+    <ClCompile Include="jCriticalSectionRW.cpp" />
+    <ClCompile Include="jFileDebugger.cpp" />
+    <ClCompile Include="jFolder.cpp" />
+    <ClCompile Include="jIndexedString.cpp" />
+    <ClCompile Include="jINI_File.cpp" />
+    <ClCompile Include="jMsgManager.cpp" />
+    <ClCompile Include="jRtti.cpp" />
+    <ClCompile Include="jScriptHelper.cpp" />
+    <ClCompile Include="jString_mem.cpp" />
+    <ClCompile Include="jSystemPlugIn.cpp" />
+    <ClCompile Include="jTestUnit.cpp" />
+    <ClCompile Include="jTimeHelper.cpp" />
+    <ClCompile Include="juExeEnv.cpp" />
+    <ClCompile Include="jWindow_Util.cpp" />
+    <ClCompile Include="jXmlDictionary.cpp" />
+    <ClCompile Include="jxVar.cpp" />
+    <ClCompile Include="m_Debug.cpp" />
+    <ClCompile Include="m_FrameRate.cpp" />
+    <ClCompile Include="Random.cpp" />
+    <ClCompile Include="SafeDateTime.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UFileName.cpp" />
+    <ClCompile Include="uString_stl.cpp" />
+    <ClCompile Include="uStringParsor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\header\lib_poco_header.h" />
+    <ClInclude Include="..\Interface\Squirrel\jISquirrel.h" />
+    <ClInclude Include="..\Interface\Squirrel\jSqPlus.h" />
+    <ClInclude Include="..\Interface\Squirrel\jSquirrelBindingsUtils.h" />
+    <ClInclude Include="..\Interface\Squirrel\jSquirrelObject.h" />
+    <ClInclude Include="..\Interface\Squirrel\jSquirrelObject.hpp" />
+    <ClInclude Include="..\Interface\Squirrel\SqPlusConst.h" />
+    <ClInclude Include="..\Interface\Squirrel\SqPlusFunctionCallImpl.h" />
+    <ClInclude Include="..\Interface\Squirrel\SqPlusOverload.h" />
+    <ClInclude Include="..\Interface\Squirrel\squirrel.h" />
+    <ClInclude Include="jBase.h" />
+    <ClInclude Include="jBase_Log.h" />
+    <ClInclude Include="jConsoleVar.h" />
+    <ClInclude Include="jCriticalSectionRW.h" />
+    <ClInclude Include="jFileDebugger.h" />
+    <ClInclude Include="jFolder.h" />
+    <ClInclude Include="jIndexedString.h" />
+    <ClInclude Include="jINI_File.h" />
+    <ClInclude Include="..\Interface\jIThread.h" />
+    <ClInclude Include="jMemoryDLL.h" />
+    <ClInclude Include="jMsgManager.h" />
+    <ClInclude Include="jRtti.h" />
+    <ClInclude Include="jSQ_bind.h" />
+    <ClInclude Include="jString_mem.h" />
+    <ClInclude Include="jSyncObject.h" />
+    <ClInclude Include="jSystemPlugIn.h" />
+    <ClInclude Include="jTCHAR_util.h" />
+    <ClInclude Include="jTestUnit.h" />
+    <ClInclude Include="jTimeHelper.h" />
+    <ClInclude Include="juExeEnv.h" />
+    <ClInclude Include="jWindow_Util.h" />
+    <ClInclude Include="jXmlDictionary.h" />
+    <ClInclude Include="jxVar.h" />
+    <ClInclude Include="m_Debug.h" />
+    <ClInclude Include="m_FrameRate.h" />
+    <ClInclude Include="Random.h" />
+    <ClInclude Include="SafeDateTime.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="UFileName.h" />
+    <ClInclude Include="uString_stl.h" />
+    <ClInclude Include="uStringParsor.h" />
+    <ClInclude Include="..\lua\jLuaUtil.h" />
+    <ClInclude Include="..\lua\jScriptClientEntity.h" />
+    <ClInclude Include="..\lua\jScriptGui.h" />
+    <ClInclude Include="..\lua\jScriptLog.h" />
+    <ClInclude Include="..\lua\jScriptLua.h" />
+    <ClInclude Include="..\lua\ScriptObjectVector.h" />
+    <ClInclude Include="..\header\_NonCopyable.h" />
+    <ClInclude Include="..\header\_ScriptableEx.h" />
+    <ClInclude Include="..\header\AutodetectMemoryLeak.h" />
+    <ClInclude Include="..\header\j_strsafe.h" />
+    <ClInclude Include="..\header\jAutoPtr.h" />
+    <ClInclude Include="..\header\jBoost.h" />
+    <ClInclude Include="..\header\jClipboard.h" />
+    <ClInclude Include="..\header\jCriticalSection.h" />
+    <ClInclude Include="..\header\jCSV_File.h" />
+    <ClInclude Include="..\header\jDefine.h" />
+    <ClInclude Include="..\header\jDefine_Cpu_Platform.h" />
+    <ClInclude Include="..\header\jDefine_enum.h" />
+    <ClInclude Include="..\header\jDefine_flag.h" />
+    <ClInclude Include="..\header\jDefine_lamda.h" />
+    <ClInclude Include="..\header\jDefine_log.h" />
+    <ClInclude Include="..\header\jDllLoader.h" />
+    <ClInclude Include="..\header\jFileName.h" />
+    <ClInclude Include="..\header\jFunctor.h" />
+    <ClInclude Include="..\header\jGrowableArray.h" />
+    <ClInclude Include="..\header\jHeader.h" />
+    <ClInclude Include="..\header\jInterface.h" />
+    <ClInclude Include="..\header\jMemoryChunk.h" />
+    <ClInclude Include="..\header\jMemoryStack.h" />
+    <ClInclude Include="..\header\jODBC_Util.h" />
+    <ClInclude Include="..\header\jPakFile.h" />
+    <ClInclude Include="..\header\jPool.h" />
+    <ClInclude Include="..\header\jQueue.h" />
+    <ClInclude Include="..\header\jRDTSC.h" />
+    <ClInclude Include="..\header\jSington.h" />
+    <ClInclude Include="..\header\jString.h" />
+    <ClInclude Include="..\header\jSyncObject.h" />
+    <ClInclude Include="..\header\jTreeNode.h" />
+    <ClInclude Include="..\header\jTypedef_func.h" />
+    <ClInclude Include="..\header\jTypedef_struct.h" />
+    <ClInclude Include="..\header\jTypedef_type.h" />
+    <ClInclude Include="..\header\juKey.H" />
+    <ClInclude Include="..\header\jXml_util.h" />
+    <ClInclude Include="..\header\kXmlIndex.h" />
+    <ClInclude Include="..\header\m_Manager.h" />
+    <ClInclude Include="..\header\m_stltag.h" />
+    <ClInclude Include="..\header\m_Util.h" />
+    <ClInclude Include="..\header\MemoryMap.h" />
+    <ClInclude Include="..\header\MemoryPool.h" />
+    <ClInclude Include="..\header\MultiThreadSync.h" />
+    <ClInclude Include="..\header\Namespace.h" />
+    <ClInclude Include="..\header\nNET_DebugPrint.h" />
+    <ClInclude Include="..\header\nNET_Stream.h" />
+    <ClInclude Include="..\header\nPatriciaTrie.h" />
+    <ClInclude Include="..\header\nUNI_StringA.h" />
+    <ClInclude Include="..\header\nUNI_StringW.h" />
+    <ClInclude Include="..\..\..\..\..\..\job_taebak\src\base\header\SafeStr.h" />
+    <ClInclude Include="..\header\SafeTimeSeqKey.h" />
+    <ClInclude Include="..\..\..\..\..\..\job_taebak\src\base\header\SafeType.h" />
+    <ClInclude Include="..\..\..\..\..\..\job_taebak\src\base\header\SafeWcs.h" />
+    <ClInclude Include="..\header\string_util.h" />
+    <ClInclude Include="..\header\SYSTEMTIME.h" />
+    <ClInclude Include="..\header\TimeValue.h" />
+    <ClInclude Include="..\header\ToString_base.h" />
+    <ClInclude Include="..\header\UFile.h" />
+    <ClInclude Include="..\header\UFileName.h" />
+    <ClInclude Include="..\header\yVector.h" />
+    <ClInclude Include="..\Interface\ISound.h" />
+    <ClInclude Include="..\Interface\ITimer.h" />
+    <ClInclude Include="..\Interface\jIAnimationKey.h" />
+    <ClInclude Include="..\Interface\jIINI_File.h" />
+    <ClInclude Include="..\Interface\jIInput.h" />
+    <ClInclude Include="..\Interface\jIInputActionMap.h" />
+    <ClInclude Include="..\Interface\jILua.h" />
+    <ClInclude Include="..\Interface\jIPak.h" />
+    <ClInclude Include="..\Interface\jIPerfCounter.h" />
+    <ClInclude Include="..\Interface\jIRenderObj.h" />
+    <ClInclude Include="..\..\..\..\..\..\job_taebak\src\base\Interface\jIReportEvent.h" />
+    <ClInclude Include="..\Interface\jISystemPlugIn.h" />
+    <ClInclude Include="..\Interface\gui\jIGui.h" />
+    <ClInclude Include="..\Interface\gui\jIGui_Util.h" />
+    <ClInclude Include="..\Interface\gui\jIGuiButtonInventory.h" />
+    <ClInclude Include="..\Interface\gui\jIGuiCheckBox.h" />
+    <ClInclude Include="..\Interface\gui\jIGuiComboBox.h" />
+    <ClInclude Include="..\Interface\gui\jIGuiControl.h" />
+    <ClInclude Include="..\Interface\gui\jIGuiDefine.h" />
+    <ClInclude Include="..\Interface\gui\jIGuiDialog.h" />
+    <ClInclude Include="..\Interface\gui\jIGuiImage.h" />
+    <ClInclude Include="..\Interface\gui\jIGuiListBox.h" />
+    <ClInclude Include="..\Interface\gui\jIGuiRadioButton.h" />
+    <ClInclude Include="..\Interface\gui\jIGuiRender.h" />
+    <ClInclude Include="..\Interface\gui\jIGuiScrollBar.h" />
+    <ClInclude Include="..\Interface\gui\jIGuiSlider.h" />
+    <ClInclude Include="..\Interface\gui\jIGuiStage.h" />
+    <ClInclude Include="..\Interface\gui\jIGuiStaticVar.h" />
+    <ClInclude Include="..\Interface\xml\jIDocument.h" />
+    <ClInclude Include="..\Interface\xml\jIElement.h" />
+    <ClInclude Include="..\Interface\xml\jIElement_op.h" />
+    <ClInclude Include="..\Interface\xml\jIVar.h" />
+    <ClInclude Include="..\Interface\xml\jIVar_op.h" />
+    <ClInclude Include="..\Interface\xml\jIXml.h" />
+    <ClInclude Include="..\Interface\xml\jIXmlCallBackManager.h" />
+    <ClInclude Include="..\Interface\xml\jIXmlEntity.h" />
+    <ClInclude Include="..\Interface\xml\jIXmlORB.h" />
+    <ClInclude Include="..\Interface\xml\jIXmlUtil.h" />
+    <ClInclude Include="..\Interface\blue\jIBlue.h" />
+    <ClInclude Include="..\Interface\net\excel_code_util.h" />
+    <ClInclude Include="..\Interface\net\jDebugPrint.h" />
+    <ClInclude Include="..\Interface\net\jIMessageServer.h" />
+    <ClInclude Include="..\Interface\net\jINet.h" />
+    <ClInclude Include="..\Interface\net\jINet_asio.h" />
+    <ClInclude Include="..\Interface\net\jINet_Util.h" />
+    <ClInclude Include="..\Interface\net\jINetGrid.h" />
+    <ClInclude Include="..\Interface\net\jIPacketDispatch.h" />
+    <ClInclude Include="..\Interface\net\jNet_util.h" />
+    <ClInclude Include="..\Interface\net\jPlugInHelpTable.h" />
+    <ClInclude Include="..\Interface\net\jSQ_bind_jINet.h" />
+    <ClInclude Include="..\Interface\net\jTypedef_net.h" />
+    <ClInclude Include="..\Interface\net\net_common_code.h" />
+    <ClInclude Include="..\Interface\jICpuInfo.h" />
+    <ClInclude Include="..\Interface\db\jIDB.h" />
+    <ClInclude Include="..\Interface\jIDebugCallStack.h" />
+    <ClInclude Include="..\Interface\jIODBC.h" />
+    <ClInclude Include="..\Interface\jIPipe.h" />
+    <ClInclude Include="..\Interface\jIRegistry.h" />
+    <ClInclude Include="..\Interface\jISMTPClient.h" />
+    <ClInclude Include="..\Interface\jIWinUtil.h" />
+    <ClInclude Include="..\Interface\jIZipUtil.h" />
+    <ClInclude Include="..\Interface\ILog.h" />
+    <ClInclude Include="..\Interface\IMiniLog.h" />
+    <ClInclude Include="..\Interface\IValidator.h" />
+    <ClInclude Include="..\Interface\jIConsole.h" />
+    <ClInclude Include="..\Interface\jIConsoleCmd.h" />
+    <ClInclude Include="..\Interface\jIConsoleDlg.h" />
+    <ClInclude Include="..\Interface\jIConsoleDLL.h" />
+    <ClInclude Include="..\Interface\jIConsoleVar.h" />
+    <ClInclude Include="..\Interface\jILog.h" />
+    <ClInclude Include="..\jc\AABBSV.h" />
+    <ClInclude Include="..\jc\AgentParams.h" />
+    <ClInclude Include="..\jc\AnimKey.h" />
+    <ClInclude Include="..\jc\ColorDefs.h" />
+    <ClInclude Include="..\jc\CritSection.h" />
+    <ClInclude Include="..\jc\FrameProfiler.h" />
+    <ClInclude Include="..\jc\GuidUtil.h" />
+    <ClInclude Include="..\jc\IDataProbe.h" />
+    <ClInclude Include="..\jc\IStreamEngine.h" />
+    <ClInclude Include="..\jc\jc_Camera.h" />
+    <ClInclude Include="..\jc\jc_Color4.h" />
+    <ClInclude Include="..\jc\jc_Geo.h" />
+    <ClInclude Include="..\jc\jc_GeoDistance.h" />
+    <ClInclude Include="..\jc\jc_GeoIntersect.h" />
+    <ClInclude Include="..\jc\jc_GeoOverlap.h" />
+    <ClInclude Include="..\jc\jc_Math.h" />
+    <ClInclude Include="..\jc\jc_Matrix.h" />
+    <ClInclude Include="..\jc\jc_Quat.h" />
+    <ClInclude Include="..\jc\jc_Vector2.h" />
+    <ClInclude Include="..\jc\jc_Vector3.h" />
+    <ClInclude Include="..\jc\jc_XOptimise.h" />
+    <ClInclude Include="..\jc\jcFile.h" />
+    <ClInclude Include="..\jc\jcHeaders.h" />
+    <ClInclude Include="..\jc\jcMemoryManager.h" />
+    <ClInclude Include="..\jc\jcSizer.h" />
+    <ClInclude Include="..\jc\jcSound.h" />
+    <ClInclude Include="..\jc\jcSound64.h" />
+    <ClInclude Include="..\jc\jMTL_CHUNK.h" />
+    <ClInclude Include="..\jc\list2.h" />
+    <ClInclude Include="..\jc\matrixnm.h" />
+    <ClInclude Include="..\jc\Names.h" />
+    <ClInclude Include="..\jc\platform.h" />
+    <ClInclude Include="..\jc\Range.h" />
+    <ClInclude Include="..\jc\SerializeBuffer.h" />
+    <ClInclude Include="..\jc\smartptr.h" />
+    <ClInclude Include="..\jc\StlDbgAlloc.h" />
+    <ClInclude Include="..\jc\StlUtils.h" />
+    <ClInclude Include="..\jc\StringUtils.h" />
+    <ClInclude Include="..\jc\TAlloc.h" />
+    <ClInclude Include="..\jc\Tarray.h" />
+    <ClInclude Include="..\jc\TArrays.h" />
+    <ClInclude Include="..\jc\TString.h" />
+    <ClInclude Include="..\jc\XmlParser.h" />
+    <ClInclude Include="..\jc\XmlParserFont.h" />
+    <ClInclude Include="..\jc\XmlStream.h" />
+    <ClInclude Include="..\functor\_jxCopyAttributeTo.h" />
+    <ClInclude Include="..\functor\_jXE_FindByFile.h" />
+    <ClInclude Include="..\functor\_jxEqIntValue.h" />
+    <ClInclude Include="..\functor\_jXmlAutoLoader.h" />
+    <ClInclude Include="..\functor\find_leaf_by_noCase.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Interface\net\jINet_OGS.txt" />
+    <None Include="..\Interface\jIConsoleVar.txt" />
+    <None Include="..\Interface\jILog.txt" />
+    <None Include="..\..\AqServer_vsprops_vc80.xml" />
+    <None Include="..\..\mech_vsprops_vc80.xml" />
+    <None Include="..\Interface\Squirrel\jISquirrel.txt" />
+    <None Include="ReadMe.txt" />
+    <None Include="..\..\TServer_vsprops_vc80.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\jc\fSinCos64.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

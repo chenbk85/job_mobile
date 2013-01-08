@@ -1,0 +1,3 @@
+http://download.microsoft.com/download/OfficeXPProf/Install/4.71.1015.0/W98NT42KMe/EN-US/HTMLHELP.EXE
+
+http://download.microsoft.com/download/officexpprof/install/04.04.01.1/w98nt42kme/en-us/Offstyle.exe

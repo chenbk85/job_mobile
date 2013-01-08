@@ -1,0 +1,9 @@
+nTESTSERVER ,@#, D:\svn\lib\lib_mech\src\server\TestServer\TestCommon\excel ,@#, ClientText
+
+Sys ,@#, Sys_ClientText ,@#, 설명없음
+
+SysItem ,@#, 번호 ,@#, id ,@#, uint16 ,@#,  ,@#,  ,@#, PK ,@#,  ,@#, 
+SysItem ,@#, 이름 ,@#, eng_name ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 내용 ,@#, description ,@#, tname128_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+
+

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding="euc-kr"?>
+<PROTOCAL HEADER='TestServer' VERSION='8000' i_DebugPrint='3' b_jxDEFINE='true' TAG='S'>
+<!-- CODE?? ???? ????. anpersent # x 0 A ; ? ????-->
+	<CODE TYPE='ENUM_FILE'>network/my_pt_aq_server.h</CODE>
+	<STRUCT_LIST />
+	<PROTOCAL_LIST>
+		<S_HELLO  GROUP_TAG='S2X.TestServer_TestClient;'/>
+		<X2S_LOGIN GROUP_TAG='X2S.TestClient_TestServer;' USD='\s_1.1.1_login.usd'>
+			<name  TYPE='wname32_t'/>
+		</X2S_LOGIN>
+		<S2X_LOGIN_OK GROUP_TAG='S2X.TestServer_TestClient;' USD='\s_1.1.1_login.usd'>
+			<server_name  TYPE='wname32_t'/>
+		</S2X_LOGIN_OK>
+		<S_ECHO GROUP_TAG='X2S.TestClient_TestServer;' USD='s_1.1.1_login.usd'>
+			<type  TYPE='uint8'/>
+			<msg  TYPE='wstring'/>
+		</S_ECHO>
+		<S2X_ECHO GROUP_TAG='S2X.TestServer_TestClient;' USD='\s_1.1.1_login.usd'>
+			<type  TYPE='uint8'/>
+			<msg  TYPE='wstring'/>
+		</S2X_ECHO>
+		<X2S_THREAD_TEST1 GROUP_TAG='X2S.TestClient_TestServer;' USD='s_1.1.1_login.usd' thread_name='JOBTHREAD1'>
+			<type  TYPE='uint8'/>
+			<msg  TYPE='wstring'/>
+		</X2S_THREAD_TEST1>
+		<X2S_THREAD_TEST2 GROUP_TAG='X2S.TestClient_TestServer;' USD='s_1.1.1_login.usd' thread_name='JOBTHREAD2'>
+			<type  TYPE='uint8'/>
+			<msg  TYPE='wstring'/>
+		</X2S_THREAD_TEST2>
+		<X2S_TEST_PACKET GROUP_TAG='X2S.TestClient_TestServer;' USD='\s_1.1.1_login.usd'>
+			<val  TYPE='int32'/>
+			<msg  TYPE='string'/>
+		</X2S_TEST_PACKET>
+	</PROTOCAL_LIST>
+	<CODE  TYPE='ENUM_FILE'/>
+	<ENUM_TYPE_LIST>
+		<EAddAccount USD_FILE='d:\svn\lib\lib_mech\src\server\testserver\sequence\testserver\s_1.1.1_login.usd'>
+			<AA_SUCCESS  help='??' i_val='0'/>
+			<AA_AccountDuple  help=' duplication login'/>
+			<AA_Auth  help=' not auth'/>
+			<AA_Unkown  help=' unkown fail'/>
+		</EAddAccount>
+		<EAddAccount1 USD_FILE='d:\svn\lib\lib_mech\src\server\testserver\sequence\testserver\s_1.1.1_login.usd' SCOPE='S_ECHO'>
+			<AA1_SUCCESS  help='??' i_val='0'/>
+			<AA1_AccountDuple  help=' duplication login'/>
+			<AA1_Auth  help=' not auth'/>
+			<AA1_Unkown  help=' unkown fail'/>
+		</EAddAccount1>
+	</ENUM_TYPE_LIST>
+</PROTOCAL>

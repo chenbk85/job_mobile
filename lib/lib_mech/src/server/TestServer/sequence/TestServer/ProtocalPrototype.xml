@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding="euc-kr"?>
+<PROTOCAL HEADER="NULL" VERSION="1" i_DebugPrint="2" b_jxDEFINE="1" >
+	<!-- CODE에서 개행문자 지원안됨. anpersent # x 0 A ; 를 사용할것-->
+	<CODE TYPE="ENUM_FILE"></CODE>
+	<STRUCT_LIST>
+	</STRUCT_LIST>
+	<PROTOCAL_LIST>
+	</PROTOCAL_LIST>
+	<CODE TYPE="ENUM_FILE">
+	</CODE>
+</PROTOCAL>

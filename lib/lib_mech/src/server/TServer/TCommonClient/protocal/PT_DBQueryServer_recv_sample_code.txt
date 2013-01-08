@@ -1,0 +1,247 @@
+
+
+
+// 다음코드는 스커럴에서 사용하기위한 샘플 코드
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_DC2DQ_USER_DISCONNECT(pSock, pk ,pFromIP)
+{
+	local packet=S_DC2DQ_USER_DISCONNECT(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_DQ_ECHO(pSock, pk ,pFromIP)
+{
+	local packet=S_DQ_ECHO(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_DQ_ERROR(pSock, pk ,pFromIP)
+{
+	local packet=S_DQ_ERROR(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_DC2DQ_TOWN_CREATE(pSock, pk ,pFromIP)
+{
+	local packet=S_DC2DQ_TOWN_CREATE(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_DQ2DC_TOWN_CREATE_OK(pSock, pk ,pFromIP)
+{
+	local packet=S_DQ2DC_TOWN_CREATE_OK(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_DC2DQ_TOWN_DELETE(pSock, pk ,pFromIP)
+{
+	local packet=S_DC2DQ_TOWN_DELETE(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_DQ2DC_TOWN_DELETE_OK(pSock, pk ,pFromIP)
+{
+	local packet=S_DQ2DC_TOWN_DELETE_OK(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_DC2DQ_INSERT_ITEM_AND_SKILL(pSock, pk ,pFromIP)
+{
+	local packet=S_DC2DQ_INSERT_ITEM_AND_SKILL(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_DQ2DC_TOWN_CREATE_ERROR(pSock, pk ,pFromIP)
+{
+	local packet=S_DQ2DC_TOWN_CREATE_ERROR(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_DC2DQ_CONNECT(pSock, pk ,pFromIP)
+{
+	local packet=S_DC2DQ_CONNECT(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_DQ2DC_CONNECT(pSock, pk ,pFromIP)
+{
+	local packet=S_DQ2DC_CONNECT(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_DQ2DC_CONNECT_OK(pSock, pk ,pFromIP)
+{
+	local packet=S_DQ2DC_CONNECT_OK(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_DC2DQ_CONNECT_OK(pSock, pk ,pFromIP)
+{
+	local packet=S_DC2DQ_CONNECT_OK(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_DC2DQ_USER_LOGIN(pSock, pk ,pFromIP)
+{
+	local packet=S_DC2DQ_USER_LOGIN(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_DQ2DC_USER_LOGIN_RESULT(pSock, pk ,pFromIP)
+{
+	local packet=S_DQ2DC_USER_LOGIN_RESULT(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_DC2DQ_GET_TOWN_LIST(pSock, pk ,pFromIP)
+{
+	local packet=S_DC2DQ_GET_TOWN_LIST(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_DQ2DC_SEND_TOWN_LIST(pSock, pk ,pFromIP)
+{
+	local packet=S_DQ2DC_SEND_TOWN_LIST(); packet.ReadPacket(pSock,pk);
+
+}
+
+
+
+// 다음코드는 C++에서 사용하기위한 샘플 코드
+
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(DC2DQ_USER_DISCONNECT)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(DC2DQ_USER_DISCONNECT);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(DQ_ECHO)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(DQ_ECHO);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(DQ_ERROR)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(DQ_ERROR);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(DC2DQ_TOWN_CREATE)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(DC2DQ_TOWN_CREATE);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(DQ2DC_TOWN_CREATE_OK)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(DQ2DC_TOWN_CREATE_OK);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(DC2DQ_TOWN_DELETE)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(DC2DQ_TOWN_DELETE);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(DQ2DC_TOWN_DELETE_OK)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(DQ2DC_TOWN_DELETE_OK);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(DC2DQ_INSERT_ITEM_AND_SKILL)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(DC2DQ_INSERT_ITEM_AND_SKILL);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(DQ2DC_TOWN_CREATE_ERROR)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(DQ2DC_TOWN_CREATE_ERROR);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(DC2DQ_CONNECT)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(DC2DQ_CONNECT);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(DQ2DC_CONNECT)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(DQ2DC_CONNECT);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(DQ2DC_CONNECT_OK)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(DQ2DC_CONNECT_OK);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(DC2DQ_CONNECT_OK)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(DC2DQ_CONNECT_OK);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(DC2DQ_USER_LOGIN)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(DC2DQ_USER_LOGIN);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(DQ2DC_USER_LOGIN_RESULT)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(DQ2DC_USER_LOGIN_RESULT);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(DC2DQ_GET_TOWN_LIST)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(DC2DQ_GET_TOWN_LIST);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(DQ2DC_SEND_TOWN_LIST)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(DQ2DC_SEND_TOWN_LIST);
+
+}

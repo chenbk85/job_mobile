@@ -1,0 +1,20 @@
+# vim:ft=automake
+# included from Top Level Makefile.am
+# All paths should be given relative to the root
+
+if HAVE_LIBGTEST
+check_PROGRAMS += tests/tests
+endif
+
+unit: tests/tests
+	tests/tests
+
+tests_tests_SOURCES = \
+			      tests/cassandra_client_test.cc \
+			      tests/cassandra_factory_test.cc \
+			      tests/cassandra_host_test.cc \
+			      tests/main.cc \
+			      tests/util_functions_test.cc 
+
+tests_tests_LDADD= \
+  ${lib_LTLIBRARIES} ${LTLIBTHRIFT} ${LTLIBGTEST} ${BOOST_LIBS}

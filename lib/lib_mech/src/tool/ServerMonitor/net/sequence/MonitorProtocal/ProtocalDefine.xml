@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<ProtocalDefine>
+	<Namespace>
+		<MonitorServer FILE="PT_MonitorServer.xml" >
+			<DOC_ATTRIBUTE TAG="M" VERSION="1000" i_DebugPrint='3' b_jxDEFINE="1"/>
+			<Child>
+				<Agent/>
+			</Child>
+			<CODE type="ENUM_CPP_INCLUDE">network/my_pt_aq_server.h</CODE>
+		</MonitorServer>
+    <Agent>
+      <TAG>X</TAG>
+    </Agent>
+	</Namespace>
+</ProtocalDefine>

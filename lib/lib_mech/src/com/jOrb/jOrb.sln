@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jOrb", "jOrb.vcproj", "{71549BC9-4101-4803-9066-56278E7206A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		UDebug|Win32 = UDebug|Win32
+		URelease|Win32 = URelease|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71549BC9-4101-4803-9066-56278E7206A6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{71549BC9-4101-4803-9066-56278E7206A6}.Debug|Win32.Build.0 = Debug|Win32
+		{71549BC9-4101-4803-9066-56278E7206A6}.Release|Win32.ActiveCfg = Release|Win32
+		{71549BC9-4101-4803-9066-56278E7206A6}.Release|Win32.Build.0 = Release|Win32
+		{71549BC9-4101-4803-9066-56278E7206A6}.UDebug|Win32.ActiveCfg = UDebug|Win32
+		{71549BC9-4101-4803-9066-56278E7206A6}.UDebug|Win32.Build.0 = UDebug|Win32
+		{71549BC9-4101-4803-9066-56278E7206A6}.URelease|Win32.ActiveCfg = URelease|Win32
+		{71549BC9-4101-4803-9066-56278E7206A6}.URelease|Win32.Build.0 = URelease|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

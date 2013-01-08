@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Drop_Item>
+  <Drop_Item_probability drop_probability="70">
+    <lairy_item_list item_sid="골드 스워드" drop_probability="0.0000001" />
+    <normal_item_list>
+      <item_1 item_sid="일반 스워드" drop_probability="30" />
+      <item_2 item_sid="일반 방패" drop_probability="50" />
+    </normal_item_list>
+  </Drop_Item_probability>
+</Drop_Item>

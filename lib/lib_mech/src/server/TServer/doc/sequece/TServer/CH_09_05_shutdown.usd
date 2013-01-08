@@ -1,0 +1,187 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>T_09_05_shutdown</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="14">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>32</objId>
+            <ptul X="213" Y="54" />
+            <ptdr X="305" Y="94" />
+            <links num="0" />
+            <objectName>ChannelServer</objectName>
+            <className>CH</className>
+            <actBoxes num="2">
+                <actBox id="34" />
+                <actBox id="43" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>33</objId>
+            <ptul X="484" Y="51" />
+            <ptdr X="563" Y="91" />
+            <links num="0" />
+            <objectName>WorldServer</objectName>
+            <className>W</className>
+            <actBoxes num="2">
+                <actBox id="36" />
+                <actBox id="39" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>34</objId>
+            <ptul X="251" Y="193" />
+            <ptdr X="266" Y="223" />
+            <links num="1">
+                <link id="40" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>35</objId>
+            <ptul X="745" Y="48" />
+            <ptdr X="845" Y="88" />
+            <links num="0" />
+            <objectName>DBCacheServer</objectName>
+            <className>DC</className>
+            <actBoxes num="1">
+                <actBox id="37" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>36</objId>
+            <ptul X="516" Y="237" />
+            <ptdr X="531" Y="267" />
+            <links num="1">
+                <link id="38" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>37</objId>
+            <ptul X="787" Y="237" />
+            <ptdr X="802" Y="267" />
+            <links num="1">
+                <link id="38" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>38</objId>
+            <points num="2">
+                <pt x="531" y="242" />
+                <pt x="787" y="242" />
+            </points>
+            <objStart id="36" />
+            <objEnd id="37" />
+            <message messType="MGEN">W2DC_USER_DISCONNECT</message>
+            <guardCond>pid-player_id_t[?]</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>39</objId>
+            <ptul X="516" Y="204" />
+            <ptdr X="531" Y="234" />
+            <links num="1">
+                <link id="40" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>40</objId>
+            <points num="2">
+                <pt x="266" y="209" />
+                <pt x="516" y="209" />
+            </points>
+            <objStart id="34" />
+            <objEnd id="39" />
+            <message messType="MRET">tcp dissconnect</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>41</objId>
+            <ptul X="183" Y="96" />
+            <ptdr X="263" Y="136" />
+            <links num="0" />
+            <objectName>GameServer</objectName>
+            <className>G</className>
+            <actBoxes num="0" />
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>42</objId>
+            <ptul X="579" Y="50" />
+            <ptdr X="647" Y="90" />
+            <links num="0" />
+            <objectName>aObject</objectName>
+            <className>aClass</className>
+            <actBoxes num="1">
+                <actBox id="44" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>43</objId>
+            <ptul X="251" Y="328" />
+            <ptdr X="266" Y="358" />
+            <links num="1">
+                <link id="45" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>44</objId>
+            <ptul X="605" Y="328" />
+            <ptdr X="620" Y="358" />
+            <links num="1">
+                <link id="45" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>45</objId>
+            <points num="2">
+                <pt x="266" y="333" />
+                <pt x="605" y="333" />
+            </points>
+            <objStart id="43" />
+            <objEnd id="44" />
+            <message messType="MRET">tcp disconnect</message>
+            <guardCond />
+        </element>
+    </elements>
+</diagram>

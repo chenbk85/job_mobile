@@ -1,0 +1,22 @@
+// 整数変数宣言
+int foo
+int bar
+
+// 変数に整数定数の代入
+foo=1
+bar=2
+
+// 初期化付き整数変数宣言 & 右辺に整数変数を含む
+int foobar=foo+bar
+
+// 文字列変数宣言
+string str_foo
+string str_bar
+
+// 変数に定数文字列の代入
+str_foo="foo"
+str_bar="bar"
+
+// 初期化付き整数変数宣言 & 右辺に文字列変数を含む
+string str_foobar=str_foo+str_bar
+

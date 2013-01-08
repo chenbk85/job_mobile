@@ -1,0 +1,193 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>Command</title>
+    <Version>2.1</Version>
+    <forceTimeSync />
+    <elements num="14">
+        <element>
+            <type>UMLTEXT</type>
+            <stereotype />
+            <constraint />
+            <description>Command</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>529</objId>
+            <ptul X="261" Y="8" />
+            <ptdr X="344" Y="28" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>530</objId>
+            <ptul X="36" Y="41" />
+            <ptdr X="104" Y="64" />
+            <links num="0" />
+            <objectName>aReceiver</objectName>
+            <className></className>
+            <actBoxes num="1">
+                <actBox id="540" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>531</objId>
+            <ptul X="171" Y="41" />
+            <ptdr X="239" Y="64" />
+            <links num="0" />
+            <objectName>aClient</objectName>
+            <className></className>
+            <actBoxes num="1">
+                <actBox id="534" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>532</objId>
+            <ptul X="391" Y="81" />
+            <ptdr X="461" Y="104" />
+            <links num="1">
+                <link id="535" />
+            </links>
+            <objectName>aCommand</objectName>
+            <className></className>
+            <actBoxes num="1">
+                <actBox id="542" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>533</objId>
+            <ptul X="505" Y="42" />
+            <ptdr X="573" Y="65" />
+            <links num="0" />
+            <objectName>anInvoker</objectName>
+            <className></className>
+            <actBoxes num="2">
+                <actBox id="536" />
+                <actBox id="538" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>534</objId>
+            <ptul X="197" Y="89" />
+            <ptdr X="212" Y="172" />
+            <links num="2">
+                <link id="535" />
+                <link id="537" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>535</objId>
+            <points num="2">
+                <pt x="212" y="94" />
+                <pt x="391" y="94" />
+            </points>
+            <objStart id="534" />
+            <objEnd id="532" />
+            <message messType="MGEN">new Command(aReceiver)</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>536</objId>
+            <ptul X="531" Y="141" />
+            <ptdr X="546" Y="175" />
+            <links num="1">
+                <link id="537" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>537</objId>
+            <points num="2">
+                <pt x="212" y="144" />
+                <pt x="531" y="144" />
+            </points>
+            <objStart id="534" />
+            <objEnd id="536" />
+            <message messType="MGEN">StoreCommand(aCommand)</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>538</objId>
+            <ptul X="531" Y="188" />
+            <ptdr X="546" Y="236" />
+            <links num="1">
+                <link id="539" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>539</objId>
+            <points num="2">
+                <pt x="531" y="193" />
+                <pt x="433" y="193" />
+            </points>
+            <objStart id="538" />
+            <objEnd id="542" />
+            <message messType="MGEN">Execute()</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>540</objId>
+            <ptul X="62" Y="210" />
+            <ptdr X="77" Y="239" />
+            <links num="1">
+                <link id="541" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>541</objId>
+            <points num="2">
+                <pt x="418" y="215" />
+                <pt x="77" y="215" />
+            </points>
+            <objStart id="542" />
+            <objEnd id="540" />
+            <message messType="MGEN">Action()</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>542</objId>
+            <ptul X="418" Y="188" />
+            <ptdr X="433" Y="236" />
+            <links num="2">
+                <link id="539" />
+                <link id="541" />
+            </links>
+        </element>
+    </elements>
+</diagram>

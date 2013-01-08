@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<PROTOCAL HEADER="GameServer" VERSION="3000" i_DebugPrint="3" b_jxDEFINE="true" TAG="G">
+	<!-- CODE에서 개행문자 지원안됨. anpersent # x 0 A ; 를 사용할것-->
+	<CODE TYPE="ENUM_FILE">../my_PT_TServer.h</CODE>
+	<STRUCT_LIST/>
+	<PROTOCAL_LIST>
+		<G_ECHO USD="g_01_01_01_chat.usd">
+			<msg TYPE="tname256_t"/>
+			<type TYPE="uint8"/>
+		</G_ECHO>
+		<G_ERROR USD="c_01_08_gameserver.usd">
+			<ei TYPE="jErrorInfo"/>
+		</G_ERROR>
+		<G_HELLO USD="c_01_08_gameserver.usd">
+			<si TYPE="jServerInfo"/>
+		</G_HELLO>
+		<D2X_NOTICE USD="c_09_05_notify.usd">
+			<info TYPE="jNoticeInfo"/>
+			<msg TYPE="wname1024_t"/>
+			<date TYPE="aname32_t"/>
+		</D2X_NOTICE>
+		<X2D_NOTICE_TEST USD="c_09_05_notify.usd">
+			<info TYPE="jNoticeInfo"/>
+			<msg TYPE="wname1024_t"/>
+			<date TYPE="aname32_t"/>
+		</X2D_NOTICE_TEST>
+		<D_ECHO/>
+		<X2G_CHAT USD="g_01_01_01_chat.usd">
+			<msg TYPE="wname64_t"/>
+			<type TYPE="uint8"/>
+			<id TYPE="wstring" i_Length="-1"/>
+			<pid TYPE="player_id_t" i_Length="-1"/>
+		</X2G_CHAT>
+		<G2X_CHAT USD="g_01_01_01_chat.usd">
+			<msg TYPE="wname64_t"/>
+			<type TYPE="uint8"/>
+		</G2X_CHAT>
+		<X2G_USER_EXIT/>
+		<G2X_USER_EXIT/>
+	</PROTOCAL_LIST>
+	<CODE TYPE="ENUM_FILE"/>
+</PROTOCAL>

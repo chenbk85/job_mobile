@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<SystemVariable>
+
+  <!-- 사용예
+  
+player = Get_CurrentPlayer();
+player.soul = player.hp_percent * xml.SystemVariable.player.soul_value * 0.5;
+-->  
+  
+  
+  <player>
+  <!--유저가 전투중에 가지는 능력들-->
+	  <soul_value>200</soul_value>
+    <!--라이징 게이지를 충전하는데 관련된 능력치 중 하나 soul을 구하기 위한 기본 값-->
+	  <!--소울을 구하는 공식 [soul_value * (app_player)hp_percent] -->
+
+	  <air_damage>0.7</air_damage>
+	  <!--캐릭터가 공중에서 공격 당했을 시, 해당 수치 만큼 대미지를 감소시켜 나감. 공중에서 피해를 입었을 시 피해 보정 공식 [air_damage ^ (app_player)air_damage] -->
+  </player>
+
+  <buff><!--버프의 상세 설정-->
+
+    <slow_value>2</slow_value><!--유저가 "슬로우" 상태가 되었을 시, 해당 값 만큼 프레임이 느려짐-->
+
+	  <fast_value>1.5</fast_value><!--유저가 "패스트" 상태가 되었을 시, 해당 값 만큼 프레임이 빨라짐-->
+
+	  <poison_dot>0.5</poison_dot><!--유저가 "독" 상태가 되었을 시, 값에 해당하는 초의 간격으로 피해를 입힘(0.5초당 피해 1번)-->
+
+	  <poison_num>10</poison_num><!--유저가 "독" 상태가 되었을 시, 값에 해당하는 횟수만큼 피해를 입힘(=10번 피해를 입힘)-->
+  </buff>
+</SystemVariable>
+
+
+
+
+
+
+
+
+
+
+

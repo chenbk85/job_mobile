@@ -1,0 +1,937 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>L_01_03_03_select_chennal</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="74">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>417</objId>
+            <ptul X="436" Y="64" />
+            <ptdr X="512" Y="104" />
+            <links num="0" />
+            <objectName>TownServer</objectName>
+            <className>T</className>
+            <actBoxes num="13">
+                <actBox id="430" />
+                <actBox id="432" />
+                <actBox id="436" />
+                <actBox id="438" />
+                <actBox id="442" />
+                <actBox id="444" />
+                <actBox id="484" />
+                <actBox id="461" />
+                <actBox id="449" />
+                <actBox id="458" />
+                <actBox id="480" />
+                <actBox id="486" />
+                <actBox id="488" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>418</objId>
+            <ptul X="66" Y="62" />
+            <ptdr X="134" Y="102" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="10">
+                <actBox id="424" />
+                <actBox id="441" />
+                <actBox id="429" />
+                <actBox id="462" />
+                <actBox id="435" />
+                <actBox id="445" />
+                <actBox id="459" />
+                <actBox id="479" />
+                <actBox id="481" />
+                <actBox id="489" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>419</objId>
+            <points num="2">
+                <pt x="107" y="149" />
+                <pt x="383" y="149" />
+            </points>
+            <objStart id="424" />
+            <objEnd id="425" />
+            <message messType="MGEN">X2L_CHANNEL_SELECT</message>
+            <guardCond>sid-serverid_t</guardCond>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>420</objId>
+            <ptul X="997" Y="64" />
+            <ptdr X="1097" Y="104" />
+            <links num="0" />
+            <objectName>DBCacheServer</objectName>
+            <className>DC</className>
+            <actBoxes num="4">
+                <actBox id="448" />
+                <actBox id="467" />
+                <actBox id="471" />
+                <actBox id="485" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>421</objId>
+            <points num="2">
+                <pt x="383" y="196" />
+                <pt x="107" y="196" />
+            </points>
+            <objStart id="427" />
+            <objEnd id="441" />
+            <message messType="MGEN">L2X_CHANNEL_SELECT_RESULT</message>
+            <guardCond>e-jError,ip-aname32_t,port-uint16,uid-userid_t</guardCond>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>422</objId>
+            <ptul X="694" Y="64" />
+            <ptdr X="773" Y="104" />
+            <links num="0" />
+            <objectName>WorldServer</objectName>
+            <className>W</className>
+            <actBoxes num="4">
+                <actBox id="439" />
+                <actBox id="434" />
+                <actBox id="447" />
+                <actBox id="450" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>423</objId>
+            <ptul X="353" Y="63" />
+            <ptdr X="429" Y="103" />
+            <links num="0" />
+            <objectName>LoginServer</objectName>
+            <className>L</className>
+            <actBoxes num="5">
+                <actBox id="425" />
+                <actBox id="427" />
+                <actBox id="472" />
+                <actBox id="475" />
+                <actBox id="478" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>424</objId>
+            <ptul X="92" Y="144" />
+            <ptdr X="107" Y="174" />
+            <links num="1">
+                <link id="419" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>425</objId>
+            <ptul X="383" Y="144" />
+            <ptdr X="398" Y="174" />
+            <links num="1">
+                <link id="419" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>426</objId>
+            <points num="2">
+                <pt x="741" y="386" />
+                <pt x="1039" y="386" />
+            </points>
+            <objStart id="447" />
+            <objEnd id="448" />
+            <message messType="MGEN">W2DC_USER_LOGIN_CHANNEL</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>427</objId>
+            <ptul X="383" Y="191" />
+            <ptdr X="398" Y="221" />
+            <links num="1">
+                <link id="421" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>428</objId>
+            <points num="2">
+                <pt x="481" y="859" />
+                <pt x="931" y="859" />
+            </points>
+            <objStart id="458" />
+            <objEnd id="466" />
+            <message messType="MASYN">C4_USER_CONNECTION_NOTIFY</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>429</objId>
+            <ptul X="92" Y="235" />
+            <ptdr X="107" Y="265" />
+            <links num="1">
+                <link id="431" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>430</objId>
+            <ptul X="466" Y="235" />
+            <ptdr X="481" Y="265" />
+            <links num="1">
+                <link id="431" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>431</objId>
+            <points num="2">
+                <pt x="107" y="240" />
+                <pt x="466" y="240" />
+            </points>
+            <objStart id="429" />
+            <objEnd id="430" />
+            <message messType="MRET">tcp connect</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>432</objId>
+            <ptul X="466" Y="267" />
+            <ptdr X="481" Y="297" />
+            <links num="1">
+                <link id="433" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>433</objId>
+            <points num="2">
+                <pt x="466" y="282" />
+                <pt x="107" y="282" />
+            </points>
+            <objStart id="432" />
+            <objEnd id="462" />
+            <message messType="MGEN">T_HELLO</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>434</objId>
+            <ptul X="726" Y="446" />
+            <ptdr X="741" Y="487" />
+            <links num="1">
+                <link id="443" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>435</objId>
+            <ptul X="92" Y="315" />
+            <ptdr X="107" Y="345" />
+            <links num="1">
+                <link id="437" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>436</objId>
+            <ptul X="466" Y="315" />
+            <ptdr X="481" Y="345" />
+            <links num="1">
+                <link id="437" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>437</objId>
+            <points num="2">
+                <pt x="107" y="320" />
+                <pt x="466" y="320" />
+            </points>
+            <objStart id="435" />
+            <objEnd id="436" />
+            <message messType="MGEN">X2T_USER_LOGIN_CHANNEL</message>
+            <guardCond>uid-userid_t,id-aname64_t</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>438</objId>
+            <ptul X="466" Y="347" />
+            <ptdr X="481" Y="377" />
+            <links num="1">
+                <link id="469" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>439</objId>
+            <ptul X="726" Y="347" />
+            <ptdr X="741" Y="377" />
+            <links num="1">
+                <link id="469" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>440</objId>
+            <points num="2">
+                <pt x="466" y="575" />
+                <pt x="107" y="575" />
+            </points>
+            <objStart id="484" />
+            <objEnd id="459" />
+            <message messType="MGEN">T2X_USER_LOGIN_CHANNEL_OK</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>441</objId>
+            <ptul X="92" Y="191" />
+            <ptdr X="107" Y="242" />
+            <links num="1">
+                <link id="421" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>442</objId>
+            <ptul X="466" Y="457" />
+            <ptdr X="481" Y="487" />
+            <links num="1">
+                <link id="443" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>443</objId>
+            <points num="2">
+                <pt x="726" y="462" />
+                <pt x="481" y="462" />
+            </points>
+            <objStart id="434" />
+            <objEnd id="442" />
+            <message messType="MGEN">W_ERROR</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>444</objId>
+            <ptul X="466" Y="484" />
+            <ptdr X="481" Y="514" />
+            <links num="1">
+                <link id="446" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>445</objId>
+            <ptul X="92" Y="484" />
+            <ptdr X="107" Y="514" />
+            <links num="1">
+                <link id="446" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>446</objId>
+            <points num="2">
+                <pt x="466" y="489" />
+                <pt x="107" y="489" />
+            </points>
+            <objStart id="444" />
+            <objEnd id="445" />
+            <message messType="MGEN">T_ERROR</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>447</objId>
+            <ptul X="726" Y="381" />
+            <ptdr X="741" Y="411" />
+            <links num="1">
+                <link id="426" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>448</objId>
+            <ptul X="1039" Y="381" />
+            <ptdr X="1054" Y="411" />
+            <links num="1">
+                <link id="426" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>449</objId>
+            <ptul X="466" Y="776" />
+            <ptdr X="481" Y="802" />
+            <links num="1">
+                <link id="455" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>450</objId>
+            <ptul X="726" Y="419" />
+            <ptdr X="741" Y="449" />
+            <links num="1">
+                <link id="451" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>451</objId>
+            <points num="2">
+                <pt x="1039" y="424" />
+                <pt x="741" y="424" />
+            </points>
+            <objStart id="467" />
+            <objEnd id="450" />
+            <message messType="MGEN">W_ERROR</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>452</objId>
+            <points num="2">
+                <pt x="466" y="680" />
+                <pt x="107" y="680" />
+            </points>
+            <objStart id="488" />
+            <objEnd id="489" />
+            <message messType="MGEN">T2X_USER_LOGIN_CHANNEL_OK3</message>
+            <guardCond>town_xml-jIE*,server_time-j_time_t</guardCond>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>453</objId>
+            <ptul X="826" Y="63" />
+            <ptdr X="898" Y="103" />
+            <links num="0" />
+            <objectName>UserServer</objectName>
+            <className>U</className>
+            <actBoxes num="2">
+                <actBox id="464" />
+                <actBox id="477" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>DB로딩처리</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>454</objId>
+            <ptul X="1070" Y="514" />
+            <ptdr X="1162" Y="533" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>455</objId>
+            <points num="2">
+                <pt x="481" y="781" />
+                <pt x="854" y="781" />
+            </points>
+            <objStart id="449" />
+            <objEnd id="464" />
+            <message messType="MASYN">U4_USER_CONNECTION_NOTIFY</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>456</objId>
+            <points num="2">
+                <pt x="1039" y="542" />
+                <pt x="481" y="542" />
+            </points>
+            <objStart id="471" />
+            <objEnd id="461" />
+            <message messType="MGEN">DC2T_USER_LOGIN_CHANNEL_OK</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>457</objId>
+            <ptul X="931" Y="887" />
+            <ptdr X="946" Y="914" />
+            <links num="1">
+                <link id="474" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>458</objId>
+            <ptul X="466" Y="843" />
+            <ptdr X="481" Y="869" />
+            <links num="1">
+                <link id="428" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>459</objId>
+            <ptul X="92" Y="560" />
+            <ptdr X="107" Y="594" />
+            <links num="1">
+                <link id="440" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[DC2W_USER_LOGIN_CHANNEL_FAIL]&#x0A;{PARAM}&#x0A;uid-userid_t&#x0A;e-jError</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>460</objId>
+            <ptul X="751" Y="429" />
+            <ptdr X="996" Y="505" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>461</objId>
+            <ptul X="466" Y="537" />
+            <ptdr X="481" Y="567" />
+            <links num="1">
+                <link id="456" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>462</objId>
+            <ptul X="92" Y="273" />
+            <ptdr X="107" Y="316" />
+            <links num="1">
+                <link id="433" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>463</objId>
+            <points num="2">
+                <pt x="107" y="821" />
+                <pt x="383" y="821" />
+            </points>
+            <objStart id="479" />
+            <objEnd id="472" />
+            <message messType="MRET">tcp dissconnect</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>464</objId>
+            <ptul X="854" Y="776" />
+            <ptdr X="869" Y="806" />
+            <links num="1">
+                <link id="455" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>465</objId>
+            <ptul X="896" Y="63" />
+            <ptdr X="982" Y="103" />
+            <links num="0" />
+            <objectName>CentralServer</objectName>
+            <className>C</className>
+            <actBoxes num="2">
+                <actBox id="466" />
+                <actBox id="457" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>466</objId>
+            <ptul X="931" Y="854" />
+            <ptdr X="946" Y="884" />
+            <links num="1">
+                <link id="428" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>467</objId>
+            <ptul X="1039" Y="419" />
+            <ptdr X="1054" Y="502" />
+            <links num="1">
+                <link id="451" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[DC2T_USER_LOGIN_CHANNEL_OK2]&#x0A;{PARAM}&#x0A;uid-userid_t&#x0A;hero-nAQ::Use_Hero[?]&#x0A;force-nAQ::Use_Force[?]</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>468</objId>
+            <ptul X="987" Y="879" />
+            <ptdr X="1225" Y="971" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>469</objId>
+            <points num="2">
+                <pt x="481" y="352" />
+                <pt x="726" y="352" />
+            </points>
+            <objStart id="438" />
+            <objEnd id="439" />
+            <message messType="MGEN">T2W_USER_LOGIN_CHANNEL</message>
+            <guardCond>uid-userid_t,id-aname64_t</guardCond>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>470</objId>
+            <points num="2">
+                <pt x="854" y="980" />
+                <pt x="398" y="980" />
+            </points>
+            <objStart id="477" />
+            <objEnd id="478" />
+            <message messType="MGEN">U2L_DO_USER_DISCONNECT</message>
+            <guardCond>uids-userid_t[?]</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>471</objId>
+            <ptul X="1039" Y="522" />
+            <ptdr X="1054" Y="551" />
+            <links num="1">
+                <link id="456" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>472</objId>
+            <ptul X="383" Y="816" />
+            <ptdr X="398" Y="846" />
+            <links num="1">
+                <link id="463" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>473</objId>
+            <points num="2">
+                <pt x="466" y="630" />
+                <pt x="107" y="630" />
+            </points>
+            <objStart id="480" />
+            <objEnd id="481" />
+            <message messType="MGEN">T2X_USER_LOGIN_CHANNEL_OK2</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>474</objId>
+            <points num="2">
+                <pt x="931" y="904" />
+                <pt x="398" y="904" />
+            </points>
+            <objStart id="457" />
+            <objEnd id="475" />
+            <message messType="MASYN">C2L_DO_USER_DISSCONNECT</message>
+            <guardCond>uid-userid_t[?]</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>475</objId>
+            <ptul X="383" Y="899" />
+            <ptdr X="398" Y="929" />
+            <links num="1">
+                <link id="474" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[W2DC_USER_LOGIN_CHANNEL]&#x0A;&#x0A;{PARAM}&#x0A;uid-userid_t&#x0A;id-aname64_t&#x0A;town-serverid_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>476</objId>
+            <ptul X="819" Y="229" />
+            <ptdr X="1030" Y="337" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>477</objId>
+            <ptul X="854" Y="967" />
+            <ptdr X="869" Y="997" />
+            <links num="1">
+                <link id="470" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>478</objId>
+            <ptul X="383" Y="967" />
+            <ptdr X="398" Y="997" />
+            <links num="1">
+                <link id="470" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>479</objId>
+            <ptul X="92" Y="793" />
+            <ptdr X="107" Y="846" />
+            <links num="1">
+                <link id="463" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>480</objId>
+            <ptul X="466" Y="625" />
+            <ptdr X="481" Y="655" />
+            <links num="1">
+                <link id="473" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>481</objId>
+            <ptul X="92" Y="625" />
+            <ptdr X="107" Y="655" />
+            <links num="1">
+                <link id="473" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[T2X_USER_LOGIN_CHANNEL_OK]&#x0A;해당 채널서버 접속완료및 아바타리스트 받기&#x0A;{PARAM}&#x0A;user-nAQ::Use_User&#x0A;town-nAQ::Use_Town[?]</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>482</objId>
+            <ptul X="494" Y="631" />
+            <ptdr X="803" Y="723" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>483</objId>
+            <points num="2">
+                <pt x="1039" y="600" />
+                <pt x="481" y="600" />
+            </points>
+            <objStart id="485" />
+            <objEnd id="486" />
+            <message messType="MGEN">DC2T_USER_LOGIN_CHANNEL_OK2</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>484</objId>
+            <ptul X="466" Y="555" />
+            <ptdr X="481" Y="588" />
+            <links num="1">
+                <link id="440" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>485</objId>
+            <ptul X="1039" Y="595" />
+            <ptdr X="1054" Y="625" />
+            <links num="1">
+                <link id="483" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>486</objId>
+            <ptul X="466" Y="595" />
+            <ptdr X="481" Y="625" />
+            <links num="1">
+                <link id="483" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[DC2T_USER_LOGIN_CHANNEL_OK]&#x0A;iMAX_USER_TOWN&#x09;= 20&#x0A;{PARAM}&#x0A;uid-userid_t&#x0A;user-nAQ::Use_User&#x0A;town-nAQ::Use_Town[?]</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>487</objId>
+            <ptul X="986" Y="764" />
+            <ptdr X="1217" Y="872" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>488</objId>
+            <ptul X="466" Y="675" />
+            <ptdr X="481" Y="705" />
+            <links num="1">
+                <link id="452" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>489</objId>
+            <ptul X="92" Y="675" />
+            <ptdr X="107" Y="705" />
+            <links num="1">
+                <link id="452" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[T2X_USER_LOGIN_CHANNEL_OK2]&#x0A;iMAX_USER_Hero =?&#x0A;{PARAM}&#x0A;hero-nAQ::Use_Hero[?]&#x0A;force-nAQ::Use_Force[?]</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>490</objId>
+            <ptul X="826" Y="631" />
+            <ptdr X="1053" Y="723" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

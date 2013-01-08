@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<ProtocalDefine>
+  <Namespace>
+    <OrbHost FILE="PT_Orb.xml" >
+      <DOC_ATTRIBUTE TAG="H" VERSION="1000" i_DebugPrint='0' b_jxDEFINE="1"/>
+      <Child>
+        <OrbTool/>
+      </Child>
+      <CODE type="ENUM_CPP_INCLUDE">network/my_PT_Orb.h</CODE>
+    </OrbHost>
+    <OrbTool>
+      <TAG>T</TAG>
+    </OrbTool>
+  </Namespace>
+</ProtocalDefine>

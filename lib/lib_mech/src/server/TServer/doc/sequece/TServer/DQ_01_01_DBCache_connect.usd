@@ -1,0 +1,296 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>DQ_01_01_DBCache_connect</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="23">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>59</objId>
+            <ptul X="100" Y="72" />
+            <ptdr X="200" Y="112" />
+            <links num="0" />
+            <objectName>DBCacheServer</objectName>
+            <className>DC</className>
+            <actBoxes num="6">
+                <actBox id="61" />
+                <actBox id="65" />
+                <actBox id="68" />
+                <actBox id="70" />
+                <actBox id="75" />
+                <actBox id="80" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>60</objId>
+            <ptul X="484" Y="70" />
+            <ptdr X="582" Y="110" />
+            <links num="0" />
+            <objectName>DBQueryServer</objectName>
+            <className>DQ</className>
+            <actBoxes num="6">
+                <actBox id="62" />
+                <actBox id="64" />
+                <actBox id="67" />
+                <actBox id="71" />
+                <actBox id="76" />
+                <actBox id="79" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>61</objId>
+            <ptul X="142" Y="182" />
+            <ptdr X="157" Y="212" />
+            <links num="1">
+                <link id="63" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>62</objId>
+            <ptul X="525" Y="182" />
+            <ptdr X="540" Y="212" />
+            <links num="1">
+                <link id="63" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>63</objId>
+            <points num="2">
+                <pt x="157" y="187" />
+                <pt x="525" y="187" />
+            </points>
+            <objStart id="61" />
+            <objEnd id="62" />
+            <message messType="MGEN">DC2DQ_CONNECT</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>64</objId>
+            <ptul X="525" Y="295" />
+            <ptdr X="540" Y="325" />
+            <links num="1">
+                <link id="66" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>65</objId>
+            <ptul X="142" Y="295" />
+            <ptdr X="157" Y="325" />
+            <links num="1">
+                <link id="66" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>66</objId>
+            <points num="2">
+                <pt x="525" y="300" />
+                <pt x="157" y="300" />
+            </points>
+            <objStart id="64" />
+            <objEnd id="65" />
+            <message messType="MGEN">DQ2DC_CONNECT</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>67</objId>
+            <ptul X="525" Y="226" />
+            <ptdr X="540" Y="256" />
+            <links num="1">
+                <link id="69" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>68</objId>
+            <ptul X="142" Y="226" />
+            <ptdr X="157" Y="256" />
+            <links num="1">
+                <link id="69" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>69</objId>
+            <points num="2">
+                <pt x="525" y="231" />
+                <pt x="157" y="231" />
+            </points>
+            <objStart id="67" />
+            <objEnd id="68" />
+            <message messType="MGEN">DQ2DC_CONNECT_OK</message>
+            <guardCond>e-jError,processid-uint32</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>70</objId>
+            <ptul X="142" Y="337" />
+            <ptdr X="157" Y="367" />
+            <links num="1">
+                <link id="72" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>71</objId>
+            <ptul X="525" Y="337" />
+            <ptdr X="540" Y="367" />
+            <links num="1">
+                <link id="72" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>72</objId>
+            <points num="2">
+                <pt x="157" y="342" />
+                <pt x="525" y="342" />
+            </points>
+            <objStart id="70" />
+            <objEnd id="71" />
+            <message messType="MGEN">DC2DQ_CONNECT_OK</message>
+            <guardCond>e-jError,processid-uint32</guardCond>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[DC2DQ_CONNECT]&#x0A;&#x0A;{PARAM}&#x0A;WORLD_NAME-tname32_t&#x0A;SM_QUERY2CACHE_NAME-tname32_t&#x0A;SM_CACHE2QUERY_NAME-tname32_t&#x0A;SM_USER_INFO_NAME-tname32_t&#x0A;processid-uint32</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>73</objId>
+            <ptul X="559" Y="149" />
+            <ptdr X="802" Y="289" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[DQ_ECHO]&#x0A;{PARAM}&#x0A;type-uint8&#x0A;msg-tname256_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>81</objId>
+            <ptul X="574" Y="508" />
+            <ptdr X="679" Y="584" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>75</objId>
+            <ptul X="142" Y="508" />
+            <ptdr X="157" Y="538" />
+            <links num="1">
+                <link id="77" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>76</objId>
+            <ptul X="525" Y="508" />
+            <ptdr X="540" Y="538" />
+            <links num="1">
+                <link id="77" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>77</objId>
+            <points num="2">
+                <pt x="157" y="513" />
+                <pt x="525" y="513" />
+            </points>
+            <objStart id="75" />
+            <objEnd id="76" />
+            <message messType="MGEN">DQ_ECHO</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>78</objId>
+            <points num="2">
+                <pt x="525" y="549" />
+                <pt x="157" y="549" />
+            </points>
+            <objStart id="79" />
+            <objEnd id="80" />
+            <message messType="MGEN">DQ_ECHO</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>79</objId>
+            <ptul X="525" Y="544" />
+            <ptdr X="540" Y="574" />
+            <links num="1">
+                <link id="78" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>80</objId>
+            <ptul X="142" Y="544" />
+            <ptdr X="157" Y="574" />
+            <links num="1">
+                <link id="78" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[DQ2DC_CONNECT]&#x0A;{PARAM}&#x0A;WORLD_NAME-tname32_t&#x0A;SM_QUERY2CACHE_NAME-tname32_t&#x0A;SM_CACHE2QUERY_NAME-tname32_t&#x0A;SM_USER_INFO_NAME-tname32_t&#x0A;GAMEDB_NAME-tname32_t&#x0A;processid-uint32</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>74</objId>
+            <ptul X="558" Y="318" />
+            <ptdr X="801" Y="458" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

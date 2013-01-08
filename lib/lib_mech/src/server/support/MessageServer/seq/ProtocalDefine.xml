@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<ProtocalDefine>
+	<Namespace>
+		<MessageServer FILE="PT_MessageServer.xml" >
+			<DOC_ATTRIBUTE TAG="MS" VERSION="1000" i_DebugPrint='2' b_jxDEFINE="1"/>
+			<Child>
+				<MsgClient/>
+				<CentralServer/>
+			</Child>
+			<CODE type="ENUM_CPP_INCLUDE">my_PT_MessageServer.h</CODE>
+		</MessageServer>
+		<CentralServer>
+			<TAG>C</TAG>
+		</CentralServer>
+		<MsgClient>
+			<TAG>MC</TAG>
+		</MsgClient>
+	</Namespace>
+</ProtocalDefine>

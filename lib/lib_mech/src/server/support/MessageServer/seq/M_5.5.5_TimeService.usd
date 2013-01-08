@@ -1,0 +1,182 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>M_5.5.5_TimeService</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>2.1</Version>
+    <forceTimeSync />
+    <elements num="14">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>199</objId>
+            <ptul X="584" Y="29" />
+            <ptdr X="681" Y="69" />
+            <links num="0" />
+            <objectName>MessageServer</objectName>
+            <className>MS</className>
+            <actBoxes num="3">
+                <actBox id="202" />
+                <actBox id="205" />
+                <actBox id="207" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>200</objId>
+            <ptul X="358" Y="26" />
+            <ptdr X="426" Y="66" />
+            <links num="0" />
+            <objectName>MsgClient</objectName>
+            <className>MC</className>
+            <actBoxes num="3">
+                <actBox id="201" />
+                <actBox id="204" />
+                <actBox id="208" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>201</objId>
+            <ptul X="384" Y="121" />
+            <ptdr X="399" Y="151" />
+            <links num="1">
+                <link id="203" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>202</objId>
+            <ptul X="625" Y="121" />
+            <ptdr X="640" Y="151" />
+            <links num="1">
+                <link id="203" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>203</objId>
+            <points num="2">
+                <pt x="399" y="129" />
+                <pt x="625" y="129" />
+            </points>
+            <objStart id="201" />
+            <objEnd id="202" />
+            <message messType="MGEN">MC_CALL_ME</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>204</objId>
+            <ptul X="384" Y="311" />
+            <ptdr X="399" Y="341" />
+            <links num="1">
+                <link id="206" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>205</objId>
+            <ptul X="625" Y="311" />
+            <ptdr X="640" Y="341" />
+            <links num="1">
+                <link id="206" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>206</objId>
+            <points num="2">
+                <pt x="399" y="316" />
+                <pt x="625" y="316" />
+            </points>
+            <objStart id="204" />
+            <objEnd id="205" />
+            <message messType="MGEN">MC_TIMER_CANCEL</message>
+            <guardCond>job_key-uint32,user_key-uint64</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>207</objId>
+            <ptul X="625" Y="187" />
+            <ptdr X="640" Y="217" />
+            <links num="1">
+                <link id="209" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>208</objId>
+            <ptul X="384" Y="187" />
+            <ptdr X="399" Y="217" />
+            <links num="1">
+                <link id="209" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>209</objId>
+            <points num="2">
+                <pt x="625" y="192" />
+                <pt x="399" y="192" />
+            </points>
+            <objStart id="207" />
+            <objEnd id="208" />
+            <message messType="MGEN">MS_CALL</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[MC_CALL_ME]&#x0A;loop==0 한번만실행&#x0A;loop==-1이면 무한루프&#x0A;loop&gt;0이면 횟수만큼 실행&#x0A;&#x0A;{PARAM}&#x0A;msec-uint32- millisecond time&#x0A;msg-jServerMsg&#x0A;loop-int16</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>210</objId>
+            <ptul X="21" Y="101" />
+            <ptdr X="202" Y="257" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[MS_CALL]&#x0A;만약 요청시 loop &gt;0이면 남은 호출수를 리턴&#x0A;&#x0A;{PARAM}&#x0A;msg-jServerMsg&#x0A;loop-int16</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>211</objId>
+            <ptul X="655" Y="109" />
+            <ptdr X="951" Y="217" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>struct jServerMsg&#x0A;{&#x0A;uint32 job_key; // 작업구분자&#x0A;uint64 user_key; // 해당유저에 대한작업일때유효한값.&#x0A;};</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>274</objId>
+            <ptul X="173" Y="482" />
+            <ptdr X="526" Y="574" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

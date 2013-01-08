@@ -1,0 +1,513 @@
+
+
+
+// 다음코드는 스커럴에서 사용하기위한 샘플 코드
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_CH_ECHO(pSock, pk ,pFromIP)
+{
+	local packet=S_CH_ECHO(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_X2CH_CHAT(pSock, pk ,pFromIP)
+{
+	local packet=S_X2CH_CHAT(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_CH2X_CHAT(pSock, pk ,pFromIP)
+{
+	local packet=S_CH2X_CHAT(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_X2CH_USER_LOGIN_CHANNEL(pSock, pk ,pFromIP)
+{
+	local packet=S_X2CH_USER_LOGIN_CHANNEL(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_CH2X_NEW_TOWN_OK(pSock, pk ,pFromIP)
+{
+	local packet=S_CH2X_NEW_TOWN_OK(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_X2CH_NEW_TOWN(pSock, pk ,pFromIP)
+{
+	local packet=S_X2CH_NEW_TOWN(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_CH2X_SELECT_CASTLE(pSock, pk ,pFromIP)
+{
+	local packet=S_CH2X_SELECT_CASTLE(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_X2CH_TOWN_SELECT(pSock, pk ,pFromIP)
+{
+	local packet=S_X2CH_TOWN_SELECT(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_X2CH_TOWN_DELETE(pSock, pk ,pFromIP)
+{
+	local packet=S_X2CH_TOWN_DELETE(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_CH2X_TOWN_DELETE_OK(pSock, pk ,pFromIP)
+{
+	local packet=S_CH2X_TOWN_DELETE_OK(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_CH2X_TOWN_SELECT_RESULT(pSock, pk ,pFromIP)
+{
+	local packet=S_CH2X_TOWN_SELECT_RESULT(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_CH2X_CREATE_NEW_TOWN(pSock, pk ,pFromIP)
+{
+	local packet=S_CH2X_CREATE_NEW_TOWN(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_X2CH_USER_EXIT(pSock, pk ,pFromIP)
+{
+	local packet=S_X2CH_USER_EXIT(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_CH2X_USER_EXIT(pSock, pk ,pFromIP)
+{
+	local packet=S_CH2X_USER_EXIT(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_X2CH_GOTO_CASTLE_MAP(pSock, pk ,pFromIP)
+{
+	local packet=S_X2CH_GOTO_CASTLE_MAP(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_CH2X_GOTO_CASTLE_MAP(pSock, pk ,pFromIP)
+{
+	local packet=S_CH2X_GOTO_CASTLE_MAP(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_X2CH_GOTO_WORLD_MAP(pSock, pk ,pFromIP)
+{
+	local packet=S_X2CH_GOTO_WORLD_MAP(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_CH2X_GOTO_WORLD_MAP(pSock, pk ,pFromIP)
+{
+	local packet=S_CH2X_GOTO_WORLD_MAP(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_CH2X_UPDATE_CASTLE_MAP(pSock, pk ,pFromIP)
+{
+	local packet=S_CH2X_UPDATE_CASTLE_MAP(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_CH2X_UDPATE_WORLD_MAP(pSock, pk ,pFromIP)
+{
+	local packet=S_CH2X_UDPATE_WORLD_MAP(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_X2CH_GOTO_TOWN_MAP(pSock, pk ,pFromIP)
+{
+	local packet=S_X2CH_GOTO_TOWN_MAP(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_CH2X_GOTO_TOWN_MAP(pSock, pk ,pFromIP)
+{
+	local packet=S_CH2X_GOTO_TOWN_MAP(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_X2CH_NEW_BUILD(pSock, pk ,pFromIP)
+{
+	local packet=S_X2CH_NEW_BUILD(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_X2CH_BUILD_UPGRADE(pSock, pk ,pFromIP)
+{
+	local packet=S_X2CH_BUILD_UPGRADE(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_CH2X_BUILD_UPGRADE_RESULT(pSock, pk ,pFromIP)
+{
+	local packet=S_CH2X_BUILD_UPGRADE_RESULT(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_X2CH_BUILD_UPGRADE_CANCLE(pSock, pk ,pFromIP)
+{
+	local packet=S_X2CH_BUILD_UPGRADE_CANCLE(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_X2CH_BUILD_UPGRADE_CANCLE_OK(pSock, pk ,pFromIP)
+{
+	local packet=S_X2CH_BUILD_UPGRADE_CANCLE_OK(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_X2CH_BUILD_UPGRADE_CHECK(pSock, pk ,pFromIP)
+{
+	local packet=S_X2CH_BUILD_UPGRADE_CHECK(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_X2CH_BUILD_UPGRADE_CHECK_RESULT(pSock, pk ,pFromIP)
+{
+	local packet=S_X2CH_BUILD_UPGRADE_CHECK_RESULT(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_CH_ERROR(pSock, pk ,pFromIP)
+{
+	local packet=S_CH_ERROR(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_CH_HELLO(pSock, pk ,pFromIP)
+{
+	local packet=S_CH_HELLO(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_T2X_NOTICE(pSock, pk ,pFromIP)
+{
+	local packet=S_T2X_NOTICE(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_X2L_NOTICE_TEST(pSock, pk ,pFromIP)
+{
+	local packet=S_X2L_NOTICE_TEST(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_CH2X_USER_LOGIN_CHANNEL_OK(pSock, pk ,pFromIP)
+{
+	local packet=S_CH2X_USER_LOGIN_CHANNEL_OK(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_CH2X_USER_LOGIN_CHANNEL_OK2(pSock, pk ,pFromIP)
+{
+	local packet=S_CH2X_USER_LOGIN_CHANNEL_OK2(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_CH2X_USER_LOGIN_CHANNEL_OK3(pSock, pk ,pFromIP)
+{
+	local packet=S_CH2X_USER_LOGIN_CHANNEL_OK3(); packet.ReadPacket(pSock,pk);
+
+}
+
+
+
+// 다음코드는 C++에서 사용하기위한 샘플 코드
+
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(CH_ECHO)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(CH_ECHO);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(X2CH_CHAT)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(X2CH_CHAT);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(CH2X_CHAT)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(CH2X_CHAT);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(X2CH_USER_LOGIN_CHANNEL)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(X2CH_USER_LOGIN_CHANNEL);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(CH2X_NEW_TOWN_OK)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(CH2X_NEW_TOWN_OK);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(X2CH_NEW_TOWN)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(X2CH_NEW_TOWN);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(CH2X_SELECT_CASTLE)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(CH2X_SELECT_CASTLE);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(X2CH_TOWN_SELECT)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(X2CH_TOWN_SELECT);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(X2CH_TOWN_DELETE)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(X2CH_TOWN_DELETE);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(CH2X_TOWN_DELETE_OK)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(CH2X_TOWN_DELETE_OK);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(CH2X_TOWN_SELECT_RESULT)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(CH2X_TOWN_SELECT_RESULT);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(CH2X_CREATE_NEW_TOWN)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(CH2X_CREATE_NEW_TOWN);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(X2CH_USER_EXIT)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(X2CH_USER_EXIT);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(CH2X_USER_EXIT)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(CH2X_USER_EXIT);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(X2CH_GOTO_CASTLE_MAP)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(X2CH_GOTO_CASTLE_MAP);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(CH2X_GOTO_CASTLE_MAP)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(CH2X_GOTO_CASTLE_MAP);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(X2CH_GOTO_WORLD_MAP)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(X2CH_GOTO_WORLD_MAP);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(CH2X_GOTO_WORLD_MAP)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(CH2X_GOTO_WORLD_MAP);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(CH2X_UPDATE_CASTLE_MAP)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(CH2X_UPDATE_CASTLE_MAP);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(CH2X_UDPATE_WORLD_MAP)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(CH2X_UDPATE_WORLD_MAP);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(X2CH_GOTO_TOWN_MAP)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(X2CH_GOTO_TOWN_MAP);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(CH2X_GOTO_TOWN_MAP)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(CH2X_GOTO_TOWN_MAP);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(X2CH_NEW_BUILD)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(X2CH_NEW_BUILD);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(X2CH_BUILD_UPGRADE)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(X2CH_BUILD_UPGRADE);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(CH2X_BUILD_UPGRADE_RESULT)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(CH2X_BUILD_UPGRADE_RESULT);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(X2CH_BUILD_UPGRADE_CANCLE)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(X2CH_BUILD_UPGRADE_CANCLE);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(X2CH_BUILD_UPGRADE_CANCLE_OK)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(X2CH_BUILD_UPGRADE_CANCLE_OK);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(X2CH_BUILD_UPGRADE_CHECK)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(X2CH_BUILD_UPGRADE_CHECK);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(X2CH_BUILD_UPGRADE_CHECK_RESULT)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(X2CH_BUILD_UPGRADE_CHECK_RESULT);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(CH_ERROR)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(CH_ERROR);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(CH_HELLO)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(CH_HELLO);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(T2X_NOTICE)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(T2X_NOTICE);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(X2L_NOTICE_TEST)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(X2L_NOTICE_TEST);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(CH2X_USER_LOGIN_CHANNEL_OK)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(CH2X_USER_LOGIN_CHANNEL_OK);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(CH2X_USER_LOGIN_CHANNEL_OK2)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(CH2X_USER_LOGIN_CHANNEL_OK2);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(CH2X_USER_LOGIN_CHANNEL_OK3)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(CH2X_USER_LOGIN_CHANNEL_OK3);
+
+}

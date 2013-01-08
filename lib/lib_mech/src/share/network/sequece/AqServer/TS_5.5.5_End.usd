@@ -1,0 +1,249 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>TS_5.5.5_End</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="19">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>47</objId>
+            <ptul X="99" Y="87" />
+            <ptdr X="167" Y="127" />
+            <links num="0" />
+            <objectName>TestClient</objectName>
+            <className>TC</className>
+            <actBoxes num="2">
+                <actBox id="50" />
+                <actBox id="58" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>48</objId>
+            <ptul X="445" Y="85" />
+            <ptdr X="516" Y="125" />
+            <links num="0" />
+            <objectName>TestServer</objectName>
+            <className>TS</className>
+            <actBoxes num="3">
+                <actBox id="54" />
+                <actBox id="56" />
+                <actBox id="61" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>49</objId>
+            <ptul X="767" Y="83" />
+            <ptdr X="836" Y="123" />
+            <links num="0" />
+            <objectName>AqMonitor</objectName>
+            <className>TM</className>
+            <actBoxes num="3">
+                <actBox id="52" />
+                <actBox id="55" />
+                <actBox id="60" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>50</objId>
+            <ptul X="126" Y="175" />
+            <ptdr X="141" Y="205" />
+            <links num="1">
+                <link id="51" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>51</objId>
+            <points num="2">
+                <pt x="141" y="180" />
+                <pt x="473" y="180" />
+            </points>
+            <objStart id="50" />
+            <objEnd id="54" />
+            <message messType="MRET">tcp disconnect</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>52</objId>
+            <ptul X="794" Y="199" />
+            <ptdr X="809" Y="229" />
+            <links num="1">
+                <link id="53" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>53</objId>
+            <points num="2">
+                <pt x="488" y="204" />
+                <pt x="794" y="204" />
+            </points>
+            <objStart id="54" />
+            <objEnd id="52" />
+            <message messType="MGEN">TS2TM_CLIENT_DISCONNECT</message>
+            <guardCond>did-dummy_id_t</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>54</objId>
+            <ptul X="473" Y="175" />
+            <ptdr X="488" Y="218" />
+            <links num="2">
+                <link id="51" />
+                <link id="53" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>55</objId>
+            <ptul X="794" Y="322" />
+            <ptdr X="809" Y="352" />
+            <links num="1">
+                <link id="57" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>56</objId>
+            <ptul X="473" Y="322" />
+            <ptdr X="488" Y="352" />
+            <links num="2">
+                <link id="57" />
+                <link id="59" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>57</objId>
+            <points num="2">
+                <pt x="794" y="327" />
+                <pt x="488" y="327" />
+            </points>
+            <objStart id="55" />
+            <objEnd id="56" />
+            <message messType="MGEN">TM_RUN_DUMMY_SCRIPT</message>
+            <guardCond>code-TCHAR[4096]</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>58</objId>
+            <ptul X="126" Y="338" />
+            <ptdr X="141" Y="368" />
+            <links num="1">
+                <link id="59" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>59</objId>
+            <points num="2">
+                <pt x="473" y="343" />
+                <pt x="141" y="343" />
+            </points>
+            <objStart id="56" />
+            <objEnd id="58" />
+            <message messType="MGEN">TM_RUN_DUMMY_SCRIPT</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>60</objId>
+            <ptul X="794" Y="416" />
+            <ptdr X="809" Y="446" />
+            <links num="1">
+                <link id="62" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>61</objId>
+            <ptul X="473" Y="416" />
+            <ptdr X="488" Y="446" />
+            <links num="1">
+                <link id="62" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>62</objId>
+            <points num="2">
+                <pt x="794" y="421" />
+                <pt x="488" y="421" />
+            </points>
+            <objStart id="60" />
+            <objEnd id="61" />
+            <message messType="MGEN">TM_RUN_CENTRAL_SCRIPT</message>
+            <guardCond>code-TCHAR[4096]</guardCond>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>더미클라이언트 접속해제</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>63</objId>
+            <ptul X="78" Y="139" />
+            <ptdr X="269" Y="158" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>DUMMY : 실행시킬 SQ SCRIPT</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>64</objId>
+            <ptul X="687" Y="284" />
+            <ptdr X="920" Y="303" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>TESTSERVER: 실행시킬 SQ SCRIPT</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>65</objId>
+            <ptul X="697" Y="375" />
+            <ptdr X="976" Y="394" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

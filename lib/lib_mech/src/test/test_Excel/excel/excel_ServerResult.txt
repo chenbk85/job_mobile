@@ -1,0 +1,9 @@
+nEXCEL ,@#, D:\svn\lib\lib_mech\src\test\test_Excel\excel ,@#, excel_ServerResult
+
+Sys ,@#, Sys_ServerResult ,@#, 설명없음
+
+SysItem ,@#, 에러번호 ,@#, id ,@#, uint32 ,@#,  ,@#,  ,@#, PK ,@#,  ,@#, 
+SysItem ,@#, 에러이름 ,@#, eng_name ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 에러내용 ,@#, description ,@#, tstring ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<ProtocalDefine>
+	<Namespace>
+		<CentralServer FILE="PT_Central.xml" >
+			<DOC_ATTRIBUTE TAG="C" VERSION="1000" i_DebugPrint='3' b_jxDEFINE="1"/>
+			<Child>
+				<DBCacheServer />
+				<UserServer/>
+				<WorldServer/>
+				<LoginServer />
+				<TownServer />
+				<DungeonServer />
+				<Servers />
+			</Child>
+			<CODE type="ENUM_CPP_INCLUDE">network/my_pt_aq_server.h</CODE>
+		</CentralServer>
+		<UserServer FILE="PT_User.xml" >
+			<DOC_ATTRIBUTE TAG="U" VERSION="2000" i_DebugPrint='3' b_jxDEFINE="1"/>
+			<Child>
+				<LoginServer />
+        <TownServer/>
+        <DungeonServer/>
+        <WorldServer/>
+				<Servers />
+			</Child>
+			<CODE type="ENUM_CPP_INCLUDE">network/my_pt_aq_server.h</CODE>
+		</UserServer>
+		<WorldServer FILE="PT_World.xml" >
+			<DOC_ATTRIBUTE TAG="W" VERSION="3000" i_DebugPrint='3' b_jxDEFINE="1"/>
+			<Child>
+				<DBCacheServer />
+				<TownServer/>
+        <DungeonServer/>
+        <Servers />
+			</Child>
+			<CODE type="ENUM_CPP_INCLUDE">network/my_pt_aq_server.h</CODE>
+		</WorldServer>
+		<DBCacheServer FILE="PT_DBCache.xml">
+			<DOC_ATTRIBUTE TAG="DC" VERSION="4000" i_DebugPrint='3' b_jxDEFINE="1"/>
+			<Child>
+				<TownServer />
+				<DungeonServer />
+				<Servers />
+			</Child>
+			<CODE type="ENUM_CPP_INCLUDE">network/my_pt_aq_server.h</CODE>
+		</DBCacheServer>
+		<DBQueryServer FILE="PT_DBQuery.xml">
+			<DOC_ATTRIBUTE TAG="DC" VERSION="50" i_DebugPrint='3' b_jxDEFINE="1"/>
+			<Child>
+				<DBCacheServer />
+			</Child>
+		</DBQueryServer>
+		<LoginServer FILE="PT_Login.xml">
+			<DOC_ATTRIBUTE TAG="LG" VERSION="5000" i_DebugPrint='3' b_jxDEFINE="1"/>
+			<Child>
+				<Client />
+				<Clients />
+				<LoginOSP/>
+			</Child>
+			<CODE type="ENUM_CPP_INCLUDE">network/my_pt_aq_server.h</CODE>
+		</LoginServer>
+		<TownServer FILE="PT_Town.xml" >
+			<DOC_ATTRIBUTE TAG="L" VERSION="6000" i_DebugPrint='3' b_jxDEFINE="1"/>
+			<Child>
+				<Client />
+				<Clients />
+				<Client1/>
+			</Child>
+			<CODE type="ENUM_CPP_INCLUDE">network/my_pt_aq_server.h</CODE>
+		</TownServer>
+		<DungeonServer FILE="PT_Dungeon.xml" >
+			<DOC_ATTRIBUTE TAG="R" VERSION="7000" i_DebugPrint='3' b_jxDEFINE="1"/>
+			<Child>
+				<Client />
+				<Clients />
+				<Client1/>
+			</Child>
+			<CODE type="ENUM_CPP_INCLUDE">network/my_pt_aq_server.h</CODE>
+		</DungeonServer>
+		<TestServer FILE="PT_TestServer.xml" >
+			<DOC_ATTRIBUTE TAG="TS" VERSION="8000" i_DebugPrint='3' b_jxDEFINE="1"/>
+			<Child>
+				<TestClient/>
+				<AqMonitor/>
+			</Child>
+			<CODE type="ENUM_CPP_INCLUDE">network/my_pt_aq_server.h</CODE>
+		</TestServer>
+		<AqMonitor>
+			<TAG>TM</TAG>
+		</AqMonitor>
+		<TestClient >
+			<TAG>TC</TAG>
+		</TestClient>
+		<Servers>
+			<TAG>SS</TAG>
+		</Servers>
+		<Client >
+			<TAG>X</TAG>
+		</Client>
+		<Client1>
+			<TAG>X</TAG>
+		</Client1>
+		<Clients >
+			<TAG>XS</TAG>
+		</Clients>
+		<DB>
+			<TAG>DB</TAG>
+		</DB>
+	</Namespace>
+</ProtocalDefine>

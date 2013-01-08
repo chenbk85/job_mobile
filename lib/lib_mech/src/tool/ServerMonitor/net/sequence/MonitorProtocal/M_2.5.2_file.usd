@@ -1,0 +1,73 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>M_2.5.2_file</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="5">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>11</objId>
+            <ptul X="92" Y="38" />
+            <ptdr X="160" Y="78" />
+            <links num="0" />
+            <objectName>Agent</objectName>
+            <className>A</className>
+            <actBoxes num="1">
+                <actBox id="14" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>12</objId>
+            <ptul X="521" Y="36" />
+            <ptdr X="609" Y="76" />
+            <links num="0" />
+            <objectName>MonitorServer</objectName>
+            <className>M</className>
+            <actBoxes num="1">
+                <actBox id="13" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>13</objId>
+            <ptul X="557" Y="119" />
+            <ptdr X="572" Y="149" />
+            <links num="1">
+                <link id="15" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>14</objId>
+            <ptul X="118" Y="119" />
+            <ptdr X="133" Y="149" />
+            <links num="1">
+                <link id="15" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>15</objId>
+            <points num="2">
+                <pt x="557" y="131" />
+                <pt x="133" y="131" />
+            </points>
+            <objStart id="13" />
+            <objEnd id="14" />
+            <message messType="MGEN">M2A_SEND_FILE</message>
+            <guardCond>type-int,target_dir-tstring</guardCond>
+        </element>
+    </elements>
+</diagram>

@@ -1,0 +1,28 @@
+ Z 드라이브의 볼륨에는 이름이 없습니다.
+ 볼륨 일련 번호: DCB4-AFB4
+
+ Z:\lib\boost\boost_1_45_0\Win32 디렉터리
+
+[.]
+[..]
+a.txt
+libboost_date_time-vc90-mt-s-1_45.lib
+libboost_date_time-vc90-mt-sgd-1_45.lib
+libboost_date_time-vc90-s-1_45.lib
+libboost_date_time-vc90-sgd-1_45.lib
+libboost_filesystem-vc90-mt-s-1_45.lib
+libboost_filesystem-vc90-mt-sgd-1_45.lib
+libboost_regex-vc90-mt-s-1_45.lib
+libboost_regex-vc90-mt-sgd-1_45.lib
+libboost_serialization-vc90-mt-s-1_45.lib
+libboost_serialization-vc90-mt-sgd-1_45.lib
+libboost_signals-vc90-mt-s-1_45.lib
+libboost_signals-vc90-mt-sgd-1_45.lib
+libboost_system-vc90-mt-s-1_45.lib
+libboost_system-vc90-mt-sgd-1_45.lib
+libboost_thread-vc90-mt-s-1_45.lib
+libboost_thread-vc90-mt-sgd-1_45.lib
+libboost_unit_test_framework-vc90-mt-s-1_45.lib
+libboost_unit_test_framework-vc90-mt-sgd-1_45.lib
+              19개 파일         145,104,796 바이트
+               2개 디렉터리  47,481,098,240 바이트 남음

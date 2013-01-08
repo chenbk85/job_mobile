@@ -1,0 +1,261 @@
+
+
+
+// 다음코드는 스커럴에서 사용하기위한 샘플 코드
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_U4_USER_CONNECTION_NOTIFY(pSock, pk ,pFromIP)
+{
+	local packet=S_U4_USER_CONNECTION_NOTIFY(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_U_HELLO(pSock, pk ,pFromIP)
+{
+	local packet=S_U_HELLO(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_SS2U_ONLINE(pSock, pk ,pFromIP)
+{
+	local packet=S_SS2U_ONLINE(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_W2U_ONLINE_USERS(pSock, pk ,pFromIP)
+{
+	local packet=S_W2U_ONLINE_USERS(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_L2U_ONLINE_USERS(pSock, pk ,pFromIP)
+{
+	local packet=S_L2U_ONLINE_USERS(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_U_SERVERINFO_ACK(pSock, pk ,pFromIP)
+{
+	local packet=S_U_SERVERINFO_ACK(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_SS2U_SERVERINFO_ACK(pSock, pk ,pFromIP)
+{
+	local packet=S_SS2U_SERVERINFO_ACK(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_U2SS_ONLINE_OK(pSock, pk ,pFromIP)
+{
+	local packet=S_U2SS_ONLINE_OK(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_U_ECHO(pSock, pk ,pFromIP)
+{
+	local packet=S_U_ECHO(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_U_ERROR(pSock, pk ,pFromIP)
+{
+	local packet=S_U_ERROR(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_L2U_USER_LOGIN(pSock, pk ,pFromIP)
+{
+	local packet=S_L2U_USER_LOGIN(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_U2L_USER_LOGIN_RESULT(pSock, pk ,pFromIP)
+{
+	local packet=S_U2L_USER_LOGIN_RESULT(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_U2W_USER_LOGIN(pSock, pk ,pFromIP)
+{
+	local packet=S_U2W_USER_LOGIN(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_W2U_USER_LOGIN_RESULT(pSock, pk ,pFromIP)
+{
+	local packet=S_W2U_USER_LOGIN_RESULT(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_U2W_USER_LOGIN_DUPLICATE(pSock, pk ,pFromIP)
+{
+	local packet=S_U2W_USER_LOGIN_DUPLICATE(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_W2U_USER_LOGIN_DUPLICATE_OK(pSock, pk ,pFromIP)
+{
+	local packet=S_W2U_USER_LOGIN_DUPLICATE_OK(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_U2W_USER_DISCONNECT(pSock, pk ,pFromIP)
+{
+	local packet=S_U2W_USER_DISCONNECT(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_U2L_DO_USER_DISCONNECT(pSock, pk ,pFromIP)
+{
+	local packet=S_U2L_DO_USER_DISCONNECT(); packet.ReadPacket(pSock,pk);
+
+}
+
+
+
+// 다음코드는 C++에서 사용하기위한 샘플 코드
+
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(U4_USER_CONNECTION_NOTIFY)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(U4_USER_CONNECTION_NOTIFY);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(U_HELLO)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(U_HELLO);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(SS2U_ONLINE)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(SS2U_ONLINE);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(W2U_ONLINE_USERS)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(W2U_ONLINE_USERS);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(L2U_ONLINE_USERS)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(L2U_ONLINE_USERS);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(U_SERVERINFO_ACK)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(U_SERVERINFO_ACK);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(SS2U_SERVERINFO_ACK)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(SS2U_SERVERINFO_ACK);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(U2SS_ONLINE_OK)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(U2SS_ONLINE_OK);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(U_ECHO)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(U_ECHO);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(U_ERROR)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(U_ERROR);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(L2U_USER_LOGIN)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(L2U_USER_LOGIN);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(U2L_USER_LOGIN_RESULT)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(U2L_USER_LOGIN_RESULT);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(U2W_USER_LOGIN)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(U2W_USER_LOGIN);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(W2U_USER_LOGIN_RESULT)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(W2U_USER_LOGIN_RESULT);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(U2W_USER_LOGIN_DUPLICATE)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(U2W_USER_LOGIN_DUPLICATE);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(W2U_USER_LOGIN_DUPLICATE_OK)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(W2U_USER_LOGIN_DUPLICATE_OK);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(U2W_USER_DISCONNECT)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(U2W_USER_DISCONNECT);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(U2L_DO_USER_DISCONNECT)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(U2L_DO_USER_DISCONNECT);
+
+}

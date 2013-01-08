@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <SVN>$(SolutionDir)..\..\..\..</SVN>
+    <MECH_SRC>$(SolutionDir)..</MECH_SRC>
+    <MECH_LIB>$(MECH_SRC)\..\lib\vc2010</MECH_LIB>
+    <BOOST>$(SVN)\lib\lib_boost_1_51</BOOST>
+    <MECH_LIB_OUT>$(MECH_LIB)\mech\$(Configuration)_$(PlatformName)</MECH_LIB_OUT>
+    <MECH_BIN>$(MECH_SRC)\..\bin\client\$(Configuration)_$(PlatformName)_vc2010</MECH_BIN>
+    <MECH_TEMP>o:\mech_vc2010\$(ProjectName)\$(Configuration)_$(PlatformName)</MECH_TEMP>
+    <MECH_THRIFT>$(SVN)\lib\lib_thrift\thrift-0.9.0\lib\cpp\src</MECH_THRIFT>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutDir>$(MECH_BIN)\</OutDir>
+    <IntDir>$(MECH_TEMP)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <LibraryPath>$(BOOST)\lib\$(PlatformName)\;$(MECH_LIB_OUT);$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SVN)\lib\yaml-cpp\include;$(SVN)\lib\lib_poco\Foundation\include;$(SVN)\lib\lib_poco\XML\include;$(SVN)\lib\lib_poco\Util\include;$(SVN)\lib\lib_poco\Net\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;$(MECH_SRC)\base;$(BOOST);$(MECH_THRIFT);$(SVN)\lib\lib_protobuf\src</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <XMLDocumentationFileName>$(IntDir)</XMLDocumentationFileName>
+      <PreprocessorDefinitions>USE_BOOST_THREAD;USE_MECH_POCO_DLL;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;_CRT_SECURE_NO_DEPRECATE;VUTPP_BOOSTTEST;DEF_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/w44302 /w44286 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(MECH_LIB_OUT);$(BOOST)\lib\$(PlatformName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>winmm.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(MECH_BIN)\$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(MECH_LIB_OUT)\$(ProjectName).lib</ImportLibrary>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(BOOST)\lib\$(PlatformName)\;$(MECH_LIB_OUT);VC_$(PlatformName);SDK_$(PlatformName);ATL_$(PlatformName)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="SVN">
+      <Value>$(SVN)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="MECH_SRC">
+      <Value>$(MECH_SRC)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="MECH_LIB">
+      <Value>$(MECH_LIB)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="BOOST">
+      <Value>$(BOOST)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="MECH_LIB_OUT">
+      <Value>$(MECH_LIB_OUT)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="MECH_BIN">
+      <Value>$(MECH_BIN)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="MECH_TEMP">
+      <Value>$(MECH_TEMP)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="MECH_THRIFT">
+      <Value>$(MECH_THRIFT)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

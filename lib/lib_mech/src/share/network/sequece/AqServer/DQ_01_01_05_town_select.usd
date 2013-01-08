@@ -1,0 +1,463 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>DQ_01_01_05_town_select</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="36">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>96</objId>
+            <ptul X="342" Y="31" />
+            <ptdr X="442" Y="71" />
+            <links num="0" />
+            <objectName>DBCacheServer</objectName>
+            <className>DC</className>
+            <actBoxes num="10">
+                <actBox id="98" />
+                <actBox id="101" />
+                <actBox id="103" />
+                <actBox id="108" />
+                <actBox id="111" />
+                <actBox id="113" />
+                <actBox id="119" />
+                <actBox id="122" />
+                <actBox id="126" />
+                <actBox id="129" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>97</objId>
+            <ptul X="660" Y="27" />
+            <ptdr X="758" Y="67" />
+            <links num="0" />
+            <objectName>DBQueryServer</objectName>
+            <className>DQ</className>
+            <actBoxes num="7">
+                <actBox id="99" />
+                <actBox id="106" />
+                <actBox id="104" />
+                <actBox id="107" />
+                <actBox id="110" />
+                <actBox id="114" />
+                <actBox id="125" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>98</objId>
+            <ptul X="384" Y="127" />
+            <ptdr X="399" Y="157" />
+            <links num="1">
+                <link id="100" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>99</objId>
+            <ptul X="701" Y="127" />
+            <ptdr X="716" Y="157" />
+            <links num="1">
+                <link id="100" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>100</objId>
+            <points num="2">
+                <pt x="399" y="132" />
+                <pt x="701" y="132" />
+            </points>
+            <objStart id="98" />
+            <objEnd id="99" />
+            <message messType="MGEN">DC2DQ_TOWN_CREATE</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>101</objId>
+            <ptul X="384" Y="258" />
+            <ptdr X="399" Y="288" />
+            <links num="1">
+                <link id="102" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>102</objId>
+            <points num="2">
+                <pt x="701" y="263" />
+                <pt x="399" y="263" />
+            </points>
+            <objStart id="106" />
+            <objEnd id="101" />
+            <message messType="MGEN">DQ2DC_TOWN_CREATE_OK</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>103</objId>
+            <ptul X="384" Y="560" />
+            <ptdr X="399" Y="590" />
+            <links num="1">
+                <link id="105" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>104</objId>
+            <ptul X="701" Y="560" />
+            <ptdr X="716" Y="590" />
+            <links num="1">
+                <link id="105" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>105</objId>
+            <points num="2">
+                <pt x="399" y="565" />
+                <pt x="701" y="565" />
+            </points>
+            <objStart id="103" />
+            <objEnd id="104" />
+            <message messType="MGEN">DC2DQ_TOWN_DELETE</message>
+            <guardCond>uid-userid_t,index-townid_t</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>106</objId>
+            <ptul X="701" Y="237" />
+            <ptdr X="716" Y="288" />
+            <links num="1">
+                <link id="102" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>107</objId>
+            <ptul X="701" Y="685" />
+            <ptdr X="716" Y="715" />
+            <links num="1">
+                <link id="109" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>108</objId>
+            <ptul X="384" Y="685" />
+            <ptdr X="399" Y="715" />
+            <links num="1">
+                <link id="109" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>109</objId>
+            <points num="2">
+                <pt x="701" y="696" />
+                <pt x="399" y="696" />
+            </points>
+            <objStart id="107" />
+            <objEnd id="108" />
+            <message messType="MGEN">DQ_ERROR</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>110</objId>
+            <ptul X="701" Y="607" />
+            <ptdr X="716" Y="637" />
+            <links num="1">
+                <link id="112" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>111</objId>
+            <ptul X="384" Y="607" />
+            <ptdr X="399" Y="637" />
+            <links num="1">
+                <link id="112" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>112</objId>
+            <points num="2">
+                <pt x="701" y="612" />
+                <pt x="399" y="612" />
+            </points>
+            <objStart id="110" />
+            <objEnd id="111" />
+            <message messType="MGEN">DQ2DC_TOWN_DELETE_OK</message>
+            <guardCond>uid-userid_t,town_index-uint8</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>113</objId>
+            <ptul X="384" Y="438" />
+            <ptdr X="399" Y="468" />
+            <links num="1">
+                <link id="115" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>114</objId>
+            <ptul X="701" Y="438" />
+            <ptdr X="716" Y="468" />
+            <links num="1">
+                <link id="115" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>115</objId>
+            <points num="2">
+                <pt x="399" y="443" />
+                <pt x="701" y="443" />
+            </points>
+            <objStart id="113" />
+            <objEnd id="114" />
+            <message messType="MGEN">DC2DQ_INSERT_ITEM_AND_SKILL</message>
+            <guardCond>uid-userid_t,town_index-uint8</guardCond>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>116</objId>
+            <points num="2">
+                <pt x="174" y="104" />
+                <pt x="384" y="104" />
+            </points>
+            <objStart id="118" />
+            <objEnd id="119" />
+            <message messType="MGEN">W2DC_NEW_TOWN</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>117</objId>
+            <ptul X="127" Y="31" />
+            <ptdr X="206" Y="71" />
+            <links num="0" />
+            <objectName>WorldServer</objectName>
+            <className>W</className>
+            <actBoxes num="2">
+                <actBox id="118" />
+                <actBox id="130" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>118</objId>
+            <ptul X="159" Y="99" />
+            <ptdr X="174" Y="129" />
+            <links num="1">
+                <link id="116" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>119</objId>
+            <ptul X="384" Y="99" />
+            <ptdr X="399" Y="129" />
+            <links num="1">
+                <link id="116" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[DC2DQ_TOWN_CREATE]&#x0A;{PARAM}&#x0A;uid-userid_t&#x0A;csid-Sys_Castle_id_t&#x0A;tpsid-Sys_TownPos_id_t&#x0A;name-wname32_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>120</objId>
+            <ptul X="727" Y="83" />
+            <ptdr X="892" Y="191" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>121</objId>
+            <ptul X="45" Y="30" />
+            <ptdr X="121" Y="70" />
+            <links num="0" />
+            <objectName>TownServer</objectName>
+            <className>T</className>
+            <actBoxes num="1">
+                <actBox id="123" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>122</objId>
+            <ptul X="384" Y="282" />
+            <ptdr X="399" Y="312" />
+            <links num="1">
+                <link id="124" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>123</objId>
+            <ptul X="75" Y="282" />
+            <ptdr X="90" Y="312" />
+            <links num="1">
+                <link id="124" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>124</objId>
+            <points num="2">
+                <pt x="384" y="287" />
+                <pt x="90" y="287" />
+            </points>
+            <objStart id="122" />
+            <objEnd id="123" />
+            <message messType="MGEN">DC2T_NEW_TOWN_OK</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>125</objId>
+            <ptul X="701" Y="168" />
+            <ptdr X="716" Y="198" />
+            <links num="1">
+                <link id="127" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>126</objId>
+            <ptul X="384" Y="168" />
+            <ptdr X="399" Y="198" />
+            <links num="1">
+                <link id="127" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>127</objId>
+            <points num="2">
+                <pt x="701" y="180" />
+                <pt x="399" y="180" />
+            </points>
+            <objStart id="125" />
+            <objEnd id="126" />
+            <message messType="MGEN">DQ2DC_TOWN_CREATE_ERROR</message>
+            <guardCond>uid-userid_t,e-jError</guardCond>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[DQ2DC_TOWN_CREATE_OK]&#x0A;{PARAM}&#x0A;uid-userid_t&#x0A;tid-townid_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>128</objId>
+            <ptul X="724" Y="242" />
+            <ptdr X="915" Y="318" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>129</objId>
+            <ptul X="384" Y="202" />
+            <ptdr X="399" Y="232" />
+            <links num="1">
+                <link id="131" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>130</objId>
+            <ptul X="159" Y="202" />
+            <ptdr X="174" Y="232" />
+            <links num="1">
+                <link id="131" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>131</objId>
+            <points num="2">
+                <pt x="384" y="207" />
+                <pt x="174" y="207" />
+            </points>
+            <objStart id="129" />
+            <objEnd id="130" />
+            <message messType="MGEN">DC2W_NEW_TOWN_ERROR</message>
+            <guardCond />
+        </element>
+    </elements>
+</diagram>

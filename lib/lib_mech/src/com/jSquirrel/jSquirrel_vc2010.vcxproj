@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="UDebug|x64">
+      <Configuration>UDebug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="URelease|x64">
+      <Configuration>URelease</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>jSquirrel</ProjectName>
+    <ProjectGuid>{4D8E4120-78A6-4112-960D-EFCF4C5BB4D0}</ProjectGuid>
+    <RootNamespace>jSquirrel</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='URelease|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='URelease|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\mech_vc2010.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\mech_vc2010.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">$(MECH_BIN)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">$(MECH_TEMP)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">$(MECH_BIN)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">$(MECH_TEMP)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;.\sqplus_25\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;JSQUIRREL_EXPORTS;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(MECH_BIN)/$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>$(MECH_TEMP)\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Xdcmake>
+      <OutputFile>$(MECH_TEMP)\$(TargetName).xml</OutputFile>
+    </Xdcmake>
+    <Bscmake>
+      <OutputFile>$(MECH_TEMP)/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.\sqplus_25\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;JSQUIRREL_EXPORTS;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(ProjectName).map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>$(MECH_TEMP)\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Xdcmake>
+      <OutputFile>$(MECH_TEMP)\$(TargetName).xml</OutputFile>
+    </Xdcmake>
+    <Bscmake>
+      <OutputFile>$(MECH_TEMP)/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="jSquirrel.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqplus_25\squirrel\sqapi.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqplus_25\squirrel\sqbaselib.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqplus_25\squirrel\sqclass.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqplus_25\squirrel\sqcompiler.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqplus_25\squirrel\sqdebug.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqplus_25\squirrel\sqfuncstate.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqplus_25\squirrel\sqlexer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqplus_25\squirrel\sqmem.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqplus_25\squirrel\sqobject.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqplus_25\squirrel\sqstate.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqplus_25\squirrel\sqtable.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqplus_25\squirrel\sqvm.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqplus\SqPlus.cpp" />
+    <ClCompile Include="sqplus\SquirrelBindingsUtils.cpp" />
+    <ClCompile Include="sqplus\SquirrelBindingsUtilsWin32.cpp" />
+    <ClCompile Include="sqplus\SquirrelVM.cpp" />
+    <ClCompile Include="sqplus_25\sqstdlib\sqstdaux.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqplus_25\sqstdlib\sqstdblob.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqplus_25\sqstdlib\sqstdio.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqplus_25\sqstdlib\sqstdmath.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqplus_25\sqstdlib\sqstdrex.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqplus_25\sqstdlib\sqstdstream.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqplus_25\sqstdlib\sqstdstring.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sqplus_25\sqstdlib\sqstdsystem.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="jSquirrel.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="sqplus_25\squirrel\sqarray.h" />
+    <ClInclude Include="sqplus_25\squirrel\sqclass.h" />
+    <ClInclude Include="sqplus_25\squirrel\sqclosure.h" />
+    <ClInclude Include="sqplus_25\squirrel\sqcompiler.h" />
+    <ClInclude Include="sqplus_25\squirrel\sqfuncproto.h" />
+    <ClInclude Include="sqplus_25\squirrel\sqfuncstate.h" />
+    <ClInclude Include="sqplus_25\squirrel\sqlexer.h" />
+    <ClInclude Include="sqplus_25\squirrel\sqobject.h" />
+    <ClInclude Include="sqplus_25\squirrel\sqopcodes.h" />
+    <ClInclude Include="sqplus_25\squirrel\sqpcheader.h" />
+    <ClInclude Include="sqplus_25\squirrel\sqstate.h" />
+    <ClInclude Include="sqplus_25\squirrel\sqstring.h" />
+    <ClInclude Include="sqplus_25\squirrel\sqtable.h" />
+    <ClInclude Include="sqplus_25\squirrel\squserdata.h" />
+    <ClInclude Include="sqplus_25\squirrel\squtils.h" />
+    <ClInclude Include="sqplus_25\squirrel\sqvm.h" />
+    <ClInclude Include="sqplus\SqPlusConst.h" />
+    <ClInclude Include="sqplus\sqplusWin32.h" />
+    <ClInclude Include="sqplus\SquirrelBindingsUtilsWin32.h" />
+    <ClInclude Include="sqplus\SquirrelVM.h" />
+    <ClInclude Include="sqplus_25\sqstdlib\sqstdblobimpl.h" />
+    <ClInclude Include="sqplus_25\sqstdlib\sqstdstream.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

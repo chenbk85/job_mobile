@@ -1,0 +1,213 @@
+nEXCEL ,@#, D:\svn\lib\lib_mech\src\test\test_Excel\excel ,@#, excel_user
+
+enum ,@#, EBuildType ,@#, 설명없음
+
+enumItem ,@#, 본영 ,@#,  1  ,@#, EBT_Sys_T_HQ ,@#, 본영
+enumItem ,@#, 주점 ,@#,  2  ,@#, EBT_Sys_T_Bar ,@#, 주점
+enumItem ,@#, 서원 ,@#,  3  ,@#, EBT_ACADEMY ,@#, 서원
+enumItem ,@#, 치안부 ,@#,  4  ,@#, EBT_PEACE ,@#, 치안부
+enumItem ,@#, 사당 ,@#,  5  ,@#, EBT_SHRINE ,@#, 사당
+enumItem ,@#, 감찰부 ,@#,  6  ,@#, EBT_HIDEOUT ,@#, 감찰부
+enumItem ,@#, 교역소 ,@#,  7  ,@#, EBT_TRADINGPOST ,@#, 교역소
+enumItem ,@#, 민가 ,@#,  8  ,@#, EBT_Sys_T_House ,@#, 민가
+enumItem ,@#, 농지 ,@#,  9  ,@#, EBT_Sys_T_Farm ,@#, 농지
+enumItem ,@#, 제재소 ,@#,  10  ,@#, EBT_SAWMILL ,@#, 제재소
+enumItem ,@#, 채석장 ,@#,  11  ,@#, EBT_QUARRY ,@#, 채석장
+enumItem ,@#, 광업장 ,@#,  12  ,@#, EBT_MINING ,@#, 광업장
+enumItem ,@#, 양잠소 ,@#,  13  ,@#, EBT_COCOONERY  ,@#, 양잠소
+enumItem ,@#, 병영 ,@#,  14  ,@#, EBT_Sys_T_Barrack ,@#, 병영
+enumItem ,@#, 대장간 ,@#,  15  ,@#, EBT_SMITHY ,@#, 대장간
+enumItem ,@#, 공방 ,@#,  16  ,@#, EBT_FORGE ,@#, 공방
+enumItem ,@#, 마구간 ,@#,  17  ,@#, EBT_STABLE ,@#, 마구간
+enumItem ,@#, 둔영 ,@#,  18  ,@#, EBT_Sys_T_Camp ,@#, 둔영
+enumItem ,@#, 창고 ,@#,  19  ,@#, EBT_Sys_T_Depot ,@#, 창고
+enumItem ,@#, 비밀창고 ,@#,  20  ,@#, EBT_SECRET ,@#, 비밀창고
+enumItem ,@#, 망루 ,@#,  21  ,@#, EBT_TOWER ,@#, 망루
+enumItem ,@#, 방벽 ,@#,  22  ,@#, EBT_BARRIER ,@#, 방벽
+
+
+enum ,@#, EOutput ,@#, 설명없음
+
+enumItem ,@#, 인구 ,@#,  1  ,@#, EOT_POPULATION ,@#, 인구
+enumItem ,@#, 금 ,@#,  2  ,@#, EOT_GOLD ,@#, 금
+enumItem ,@#, 식량 ,@#,  3  ,@#, EOT_FOOD ,@#, 식량
+enumItem ,@#, 목재 ,@#,  4  ,@#, EOT_TREE ,@#, 목재
+enumItem ,@#, 석재 ,@#,  5  ,@#, EOT_STONE ,@#, 석재
+enumItem ,@#, 철재 ,@#,  6  ,@#, EOT_IRON ,@#, 철재
+enumItem ,@#, 비단 ,@#,  7  ,@#, EOT_SILK ,@#, 비단
+enumItem ,@#, 병사 ,@#,  8  ,@#, EOT_SOLDIER ,@#, 병사
+enumItem ,@#, 창 병기 ,@#,  9  ,@#, EOT_PIKE ,@#, 
+enumItem ,@#, 중갑 병기 ,@#,  10  ,@#, EOT_HEAVY ,@#, 
+enumItem ,@#, 언월도 병기  ,@#,  11  ,@#, EOT_HALBERD ,@#, 근위병 (철 소모 위주)
+enumItem ,@#, 궁 병기 ,@#,  12  ,@#, EOT_BOW ,@#, 
+enumItem ,@#, 노 병기 ,@#,  13  ,@#, EOT_CROSSBOW ,@#, 
+enumItem ,@#, 강노 병기 ,@#,  14  ,@#, EOT_BOWGUN ,@#, 
+enumItem ,@#, 노포 병기 ,@#,  15  ,@#, EOT_BALLISTA ,@#, 
+enumItem ,@#, 전차 병기 ,@#,  16  ,@#, EOT_CHARIOT ,@#, 군마랑 조합해서만 가능 (개수 늘어나야)
+enumItem ,@#, 마차 ,@#,  17  ,@#, EOT_WAGON ,@#, 군마랑 조합해서만 가능 (개수 늘어나야)
+enumItem ,@#, 군마 ,@#,  18  ,@#, EOT_HORSE ,@#, Eunit_ClassItemA 와 조합 가능
+enumItem ,@#, 수레 ,@#,  19  ,@#, EOT_WHEELBARROW ,@#, 공작, 수송, 보급 용도 
+enumItem ,@#, 목우 ,@#,  20  ,@#, EOT_CART ,@#, 
+enumItem ,@#, 운제 ,@#,  21  ,@#, EOT_SIEGE_LADDER ,@#, B만 활용 가능
+enumItem ,@#, 충차 ,@#,  22  ,@#, EOT_SIEGE_RAM ,@#, 
+enumItem ,@#, 정란 ,@#,  23  ,@#, EOT_SIEGE_TOWER ,@#, 
+enumItem ,@#, 투석기 ,@#,  24  ,@#, EOT_SIEGE_TREBUCHET ,@#, 
+
+
+Sys ,@#, Sys__T_BuildObj ,@#, 빌딩type 테이블의 base 테이블이다. 모든 빌딩type 테이블은 이 테이블을 상속받는다
+
+SysItem ,@#, 건물타입 ,@#, base_type ,@#, EBuildType ,@#,  ,@#, EBuildType ,@#,  ,@#,  ,@#, Sys_T_BaseObj를상속 받는 테이블의 건물 종류
+SysItem ,@#, 건물리소스명 ,@#, name ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물 이미지: 레벨에 따라 이미지 변경 -맵툴에 있는 리소스 이름
+SysItem ,@#, 업그레이드 시간 ,@#, upgradetime ,@#, uint32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 업그레이드를 진행할 때 소비되는 시간 /초단위
+SysItem ,@#, 목재 비용 ,@#, tree_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 목재 비용
+SysItem ,@#, 돌 비용 ,@#, stone_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 돌 비용
+SysItem ,@#, 철 비용 ,@#, iron_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 철 비용
+SysItem ,@#, 비단 비용 ,@#, silk_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 비단 비용
+SysItem ,@#, 인구 비용 ,@#, population_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 인구 비용
+
+
+Sys ,@#, Sys_T_Bar ,@#, 설명없음
+
+SysItem ,@#, 레벨 ,@#, isid ,@#, Sys_T_Bar_id_t ,@#,  ,@#,  ,@#, PK ,@#,  ,@#, 건물 아이디
+SysItem ,@#, 건물 이미지 파일 ,@#, client_file ,@#, tname256_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물 이미지: 레벨에 따라 이미지 변경 -맵툴에 있는 리소스 이름
+SysItem ,@#, 업그레이드 시간 ,@#, upgradetime ,@#, uint32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 업그레이드를 진행할 때 소비되는 시간 /초단위
+SysItem ,@#, 목재 비용 ,@#, tree_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 목재 비용
+SysItem ,@#, 돌 비용 ,@#, stone_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 돌 비용
+SysItem ,@#, 철 비용 ,@#, iron_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 철 비용
+SysItem ,@#, 비단 비용 ,@#, silk_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 비단 비용
+SysItem ,@#, 인구 비용 ,@#, population_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 인구 비용
+SysItem ,@#, 최대 생성수 ,@#, maxbuild ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 한 마을에 최대 생성 가능한 건물 수
+SysItem ,@#, 다운그레이드레벨 ,@#, downlevel ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 다운될때 레벨. 레벨이 0이 되면 건물은 없어짐
+SysItem ,@#, 목재 반환비용 ,@#, treereturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물을 다운시킬 때 자원의 50%가 반환됨. (창고의 남은양만큼 반환됨)
+SysItem ,@#, 돌 반환비용 ,@#, stonereturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 철 반환비용 ,@#, ironreturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 비단 반환비용 ,@#, silkreturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 인구 반환비용 ,@#, populationreturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물을 다운시킬 때 인구가 반환됨. 인구 100% 반환되며 민가 최대 인구수 만큼만 반환됨.
+SysItem ,@#, 재야 장수 ,@#, hideHero ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 주점에 들어오는 재야장수 수 
+SysItem ,@#, 리셋시간 ,@#, resettime ,@#, uint32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 주점에서 자동으로 재야장수와 아이템이 리셋되는 시간 (초로계산)
+SysItem ,@#, 아이템수 ,@#, itemnum ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 주점에서 행상인이 1회에 가져오는 아이템 수
+
+
+Sys ,@#, Sys_T_Barrack ,@#, 설명없음
+
+SysItem ,@#, 레벨 ,@#, isid ,@#, Sys_T_Barrack_id_t ,@#,  ,@#,  ,@#, PK ,@#,  ,@#, 건물 아이디
+SysItem ,@#, 건물 이미지 파일 ,@#, client_file ,@#, tname256_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물 이미지: 레벨에 따라 이미지 변경 -맵툴에 있는 리소스 이름
+SysItem ,@#, 업그레이드 시간 ,@#, upgradetime ,@#, uint32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 업그레이드를 진행할 때 소비되는 시간 /초단위
+SysItem ,@#, 목재 비용 ,@#, tree_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 목재 비용
+SysItem ,@#, 돌 비용 ,@#, stone_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 돌 비용
+SysItem ,@#, 철 비용 ,@#, iron_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 철 비용
+SysItem ,@#, 비단 비용 ,@#, silk_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 비단 비용
+SysItem ,@#, 인구 비용 ,@#, population_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 인구 비용
+SysItem ,@#, 최대 생성수 ,@#, maxbuild ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 한 마을에 최대 생성 가능한 건물 수
+SysItem ,@#, 다운그레이드레벨 ,@#, downlevel ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 다운될때 레벨. 레벨이 0이 되면 건물은 없어짐
+SysItem ,@#, 목재 반환비용 ,@#, treereturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물을 다운시킬 때 자원의 50%가 반환됨. (창고의 남은양만큼 반환됨)
+SysItem ,@#, 돌 반환비용 ,@#, stonereturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 철 반환비용 ,@#, ironreturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 비단 반환비용 ,@#, silkreturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 인구 반환비용 ,@#, populationreturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물을 다운시킬 때 인구가 반환됨. 인구 100% 반환되며 민가 최대 인구수 만큼만 반환됨.
+SysItem ,@#, 병사_생산_속도 ,@#, s_p_speed ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 병영 레벨업당 생산속도 향상
+SysItem ,@#, 병사_생산_비용 ,@#, s_p_cost ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 병영병사 1인 생산 비용
+SysItem ,@#, 병사_ 생산량 ,@#, s_output ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 병영병사 최대 생산량
+
+
+Sys ,@#, Sys_T_Camp ,@#, 설명없음
+
+SysItem ,@#, 레벨 ,@#, isid ,@#, Sys_T_Camp_id_t ,@#,  ,@#,  ,@#, PK ,@#,  ,@#, 건물 아이디
+SysItem ,@#, 건물 이미지 파일 ,@#, client_file ,@#, tname256_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물 이미지: 레벨에 따라 이미지 변경 -맵툴에 있는 리소스 이름
+SysItem ,@#, 업그레이드 시간 ,@#, upgradetime ,@#, uint32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 업그레이드를 진행할 때 소비되는 시간 /초단위
+SysItem ,@#, 목재 비용 ,@#, tree_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 목재 비용
+SysItem ,@#, 돌 비용 ,@#, stone_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 돌 비용
+SysItem ,@#, 철 비용 ,@#, iron_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 철 비용
+SysItem ,@#, 비단 비용 ,@#, silk_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 비단 비용
+SysItem ,@#, 인구 비용 ,@#, population_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 인구 비용
+SysItem ,@#, 최대 생성수 ,@#, maxbuild ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 한 마을에 최대 생성 가능한 건물 수
+SysItem ,@#, 다운그레이드레벨 ,@#, downlevel ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 다운될때 레벨. 레벨이 0이 되면 건물은 없어짐
+SysItem ,@#, 목재 반환비용 ,@#, treereturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물을 다운시킬 때 자원의 50%가 반환됨. (창고의 남은양만큼 반환됨)
+SysItem ,@#, 돌 반환비용 ,@#, stonereturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 철 반환비용 ,@#, ironreturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 비단 반환비용 ,@#, silkreturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 인구 반환비용 ,@#, populationreturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물을 다운시킬 때 인구가 반환됨. 인구 100% 반환되며 민가 최대 인구수 만큼만 반환됨.
+SysItem ,@#, 병사_ 식량_소비량 ,@#, f_r_spend ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 병사 1인이 시간당 소비하는 식량의 양
+SysItem ,@#, 병사_보관량 ,@#, f_storage ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 둔영에서 병사 최대 보관량
+
+
+Sys ,@#, Sys_T_Depot ,@#, 설명없음
+
+SysItem ,@#, 레벨 ,@#, isid ,@#, Sys_T_Depot_id_t ,@#,  ,@#,  ,@#, PK ,@#,  ,@#, 건물 아이디
+SysItem ,@#, 건물 이미지 파일 ,@#, client_file ,@#, tname256_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물 이미지: 레벨에 따라 이미지 변경 -맵툴에 있는 리소스 이름
+SysItem ,@#, 업그레이드 시간 ,@#, upgradetime ,@#, uint32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 업그레이드를 진행할 때 소비되는 시간 /초단위
+SysItem ,@#, 목재 비용 ,@#, tree_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 목재 비용
+SysItem ,@#, 돌 비용 ,@#, stone_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 돌 비용
+SysItem ,@#, 철 비용 ,@#, iron_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 철 비용
+SysItem ,@#, 비단 비용 ,@#, silk_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 비단 비용
+SysItem ,@#, 인구 비용 ,@#, population_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 인구 비용
+SysItem ,@#, 최대 생성수 ,@#, maxbuild ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 한 마을에 최대 생성 가능한 건물 수
+SysItem ,@#, 다운그레이드레벨 ,@#, downlevel ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 다운될때 레벨. 레벨이 0이 되면 건물은 없어짐
+SysItem ,@#, 목재 반환비용 ,@#, treereturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물을 다운시킬 때 자원의 50%가 반환됨. (창고의 남은양만큼 반환됨)
+SysItem ,@#, 돌 반환비용 ,@#, stonereturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 철 반환비용 ,@#, ironreturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 비단 반환비용 ,@#, silkreturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 인구 반환비용 ,@#, populationreturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물을 다운시킬 때 인구가 반환됨. 인구 100% 반환되며 민가 최대 인구수 만큼만 반환됨.
+SysItem ,@#, 최대보관량 ,@#, storage ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 창고에서 자원 최대 보관량
+
+
+Sys ,@#, Sys_T_Farm ,@#, 설명없음
+
+SysItem ,@#, 레벨 ,@#, isid ,@#, Sys_T_Farm_id_t ,@#,  ,@#,  ,@#, PK ,@#,  ,@#, 건물 아이디
+SysItem ,@#, 건물 이미지 파일 ,@#, client_file ,@#, tname256_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물 이미지: 레벨에 따라 이미지 변경 -맵툴에 있는 리소스 이름
+SysItem ,@#, 업그레이드 시간 ,@#, upgradetime ,@#, uint32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 업그레이드를 진행할 때 소비되는 시간 /초단위
+SysItem ,@#, 목재 비용 ,@#, tree_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 목재 비용
+SysItem ,@#, 돌 비용 ,@#, stone_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 돌 비용
+SysItem ,@#, 철 비용 ,@#, iron_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 철 비용
+SysItem ,@#, 비단 비용 ,@#, silk_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 비단 비용
+SysItem ,@#, 인구 비용 ,@#, population_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 인구 비용
+SysItem ,@#, 최대 생성수 ,@#, maxbuild ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 한 마을에 최대 생성 가능한 건물 수
+SysItem ,@#, 다운그레이드레벨 ,@#, downlevel ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 다운될때 레벨. 레벨이 0이 되면 건물은 없어짐
+SysItem ,@#, 목재 반환비용 ,@#, treereturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물을 다운시킬 때 자원의 50%가 반환됨. (창고의 남은양만큼 반환됨)
+SysItem ,@#, 돌 반환비용 ,@#, stonereturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 철 반환비용 ,@#, ironreturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 비단 반환비용 ,@#, silkreturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 인구 반환비용 ,@#, populationreturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물을 다운시킬 때 인구가 반환됨. 인구 100% 반환되며 민가 최대 인구수 만큼만 반환됨.
+SysItem ,@#, 식량생산량 ,@#, foodoutput ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 농가 레벨업당 농지 생산량
+
+
+Sys ,@#, Sys_T_House ,@#, 설명없음
+
+SysItem ,@#, 레벨 ,@#, isid ,@#, Sys_T_House_id_t ,@#,  ,@#,  ,@#, PK ,@#,  ,@#, 건물 아이디
+SysItem ,@#, 건물 이미지 파일 ,@#, client_file ,@#, tname256_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물 이미지: 레벨에 따라 이미지 변경 -맵툴에 있는 리소스 이름
+SysItem ,@#, 업그레이드 시간 ,@#, upgradetime ,@#, uint32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 업그레이드를 진행할 때 소비되는 시간 /초단위
+SysItem ,@#, 목재 비용 ,@#, tree_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 목재 비용
+SysItem ,@#, 돌 비용 ,@#, stone_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 돌 비용
+SysItem ,@#, 철 비용 ,@#, iron_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 철 비용
+SysItem ,@#, 비단 비용 ,@#, silk_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 비단 비용
+SysItem ,@#, 인구 비용 ,@#, population_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 인구 비용
+SysItem ,@#, 최대 생성수 ,@#, maxbuild ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 한 마을에 최대 생성 가능한 건물 수
+SysItem ,@#, 다운그레이드레벨 ,@#, downlevel ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 다운될때 레벨. 레벨이 0이 되면 건물은 없어짐
+SysItem ,@#, 목재 반환비용 ,@#, treereturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물을 다운시킬 때 자원의 50%가 반환됨. (창고의 남은양만큼 반환됨)
+SysItem ,@#, 돌 반환비용 ,@#, stonereturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 철 반환비용 ,@#, ironreturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 비단 반환비용 ,@#, silkreturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 인구 반환비용 ,@#, populationreturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물을 다운시킬 때 인구가 반환됨. 인구 100% 반환되며 민가 최대 인구수 만큼만 반환됨.
+SysItem ,@#, 민가최대인구 ,@#, maxpopulation ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 민가 레벨당 상승되는 최대 인구수
+
+
+Sys ,@#, Sys_T_HQ ,@#, 설명없음
+
+SysItem ,@#, 레벨 ,@#, isid ,@#, Sys_T_HQ_id_t ,@#,  ,@#,  ,@#, PK ,@#,  ,@#, 건물 아이디
+SysItem ,@#, 건물 이미지 파일 ,@#, client_file ,@#, tname256_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물 이미지: 레벨에 따라 이미지 변경 -맵툴에 있는 리소스 이름
+SysItem ,@#, 업그레이드 시간 ,@#, upgradetime ,@#, uint32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 업그레이드를 진행할 때 소비되는 시간 /초단위
+SysItem ,@#, 목재 비용 ,@#, tree_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 목재 비용
+SysItem ,@#, 돌 비용 ,@#, stone_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 돌 비용
+SysItem ,@#, 철 비용 ,@#, iron_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 철 비용
+SysItem ,@#, 비단 비용 ,@#, silk_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 비단 비용
+SysItem ,@#, 인구 비용 ,@#, population_num ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건설에 필요한 인구 비용
+SysItem ,@#, 최대 생성수 ,@#, maxbuild ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 한 마을에 최대 생성 가능한 건물 수
+SysItem ,@#, 다운그레이드레벨 ,@#, downlevel ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 다운될때 레벨. 레벨이 0이 되면 건물은 없어짐
+SysItem ,@#, 목재 반환비용 ,@#, treereturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물을 다운시킬 때 자원의 50%가 반환됨. (창고의 남은양만큼 반환됨)
+SysItem ,@#, 돌 반환비용 ,@#, stonereturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 철 반환비용 ,@#, ironreturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 비단 반환비용 ,@#, silkreturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 인구 반환비용 ,@#, populationreturn ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 건물을 다운시킬 때 인구가 반환됨. 인구 100% 반환되며 민가 최대 인구수 만큼만 반환됨.
+SysItem ,@#, 징수 ,@#, getgold ,@#, int16 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 징수 명령
+
+

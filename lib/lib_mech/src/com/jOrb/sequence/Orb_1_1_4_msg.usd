@@ -1,0 +1,187 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>Orb_1_1_4_msg</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>2.1</Version>
+    <forceTimeSync />
+    <elements num="14">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>121</objId>
+            <ptul X="104" Y="60" />
+            <ptdr X="172" Y="100" />
+            <links num="0" />
+            <objectName>OrbTool</objectName>
+            <className>T</className>
+            <actBoxes num="4">
+                <actBox id="123" />
+                <actBox id="127" />
+                <actBox id="129" />
+                <actBox id="132" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>122</objId>
+            <ptul X="455" Y="59" />
+            <ptdr X="523" Y="99" />
+            <links num="0" />
+            <objectName>OrbHost</objectName>
+            <className>H</className>
+            <actBoxes num="4">
+                <actBox id="124" />
+                <actBox id="126" />
+                <actBox id="130" />
+                <actBox id="133" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>123</objId>
+            <ptul X="130" Y="136" />
+            <ptdr X="145" Y="166" />
+            <links num="1">
+                <link id="125" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>124</objId>
+            <ptul X="481" Y="136" />
+            <ptdr X="496" Y="166" />
+            <links num="1">
+                <link id="125" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>125</objId>
+            <points num="2">
+                <pt x="145" y="141" />
+                <pt x="481" y="141" />
+            </points>
+            <objStart id="123" />
+            <objEnd id="124" />
+            <message messType="MGEN">H_ECHO</message>
+            <guardCond>type-uint8,msg-tname256_t</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>126</objId>
+            <ptul X="481" Y="191" />
+            <ptdr X="496" Y="221" />
+            <links num="1">
+                <link id="128" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>127</objId>
+            <ptul X="130" Y="191" />
+            <ptdr X="145" Y="221" />
+            <links num="1">
+                <link id="128" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>128</objId>
+            <points num="2">
+                <pt x="481" y="196" />
+                <pt x="145" y="196" />
+            </points>
+            <objStart id="126" />
+            <objEnd id="127" />
+            <message messType="MGEN">H_ECHO</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>129</objId>
+            <ptul X="130" Y="259" />
+            <ptdr X="145" Y="289" />
+            <links num="1">
+                <link id="131" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>130</objId>
+            <ptul X="481" Y="259" />
+            <ptdr X="496" Y="289" />
+            <links num="1">
+                <link id="131" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>131</objId>
+            <points num="2">
+                <pt x="145" y="264" />
+                <pt x="481" y="264" />
+            </points>
+            <objStart id="129" />
+            <objEnd id="130" />
+            <message messType="MGEN">H_SEND_MSG</message>
+            <guardCond>type-uint8,msg-tname256_t</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>132</objId>
+            <ptul X="130" Y="349" />
+            <ptdr X="145" Y="379" />
+            <links num="1">
+                <link id="134" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>133</objId>
+            <ptul X="481" Y="349" />
+            <ptdr X="496" Y="379" />
+            <links num="1">
+                <link id="134" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>134</objId>
+            <points num="2">
+                <pt x="145" y="354" />
+                <pt x="481" y="354" />
+            </points>
+            <objStart id="132" />
+            <objEnd id="133" />
+            <message messType="MGEN">H_SEND_LOG</message>
+            <guardCond>type-uint8,msg-tname256_t</guardCond>
+        </element>
+    </elements>
+</diagram>

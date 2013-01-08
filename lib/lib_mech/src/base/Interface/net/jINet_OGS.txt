@@ -1,0 +1,185 @@
+참고 문서 z:\job_taebak\src\com\jNet\ReadMe.txt
+
+
+//--------------------------------------------------------------------------
+// *_* by icandoit : 2010-10-05 14:19:43
+
+속성GridName의 상속기능.
+	
+	PlugIn타입 : jClient_IOCP
+		GridName속성이 'PlugInList' 노드나 'PlugIn' 노드 또는 자신의 노드에 있으면
+		서버로 부터 접속연결후 eNET_GRID_WHO_ARE_YOU를 받았을때 속성GridName의 값을 보낸다.
+	
+	PlugIn타입 : TcpServer
+		GridName속성이 'PlugInList' 노드나 자신의 노드에 있으면
+		클라이언트 접속시 eNET_GRID_WHO_ARE_YOU를 보낼때 이 GridName을 보낸다.
+		
+	만약 Grid 기능을 사용안할때는 GridName='' 또는 GridName='NULL'을 사용한다.
+	
+//  삭제 예정!!!!!
+// 속성GridName를 이용한 jRttiObj객체 이름만드는 규칙 ( <- jIGridNode를 상속 )
+// 	
+// 	get_GridName(jIE* pE,jIPlugIn_Net* pPlugIn);
+// 	GridName속성과 pPlugIn->m_pE->GetAttr(jS(TYPE))를 이어서 만든다.
+// 	
+// 	
+// 	예제 )
+//     <PlugIn_Connect TYPE='IOCPSession'	NAME='NULL' b_ENABLE='1'  i_ThreadCount='0'
+// 										i_QueueSize='2000' GridName='jGridNode_Player' >
+// 							
+// 		에서 Grid의 RTTI이름은 		"jGridNode_PlayerIOCPSession" 이다.
+	
+	
+	
+	
+//--------------------------------------------------------------------------
+		
+
+
+<?xml version='1.0' encoding="euc-kr"?>
+<jGame DOC_TYPE="APP">
+	<jNet_OGS_Config>
+		<DomainName_P2P_client TYPE="PlugInList">
+			<!--
+			
+			P2P용 클라이언트 예제. tcp서버를 뛰우고 TEST_TCP와 TEST_UDP에 언급된 서버에 연결한다.
+
+			nMech::nXML::jE eNet = nGLOBAL::g_pDocApp->Find("jNet_OGS_Config")->Find("DomainName_P2P_client");
+			nInterface::g_pjINet_OGS->CreateNetObject(eNet);
+			jINetSession_Service* pP2P_Session = nInterface::g_pjINet_OGS->GetNetSession(eNet("jINetSession_CS_P2P_PlugInName"));
+			jIE* pE = pP2P_Session->GetNetNode()->Find("TEST_UDP");
+			g_sServerIP = pE->GetAttribute("ServerIP");
+			g_iServerPort=pE->GetAttributeVar("ServerPort")->Get_int();
+			
+			nInterface::g_pjINet_OGS->RunNetObject(eNet);
+
+			// g_pjINet_OGS->RunNetObject()을 호출 한다음에 pP2P_Session->GetSessionSocket("TEST_UDP")를 호출 해야함.
+			jIPacketSocket_IOCP* pUdpSocket = pP2P_Session->GetSessionSocket("TEST_UDP");
+			jIPacketSocket_IOCP* pTcpSocket = pP2P_Session->GetSessionSocket("TEST_TCP");
+			
+			-->
+			<jINetSession_CS_P2P_PlugInName
+					PlugInType="jIPlugIn_Connection"	<!-- 상속받을 user 플러그인의 클래스명-->
+					TYPE="jINetSession_CS"			<!-- jNet_OGS::GetNetSession()에의해 리턴될 객체의 type-->
+					LocalTcpServerIP="127.0.0.1"	<!-- 서비스할 TCP서버의 IP -->
+					i_LocalTcpServerPort="0"			<!-- 서비스할 TCP서버의 PORT-->
+					i_QueueSize="100">				<!-- recv / send할때 사용할 각각의 큐 사이즈 (한꺼번에 이것보다 많이 들어오면 무시됨)-->
+					x_HEADER="PROTOCAL_HEADER"		<!-- 사용할 프로토콜 해더 생성 XML파일에서 DOC의 NAME속성 이름-->
+					b_TcpServerEnable="1"			<!-- 값이 0이면 클라이언트모드로만 돌린다. -->
+				<TEST_TCP								<!-- 자동으로 연결할 TCP연결 객체 정의. 
+															pP2P_Session->GetSessionSocket(TEST_TCP) 로 객체에 접근한다.
+														-->
+						TYPE="jIPacketSocket_IOCP"	<!-- pP2P_Session->GetSessionSocket()로 가져올 객체의 CLASS type -->
+						i_ServerPort="8810"			<!-- 접속할 tcp서버의 port -->
+						ServerIP="127.0.0.1"			<!-- 접속할 tcp서버ip-->
+						x_HEADER="PROTOCAL_HEADER"		<!-- 사용할 프로토콜 해더 생성 XML파일에서 DOC의 NAME속성 이름-->
+						>TCP</TEST_TCP>
+						
+				<TEST_UDP
+						TYPE="jIPacketSocket_IOCP"		<!-- pP2P_Session->GetSessionSocket()로 가져올 객체의 CLASS type -->
+						i_ServerPort="8910"			<!-- 접속할 udp 서버의 port -->
+						ServerIP="127.0.0.1"			<!-- 접속할 udp 서버ip-->
+						i_LocalPort="0"				<!-- udp접속시 socket의 bind되는 port. 0이면 OS가 자동설정 -->
+						x_HEADER="PROTOCAL_HEADER"		<!-- 사용할 프로토콜 해더 생성 XML파일에서 DOC의 NAME속성 이름-->
+						>UDP</TEST_UDP>
+			</jINetSession_CS_P2P_PlugInName>
+		</DomainName_P2P_client>		
+	
+	
+		<DomainName_TcpUdpClient TYPE="PlugInList"> 
+			<!-- 
+			
+			client에서 udp와 tcp의 연결용 세션을 동시에 만들때의 예제
+			
+			nMech::nXML::jE eNet = nGLOBAL::g_pDocApp->Find("jNet_OGS_Config")->Find("DomainName_TcpUdpClient");
+			jASSERT0(nInterface::g_pjINet_OGS->CreateNetObject(eNet));
+			jINetSession_Service* pUdpClientSession = nInterface::g_pjINet_OGS->GetNetSession(eNet("jINetSession_Service_UDP_PlugInName"));
+			jINetSession_Service* pTcpClientSession = nInterface::g_pjINet_OGS->GetNetSession(eNet("jINetSession_Service_TCP_PlugInName"));
+					
+			-->
+			<jINetSession_Service_UDP_PlugInName
+					PlugInType="jIPlugIn_Connection" <!--상속받을 user 플러그인의 클래스명-->
+					TYPE="jINetSession_Service"  <!-- jNet_OGS::GetNetSession()에의해 리턴될 객체의 type-->
+					NAME="NULL"
+					i_QueueSize="500" <!-- recv / send할때 사용할 각각의 큐 사이즈 (한꺼번에 이것보다 많이 들어오면 무시됨)-->
+					i_ServerPort="8910" <!--접속할 upd 서버 포트 (user콜에 의해 사용됨. jNet_OGS내부에서사용하지않음)-->
+					ServerIP="127.0.0.1" <!-- 접속할 udp 서버 IP (user콜에 의해 사용됨. jNet_OGS내부에서사용하지않음)-->
+					i_LocalPort="0" <!-- udp 소캣만들때 오픈할 port -->
+					x_HEADER="PROTOCAL_HEADER"		<!-- 사용할 프로토콜 해더 생성 XML파일에서 DOC의 NAME속성 이름-->
+					>UDP</jINetSession_Service_UDP_PlugInName>
+			<jINetSession_Service_TCP_PlugInName
+					PlugInType="jIPlugIn_Connection" <!--상속받을 user 플러그인의 클래스명-->
+					TYPE="jINetSession_Service" <!-- jNet_OGS::GetNetSession()에의해 리턴될 객체의 type-->
+					NAME="NULL" 
+					i_QueueSize="500" <!-- recv / send할때 사용할 각각의 큐 사이즈 (한꺼번에 이것보다 많이 들어오면 무시됨)-->
+					i_ServerPort="8810" <!-- 접속할 tcp서버 포트 -->
+					ServerIP="127.0.0.1" <!-- 접속할 tcp서버 IP -->
+					x_HEADER="PROTOCAL_HEADER"		<!-- 사용할 프로토콜 해더 생성 XML파일에서 DOC의 NAME속성 이름-->
+					>TCP</jINetSession_Service_TCP_PlugInName>
+		</DomainName_TcpUdpClient>
+		
+		<DomainName_TcpUdpServer_IOCP TYPE="PlugInList">
+			<!--
+			
+			nMech::nXML::jE eNet = nGLOBAL::g_pDocApp->Find("jNet_OGS_Config")->Find("DomainName_TcpUdpServer_IOCP");
+			jASSERT0(nInterface::g_pjINet_OGS->CreateNetObject(eNet));
+			jITcpUdpServer_IOCP* pServer  = nInterface::g_pjINet_OGS->GetTcpUdpServer(eNet("jITcpUdpServer_IOCP_PlugInName"));
+			nInterface::g_pjINet_OGS->RunNetObject(eNet);
+			
+			-->
+			<jITcpUdpServer_IOCP_PlugInName
+					PlugInType="jIServer_IOCP_PlugIn" <!-- 상속받을 user 플러그인 클래스명 -->
+					TYPE="jITcpUdpServer_IOCP"		<!-- jNet_OGS::GetTcpUdpServer()에의해 리턴될 객체의 type-->
+					NAME="NULL" 
+					i_QueueSize="50"					<!-- recv / send할때 사용할 각각의 큐 사이즈 (한꺼번에 이것보다 많이 들어오면 무시됨)-->
+					i_MaxTcpUser="1000"				<!-- 최대 접속 허용 소켓수-->
+					i_ServerTcpPort="8810"			<!-- 서비스할 서버 tcp port-->
+					i_ServerUdpPort="8910"			<!-- 서비스할 서버 udp port -->
+					ServerIP="127.0.0.1"				<!-- 서비스할 서버의 IP -->
+					x_HEADER="PROTOCAL_HEADER"		<!-- 사용할 프로토콜 해더 생성 XML파일에서 DOC의 NAME속성 이름-->
+					i_IOCP_THREAD="0"/>				<!-- iocp thread 갯수. 0이면 cpu개수*2가 세팅됨 -->
+		</DomainName_TcpUdpServer_IOCP>
+		
+		
+		<DomainName_UDPiocp_AND_TCPiocp TYPE="PlugInList">
+			<!--
+				
+			tcp server용 플러그인  + udp server용 플러그인을 따로 구현할때의 예제.
+			
+			nMech::nXML::jE eNet = nGLOBAL::g_pDocApp->Find("jNet_OGS_Config")->Find("test_net_Server_tcp_udp");
+			jASSERT0(nInterface::g_pjINet_OGS->CreateNetObject(eNet));
+			jITcpServer_IOCP* pServer  = nInterface::g_pjINet_OGS->GetTcpServer(eNet("jITcpServer_IOCP_PlugInName"));
+			jIUdpServer_IOCP* pUdpServer  = nInterface::g_pjINet_OGS->GetUdpServer(eNet("jIUdpServer_IOCP_PlugInName"));
+			jIUdpServer_IOCP_PlugInName* pUdpPlugIn = (jIUdpServer_IOCP_PlugInName*)pUdpServer->GetPlugIn();
+			nInterface::g_pjINet_OGS->RunNetObject(eNet);
+			
+			-->
+			<jITcpServer_IOCP_PlugInName	
+					PlugInType="jIServer_IOCP_PlugIn"	<!-- 상속받을 user 플러그인 클래스명 -->
+					TYPE="jITcpServer_IOCP"			<!-- g_pjINet_OGS->GetTcpServer()에 의해 리턴될 class명 -->
+					NAME="NULL" 
+					i_QueueSize="50"					<!-- recv / send할때 사용할 각각의 큐 사이즈 (한꺼번에 이것보다 많이 들어오면 무시됨)-->
+					i_MaxTcpUser="1000"				<!-- 최대 접속 허용 소켓수-->
+					i_ServerTcpPort="8810"			<!-- 서비스할 서버 tcp port-->
+					ServerIP="127.0.0.1"				<!-- 서비스할 서버 ip -->
+					x_HEADER="PROTOCAL_HEADER"		<!-- 사용할 프로토콜 해더 생성 XML파일에서 DOC의 NAME속성 이름-->
+					i_IOCP_THREAD="0"/>				<!-- iocp thread 갯수. 0이면 cpu개수*2가 세팅됨 -->
+			<jIUdpServer_IOCP_PlugInName	
+					PlugInType="jIServer_IOCP_PlugIn"	<!-- 상속받을 user 플러그인 클래스명 -->
+					TYPE="jIUdpServer_IOCP"			<!-- g_pjINet_OGS->GetUdpServer()에 의해 리턴될 class명 -->
+					NAME="NULL" 
+					i_QueueSize="50"					<!-- recv / send할때 사용할 각각의 큐 사이즈 (한꺼번에 이것보다 많이 들어오면 무시됨)-->
+					i_ServerUdpPort="8910"			<!-- 서비스할 서버 udp port -->
+					ServerIP="127.0.0.1"				<!-- 서비스할 서버 ip -->
+					x_HEADER="PROTOCAL_HEADER"		<!-- 사용할 프로토콜 해더 생성 XML파일에서 DOC의 NAME속성 이름-->
+					i_IOCP_THREAD="0"/>				<!-- iocp thread 갯수. 0이면 cpu개수*2가 세팅됨 -->
+		</DomainName_UDPiocp_AND_TCPiocp>
+		
+	</jNet_OGS_Config>
+</jGame>
+
+
+
+
+
+

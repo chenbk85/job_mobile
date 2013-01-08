@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jTest_boost", "jTest_boost.vcproj", "{F08A08F7-C83F-4900-AD57-2FDD6B8EC1DE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jRegexTool", "jRegexTool\jRegexTool.vcproj", "{7560FC38-975F-4E76-9705-C5F8C273AFD8}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jTest_stl", "jTest_stl\jTest_stl.vcproj", "{B24A7C88-704E-42D0-9816-0FC7D18FBDA9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jTest_spirit_sample", "jTest_spirit_INI\spirit03.vcproj", "{EA43AEB0-93ED-414C-BE8B-C8B3F0A5B371}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F08A08F7-C83F-4900-AD57-2FDD6B8EC1DE}.Debug.ActiveCfg = Debug|Win32
+		{F08A08F7-C83F-4900-AD57-2FDD6B8EC1DE}.Debug.Build.0 = Debug|Win32
+		{F08A08F7-C83F-4900-AD57-2FDD6B8EC1DE}.Release.ActiveCfg = Release|Win32
+		{F08A08F7-C83F-4900-AD57-2FDD6B8EC1DE}.Release.Build.0 = Release|Win32
+		{7560FC38-975F-4E76-9705-C5F8C273AFD8}.Debug.ActiveCfg = Debug|Win32
+		{7560FC38-975F-4E76-9705-C5F8C273AFD8}.Debug.Build.0 = Debug|Win32
+		{7560FC38-975F-4E76-9705-C5F8C273AFD8}.Release.ActiveCfg = Release|Win32
+		{7560FC38-975F-4E76-9705-C5F8C273AFD8}.Release.Build.0 = Release|Win32
+		{B24A7C88-704E-42D0-9816-0FC7D18FBDA9}.Debug.ActiveCfg = Debug|Win32
+		{B24A7C88-704E-42D0-9816-0FC7D18FBDA9}.Debug.Build.0 = Debug|Win32
+		{B24A7C88-704E-42D0-9816-0FC7D18FBDA9}.Release.ActiveCfg = Release|Win32
+		{B24A7C88-704E-42D0-9816-0FC7D18FBDA9}.Release.Build.0 = Release|Win32
+		{EA43AEB0-93ED-414C-BE8B-C8B3F0A5B371}.Debug.ActiveCfg = Debug|Win32
+		{EA43AEB0-93ED-414C-BE8B-C8B3F0A5B371}.Debug.Build.0 = Debug|Win32
+		{EA43AEB0-93ED-414C-BE8B-C8B3F0A5B371}.Release.ActiveCfg = Release|Win32
+		{EA43AEB0-93ED-414C-BE8B-C8B3F0A5B371}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

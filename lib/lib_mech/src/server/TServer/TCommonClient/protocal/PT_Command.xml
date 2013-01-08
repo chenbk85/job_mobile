@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<PROTOCAL HEADER="CommandServer" VERSION="1500" i_DebugPrint="3" b_jxDEFINE="true" TAG="CD">
+	<!-- CODE에서 개행문자 지원안됨. anpersent # x 0 A ; 를 사용할것-->
+	<CODE TYPE="ENUM_FILE">../my_PT_TServer.h</CODE>
+	<STRUCT_LIST/>
+	<PROTOCAL_LIST>
+		<CD_HELLO USD="c_01_03_commandserver.usd" thread_name="Job_CommandServer">
+			<si TYPE="jServerInfo"/>
+		</CD_HELLO>
+		<SS2CD_ONLINE USD="c_01_03_commandserver.usd" HELP="어떤 서버가 CommandServer에 접속했다.&#xA;만약 CentralServer가 죽었고 si.m_sid==0이면 &#xA;Command가 sid를 발급해준다.">
+			<your_sid TYPE="serverid_t"/>
+			<my TYPE="jServerInfo"/>
+		</SS2CD_ONLINE>
+		<CD2SS_ONLINE_OK USD="c_01_03_commandserver.usd" HELP="Central서버가 죽었을때만 대신 해서 보냄.&#xA;Command에 접속하고 있는 다른서버들정보를 보낸다.">
+			<you TYPE="jServerInfo"/>
+			<s TYPE="jServerInfo" i_Length="-1"/>
+		</CD2SS_ONLINE_OK>
+		<CD_ECHO USD="\c_01_03_commandserver.usd">
+			<msg TYPE="tname256_t"/>
+			<type TYPE="int8"/>
+		</CD_ECHO>
+		<CD_SERVER_ONLINE USD="\c_01_03_commandserver.usd">
+			<s TYPE="jServerInfo"/>
+		</CD_SERVER_ONLINE>
+		<CD_SERVER_OFFLINE USD="\c_01_03_commandserver.usd">
+			<sid TYPE="serverid_t"/>
+		</CD_SERVER_OFFLINE>
+		<CD_SERVERINFO_ACK USD="c_01_03_commandserver.usd" HELP="SS2CD_ONLINE을 받았을때 보낸쪽의 sid=0일때&#xA;다시 요청하여 받음.">
+			<si TYPE="jServerInfo"/>
+		</CD_SERVERINFO_ACK>
+		<SS2CD_SERVERINFO_ACK USD="\c_01_03_commandserver.usd">
+			<si TYPE="jServerInfo"/>
+		</SS2CD_SERVERINFO_ACK>
+		<CD_ERROR USD="c_01_03_commandserver.usd">
+			<ei TYPE="jErrorInfo"/>
+		</CD_ERROR>
+		<CD2_CENTRAL_RESTART USD="c_02_05_central_restart.usd" HELP="CentralServer 재시작을 모든서버에 통보"/>
+	</PROTOCAL_LIST>
+	<CODE TYPE="ENUM_FILE"/>
+</PROTOCAL>

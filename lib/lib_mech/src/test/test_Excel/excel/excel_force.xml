@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<excel_force>
+	<enum>
+		<E_ClassItemA HELP="설명없음">
+			<CIA_NOT>
+				<name>병기 없음</name>
+				<value>1</value>
+				<name_eng>CIA_NOT</name_eng>
+				<help>보병 병과 자동 분류</help>
+			</CIA_NOT>
+			<CIA_PIKE>
+				<name>창 병기</name>
+				<value>2</value>
+				<name_eng>CIA_PIKE</name_eng>
+				<help/>
+			</CIA_PIKE>
+			<CIA_HEAVY>
+				<name>중갑 병기</name>
+				<value>3</value>
+				<name_eng>CIA_HEAVY</name_eng>
+				<help/>
+			</CIA_HEAVY>
+			<CIA_HALBERD>
+				<name>언월도 병기</name>
+				<value>4</value>
+				<name_eng>CIA_HALBERD</name_eng>
+				<help>근위병 (철 소모 위주)</help>
+			</CIA_HALBERD>
+			<CIA_BOW>
+				<name>궁 병기</name>
+				<value>5</value>
+				<name_eng>CIA_BOW</name_eng>
+				<help/>
+			</CIA_BOW>
+			<CIA_CROSSBOW>
+				<name>노 병기</name>
+				<value>6</value>
+				<name_eng>CIA_CROSSBOW</name_eng>
+				<help/>
+			</CIA_CROSSBOW>
+			<CIA_BOWGUN>
+				<name>강노 병기</name>
+				<value>7</value>
+				<name_eng>CIA_BOWGUN</name_eng>
+				<help/>
+			</CIA_BOWGUN>
+			<CIA_BALLISTA>
+				<name>노포 병기</name>
+				<value>8</value>
+				<name_eng>CIA_BALLISTA</name_eng>
+				<help/>
+			</CIA_BALLISTA>
+			<CIA_CHARIOT>
+				<name>전차 병기</name>
+				<value>9</value>
+				<name_eng>CIA_CHARIOT</name_eng>
+				<help>군마랑 조합해서만 가능 (개수 늘어나야)</help>
+			</CIA_CHARIOT>
+			<CIA_WAGON>
+				<name>마차</name>
+				<value>10</value>
+				<name_eng>CIA_WAGON</name_eng>
+				<help>군마랑 조합해서만 가능 (개수 늘어나야)</help>
+			</CIA_WAGON>
+		</E_ClassItemA>
+		<E_ClassItemB HELP="설명없음">
+			<CIB_NOT>
+				<name>탈것 없음</name>
+				<value>1</value>
+				<name_eng>CIB_NOT</name_eng>
+				<help/>
+			</CIB_NOT>
+			<CIB_HORSE>
+				<name>군마</name>
+				<value>2</value>
+				<name_eng>CIB_HORSE</name_eng>
+				<help>Eunit_ClassItemA 와 조합 가능</help>
+			</CIB_HORSE>
+			<CIB_WHEELBARROW>
+				<name>수레</name>
+				<value>3</value>
+				<name_eng>CIB_WHEELBARROW</name_eng>
+				<help>공작, 수송, 보급 용도</help>
+			</CIB_WHEELBARROW>
+			<CIB_CART>
+				<name>목우</name>
+				<value>4</value>
+				<name_eng>CIB_CART</name_eng>
+				<help/>
+			</CIB_CART>
+			<CIB_SIEGE_LADDER>
+				<name>운제</name>
+				<value>5</value>
+				<name_eng>CIB_SIEGE_LADDER</name_eng>
+				<help>B만 활용 가능</help>
+			</CIB_SIEGE_LADDER>
+			<CIB_SIEGE_RAM>
+				<name>충차</name>
+				<value>6</value>
+				<name_eng>CIB_SIEGE_RAM</name_eng>
+				<help/>
+			</CIB_SIEGE_RAM>
+			<CIB_SIEGE_TOWER>
+				<name>정란</name>
+				<value>7</value>
+				<name_eng>CIB_SIEGE_TOWER</name_eng>
+				<help/>
+			</CIB_SIEGE_TOWER>
+			<CIB_SIEGE_TREBUCHET>
+				<name>투석기</name>
+				<value>8</value>
+				<name_eng>CIB_SIEGE_TREBUCHET</name_eng>
+				<help/>
+			</CIB_SIEGE_TREBUCHET>
+		</E_ClassItemB>
+		<E_W_Event HELP="설명없음">
+			<ENV_SUNNY>
+				<name>맑음</name>
+				<value>1</value>
+				<name_eng>ENV_SUNNY</name_eng>
+				<help>속성 없는 경우</help>
+			</ENV_SUNNY>
+			<ENV_RAIN>
+				<name>비 속성</name>
+				<value>2</value>
+				<name_eng>ENV_RAIN</name_eng>
+				<help>화계 힘듬, 수계 좋음</help>
+			</ENV_RAIN>
+			<ENV_MIST>
+				<name>안개 속성</name>
+				<value>3</value>
+				<name_eng>ENV_MIST</name_eng>
+				<help>시야 감소  / 사거리 변화</help>
+			</ENV_MIST>
+			<ENV_TIME>
+				<name>밤낮 속성</name>
+				<value>4</value>
+				<name_eng>ENV_TIME</name_eng>
+				<help>시야 감소  / 사거리 변화</help>
+			</ENV_TIME>
+			<ENV_CALAMITY>
+				<name>천재 지변</name>
+				<value>5</value>
+				<name_eng>ENV_CALAMITY</name_eng>
+				<help>지진/역병/가뭄/폭염/홍수/태풍/흉작/메뚜기떼/한파</help>
+			</ENV_CALAMITY>
+			<ENV_LUCK>
+				<name>축복</name>
+				<value>6</value>
+				<name_eng>ENV_LUCK</name_eng>
+				<help>풍작/다산</help>
+			</ENV_LUCK>
+		</E_W_Event>
+		<EForceClass HELP="설명없음">
+			<FC_COMMON>
+				<name>공용</name>
+				<value>1</value>
+				<name_eng>FC_COMMON</name_eng>
+				<help/>
+			</FC_COMMON>
+			<FC_INFANTRY>
+				<name>보병</name>
+				<value>2</value>
+				<name_eng>FC_INFANTRY</name_eng>
+				<help/>
+			</FC_INFANTRY>
+			<FC_ARCHER>
+				<name>궁병</name>
+				<value>3</value>
+				<name_eng>FC_ARCHER</name_eng>
+				<help/>
+			</FC_ARCHER>
+			<FC_CABALRY>
+				<name>기병</name>
+				<value>4</value>
+				<name_eng>FC_CABALRY</name_eng>
+				<help/>
+			</FC_CABALRY>
+			<FC_SIEGE>
+				<name>공성무기</name>
+				<value>5</value>
+				<name_eng>FC_SIEGE</name_eng>
+				<help/>
+			</FC_SIEGE>
+		</EForceClass>
+		<EForcePosType HELP="설명없음">
+			<FPT_TOWN>
+				<name>마을</name>
+				<value>1</value>
+				<name_eng>FPT_TOWN</name_eng>
+				<help>마을</help>
+			</FPT_TOWN>
+			<FPT_CASTLE>
+				<name>성</name>
+				<value>2</value>
+				<name_eng>FPT_CASTLE</name_eng>
+				<help>성</help>
+			</FPT_CASTLE>
+			<FPT_CASTLEMAP>
+				<name>성지역맵</name>
+				<value>3</value>
+				<name_eng>FPT_CASTLEMAP</name_eng>
+				<help>성지역맵</help>
+			</FPT_CASTLEMAP>
+			<FPT_WORLDMAP>
+				<name>월드맵</name>
+				<value>4</value>
+				<name_eng>FPT_WORLDMAP</name_eng>
+				<help>월드맵</help>
+			</FPT_WORLDMAP>
+		</EForcePosType>
+	</enum>
+	<Sys>
+		<Sys_Force HELP="설명없음">
+			<fsid>
+				<name>숫자_ID</name>
+				<name_eng>fsid</name_eng>
+				<data_type>Sys_Force_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type>PK</db_type>
+				<type_note/>
+				<help>병과 ID</help>
+			</fsid>
+			<name>
+				<name>이름_ID</name>
+				<name_eng>name</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>이름 ID</help>
+			</name>
+			<name_kor>
+				<name>병과이름</name>
+				<name_eng>name_kor</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>병과 이름</help>
+			</name_kor>
+			<force_class>
+				<name>병과분류</name>
+				<name_eng>force_class</name_eng>
+				<data_type>EForceClass</data_type>
+				<min/>
+				<max>EForceClass</max>
+				<db_type/>
+				<type_note/>
+				<help>병과 분류</help>
+			</force_class>
+			<forceClassItemA>
+				<name>병과슬롯_아이템 A</name>
+				<name_eng>forceClassItemA</name_eng>
+				<data_type>E_ClassItemA</data_type>
+				<min/>
+				<max>E_ClassItemA</max>
+				<db_type/>
+				<type_note/>
+				<help>병기 슬롯 A</help>
+			</forceClassItemA>
+			<forceClassItemB>
+				<name>병과슬롯_아이템 B</name>
+				<name_eng>forceClassItemB</name_eng>
+				<data_type>E_ClassItemB</data_type>
+				<min/>
+				<max>E_ClassItemB</max>
+				<db_type/>
+				<type_note/>
+				<help>병기 슬롯 B</help>
+			</forceClassItemB>
+			<att>
+				<name>공격력</name>
+				<name_eng>att</name_eng>
+				<data_type>int16</data_type>
+				<min>0</min>
+				<max>100</max>
+				<db_type/>
+				<type_note/>
+				<help>공격력 보정</help>
+			</att>
+			<def>
+				<name>방어력</name>
+				<name_eng>def</name_eng>
+				<data_type>int16</data_type>
+				<min>0</min>
+				<max>100</max>
+				<db_type/>
+				<type_note/>
+				<help>방어력 보정</help>
+			</def>
+			<mspeed>
+				<name>이동_속도</name>
+				<name_eng>mspeed</name_eng>
+				<data_type>int16</data_type>
+				<min>0</min>
+				<max>1000</max>
+				<db_type/>
+				<type_note/>
+				<help>이동 속도 보정</help>
+			</mspeed>
+			<aspeed>
+				<name>공격_속도</name>
+				<name_eng>aspeed</name_eng>
+				<data_type>int16</data_type>
+				<min>0</min>
+				<max>10000</max>
+				<db_type/>
+				<type_note/>
+				<help>공격 속도 보정 / msec 보정</help>
+			</aspeed>
+			<srange>
+				<name>가시거리</name>
+				<name_eng>srange</name_eng>
+				<data_type>int16</data_type>
+				<min>0</min>
+				<max>100</max>
+				<db_type/>
+				<type_note/>
+				<help>가시거리</help>
+			</srange>
+			<suvival_ratio>
+				<name>생존율</name>
+				<name_eng>suvival_ratio</name_eng>
+				<data_type>int16</data_type>
+				<min>0</min>
+				<max>1000</max>
+				<db_type/>
+				<type_note/>
+				<help>살아날 확률 / % 랜덤값 (xx.x%)</help>
+			</suvival_ratio>
+			<kill_ratio>
+				<name>살상율</name>
+				<name_eng>kill_ratio</name_eng>
+				<data_type>int16</data_type>
+				<min>0</min>
+				<max>1000</max>
+				<db_type/>
+				<type_note/>
+				<help>사망시킬 확률 / % 랜덤값 (xx.x%)</help>
+			</kill_ratio>
+			<client_id>
+				<name>클라이언트ID</name>
+				<name_eng>client_id</name_eng>
+				<data_type>int16</data_type>
+				<min>0</min>
+				<max>100</max>
+				<db_type/>
+				<type_note/>
+				<help>클라이언트에서 나오는 유닛 이미지 id 번호</help>
+			</client_id>
+			<unit_load>
+				<name>적재량</name>
+				<name_eng>unit_load</name_eng>
+				<data_type>int16</data_type>
+				<min>0</min>
+				<max>100000</max>
+				<db_type/>
+				<type_note/>
+				<help>물품 적재량</help>
+			</unit_load>
+		</Sys_Force>
+	</Sys>
+</excel_force>

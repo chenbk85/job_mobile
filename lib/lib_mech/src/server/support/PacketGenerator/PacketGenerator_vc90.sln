@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PacketGenerator_vc90", "PacketGenerator_vc90.vcproj", "{3997BC73-B3A5-46A7-8213-4C27CA784DE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		UDebug|Win32 = UDebug|Win32
+		URelease|Win32 = URelease|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3997BC73-B3A5-46A7-8213-4C27CA784DE4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3997BC73-B3A5-46A7-8213-4C27CA784DE4}.Debug|Win32.Build.0 = Debug|Win32
+		{3997BC73-B3A5-46A7-8213-4C27CA784DE4}.Release|Win32.ActiveCfg = Release|Win32
+		{3997BC73-B3A5-46A7-8213-4C27CA784DE4}.Release|Win32.Build.0 = Release|Win32
+		{3997BC73-B3A5-46A7-8213-4C27CA784DE4}.UDebug|Win32.ActiveCfg = UDebug|Win32
+		{3997BC73-B3A5-46A7-8213-4C27CA784DE4}.UDebug|Win32.Build.0 = UDebug|Win32
+		{3997BC73-B3A5-46A7-8213-4C27CA784DE4}.URelease|Win32.ActiveCfg = URelease|Win32
+		{3997BC73-B3A5-46A7-8213-4C27CA784DE4}.URelease|Win32.Build.0 = URelease|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

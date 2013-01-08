@@ -1,0 +1,423 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>Command</title>
+    <Version>2.1</Version>
+    <valuesFileName />
+    <elements num="22">
+        <element>
+            <type>UMLNOTELINK</type>
+            <stereotype />
+            <constraint />
+            <description />
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>472</objId>
+            <points num="2">
+                <pt x="230" y="291" />
+                <pt x="274" y="337" />
+            </points>
+            <objStart id="484" />
+            <objEnd id="476" />
+        </element>
+        <element>
+            <type>UMLCLASS</type>
+            <stereotype />
+            <constraint />
+            <description />
+            <bgrColor R="255" G="128" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>473</objId>
+            <ptul X="24" Y="105" />
+            <ptdr X="114" Y="131" />
+            <links num="3">
+                <link id="491" />
+                <link id="490" />
+                <link id="480" />
+            </links>
+            <name>Client</name>
+            <showAttributes />
+            <showMethods />
+            <attributes num="0" />
+            <operations num="0" />
+        </element>
+        <element>
+            <type>UMLNOTELINK</type>
+            <stereotype />
+            <constraint />
+            <description />
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>474</objId>
+            <points num="2">
+                <pt x="483" y="120" />
+                <pt x="507" y="120" />
+            </points>
+            <objStart id="483" />
+            <objEnd id="487" />
+        </element>
+        <element>
+            <type>UMLNOTELINK</type>
+            <stereotype />
+            <constraint />
+            <description />
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>475</objId>
+            <points num="2">
+                <pt x="189" y="132" />
+                <pt x="189" y="149" />
+            </points>
+            <objStart id="479" />
+            <objEnd id="488" />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <stereotype />
+            <constraint />
+            <description>Knows how to perform the operations to carry out a request.</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>476</objId>
+            <ptul X="254" Y="337" />
+            <ptdr X="608" Y="365" />
+            <links num="1">
+                <link id="472" />
+            </links>
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <stereotype />
+            <constraint />
+            <description>Encapsulate a request as an object, thereby letting you&#x0A;parameterize clients with different requests,&#x0A;queue or log requests, and support undoable operations.</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>477</objId>
+            <ptul X="281" Y="22" />
+            <ptdr X="614" Y="82" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLASS</type>
+            <stereotype />
+            <constraint />
+            <description />
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>478</objId>
+            <points num="2">
+                <pt x="323" y="255" />
+                <pt x="239" y="255" />
+            </points>
+            <objStart id="485" />
+            <objEnd id="484" />
+            <roleA mult="">receiver
+                <navigable />
+            </roleA>
+            <roleB mult="" />
+        </element>
+        <element>
+            <type>UMLCLASS</type>
+            <stereotype />
+            <constraint />
+            <description />
+            <bgrColor R="255" G="128" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>479</objId>
+            <ptul X="160" Y="106" />
+            <ptdr X="250" Y="132" />
+            <links num="2">
+                <link id="486" />
+                <link id="475" />
+            </links>
+            <name>Invoker</name>
+            <showAttributes />
+            <showMethods />
+            <attributes num="0" />
+            <operations num="0" />
+        </element>
+        <element>
+            <type>UMLNOTELINK</type>
+            <stereotype />
+            <constraint />
+            <description />
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>480</objId>
+            <points num="2">
+                <pt x="41" y="131" />
+                <pt x="41" y="323" />
+            </points>
+            <objStart id="473" />
+            <objEnd id="489" />
+        </element>
+        <element>
+            <type>UMLGEN</type>
+            <stereotype />
+            <constraint />
+            <description />
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>482</objId>
+            <points num="2">
+                <pt x="418" y="238" />
+                <pt x="418" y="175" />
+            </points>
+            <objStart id="485" />
+            <objEnd id="483" />
+        </element>
+        <element>
+            <type>UMLCLASS</type>
+            <stereotype />
+            <constraint>abstract</constraint>
+            <description>This is the class description.&#x0A;You should see this note in the html exported documentation.</description>
+            <bgrColor R="128" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>483</objId>
+            <ptul X="340" Y="107" />
+            <ptdr X="483" Y="175" />
+            <links num="3">
+                <link id="482" />
+                <link id="486" />
+                <link id="474" />
+            </links>
+            <name>Command</name>
+            <showAttributes />
+            <showMethods />
+            <attributes num="0" />
+            <operations num="1">
+                <operation>
+                    <name>Execute</name>
+                    <stereotype>virtual</stereotype>
+                    <constraint />
+                    <type />
+                    <vis>Unspec</vis>
+                    <showP />
+                    <showPT />
+                    <description>This is operation Execute() description.&#x0A;You should see this note in the html exported documentation.</description>
+                    <params num="0" />
+                </operation>
+            </operations>
+        </element>
+        <element>
+            <type>UMLCLASS</type>
+            <stereotype />
+            <constraint />
+            <description>This is the class description.&#x0A;You should see this note in the html exported documentation.</description>
+            <bgrColor R="255" G="128" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>484</objId>
+            <ptul X="149" Y="239" />
+            <ptdr X="239" Y="291" />
+            <links num="3">
+                <link id="478" />
+                <link id="491" />
+                <link id="472" />
+            </links>
+            <name>Receiver</name>
+            <showAttributes />
+            <showMethods />
+            <attributes num="0" />
+            <operations num="1">
+                <operation>
+                    <name>Action</name>
+                    <stereotype />
+                    <constraint />
+                    <type />
+                    <vis>Unspec</vis>
+                    <showP />
+                    <showPT />
+                    <description>This is operation Action() description.&#x0A;You should see this note in the html exported documentation.</description>
+                    <params num="0" />
+                </operation>
+            </operations>
+        </element>
+        <element>
+            <type>UMLCLASS</type>
+            <stereotype />
+            <constraint />
+            <description>This is the class description.&#x0A;You should see this note in the html exported documentation.</description>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>485</objId>
+            <ptul X="323" Y="238" />
+            <ptdr X="514" Y="306" />
+            <links num="4">
+                <link id="482" />
+                <link id="478" />
+                <link id="490" />
+                <link id="492" />
+            </links>
+            <name>Concrete Command</name>
+            <showAttributes />
+            <showMethods />
+            <attributes num="1">
+                <attribute>
+                    <name>state</name>
+                    <stereotype />
+                    <constraint />
+                    <type />
+                    <defValue />
+                    <vis>Unspec</vis>
+                    <description>This is attribute state.&#x0A;You should see this note in the html exported documentation.</description>
+                </attribute>
+            </attributes>
+            <operations num="1">
+                <operation>
+                    <name>Execute</name>
+                    <stereotype />
+                    <constraint>receiver-&gt;Action();</constraint>
+                    <type />
+                    <vis>Unspec</vis>
+                    <showP />
+                    <showPT />
+                    <description>This is operation Execute() description.&#x0A;You should see this note in the html exported documentation.</description>
+                    <params num="0" />
+                </operation>
+            </operations>
+        </element>
+        <element>
+            <type>UMLAGG</type>
+            <stereotype />
+            <constraint />
+            <description />
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>486</objId>
+            <points num="2">
+                <pt x="250" y="124" />
+                <pt x="340" y="124" />
+            </points>
+            <objStart id="479" />
+            <objEnd id="483" />
+            <roleA mult="" />
+            <roleB mult="*" />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <stereotype />
+            <constraint />
+            <description>Declares the interface.</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>487</objId>
+            <ptul X="507" Y="108" />
+            <ptdr X="645" Y="136" />
+            <links num="1">
+                <link id="474" />
+            </links>
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <stereotype />
+            <constraint />
+            <description>Asks the command to&#x0A;carry out the request.</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>488</objId>
+            <ptul X="159" Y="149" />
+            <ptdr X="295" Y="193" />
+            <links num="1">
+                <link id="475" />
+            </links>
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <stereotype />
+            <constraint />
+            <description>Creates a ConcreteCommand object&#x0A;and sets its receiver.</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>489</objId>
+            <ptul X="17" Y="323" />
+            <ptdr X="235" Y="367" />
+            <links num="1">
+                <link id="480" />
+            </links>
+            <name />
+        </element>
+        <element>
+            <type>UMLDEP</type>
+            <stereotype />
+            <constraint />
+            <description />
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>490</objId>
+            <points num="3">
+                <pt x="59" y="131" />
+                <pt x="59" y="298" />
+                <pt x="323" y="298" />
+            </points>
+            <objStart id="473" />
+            <objEnd id="485" />
+            <roleA />
+        </element>
+        <element>
+            <type>UMLASS</type>
+            <stereotype />
+            <constraint />
+            <description />
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>491</objId>
+            <points num="3">
+                <pt x="73" y="131" />
+                <pt x="73" y="246" />
+                <pt x="149" y="246" />
+            </points>
+            <objStart id="473" />
+            <objEnd id="484" />
+            <roleA mult="">
+                <navigable />
+            </roleA>
+            <roleB mult="" />
+        </element>
+        <element>
+            <type>UMLNOTELINK</type>
+            <stereotype />
+            <constraint />
+            <description />
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>492</objId>
+            <points num="2">
+                <pt x="514" y="274" />
+                <pt x="534" y="274" />
+            </points>
+            <objStart id="485" />
+            <objEnd id="493" />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <stereotype />
+            <constraint />
+            <description>- Defines a binding between&#x0A;a Receiver object and an action.&#x0A;- Implements Execute() calling &#x0A;Action() on Receiver.</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>493</objId>
+            <ptul X="534" Y="245" />
+            <ptdr X="727" Y="321" />
+            <links num="1">
+                <link id="492" />
+            </links>
+            <name />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <stereotype />
+            <constraint />
+            <description>Command (Action, Transaction)</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>481</objId>
+            <ptul X="22" Y="26" />
+            <ptdr X="263" Y="45" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

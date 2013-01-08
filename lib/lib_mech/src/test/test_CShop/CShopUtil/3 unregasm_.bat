@@ -1,0 +1,1 @@
+regasm /u CShopUtil.dll 

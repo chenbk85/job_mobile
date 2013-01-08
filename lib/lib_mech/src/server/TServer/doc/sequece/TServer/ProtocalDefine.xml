@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<ProtocalDefine>
+	<Namespace>
+		<CentralServer FILE="PT_Central.xml" >
+			<DOC_ATTRIBUTE TAG="C" VERSION="1000" i_DebugPrint='3' b_jxDEFINE="1"/>
+			<Child>
+        <MsgServer />
+        <CommandServer />
+				<LoginServer />
+				<ChannelServer/>
+				<GameServer/>
+				<UserServer/>
+				<WorldServer/>
+				<DBCacheServer />
+				<TradeServer/>
+				<MailServer/>
+				<AuctionServer/>
+				<Servers />
+			</Child>
+			<CODE type="ENUM_CPP_INCLUDE">../my_PT_TServer.h</CODE>
+		</CentralServer>
+    <CommandServer FILE="PT_Command.xml" >
+      <DOC_ATTRIBUTE TAG="CD" VERSION="1500" i_DebugPrint='3' b_jxDEFINE="1"/>
+      <Child>
+        <MsgServer />
+        <CommandServer />
+        <LoginServer />
+        <ChannelServer/>
+        <GameServer/>
+        <UserServer/>
+        <WorldServer/>
+        <DBCacheServer />
+        <TradeServer/>
+        <MailServer/>
+        <AuctionServer/>
+        <Servers />
+      </Child>
+      <CODE type="ENUM_CPP_INCLUDE">../my_PT_TServer.h</CODE>
+    </CommandServer>
+    <MsgServer FILE="PT_Msg.xml" >
+      <DOC_ATTRIBUTE TAG="MG" VERSION="1900" i_DebugPrint='3' b_jxDEFINE="1"/>
+      <Child>
+        <MsgServer />
+        <LoginServer />
+        <ChannelServer/>
+        <GameServer/>
+        <UserServer/>
+        <WorldServer/>
+        <DBCacheServer />
+        <TradeServer/>
+        <MailServer/>
+        <AuctionServer/>
+        <Servers />
+      </Child>
+      <CODE type="ENUM_CPP_INCLUDE">../my_PT_TServer.h</CODE>
+    </MsgServer>
+
+    <LoginServer FILE="PT_Login.xml">
+      <DOC_ATTRIBUTE TAG="L" VERSION="2000" i_DebugPrint='3' b_jxDEFINE="1"/>
+      <Child>
+        <Client />
+        <Clients />
+        <LoginAuth/>
+      </Child>
+      <CODE type="ENUM_CPP_INCLUDE">../my_PT_TServer.h</CODE>
+    </LoginServer>
+    <ChannelServer FILE="PT_Channel.xml" >
+      <DOC_ATTRIBUTE TAG="CH" VERSION="2500" i_DebugPrint='3' b_jxDEFINE="1"/>
+      <Child>
+        <Client />
+        <Clients />
+        <Client1/>
+      </Child>
+      <CODE type="ENUM_CPP_INCLUDE">../my_PT_TServer.h</CODE>
+    </ChannelServer>
+    <GameServer FILE="PT_Game.xml" >
+      <DOC_ATTRIBUTE TAG="G" VERSION="3000" i_DebugPrint='3' b_jxDEFINE="1"/>
+      <Child>
+        <Client />
+        <Clients />
+        <Client1/>
+      </Child>
+      <CODE type="ENUM_CPP_INCLUDE">../my_PT_TServer.h</CODE>
+    </GameServer>
+
+    <UserServer FILE="PT_User.xml" >
+      <DOC_ATTRIBUTE TAG="U" VERSION="4000" i_DebugPrint='3' b_jxDEFINE="1"/>
+      <Child>
+        <LoginServer />
+        <ChannelServer/>
+        <GameServer/>
+        <UserServer/>
+        <WorldServer/>
+        <DBCacheServer />
+        <TradeServer/>
+        <MailServer/>
+        <AuctionServer/>
+        <Servers />
+      </Child>
+      <CODE type="ENUM_CPP_INCLUDE">../my_PT_TServer.h</CODE>
+    </UserServer>
+    <WorldServer FILE="PT_World.xml" >
+      <DOC_ATTRIBUTE TAG="W" VERSION="5000" i_DebugPrint='3' b_jxDEFINE="1"/>
+      <Child>
+        <LoginServer />
+        <ChannelServer/>
+        <GameServer/>
+        <DBCacheServer />
+        <TradeServer/>
+        <MailServer/>
+        <AuctionServer/>
+        <Servers />
+      </Child>
+      <CODE type="ENUM_CPP_INCLUDE">../my_PT_TServer.h</CODE>
+    </WorldServer>
+    
+    <DBCacheServer FILE="PT_DBCache.xml">
+      <DOC_ATTRIBUTE TAG="DC" VERSION="6000" i_DebugPrint='3' b_jxDEFINE="1"/>
+      <Child>
+        <ChannelServer/>
+        <GameServer/>
+        <Servers />
+      </Child>
+      <CODE type="ENUM_CPP_INCLUDE">../my_PT_TServer.h</CODE>
+		</DBCacheServer>
+		<DBQueryServer FILE="PT_DBQuery.xml">
+			<DOC_ATTRIBUTE TAG="DC" VERSION="6500" i_DebugPrint='3' b_jxDEFINE="1"/>
+			<Child>
+				<DBCacheServer />
+			</Child>
+		</DBQueryServer>
+
+    <MailServer FILE="PT_Mail.xml" >
+      <DOC_ATTRIBUTE TAG="M" VERSION="7000" i_DebugPrint='3' b_jxDEFINE="1"/>
+      <Child>
+        <ChannelServer/>
+        <GameServer/>
+        <DBCacheServer />
+        <TradeServer/>
+        <AuctionServer/>
+        <Servers />
+      </Child>
+      <CODE type="ENUM_CPP_INCLUDE">../my_PT_TServer.h</CODE>
+    </MailServer>
+    
+    <TradeServer FILE="PT_Trade.xml" >
+      <DOC_ATTRIBUTE TAG="T" VERSION="7200" i_DebugPrint='3' b_jxDEFINE="1"/>
+      <Child>
+        <ChannelServer/>
+        <GameServer/>
+        <DBCacheServer />
+        <Servers />
+      </Child>
+      <CODE type="ENUM_CPP_INCLUDE">../my_PT_TServer.h</CODE>
+    </TradeServer>
+
+    <AuctionServer FILE="PT_Auction.xml" >
+      <DOC_ATTRIBUTE TAG="A" VERSION="7300" i_DebugPrint='3' b_jxDEFINE="1"/>
+      <Child>
+        <ChannelServer/>
+        <GameServer/>
+        <DBCacheServer />
+        <Servers />
+      </Child>
+      <CODE type="ENUM_CPP_INCLUDE">../my_PT_TServer.h</CODE>
+    </AuctionServer>
+    
+    <DummyServer FILE="PT_Dummy.xml" >
+			<DOC_ATTRIBUTE TAG="DT" VERSION="8000" i_DebugPrint='3' b_jxDEFINE="1"/>
+			<Child>
+				<Client/>
+			</Child>
+			<CODE type="ENUM_CPP_INCLUDE">../my_PT_TServer.h</CODE>
+		</DummyServer>
+		<Dummy >
+			<TAG>TC</TAG>
+		</Dummy>
+		<Servers>
+			<TAG>SS</TAG>
+		</Servers>
+		<Client >
+			<TAG>X</TAG>
+		</Client>
+		<Client1>
+			<TAG>X</TAG>
+		</Client1>
+		<Clients >
+			<TAG>XS</TAG>
+		</Clients>
+		<DB>
+			<TAG>DB</TAG>
+		</DB>
+	</Namespace>
+</ProtocalDefine>

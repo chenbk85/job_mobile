@@ -1,0 +1,222 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>C_02_05_central_restart</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="17">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>369</objId>
+            <ptul X="409" Y="78" />
+            <ptdr X="513" Y="118" />
+            <links num="0" />
+            <objectName>CommandServer</objectName>
+            <className>CD</className>
+            <actBoxes num="4">
+                <actBox id="374" />
+                <actBox id="375" />
+                <actBox id="380" />
+                <actBox id="383" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>370</objId>
+            <ptul X="117" Y="74" />
+            <ptdr X="203" Y="114" />
+            <links num="0" />
+            <objectName>CentralServer</objectName>
+            <className>C</className>
+            <actBoxes num="2">
+                <actBox id="373" />
+                <actBox id="376" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>371</objId>
+            <points num="2">
+                <pt x="167" y="133" />
+                <pt x="453" y="133" />
+            </points>
+            <objStart id="373" />
+            <objEnd id="374" />
+            <message messType="MRET">tcp connect</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>372</objId>
+            <ptul X="708" Y="238" />
+            <ptdr X="723" Y="268" />
+            <links num="1">
+                <link id="379" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>373</objId>
+            <ptul X="152" Y="128" />
+            <ptdr X="167" Y="158" />
+            <links num="1">
+                <link id="371" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>374</objId>
+            <ptul X="453" Y="128" />
+            <ptdr X="468" Y="158" />
+            <links num="1">
+                <link id="371" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>375</objId>
+            <ptul X="453" Y="163" />
+            <ptdr X="468" Y="193" />
+            <links num="1">
+                <link id="377" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>376</objId>
+            <ptul X="152" Y="163" />
+            <ptdr X="167" Y="193" />
+            <links num="1">
+                <link id="377" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>377</objId>
+            <points num="2">
+                <pt x="453" y="168" />
+                <pt x="167" y="168" />
+            </points>
+            <objStart id="375" />
+            <objEnd id="376" />
+            <message messType="MGEN">CD2C_WELCOME</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>378</objId>
+            <ptul X="682" Y="85" />
+            <ptdr X="750" Y="125" />
+            <links num="0" />
+            <objectName>Servers</objectName>
+            <className>SS</className>
+            <actBoxes num="2">
+                <actBox id="372" />
+                <actBox id="382" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>379</objId>
+            <points num="2">
+                <pt x="468" y="243" />
+                <pt x="708" y="243" />
+            </points>
+            <objStart id="380" />
+            <objEnd id="372" />
+            <message messType="MGEN">CD2_CENTRAL_RESTART</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>380</objId>
+            <ptul X="453" Y="238" />
+            <ptdr X="468" Y="268" />
+            <links num="1">
+                <link id="379" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[CD2_CENTRAL_RESTART]&#x0A;CentralServer 재시작을 모든서버에 통보&#x0A;{PARAM}</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>381</objId>
+            <ptul X="483" Y="286" />
+            <ptdr X="745" Y="346" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>382</objId>
+            <ptul X="708" Y="403" />
+            <ptdr X="723" Y="433" />
+            <links num="1">
+                <link id="384" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>383</objId>
+            <ptul X="453" Y="403" />
+            <ptdr X="468" Y="433" />
+            <links num="1">
+                <link id="384" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>384</objId>
+            <points num="2">
+                <pt x="708" y="408" />
+                <pt x="468" y="408" />
+            </points>
+            <objStart id="382" />
+            <objEnd id="383" />
+            <message messType="MRET">tcp reconnect</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[CD2C_WELCOME]&#x0A;센트랄 서버가 재접속시 보냄&#x0A;{PARAM}&#x0A;my-jServerInfo&#x0A;s-jServerInfo[?]</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>385</objId>
+            <ptul X="180" Y="177" />
+            <ptdr X="380" Y="269" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

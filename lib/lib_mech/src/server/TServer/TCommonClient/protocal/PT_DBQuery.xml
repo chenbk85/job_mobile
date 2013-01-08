@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<PROTOCAL HEADER="DBQueryServer" VERSION="6500" i_DebugPrint="3" b_jxDEFINE="true" TAG="DC">
+	<!-- CODE에서 개행문자 지원안됨. anpersent # x 0 A ; 를 사용할것-->
+	<CODE TYPE="ENUM_FILE"/>
+	<STRUCT_LIST/>
+	<PROTOCAL_LIST>
+		<DC2DQ_USER_DISCONNECT USD="\ch_01_02_02_user_disconnect.usd">
+			<pid TYPE="player_id_t" i_Length="-1"/>
+		</DC2DQ_USER_DISCONNECT>
+		<DQ_ECHO USD="dq_01_01_dbcache_connect.usd">
+			<type TYPE="uint8"/>
+			<msg TYPE="tname256_t"/>
+		</DQ_ECHO>
+		<DQ_ERROR USD="c_01_05_dbcacheserver.usd">
+			<ei TYPE="jErrorInfo"/>
+		</DQ_ERROR>
+		<DC2DQ_TOWN_CREATE USD="dq_01_01_05_town_select.usd">
+			<pid TYPE="player_id_t"/>
+			<csid TYPE="Sys_Castle_id_t"/>
+			<tpsid TYPE="Sys_TownPos_id_t"/>
+			<name TYPE="wname32_t"/>
+		</DC2DQ_TOWN_CREATE>
+		<DQ2DC_TOWN_CREATE_OK USD="dq_01_01_05_town_select.usd">
+			<pid TYPE="player_id_t"/>
+			<channelNo TYPE="channelid_t"/>
+		</DQ2DC_TOWN_CREATE_OK>
+		<DC2DQ_TOWN_DELETE USD="\dq_01_01_05_town_select.usd">
+			<pid TYPE="player_id_t"/>
+			<index TYPE="channelid_t"/>
+		</DC2DQ_TOWN_DELETE>
+		<DQ2DC_TOWN_DELETE_OK USD="\dq_01_01_05_town_select.usd">
+			<pid TYPE="player_id_t"/>
+			<channel_index TYPE="uint8"/>
+		</DQ2DC_TOWN_DELETE_OK>
+		<DC2DQ_INSERT_ITEM_AND_SKILL USD="\dq_01_01_05_town_select.usd">
+			<pid TYPE="player_id_t"/>
+			<channel_index TYPE="uint8"/>
+		</DC2DQ_INSERT_ITEM_AND_SKILL>
+		<DQ2DC_TOWN_CREATE_ERROR USD="\dq_01_01_05_town_select.usd">
+			<pid TYPE="player_id_t"/>
+			<e TYPE="jError"/>
+		</DQ2DC_TOWN_CREATE_ERROR>
+		<DC2DQ_CONNECT USD="dq_01_01_dbcache_connect.usd">
+			<WORLD_NAME TYPE="tname32_t"/>
+			<SM_QUERY2CACHE_NAME TYPE="tname32_t"/>
+			<SM_CACHE2QUERY_NAME TYPE="tname32_t"/>
+			<SM_USER_INFO_NAME TYPE="tname32_t"/>
+			<processid TYPE="uint32"/>
+		</DC2DQ_CONNECT>
+		<DQ2DC_CONNECT USD="dq_01_01_dbcache_connect.usd">
+			<WORLD_NAME TYPE="tname32_t"/>
+			<SM_QUERY2CACHE_NAME TYPE="tname32_t"/>
+			<SM_CACHE2QUERY_NAME TYPE="tname32_t"/>
+			<SM_USER_INFO_NAME TYPE="tname32_t"/>
+			<GAMEDB_NAME TYPE="tname32_t"/>
+			<processid TYPE="uint32"/>
+		</DQ2DC_CONNECT>
+		<DQ2DC_CONNECT_OK USD="\dq_01_01_dbcache_connect.usd">
+			<e TYPE="jError"/>
+			<processid TYPE="uint32"/>
+		</DQ2DC_CONNECT_OK>
+		<DC2DQ_CONNECT_OK USD="\dq_01_01_dbcache_connect.usd">
+			<e TYPE="jError"/>
+			<processid TYPE="uint32"/>
+		</DC2DQ_CONNECT_OK>
+		<DC2DQ_USER_LOGIN USD="\dq_01_05_userlogin.usd">
+			<pid TYPE="player_id_t"/>
+		</DC2DQ_USER_LOGIN>
+		<DQ2DC_USER_LOGIN_RESULT USD="\dq_01_05_userlogin.usd">
+			<pid TYPE="player_id_t"/>
+			<e TYPE="jError"/>
+		</DQ2DC_USER_LOGIN_RESULT>
+		<DC2DQ_GET_TOWN_LIST USD="\dq_01_05_userlogin.usd">
+			<pid TYPE="player_id_t"/>
+		</DC2DQ_GET_TOWN_LIST>
+		<DQ2DC_SEND_TOWN_LIST USD="\dq_01_05_userlogin.usd">
+			<pid TYPE="player_id_t"/>
+			<e TYPE="jError"/>
+		</DQ2DC_SEND_TOWN_LIST>
+	</PROTOCAL_LIST>
+	<CODE TYPE="ENUM_FILE"/>
+</PROTOCAL>

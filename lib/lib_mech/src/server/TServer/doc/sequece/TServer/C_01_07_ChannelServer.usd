@@ -1,0 +1,183 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>C_01_07_ChannelServer</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="14">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>32</objId>
+            <ptul X="51" Y="48" />
+            <ptdr X="143" Y="88" />
+            <links num="0" />
+            <objectName>ChannelServer</objectName>
+            <className>CH</className>
+            <actBoxes num="3">
+                <actBox id="35" />
+                <actBox id="38" />
+                <actBox id="42" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>33</objId>
+            <ptul X="315" Y="50" />
+            <ptdr X="401" Y="90" />
+            <links num="0" />
+            <objectName>CentralServer</objectName>
+            <className>C</className>
+            <actBoxes num="0" />
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>34</objId>
+            <ptul X="450" Y="50" />
+            <ptdr X="518" Y="90" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="3">
+                <actBox id="36" />
+                <actBox id="39" />
+                <actBox id="43" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>35</objId>
+            <ptul X="89" Y="172" />
+            <ptdr X="104" Y="202" />
+            <links num="1">
+                <link id="37" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>36</objId>
+            <ptul X="476" Y="172" />
+            <ptdr X="491" Y="202" />
+            <links num="1">
+                <link id="37" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>37</objId>
+            <points num="2">
+                <pt x="104" y="177" />
+                <pt x="476" y="177" />
+            </points>
+            <objStart id="35" />
+            <objEnd id="36" />
+            <message messType="MGEN">CH_ERROR</message>
+            <guardCond>ei-jErrorInfo</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>38</objId>
+            <ptul X="89" Y="121" />
+            <ptdr X="104" Y="151" />
+            <links num="1">
+                <link id="40" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>39</objId>
+            <ptul X="476" Y="121" />
+            <ptdr X="491" Y="151" />
+            <links num="1">
+                <link id="40" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>40</objId>
+            <points num="2">
+                <pt x="104" y="126" />
+                <pt x="476" y="126" />
+            </points>
+            <objStart id="38" />
+            <objEnd id="39" />
+            <message messType="MGEN">CH_ECHO</message>
+            <guardCond>msg-tname256_t,type-int8</guardCond>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[CH_ERROR]&#x0A;{PARAM}&#x0A;ei-jErrorInfo</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>41</objId>
+            <ptul X="228" Y="186" />
+            <ptdr X="315" Y="246" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>42</objId>
+            <ptul X="89" Y="296" />
+            <ptdr X="104" Y="326" />
+            <links num="1">
+                <link id="45" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>43</objId>
+            <ptul X="476" Y="296" />
+            <ptdr X="491" Y="326" />
+            <links num="1">
+                <link id="45" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[CH_HELLO]&#x0A;{PARAM}&#x0A;si-jServerInfo</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>44</objId>
+            <ptul X="181" Y="315" />
+            <ptdr X="264" Y="375" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>45</objId>
+            <points num="2">
+                <pt x="104" y="307" />
+                <pt x="476" y="307" />
+            </points>
+            <objStart id="42" />
+            <objEnd id="43" />
+            <message messType="MGEN">CH_HELLO</message>
+            <guardCond />
+        </element>
+    </elements>
+</diagram>

@@ -1,0 +1,22 @@
+/* file : jISquirrel.txt
+Coder : by icandoit ( mech12@nate.com)
+Date : 2008-02-26 17:12:02
+comp.: www.actoz.com
+title : 
+desc : 
+
+*/
+
+
+주의 한글 표현시 
+	"한국어(EUC)-코드페이지 51949"로 저장할것
+
+
+아래처럼 define을 해주면 jBase.DLL을 사용안하고 jSquirrel을 사용할수 있다.
+#define jNOT_USE_JBASE
+#include "jISquirrel.h"
+
+
+nut파일은
+프로젝트가 멀티바이트 모드이면 비졀스튜디오에서 "한국어 코드 페이지949"
+프로젝트가 유니코드이면 비졀스튜디오에서 "유니코드-코드페이지1200"으로세팅하시오

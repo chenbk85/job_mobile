@@ -1,0 +1,260 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>TC_0_5_1_Etc</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="20">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>22</objId>
+            <ptul X="53" Y="30" />
+            <ptdr X="121" Y="70" />
+            <links num="0" />
+            <objectName>TestClient</objectName>
+            <className>TC</className>
+            <actBoxes num="3">
+                <actBox id="25" />
+                <actBox id="32" />
+                <actBox id="38" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>23</objId>
+            <ptul X="303" Y="28" />
+            <ptdr X="374" Y="68" />
+            <links num="0" />
+            <objectName>TestServer</objectName>
+            <className>TS</className>
+            <actBoxes num="4">
+                <actBox id="26" />
+                <actBox id="27" />
+                <actBox id="33" />
+                <actBox id="35" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>24</objId>
+            <ptul X="567" Y="26" />
+            <ptdr X="636" Y="66" />
+            <links num="0" />
+            <objectName>AqMonitor</objectName>
+            <className>TM</className>
+            <actBoxes num="2">
+                <actBox id="28" />
+                <actBox id="36" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>25</objId>
+            <ptul X="80" Y="117" />
+            <ptdr X="95" Y="147" />
+            <links num="1">
+                <link id="30" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>26</objId>
+            <ptul X="331" Y="117" />
+            <ptdr X="346" Y="147" />
+            <links num="1">
+                <link id="30" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>27</objId>
+            <ptul X="331" Y="151" />
+            <ptdr X="346" Y="181" />
+            <links num="1">
+                <link id="29" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>28</objId>
+            <ptul X="594" Y="151" />
+            <ptdr X="609" Y="181" />
+            <links num="1">
+                <link id="29" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>29</objId>
+            <points num="2">
+                <pt x="346" y="156" />
+                <pt x="594" y="156" />
+            </points>
+            <objStart id="27" />
+            <objEnd id="28" />
+            <message messType="MGEN">TC2_AQ_ERROR</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>30</objId>
+            <points num="2">
+                <pt x="95" y="123" />
+                <pt x="331" y="123" />
+            </points>
+            <objStart id="25" />
+            <objEnd id="26" />
+            <message messType="MGEN">TC2_AQ_ERROR</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[TC2_AQ_ERROR]&#x0A;클라이언트쪽에서 에러상황발생할때 보고&#x0A;{PARAM}&#x0A;szID-aname32_t&#x0A;e-jError</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>31</objId>
+            <ptul X="91" Y="200" />
+            <ptdr X="377" Y="292" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>32</objId>
+            <ptul X="79" Y="370" />
+            <ptdr X="94" Y="400" />
+            <links num="1">
+                <link id="34" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>33</objId>
+            <ptul X="331" Y="370" />
+            <ptdr X="346" Y="400" />
+            <links num="1">
+                <link id="34" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>34</objId>
+            <points num="2">
+                <pt x="94" y="375" />
+                <pt x="331" y="375" />
+            </points>
+            <objStart id="32" />
+            <objEnd id="33" />
+            <message messType="MGEN">T_ERROR_MSG</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>35</objId>
+            <ptul X="331" Y="416" />
+            <ptdr X="346" Y="446" />
+            <links num="2">
+                <link id="37" />
+                <link id="39" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>36</objId>
+            <ptul X="594" Y="416" />
+            <ptdr X="609" Y="446" />
+            <links num="1">
+                <link id="37" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>37</objId>
+            <points num="2">
+                <pt x="346" y="421" />
+                <pt x="594" y="421" />
+            </points>
+            <objStart id="35" />
+            <objEnd id="36" />
+            <message messType="MGEN">T_ERROR_MSG</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>38</objId>
+            <ptul X="79" Y="429" />
+            <ptdr X="94" Y="459" />
+            <links num="1">
+                <link id="39" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>39</objId>
+            <points num="2">
+                <pt x="331" y="434" />
+                <pt x="94" y="434" />
+            </points>
+            <objStart id="35" />
+            <objEnd id="38" />
+            <message messType="MGEN">T_ERROR_MSG</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[T_ERROR_MSG]&#x0A;&#x0A;target : TestServer::EErrorMsgType&#x0A;&#x0A;{PARAM}&#x0A;type-uint8&#x0A;msg-tname256_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>41</objId>
+            <ptul X="618" Y="363" />
+            <ptdr X="830" Y="487" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>&lt;enum TestServer::EErrorMsgType&gt;&#x0A;EMT_ByTestCentral&#x0A;EMT_ByTestDummy&#x0A;EMT_ByAqMonitor</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>40</objId>
+            <ptul X="614" Y="264" />
+            <ptdr X="833" Y="340" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

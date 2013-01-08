@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<PROTOCAL HEADER="DummyServer" VERSION="8000" i_DebugPrint="3" b_jxDEFINE="true" TAG="DT">
+	<!-- CODE에서 개행문자 지원안됨. anpersent # x 0 A ; 를 사용할것-->
+	<CODE TYPE="ENUM_FILE">../my_PT_TServer.h</CODE>
+	<STRUCT_LIST/>
+	<PROTOCAL_LIST>
+		<DT_ECHO USD="dt_01_01_testserver.usd" HELP="type - DummyServer:EEchoType">
+			<msg TYPE="TCHAR" i_Length="256"/>
+			<type TYPE="uint8"/>
+		</DT_ECHO>
+		<DT_ERROR USD="c_01_09_dummyserver.usd">
+			<ei TYPE="jErrorInfo"/>
+		</DT_ERROR>
+		<DT_HELLO USD="c_01_09_dummyserver.usd">
+			<si TYPE="jServerInfo"/>
+		</DT_HELLO>
+		<X2DT_HELLO USD="\c_01_09_dummyserver.usd">
+			<si TYPE="jServerInfo"/>
+		</X2DT_HELLO>
+		<DT_ONLINE USD="dt_01_01_testserver.usd">
+			<test_id TYPE="tname32_t" HELP="테스트용 계정 접두어&#xA;"/>
+			<TEST_ID_START_NUM TYPE="int"/>
+			<iDummyCount TYPE="uint16" HELP="테스트클라이언트당 더미갯수"/>
+			<szLoginIP TYPE="tname32_t"/>
+			<iLoginPort TYPE="uint16"/>
+		</DT_ONLINE>
+		<DT_TEST_LOGIN_START USD="dt_1.1.1_login.usd">
+			<per_user TYPE="int16"/>
+			<delay TYPE="uint32"/>
+			<testClientName TYPE="tname32_t"/>
+		</DT_TEST_LOGIN_START>
+		<DT_TEST_LOG_OUT USD="dt_1.1.1_login.usd">
+			<per_user TYPE="int16"/>
+			<delay TYPE="uint32"/>
+			<testClientName TYPE="tname32_t"/>
+		</DT_TEST_LOG_OUT>
+		<DT_LOGIN_START_OK USD="dt_1.1.1_login.usd">
+			<process_msec TYPE="uint32"/>
+			<user_id TYPE="aname32_t"/>
+			<lobby_ip TYPE="CHAR" i_Length="32"/>
+		</DT_LOGIN_START_OK>
+		<DT2_UPDATE_XPATH_VALUE/>
+		<DT4_UPDATE_XPATH_VALUE_OK USD="dt_1.5.1_cmd.usd">
+			<target_name TYPE="tname256_t"/>
+			<doc TYPE="tname256_t"/>
+			<xpath TYPE="tname256_t"/>
+			<value TYPE="tname256_t"/>
+		</DT4_UPDATE_XPATH_VALUE_OK>
+		<DT_RUN_CONSOLE_CMD USD="dt_1.5.1_cmd.usd" HELP="isCentral=false이면 모든더미에대해 &#xA;콘솔명령을 실행.&#xA;">
+			<dummy_id TYPE="dummy_id_t"/>
+			<category TYPE="tname32_t"/>
+			<cmd TYPE="tname32_t"/>
+			<arg TYPE="tstring" i_Length="-1"/>
+		</DT_RUN_CONSOLE_CMD>
+		<DT2X_SET_TEST_ENV/>
+		<DT_RUN_DUMMY_SCRIPT USD="\dt_5.5.5_end.usd">
+			<code TYPE="TCHAR" i_Length="4096"/>
+		</DT_RUN_DUMMY_SCRIPT>
+	</PROTOCAL_LIST>
+	<CODE TYPE="ENUM_FILE"/>
+	<ENUM_TYPE_LIST>
+		<EEchoType USD_FILE="d:\svn\common\lib\windows\mech\src\server\tserver\doc\sequece\tserver\dt_01_01_testserver.usd">
+			<ET_nomal help=""/>
+			<ET_CmdToDummyTest help=""/>
+			<ET_CmdToClient help=""/>
+			<ET_CmdToAqMonitor help=""/>
+		</EEchoType>
+		<EXpathTarget USD_FILE="d:\svn\common\lib\windows\mech\src\server\tserver\doc\sequece\tserver\dt_1.5.1_cmd.usd">
+			<XT_TestCentral help=""/>
+			<XT_TestDummy help=""/>
+		</EXpathTarget>
+	</ENUM_TYPE_LIST>
+</PROTOCAL>

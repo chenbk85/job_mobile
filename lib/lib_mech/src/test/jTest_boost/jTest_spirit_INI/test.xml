@@ -1,0 +1,21 @@
+
+<MResourceFile version="1.00">
+<Description>
+	test description
+</Description>
+
+<!--  comment    -->
+
+<Window name="testwin1" width="320" height="240">
+	<Editbox name="edit1" left="16" top="16" width="160" height="16"/>
+	<StaticText name="stext1" left="32" top="64" text="StaticText1"/>
+	<Listbox name="list" left="16" top="96" width="240" height="120">
+		<String text="test"/>
+		<Icon icon="hoge"/>
+	</Listbox>
+</Window>
+
+<Window name="testwin2" width="60%" height="30%">
+</Window>
+
+</MResourceFile>

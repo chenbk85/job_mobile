@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HWInputMon", "HWInputMon.vcproj", "{D1978637-CEED-47E1-BB20-767189EB5691}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HWInputMonPrfInfo", "HWInputMonPrfInfo\HWInputMonPrfInfo.vcproj", "{0A66B71C-FE98-4A2C-8D16-D1F8D2D529B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1978637-CEED-47E1-BB20-767189EB5691}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D1978637-CEED-47E1-BB20-767189EB5691}.Debug|Win32.Build.0 = Debug|Win32
+		{D1978637-CEED-47E1-BB20-767189EB5691}.Release|Win32.ActiveCfg = Release|Win32
+		{D1978637-CEED-47E1-BB20-767189EB5691}.Release|Win32.Build.0 = Release|Win32
+		{0A66B71C-FE98-4A2C-8D16-D1F8D2D529B2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0A66B71C-FE98-4A2C-8D16-D1F8D2D529B2}.Debug|Win32.Build.0 = Debug|Win32
+		{0A66B71C-FE98-4A2C-8D16-D1F8D2D529B2}.Release|Win32.ActiveCfg = Release|Win32
+		{0A66B71C-FE98-4A2C-8D16-D1F8D2D529B2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

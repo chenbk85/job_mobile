@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<ProtocalDefine>
+	<Namespace>
+		<TestServer FILE="PT_TestServer.xml" >
+			<DOC_ATTRIBUTE TAG="S" VERSION="8000" i_DebugPrint='3' b_jxDEFINE="1"/>
+			<Child>
+				<TestClient/>
+			</Child>
+			<CODE type="ENUM_CPP_INCLUDE">network/my_pt_aq_server.h</CODE>
+		</TestServer>
+		<TestClient >
+			<TAG>X</TAG>
+		</TestClient>
+	</Namespace>
+</ProtocalDefine>

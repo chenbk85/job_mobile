@@ -1,0 +1,25 @@
+
+// C++ comment
+
+void function1()
+{
+	print_str("function1");
+}
+
+/* C comment */
+
+void function2()
+{
+	print_str("function2");
+	1+3*4;
+}
+
+/*
+
+void function3()
+{
+	print_str("function3");
+}
+
+*/
+

@@ -1,0 +1,2025 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<aq_table>
+	<enum>
+		<EAttackType HELP="설명없음">
+			<ATK_NONE>
+				<name>NONE</name>
+				<value>1</value>
+				<name_eng>ATK_NONE</name_eng>
+				<help>효과 없음</help>
+			</ATK_NONE>
+			<ATK_NORMAL>
+				<name>일반</name>
+				<value>2</value>
+				<name_eng>ATK_NORMAL</name_eng>
+				<help>일반 공격</help>
+			</ATK_NORMAL>
+			<ATK_PUSH>
+				<name>밀기</name>
+				<value>3</value>
+				<name_eng>ATK_PUSH</name_eng>
+				<help>적을 뒤로 밀리게 한다.</help>
+			</ATK_PUSH>
+			<ATK_PULL>
+				<name>당기기</name>
+				<value>4</value>
+				<name_eng>ATK_PULL</name_eng>
+				<help>적을 끌어 당긴다.</help>
+			</ATK_PULL>
+			<ATK_AERIAL>
+				<name>띄우기</name>
+				<value>5</value>
+				<name_eng>ATK_AERIAL</name_eng>
+				<help>적을 뛰운다</help>
+			</ATK_AERIAL>
+			<ATK_BLOW>
+				<name>날리기</name>
+				<value>6</value>
+				<name_eng>ATK_BLOW</name_eng>
+				<help>적을 날린다</help>
+			</ATK_BLOW>
+		</EAttackType>
+		<EAvatarParts HELP="설명없음">
+			<PART_VISUAL_HEAD>
+				<name>아바타 머리</name>
+				<value>1</value>
+				<name_eng>PART_VISUAL_HEAD</name_eng>
+				<help>아바타 장비</help>
+			</PART_VISUAL_HEAD>
+			<PART_VISUAL_FACE>
+				<name>아바타 얼굴</name>
+				<value>2</value>
+				<name_eng>PART_VISUAL_FACE</name_eng>
+				<help/>
+			</PART_VISUAL_FACE>
+			<PART_VISUAL_SHOULDER>
+				<name>아바타 어깨</name>
+				<value>3</value>
+				<name_eng>PART_VISUAL_SHOULDER</name_eng>
+				<help/>
+			</PART_VISUAL_SHOULDER>
+			<PART_VISUAL_BODY>
+				<name>아바타 바디</name>
+				<value>4</value>
+				<name_eng>PART_VISUAL_BODY</name_eng>
+				<help/>
+			</PART_VISUAL_BODY>
+			<PART_VISUAL_HAND>
+				<name>아바타 손</name>
+				<value>5</value>
+				<name_eng>PART_VISUAL_HAND</name_eng>
+				<help/>
+			</PART_VISUAL_HAND>
+			<PART_VISUAL_WAIST>
+				<name>아바타 허리</name>
+				<value>6</value>
+				<name_eng>PART_VISUAL_WAIST</name_eng>
+				<help/>
+			</PART_VISUAL_WAIST>
+			<PART_VISUAL_LEGS>
+				<name>아바타 다리</name>
+				<value>7</value>
+				<name_eng>PART_VISUAL_LEGS</name_eng>
+				<help/>
+			</PART_VISUAL_LEGS>
+			<PART_VISUAL_FEET>
+				<name>아바타 발</name>
+				<value>8</value>
+				<name_eng>PART_VISUAL_FEET</name_eng>
+				<help/>
+			</PART_VISUAL_FEET>
+			<PART_VISUAL_BACK>
+				<name>아바타 등</name>
+				<value>9</value>
+				<name_eng>PART_VISUAL_BACK</name_eng>
+				<help/>
+			</PART_VISUAL_BACK>
+			<PART_WEAPON_RH>
+				<name>아바타 무기 오른손</name>
+				<value>10</value>
+				<name_eng>PART_WEAPON_RH</name_eng>
+				<help>무기 장비</help>
+			</PART_WEAPON_RH>
+			<PART_WEAPON_LH>
+				<name>아바타 무기 왼손</name>
+				<value>11</value>
+				<name_eng>PART_WEAPON_LH</name_eng>
+				<help/>
+			</PART_WEAPON_LH>
+			<PART_WEAPON_2H>
+				<name>아바타 무기 양손</name>
+				<value>12</value>
+				<name_eng>PART_WEAPON_2H</name_eng>
+				<help/>
+			</PART_WEAPON_2H>
+			<PART_VISUAL_COUNT>
+				<name>아바타 장비 개수</name>
+				<value>13</value>
+				<name_eng>PART_VISUAL_COUNT</name_eng>
+				<help>&gt;&gt; 아바타 장비 개수</help>
+			</PART_VISUAL_COUNT>
+			<PART_SKINCOLOR>
+				<name>아바타 피부색</name>
+				<value>14</value>
+				<name_eng>PART_SKINCOLOR</name_eng>
+				<help>피부색</help>
+			</PART_SKINCOLOR>
+			<PART_EQUIP_HEAD>
+				<name>장비 머리</name>
+				<value>15</value>
+				<name_eng>PART_EQUIP_HEAD</name_eng>
+				<help>기본 장비</help>
+			</PART_EQUIP_HEAD>
+			<PART_EQUIP_SHOULDER>
+				<name>장비 어깨</name>
+				<value>16</value>
+				<name_eng>PART_EQUIP_SHOULDER</name_eng>
+				<help/>
+			</PART_EQUIP_SHOULDER>
+			<PART_EQUIP_BODY>
+				<name>장비 바디</name>
+				<value>17</value>
+				<name_eng>PART_EQUIP_BODY</name_eng>
+				<help/>
+			</PART_EQUIP_BODY>
+			<PART_EQUIP_WAIST>
+				<name>장비 허리</name>
+				<value>18</value>
+				<name_eng>PART_EQUIP_WAIST</name_eng>
+				<help/>
+			</PART_EQUIP_WAIST>
+			<PART_EQUIP_LEGS>
+				<name>장비 다리</name>
+				<value>19</value>
+				<name_eng>PART_EQUIP_LEGS</name_eng>
+				<help/>
+			</PART_EQUIP_LEGS>
+			<PART_EQUIP_FEET>
+				<name>장비 발</name>
+				<value>20</value>
+				<name_eng>PART_EQUIP_FEET</name_eng>
+				<help/>
+			</PART_EQUIP_FEET>
+			<PART_EQUIP_NECK>
+				<name>장비 목</name>
+				<value>21</value>
+				<name_eng>PART_EQUIP_NECK</name_eng>
+				<help>액세서리</help>
+			</PART_EQUIP_NECK>
+			<PART_EQUIP_FINGER1>
+				<name>장비 손가락1</name>
+				<value>22</value>
+				<name_eng>PART_EQUIP_FINGER1</name_eng>
+				<help/>
+			</PART_EQUIP_FINGER1>
+			<PART_EQUIP_FINGER2>
+				<name>장비 손가라2</name>
+				<value>23</value>
+				<name_eng>PART_EQUIP_FINGER2</name_eng>
+				<help/>
+			</PART_EQUIP_FINGER2>
+			<PART_NONE>
+				<name>사용 안함</name>
+				<value>24</value>
+				<name_eng>PART_NONE</name_eng>
+				<help/>
+			</PART_NONE>
+		</EAvatarParts>
+		<EAvatarSubclass HELP="설명없음">
+			<ASC_NONE>
+				<name>사용안함</name>
+				<value>1</value>
+				<name_eng>ASC_NONE</name_eng>
+				<help>용병 하위 직업군</help>
+			</ASC_NONE>
+			<ASC_BERSERK>
+				<name>광전사</name>
+				<value>2</value>
+				<name_eng>ASC_BERSERK</name_eng>
+				<help/>
+			</ASC_BERSERK>
+			<ASC_MAGIC_NIGHT>
+				<name>마검사</name>
+				<value>3</value>
+				<name_eng>ASC_MAGIC_NIGHT</name_eng>
+				<help/>
+			</ASC_MAGIC_NIGHT>
+			<ASC_PALADIN>
+				<name>수호기사</name>
+				<value>4</value>
+				<name_eng>ASC_PALADIN</name_eng>
+				<help/>
+			</ASC_PALADIN>
+			<ASC_ELEMENTAL_MASTER>
+				<name>대마법사</name>
+				<value>5</value>
+				<name_eng>ASC_ELEMENTAL_MASTER</name_eng>
+				<help>마법사 하위 직업군</help>
+			</ASC_ELEMENTAL_MASTER>
+			<ASC_EXORCIST>
+				<name>영환도사</name>
+				<value>6</value>
+				<name_eng>ASC_EXORCIST</name_eng>
+				<help/>
+			</ASC_EXORCIST>
+			<ASC_SUMMONER>
+				<name>소환사</name>
+				<value>7</value>
+				<name_eng>ASC_SUMMONER</name_eng>
+				<help/>
+			</ASC_SUMMONER>
+			<ASC_MONK>
+				<name>몽크</name>
+				<value>8</value>
+				<name_eng>ASC_MONK</name_eng>
+				<help>격투가 하위 직업군</help>
+			</ASC_MONK>
+			<ASC_STREET_FIGHTER>
+				<name>스트리트파이터</name>
+				<value>9</value>
+				<name_eng>ASC_STREET_FIGHTER</name_eng>
+				<help/>
+			</ASC_STREET_FIGHTER>
+			<ASC_AURA_MASTER>
+				<name>오러 마스터</name>
+				<value>10</value>
+				<name_eng>ASC_AURA_MASTER</name_eng>
+				<help/>
+			</ASC_AURA_MASTER>
+		</EAvatarSubclass>
+		<EDamageType HELP="설명없음">
+			<DMG_PHYSIC>
+				<name>물리뎀쥐</name>
+				<value>1</value>
+				<name_eng>DMG_PHYSIC</name_eng>
+				<help>물리데미지</help>
+			</DMG_PHYSIC>
+			<DMG_MAGIC>
+				<name>마법뎀쥐</name>
+				<value>2</value>
+				<name_eng>DMG_MAGIC</name_eng>
+				<help>매직데미지</help>
+			</DMG_MAGIC>
+		</EDamageType>
+		<EItemBind HELP="설명없음">
+			<ITEM_BIND_NONE>
+				<name>귀속 없음</name>
+				<value>1</value>
+				<name_eng>ITEM_BIND_NONE</name_eng>
+				<help>귀속 여부에 따른 분류</help>
+			</ITEM_BIND_NONE>
+			<ITEM_BIND_WHEN_EQUIPED>
+				<name>착용 시 귀속</name>
+				<value>2</value>
+				<name_eng>ITEM_BIND_WHEN_EQUIPED</name_eng>
+				<help/>
+			</ITEM_BIND_WHEN_EQUIPED>
+			<ITEM_BIND_WHEN_ACQUIRED>
+				<name>획득 시 귀속</name>
+				<value>3</value>
+				<name_eng>ITEM_BIND_WHEN_ACQUIRED</name_eng>
+				<help/>
+			</ITEM_BIND_WHEN_ACQUIRED>
+		</EItemBind>
+		<EItemClass HELP="설명없음">
+			<IC_CONSUMABLE>
+				<name>소모품</name>
+				<value>1</value>
+				<name_eng>IC_CONSUMABLE</name_eng>
+				<help>아이템 대 분류</help>
+			</IC_CONSUMABLE>
+			<IC_WEAPON>
+				<name>무기</name>
+				<value>2</value>
+				<name_eng>IC_WEAPON</name_eng>
+				<help/>
+			</IC_WEAPON>
+			<IC_AMOR>
+				<name>방어구</name>
+				<value>3</value>
+				<name_eng>IC_AMOR</name_eng>
+				<help/>
+			</IC_AMOR>
+			<IC_ACCESSORY>
+				<name>액세서리</name>
+				<value>4</value>
+				<name_eng>IC_ACCESSORY</name_eng>
+				<help/>
+			</IC_ACCESSORY>
+			<IC_COSTUME>
+				<name>의상</name>
+				<value>5</value>
+				<name_eng>IC_COSTUME</name_eng>
+				<help/>
+			</IC_COSTUME>
+			<IC_RESOURCE>
+				<name>자원</name>
+				<value>6</value>
+				<name_eng>IC_RESOURCE</name_eng>
+				<help/>
+			</IC_RESOURCE>
+			<IC_QUEST>
+				<name>퀘스트</name>
+				<value>7</value>
+				<name_eng>IC_QUEST</name_eng>
+				<help/>
+			</IC_QUEST>
+			<IC_MISC>
+				<name>기타</name>
+				<value>8</value>
+				<name_eng>IC_MISC</name_eng>
+				<help/>
+			</IC_MISC>
+		</EItemClass>
+		<EItemGrade HELP="설명없음">
+			<ITEM_GRADE_POOR>
+				<name>허름한</name>
+				<value>1</value>
+				<name_eng>ITEM_GRADE_POOR</name_eng>
+				<help>GRAY</help>
+			</ITEM_GRADE_POOR>
+			<ITEM_GRADE_NORMAL>
+				<name>일반</name>
+				<value>2</value>
+				<name_eng>ITEM_GRADE_NORMAL</name_eng>
+				<help>WHITE</help>
+			</ITEM_GRADE_NORMAL>
+			<ITEM_GRADE_MAGIC>
+				<name>매직</name>
+				<value>3</value>
+				<name_eng>ITEM_GRADE_MAGIC</name_eng>
+				<help>BLUE</help>
+			</ITEM_GRADE_MAGIC>
+			<ITEM_GRADE_SET>
+				<name>세트</name>
+				<value>4</value>
+				<name_eng>ITEM_GRADE_SET</name_eng>
+				<help>GREEN</help>
+			</ITEM_GRADE_SET>
+			<ITEM_GRADE_RARE>
+				<name>레어</name>
+				<value>5</value>
+				<name_eng>ITEM_GRADE_RARE</name_eng>
+				<help>PURPLE</help>
+			</ITEM_GRADE_RARE>
+			<ITEM_GRADE_UNIQUE>
+				<name>유니크</name>
+				<value>6</value>
+				<name_eng>ITEM_GRADE_UNIQUE</name_eng>
+				<help>GOLD</help>
+			</ITEM_GRADE_UNIQUE>
+			<ITEM_GRADE_ARTIFACT>
+				<name>인공물</name>
+				<value>7</value>
+				<name_eng>ITEM_GRADE_ARTIFACT</name_eng>
+				<help>LIGHT_YELLOW</help>
+			</ITEM_GRADE_ARTIFACT>
+		</EItemGrade>
+		<EItemQuality HELP="설명없음">
+			<ITEM_QUALITY_NONE>
+				<name>NONE</name>
+				<value>1</value>
+				<name_eng>ITEM_QUALITY_NONE</name_eng>
+				<help>아이템 품질에 따른 분류</help>
+			</ITEM_QUALITY_NONE>
+			<ITEM_QUALITY_LOWEST>
+				<name>최하급</name>
+				<value>2</value>
+				<name_eng>ITEM_QUALITY_LOWEST</name_eng>
+				<help/>
+			</ITEM_QUALITY_LOWEST>
+			<ITEM_QUALITY_LOW>
+				<name>하급</name>
+				<value>3</value>
+				<name_eng>ITEM_QUALITY_LOW</name_eng>
+				<help>최하급-&gt;최상급순서의 품질</help>
+			</ITEM_QUALITY_LOW>
+			<ITEM_QUALITY_INTERMEDIATE>
+				<name>중급</name>
+				<value>4</value>
+				<name_eng>ITEM_QUALITY_INTERMEDIATE</name_eng>
+				<help/>
+			</ITEM_QUALITY_INTERMEDIATE>
+			<ITEM_QUALITY_HIGHER>
+				<name>상급</name>
+				<value>5</value>
+				<name_eng>ITEM_QUALITY_HIGHER</name_eng>
+				<help/>
+			</ITEM_QUALITY_HIGHER>
+			<ITEM_QUALITY_HIGHEST>
+				<name>최상급</name>
+				<value>6</value>
+				<name_eng>ITEM_QUALITY_HIGHEST</name_eng>
+				<help/>
+			</ITEM_QUALITY_HIGHEST>
+		</EItemQuality>
+		<EItemSubclass HELP="설명없음">
+			<ISC_WEAPON_BIGSWORD>
+				<name>대겁</name>
+				<value>1</value>
+				<name_eng>ISC_WEAPON_BIGSWORD</name_eng>
+				<help>무기 아이템 소 분류</help>
+			</ISC_WEAPON_BIGSWORD>
+			<ISC_WEAPON_MAGICSWORD>
+				<name>마법검</name>
+				<value>2</value>
+				<name_eng>ISC_WEAPON_MAGICSWORD</name_eng>
+				<help/>
+			</ISC_WEAPON_MAGICSWORD>
+			<ISC_WEAPON_MACE>
+				<name>둔기</name>
+				<value>3</value>
+				<name_eng>ISC_WEAPON_MACE</name_eng>
+				<help/>
+			</ISC_WEAPON_MACE>
+			<ISC_WEAPON_SHIELD>
+				<name>방패</name>
+				<value>4</value>
+				<name_eng>ISC_WEAPON_SHIELD</name_eng>
+				<help/>
+			</ISC_WEAPON_SHIELD>
+			<ISC_WEAPON_STAFF>
+				<name>스태프</name>
+				<value>5</value>
+				<name_eng>ISC_WEAPON_STAFF</name_eng>
+				<help/>
+			</ISC_WEAPON_STAFF>
+			<ISC_WEAPON_ROBE>
+				<name>로브</name>
+				<value>6</value>
+				<name_eng>ISC_WEAPON_ROBE</name_eng>
+				<help/>
+			</ISC_WEAPON_ROBE>
+			<ISC_WEAPON_CHARM>
+				<name>부적</name>
+				<value>7</value>
+				<name_eng>ISC_WEAPON_CHARM</name_eng>
+				<help/>
+			</ISC_WEAPON_CHARM>
+			<ISC_WEAPON_KNUCKLE>
+				<name>너클</name>
+				<value>8</value>
+				<name_eng>ISC_WEAPON_KNUCKLE</name_eng>
+				<help/>
+			</ISC_WEAPON_KNUCKLE>
+			<ISC_WEAPON_GAUNTLET>
+				<name>건틀릿</name>
+				<value>9</value>
+				<name_eng>ISC_WEAPON_GAUNTLET</name_eng>
+				<help/>
+			</ISC_WEAPON_GAUNTLET>
+			<ISC_WEAPON_MAGICBRACELET>
+				<name>마법 팔찌</name>
+				<value>10</value>
+				<name_eng>ISC_WEAPON_MAGICBRACELET</name_eng>
+				<help/>
+			</ISC_WEAPON_MAGICBRACELET>
+			<ISC_WEAPON_END>
+				<name>무기 끝</name>
+				<value>11</value>
+				<name_eng>ISC_WEAPON_END</name_eng>
+				<help/>
+			</ISC_WEAPON_END>
+			<ISC_EQ_HEAD>
+				<name>장비 머리</name>
+				<value>12</value>
+				<name_eng>ISC_EQ_HEAD</name_eng>
+				<help>장비 아이템 소 분류</help>
+			</ISC_EQ_HEAD>
+			<ISC_EQ_SHOULDER>
+				<name>장비 어깨</name>
+				<value>13</value>
+				<name_eng>ISC_EQ_SHOULDER</name_eng>
+				<help/>
+			</ISC_EQ_SHOULDER>
+			<ISC_EQ_BODY>
+				<name>장비 바디</name>
+				<value>14</value>
+				<name_eng>ISC_EQ_BODY</name_eng>
+				<help/>
+			</ISC_EQ_BODY>
+			<ISC_EQ_WAIST>
+				<name>장비 허리</name>
+				<value>15</value>
+				<name_eng>ISC_EQ_WAIST</name_eng>
+				<help/>
+			</ISC_EQ_WAIST>
+			<ISC_EQ_LEGS>
+				<name>장비 다리</name>
+				<value>16</value>
+				<name_eng>ISC_EQ_LEGS</name_eng>
+				<help/>
+			</ISC_EQ_LEGS>
+			<ISC_EQ_FEET>
+				<name>장비 발</name>
+				<value>17</value>
+				<name_eng>ISC_EQ_FEET</name_eng>
+				<help/>
+			</ISC_EQ_FEET>
+			<ISC_EQ_NECK>
+				<name>액세서리 목</name>
+				<value>18</value>
+				<name_eng>ISC_EQ_NECK</name_eng>
+				<help>액세서리 아이템 소 분류</help>
+			</ISC_EQ_NECK>
+			<ISC_EQ_FINGER1>
+				<name>액세서리 손가락1</name>
+				<value>19</value>
+				<name_eng>ISC_EQ_FINGER1</name_eng>
+				<help/>
+			</ISC_EQ_FINGER1>
+			<ISC_EQ_FINGER2>
+				<name>액세서리 손가라2</name>
+				<value>20</value>
+				<name_eng>ISC_EQ_FINGER2</name_eng>
+				<help/>
+			</ISC_EQ_FINGER2>
+			<ISC_EQ_END>
+				<name>액세서리 끝</name>
+				<value>21</value>
+				<name_eng>ISC_EQ_END</name_eng>
+				<help/>
+			</ISC_EQ_END>
+			<ISC_AV_HEAD>
+				<name>아바타 머리</name>
+				<value>22</value>
+				<name_eng>ISC_AV_HEAD</name_eng>
+				<help>파츠 아이템 소 분류</help>
+			</ISC_AV_HEAD>
+			<ISC_AV_FACE>
+				<name>아바타 얼굴</name>
+				<value>23</value>
+				<name_eng>ISC_AV_FACE</name_eng>
+				<help/>
+			</ISC_AV_FACE>
+			<ISC_AV_SHOULDER>
+				<name>아바타 어깨</name>
+				<value>24</value>
+				<name_eng>ISC_AV_SHOULDER</name_eng>
+				<help/>
+			</ISC_AV_SHOULDER>
+			<ISC_AV_BODY>
+				<name>아바타 바디</name>
+				<value>25</value>
+				<name_eng>ISC_AV_BODY</name_eng>
+				<help/>
+			</ISC_AV_BODY>
+			<ISC_AV_HANDS>
+				<name>아바타 손</name>
+				<value>26</value>
+				<name_eng>ISC_AV_HANDS</name_eng>
+				<help/>
+			</ISC_AV_HANDS>
+			<ISC_AV_WAIST>
+				<name>아바타 허리</name>
+				<value>27</value>
+				<name_eng>ISC_AV_WAIST</name_eng>
+				<help/>
+			</ISC_AV_WAIST>
+			<ISC_AV_LEGS>
+				<name>아바타 다리</name>
+				<value>28</value>
+				<name_eng>ISC_AV_LEGS</name_eng>
+				<help/>
+			</ISC_AV_LEGS>
+			<ISC_AV_FEET>
+				<name>아바타 발</name>
+				<value>29</value>
+				<name_eng>ISC_AV_FEET</name_eng>
+				<help/>
+			</ISC_AV_FEET>
+			<ISC_AV_BACK>
+				<name>아바타 등</name>
+				<value>30</value>
+				<name_eng>ISC_AV_BACK</name_eng>
+				<help/>
+			</ISC_AV_BACK>
+			<ISC_AV_EFFECT>
+				<name>아바타 이펙트</name>
+				<value>31</value>
+				<name_eng>ISC_AV_EFFECT</name_eng>
+				<help/>
+			</ISC_AV_EFFECT>
+			<ISC_AV_SKINCOLOR>
+				<name>아바타 피부색</name>
+				<value>32</value>
+				<name_eng>ISC_AV_SKINCOLOR</name_eng>
+				<help/>
+			</ISC_AV_SKINCOLOR>
+			<ISC_AV_END>
+				<name>아바타 끝</name>
+				<value>33</value>
+				<name_eng>ISC_AV_END</name_eng>
+				<help/>
+			</ISC_AV_END>
+		</EItemSubclass>
+		<EMechanic HELP="설명없음">
+			<MECHANIC_NONE>
+				<name>이상 없음</name>
+				<value>1</value>
+				<name_eng>MECHANIC_NONE</name_eng>
+				<help>상태 변화에 따른 분류</help>
+			</MECHANIC_NONE>
+			<MECHANIC_FREEZE>
+				<name>빙결 상태</name>
+				<value>2</value>
+				<name_eng>MECHANIC_FREEZE</name_eng>
+				<help>빙결상태시 행동이 불가능하며 적의 공격에 데미지를 입는다.</help>
+			</MECHANIC_FREEZE>
+			<MECHANIC_BLAZE>
+				<name>화염 상태</name>
+				<value>3</value>
+				<name_eng>MECHANIC_BLAZE</name_eng>
+				<help>화염 상태시 지속 시간동안 데미지를 지속적으로 입는다.</help>
+			</MECHANIC_BLAZE>
+			<MECHANIC_SLOW>
+				<name>슬로우 상태</name>
+				<value>4</value>
+				<name_eng>MECHANIC_SLOW</name_eng>
+				<help>슬로우 상태시 행동속도가 일정확률로 떨어지게 된다.</help>
+			</MECHANIC_SLOW>
+			<MECHANIC_BLIND>
+				<name>실명 상태</name>
+				<value>5</value>
+				<name_eng>MECHANIC_BLIND</name_eng>
+				<help>실명 상태시 일정 부분을 제외하고 화면이 보이지 않는다.</help>
+			</MECHANIC_BLIND>
+			<MECHANIC_SLIDE>
+				<name>미끄러짐 상태</name>
+				<value>6</value>
+				<name_eng>MECHANIC_SLIDE</name_eng>
+				<help>미끄러짐 상태시 이동키입력과 반대 방향으로 이동하게 된다.</help>
+			</MECHANIC_SLIDE>
+			<MECHANIC_STONE>
+				<name>석화 상태</name>
+				<value>7</value>
+				<name_eng>MECHANIC_STONE</name_eng>
+				<help>석화 상태시 행동이 불가능하며 적의 공격에 데미지를 입는다.</help>
+			</MECHANIC_STONE>
+			<MECHANIC_POISON>
+				<name>독 상태</name>
+				<value>8</value>
+				<name_eng>MECHANIC_POISON</name_eng>
+				<help>독 상태시 지속 시간동안 데미지를 지속적으로 입는다.</help>
+			</MECHANIC_POISON>
+		</EMechanic>
+		<EModifier HELP="설명없음">
+			<MOD_NONE>
+				<name>NONE</name>
+				<value>1</value>
+				<name_eng>MOD_NONE</name_eng>
+				<help>아바타에 능력치의 수정자 리스트이다.</help>
+			</MOD_NONE>
+			<MOD_HP>
+				<name>HP</name>
+				<value>2</value>
+				<name_eng>MOD_HP</name_eng>
+				<help>add, pct</help>
+			</MOD_HP>
+			<MOD_HP_MAX>
+				<name>HP MAX</name>
+				<value>3</value>
+				<name_eng>MOD_HP_MAX</name_eng>
+				<help>add, pct</help>
+			</MOD_HP_MAX>
+			<MOD_HP_REGEN>
+				<name>HP REGEN</name>
+				<value>4</value>
+				<name_eng>MOD_HP_REGEN</name_eng>
+				<help>add, pct</help>
+			</MOD_HP_REGEN>
+			<MOD_MP>
+				<name>MP 회복</name>
+				<value>5</value>
+				<name_eng>MOD_MP</name_eng>
+				<help>add, pct</help>
+			</MOD_MP>
+			<MOD_MP_MAX>
+				<name>MP MAX</name>
+				<value>6</value>
+				<name_eng>MOD_MP_MAX</name_eng>
+				<help>add, pct</help>
+			</MOD_MP_MAX>
+			<MOD_MP_REGEN>
+				<name>MP_REGEN</name>
+				<value>7</value>
+				<name_eng>MOD_MP_REGEN</name_eng>
+				<help>add, pct</help>
+			</MOD_MP_REGEN>
+			<MOD_STAT_ALL>
+				<name>모든 상태</name>
+				<value>8</value>
+				<name_eng>MOD_STAT_ALL</name_eng>
+				<help>add, pct</help>
+			</MOD_STAT_ALL>
+			<MOD_STAT_STR>
+				<name>힘</name>
+				<value>9</value>
+				<name_eng>MOD_STAT_STR</name_eng>
+				<help>add, pct</help>
+			</MOD_STAT_STR>
+			<MOD_STAT_STA>
+				<name>체력</name>
+				<value>10</value>
+				<name_eng>MOD_STAT_STA</name_eng>
+				<help>add, pct</help>
+			</MOD_STAT_STA>
+			<MOD_STAT_AGI>
+				<name>민첩</name>
+				<value>11</value>
+				<name_eng>MOD_STAT_AGI</name_eng>
+				<help>add, pct</help>
+			</MOD_STAT_AGI>
+			<MOD_STAT_INT>
+				<name>지능</name>
+				<value>12</value>
+				<name_eng>MOD_STAT_INT</name_eng>
+				<help>add, pct</help>
+			</MOD_STAT_INT>
+			<MOD_STAT_MEN>
+				<name>정신</name>
+				<value>13</value>
+				<name_eng>MOD_STAT_MEN</name_eng>
+				<help>add, pct</help>
+			</MOD_STAT_MEN>
+			<MOD_RESIST_ALL>
+				<name>모든 저항력</name>
+				<value>14</value>
+				<name_eng>MOD_RESIST_ALL</name_eng>
+				<help>pct</help>
+			</MOD_RESIST_ALL>
+			<MOD_RESIST_WATER>
+				<name>수속성저항력</name>
+				<value>15</value>
+				<name_eng>MOD_RESIST_WATER</name_eng>
+				<help>pct</help>
+			</MOD_RESIST_WATER>
+			<MOD_RESIST_FIRE>
+				<name>화속성저항력</name>
+				<value>16</value>
+				<name_eng>MOD_RESIST_FIRE</name_eng>
+				<help>pct</help>
+			</MOD_RESIST_FIRE>
+			<MOD_RESIST_LIGHT>
+				<name>명속성저항력</name>
+				<value>17</value>
+				<name_eng>MOD_RESIST_LIGHT</name_eng>
+				<help>pct</help>
+			</MOD_RESIST_LIGHT>
+			<MOD_RESIST_DARK>
+				<name>암속성저항력</name>
+				<value>18</value>
+				<name_eng>MOD_RESIST_DARK</name_eng>
+				<help>pct</help>
+			</MOD_RESIST_DARK>
+			<MOD_PHYSIC_ATK>
+				<name>물리공격력</name>
+				<value>19</value>
+				<name_eng>MOD_PHYSIC_ATK</name_eng>
+				<help>pct</help>
+			</MOD_PHYSIC_ATK>
+			<MOD_PHYSIC_DEF>
+				<name>물리방어력</name>
+				<value>20</value>
+				<name_eng>MOD_PHYSIC_DEF</name_eng>
+				<help>pct</help>
+			</MOD_PHYSIC_DEF>
+			<MOD_PHYSIC_CRIT_CHANCE>
+				<name>물리크리티컬확률</name>
+				<value>21</value>
+				<name_eng>MOD_PHYSIC_CRIT_CHANCE</name_eng>
+				<help>pct</help>
+			</MOD_PHYSIC_CRIT_CHANCE>
+			<MOD_MAGIC_ATK>
+				<name>마법공격력</name>
+				<value>22</value>
+				<name_eng>MOD_MAGIC_ATK</name_eng>
+				<help>pct</help>
+			</MOD_MAGIC_ATK>
+			<MOD_MAGIC_DEF>
+				<name>마법방어력</name>
+				<value>23</value>
+				<name_eng>MOD_MAGIC_DEF</name_eng>
+				<help>pct</help>
+			</MOD_MAGIC_DEF>
+			<MOD_MAGIC_CRIT_CHANCE>
+				<name>마법크리티컬확률</name>
+				<value>24</value>
+				<name_eng>MOD_MAGIC_CRIT_CHANCE</name_eng>
+				<help>pct</help>
+			</MOD_MAGIC_CRIT_CHANCE>
+			<MOD_ATTACK_SPEED>
+				<name>공격속도</name>
+				<value>25</value>
+				<name_eng>MOD_ATTACK_SPEED</name_eng>
+				<help>pct</help>
+			</MOD_ATTACK_SPEED>
+			<MOD_CAST_SPEED>
+				<name>캐스팅속도</name>
+				<value>26</value>
+				<name_eng>MOD_CAST_SPEED</name_eng>
+				<help>pct</help>
+			</MOD_CAST_SPEED>
+			<MOD_MOVE_SPEED>
+				<name>이동속도</name>
+				<value>27</value>
+				<name_eng>MOD_MOVE_SPEED</name_eng>
+				<help>pct</help>
+			</MOD_MOVE_SPEED>
+			<MOD_JUMP_FACTOR>
+				<name>점프력</name>
+				<value>28</value>
+				<name_eng>MOD_JUMP_FACTOR</name_eng>
+				<help>pct</help>
+			</MOD_JUMP_FACTOR>
+			<MOD_MAX>
+				<name>최대MOD</name>
+				<value>29</value>
+				<name_eng>MOD_MAX</name_eng>
+				<help/>
+			</MOD_MAX>
+		</EModifier>
+		<EModValueType HELP="설명없음">
+			<MODVALUE_BASE>
+				<name>기본값</name>
+				<value>1</value>
+				<name_eng>MODVALUE_BASE</name_eng>
+				<help/>
+			</MODVALUE_BASE>
+			<MODVALUE_ADD>
+				<name>ADD</name>
+				<value>2</value>
+				<name_eng>MODVALUE_ADD</name_eng>
+				<help/>
+			</MODVALUE_ADD>
+			<MODVALUE_PCT>
+				<name>PERCENTAGE</name>
+				<value>3</value>
+				<name_eng>MODVALUE_PCT</name_eng>
+				<help/>
+			</MODVALUE_PCT>
+			<MODVALUE_MAX>
+				<name>HP REGEN</name>
+				<value>4</value>
+				<name_eng>MODVALUE_MAX</name_eng>
+				<help/>
+			</MODVALUE_MAX>
+		</EModValueType>
+		<ESkillCastType HELP="설명없음">
+			<CAST_INSTANT>
+				<name>즉시</name>
+				<value>1</value>
+				<name_eng>CAST_INSTANT</name_eng>
+				<help>사용 즉시 적용한다.</help>
+			</CAST_INSTANT>
+			<CAST_CASTING>
+				<name>캐스팅</name>
+				<value>2</value>
+				<name_eng>CAST_CASTING</name_eng>
+				<help>시전동작후 적용한다.</help>
+			</CAST_CASTING>
+			<CAST_CHARGING>
+				<name>차징</name>
+				<value>3</value>
+				<name_eng>CAST_CHARGING</name_eng>
+				<help>기를 모은후 적용된다.</help>
+			</CAST_CHARGING>
+			<CAST_LOCATING>
+				<name>위치지정</name>
+				<value>4</value>
+				<name_eng>CAST_LOCATING</name_eng>
+				<help>위치를 지정한후 적용한다.</help>
+			</CAST_LOCATING>
+			<CAST_TARGETING>
+				<name>대상지정</name>
+				<value>5</value>
+				<name_eng>CAST_TARGETING</name_eng>
+				<help>대상을 지정하고 적용한다.</help>
+			</CAST_TARGETING>
+		</ESkillCastType>
+		<ESkillType HELP="설명없음">
+			<SKILL_ACTIVE>
+				<name>ACTIVE</name>
+				<value>1</value>
+				<name_eng>SKILL_ACTIVE</name_eng>
+				<help>액티브스킬</help>
+			</SKILL_ACTIVE>
+			<SKILL_PASSIVE>
+				<name>PASSIVE</name>
+				<value>2</value>
+				<name_eng>SKILL_PASSIVE</name_eng>
+				<help>패시브스킬</help>
+			</SKILL_PASSIVE>
+		</ESkillType>
+		<ETarget HELP="설명없음">
+			<TARGET_NONE>
+				<name>NONE</name>
+				<value>1</value>
+				<name_eng>TARGET_NONE</name_eng>
+				<help/>
+			</TARGET_NONE>
+			<TARGET_SELF>
+				<name>본인</name>
+				<value>2</value>
+				<name_eng>TARGET_SELF</name_eng>
+				<help>본인에게 적용한다.</help>
+			</TARGET_SELF>
+			<TARGET_MEMBER>
+				<name>파티 개인</name>
+				<value>3</value>
+				<name_eng>TARGET_MEMBER</name_eng>
+				<help>파티 그룹중 개인에게 적용한다</help>
+			</TARGET_MEMBER>
+			<TARGET_GROUP>
+				<name>파티 그룹</name>
+				<value>4</value>
+				<name_eng>TARGET_GROUP</name_eng>
+				<help>파티 그룹에게 적용한다</help>
+			</TARGET_GROUP>
+			<TARGET_ENEMY>
+				<name>적</name>
+				<value>5</value>
+				<name_eng>TARGET_ENEMY</name_eng>
+				<help>몹/오브젝트/트랩에 적용한다. PVP시 다른팀은 MOB 으로 분류한다.</help>
+			</TARGET_ENEMY>
+		</ETarget>
+	</enum>
+	<Sys>
+		<Sys_Avatar HELP="설명없음">
+			<asid>
+				<name>아바타 ID</name>
+				<name_eng>asid</name_eng>
+				<data_type>Sys_Avatar_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type>PK</db_type>
+				<type_note/>
+				<help>아바타 sid</help>
+			</asid>
+			<name>
+				<name>아바타 이름</name>
+				<name_eng>name</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>아바타 이름</help>
+			</name>
+			<baseclass>
+				<name>아바타 상위직업</name>
+				<name_eng>baseclass</name_eng>
+				<data_type>EAvatarClass</data_type>
+				<min/>
+				<max>EAvatarClass</max>
+				<db_type/>
+				<type_note/>
+				<help>NULL</help>
+			</baseclass>
+			<subclass>
+				<name>아바타 하위직업</name>
+				<name_eng>subclass</name_eng>
+				<data_type>EAvatarSubclass</data_type>
+				<min/>
+				<max>EAvatarSubclass</max>
+				<db_type/>
+				<type_note/>
+				<help>NULL</help>
+			</subclass>
+			<hp_max>
+				<name>HP</name>
+				<name_eng>hp_max</name_eng>
+				<data_type>int32</data_type>
+				<min>0</min>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>default value</help>
+			</hp_max>
+			<mp_max>
+				<name>MP</name>
+				<name_eng>mp_max</name_eng>
+				<data_type>int32</data_type>
+				<min>0</min>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>default value</help>
+			</mp_max>
+			<hp_regen>
+				<name>HP회복 속도</name>
+				<name_eng>hp_regen</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>1분당 회복되는 hp</help>
+			</hp_regen>
+			<mp_regen>
+				<name>MP회복 속도</name>
+				<name_eng>mp_regen</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>1분당 회복되는 mp</help>
+			</mp_regen>
+			<st_str>
+				<name>힘</name>
+				<name_eng>st_str</name_eng>
+				<data_type>int32</data_type>
+				<min>0</min>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>default value</help>
+			</st_str>
+			<st_sta>
+				<name>민첩</name>
+				<name_eng>st_sta</name_eng>
+				<data_type>int32</data_type>
+				<min>0</min>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>default value</help>
+			</st_sta>
+			<st_agi>
+				<name>체력</name>
+				<name_eng>st_agi</name_eng>
+				<data_type>int32</data_type>
+				<min>0</min>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>default value</help>
+			</st_agi>
+			<st_int>
+				<name>지능</name>
+				<name_eng>st_int</name_eng>
+				<data_type>int32</data_type>
+				<min>0</min>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>default value</help>
+			</st_int>
+			<st_men>
+				<name>정신력</name>
+				<name_eng>st_men</name_eng>
+				<data_type>int32</data_type>
+				<min>0</min>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>default value</help>
+			</st_men>
+			<reation_aerial_type>
+				<name>띄워지는타입</name>
+				<name_eng>reation_aerial_type</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</reation_aerial_type>
+			<reation_blow_type>
+				<name>날려지는타입</name>
+				<name_eng>reation_blow_type</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</reation_blow_type>
+			<reation_push_type>
+				<name>밀려지는타입</name>
+				<name_eng>reation_push_type</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</reation_push_type>
+			<physic_atk>
+				<name>물리 공격력</name>
+				<name_eng>physic_atk</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>default value</help>
+			</physic_atk>
+			<physic_def>
+				<name>물리 방어력</name>
+				<name_eng>physic_def</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>default value</help>
+			</physic_def>
+			<physic_crit>
+				<name>물리 크리티컬 확률</name>
+				<name_eng>physic_crit</name_eng>
+				<data_type>float</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>default value</help>
+			</physic_crit>
+			<magic_atk>
+				<name>마법 공격력</name>
+				<name_eng>magic_atk</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>default value</help>
+			</magic_atk>
+			<magic_def>
+				<name>마법 방어력</name>
+				<name_eng>magic_def</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>default value</help>
+			</magic_def>
+			<magic_crit>
+				<name>마법 크리티컬 확률</name>
+				<name_eng>magic_crit</name_eng>
+				<data_type>float</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>default value</help>
+			</magic_crit>
+			<attack_speed>
+				<name>공격 속도</name>
+				<name_eng>attack_speed</name_eng>
+				<data_type>float</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>default value</help>
+			</attack_speed>
+			<casting_speed>
+				<name>캐스팅 속도</name>
+				<name_eng>casting_speed</name_eng>
+				<data_type>float</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>default value</help>
+			</casting_speed>
+			<move_speed>
+				<name>이동속도</name>
+				<name_eng>move_speed</name_eng>
+				<data_type>float</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>실수와 %로 표시</help>
+			</move_speed>
+			<dash_speed>
+				<name>대쉬속도</name>
+				<name_eng>dash_speed</name_eng>
+				<data_type>float</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>실수와 %로 표시</help>
+			</dash_speed>
+			<hit_chance>
+				<name>적중</name>
+				<name_eng>hit_chance</name_eng>
+				<data_type>float</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>실수와 %로 표시</help>
+			</hit_chance>
+			<avoid_chance>
+				<name>회피</name>
+				<name_eng>avoid_chance</name_eng>
+				<data_type>float</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>실수와 %로 표시</help>
+			</avoid_chance>
+			<jumpFactor>
+				<name>점프력</name>
+				<name_eng>jumpFactor</name_eng>
+				<data_type>float</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>실수와 %로 표시</help>
+			</jumpFactor>
+			<resist_fire>
+				<name>화속성 저항력</name>
+				<name_eng>resist_fire</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>실수와 %로 표시</help>
+			</resist_fire>
+			<resist_water>
+				<name>수속성 저항력</name>
+				<name_eng>resist_water</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>실수와 %로 표시</help>
+			</resist_water>
+			<resist_light>
+				<name>명속성 저항력</name>
+				<name_eng>resist_light</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>실수와 %로 표시</help>
+			</resist_light>
+			<resist_dark>
+				<name>암속성 저항력</name>
+				<name_eng>resist_dark</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>실수와 %로 표시</help>
+			</resist_dark>
+			<combo1>
+				<name>콤보공격1</name>
+				<name_eng>combo1</name_eng>
+				<data_type>Sys_Skill_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>skill id</help>
+			</combo1>
+			<combo2>
+				<name>콤보공격2</name>
+				<name_eng>combo2</name_eng>
+				<data_type>Sys_Skill_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>skill id</help>
+			</combo2>
+			<combo3>
+				<name>콤보공격3</name>
+				<name_eng>combo3</name_eng>
+				<data_type>Sys_Skill_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>skill id</help>
+			</combo3>
+			<combo4>
+				<name>콤보공격4</name>
+				<name_eng>combo4</name_eng>
+				<data_type>Sys_Skill_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>skill id</help>
+			</combo4>
+			<combo5>
+				<name>콤보공격5</name>
+				<name_eng>combo5</name_eng>
+				<data_type>Sys_Skill_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>skill id</help>
+			</combo5>
+			<jump_atk>
+				<name>점프공격</name>
+				<name_eng>jump_atk</name_eng>
+				<data_type>Sys_Skill_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>skill id</help>
+			</jump_atk>
+			<dash_atk>
+				<name>대쉬공격</name>
+				<name_eng>dash_atk</name_eng>
+				<data_type>Sys_Skill_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>skill id</help>
+			</dash_atk>
+			<combo1_2h>
+				<name>양손콤보공격1</name>
+				<name_eng>combo1_2h</name_eng>
+				<data_type>Sys_Skill_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>skill id</help>
+			</combo1_2h>
+			<combo2_2h>
+				<name>양손콤보공격2</name>
+				<name_eng>combo2_2h</name_eng>
+				<data_type>Sys_Skill_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>skill id</help>
+			</combo2_2h>
+			<combo3_3h>
+				<name>양손콤보공격3</name>
+				<name_eng>combo3_3h</name_eng>
+				<data_type>Sys_Skill_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>skill id</help>
+			</combo3_3h>
+			<combo4_2h>
+				<name>양손콤보공격4</name>
+				<name_eng>combo4_2h</name_eng>
+				<data_type>Sys_Skill_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>skill id</help>
+			</combo4_2h>
+			<combo5_2h>
+				<name>양손콤보공격5</name>
+				<name_eng>combo5_2h</name_eng>
+				<data_type>Sys_Skill_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>skill id</help>
+			</combo5_2h>
+			<jump_atk_2h>
+				<name>양손점프공격</name>
+				<name_eng>jump_atk_2h</name_eng>
+				<data_type>Sys_Skill_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>skill id</help>
+			</jump_atk_2h>
+			<dash_atk_2h>
+				<name>양손대쉬공격</name>
+				<name_eng>dash_atk_2h</name_eng>
+				<data_type>Sys_Skill_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>skill id</help>
+			</dash_atk_2h>
+			<xmlname>
+				<name>아바타 xml 파일 이름</name>
+				<name_eng>xmlname</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>xml에서 불러 오는 아바타 옵션 이름</help>
+			</xmlname>
+			<fkmname>
+				<name>파일 이름 및 경로</name>
+				<name_eng>fkmname</name_eng>
+				<data_type>tname256_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>파일의 이름 및 경로(kfm)</help>
+			</fkmname>
+		</Sys_Avatar>
+		<Sys_Item HELP="설명없음">
+			<isid>
+				<name>아이템 ID</name>
+				<name_eng>isid</name_eng>
+				<data_type>Sys_Item_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type>PK</db_type>
+				<type_note/>
+				<help>아이템의 sid</help>
+			</isid>
+			<name>
+				<name>아이템 이름</name>
+				<name_eng>name</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>아이템의 name</help>
+			</name>
+			<category>
+				<name>아이템 대분류</name>
+				<name_eng>category</name_eng>
+				<data_type>EItemClass</data_type>
+				<min/>
+				<max>EItemClass</max>
+				<db_type/>
+				<type_note/>
+				<help>NULL</help>
+			</category>
+			<subcategory>
+				<name>아이템 소분류</name>
+				<name_eng>subcategory</name_eng>
+				<data_type>EItemSubclass</data_type>
+				<min/>
+				<max>EItemSubclass</max>
+				<db_type/>
+				<type_note/>
+				<help>NULL</help>
+			</subcategory>
+			<grade>
+				<name>아이템 등급</name>
+				<name_eng>grade</name_eng>
+				<data_type>EItemGrade</data_type>
+				<min/>
+				<max>EItemGrade</max>
+				<db_type/>
+				<type_note/>
+				<help>일반_ 매직_ 세트_ 레어_ 유니크_ 에픽</help>
+			</grade>
+			<quality>
+				<name>아이템 품질</name>
+				<name_eng>quality</name_eng>
+				<data_type>EItemQuality</data_type>
+				<min/>
+				<max>EItemQuality</max>
+				<db_type/>
+				<type_note/>
+				<help>최하급_ 하급_ 중급_ 상급_ 최상급</help>
+			</quality>
+			<bind_type>
+				<name>아이템 귀속 여부</name>
+				<name_eng>bind_type</name_eng>
+				<data_type>EItemBind</data_type>
+				<min/>
+				<max>EItemBind</max>
+				<db_type/>
+				<type_note/>
+				<help>귀속 없음_ 획득 시 귀속_ 착용 시 귀속</help>
+			</bind_type>
+			<part>
+				<name>아이템 착용 부위</name>
+				<name_eng>part</name_eng>
+				<data_type>EAvatarParts</data_type>
+				<min/>
+				<max>EAvatarParts</max>
+				<db_type/>
+				<type_note/>
+				<help>NULL</help>
+			</part>
+			<reqClass>
+				<name>아이팀 사용 상위직업</name>
+				<name_eng>reqClass</name_eng>
+				<data_type>EAvatarClass</data_type>
+				<min/>
+				<max>EAvatarClass</max>
+				<db_type/>
+				<type_note/>
+				<help>상위 직업_모든 직업 사용으로 분류</help>
+			</reqClass>
+			<reqSubclass>
+				<name>아이템 사용 하위직업</name>
+				<name_eng>reqSubclass</name_eng>
+				<data_type>EAvatarSubclass</data_type>
+				<min/>
+				<max>EAvatarSubclass</max>
+				<db_type/>
+				<type_note/>
+				<help>하위 직업별 분류</help>
+			</reqSubclass>
+			<maxCount>
+				<name>아이템 최대 소지 개수</name>
+				<name_eng>maxCount</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>아이템을 소지할수 있는 최대 개수</help>
+			</maxCount>
+			<stackCount>
+				<name>아이템 최대 스택 수량</name>
+				<name_eng>stackCount</name_eng>
+				<data_type>int32</data_type>
+				<min>1</min>
+				<max>99</max>
+				<db_type/>
+				<type_note/>
+				<help>인벤토리 한칸에 최대 수량_ 최대 99개</help>
+			</stackCount>
+			<buyPrice>
+				<name>아이템 구입 가격</name>
+				<name_eng>buyPrice</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>상점 구입 가격</help>
+			</buyPrice>
+			<sellPrice>
+				<name>아이템 판매 가격</name>
+				<name_eng>sellPrice</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>상점 판매 가격</help>
+			</sellPrice>
+			<repairPrice>
+				<name>아이템 수리 가격</name>
+				<name_eng>repairPrice</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>내구도 x 수리 가격</help>
+			</repairPrice>
+			<reqCash>
+				<name>아이템 캐쉬 가격</name>
+				<name_eng>reqCash</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>캐쉬 구입 가격</help>
+			</reqCash>
+			<reqLevel>
+				<name>아이템 사용 레벨</name>
+				<name_eng>reqLevel</name_eng>
+				<data_type>int32</data_type>
+				<min>1</min>
+				<max>60</max>
+				<db_type/>
+				<type_note/>
+				<help>아이템 사용 가능 레벨</help>
+			</reqLevel>
+			<durability>
+				<name>아이템 내구도</name>
+				<name_eng>durability</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>최고 내구도 표시</help>
+			</durability>
+			<activeTime>
+				<name>아이템 활성 제한 시간(사용가능기간)</name>
+				<name_eng>activeTime</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>기간제 아이템의 사용 기간_ 분(Min)단위</help>
+			</activeTime>
+			<trigger_skill>
+				<name>아이템 사용시 적용 스킬</name>
+				<name_eng>trigger_skill</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>아이템 사용시 적용될 스킬</help>
+			</trigger_skill>
+			<iconname>
+				<name>아이템 아이콘</name>
+				<name_eng>iconname</name_eng>
+				<data_type>tname256_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>아이콘 파일(dds)</help>
+			</iconname>
+			<delegate>
+				<name>아이템 드랍 오브젝트</name>
+				<name_eng>delegate</name_eng>
+				<data_type>tname128_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>아이템 드랍시 떨어지는 오브젝트</help>
+			</delegate>
+			<filename>
+				<name>아이템 리소스 파일(착용시 오브젝트)</name>
+				<name_eng>filename</name_eng>
+				<data_type>tname256_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>파일의 이름및 경로(nif)</help>
+			</filename>
+			<xmlname>
+				<name>아이템 옵션 xml 파일 이름</name>
+				<name_eng>xmlname</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>xml에서 불러오는 아이템 옵션 이름</help>
+			</xmlname>
+			<description>
+				<name>아이템 팝업 설명창</name>
+				<name_eng>description</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>Sys_LocaleText.csv 게임 화면에 출력되는 아이템 설명</help>
+			</description>
+		</Sys_Item>
+		<Sys_Skill HELP="설명없음">
+			<ssid>
+				<name>스킬 ID</name>
+				<name_eng>ssid</name_eng>
+				<data_type>Sys_Skill_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type>PK</db_type>
+				<type_note/>
+				<help>스킬의 sid</help>
+			</ssid>
+			<name>
+				<name>스킬 이름</name>
+				<name_eng>name</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>스킬의 name</help>
+			</name>
+			<level>
+				<name>스킬 레벨</name>
+				<name_eng>level</name_eng>
+				<data_type>skill_level_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>스킬 레벨</help>
+			</level>
+			<maxLevel>
+				<name>스킬 최대 레벨</name>
+				<name_eng>maxLevel</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>스킬을 배울수 있는 최대 레벨</help>
+			</maxLevel>
+			<reqLevel>
+				<name>스킬 배울수 있는 아바타레벨</name>
+				<name_eng>reqLevel</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>NULL</help>
+			</reqLevel>
+			<reqGold>
+				<name>스킬 획득 시 필요 GOLD</name>
+				<name_eng>reqGold</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>NULL</help>
+			</reqGold>
+			<reqSP>
+				<name>스킬 레벨업시 필요 SP</name>
+				<name_eng>reqSP</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>NULL</help>
+			</reqSP>
+			<reqItem>
+				<name>스킬 사용시 필요 아이템</name>
+				<name_eng>reqItem</name_eng>
+				<data_type>Sys_Item_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>NULL</help>
+			</reqItem>
+			<costHP>
+				<name>스킬 사용시 소모되는 hp</name>
+				<name_eng>costHP</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>NULL</help>
+			</costHP>
+			<costMP>
+				<name>스킬 사용시 소모되는 mp</name>
+				<name_eng>costMP</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>NULL</help>
+			</costMP>
+			<costItem>
+				<name>스킬 사용시 소모되는 아이템</name>
+				<name_eng>costItem</name_eng>
+				<data_type>Sys_Item_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>NULL</help>
+			</costItem>
+			<type>
+				<name>스킬 타입</name>
+				<name_eng>type</name_eng>
+				<data_type>ESkillType</data_type>
+				<min/>
+				<max>ESkillType</max>
+				<db_type/>
+				<type_note/>
+				<help>즉시/주기적/지속적</help>
+			</type>
+			<castingType>
+				<name>스킬 캐스팅 타입</name>
+				<name_eng>castingType</name_eng>
+				<data_type>ESkillCastType</data_type>
+				<min/>
+				<max>ESkillCastType</max>
+				<db_type/>
+				<type_note/>
+				<help>즉시/지정/캐스팅</help>
+			</castingType>
+			<castingAnim>
+				<name>스킬 캐스팅애니메이션</name>
+				<name_eng>castingAnim</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>NULL</help>
+			</castingAnim>
+			<castingTime>
+				<name>스킬 시전 시간</name>
+				<name_eng>castingTime</name_eng>
+				<data_type>float</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>단위 : 초</help>
+			</castingTime>
+			<chargingTime>
+				<name>차징 최대 시간</name>
+				<name_eng>chargingTime</name_eng>
+				<data_type>float</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</chargingTime>
+			<chargingMutiplier>
+				<name>차징 데미지증가력</name>
+				<name_eng>chargingMutiplier</name_eng>
+				<data_type>float</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>차징 성공하면 물리 및 기본 데미지에 곱해준다.</help>
+			</chargingMutiplier>
+			<coolTime>
+				<name>스킬 재사용 시간</name>
+				<name_eng>coolTime</name_eng>
+				<data_type>float</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>단위 : 초</help>
+			</coolTime>
+			<skillAnim>
+				<name>스킬 애니메이션</name>
+				<name_eng>skillAnim</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>NULL</help>
+			</skillAnim>
+			<target>
+				<name>스킬 적용대상</name>
+				<name_eng>target</name_eng>
+				<data_type>ETarget</data_type>
+				<min/>
+				<max>ETarget</max>
+				<db_type/>
+				<type_note/>
+				<help>본인/그룹/적</help>
+			</target>
+			<attackType>
+				<name>스킬 공격 리액션 타입</name>
+				<name_eng>attackType</name_eng>
+				<data_type>EAttackType</data_type>
+				<min/>
+				<max>EAttackType</max>
+				<db_type/>
+				<type_note/>
+				<help>스킬 공격 타입</help>
+			</attackType>
+			<attackRate>
+				<name>공격 리액션 비율</name>
+				<name_eng>attackRate</name_eng>
+				<data_type>float</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>스킬 공격 타입 수치</help>
+			</attackRate>
+			<hit_chance>
+				<name>스킬 명중률</name>
+				<name_eng>hit_chance</name_eng>
+				<data_type>float</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>아바타 수치와 + 하여 계산</help>
+			</hit_chance>
+			<critical_chance>
+				<name>스킬 크리티컬 확률</name>
+				<name_eng>critical_chance</name_eng>
+				<data_type>float</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>아바타 수치와 + 하여 계산</help>
+			</critical_chance>
+			<effectRange>
+				<name>스킬 효과 범위</name>
+				<name_eng>effectRange</name_eng>
+				<data_type>float</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>스킬 효과 적용 범위(단위m)</help>
+			</effectRange>
+			<effectDuration>
+				<name>효과 적용 시간</name>
+				<name_eng>effectDuration</name_eng>
+				<data_type>float</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</effectDuration>
+			<effect>
+				<name>효과</name>
+				<name_eng>effect</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</effect>
+			<castingFX>
+				<name>스킬 캐스팅FX</name>
+				<name_eng>castingFX</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>NULL</help>
+			</castingFX>
+			<skillFX>
+				<name>스킬 기본 FX</name>
+				<name_eng>skillFX</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>NULL</help>
+			</skillFX>
+			<chargingFX>
+				<name>스틸 차징 FX</name>
+				<name_eng>chargingFX</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</chargingFX>
+			<collisionFX>
+				<name>스킬 충돌 FX</name>
+				<name_eng>collisionFX</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>NULL</help>
+			</collisionFX>
+			<targetFX>
+				<name>스킬 타겟 FX</name>
+				<name_eng>targetFX</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>NULL</help>
+			</targetFX>
+			<description>
+				<name>설명창</name>
+				<name_eng>description</name_eng>
+				<data_type>tname256_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>Sys_LocaleText.csv 게임 화면에 출력되는 스킬 설명</help>
+			</description>
+		</Sys_Skill>
+	</Sys>
+</aq_table>

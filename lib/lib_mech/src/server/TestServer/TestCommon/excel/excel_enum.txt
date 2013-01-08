@@ -1,0 +1,90 @@
+nTESTSERVER ,@#, D:\svn\lib\lib_mech\src\server\TestServer\TestCommon\excel ,@#, excel_enum
+
+enum ,@#, EAvatarClass ,@#, 설명없음
+
+enumItem ,@#, 용병 ,@#,  1  ,@#, AC_MERCENARY ,@#, 상위 직업군
+enumItem ,@#, 마법사 ,@#,  2  ,@#, AC_WIZARD ,@#, 
+enumItem ,@#, 격투가 ,@#,  3  ,@#, AC_FIGHTER ,@#, 
+enumItem ,@#, 모든 클래스 ,@#,  4  ,@#, AC_ALL ,@#, 모든 직업(상위, 하위 포함)
+
+
+enum ,@#, EBuildType_test ,@#, 설명없음
+
+enumItem ,@#, 본영 ,@#,  1  ,@#, EBTTT_Sys_T_HQ ,@#, 본영
+enumItem ,@#, 주점 ,@#,  2  ,@#, EBTTT_Sys_T_Bar ,@#, 주점
+enumItem ,@#, 서원 ,@#,  3  ,@#, EBTTT_ACADEMY ,@#, 서원
+enumItem ,@#, 치안부 ,@#,  4  ,@#, EBTTT_PEACE ,@#, 치안부
+enumItem ,@#, 사당 ,@#,  5  ,@#, EBTTT_SHRINE ,@#, 사당
+enumItem ,@#, 감찰부 ,@#,  6  ,@#, EBTTT_HIDEOUT ,@#, 감찰부
+enumItem ,@#, 교역소 ,@#,  7  ,@#, EBTTT_TRADINGPOST ,@#, 교역소
+enumItem ,@#, 민가 ,@#,  8  ,@#, EBTTT_Sys_T_House ,@#, 민가
+enumItem ,@#, 농지 ,@#,  9  ,@#, EBTTT_Sys_T_Farm ,@#, 농지
+enumItem ,@#, 제재소 ,@#,  10  ,@#, EBTTT_SAWMILL ,@#, 제재소
+enumItem ,@#, 채석장 ,@#,  11  ,@#, EBTTT_QUARRY ,@#, 채석장
+enumItem ,@#, 광업장 ,@#,  12  ,@#, EBTTT_MINING ,@#, 광업장
+enumItem ,@#, 양잠소 ,@#,  13  ,@#, EBTTT_COCOONERY  ,@#, 양잠소
+enumItem ,@#, 병영 ,@#,  14  ,@#, EBTTT_Sys_T_Barrack ,@#, 병영
+enumItem ,@#, 대장간 ,@#,  15  ,@#, EBTTT_SMITHY ,@#, 대장간
+enumItem ,@#, 공방 ,@#,  16  ,@#, EBTTT_FORGE ,@#, 공방
+enumItem ,@#, 마구간 ,@#,  17  ,@#, EBTTT_STABLE ,@#, 마구간
+enumItem ,@#, 둔영 ,@#,  18  ,@#, EBTTT_Sys_T_Camp ,@#, 둔영
+enumItem ,@#, 창고 ,@#,  19  ,@#, EBTTT_Sys_T_Depot ,@#, 창고
+enumItem ,@#, 비밀창고 ,@#,  20  ,@#, EBTTT_SECRET ,@#, 비밀창고
+enumItem ,@#, 망루 ,@#,  21  ,@#, EBTTT_TOWER ,@#, 망루
+enumItem ,@#, 방벽 ,@#,  22  ,@#, EBTTT_BARRIER ,@#, 방벽
+
+
+enum ,@#, EBuildTypeTest ,@#, 설명없음
+
+enumItem ,@#, 본영 ,@#,  1  ,@#, ETT_Sys_T_HQ ,@#, 본영
+enumItem ,@#, 주점 ,@#,  2  ,@#, ETT_Sys_T_Bar ,@#, 주점
+enumItem ,@#, 서원 ,@#,  3  ,@#, ETT_ACADEMY ,@#, 서원
+enumItem ,@#, 치안부 ,@#,  4  ,@#, ETT_PEACE ,@#, 치안부
+enumItem ,@#, 사당 ,@#,  5  ,@#, ETT_SHRINE ,@#, 사당
+enumItem ,@#, 감찰부 ,@#,  6  ,@#, ETT_HIDEOUT ,@#, 감찰부
+enumItem ,@#, 교역소 ,@#,  7  ,@#, ETT_TRADINGPOST ,@#, 교역소
+enumItem ,@#, 민가 ,@#,  8  ,@#, ETT_Sys_T_House ,@#, 민가
+enumItem ,@#, 농지 ,@#,  9  ,@#, ETT_Sys_T_Farm ,@#, 농지
+enumItem ,@#, 제재소 ,@#,  10  ,@#, ETT_SAWMILL ,@#, 제재소
+enumItem ,@#, 채석장 ,@#,  11  ,@#, ETT_QUARRY ,@#, 채석장
+enumItem ,@#, 광업장 ,@#,  12  ,@#, ETT_MINING ,@#, 광업장
+enumItem ,@#, 양잠소 ,@#,  13  ,@#, ETT_COCOONERY  ,@#, 양잠소
+enumItem ,@#, 병영 ,@#,  14  ,@#, ETT_Sys_T_Barrack ,@#, 병영
+enumItem ,@#, 대장간 ,@#,  15  ,@#, ETT_SMITHY ,@#, 대장간
+enumItem ,@#, 공방 ,@#,  16  ,@#, ETT_FORGE ,@#, 공방
+enumItem ,@#, 마구간 ,@#,  17  ,@#, ETT_STABLE ,@#, 마구간
+enumItem ,@#, 둔영 ,@#,  18  ,@#, ETT_Sys_T_Camp ,@#, 둔영
+enumItem ,@#, 창고 ,@#,  19  ,@#, ETT_Sys_T_Depot ,@#, 창고
+enumItem ,@#, 비밀창고 ,@#,  20  ,@#, ETT_SECRET ,@#, 비밀창고
+enumItem ,@#, 망루 ,@#,  21  ,@#, ETT_TOWER ,@#, 망루
+enumItem ,@#, 방벽 ,@#,  22  ,@#, ETT_BARRIER ,@#, 방벽
+
+
+enum ,@#, EOutput_test ,@#, 설명없음
+
+enumItem ,@#, 인구 ,@#,  1  ,@#, EOTTT_POPULATION ,@#, 인구
+enumItem ,@#, 금 ,@#,  2  ,@#, EOTTT_GOLD ,@#, 금
+enumItem ,@#, 식량 ,@#,  3  ,@#, EOTTT_FOOD ,@#, 식량
+enumItem ,@#, 목재 ,@#,  4  ,@#, EOTTT_TREE ,@#, 목재
+enumItem ,@#, 석재 ,@#,  5  ,@#, EOTTT_STONE ,@#, 석재
+enumItem ,@#, 철재 ,@#,  6  ,@#, EOTTT_IRON ,@#, 철재
+enumItem ,@#, 비단 ,@#,  7  ,@#, EOTTT_SILK ,@#, 비단
+enumItem ,@#, 병사 ,@#,  8  ,@#, EOTTT_SOLDIER ,@#, 병사
+enumItem ,@#, 창 병기 ,@#,  9  ,@#, EOTTT_PIKE ,@#, 
+enumItem ,@#, 중갑 병기 ,@#,  10  ,@#, EOTTT_HEAVY ,@#, 
+enumItem ,@#, 언월도 병기  ,@#,  11  ,@#, EOTTT_HALBERD ,@#, 근위병 (철 소모 위주)
+enumItem ,@#, 궁 병기 ,@#,  12  ,@#, EOTTT_BOW ,@#, 
+enumItem ,@#, 노 병기 ,@#,  13  ,@#, EOTTT_CROSSBOW ,@#, 
+enumItem ,@#, 강노 병기 ,@#,  14  ,@#, EOTTT_BOWGUN ,@#, 
+enumItem ,@#, 노포 병기 ,@#,  15  ,@#, EOTTT_BALLISTA ,@#, 
+enumItem ,@#, 전차 병기 ,@#,  16  ,@#, EOTTT_CHARIOT ,@#, 군마랑 조합해서만 가능 (개수 늘어나야)
+enumItem ,@#, 마차 ,@#,  17  ,@#, EOTTT_WAGON ,@#, 군마랑 조합해서만 가능 (개수 늘어나야)
+enumItem ,@#, 군마 ,@#,  18  ,@#, EOTTT_HORSE ,@#, Eunit_ClassItemA 와 조합 가능
+enumItem ,@#, 수레 ,@#,  19  ,@#, EOTTT_WHEELBARROW ,@#, 공작, 수송, 보급 용도 
+enumItem ,@#, 목우 ,@#,  20  ,@#, EOTTT_CART ,@#, 
+enumItem ,@#, 운제 ,@#,  21  ,@#, EOTTT_SIEGE_LADDER ,@#, B만 활용 가능
+enumItem ,@#, 충차 ,@#,  22  ,@#, EOTTT_SIEGE_RAM ,@#, 
+enumItem ,@#, 정란 ,@#,  23  ,@#, EOTTT_SIEGE_TOWER ,@#, 
+enumItem ,@#, 투석기 ,@#,  24  ,@#, EOTTT_SIEGE_TREBUCHET ,@#, 
+
+

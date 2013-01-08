@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<testclient_administrator>
+	<jIConsoleVar>
+		<test_category>
+			<i_test_var FLAG="" HELP="">0</i_test_var>
+			<test_var2 FLAG="" HELP="">23</test_var2>
+		</test_category>
+		<exe>
+			<b_DELETE_USERSETTING FLAG="" HELP="">0</b_DELETE_USERSETTING>
+			<b_USE_JXML FLAG="" HELP="">0</b_USE_JXML>
+			<b_GENERATE_JXML FLAG="" HELP="">0</b_GENERATE_JXML>
+			<b_USE_FIRST_JXML FLAG="" HELP="">0</b_USE_FIRST_JXML>
+			<i_SaveFileBackupCount FLAG="" HELP="">5</i_SaveFileBackupCount>
+			<b_SkipAutoSave FLAG="" HELP="">0</b_SkipAutoSave>
+			<MODULE_OWNER FLAG="" HELP="">icandoit</MODULE_OWNER>
+			<UserInfo FLAG="" HELP="">xml\user\UserInfo.xml</UserInfo>
+			<i_MAKE_XMLID FLAG="eFROM_DEFINED_INI" HELP="from ini file">0</i_MAKE_XMLID>
+			<NetConfigXml FLAG="eFROM_DEFINED_INI" HELP="from ini file">xml\net\AqTestServer_NetConfig.xml</NetConfigXml>
+			<app_nic_name FLAG="eFROM_DEFINED_INI" HELP="from ini file">TestClient</app_nic_name>
+			<default_dll FLAG="eFROM_DEFINED_INI" HELP="from ini file">TestClient.dll</default_dll>
+			<locale FLAG="eFROM_DEFINED_INI" HELP="from ini file">kor</locale>
+			<log_file_path FLAG="eFROM_DEFINED_INI" HELP="from ini file">c:</log_file_path>
+			<i_multi_run FLAG="eFROM_DEFINED_INI" HELP="from ini file">0</i_multi_run>
+			<i_run_unit_test FLAG="eFROM_DEFINED_INI" HELP="from ini file">0</i_run_unit_test>
+			<start_dir FLAG="eFROM_DEFINED_INI" HELP="from ini file">..</start_dir>
+			<i_LOG_TO_FILE FLAG="" HELP="Log(), LogPlus() -&gt; print only file ">0</i_LOG_TO_FILE>
+			<NetConfigNode FLAG="" HELP="node name of NetConfigXml: default=app_nic_name">TestClient</NetConfigNode>
+			<i_UseSquirrelBind FLAG="" HELP="use sq scrpit binding module">1</i_UseSquirrelBind>
+			<i_ShowDlg FLAG="" HELP="Show Input Dialog when server starting">1</i_ShowDlg>
+			<default_app_xml FLAG="eFROM_DEFINED_INI" HELP="from ini file"/>
+		</exe>
+		<jILog>
+			<ERROR_CHECK_TYPE FLAG="" HELP="에러 행동정의 : NULL, EXIT, MSGBOX, MAIL">MSGBOX</ERROR_CHECK_TYPE>
+			<LogFile FLAG="" HELP="확장자는 붙이지 말것">c:\temp\TestClient</LogFile>
+			<b_RunConsole FLAG="" HELP="">0</b_RunConsole>
+			<LoggerType FLAG="" HELP="NULL , CONSOLE(콘솔창) , PIPE 이렇게 3가지가 올수있다.">CONSOLE</LoggerType>
+			<LogLevel_FILE FLAG="" HELP="">xml\user\LogLevel.xml</LogLevel_FILE>
+		</jILog>
+		<jINet_OGS>
+			<f_OnPacketSize_UsageInfo_TIME FLAG="" HELP="현제 패킷사용량 정보 통보 시간간격(SEC)">10.000</f_OnPacketSize_UsageInfo_TIME>
+			<i_Auto_Begin FLAG="" HELP="Call Begin() when jINet_OGS.DLL loading time">1</i_Auto_Begin>
+			<i_CoInitialize FLAG="" HELP="Is call CoInitialize when jINet_OGS::Begin()">1</i_CoInitialize>
+			<i_IsRUN_MSG_FRAME_MOVE FLAG="" HELP="is create thread for nMech::nEVENT::jIMsgManager::FrameMove()">0</i_IsRUN_MSG_FRAME_MOVE>
+		</jINet_OGS>
+		<jIConsoleVar>
+			<i_SaveToFile FLAG="" HELP="콘솔정보를 파일로 저장">1</i_SaveToFile>
+		</jIConsoleVar>
+		<jISquirrel>
+			<sq_main_file FLAG="" HELP="auto load sq scirpt file(entry script)">s\&#231;&#175;mi.u</sq_main_file>
+			<i_save_registed_class_help FLAG="" HELP="make file for sq binding class info">0</i_save_registed_class_help>
+		</jISquirrel>
+		<jINet>
+			<i_RUDP_RetryTime FLAG="" HELP="wait time for RUDP send packet check">10</i_RUDP_RetryTime>
+			<i_RUDP_RetryCount FLAG="" HELP="retry count for reliable packet ">5</i_RUDP_RetryCount>
+			<i_RUDP_ResetTime FLAG="" HELP="init time for packet serial number.">3000</i_RUDP_ResetTime>
+			<i_UseMsgThread FLAG="" HELP="">1</i_UseMsgThread>
+			<i_Custom_MsgLoop FLAG="" HELP=" is call nMech::nEVENT::jIMsgManager::FrameMove()">0</i_Custom_MsgLoop>
+			<i_UseEncryt FLAG="" HELP="is encryt packet ?">0</i_UseEncryt>
+			<i_TcpKeepTime FLAG="" HELP="tcp connection check time [msec]">30000</i_TcpKeepTime>
+			<i_UseMsgManagerEvent FLAG="" HELP="use network thread memssage event( for CPU Time resource)">1</i_UseMsgManagerEvent>
+		</jINet>
+		<ITimer>
+			<i_e_time_smoothing FLAG="" HELP="[0..15] 0=no smoothing, x=x additional steps">0</i_e_time_smoothing>
+			<f_fixed_time_step FLAG="" HELP="Game updated with this fixed time step">0.000</f_fixed_time_step>
+		</ITimer>
+		<con>
+			<i_ShowConsoel FLAG="" HELP="show console window ?">1</i_ShowConsoel>
+		</con>
+		<ServerCommon>
+			<SERVER_RESOUCE FLAG="" HELP="SEVER RESOURCE FOLDER">R:\</SERVER_RESOUCE>
+			<FILE_DB_PATH FLAG="" HELP="file db path. must add  / backend string">R:\file_db\</FILE_DB_PATH>
+			<i_Packet_mean_reset_count FLAG="" HELP="packet size mean reset time">360</i_Packet_mean_reset_count>
+		</ServerCommon>
+		<TEST_INI>
+			<i_login_only FLAG="" HELP="login_only">0</i_login_only>
+			<i_lobby_dbdata_skip FLAG="" HELP="lobby_dbdata loutine skip">0</i_lobby_dbdata_skip>
+			<i_DummyCount FLAG="" HELP="기본 더미클라이언트 세션 갯수">50</i_DummyCount>
+			<DefaultLoginIP FLAG="" HELP="기본 세션(로긴)접속 IP">127.0.0.1</DefaultLoginIP>
+			<i_DefaultLoginPort FLAG="" HELP="기본 로긴접속 포트">73100</i_DefaultLoginPort>
+		</TEST_INI>
+		<test>
+			<i_TEST_ID_START_NUM FLAG="" HELP="Test Account start number">500</i_TEST_ID_START_NUM>
+		</test>
+	</jIConsoleVar>
+</testclient_administrator>

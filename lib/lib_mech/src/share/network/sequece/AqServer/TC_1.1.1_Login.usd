@@ -1,0 +1,463 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>TC_1.1.1_Login</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="36">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>89</objId>
+            <ptul X="338" Y="28" />
+            <ptdr X="406" Y="68" />
+            <links num="0" />
+            <objectName>TestClient</objectName>
+            <className>TC</className>
+            <actBoxes num="5">
+                <actBox id="103" />
+                <actBox id="100" />
+                <actBox id="109" />
+                <actBox id="110" />
+                <actBox id="107" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>90</objId>
+            <ptul X="588" Y="26" />
+            <ptdr X="659" Y="66" />
+            <links num="0" />
+            <objectName>TestServer</objectName>
+            <className>TS</className>
+            <actBoxes num="3">
+                <actBox id="94" />
+                <actBox id="98" />
+                <actBox id="113" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>91</objId>
+            <ptul X="852" Y="24" />
+            <ptdr X="921" Y="64" />
+            <links num="0" />
+            <objectName>AqMonitor</objectName>
+            <className>TM</className>
+            <actBoxes num="3">
+                <actBox id="93" />
+                <actBox id="97" />
+                <actBox id="115" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>92</objId>
+            <ptul X="49" Y="27" />
+            <ptdr X="125" Y="67" />
+            <links num="0" />
+            <objectName>LoginServer</objectName>
+            <className>L</className>
+            <actBoxes num="4">
+                <actBox id="112" />
+                <actBox id="104" />
+                <actBox id="111" />
+                <actBox id="106" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>93</objId>
+            <ptul X="879" Y="254" />
+            <ptdr X="894" Y="284" />
+            <links num="1">
+                <link id="95" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>94</objId>
+            <ptul X="616" Y="254" />
+            <ptdr X="631" Y="284" />
+            <links num="2">
+                <link id="95" />
+                <link id="96" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>95</objId>
+            <points num="2">
+                <pt x="879" y="259" />
+                <pt x="631" y="259" />
+            </points>
+            <objStart id="93" />
+            <objEnd id="94" />
+            <message messType="MGEN">TM_TEST_LOGIN_START</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>96</objId>
+            <points num="2">
+                <pt x="616" y="278" />
+                <pt x="380" y="278" />
+            </points>
+            <objStart id="94" />
+            <objEnd id="103" />
+            <message messType="MGEN">TM_TEST_LOGIN_START</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>97</objId>
+            <ptul X="879" Y="572" />
+            <ptdr X="894" Y="602" />
+            <links num="1">
+                <link id="99" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>98</objId>
+            <ptul X="616" Y="572" />
+            <ptdr X="631" Y="602" />
+            <links num="2">
+                <link id="99" />
+                <link id="101" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>99</objId>
+            <points num="2">
+                <pt x="879" y="577" />
+                <pt x="631" y="577" />
+            </points>
+            <objStart id="97" />
+            <objEnd id="98" />
+            <message messType="MGEN">TM_TEST_LOG_OUT</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>100</objId>
+            <ptul X="365" Y="582" />
+            <ptdr X="380" Y="612" />
+            <links num="1">
+                <link id="101" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>101</objId>
+            <points num="2">
+                <pt x="616" y="587" />
+                <pt x="380" y="587" />
+            </points>
+            <objStart id="98" />
+            <objEnd id="100" />
+            <message messType="MGEN">TM_TEST_LOG_OUT</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>102</objId>
+            <points num="2">
+                <pt x="365" y="291" />
+                <pt x="94" y="291" />
+            </points>
+            <objStart id="103" />
+            <objEnd id="111" />
+            <message messType="MRET">Tcp connect (73100)</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>103</objId>
+            <ptul X="365" Y="273" />
+            <ptdr X="380" Y="300" />
+            <links num="2">
+                <link id="96" />
+                <link id="102" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>104</objId>
+            <ptul X="79" Y="383" />
+            <ptdr X="94" Y="407" />
+            <links num="1">
+                <link id="105" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>105</objId>
+            <points num="2">
+                <pt x="365" y="387" />
+                <pt x="94" y="387" />
+            </points>
+            <objStart id="110" />
+            <objEnd id="104" />
+            <message messType="MGEN">X2L_LOGIN</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>106</objId>
+            <ptul X="79" Y="408" />
+            <ptdr X="94" Y="446" />
+            <links num="1">
+                <link id="108" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>107</objId>
+            <ptul X="365" Y="430" />
+            <ptdr X="380" Y="460" />
+            <links num="2">
+                <link id="108" />
+                <link id="114" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>108</objId>
+            <points num="2">
+                <pt x="94" y="435" />
+                <pt x="365" y="435" />
+            </points>
+            <objStart id="106" />
+            <objEnd id="107" />
+            <message messType="MGEN">L2X_USER_LOGIN_OK</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>109</objId>
+            <ptul X="365" Y="314" />
+            <ptdr X="380" Y="358" />
+            <links num="1">
+                <link id="119" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>110</objId>
+            <ptul X="365" Y="354" />
+            <ptdr X="380" Y="405" />
+            <links num="1">
+                <link id="105" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>111</objId>
+            <ptul X="79" Y="286" />
+            <ptdr X="94" Y="316" />
+            <links num="1">
+                <link id="102" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>112</objId>
+            <ptul X="79" Y="312" />
+            <ptdr X="94" Y="355" />
+            <links num="1">
+                <link id="119" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>113</objId>
+            <ptul X="616" Y="442" />
+            <ptdr X="631" Y="472" />
+            <links num="2">
+                <link id="114" />
+                <link id="116" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>114</objId>
+            <points num="2">
+                <pt x="380" y="447" />
+                <pt x="616" y="447" />
+            </points>
+            <objStart id="107" />
+            <objEnd id="113" />
+            <message messType="MGEN">TC_LOGIN_START_OK</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>115</objId>
+            <ptul X="879" Y="457" />
+            <ptdr X="894" Y="487" />
+            <links num="1">
+                <link id="116" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>116</objId>
+            <points num="2">
+                <pt x="631" y="462" />
+                <pt x="879" y="462" />
+            </points>
+            <objStart id="113" />
+            <objEnd id="115" />
+            <message messType="MGEN">TC_LOGIN_START_OK</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[TC_LOGIN_START_OK]&#x0A;&#x0A;{PARAM}&#x0A;process_msec-uint32&#x0A;user_id-aname32_t&#x0A;lobby_ip-CHAR[32]</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>117</objId>
+            <ptul X="654" Y="329" />
+            <ptdr X="806" Y="437" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[TM_TEST_LOGIN_START]&#x0A;&#x0A;{PARAM}&#x0A;per_user-int16&#x0A;delay-uint32&#x0A;testClientName-tname32_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>122</objId>
+            <ptul X="635" Y="116" />
+            <ptdr X="802" Y="224" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>119</objId>
+            <points num="2">
+                <pt x="94" y="334" />
+                <pt x="365" y="334" />
+            </points>
+            <objStart id="112" />
+            <objEnd id="109" />
+            <message messType="MGEN">L_HELLO</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>start login test</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>120</objId>
+            <ptul X="909" Y="262" />
+            <ptdr X="1017" Y="281" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>명령 : login per_ser delay_msec</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>121</objId>
+            <ptul X="857" Y="209" />
+            <ptdr X="1100" Y="228" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>명령 : @test.login_cancel</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>123</objId>
+            <ptul X="834" Y="526" />
+            <ptdr X="1027" Y="545" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[TM_TEST_LOG_OUT]&#x0A;&#x0A;{PARAM}&#x0A;per_user-int16&#x0A;delay-uint32&#x0A;testClientName-tname32_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>124</objId>
+            <ptul X="669" Y="591" />
+            <ptdr X="831" Y="699" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>dummy client test cancel (만약 로긴중인 상황일때는 로긴취소기능)</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>118</objId>
+            <ptul X="476" Y="709" />
+            <ptdr X="979" Y="728" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

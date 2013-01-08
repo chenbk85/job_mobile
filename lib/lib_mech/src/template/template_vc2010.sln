@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "template_vc2010_exe", "template_vc2010_exe\template_vc2010_exe.vcxproj", "{D8E47202-DED8-4FC4-899F-BFBEBD478A41}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "template_vc2010_dll", "template_vc2010_dll\template_vc2010_dll.vcxproj", "{D0629D1C-BA19-4FB3-BC82-D457DAC64E51}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "template_vc2010_lib", "template_vc2010_lib\template_vc2010_lib.vcxproj", "{0648B045-2C0C-4ECE-ABDF-C4BF22863AE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		UDebug|x64 = UDebug|x64
+		URelease|x64 = URelease|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8E47202-DED8-4FC4-899F-BFBEBD478A41}.UDebug|x64.ActiveCfg = UDebug|x64
+		{D8E47202-DED8-4FC4-899F-BFBEBD478A41}.UDebug|x64.Build.0 = UDebug|x64
+		{D8E47202-DED8-4FC4-899F-BFBEBD478A41}.URelease|x64.ActiveCfg = URelease|x64
+		{D8E47202-DED8-4FC4-899F-BFBEBD478A41}.URelease|x64.Build.0 = URelease|x64
+		{D0629D1C-BA19-4FB3-BC82-D457DAC64E51}.UDebug|x64.ActiveCfg = UDebug|x64
+		{D0629D1C-BA19-4FB3-BC82-D457DAC64E51}.UDebug|x64.Build.0 = UDebug|x64
+		{D0629D1C-BA19-4FB3-BC82-D457DAC64E51}.URelease|x64.ActiveCfg = URelease|x64
+		{D0629D1C-BA19-4FB3-BC82-D457DAC64E51}.URelease|x64.Build.0 = URelease|x64
+		{0648B045-2C0C-4ECE-ABDF-C4BF22863AE9}.UDebug|x64.ActiveCfg = UDebug|x64
+		{0648B045-2C0C-4ECE-ABDF-C4BF22863AE9}.UDebug|x64.Build.0 = UDebug|x64
+		{0648B045-2C0C-4ECE-ABDF-C4BF22863AE9}.URelease|x64.ActiveCfg = URelease|x64
+		{0648B045-2C0C-4ECE-ABDF-C4BF22863AE9}.URelease|x64.Build.0 = URelease|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

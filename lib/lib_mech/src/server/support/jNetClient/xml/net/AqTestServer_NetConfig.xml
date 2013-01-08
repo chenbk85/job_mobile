@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='euc-kr'?>
+<NetConfig DOC_TYPE='NET'>
+  <!-- ======================================================================== -->
+  <!-- TestServer.dll -->
+  <!-- ======================================================================== -->
+  <TestServer TYPE='PlugInList'>
+    <PlugIn_ToFrontEnd
+      TYPE='TcpServer'      NAME='NULL'      b_ENABLE='1'
+      i_ServerTcpPort='33050'      ServerIP='' i_ThreadCount='0' 
+      i_MaxTcpUser='100'      i_QueueSize='1000'      x_HEADER='TestServer'
+      />
+  </TestServer>
+
+  <!-- ======================================================================== -->
+  <!-- TestClient.dll -->
+  <!-- ======================================================================== -->
+	<TestClient TYPE='PlugInList'>
+    <PlugIn_ToBackEnd TYPE='IOCPSession'	NAME='NULL' b_ENABLE='1'  i_ThreadCount='0'
+										i_QueueSize='2000' >
+      <TCP_TestServer b_ENABLE='1' TYPE='TCP' x_HEADER='TestServer' HELP='null'>127.0.0.1:33050</TCP_TestServer>
+      <TCP_LoginServer  b_ENABLE='0' TYPE='TCP' x_HEADER='LoginServer' >NULL:33100</TCP_LoginServer>
+      <TCP_TownServer b_ENABLE='0' TYPE='TCP' x_HEADER='TownServer' >NULL:33101</TCP_TownServer>
+      <TCP_DungeonServer b_ENABLE='0' TYPE='TCP' x_HEADER='DungeonServer' >NULL:33102</TCP_DungeonServer>
+      <UDP_DungeonServer b_ENABLE='0' TYPE='UDP' x_HEADER='DungeonServer' i_UdpLocalPort='0'>NULL:33103</UDP_DungeonServer>
+    </PlugIn_ToBackEnd>
+  </TestClient>
+  
+  <!-- ======================================================================== -->
+  <!-- AqMonitor.dll -->
+  <!-- ======================================================================== -->
+  <AqMonitor TYPE='PlugInList'>
+    <PlugIn_ToBackEnd
+      TYPE='P2PSession'			NAME='Monitor'      b_ENABLE='1'
+      LocalTcpServerIP=''      i_LocalTcpServerPort='33051'      b_TcpServerEnable='0'
+      x_HEADER='TestServer'      i_QueueSize='100'>
+      <ToTestServer b_ENABLE='1' TYPE='TCP' x_HEADER='TestServer' HELP='버'>127.0.0.1:33050</ToTestServer>
+      <ToCentral b_ENABLE='1' TYPE='TCP' x_HEADER='CentralServer' HELP='버'>127.0.0.1:33000</ToCentral>
+    </PlugIn_ToBackEnd>
+  </AqMonitor>
+
+</NetConfig>

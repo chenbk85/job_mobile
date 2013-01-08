@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<PROTOCAL HEADER="OrbHost" VERSION="1000" i_DebugPrint="0" b_jxDEFINE="true" TAG="H">
+	<!-- CODE에서 개행문자 지원안됨. anpersent # x 0 A ; 를 사용할것-->
+	<CODE TYPE="ENUM_FILE">network/my_PT_Orb.h</CODE>
+	<STRUCT_LIST/>
+	<PROTOCAL_LIST>
+		<H_ECHO USD="\orb_1_1_4_msg.usd">
+			<type TYPE="uint8"/>
+			<msg TYPE="tname256_t"/>
+		</H_ECHO>
+		<H_SEND_MSG USD="\orb_1_1_4_msg.usd">
+			<type TYPE="uint8"/>
+			<msg TYPE="tname256_t"/>
+		</H_SEND_MSG>
+		<H_SEND_LOG USD="\orb_1_1_4_msg.usd">
+			<type TYPE="uint8"/>
+			<msg TYPE="tname256_t"/>
+		</H_SEND_LOG>
+		<H_HELLO USD="orb_1_1_5_connect.usd">
+			<orbServiceName TYPE="tname32_t"/>
+			<myName TYPE="tname32_t"/>
+			<isServerMode TYPE="bool"/>
+		</H_HELLO>
+		<H_HELLO_OK USD="orb_1_1_5_connect.usd">
+			<orbServiceName TYPE="tname32_t"/>
+			<myName TYPE="tname32_t"/>
+			<isServerMode TYPE="bool"/>
+		</H_HELLO_OK>
+		<ORB_IS_ALIVE/>
+		<ORB_ALIVE/>
+		<H_DISCONNECT/>
+		<H_NOTIFY_HWND USD="\orb_1_1_5_connect.usd">
+			<hWnd TYPE="uint32"/>
+		</H_NOTIFY_HWND>
+		<H_NOTIFY_HWND_OK USD="\orb_1_1_5_connect.usd">
+			<hWnd TYPE="uint32"/>
+		</H_NOTIFY_HWND_OK>
+		<ORB_SEND_XML USD="\orb_2_5_5_xml.usd">
+			<xml TYPE="jIE*"/>
+		</ORB_SEND_XML>
+		<ORB_SEND_DATA USD="\orb_2_5_5_xml.usd">
+			<name TYPE="tname32_t"/>
+			<data TYPE="BYTE" i_Length="-1"/>
+		</ORB_SEND_DATA>
+		<H_SAVE_DOC USD="orb_3_5_5_xml_operation.usd">
+			<doc TYPE="tname256_t"/>
+		</H_SAVE_DOC>
+		<H_GET_XML USD="orb_3_5_5_xml_operation.usd" HELP="해당 XML을 요청하는 메세지">
+			<szXml TYPE="tname256_t"/>
+		</H_GET_XML>
+		<H_COPY_XML_ELEMENT USD="orb_3_5_5_xml_operation.usd">
+			<isInsertMode TYPE="bool"/>
+			<szDoc TYPE="tname256_t"/>
+			<szXPath TYPE="tname1024_t"/>
+			<idx TYPE="int8"/>
+			<szOrbFunc TYPE="aname32_t"/>
+			<xml TYPE="jIE*"/>
+		</H_COPY_XML_ELEMENT>
+		<H_DEL_XML_ELEMENT USD="orb_3_5_5_xml_operation.usd">
+			<szDoc TYPE="tname256_t"/>
+			<szXPath TYPE="tname1024_t"/>
+			<szOrbFunc TYPE="aname32_t"/>
+		</H_DEL_XML_ELEMENT>
+		<H_CHANGE_XML_NODE USD="orb_3_5_5_xml_operation.usd" HELP="pE의 tagname 이나 컨텐츠또는 &#xA;pA의 컨텐츠 수정사항만 적용함 &#xA;(자식의 내용은 적용안함)">
+			<szDoc TYPE="tname256_t"/>
+			<szXPath TYPE="tname1024_t"/>
+			<idx TYPE="int8"/>
+			<isAttr TYPE="bool"/>
+			<szTag TYPE="tname32_t"/>
+			<iType TYPE="int32"/>
+			<szData TYPE="tname256_t"/>
+		</H_CHANGE_XML_NODE>
+		<H_GET_UPDATE_XML_NODE USD="orb_3_5_5_xml_operation.usd" HELP="원격지의 해당 XML노드의 값으로 새로 업데이트를 요청. 자식포함">
+			<szDoc TYPE="tname256_t"/>
+			<szXPath TYPE="tname1024_t"/>
+			<idx TYPE="int8"/>
+			<isAttr TYPE="bool"/>
+			<szTag TYPE="tname32_t"/>
+		</H_GET_UPDATE_XML_NODE>
+		<H_PUT_XML USD="\orb_3_5_5_xml_operation.usd">
+			<szTempFile TYPE="tname256_t"/>
+			<szXml TYPE="tname256_t"/>
+		</H_PUT_XML>
+	</PROTOCAL_LIST>
+	<CODE TYPE="ENUM_FILE"/>
+</PROTOCAL>

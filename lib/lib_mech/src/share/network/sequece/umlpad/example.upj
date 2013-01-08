@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="yes" ?>
+<project>
+    <title>example</title>
+    <diagrams>
+        <diagram>example.ucd</diagram>
+        <diagram>example.usd</diagram>
+    </diagrams>
+</project>

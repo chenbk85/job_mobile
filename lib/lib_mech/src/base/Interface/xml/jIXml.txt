@@ -1,0 +1,19 @@
+
+http://gpgstudy.com/forum/viewtopic.php?p=95268#95268
+vs 는 xml 파일의 헤더에 지정된 코드페이지로 저장합니다. 
+?xml version="1.0" encoding="UNICODE" ? 
+가 위에 정의되어 있으면 유니코드(ucs2)로 저장됩니다
+
+
+
+Atrribute이름이 "__"로 시작하는것은 파일로 세이브되지않는다.
+	-> 런타임에 임시 속성을 만들어 사용하고자 할때 이용.
+	
+	
+	
+문서의 루트 속성에 "SAVE_TYPE"이 있고 값이 
+	
+	"AUTOSAVE"이면 이문서는 프로그램 종료시 자동 저장됨.
+	
+	"DONTSAVE"이면 이문서는 jIXml::Save()관련 함수에 의해 저장되지 않음.
+

@@ -1,0 +1,518 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>X_01_05_error_msg</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="41">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>777</objId>
+            <ptul X="598" Y="156" />
+            <ptdr X="677" Y="196" />
+            <links num="0" />
+            <objectName>WorldServer</objectName>
+            <className>W</className>
+            <actBoxes num="3">
+                <actBox id="797" />
+                <actBox id="801" />
+                <actBox id="804" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>778</objId>
+            <ptul X="357" Y="155" />
+            <ptdr X="453" Y="195" />
+            <links num="0" />
+            <objectName>DungeonServer</objectName>
+            <className>D</className>
+            <actBoxes num="3">
+                <actBox id="791" />
+                <actBox id="798" />
+                <actBox id="807" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>779</objId>
+            <ptul X="244" Y="45" />
+            <ptdr X="320" Y="85" />
+            <links num="0" />
+            <objectName>LoginServer</objectName>
+            <className>L</className>
+            <actBoxes num="1">
+                <actBox id="785" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[DQ_ERROR]&#x0A;type==0 : 즉시 클라이언트 접속해제&#x0A;type==1: e를 클라이언트에 전달.&#x0A;type==2 : msg도 같이 전달&#x0A;{PARAM}&#x0A;e-jError&#x0A;type-uint8&#x0A;msg-astring&#x0A;uid-userid_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>817</objId>
+            <ptul X="908" Y="536" />
+            <ptdr X="1149" Y="692" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>781</objId>
+            <ptul X="1000" Y="148" />
+            <ptdr X="1086" Y="188" />
+            <links num="0" />
+            <objectName>CentralServer</objectName>
+            <className>C</className>
+            <actBoxes num="1">
+                <actBox id="803" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>782</objId>
+            <ptul X="903" Y="149" />
+            <ptdr X="975" Y="189" />
+            <links num="0" />
+            <objectName>UserServer</objectName>
+            <className>U</className>
+            <actBoxes num="1">
+                <actBox id="800" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>783</objId>
+            <ptul X="298" Y="96" />
+            <ptdr X="374" Y="136" />
+            <links num="0" />
+            <objectName>TownServer</objectName>
+            <className>T</className>
+            <actBoxes num="1">
+                <actBox id="788" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>784</objId>
+            <ptul X="37" Y="49" />
+            <ptdr X="105" Y="89" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="3">
+                <actBox id="786" />
+                <actBox id="789" />
+                <actBox id="792" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>785</objId>
+            <ptul X="274" Y="120" />
+            <ptdr X="289" Y="150" />
+            <links num="1">
+                <link id="787" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>786</objId>
+            <ptul X="63" Y="120" />
+            <ptdr X="78" Y="150" />
+            <links num="1">
+                <link id="787" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>787</objId>
+            <points num="2">
+                <pt x="274" y="125" />
+                <pt x="78" y="125" />
+            </points>
+            <objStart id="785" />
+            <objEnd id="786" />
+            <message messType="MGEN">L_ERROR</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>788</objId>
+            <ptul X="328" Y="181" />
+            <ptdr X="343" Y="211" />
+            <links num="1">
+                <link id="790" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>789</objId>
+            <ptul X="63" Y="181" />
+            <ptdr X="78" Y="211" />
+            <links num="1">
+                <link id="790" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>790</objId>
+            <points num="2">
+                <pt x="328" y="186" />
+                <pt x="78" y="186" />
+            </points>
+            <objStart id="788" />
+            <objEnd id="789" />
+            <message messType="MGEN">T_ERROR</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>791</objId>
+            <ptul X="397" Y="237" />
+            <ptdr X="412" Y="267" />
+            <links num="1">
+                <link id="793" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>792</objId>
+            <ptul X="63" Y="237" />
+            <ptdr X="78" Y="267" />
+            <links num="1">
+                <link id="793" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>793</objId>
+            <points num="2">
+                <pt x="397" y="242" />
+                <pt x="78" y="242" />
+            </points>
+            <objStart id="791" />
+            <objEnd id="792" />
+            <message messType="MGEN">D_ERROR</message>
+            <guardCond>e-jError,msg-astring</guardCond>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[L_ERROR]&#x0A;type==0 : 즉시 클라이언트 접속해제&#x0A;type==1: e를 클라이언트에 전달.&#x0A;type==2 : msg도 같이 전달&#x0A;{PARAM}&#x0A;e-jError&#x0A;type-uint8&#x0A;msg-astring&#x0A;uid-userid_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>794</objId>
+            <ptul X="40" Y="399" />
+            <ptdr X="281" Y="555" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[T_ERROR]&#x0A;type==0 : 즉시 클라이언트 접속해제&#x0A;type==1: e를 클라이언트에 전달.&#x0A;type==2 : msg도 같이 전달&#x0A;{PARAM}&#x0A;e-jError&#x0A;type-uint8&#x0A;msg-astring&#x0A;uid-userid_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>780</objId>
+            <ptul X="39" Y="564" />
+            <ptdr X="280" Y="720" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>796</objId>
+            <points num="2">
+                <pt x="1035" y="357" />
+                <pt x="645" y="357" />
+            </points>
+            <objStart id="803" />
+            <objEnd id="804" />
+            <message messType="MGEN">C_ERROR</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>797</objId>
+            <ptul X="630" Y="293" />
+            <ptdr X="645" Y="323" />
+            <links num="1">
+                <link id="799" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>798</objId>
+            <ptul X="397" Y="293" />
+            <ptdr X="412" Y="323" />
+            <links num="1">
+                <link id="799" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>799</objId>
+            <points num="2">
+                <pt x="630" y="298" />
+                <pt x="412" y="298" />
+            </points>
+            <objStart id="797" />
+            <objEnd id="798" />
+            <message messType="MGEN">W_ERROR</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>800</objId>
+            <ptul X="931" Y="258" />
+            <ptdr X="946" Y="288" />
+            <links num="1">
+                <link id="802" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>801</objId>
+            <ptul X="630" Y="258" />
+            <ptdr X="645" Y="288" />
+            <links num="1">
+                <link id="802" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>802</objId>
+            <points num="2">
+                <pt x="931" y="267" />
+                <pt x="645" y="267" />
+            </points>
+            <objStart id="800" />
+            <objEnd id="801" />
+            <message messType="MGEN">U_ERROR</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>803</objId>
+            <ptul X="1035" Y="352" />
+            <ptdr X="1050" Y="382" />
+            <links num="1">
+                <link id="796" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>804</objId>
+            <ptul X="630" Y="352" />
+            <ptdr X="645" Y="382" />
+            <links num="1">
+                <link id="796" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>805</objId>
+            <ptul X="663" Y="397" />
+            <ptdr X="763" Y="437" />
+            <links num="0" />
+            <objectName>DBCacheServer</objectName>
+            <className>DC</className>
+            <actBoxes num="2">
+                <actBox id="806" />
+                <actBox id="816" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>806</objId>
+            <ptul X="705" Y="455" />
+            <ptdr X="720" Y="485" />
+            <links num="1">
+                <link id="808" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>807</objId>
+            <ptul X="397" Y="455" />
+            <ptdr X="412" Y="485" />
+            <links num="1">
+                <link id="808" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>808</objId>
+            <points num="2">
+                <pt x="705" y="460" />
+                <pt x="412" y="460" />
+            </points>
+            <objStart id="806" />
+            <objEnd id="807" />
+            <message messType="MGEN">DC_ERROR</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[C_ERROR]&#x0A;type==0 : 즉시 클라이언트 접속해제&#x0A;type==1: e를 클라이언트에 전달.&#x0A;type==2 : msg도 같이 전달&#x0A;{PARAM}&#x0A;e-jError&#x0A;type-uint8&#x0A;msg-astring&#x0A;uid-userid_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>809</objId>
+            <ptul X="637" Y="536" />
+            <ptdr X="878" Y="692" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[W_ERROR]&#x0A;type==0 : 즉시 클라이언트 접속해제&#x0A;type==1: e를 클라이언트에 전달.&#x0A;type==2 : msg도 같이 전달&#x0A;{PARAM}&#x0A;e-jError&#x0A;type-uint8&#x0A;msg-astring&#x0A;uid-userid_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>810</objId>
+            <ptul X="364" Y="685" />
+            <ptdr X="605" Y="841" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[DC_ERROR]&#x0A;type==0 : 즉시 클라이언트 접속해제&#x0A;type==1: e를 클라이언트에 전달.&#x0A;type==2 : msg도 같이 전달&#x0A;{PARAM}&#x0A;e-jError&#x0A;type-uint8&#x0A;msg-astring&#x0A;uid-userid_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>811</objId>
+            <ptul X="366" Y="521" />
+            <ptdr X="607" Y="677" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[U_ERROR]&#x0A;type==0 : 즉시 클라이언트 접속해제&#x0A;type==1: e를 클라이언트에 전달.&#x0A;type==2 : msg도 같이 전달&#x0A;{PARAM}&#x0A;e-jError&#x0A;type-uint8&#x0A;msg-astring&#x0A;uid-userid_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>812</objId>
+            <ptul X="637" Y="699" />
+            <ptdr X="878" Y="855" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>813</objId>
+            <points num="2">
+                <pt x="1111" y="495" />
+                <pt x="720" y="495" />
+            </points>
+            <objStart id="815" />
+            <objEnd id="816" />
+            <message messType="MGEN">DQ_ERROR</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>814</objId>
+            <ptul X="1070" Y="395" />
+            <ptdr X="1168" Y="435" />
+            <links num="0" />
+            <objectName>DBQueryServer</objectName>
+            <className>DQ</className>
+            <actBoxes num="1">
+                <actBox id="815" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>815</objId>
+            <ptul X="1111" Y="490" />
+            <ptdr X="1126" Y="520" />
+            <links num="1">
+                <link id="813" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>816</objId>
+            <ptul X="705" Y="490" />
+            <ptdr X="720" Y="520" />
+            <links num="1">
+                <link id="813" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[D_ERROR]&#x0A;type==0 : 즉시 클라이언트 접속해제&#x0A;type==1: e를 클라이언트에 전달.&#x0A;type==2 : msg도 같이 전달&#x0A;{PARAM}&#x0A;e-jError&#x0A;type-uint8&#x0A;msg-astring&#x0A;uid-userid_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>795</objId>
+            <ptul X="39" Y="735" />
+            <ptdr X="280" Y="891" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

@@ -1,0 +1,69 @@
+nEXCEL ,@#, D:\svn\lib\lib_mech\src\test\test_Excel\excel ,@#, excel_hero
+
+enum ,@#, EDeckYear ,@#, 설명없음
+
+enumItem ,@#, 189년 카드 덱 ,@#,  1  ,@#, DY_189 ,@#, 189년 카드 덱
+enumItem ,@#, 192년 카드 덱 ,@#,  2  ,@#, DY_192 ,@#, 192년 카드 덱
+
+
+enum ,@#, EHeroCategory ,@#, 설명없음
+
+enumItem ,@#, 역사 장수 ,@#,  1  ,@#, HC_HISTORICAL ,@#, 역사 장수
+enumItem ,@#, 가상 장수 ,@#,  2  ,@#, HC_VIRTAUL ,@#, 가상 장수
+
+
+enum ,@#, EHeroEngagementtype ,@#, 설명없음
+
+enumItem ,@#, 일반 ,@#,  1  ,@#, HE_COMMON ,@#, 일반
+enumItem ,@#, 희귀 ,@#,  2  ,@#, HE_RARE ,@#, 희귀
+
+
+enum ,@#, EHeroFacetype ,@#, 설명없음
+
+enumItem ,@#, 얼굴이미지사용 ,@#,  1  ,@#, HF_ORIGINAL ,@#, 고유 이미지, 유명 장수
+enumItem ,@#, 범용이미지사용 ,@#,  2  ,@#, HF_COMMON ,@#, 중복 사용가능한 이미지, 일반 장수
+enumItem ,@#, 조합(몽타쥬) 이미지 ,@#,  3  ,@#, HF_MONTAGE ,@#, 얼굴 조합기를 이용한 형태
+enumItem ,@#, 유저 등록 이미지 ,@#,  4  ,@#, HF_UPLOAD ,@#, 유저가 업로드한 이미지
+
+
+enum ,@#, EHeroPersonality ,@#, 설명없음
+
+enumItem ,@#, 저돌 ,@#,  1  ,@#, HP_TOUGH ,@#, 저돌
+enumItem ,@#, 용맹 ,@#,  2  ,@#, HP_BRAVE ,@#, 용맹
+enumItem ,@#, 냉정 ,@#,  3  ,@#, HP_COOL ,@#, 냉정
+enumItem ,@#, 소심 ,@#,  4  ,@#, HP_WEAK ,@#, 소심
+
+
+enum ,@#, EHeroSex ,@#, 설명없음
+
+enumItem ,@#, 남성 ,@#,  1  ,@#, HS_MALE ,@#, 남자 장수
+enumItem ,@#, 여성 ,@#,  2  ,@#, HS_FEMALE ,@#, 여자 장수
+
+
+enum ,@#, EHeroWorkState ,@#, 설명없음
+
+enumItem ,@#, 휴식 ,@#,  1  ,@#, HWS_REST ,@#, 아무 일도 하지 않고 있음
+enumItem ,@#, 건물 건설 ,@#,  2  ,@#, HWS_CONSTRUCTION ,@#, 건물 건설을 수행 중
+enumItem ,@#, 탐색 활동 ,@#,  3  ,@#, HWS_EXPLORATION ,@#, 탐색 활동을 수행 중
+enumItem ,@#, 부대 출전 ,@#,  4  ,@#, HWS_COMBAT ,@#, 부대를 이끌고 필드에 나간 상태
+
+
+Sys ,@#, Sys_Hero ,@#, 장수 테이블
+
+SysItem ,@#, sid ,@#, hsid ,@#, Sys_Hero_id_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 장수가 소속한 세력(소유 유저의 소속 세력과 같음)
+SysItem ,@#, 장수 분류 ,@#, category ,@#, EHeroCategory ,@#,  ,@#, EHeroCategory ,@#,  ,@#,  ,@#, 장수 분류 형태, 역사 장수, 가상 장수
+SysItem ,@#, 카드 연도 ,@#, deck_year ,@#, EDeckYear ,@#,  ,@#, EDeckYear ,@#,  ,@#,  ,@#, 장수 연도별 카드 덱 이름
+SysItem ,@#, 장수 영문 이름 ,@#, name ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 장수 영문 이름
+SysItem ,@#, 장수 한글 이름 ,@#, name_kor ,@#, wname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 장수 한글 이름 
+SysItem ,@#, 얼굴 이미지 ,@#, image_file ,@#, tname256_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 장수 초상화 이미지
+SysItem ,@#, 장수 등급 ,@#, grade ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 장수 등급, 1성 ~ 7성까지 ( 차후 Sys_HeroGrade_id_t)
+SysItem ,@#, 나이 ,@#, age ,@#, int32 ,@#,  1  ,@#,  99  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 통솔 ,@#, leadership ,@#, int32 ,@#,  1  ,@#,  200  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 무력 ,@#, power ,@#, int32 ,@#,  1  ,@#,  200  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 지모 ,@#, intelligent ,@#, int32 ,@#,  1  ,@#,  200  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 정치 ,@#, politic ,@#, int32 ,@#,  1  ,@#,  200  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 매력 ,@#, charm ,@#, int32 ,@#,  1  ,@#,  200  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 성별 ,@#, is_male ,@#, bool ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 성별
+SysItem ,@#, 성격 ,@#, personality ,@#, EHeroPersonality ,@#,  ,@#, EHeroPersonality ,@#,  ,@#,  ,@#, 장수 성격
+
+

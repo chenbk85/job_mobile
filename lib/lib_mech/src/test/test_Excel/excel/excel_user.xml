@@ -1,0 +1,1553 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<excel_user>
+	<enum>
+		<EBuildType HELP="설명없음">
+			<EBT_Sys_T_HQ>
+				<name>본영</name>
+				<value>1</value>
+				<name_eng>EBT_Sys_T_HQ</name_eng>
+				<help>본영</help>
+			</EBT_Sys_T_HQ>
+			<EBT_Sys_T_Bar>
+				<name>주점</name>
+				<value>2</value>
+				<name_eng>EBT_Sys_T_Bar</name_eng>
+				<help>주점</help>
+			</EBT_Sys_T_Bar>
+			<EBT_ACADEMY>
+				<name>서원</name>
+				<value>3</value>
+				<name_eng>EBT_ACADEMY</name_eng>
+				<help>서원</help>
+			</EBT_ACADEMY>
+			<EBT_PEACE>
+				<name>치안부</name>
+				<value>4</value>
+				<name_eng>EBT_PEACE</name_eng>
+				<help>치안부</help>
+			</EBT_PEACE>
+			<EBT_SHRINE>
+				<name>사당</name>
+				<value>5</value>
+				<name_eng>EBT_SHRINE</name_eng>
+				<help>사당</help>
+			</EBT_SHRINE>
+			<EBT_HIDEOUT>
+				<name>감찰부</name>
+				<value>6</value>
+				<name_eng>EBT_HIDEOUT</name_eng>
+				<help>감찰부</help>
+			</EBT_HIDEOUT>
+			<EBT_TRADINGPOST>
+				<name>교역소</name>
+				<value>7</value>
+				<name_eng>EBT_TRADINGPOST</name_eng>
+				<help>교역소</help>
+			</EBT_TRADINGPOST>
+			<EBT_Sys_T_House>
+				<name>민가</name>
+				<value>8</value>
+				<name_eng>EBT_Sys_T_House</name_eng>
+				<help>민가</help>
+			</EBT_Sys_T_House>
+			<EBT_Sys_T_Farm>
+				<name>농지</name>
+				<value>9</value>
+				<name_eng>EBT_Sys_T_Farm</name_eng>
+				<help>농지</help>
+			</EBT_Sys_T_Farm>
+			<EBT_SAWMILL>
+				<name>제재소</name>
+				<value>10</value>
+				<name_eng>EBT_SAWMILL</name_eng>
+				<help>제재소</help>
+			</EBT_SAWMILL>
+			<EBT_QUARRY>
+				<name>채석장</name>
+				<value>11</value>
+				<name_eng>EBT_QUARRY</name_eng>
+				<help>채석장</help>
+			</EBT_QUARRY>
+			<EBT_MINING>
+				<name>광업장</name>
+				<value>12</value>
+				<name_eng>EBT_MINING</name_eng>
+				<help>광업장</help>
+			</EBT_MINING>
+			<EBT_COCOONERY>
+				<name>양잠소</name>
+				<value>13</value>
+				<name_eng>EBT_COCOONERY</name_eng>
+				<help>양잠소</help>
+			</EBT_COCOONERY>
+			<EBT_Sys_T_Barrack>
+				<name>병영</name>
+				<value>14</value>
+				<name_eng>EBT_Sys_T_Barrack</name_eng>
+				<help>병영</help>
+			</EBT_Sys_T_Barrack>
+			<EBT_SMITHY>
+				<name>대장간</name>
+				<value>15</value>
+				<name_eng>EBT_SMITHY</name_eng>
+				<help>대장간</help>
+			</EBT_SMITHY>
+			<EBT_FORGE>
+				<name>공방</name>
+				<value>16</value>
+				<name_eng>EBT_FORGE</name_eng>
+				<help>공방</help>
+			</EBT_FORGE>
+			<EBT_STABLE>
+				<name>마구간</name>
+				<value>17</value>
+				<name_eng>EBT_STABLE</name_eng>
+				<help>마구간</help>
+			</EBT_STABLE>
+			<EBT_Sys_T_Camp>
+				<name>둔영</name>
+				<value>18</value>
+				<name_eng>EBT_Sys_T_Camp</name_eng>
+				<help>둔영</help>
+			</EBT_Sys_T_Camp>
+			<EBT_Sys_T_Depot>
+				<name>창고</name>
+				<value>19</value>
+				<name_eng>EBT_Sys_T_Depot</name_eng>
+				<help>창고</help>
+			</EBT_Sys_T_Depot>
+			<EBT_SECRET>
+				<name>비밀창고</name>
+				<value>20</value>
+				<name_eng>EBT_SECRET</name_eng>
+				<help>비밀창고</help>
+			</EBT_SECRET>
+			<EBT_TOWER>
+				<name>망루</name>
+				<value>21</value>
+				<name_eng>EBT_TOWER</name_eng>
+				<help>망루</help>
+			</EBT_TOWER>
+			<EBT_BARRIER>
+				<name>방벽</name>
+				<value>22</value>
+				<name_eng>EBT_BARRIER</name_eng>
+				<help>방벽</help>
+			</EBT_BARRIER>
+		</EBuildType>
+		<EOutput HELP="설명없음">
+			<EOT_POPULATION>
+				<name>인구</name>
+				<value>1</value>
+				<name_eng>EOT_POPULATION</name_eng>
+				<help>인구</help>
+			</EOT_POPULATION>
+			<EOT_GOLD>
+				<name>금</name>
+				<value>2</value>
+				<name_eng>EOT_GOLD</name_eng>
+				<help>금</help>
+			</EOT_GOLD>
+			<EOT_FOOD>
+				<name>식량</name>
+				<value>3</value>
+				<name_eng>EOT_FOOD</name_eng>
+				<help>식량</help>
+			</EOT_FOOD>
+			<EOT_TREE>
+				<name>목재</name>
+				<value>4</value>
+				<name_eng>EOT_TREE</name_eng>
+				<help>목재</help>
+			</EOT_TREE>
+			<EOT_STONE>
+				<name>석재</name>
+				<value>5</value>
+				<name_eng>EOT_STONE</name_eng>
+				<help>석재</help>
+			</EOT_STONE>
+			<EOT_IRON>
+				<name>철재</name>
+				<value>6</value>
+				<name_eng>EOT_IRON</name_eng>
+				<help>철재</help>
+			</EOT_IRON>
+			<EOT_SILK>
+				<name>비단</name>
+				<value>7</value>
+				<name_eng>EOT_SILK</name_eng>
+				<help>비단</help>
+			</EOT_SILK>
+			<EOT_SOLDIER>
+				<name>병사</name>
+				<value>8</value>
+				<name_eng>EOT_SOLDIER</name_eng>
+				<help>병사</help>
+			</EOT_SOLDIER>
+			<EOT_PIKE>
+				<name>창 병기</name>
+				<value>9</value>
+				<name_eng>EOT_PIKE</name_eng>
+				<help/>
+			</EOT_PIKE>
+			<EOT_HEAVY>
+				<name>중갑 병기</name>
+				<value>10</value>
+				<name_eng>EOT_HEAVY</name_eng>
+				<help/>
+			</EOT_HEAVY>
+			<EOT_HALBERD>
+				<name>언월도 병기</name>
+				<value>11</value>
+				<name_eng>EOT_HALBERD</name_eng>
+				<help>근위병 (철 소모 위주)</help>
+			</EOT_HALBERD>
+			<EOT_BOW>
+				<name>궁 병기</name>
+				<value>12</value>
+				<name_eng>EOT_BOW</name_eng>
+				<help/>
+			</EOT_BOW>
+			<EOT_CROSSBOW>
+				<name>노 병기</name>
+				<value>13</value>
+				<name_eng>EOT_CROSSBOW</name_eng>
+				<help/>
+			</EOT_CROSSBOW>
+			<EOT_BOWGUN>
+				<name>강노 병기</name>
+				<value>14</value>
+				<name_eng>EOT_BOWGUN</name_eng>
+				<help/>
+			</EOT_BOWGUN>
+			<EOT_BALLISTA>
+				<name>노포 병기</name>
+				<value>15</value>
+				<name_eng>EOT_BALLISTA</name_eng>
+				<help/>
+			</EOT_BALLISTA>
+			<EOT_CHARIOT>
+				<name>전차 병기</name>
+				<value>16</value>
+				<name_eng>EOT_CHARIOT</name_eng>
+				<help>군마랑 조합해서만 가능 (개수 늘어나야)</help>
+			</EOT_CHARIOT>
+			<EOT_WAGON>
+				<name>마차</name>
+				<value>17</value>
+				<name_eng>EOT_WAGON</name_eng>
+				<help>군마랑 조합해서만 가능 (개수 늘어나야)</help>
+			</EOT_WAGON>
+			<EOT_HORSE>
+				<name>군마</name>
+				<value>18</value>
+				<name_eng>EOT_HORSE</name_eng>
+				<help>Eunit_ClassItemA 와 조합 가능</help>
+			</EOT_HORSE>
+			<EOT_WHEELBARROW>
+				<name>수레</name>
+				<value>19</value>
+				<name_eng>EOT_WHEELBARROW</name_eng>
+				<help>공작, 수송, 보급 용도</help>
+			</EOT_WHEELBARROW>
+			<EOT_CART>
+				<name>목우</name>
+				<value>20</value>
+				<name_eng>EOT_CART</name_eng>
+				<help/>
+			</EOT_CART>
+			<EOT_SIEGE_LADDER>
+				<name>운제</name>
+				<value>21</value>
+				<name_eng>EOT_SIEGE_LADDER</name_eng>
+				<help>B만 활용 가능</help>
+			</EOT_SIEGE_LADDER>
+			<EOT_SIEGE_RAM>
+				<name>충차</name>
+				<value>22</value>
+				<name_eng>EOT_SIEGE_RAM</name_eng>
+				<help/>
+			</EOT_SIEGE_RAM>
+			<EOT_SIEGE_TOWER>
+				<name>정란</name>
+				<value>23</value>
+				<name_eng>EOT_SIEGE_TOWER</name_eng>
+				<help/>
+			</EOT_SIEGE_TOWER>
+			<EOT_SIEGE_TREBUCHET>
+				<name>투석기</name>
+				<value>24</value>
+				<name_eng>EOT_SIEGE_TREBUCHET</name_eng>
+				<help/>
+			</EOT_SIEGE_TREBUCHET>
+		</EOutput>
+	</enum>
+	<Sys>
+		<Sys__T_BuildObj HELP="빌딩type 테이블의 base 테이블이다. 모든 빌딩type 테이블은 이 테이블을 상속받는다">
+			<base_type>
+				<name>건물타입</name>
+				<name_eng>base_type</name_eng>
+				<data_type>EBuildType</data_type>
+				<min/>
+				<max>EBuildType</max>
+				<db_type/>
+				<type_note/>
+				<help>Sys_T_BaseObj를상속 받는 테이블의 건물 종류</help>
+			</base_type>
+			<name>
+				<name>건물리소스명</name>
+				<name_eng>name</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물 이미지: 레벨에 따라 이미지 변경 -맵툴에 있는 리소스 이름</help>
+			</name>
+			<upgradetime>
+				<name>업그레이드 시간</name>
+				<name_eng>upgradetime</name_eng>
+				<data_type>uint32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>업그레이드를 진행할 때 소비되는 시간 /초단위</help>
+			</upgradetime>
+			<tree_num>
+				<name>목재 비용</name>
+				<name_eng>tree_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 목재 비용</help>
+			</tree_num>
+			<stone_num>
+				<name>돌 비용</name>
+				<name_eng>stone_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 돌 비용</help>
+			</stone_num>
+			<iron_num>
+				<name>철 비용</name>
+				<name_eng>iron_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 철 비용</help>
+			</iron_num>
+			<silk_num>
+				<name>비단 비용</name>
+				<name_eng>silk_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 비단 비용</help>
+			</silk_num>
+			<population_num>
+				<name>인구 비용</name>
+				<name_eng>population_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 인구 비용</help>
+			</population_num>
+		</Sys__T_BuildObj>
+		<Sys_T_Bar HELP="설명없음">
+			<isid>
+				<name>레벨</name>
+				<name_eng>isid</name_eng>
+				<data_type>Sys_T_Bar_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type>PK</db_type>
+				<type_note/>
+				<help>건물 아이디</help>
+			</isid>
+			<client_file>
+				<name>건물 이미지 파일</name>
+				<name_eng>client_file</name_eng>
+				<data_type>tname256_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물 이미지: 레벨에 따라 이미지 변경 -맵툴에 있는 리소스 이름</help>
+			</client_file>
+			<upgradetime>
+				<name>업그레이드 시간</name>
+				<name_eng>upgradetime</name_eng>
+				<data_type>uint32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>업그레이드를 진행할 때 소비되는 시간 /초단위</help>
+			</upgradetime>
+			<tree_num>
+				<name>목재 비용</name>
+				<name_eng>tree_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 목재 비용</help>
+			</tree_num>
+			<stone_num>
+				<name>돌 비용</name>
+				<name_eng>stone_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 돌 비용</help>
+			</stone_num>
+			<iron_num>
+				<name>철 비용</name>
+				<name_eng>iron_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 철 비용</help>
+			</iron_num>
+			<silk_num>
+				<name>비단 비용</name>
+				<name_eng>silk_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 비단 비용</help>
+			</silk_num>
+			<population_num>
+				<name>인구 비용</name>
+				<name_eng>population_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 인구 비용</help>
+			</population_num>
+			<maxbuild>
+				<name>최대 생성수</name>
+				<name_eng>maxbuild</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>한 마을에 최대 생성 가능한 건물 수</help>
+			</maxbuild>
+			<downlevel>
+				<name>다운그레이드레벨</name>
+				<name_eng>downlevel</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>다운될때 레벨. 레벨이 0이 되면 건물은 없어짐</help>
+			</downlevel>
+			<treereturn>
+				<name>목재 반환비용</name>
+				<name_eng>treereturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물을 다운시킬 때 자원의 50%가 반환됨. (창고의 남은양만큼 반환됨)</help>
+			</treereturn>
+			<stonereturn>
+				<name>돌 반환비용</name>
+				<name_eng>stonereturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</stonereturn>
+			<ironreturn>
+				<name>철 반환비용</name>
+				<name_eng>ironreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</ironreturn>
+			<silkreturn>
+				<name>비단 반환비용</name>
+				<name_eng>silkreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</silkreturn>
+			<populationreturn>
+				<name>인구 반환비용</name>
+				<name_eng>populationreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물을 다운시킬 때 인구가 반환됨. 인구 100% 반환되며 민가 최대 인구수 만큼만 반환됨.</help>
+			</populationreturn>
+			<hideHero>
+				<name>재야 장수</name>
+				<name_eng>hideHero</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>주점에 들어오는 재야장수 수</help>
+			</hideHero>
+			<resettime>
+				<name>리셋시간</name>
+				<name_eng>resettime</name_eng>
+				<data_type>uint32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>주점에서 자동으로 재야장수와 아이템이 리셋되는 시간 (초로계산)</help>
+			</resettime>
+			<itemnum>
+				<name>아이템수</name>
+				<name_eng>itemnum</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>주점에서 행상인이 1회에 가져오는 아이템 수</help>
+			</itemnum>
+		</Sys_T_Bar>
+		<Sys_T_Barrack HELP="설명없음">
+			<isid>
+				<name>레벨</name>
+				<name_eng>isid</name_eng>
+				<data_type>Sys_T_Barrack_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type>PK</db_type>
+				<type_note/>
+				<help>건물 아이디</help>
+			</isid>
+			<client_file>
+				<name>건물 이미지 파일</name>
+				<name_eng>client_file</name_eng>
+				<data_type>tname256_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물 이미지: 레벨에 따라 이미지 변경 -맵툴에 있는 리소스 이름</help>
+			</client_file>
+			<upgradetime>
+				<name>업그레이드 시간</name>
+				<name_eng>upgradetime</name_eng>
+				<data_type>uint32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>업그레이드를 진행할 때 소비되는 시간 /초단위</help>
+			</upgradetime>
+			<tree_num>
+				<name>목재 비용</name>
+				<name_eng>tree_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 목재 비용</help>
+			</tree_num>
+			<stone_num>
+				<name>돌 비용</name>
+				<name_eng>stone_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 돌 비용</help>
+			</stone_num>
+			<iron_num>
+				<name>철 비용</name>
+				<name_eng>iron_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 철 비용</help>
+			</iron_num>
+			<silk_num>
+				<name>비단 비용</name>
+				<name_eng>silk_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 비단 비용</help>
+			</silk_num>
+			<population_num>
+				<name>인구 비용</name>
+				<name_eng>population_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 인구 비용</help>
+			</population_num>
+			<maxbuild>
+				<name>최대 생성수</name>
+				<name_eng>maxbuild</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>한 마을에 최대 생성 가능한 건물 수</help>
+			</maxbuild>
+			<downlevel>
+				<name>다운그레이드레벨</name>
+				<name_eng>downlevel</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>다운될때 레벨. 레벨이 0이 되면 건물은 없어짐</help>
+			</downlevel>
+			<treereturn>
+				<name>목재 반환비용</name>
+				<name_eng>treereturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물을 다운시킬 때 자원의 50%가 반환됨. (창고의 남은양만큼 반환됨)</help>
+			</treereturn>
+			<stonereturn>
+				<name>돌 반환비용</name>
+				<name_eng>stonereturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</stonereturn>
+			<ironreturn>
+				<name>철 반환비용</name>
+				<name_eng>ironreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</ironreturn>
+			<silkreturn>
+				<name>비단 반환비용</name>
+				<name_eng>silkreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</silkreturn>
+			<populationreturn>
+				<name>인구 반환비용</name>
+				<name_eng>populationreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물을 다운시킬 때 인구가 반환됨. 인구 100% 반환되며 민가 최대 인구수 만큼만 반환됨.</help>
+			</populationreturn>
+			<s_p_speed>
+				<name>병사_생산_속도</name>
+				<name_eng>s_p_speed</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>병영 레벨업당 생산속도 향상</help>
+			</s_p_speed>
+			<s_p_cost>
+				<name>병사_생산_비용</name>
+				<name_eng>s_p_cost</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>병영병사 1인 생산 비용</help>
+			</s_p_cost>
+			<s_output>
+				<name>병사_ 생산량</name>
+				<name_eng>s_output</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>병영병사 최대 생산량</help>
+			</s_output>
+		</Sys_T_Barrack>
+		<Sys_T_Camp HELP="설명없음">
+			<isid>
+				<name>레벨</name>
+				<name_eng>isid</name_eng>
+				<data_type>Sys_T_Camp_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type>PK</db_type>
+				<type_note/>
+				<help>건물 아이디</help>
+			</isid>
+			<client_file>
+				<name>건물 이미지 파일</name>
+				<name_eng>client_file</name_eng>
+				<data_type>tname256_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물 이미지: 레벨에 따라 이미지 변경 -맵툴에 있는 리소스 이름</help>
+			</client_file>
+			<upgradetime>
+				<name>업그레이드 시간</name>
+				<name_eng>upgradetime</name_eng>
+				<data_type>uint32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>업그레이드를 진행할 때 소비되는 시간 /초단위</help>
+			</upgradetime>
+			<tree_num>
+				<name>목재 비용</name>
+				<name_eng>tree_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 목재 비용</help>
+			</tree_num>
+			<stone_num>
+				<name>돌 비용</name>
+				<name_eng>stone_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 돌 비용</help>
+			</stone_num>
+			<iron_num>
+				<name>철 비용</name>
+				<name_eng>iron_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 철 비용</help>
+			</iron_num>
+			<silk_num>
+				<name>비단 비용</name>
+				<name_eng>silk_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 비단 비용</help>
+			</silk_num>
+			<population_num>
+				<name>인구 비용</name>
+				<name_eng>population_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 인구 비용</help>
+			</population_num>
+			<maxbuild>
+				<name>최대 생성수</name>
+				<name_eng>maxbuild</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>한 마을에 최대 생성 가능한 건물 수</help>
+			</maxbuild>
+			<downlevel>
+				<name>다운그레이드레벨</name>
+				<name_eng>downlevel</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>다운될때 레벨. 레벨이 0이 되면 건물은 없어짐</help>
+			</downlevel>
+			<treereturn>
+				<name>목재 반환비용</name>
+				<name_eng>treereturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물을 다운시킬 때 자원의 50%가 반환됨. (창고의 남은양만큼 반환됨)</help>
+			</treereturn>
+			<stonereturn>
+				<name>돌 반환비용</name>
+				<name_eng>stonereturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</stonereturn>
+			<ironreturn>
+				<name>철 반환비용</name>
+				<name_eng>ironreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</ironreturn>
+			<silkreturn>
+				<name>비단 반환비용</name>
+				<name_eng>silkreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</silkreturn>
+			<populationreturn>
+				<name>인구 반환비용</name>
+				<name_eng>populationreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물을 다운시킬 때 인구가 반환됨. 인구 100% 반환되며 민가 최대 인구수 만큼만 반환됨.</help>
+			</populationreturn>
+			<f_r_spend>
+				<name>병사_ 식량_소비량</name>
+				<name_eng>f_r_spend</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>병사 1인이 시간당 소비하는 식량의 양</help>
+			</f_r_spend>
+			<f_storage>
+				<name>병사_보관량</name>
+				<name_eng>f_storage</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>둔영에서 병사 최대 보관량</help>
+			</f_storage>
+		</Sys_T_Camp>
+		<Sys_T_Depot HELP="설명없음">
+			<isid>
+				<name>레벨</name>
+				<name_eng>isid</name_eng>
+				<data_type>Sys_T_Depot_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type>PK</db_type>
+				<type_note/>
+				<help>건물 아이디</help>
+			</isid>
+			<client_file>
+				<name>건물 이미지 파일</name>
+				<name_eng>client_file</name_eng>
+				<data_type>tname256_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물 이미지: 레벨에 따라 이미지 변경 -맵툴에 있는 리소스 이름</help>
+			</client_file>
+			<upgradetime>
+				<name>업그레이드 시간</name>
+				<name_eng>upgradetime</name_eng>
+				<data_type>uint32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>업그레이드를 진행할 때 소비되는 시간 /초단위</help>
+			</upgradetime>
+			<tree_num>
+				<name>목재 비용</name>
+				<name_eng>tree_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 목재 비용</help>
+			</tree_num>
+			<stone_num>
+				<name>돌 비용</name>
+				<name_eng>stone_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 돌 비용</help>
+			</stone_num>
+			<iron_num>
+				<name>철 비용</name>
+				<name_eng>iron_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 철 비용</help>
+			</iron_num>
+			<silk_num>
+				<name>비단 비용</name>
+				<name_eng>silk_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 비단 비용</help>
+			</silk_num>
+			<population_num>
+				<name>인구 비용</name>
+				<name_eng>population_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 인구 비용</help>
+			</population_num>
+			<maxbuild>
+				<name>최대 생성수</name>
+				<name_eng>maxbuild</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>한 마을에 최대 생성 가능한 건물 수</help>
+			</maxbuild>
+			<downlevel>
+				<name>다운그레이드레벨</name>
+				<name_eng>downlevel</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>다운될때 레벨. 레벨이 0이 되면 건물은 없어짐</help>
+			</downlevel>
+			<treereturn>
+				<name>목재 반환비용</name>
+				<name_eng>treereturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물을 다운시킬 때 자원의 50%가 반환됨. (창고의 남은양만큼 반환됨)</help>
+			</treereturn>
+			<stonereturn>
+				<name>돌 반환비용</name>
+				<name_eng>stonereturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</stonereturn>
+			<ironreturn>
+				<name>철 반환비용</name>
+				<name_eng>ironreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</ironreturn>
+			<silkreturn>
+				<name>비단 반환비용</name>
+				<name_eng>silkreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</silkreturn>
+			<populationreturn>
+				<name>인구 반환비용</name>
+				<name_eng>populationreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물을 다운시킬 때 인구가 반환됨. 인구 100% 반환되며 민가 최대 인구수 만큼만 반환됨.</help>
+			</populationreturn>
+			<storage>
+				<name>최대보관량</name>
+				<name_eng>storage</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>창고에서 자원 최대 보관량</help>
+			</storage>
+		</Sys_T_Depot>
+		<Sys_T_Farm HELP="설명없음">
+			<isid>
+				<name>레벨</name>
+				<name_eng>isid</name_eng>
+				<data_type>Sys_T_Farm_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type>PK</db_type>
+				<type_note/>
+				<help>건물 아이디</help>
+			</isid>
+			<client_file>
+				<name>건물 이미지 파일</name>
+				<name_eng>client_file</name_eng>
+				<data_type>tname256_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물 이미지: 레벨에 따라 이미지 변경 -맵툴에 있는 리소스 이름</help>
+			</client_file>
+			<upgradetime>
+				<name>업그레이드 시간</name>
+				<name_eng>upgradetime</name_eng>
+				<data_type>uint32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>업그레이드를 진행할 때 소비되는 시간 /초단위</help>
+			</upgradetime>
+			<tree_num>
+				<name>목재 비용</name>
+				<name_eng>tree_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 목재 비용</help>
+			</tree_num>
+			<stone_num>
+				<name>돌 비용</name>
+				<name_eng>stone_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 돌 비용</help>
+			</stone_num>
+			<iron_num>
+				<name>철 비용</name>
+				<name_eng>iron_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 철 비용</help>
+			</iron_num>
+			<silk_num>
+				<name>비단 비용</name>
+				<name_eng>silk_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 비단 비용</help>
+			</silk_num>
+			<population_num>
+				<name>인구 비용</name>
+				<name_eng>population_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 인구 비용</help>
+			</population_num>
+			<maxbuild>
+				<name>최대 생성수</name>
+				<name_eng>maxbuild</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>한 마을에 최대 생성 가능한 건물 수</help>
+			</maxbuild>
+			<downlevel>
+				<name>다운그레이드레벨</name>
+				<name_eng>downlevel</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>다운될때 레벨. 레벨이 0이 되면 건물은 없어짐</help>
+			</downlevel>
+			<treereturn>
+				<name>목재 반환비용</name>
+				<name_eng>treereturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물을 다운시킬 때 자원의 50%가 반환됨. (창고의 남은양만큼 반환됨)</help>
+			</treereturn>
+			<stonereturn>
+				<name>돌 반환비용</name>
+				<name_eng>stonereturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</stonereturn>
+			<ironreturn>
+				<name>철 반환비용</name>
+				<name_eng>ironreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</ironreturn>
+			<silkreturn>
+				<name>비단 반환비용</name>
+				<name_eng>silkreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</silkreturn>
+			<populationreturn>
+				<name>인구 반환비용</name>
+				<name_eng>populationreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물을 다운시킬 때 인구가 반환됨. 인구 100% 반환되며 민가 최대 인구수 만큼만 반환됨.</help>
+			</populationreturn>
+			<foodoutput>
+				<name>식량생산량</name>
+				<name_eng>foodoutput</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>농가 레벨업당 농지 생산량</help>
+			</foodoutput>
+		</Sys_T_Farm>
+		<Sys_T_House HELP="설명없음">
+			<isid>
+				<name>레벨</name>
+				<name_eng>isid</name_eng>
+				<data_type>Sys_T_House_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type>PK</db_type>
+				<type_note/>
+				<help>건물 아이디</help>
+			</isid>
+			<client_file>
+				<name>건물 이미지 파일</name>
+				<name_eng>client_file</name_eng>
+				<data_type>tname256_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물 이미지: 레벨에 따라 이미지 변경 -맵툴에 있는 리소스 이름</help>
+			</client_file>
+			<upgradetime>
+				<name>업그레이드 시간</name>
+				<name_eng>upgradetime</name_eng>
+				<data_type>uint32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>업그레이드를 진행할 때 소비되는 시간 /초단위</help>
+			</upgradetime>
+			<tree_num>
+				<name>목재 비용</name>
+				<name_eng>tree_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 목재 비용</help>
+			</tree_num>
+			<stone_num>
+				<name>돌 비용</name>
+				<name_eng>stone_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 돌 비용</help>
+			</stone_num>
+			<iron_num>
+				<name>철 비용</name>
+				<name_eng>iron_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 철 비용</help>
+			</iron_num>
+			<silk_num>
+				<name>비단 비용</name>
+				<name_eng>silk_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 비단 비용</help>
+			</silk_num>
+			<population_num>
+				<name>인구 비용</name>
+				<name_eng>population_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 인구 비용</help>
+			</population_num>
+			<maxbuild>
+				<name>최대 생성수</name>
+				<name_eng>maxbuild</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>한 마을에 최대 생성 가능한 건물 수</help>
+			</maxbuild>
+			<downlevel>
+				<name>다운그레이드레벨</name>
+				<name_eng>downlevel</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>다운될때 레벨. 레벨이 0이 되면 건물은 없어짐</help>
+			</downlevel>
+			<treereturn>
+				<name>목재 반환비용</name>
+				<name_eng>treereturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물을 다운시킬 때 자원의 50%가 반환됨. (창고의 남은양만큼 반환됨)</help>
+			</treereturn>
+			<stonereturn>
+				<name>돌 반환비용</name>
+				<name_eng>stonereturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</stonereturn>
+			<ironreturn>
+				<name>철 반환비용</name>
+				<name_eng>ironreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</ironreturn>
+			<silkreturn>
+				<name>비단 반환비용</name>
+				<name_eng>silkreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</silkreturn>
+			<populationreturn>
+				<name>인구 반환비용</name>
+				<name_eng>populationreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물을 다운시킬 때 인구가 반환됨. 인구 100% 반환되며 민가 최대 인구수 만큼만 반환됨.</help>
+			</populationreturn>
+			<maxpopulation>
+				<name>민가최대인구</name>
+				<name_eng>maxpopulation</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>민가 레벨당 상승되는 최대 인구수</help>
+			</maxpopulation>
+		</Sys_T_House>
+		<Sys_T_HQ HELP="설명없음">
+			<isid>
+				<name>레벨</name>
+				<name_eng>isid</name_eng>
+				<data_type>Sys_T_HQ_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type>PK</db_type>
+				<type_note/>
+				<help>건물 아이디</help>
+			</isid>
+			<client_file>
+				<name>건물 이미지 파일</name>
+				<name_eng>client_file</name_eng>
+				<data_type>tname256_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물 이미지: 레벨에 따라 이미지 변경 -맵툴에 있는 리소스 이름</help>
+			</client_file>
+			<upgradetime>
+				<name>업그레이드 시간</name>
+				<name_eng>upgradetime</name_eng>
+				<data_type>uint32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>업그레이드를 진행할 때 소비되는 시간 /초단위</help>
+			</upgradetime>
+			<tree_num>
+				<name>목재 비용</name>
+				<name_eng>tree_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 목재 비용</help>
+			</tree_num>
+			<stone_num>
+				<name>돌 비용</name>
+				<name_eng>stone_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 돌 비용</help>
+			</stone_num>
+			<iron_num>
+				<name>철 비용</name>
+				<name_eng>iron_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 철 비용</help>
+			</iron_num>
+			<silk_num>
+				<name>비단 비용</name>
+				<name_eng>silk_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 비단 비용</help>
+			</silk_num>
+			<population_num>
+				<name>인구 비용</name>
+				<name_eng>population_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 인구 비용</help>
+			</population_num>
+			<maxbuild>
+				<name>최대 생성수</name>
+				<name_eng>maxbuild</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>한 마을에 최대 생성 가능한 건물 수</help>
+			</maxbuild>
+			<downlevel>
+				<name>다운그레이드레벨</name>
+				<name_eng>downlevel</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>다운될때 레벨. 레벨이 0이 되면 건물은 없어짐</help>
+			</downlevel>
+			<treereturn>
+				<name>목재 반환비용</name>
+				<name_eng>treereturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물을 다운시킬 때 자원의 50%가 반환됨. (창고의 남은양만큼 반환됨)</help>
+			</treereturn>
+			<stonereturn>
+				<name>돌 반환비용</name>
+				<name_eng>stonereturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</stonereturn>
+			<ironreturn>
+				<name>철 반환비용</name>
+				<name_eng>ironreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</ironreturn>
+			<silkreturn>
+				<name>비단 반환비용</name>
+				<name_eng>silkreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</silkreturn>
+			<populationreturn>
+				<name>인구 반환비용</name>
+				<name_eng>populationreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물을 다운시킬 때 인구가 반환됨. 인구 100% 반환되며 민가 최대 인구수 만큼만 반환됨.</help>
+			</populationreturn>
+			<getgold>
+				<name>징수</name>
+				<name_eng>getgold</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>징수 명령</help>
+			</getgold>
+		</Sys_T_HQ>
+	</Sys>
+</excel_user>

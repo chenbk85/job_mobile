@@ -1,0 +1,233 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>D_01_01_01_chat</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="18">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>554</objId>
+            <ptul X="35" Y="34" />
+            <ptdr X="103" Y="74" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="2">
+                <actBox id="557" />
+                <actBox id="563" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>555</objId>
+            <ptul X="323" Y="34" />
+            <ptdr X="419" Y="74" />
+            <links num="0" />
+            <objectName>DungeonServer</objectName>
+            <className>D</className>
+            <actBoxes num="4">
+                <actBox id="558" />
+                <actBox id="560" />
+                <actBox id="564" />
+                <actBox id="566" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>556</objId>
+            <ptul X="593" Y="30" />
+            <ptdr X="661" Y="70" />
+            <links num="0" />
+            <objectName>Clients</objectName>
+            <className>X</className>
+            <actBoxes num="2">
+                <actBox id="561" />
+                <actBox id="567" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>557</objId>
+            <ptul X="61" Y="115" />
+            <ptdr X="76" Y="145" />
+            <links num="1">
+                <link id="559" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>558</objId>
+            <ptul X="363" Y="115" />
+            <ptdr X="378" Y="145" />
+            <links num="1">
+                <link id="559" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>559</objId>
+            <points num="2">
+                <pt x="76" y="123" />
+                <pt x="363" y="123" />
+            </points>
+            <objStart id="557" />
+            <objEnd id="558" />
+            <message messType="MGEN">D_ECHO</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>560</objId>
+            <ptul X="363" Y="149" />
+            <ptdr X="378" Y="179" />
+            <links num="1">
+                <link id="562" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>561</objId>
+            <ptul X="619" Y="149" />
+            <ptdr X="634" Y="179" />
+            <links num="1">
+                <link id="562" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>562</objId>
+            <points num="2">
+                <pt x="378" y="154" />
+                <pt x="619" y="154" />
+            </points>
+            <objStart id="560" />
+            <objEnd id="561" />
+            <message messType="MGEN">D_ECHO</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>563</objId>
+            <ptul X="61" Y="276" />
+            <ptdr X="76" Y="306" />
+            <links num="1">
+                <link id="565" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>564</objId>
+            <ptul X="363" Y="276" />
+            <ptdr X="378" Y="306" />
+            <links num="1">
+                <link id="565" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>565</objId>
+            <points num="2">
+                <pt x="76" y="287" />
+                <pt x="363" y="287" />
+            </points>
+            <objStart id="563" />
+            <objEnd id="564" />
+            <message messType="MGEN">X2D_CHAT</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>566</objId>
+            <ptul X="363" Y="310" />
+            <ptdr X="378" Y="340" />
+            <links num="1">
+                <link id="568" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>567</objId>
+            <ptul X="619" Y="310" />
+            <ptdr X="634" Y="340" />
+            <links num="1">
+                <link id="568" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>568</objId>
+            <points num="2">
+                <pt x="378" y="318" />
+                <pt x="619" y="318" />
+            </points>
+            <objStart id="566" />
+            <objEnd id="567" />
+            <message messType="MGEN">D2X_CHAT</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[D_ECHO]&#x0A;&#x0A;{PARAM}&#x0A;msg-tname256_t&#x0A;type-uint8</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>569</objId>
+            <ptul X="651" Y="108" />
+            <ptdr X="756" Y="200" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[D2X_CHAT]&#x0A;&#x0A;{PARAM}&#x0A;msg-wname64_t&#x0A;type-uint8</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>570</objId>
+            <ptul X="388" Y="324" />
+            <ptdr X="491" Y="416" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[X2D_CHAT]&#x0A;&#x0A;{PARAM}&#x0A;msg-wname64_t&#x0A;type-uint8&#x0A;id-astring[?]&#x0A;uid-userid_t[?]</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>571</objId>
+            <ptul X="83" Y="293" />
+            <ptdr X="186" Y="417" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

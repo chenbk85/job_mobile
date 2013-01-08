@@ -1,0 +1,333 @@
+nTESTSERVER ,@#, D:\svn\lib\lib_mech\src\server\TestServer\TestCommon\excel ,@#, aq_table
+
+enum ,@#, EAttackType ,@#, 설명없음
+
+enumItem ,@#, NONE ,@#,  1  ,@#, ATK_NONE ,@#, 효과 없음
+enumItem ,@#, 일반 ,@#,  2  ,@#, ATK_NORMAL ,@#, 일반 공격
+enumItem ,@#, 밀기 ,@#,  3  ,@#, ATK_PUSH ,@#, 적을 뒤로 밀리게 한다.
+enumItem ,@#, 당기기 ,@#,  4  ,@#, ATK_PULL ,@#, 적을 끌어 당긴다.
+enumItem ,@#, 띄우기 ,@#,  5  ,@#, ATK_AERIAL ,@#, 적을 뛰운다
+enumItem ,@#, 날리기 ,@#,  6  ,@#, ATK_BLOW ,@#, 적을 날린다
+
+
+enum ,@#, EAvatarParts ,@#, 설명없음
+
+enumItem ,@#, 아바타 머리 ,@#,  1  ,@#, PART_VISUAL_HEAD ,@#, 아바타 장비
+enumItem ,@#, 아바타 얼굴 ,@#,  2  ,@#, PART_VISUAL_FACE ,@#, 
+enumItem ,@#, 아바타 어깨 ,@#,  3  ,@#, PART_VISUAL_SHOULDER ,@#, 
+enumItem ,@#, 아바타 바디 ,@#,  4  ,@#, PART_VISUAL_BODY ,@#, 
+enumItem ,@#, 아바타 손 ,@#,  5  ,@#, PART_VISUAL_HAND ,@#, 
+enumItem ,@#, 아바타 허리 ,@#,  6  ,@#, PART_VISUAL_WAIST ,@#, 
+enumItem ,@#, 아바타 다리 ,@#,  7  ,@#, PART_VISUAL_LEGS ,@#, 
+enumItem ,@#, 아바타 발 ,@#,  8  ,@#, PART_VISUAL_FEET ,@#, 
+enumItem ,@#, 아바타 등 ,@#,  9  ,@#, PART_VISUAL_BACK ,@#, 
+enumItem ,@#, 아바타 무기 오른손 ,@#,  10  ,@#, PART_WEAPON_RH ,@#, 무기 장비
+enumItem ,@#, 아바타 무기 왼손 ,@#,  11  ,@#, PART_WEAPON_LH ,@#, 
+enumItem ,@#, 아바타 무기 양손 ,@#,  12  ,@#, PART_WEAPON_2H ,@#, 
+enumItem ,@#, 아바타 장비 개수 ,@#,  13  ,@#, PART_VISUAL_COUNT ,@#, >> 아바타 장비 개수
+enumItem ,@#, 아바타 피부색 ,@#,  14  ,@#, PART_SKINCOLOR ,@#, 피부색
+enumItem ,@#, 장비 머리 ,@#,  15  ,@#, PART_EQUIP_HEAD ,@#, 기본 장비
+enumItem ,@#, 장비 어깨 ,@#,  16  ,@#, PART_EQUIP_SHOULDER ,@#, 
+enumItem ,@#, 장비 바디 ,@#,  17  ,@#, PART_EQUIP_BODY ,@#, 
+enumItem ,@#, 장비 허리 ,@#,  18  ,@#, PART_EQUIP_WAIST ,@#, 
+enumItem ,@#, 장비 다리 ,@#,  19  ,@#, PART_EQUIP_LEGS ,@#, 
+enumItem ,@#, 장비 발 ,@#,  20  ,@#, PART_EQUIP_FEET ,@#, 
+enumItem ,@#, 장비 목 ,@#,  21  ,@#, PART_EQUIP_NECK ,@#, 액세서리
+enumItem ,@#, 장비 손가락1 ,@#,  22  ,@#, PART_EQUIP_FINGER1 ,@#, 
+enumItem ,@#, 장비 손가라2 ,@#,  23  ,@#, PART_EQUIP_FINGER2 ,@#, 
+enumItem ,@#, 사용 안함 ,@#,  24  ,@#, PART_NONE ,@#, 
+
+
+enum ,@#, EAvatarSubclass ,@#, 설명없음
+
+enumItem ,@#, 사용안함 ,@#,  1  ,@#, ASC_NONE ,@#, 용병 하위 직업군
+enumItem ,@#, 광전사 ,@#,  2  ,@#, ASC_BERSERK ,@#, 
+enumItem ,@#, 마검사 ,@#,  3  ,@#, ASC_MAGIC_NIGHT ,@#, 
+enumItem ,@#, 수호기사 ,@#,  4  ,@#, ASC_PALADIN ,@#, 
+enumItem ,@#, 대마법사 ,@#,  5  ,@#, ASC_ELEMENTAL_MASTER ,@#, 마법사 하위 직업군
+enumItem ,@#, 영환도사 ,@#,  6  ,@#, ASC_EXORCIST ,@#, 
+enumItem ,@#, 소환사 ,@#,  7  ,@#, ASC_SUMMONER ,@#, 
+enumItem ,@#, 몽크 ,@#,  8  ,@#, ASC_MONK ,@#, 격투가 하위 직업군
+enumItem ,@#, 스트리트파이터 ,@#,  9  ,@#, ASC_STREET_FIGHTER ,@#, 
+enumItem ,@#, 오러 마스터 ,@#,  10  ,@#, ASC_AURA_MASTER ,@#, 
+
+
+enum ,@#, EDamageType ,@#, 설명없음
+
+enumItem ,@#, 물리뎀쥐 ,@#,  1  ,@#, DMG_PHYSIC ,@#, 물리데미지
+enumItem ,@#, 마법뎀쥐 ,@#,  2  ,@#, DMG_MAGIC ,@#, 매직데미지
+
+
+enum ,@#, EItemBind ,@#, 설명없음
+
+enumItem ,@#, 귀속 없음 ,@#,  1  ,@#, ITEM_BIND_NONE ,@#, 귀속 여부에 따른 분류
+enumItem ,@#, 착용 시 귀속 ,@#,  2  ,@#, ITEM_BIND_WHEN_EQUIPED ,@#, 
+enumItem ,@#, 획득 시 귀속 ,@#,  3  ,@#, ITEM_BIND_WHEN_ACQUIRED ,@#, 
+
+
+enum ,@#, EItemClass ,@#, 설명없음
+
+enumItem ,@#, 소모품 ,@#,  1  ,@#, IC_CONSUMABLE ,@#, 아이템 대 분류
+enumItem ,@#, 무기 ,@#,  2  ,@#, IC_WEAPON ,@#, 
+enumItem ,@#, 방어구 ,@#,  3  ,@#, IC_AMOR ,@#, 
+enumItem ,@#, 액세서리 ,@#,  4  ,@#, IC_ACCESSORY ,@#, 
+enumItem ,@#, 의상 ,@#,  5  ,@#, IC_COSTUME ,@#, 
+enumItem ,@#, 자원 ,@#,  6  ,@#, IC_RESOURCE ,@#, 
+enumItem ,@#, 퀘스트 ,@#,  7  ,@#, IC_QUEST ,@#, 
+enumItem ,@#, 기타 ,@#,  8  ,@#, IC_MISC ,@#, 
+
+
+enum ,@#, EItemGrade ,@#, 설명없음
+
+enumItem ,@#, 허름한 ,@#,  1  ,@#, ITEM_GRADE_POOR ,@#, GRAY
+enumItem ,@#, 일반 ,@#,  2  ,@#, ITEM_GRADE_NORMAL ,@#, WHITE
+enumItem ,@#, 매직 ,@#,  3  ,@#, ITEM_GRADE_MAGIC ,@#, BLUE
+enumItem ,@#, 세트 ,@#,  4  ,@#, ITEM_GRADE_SET ,@#, GREEN
+enumItem ,@#, 레어 ,@#,  5  ,@#, ITEM_GRADE_RARE ,@#, PURPLE
+enumItem ,@#, 유니크 ,@#,  6  ,@#, ITEM_GRADE_UNIQUE ,@#, GOLD
+enumItem ,@#, 인공물 ,@#,  7  ,@#, ITEM_GRADE_ARTIFACT ,@#, LIGHT_YELLOW
+
+
+enum ,@#, EItemQuality ,@#, 설명없음
+
+enumItem ,@#, NONE ,@#,  1  ,@#, ITEM_QUALITY_NONE ,@#, 아이템 품질에 따른 분류
+enumItem ,@#, 최하급 ,@#,  2  ,@#, ITEM_QUALITY_LOWEST ,@#, 
+enumItem ,@#, 하급 ,@#,  3  ,@#, ITEM_QUALITY_LOW ,@#, 최하급->최상급순서의 품질
+enumItem ,@#, 중급 ,@#,  4  ,@#, ITEM_QUALITY_INTERMEDIATE ,@#, 
+enumItem ,@#, 상급 ,@#,  5  ,@#, ITEM_QUALITY_HIGHER ,@#, 
+enumItem ,@#, 최상급 ,@#,  6  ,@#, ITEM_QUALITY_HIGHEST ,@#, 
+
+
+enum ,@#, EItemSubclass ,@#, 설명없음
+
+enumItem ,@#, 대겁 ,@#,  1  ,@#, ISC_WEAPON_BIGSWORD ,@#, 무기 아이템 소 분류
+enumItem ,@#, 마법검 ,@#,  2  ,@#, ISC_WEAPON_MAGICSWORD ,@#, 
+enumItem ,@#, 둔기 ,@#,  3  ,@#, ISC_WEAPON_MACE ,@#, 
+enumItem ,@#, 방패 ,@#,  4  ,@#, ISC_WEAPON_SHIELD ,@#, 
+enumItem ,@#, 스태프 ,@#,  5  ,@#, ISC_WEAPON_STAFF ,@#, 
+enumItem ,@#, 로브 ,@#,  6  ,@#, ISC_WEAPON_ROBE ,@#, 
+enumItem ,@#, 부적 ,@#,  7  ,@#, ISC_WEAPON_CHARM ,@#, 
+enumItem ,@#, 너클 ,@#,  8  ,@#, ISC_WEAPON_KNUCKLE ,@#, 
+enumItem ,@#, 건틀릿 ,@#,  9  ,@#, ISC_WEAPON_GAUNTLET ,@#, 
+enumItem ,@#, 마법 팔찌 ,@#,  10  ,@#, ISC_WEAPON_MAGICBRACELET ,@#, 
+enumItem ,@#, 무기 끝 ,@#,  11  ,@#, ISC_WEAPON_END ,@#, 
+enumItem ,@#, 장비 머리 ,@#,  12  ,@#, ISC_EQ_HEAD ,@#, 장비 아이템 소 분류
+enumItem ,@#, 장비 어깨 ,@#,  13  ,@#, ISC_EQ_SHOULDER ,@#, 
+enumItem ,@#, 장비 바디 ,@#,  14  ,@#, ISC_EQ_BODY ,@#, 
+enumItem ,@#, 장비 허리 ,@#,  15  ,@#, ISC_EQ_WAIST ,@#, 
+enumItem ,@#, 장비 다리 ,@#,  16  ,@#, ISC_EQ_LEGS ,@#, 
+enumItem ,@#, 장비 발 ,@#,  17  ,@#, ISC_EQ_FEET ,@#, 
+enumItem ,@#, 액세서리 목 ,@#,  18  ,@#, ISC_EQ_NECK ,@#, 액세서리 아이템 소 분류
+enumItem ,@#, 액세서리 손가락1 ,@#,  19  ,@#, ISC_EQ_FINGER1 ,@#, 
+enumItem ,@#, 액세서리 손가라2 ,@#,  20  ,@#, ISC_EQ_FINGER2 ,@#, 
+enumItem ,@#, 액세서리 끝 ,@#,  21  ,@#, ISC_EQ_END ,@#, 
+enumItem ,@#, 아바타 머리 ,@#,  22  ,@#, ISC_AV_HEAD ,@#, 파츠 아이템 소 분류
+enumItem ,@#, 아바타 얼굴 ,@#,  23  ,@#, ISC_AV_FACE ,@#, 
+enumItem ,@#, 아바타 어깨 ,@#,  24  ,@#, ISC_AV_SHOULDER ,@#, 
+enumItem ,@#, 아바타 바디 ,@#,  25  ,@#, ISC_AV_BODY ,@#, 
+enumItem ,@#, 아바타 손 ,@#,  26  ,@#, ISC_AV_HANDS ,@#, 
+enumItem ,@#, 아바타 허리 ,@#,  27  ,@#, ISC_AV_WAIST ,@#, 
+enumItem ,@#, 아바타 다리 ,@#,  28  ,@#, ISC_AV_LEGS ,@#, 
+enumItem ,@#, 아바타 발 ,@#,  29  ,@#, ISC_AV_FEET ,@#, 
+enumItem ,@#, 아바타 등 ,@#,  30  ,@#, ISC_AV_BACK ,@#, 
+enumItem ,@#, 아바타 이펙트 ,@#,  31  ,@#, ISC_AV_EFFECT ,@#, 
+enumItem ,@#, 아바타 피부색 ,@#,  32  ,@#, ISC_AV_SKINCOLOR ,@#, 
+enumItem ,@#, 아바타 끝 ,@#,  33  ,@#, ISC_AV_END ,@#, 
+
+
+enum ,@#, EMechanic ,@#, 설명없음
+
+enumItem ,@#, 이상 없음 ,@#,  1  ,@#, MECHANIC_NONE ,@#, 상태 변화에 따른 분류
+enumItem ,@#, 빙결 상태 ,@#,  2  ,@#, MECHANIC_FREEZE ,@#, 빙결상태시 행동이 불가능하며 적의 공격에 데미지를 입는다.
+enumItem ,@#, 화염 상태 ,@#,  3  ,@#, MECHANIC_BLAZE ,@#, 화염 상태시 지속 시간동안 데미지를 지속적으로 입는다.
+enumItem ,@#, 슬로우 상태 ,@#,  4  ,@#, MECHANIC_SLOW ,@#, 슬로우 상태시 행동속도가 일정확률로 떨어지게 된다.
+enumItem ,@#, 실명 상태 ,@#,  5  ,@#, MECHANIC_BLIND ,@#, 실명 상태시 일정 부분을 제외하고 화면이 보이지 않는다.
+enumItem ,@#, 미끄러짐 상태 ,@#,  6  ,@#, MECHANIC_SLIDE ,@#, 미끄러짐 상태시 이동키입력과 반대 방향으로 이동하게 된다.
+enumItem ,@#, 석화 상태 ,@#,  7  ,@#, MECHANIC_STONE ,@#, 석화 상태시 행동이 불가능하며 적의 공격에 데미지를 입는다.
+enumItem ,@#, 독 상태 ,@#,  8  ,@#, MECHANIC_POISON ,@#, 독 상태시 지속 시간동안 데미지를 지속적으로 입는다.
+
+
+enum ,@#, EModifier ,@#, 설명없음
+
+enumItem ,@#, NONE ,@#,  1  ,@#, MOD_NONE ,@#, 아바타에 능력치의 수정자 리스트이다.
+enumItem ,@#, HP ,@#,  2  ,@#, MOD_HP ,@#, add, pct
+enumItem ,@#, HP MAX ,@#,  3  ,@#, MOD_HP_MAX ,@#, add, pct
+enumItem ,@#, HP REGEN ,@#,  4  ,@#, MOD_HP_REGEN ,@#, add, pct
+enumItem ,@#, MP 회복 ,@#,  5  ,@#, MOD_MP ,@#, add, pct
+enumItem ,@#, MP MAX ,@#,  6  ,@#, MOD_MP_MAX ,@#, add, pct
+enumItem ,@#, MP_REGEN ,@#,  7  ,@#, MOD_MP_REGEN ,@#, add, pct
+enumItem ,@#, 모든 상태 ,@#,  8  ,@#, MOD_STAT_ALL ,@#, add, pct
+enumItem ,@#, 힘 ,@#,  9  ,@#, MOD_STAT_STR ,@#, add, pct
+enumItem ,@#, 체력 ,@#,  10  ,@#, MOD_STAT_STA ,@#, add, pct
+enumItem ,@#, 민첩 ,@#,  11  ,@#, MOD_STAT_AGI ,@#, add, pct
+enumItem ,@#, 지능 ,@#,  12  ,@#, MOD_STAT_INT ,@#, add, pct
+enumItem ,@#, 정신 ,@#,  13  ,@#, MOD_STAT_MEN ,@#, add, pct
+enumItem ,@#, 모든 저항력 ,@#,  14  ,@#, MOD_RESIST_ALL ,@#, pct
+enumItem ,@#, 수속성저항력 ,@#,  15  ,@#, MOD_RESIST_WATER ,@#, pct
+enumItem ,@#, 화속성저항력 ,@#,  16  ,@#, MOD_RESIST_FIRE ,@#, pct
+enumItem ,@#, 명속성저항력 ,@#,  17  ,@#, MOD_RESIST_LIGHT ,@#, pct
+enumItem ,@#, 암속성저항력 ,@#,  18  ,@#, MOD_RESIST_DARK ,@#, pct
+enumItem ,@#, 물리공격력 ,@#,  19  ,@#, MOD_PHYSIC_ATK ,@#, pct
+enumItem ,@#, 물리방어력 ,@#,  20  ,@#, MOD_PHYSIC_DEF ,@#, pct
+enumItem ,@#, 물리크리티컬확률 ,@#,  21  ,@#, MOD_PHYSIC_CRIT_CHANCE ,@#, pct
+enumItem ,@#, 마법공격력 ,@#,  22  ,@#, MOD_MAGIC_ATK ,@#, pct
+enumItem ,@#, 마법방어력 ,@#,  23  ,@#, MOD_MAGIC_DEF ,@#, pct
+enumItem ,@#, 마법크리티컬확률 ,@#,  24  ,@#, MOD_MAGIC_CRIT_CHANCE ,@#, pct
+enumItem ,@#, 공격속도 ,@#,  25  ,@#, MOD_ATTACK_SPEED ,@#, pct
+enumItem ,@#, 캐스팅속도 ,@#,  26  ,@#, MOD_CAST_SPEED ,@#, pct
+enumItem ,@#, 이동속도 ,@#,  27  ,@#, MOD_MOVE_SPEED ,@#, pct
+enumItem ,@#, 점프력 ,@#,  28  ,@#, MOD_JUMP_FACTOR ,@#, pct
+enumItem ,@#, 최대MOD ,@#,  29  ,@#, MOD_MAX ,@#, 
+
+
+enum ,@#, EModValueType ,@#, 설명없음
+
+enumItem ,@#, 기본값 ,@#,  1  ,@#, MODVALUE_BASE ,@#, 
+enumItem ,@#, ADD ,@#,  2  ,@#, MODVALUE_ADD ,@#, 
+enumItem ,@#, PERCENTAGE ,@#,  3  ,@#, MODVALUE_PCT ,@#, 
+enumItem ,@#, HP REGEN ,@#,  4  ,@#, MODVALUE_MAX ,@#, 
+
+
+enum ,@#, ESkillCastType ,@#, 설명없음
+
+enumItem ,@#, 즉시 ,@#,  1  ,@#, CAST_INSTANT ,@#, 사용 즉시 적용한다.
+enumItem ,@#, 캐스팅 ,@#,  2  ,@#, CAST_CASTING ,@#, 시전동작후 적용한다.
+enumItem ,@#, 차징 ,@#,  3  ,@#, CAST_CHARGING ,@#, 기를 모은후 적용된다.
+enumItem ,@#, 위치지정 ,@#,  4  ,@#, CAST_LOCATING ,@#, 위치를 지정한후 적용한다.
+enumItem ,@#, 대상지정 ,@#,  5  ,@#, CAST_TARGETING ,@#, 대상을 지정하고 적용한다.
+
+
+enum ,@#, ESkillType ,@#, 설명없음
+
+enumItem ,@#, ACTIVE ,@#,  1  ,@#, SKILL_ACTIVE ,@#, 액티브스킬
+enumItem ,@#, PASSIVE ,@#,  2  ,@#, SKILL_PASSIVE ,@#, 패시브스킬
+
+
+enum ,@#, ETarget ,@#, 설명없음
+
+enumItem ,@#, NONE ,@#,  1  ,@#, TARGET_NONE ,@#, 
+enumItem ,@#, 본인 ,@#,  2  ,@#, TARGET_SELF ,@#, 본인에게 적용한다.
+enumItem ,@#, 파티 개인 ,@#,  3  ,@#, TARGET_MEMBER ,@#, 파티 그룹중 개인에게 적용한다
+enumItem ,@#, 파티 그룹 ,@#,  4  ,@#, TARGET_GROUP ,@#, 파티 그룹에게 적용한다
+enumItem ,@#, 적 ,@#,  5  ,@#, TARGET_ENEMY ,@#, 몹/오브젝트/트랩에 적용한다. PVP시 다른팀은 MOB 으로 분류한다.
+
+
+Sys ,@#, Sys_Avatar ,@#, 설명없음
+
+SysItem ,@#, 아바타 ID ,@#, asid ,@#, Sys_Avatar_id_t ,@#,  ,@#,  ,@#, PK ,@#,  ,@#, 아바타 sid
+SysItem ,@#, 아바타 이름 ,@#, name ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 아바타 이름
+SysItem ,@#, 아바타 상위직업 ,@#, baseclass ,@#, EAvatarClass ,@#,  ,@#, EAvatarClass ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 아바타 하위직업 ,@#, subclass ,@#, EAvatarSubclass ,@#,  ,@#, EAvatarSubclass ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, HP ,@#, hp_max ,@#, int32 ,@#,  0  ,@#,  ,@#,  ,@#,  ,@#, default value
+SysItem ,@#, MP ,@#, mp_max ,@#, int32 ,@#,  0  ,@#,  ,@#,  ,@#,  ,@#, default value
+SysItem ,@#, HP회복 속도 ,@#, hp_regen ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 1분당 회복되는 hp
+SysItem ,@#, MP회복 속도 ,@#, mp_regen ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 1분당 회복되는 mp
+SysItem ,@#, 힘 ,@#, st_str ,@#, int32 ,@#,  0  ,@#,  ,@#,  ,@#,  ,@#, default value
+SysItem ,@#, 민첩 ,@#, st_sta ,@#, int32 ,@#,  0  ,@#,  ,@#,  ,@#,  ,@#, default value
+SysItem ,@#, 체력 ,@#, st_agi ,@#, int32 ,@#,  0  ,@#,  ,@#,  ,@#,  ,@#, default value
+SysItem ,@#, 지능 ,@#, st_int ,@#, int32 ,@#,  0  ,@#,  ,@#,  ,@#,  ,@#, default value
+SysItem ,@#, 정신력 ,@#, st_men ,@#, int32 ,@#,  0  ,@#,  ,@#,  ,@#,  ,@#, default value
+SysItem ,@#, 띄워지는타입 ,@#, reation_aerial_type ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 날려지는타입 ,@#, reation_blow_type ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 밀려지는타입 ,@#, reation_push_type ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 물리 공격력 ,@#, physic_atk ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, default value
+SysItem ,@#, 물리 방어력 ,@#, physic_def ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, default value
+SysItem ,@#, 물리 크리티컬 확률 ,@#, physic_crit ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, default value
+SysItem ,@#, 마법 공격력 ,@#, magic_atk ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, default value
+SysItem ,@#, 마법 방어력 ,@#, magic_def ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, default value
+SysItem ,@#, 마법 크리티컬 확률 ,@#, magic_crit ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, default value
+SysItem ,@#, 공격 속도 ,@#, attack_speed ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, default value
+SysItem ,@#, 캐스팅 속도 ,@#, casting_speed ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, default value
+SysItem ,@#, 이동속도 ,@#, move_speed ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 실수와 %로 표시
+SysItem ,@#, 대쉬속도 ,@#, dash_speed ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 실수와 %로 표시
+SysItem ,@#, 적중 ,@#, hit_chance ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 실수와 %로 표시
+SysItem ,@#, 회피 ,@#, avoid_chance ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 실수와 %로 표시
+SysItem ,@#, 점프력 ,@#, jumpFactor ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 실수와 %로 표시
+SysItem ,@#, 화속성 저항력 ,@#, resist_fire ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 실수와 %로 표시
+SysItem ,@#, 수속성 저항력 ,@#, resist_water ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 실수와 %로 표시
+SysItem ,@#, 명속성 저항력 ,@#, resist_light ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 실수와 %로 표시
+SysItem ,@#, 암속성 저항력 ,@#, resist_dark ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 실수와 %로 표시
+SysItem ,@#, 콤보공격1 ,@#, combo1 ,@#, Sys_Skill_id_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, skill id
+SysItem ,@#, 콤보공격2 ,@#, combo2 ,@#, Sys_Skill_id_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, skill id
+SysItem ,@#, 콤보공격3 ,@#, combo3 ,@#, Sys_Skill_id_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, skill id
+SysItem ,@#, 콤보공격4 ,@#, combo4 ,@#, Sys_Skill_id_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, skill id
+SysItem ,@#, 콤보공격5 ,@#, combo5 ,@#, Sys_Skill_id_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, skill id
+SysItem ,@#, 점프공격 ,@#, jump_atk ,@#, Sys_Skill_id_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, skill id
+SysItem ,@#, 대쉬공격 ,@#, dash_atk ,@#, Sys_Skill_id_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, skill id
+SysItem ,@#, 양손콤보공격1 ,@#, combo1_2h ,@#, Sys_Skill_id_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, skill id
+SysItem ,@#, 양손콤보공격2 ,@#, combo2_2h ,@#, Sys_Skill_id_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, skill id
+SysItem ,@#, 양손콤보공격3 ,@#, combo3_3h ,@#, Sys_Skill_id_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, skill id
+SysItem ,@#, 양손콤보공격4 ,@#, combo4_2h ,@#, Sys_Skill_id_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, skill id
+SysItem ,@#, 양손콤보공격5 ,@#, combo5_2h ,@#, Sys_Skill_id_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, skill id
+SysItem ,@#, 양손점프공격 ,@#, jump_atk_2h ,@#, Sys_Skill_id_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, skill id
+SysItem ,@#, 양손대쉬공격 ,@#, dash_atk_2h ,@#, Sys_Skill_id_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, skill id
+SysItem ,@#, 아바타 xml 파일 이름 ,@#, xmlname ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, xml에서 불러 오는 아바타 옵션 이름
+SysItem ,@#, 파일 이름 및 경로 ,@#, fkmname ,@#, tname256_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 파일의 이름 및 경로(kfm)
+
+
+Sys ,@#, Sys_Item ,@#, 설명없음
+
+SysItem ,@#, 아이템 ID ,@#, isid ,@#, Sys_Item_id_t ,@#,  ,@#,  ,@#, PK ,@#,  ,@#, 아이템의 sid
+SysItem ,@#, 아이템 이름 ,@#, name ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 아이템의 name
+SysItem ,@#, 아이템 대분류 ,@#, category ,@#, EItemClass ,@#,  ,@#, EItemClass ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 아이템 소분류 ,@#, subcategory ,@#, EItemSubclass ,@#,  ,@#, EItemSubclass ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 아이템 등급 ,@#, grade ,@#, EItemGrade ,@#,  ,@#, EItemGrade ,@#,  ,@#,  ,@#, 일반_ 매직_ 세트_ 레어_ 유니크_ 에픽
+SysItem ,@#, 아이템 품질 ,@#, quality ,@#, EItemQuality ,@#,  ,@#, EItemQuality ,@#,  ,@#,  ,@#, 최하급_ 하급_ 중급_ 상급_ 최상급
+SysItem ,@#, 아이템 귀속 여부 ,@#, bind_type ,@#, EItemBind ,@#,  ,@#, EItemBind ,@#,  ,@#,  ,@#, 귀속 없음_ 획득 시 귀속_ 착용 시 귀속
+SysItem ,@#, 아이템 착용 부위 ,@#, part ,@#, EAvatarParts ,@#,  ,@#, EAvatarParts ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 아이팀 사용 상위직업 ,@#, reqClass ,@#, EAvatarClass ,@#,  ,@#, EAvatarClass ,@#,  ,@#,  ,@#, 상위 직업_모든 직업 사용으로 분류
+SysItem ,@#, 아이템 사용 하위직업 ,@#, reqSubclass ,@#, EAvatarSubclass ,@#,  ,@#, EAvatarSubclass ,@#,  ,@#,  ,@#, 하위 직업별 분류
+SysItem ,@#, 아이템 최대 소지 개수 ,@#, maxCount ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 아이템을 소지할수 있는 최대 개수
+SysItem ,@#, 아이템 최대 스택 수량 ,@#, stackCount ,@#, int32 ,@#,  1  ,@#,  99  ,@#,  ,@#,  ,@#, 인벤토리 한칸에 최대 수량_ 최대 99개
+SysItem ,@#, 아이템 구입 가격 ,@#, buyPrice ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 상점 구입 가격
+SysItem ,@#, 아이템 판매 가격 ,@#, sellPrice ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 상점 판매 가격
+SysItem ,@#, 아이템 수리 가격 ,@#, repairPrice ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 내구도 x 수리 가격
+SysItem ,@#, 아이템 캐쉬 가격 ,@#, reqCash ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 캐쉬 구입 가격
+SysItem ,@#, 아이템 사용 레벨 ,@#, reqLevel ,@#, int32 ,@#,  1  ,@#,  60  ,@#,  ,@#,  ,@#, 아이템 사용 가능 레벨
+SysItem ,@#, 아이템 내구도 ,@#, durability ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 최고 내구도 표시
+SysItem ,@#, 아이템 활성 제한 시간(사용가능기간) ,@#, activeTime ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 기간제 아이템의 사용 기간_ 분(Min)단위
+SysItem ,@#, 아이템 사용시 적용 스킬 ,@#, trigger_skill ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 아이템 사용시 적용될 스킬
+SysItem ,@#, 아이템 아이콘 ,@#, iconname ,@#, tname256_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 아이콘 파일(dds)
+SysItem ,@#, 아이템 드랍 오브젝트 ,@#, delegate ,@#, tname128_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 아이템 드랍시 떨어지는 오브젝트
+SysItem ,@#, 아이템 리소스 파일(착용시 오브젝트) ,@#, filename ,@#, tname256_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 파일의 이름및 경로(nif)
+SysItem ,@#, 아이템 옵션 xml 파일 이름 ,@#, xmlname ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, xml에서 불러오는 아이템 옵션 이름
+SysItem ,@#, 아이템 팝업 설명창 ,@#, description ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, Sys_LocaleText.csv 게임 화면에 출력되는 아이템 설명
+
+
+Sys ,@#, Sys_Skill ,@#, 설명없음
+
+SysItem ,@#, 스킬 ID ,@#, ssid ,@#, Sys_Skill_id_t ,@#,  ,@#,  ,@#, PK ,@#,  ,@#, 스킬의 sid
+SysItem ,@#, 스킬 이름 ,@#, name ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 스킬의 name
+SysItem ,@#, 스킬 레벨 ,@#, level ,@#, skill_level_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 스킬 레벨
+SysItem ,@#, 스킬 최대 레벨 ,@#, maxLevel ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 스킬을 배울수 있는 최대 레벨
+SysItem ,@#, 스킬 배울수 있는 아바타레벨 ,@#, reqLevel ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스킬 획득 시 필요 GOLD  ,@#, reqGold ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스킬 레벨업시 필요 SP ,@#, reqSP ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스킬 사용시 필요 아이템 ,@#, reqItem ,@#, Sys_Item_id_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스킬 사용시 소모되는 hp ,@#, costHP ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스킬 사용시 소모되는 mp ,@#, costMP ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스킬 사용시 소모되는 아이템 ,@#, costItem ,@#, Sys_Item_id_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스킬 타입 ,@#, type ,@#, ESkillType ,@#,  ,@#, ESkillType ,@#,  ,@#,  ,@#, 즉시/주기적/지속적
+SysItem ,@#, 스킬 캐스팅 타입 ,@#, castingType ,@#, ESkillCastType ,@#,  ,@#, ESkillCastType ,@#,  ,@#,  ,@#, 즉시/지정/캐스팅
+SysItem ,@#, 스킬 캐스팅애니메이션 ,@#, castingAnim ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스킬 시전 시간 ,@#, castingTime ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 단위 : 초
+SysItem ,@#, 차징 최대 시간 ,@#, chargingTime ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 차징 데미지증가력 ,@#, chargingMutiplier ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 차징 성공하면 물리 및 기본 데미지에 곱해준다.
+SysItem ,@#, 스킬 재사용 시간 ,@#, coolTime ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 단위 : 초
+SysItem ,@#, 스킬 애니메이션 ,@#, skillAnim ,@#, int32 ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스킬 적용대상 ,@#, target ,@#, ETarget ,@#,  ,@#, ETarget ,@#,  ,@#,  ,@#, 본인/그룹/적
+SysItem ,@#, 스킬 공격 리액션 타입 ,@#, attackType ,@#, EAttackType ,@#,  ,@#, EAttackType ,@#,  ,@#,  ,@#, 스킬 공격 타입
+SysItem ,@#, 공격 리액션 비율 ,@#, attackRate ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 스킬 공격 타입 수치
+SysItem ,@#, 스킬 명중률 ,@#, hit_chance ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 아바타 수치와 + 하여 계산
+SysItem ,@#, 스킬 크리티컬 확률 ,@#, critical_chance ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 아바타 수치와 + 하여 계산
+SysItem ,@#, 스킬 효과 범위 ,@#, effectRange ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 스킬 효과 적용 범위(단위m)
+SysItem ,@#, 효과 적용 시간 ,@#, effectDuration ,@#, float ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 효과 ,@#, effect ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 스킬 캐스팅FX ,@#, castingFX ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스킬 기본 FX ,@#, skillFX ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스틸 차징 FX ,@#, chargingFX ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 
+SysItem ,@#, 스킬 충돌 FX ,@#, collisionFX ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 스킬 타겟 FX ,@#, targetFX ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, NULL
+SysItem ,@#, 설명창 ,@#, description ,@#, tname256_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, Sys_LocaleText.csv 게임 화면에 출력되는 스킬 설명
+
+

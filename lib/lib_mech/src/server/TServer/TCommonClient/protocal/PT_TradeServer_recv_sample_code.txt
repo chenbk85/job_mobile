@@ -1,0 +1,93 @@
+
+
+
+// 다음코드는 스커럴에서 사용하기위한 샘플 코드
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_T_HELLO(pSock, pk ,pFromIP)
+{
+	local packet=S_T_HELLO(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_SS2T_ONLINE(pSock, pk ,pFromIP)
+{
+	local packet=S_SS2T_ONLINE(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_T_SERVERINFO_ACK(pSock, pk ,pFromIP)
+{
+	local packet=S_T_SERVERINFO_ACK(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_SS2T_SERVERINFO_ACK(pSock, pk ,pFromIP)
+{
+	local packet=S_SS2T_SERVERINFO_ACK(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_T_ECHO(pSock, pk ,pFromIP)
+{
+	local packet=S_T_ECHO(); packet.ReadPacket(pSock,pk);
+
+}
+
+//jIPacketSocket_IOCP* pS,jPacket_Base* pk,jIP_Address* pFromIP
+function jNET_EVENT_T_ERROR(pSock, pk ,pFromIP)
+{
+	local packet=S_T_ERROR(); packet.ReadPacket(pSock,pk);
+
+}
+
+
+
+// 다음코드는 C++에서 사용하기위한 샘플 코드
+
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(T_HELLO)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(T_HELLO);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(SS2T_ONLINE)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(SS2T_ONLINE);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(T_SERVERINFO_ACK)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(T_SERVERINFO_ACK);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(SS2T_SERVERINFO_ACK)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(SS2T_SERVERINFO_ACK);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(T_ECHO)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(T_ECHO);
+
+}
+//jIPacketSocket_IOCP* pS,BYTE *pReadBuff, jPacketLen_t dwLen, void* pPlugIn, jIP_Address* pFromIP
+jNET_EVENT_RECEIVER(T_ERROR)
+{
+	// PlugIn_UNKOWN*p , BYTE buf[1024] , TestUser* pUser
+	READ_PACKET(T_ERROR);
+
+}

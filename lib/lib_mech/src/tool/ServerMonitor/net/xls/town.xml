@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<World>
+  <town_list>
+    <핸돈마이어>
+      <!--마을 이름-->
+      <Sound>
+        <BGM1>bgm1.mp3</BGM1>
+        <BGM2>bgm2.mp3</BGM2>
+      </Sound>
+      <!--배경음악이며 bgm1.mp3, bgm2.mp3가 반복 재생됨-->
+      <dungeon_gate>
+      	<!-- dun_gate1이라는 이름을 dungeon_gate_list에서 찾아으면 된다. -->
+        <dun_gate1/>
+        <dun_gate2/>
+      </dungeon_gate>
+      <!--Town_1에 속해 있는 던전 게이트 리스트-->
+      <loading_img>
+        <loading_img>town_1_load_img.swf</loading_img>
+      </loading_img>
+      <!--Town_1의 마을 로딩 이미지-->
+      <local_map>
+      	<local_map1>local_map1.swf</local_map1>
+      	<local_map2>local_map2.swf</local_map2>
+      </local_map>
+      <!--다른 마을로 이동할때 열리는 지역맵 리스트-->
+    </핸돈마이어>
+    <웨스트코스트>
+    </웨스트코스트>
+  </town_list>
+  <local_map_list>
+  	<local_map1>
+  		<핸돈마이어/>
+  		<웨스트코스트/>
+  	</local_map1>
+  </local_map_list>
+  <dungeon_gate_list>
+    <dun_gate1 gui="dun_gate1.swf">
+      <!--던전 게이트 이름-->
+      <dungeon_list>
+        <로리엔 avatar_level="3" bg_sound="dun_bgm.mp3" LOADING_GUI="dun_loading_img1.swf">
+          <!--해당 던전에 아바타 입장 레벨과, 사운드, 로딩 이미지를 표시-->
+          <stage_list PATH="로리엔_dun_stage" />
+          <!-- 로리엔_dun_stage 폴더 안의 stage파일리스트중 랜덥하게 던전이 열림-->
+        </로리엔>
+        <로리엔_안쪽 avatar_level="5" bg_sound="dun_bgm2.mp3" LOADING_GUI="dun_loading_img2.swf">
+          <stage_list PATH="로리엔_안쪽_dun_stagetype_1" />
+        </로리엔_안쪽>
+      </dungeon_list>
+      <!--던전 리스트-->
+    </dun_gate1>
+    <dun_gate2 gui="dun_gate2.swf">
+      <dungeon_list>
+        <설산 avatar_level="10" bg_sound="dun_bgm3.mp3" LOADING_GUI="dun_loading_img2.swf">
+          <stage_list PATH="설산_dun_stage" />
+        </설산>
+      </dungeon_list>
+    </dun_gate2>
+  </dungeon_gate_list>
+</World>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<World mapfile="gui/map/worldmap.swf" >
+	<TownList>
+		<Town_A stgfile="data/map/town/aaaa.stg" soundfile="sound/bgm/town.mp3">
+			<LoadingImage>
+				<Image file="a1.dds" />
+				<Image file="a2.dds" />
+			</LoadingImage>
+			<!-- World map 은 1개 이고, 
+				내부의 버튼을 활성화 비활성화 하는 것으로 갈 수 있는지 없는지  에 대한 판단을 한다. -->
+			<Town_Gate>
+				<Gate_A1>
+					<Town_B />
+				</Gate_A1>
+				<Gate_A2>
+					<Town_B />
+					<Town_C />
+				</Gate_A2>
+			</Town_Gate>
+			<Dungeon_Gate>
+				<Gate_AA1 mapfile="gui/map/aa1.swf">
+					<DUNGEON_A />
+				</Gate_AA1>
+				<Gate_AA2 mapfile="gui/map/aa2.swf">
+					<DUNGEON_B />
+					<DUNGEON_C />
+				</Gate_AA2>
+			</Dungeon_Gate>
+		</Town>
+
+		<Town_B stgfile="data/map/town/bbbb.stg"  soundfile="sound/bgm/town.mp3">
+			<!-- ... -->
+		</Town>
+	</TownList>
+
+	<DungeonList>
+		<DUNGEON_A soundfile="sound/bgm/dungeon.mp3" requiredLevel="1" >
+			<LoadingImages>
+				<Image file="gui/loadsimages/x1.dds" />
+				<Image file="gui/loadsimages/x2.dds" />
+			</LoadingImages>
+			<StageList>
+				<Stage file="data/map/area/dungeon/x1.stg" />
+				<Stage file="data/map/area/dungeon/x2.stg" />
+			</StageList>
+		</DUNGEON_A>
+
+		<Dungeon_Y>
+			<!-- ... -->
+		</Dungeon_Y>
+	</DungeonList>
+</World>

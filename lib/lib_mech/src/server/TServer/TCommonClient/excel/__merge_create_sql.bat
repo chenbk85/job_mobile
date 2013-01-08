@@ -1,0 +1,1 @@
+copy sql\Create*.sql all_create.sql

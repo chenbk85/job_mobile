@@ -1,0 +1,7 @@
+#ifndef MESSAGES_H
+#define MESSAGES_H
+
+#define WM_NOTIFY_FIND_REPLACE (WM_USER + 1)
+#define WM_NOTIFY_FILE_CHANGE (WM_USER + 2)
+
+#endif

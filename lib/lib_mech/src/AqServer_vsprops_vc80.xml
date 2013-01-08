@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="mech C/C++"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalOptions="/w44302 /w44286"
+		AdditionalIncludeDirectories=".;$(LIB)\dxsdk\include;$(LIB)\dxsdk\DirectShow\include;$(SRC)\base;$(LIB)\boost;$(LIB)\wtl80\include;$(LIB)\XT12\source;$(SRC)\share;$(SRC)\server\AqServer\AqCommon\;$(LIB)\boost\boost-1_38;$(LIB_Y)\XT12\source"
+		ForceConformanceInForLoopScope="true"
+		PreprocessorDefinitions="_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS"
+		RuntimeTypeInfo="false"
+		WarningLevel="3"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalDependencies="imm32.lib winmm.lib Ws2_32.lib"
+		AdditionalLibraryDirectories="$(LIB)\dxsdk\lib\x86;$(LIB)\dxsdk\DirectShow\lib\x86;$(BOOST)\lib\windows\$(PlatformName);$(LIB_OUT);$(VCInstallDir)PlatformSDK\lib;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(VCInstallDir)atlmfc\lib\i386;$(FrameworkSDKDir)lib;$(VSInstallDir);$(VSInstallDir)lib;C:\Program Files\Microsoft DirectX SDK (November 2008)\Lib\x86"
+	/>
+  <UserMacro
+		Name="SRC"
+		Value="$(SolutionDir).."
+		InheritsFromParent="true"
+		Delimiter=";"
+		PerformEnvironmentSet="true"
+	/>
+	<UserMacro
+		Name="LIB"
+		Value="$(SRC)/../lib"
+		InheritsFromParent="true"
+		Delimiter=";"
+		PerformEnvironmentSet="true"
+	/>
+  <UserMacro
+  Name="LIB_Y"
+  Value="y:\"
+  InheritsFromParent="true"
+  Delimiter=";"
+  PerformEnvironmentSet="true"
+	/>
+  <UserMacro
+		Name="SVN"
+		Value="$(SolutionDir)..\..\..\..\"
+		InheritsFromParent="true"
+		Delimiter=";"
+		PerformEnvironmentSet="true"
+	/>
+  <UserMacro
+		Name="LIB_OUT"
+		Value="$(LIB)\mech_rs\$(ConfigurationName)_$(PlatformName)"
+		InheritsFromParent="true"
+		Delimiter=";"
+		PerformEnvironmentSet="true"
+	/>
+  <UserMacro
+		Name="BIN"
+		Value="$(SRC)\..\bin\client\$(ConfigurationName)_$(PlatformName)"
+		InheritsFromParent="true"
+		Delimiter=";"
+		PerformEnvironmentSet="true"
+	/>
+  <UserMacro
+		Name="SERVER_BIN"
+		Value="$(BIN)\..\server\bin\$(ConfigurationName)_$(PlatformName)"
+		InheritsFromParent="true"
+		Delimiter=";"
+		PerformEnvironmentSet="true"
+	/>
+  <UserMacro
+		Name="OUT"
+		Value="o:\mech_rs\AqServer\$(ProjectName)\$(ConfigurationName)_$(PlatformName)"
+		InheritsFromParent="true"
+		Delimiter=";"
+		PerformEnvironmentSet="true"
+	/>
+	
+</VisualStudioPropertySheet>

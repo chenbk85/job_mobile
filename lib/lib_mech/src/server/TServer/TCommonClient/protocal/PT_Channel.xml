@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<PROTOCAL HEADER="ChannelServer" VERSION="2500" i_DebugPrint="3" b_jxDEFINE="true" TAG="CH">
+	<!-- CODE에서 개행문자 지원안됨. anpersent # x 0 A ; 를 사용할것-->
+	<CODE TYPE="ENUM_FILE">../my_PT_TServer.h</CODE>
+	<STRUCT_LIST/>
+	<PROTOCAL_LIST>
+		<CH_ECHO USD="ch_01_01_01_chat.usd">
+			<msg TYPE="tname256_t"/>
+			<type TYPE="uint8"/>
+		</CH_ECHO>
+		<X2CH_CHAT USD="ch_01_01_01_chat.usd">
+			<msg TYPE="wname128_t"/>
+			<type TYPE="uint8"/>
+			<id TYPE="wstring" i_Length="-1"/>
+			<pid TYPE="player_id_t" i_Length="-1"/>
+		</X2CH_CHAT>
+		<CH2X_CHAT USD="ch_01_01_01_chat.usd">
+			<msg TYPE="wname128_t"/>
+			<type TYPE="uint8"/>
+		</CH2X_CHAT>
+		<X2CH_USER_LOGIN_CHANNEL USD="\ch_01_01_04_select_castle.usd">
+			<pid TYPE="player_id_t"/>
+			<id TYPE="wname64_t"/>
+		</X2CH_USER_LOGIN_CHANNEL>
+		<CH2X_NEW_TOWN_OK USD="ch_01_01_04_select_castle.usd">
+			<index TYPE="channelid_t"/>
+			<town TYPE="Use_Town"/>
+		</CH2X_NEW_TOWN_OK>
+		<X2CH_NEW_TOWN USD="ch_01_01_05_town_select.usd">
+			<csid TYPE="Sys_Castle_id_t"/>
+			<tpsid TYPE="Sys_TownPos_id_t"/>
+			<name TYPE="wname32_t"/>
+		</X2CH_NEW_TOWN>
+		<CH2X_SELECT_CASTLE/>
+		<X2CH_TOWN_SELECT USD="\ch_01_01_05_town_select.usd">
+			<index TYPE="channelid_t"/>
+		</X2CH_TOWN_SELECT>
+		<X2CH_TOWN_DELETE USD="\ch_01_01_05_town_select.usd">
+			<index TYPE="channelid_t"/>
+		</X2CH_TOWN_DELETE>
+		<CH2X_TOWN_DELETE_OK USD="\ch_01_01_05_town_select.usd">
+			<index TYPE="channelid_t"/>
+		</CH2X_TOWN_DELETE_OK>
+		<CH2X_TOWN_SELECT_RESULT USD="\ch_01_01_05_town_select.usd">
+			<channelNo TYPE="channelid_t"/>
+			<e TYPE="jError"/>
+		</CH2X_TOWN_SELECT_RESULT>
+		<CH2X_CREATE_NEW_TOWN/>
+		<X2CH_USER_EXIT/>
+		<CH2X_USER_EXIT/>
+		<X2CH_GOTO_CASTLE_MAP USD="\ch_01_02_05_goto.usd">
+			<channelNo TYPE="uint8"/>
+		</X2CH_GOTO_CASTLE_MAP>
+		<CH2X_GOTO_CASTLE_MAP USD="ch_01_02_05_goto.usd" HELP="반경 이내의 마을정보를미리 보냄">
+			<channelNo TYPE="uint8"/>
+			<castle_map_info TYPE="jIE*"/>
+		</CH2X_GOTO_CASTLE_MAP>
+		<X2CH_GOTO_WORLD_MAP USD="\ch_01_02_05_goto.usd">
+			<channelNo TYPE="uint8"/>
+		</X2CH_GOTO_WORLD_MAP>
+		<CH2X_GOTO_WORLD_MAP USD="ch_01_02_05_goto.usd" HELP="반경이내의 성정보를 보냄">
+			<channelNo TYPE="uint8"/>
+			<world_map_info TYPE="jIE*"/>
+		</CH2X_GOTO_WORLD_MAP>
+		<CH2X_UPDATE_CASTLE_MAP USD="ch_01_02_05_goto.usd" HELP="새로운 유닛등장시 보냄">
+			<castle_map_info TYPE="jIE*"/>
+		</CH2X_UPDATE_CASTLE_MAP>
+		<CH2X_UDPATE_WORLD_MAP USD="ch_01_02_05_goto.usd" HELP="새로운유닛등장시&#xA;">
+			<world_map_info TYPE="jIE*"/>
+		</CH2X_UDPATE_WORLD_MAP>
+		<X2CH_GOTO_TOWN_MAP USD="\ch_01_02_05_goto.usd">
+			<channelNo TYPE="uint8"/>
+		</X2CH_GOTO_TOWN_MAP>
+		<CH2X_GOTO_TOWN_MAP USD="ch_01_02_05_goto.usd">
+			<channelNo TYPE="uint8"/>
+		</CH2X_GOTO_TOWN_MAP>
+		<X2CH_NEW_BUILD USD="ch_03_50_50_build.usd">
+			<build_slot TYPE="tname32_t"/>
+			<_EBuildType TYPE="uint8"/>
+			<hero_id TYPE="uint8"/>
+		</X2CH_NEW_BUILD>
+		<X2CH_BUILD_UPGRADE USD="\ch_03_50_50_build.usd">
+			<build_slot TYPE="tname32_t"/>
+			<hero_id TYPE="uint8"/>
+		</X2CH_BUILD_UPGRADE>
+		<CH2X_BUILD_UPGRADE_RESULT USD="ch_03_50_50_build.usd">
+			<build_slot TYPE="tname32_t"/>
+			<_EBuildType TYPE="uint8"/>
+			<level TYPE="uint8"/>
+			<e TYPE="jError"/>
+			<curr_server_time TYPE="j_time_t"/>
+			<upgrade_sec TYPE="int32"/>
+			<hero_id TYPE="uint8"/>
+		</CH2X_BUILD_UPGRADE_RESULT>
+		<X2CH_BUILD_UPGRADE_CANCLE USD="\ch_03_50_50_build.usd">
+			<build_slot TYPE="tname32_t"/>
+		</X2CH_BUILD_UPGRADE_CANCLE>
+		<X2CH_BUILD_UPGRADE_CANCLE_OK USD="\ch_03_50_50_build.usd">
+			<build_slot TYPE="tname32_t"/>
+		</X2CH_BUILD_UPGRADE_CANCLE_OK>
+		<X2CH_BUILD_UPGRADE_CHECK USD="ch_03_50_50_build.usd" HELP="업글 서버종료시간을 클라가 알기때문에&#xA;업글 종료시간에 맞추어 이패킷을 보내자.&#xA;&#xA;이패킷을 불법적으로 보내면 클라 종료시키자.">
+			<build_slot TYPE="tname32_t"/>
+		</X2CH_BUILD_UPGRADE_CHECK>
+		<X2CH_BUILD_UPGRADE_CHECK_RESULT USD="ch_03_50_50_build.usd">
+			<build_slot TYPE="tname32_t"/>
+			<e TYPE="jError"/>
+			<left_sec TYPE="int32" HELP="남은시간(sec)"/>
+		</X2CH_BUILD_UPGRADE_CHECK_RESULT>
+		<CH_ERROR USD="c_01_07_channelserver.usd">
+			<ei TYPE="jErrorInfo"/>
+		</CH_ERROR>
+		<CH_HELLO USD="c_01_07_channelserver.usd">
+			<si TYPE="jServerInfo"/>
+		</CH_HELLO>
+		<T2X_NOTICE USD="c_09_05_notify.usd">
+			<info TYPE="jNoticeInfo"/>
+			<msg TYPE="wname1024_t"/>
+			<date TYPE="aname32_t"/>
+		</T2X_NOTICE>
+		<X2L_NOTICE_TEST/>
+		<CH2X_USER_LOGIN_CHANNEL_OK USD="l_01_03_03_select_chennal.usd" HELP="해당 채널서버 접속완료및 아바타리스트 받기&#xA;">
+			<user TYPE="nAQ::Use_User"/>
+			<town TYPE="nAQ::Use_Town" i_Length="-1"/>
+		</CH2X_USER_LOGIN_CHANNEL_OK>
+		<CH2X_USER_LOGIN_CHANNEL_OK2 USD="l_01_03_03_select_chennal.usd" HELP="iMAX_USER_Hero =?">
+			<hero TYPE="nAQ::Use_Hero" i_Length="-1"/>
+			<force TYPE="nAQ::Use_Force" i_Length="-1"/>
+		</CH2X_USER_LOGIN_CHANNEL_OK2>
+		<CH2X_USER_LOGIN_CHANNEL_OK3 USD="\l_01_03_03_select_chennal.usd">
+			<town_xml TYPE="jIE*"/>
+			<server_time TYPE="j_time_t"/>
+		</CH2X_USER_LOGIN_CHANNEL_OK3>
+	</PROTOCAL_LIST>
+	<CODE TYPE="ENUM_FILE"/>
+</PROTOCAL>

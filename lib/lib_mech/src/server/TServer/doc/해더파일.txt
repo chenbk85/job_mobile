@@ -1,0 +1,41 @@
+#include "../TCommonServer/define_code_PlugIn.h"
+
+// 프론트엔드와 백엔드서버 모두 include해야함.
+#include "../TCommonServer/define_code_FrontEndServer.h"
+
+#include "../TCommonServer/define_code_BackEndServer.h"
+
+// console cmd .cpp에만 추가하자.
+#include "../TCommonServer/define_code_jIConsoleCmd.h"
+
+#include "../TCommonClient/define_code_TCommonClient.h"
+
+#include "../TCommonServer/jPlugIn_Grid.h"
+
+
+
+//TCommonServer.h에 비해 잘 변하지 않는것들. server.dll의 stdafx.h포함 할거.
+// 또한 모든 packet header와 excel header에도 포함될 내용.
+// 최대한 가볍게 하자.
+#include "../TCommonServer/TCommonServer_header.h"
+
+
+// 모든 server.dll에 공통적인 모듈들.
+#include "../TCommonServer/TCommonServer.h"
+
+
+
+
+
+
+#include "../TCommonServer/define_code_PlugIn.h"
+
+// 프론트엔드와 백엔드서버 모두 include해야함.
+#include "../TCommonServer/define_code_FrontEndServer.h"
+
+#include "../TCommonServer/define_code_BackEndServer.h"
+
+// console cmd .cpp에만 추가하자.
+#include "../TCommonServer/define_code_jIConsoleCmd.h"
+
+

@@ -1,0 +1,1 @@
+bjam -sTOOLS=vc-7_1 --prefix=D:\lib\Boost install

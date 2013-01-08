@@ -1,0 +1,28 @@
+nTESTSERVER ,@#, D:\svn\lib\lib_mech\src\server\TestServer\TestCommon\excel ,@#, LocalizingTable
+
+enum ,@#, ETextCategory ,@#, 설명없음
+
+enumItem ,@#, 튜토리얼설명 ,@#,  1  ,@#, ETC_Tutorial ,@#, 튜토리얼설명
+enumItem ,@#, 퀘스트설명 ,@#,  2  ,@#, ETC_Quest ,@#, 퀘스트설명
+enumItem ,@#, npc대화 ,@#,  3  ,@#, ETC_Npc ,@#, npc대화
+enumItem ,@#, 로딩화면 설명 ,@#,  4  ,@#, ETC_LoadScreen ,@#, 로딩화면 설명
+enumItem ,@#, 게임 메뉴 설명 ,@#,  5  ,@#, ETC_Menu ,@#, 게임 메뉴 설명
+
+
+Sys ,@#, Sys_LocalizingText ,@#, 설명없음
+
+SysItem ,@#, 아이디 ,@#, id ,@#, uint16 ,@#,  ,@#,  ,@#, PK ,@#,  ,@#, id
+SysItem ,@#, 카테고리 ,@#, category ,@#, ETextCategory ,@#,  ,@#, ETextCategory ,@#,  ,@#,  ,@#, asfd
+SysItem ,@#, 영문명 ,@#, name ,@#, tname256_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 영문명
+SysItem ,@#, 한글명 ,@#, name_kor ,@#, wname256_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 한글명
+SysItem ,@#, 로컬라이징명 ,@#, name_loc ,@#, wname256_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 로컬라이징명
+
+
+Sys ,@#, Sys_LocalizingWord ,@#, 설명없음
+
+SysItem ,@#, 아이디 ,@#, id ,@#, uint16 ,@#,  ,@#,  ,@#, PK ,@#,  ,@#, id
+SysItem ,@#, 영문명 ,@#, name ,@#, tname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 영문명
+SysItem ,@#, 한글명 ,@#, name_kor ,@#, wname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 한글명
+SysItem ,@#, 로컬라이징명 ,@#, name_loc ,@#, wname32_t ,@#,  ,@#,  ,@#,  ,@#,  ,@#, 로컬라이징명
+
+

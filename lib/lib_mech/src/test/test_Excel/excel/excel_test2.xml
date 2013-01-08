@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<excel_test2>
+	<Sys>
+		<Sys_T_Test4 HELP="테스트용4">
+			<Sys__T_Base>
+				<b_inherit>true</b_inherit>
+				<name>상속테이블</name>
+				<name_eng>Sys__T_Base</name_eng>
+				<data_type>undefined_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물 기본 정보 상속</help>
+			</Sys__T_Base>
+			<maxbuild2>
+				<name>333최대 생성수</name>
+				<name_eng>maxbuild2</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>한 마을에 최대 생성 가능한 건물 수</help>
+			</maxbuild2>
+			<sys_test3_ref b_ref_field="true">
+				<name>자신테이블참조</name>
+				<name_eng>sys_test3_ref</name_eng>
+				<data_type>Sys_T_Test4</data_type>
+				<min/>
+				<max>Sys_T_Test4</max>
+				<db_type/>
+				<type_note/>
+				<help>다운될때 레벨. 레벨이 0이 되면 건물은 없어짐</help>
+			</sys_test3_ref>
+			<sys_test2_arrary i_array_field="0" b_ref_field="true">
+				<name>자신테이블참조배열</name>
+				<name_eng>sys_test2_arrary</name_eng>
+				<data_type>Sys_T_Test2</data_type>
+				<min/>
+				<max>Sys_T_Test2</max>
+				<db_type/>
+				<type_note/>
+				<help>건물을 다운시킬 때 자원의 50%가 반환됨. (창고의 남은양만큼 반환됨)</help>
+			</sys_test2_arrary>
+			<enum_val>
+				<name>enum_val</name>
+				<name_eng>enum_val</name_eng>
+				<data_type>EBuildTypeTest</data_type>
+				<min/>
+				<max>EBuildTypeTest</max>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</enum_val>
+			<populationreturn4>
+				<name>populationreturn4</name>
+				<name_eng>populationreturn4</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물을 다운시킬 때 인구가 반환됨. 인구 100% 반환되며 민가 최대 인구수 만큼만 반환됨.</help>
+			</populationreturn4>
+			<test4>
+				<name>test4</name>
+				<name_eng>test4</name_eng>
+				<data_type>EBuildTypeTest</data_type>
+				<min/>
+				<max>EBuildTypeTest</max>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</test4>
+			<getgold4>
+				<name>getgold4</name>
+				<name_eng>getgold4</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>징수 명령</help>
+			</getgold4>
+			<test3_array_id i_array_field="3" b_ref_field="true">
+				<name>자신테이블참조고정배열3</name>
+				<name_eng>test3_array_id</name_eng>
+				<data_type>Sys_T_Test2</data_type>
+				<min/>
+				<max>Sys_T_Test2</max>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</test3_array_id>
+			<field_array i_array_field="3">
+				<name>int어레이3</name>
+				<name_eng>field_array</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</field_array>
+			<field_vector i_array_field="0">
+				<name>int어레이</name>
+				<name_eng>field_vector</name_eng>
+				<data_type>int32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</field_vector>
+			<itemObj1>
+				<name>사용자자료형</name>
+				<name_eng>itemObj1</name_eng>
+				<data_type>jItemObj1</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</itemObj1>
+			<val_int>
+				<name>int변수</name>
+				<name_eng>val_int</name_eng>
+				<data_type>int32</data_type>
+				<min>0</min>
+				<max>60000</max>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</val_int>
+		</Sys_T_Test4>
+	</Sys>
+</excel_test2>

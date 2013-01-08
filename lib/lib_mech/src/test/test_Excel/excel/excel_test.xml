@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<excel_test>
+	<Sys>
+		<Sys__T_Base HELP="빌딩type 테이블의 base 테이블이다. 모든 빌딩type 테이블은 이 테이블을 상속받는다">
+			<level>
+				<name>레벨</name>
+				<name_eng>level</name_eng>
+				<data_type>Sys__T_Base_id_t</data_type>
+				<min/>
+				<max/>
+				<db_type>PK</db_type>
+				<type_note/>
+				<help>건물 레벨 ( 해당 종류의 건물 sid 식별자로도 쓰인다)</help>
+			</level>
+			<base_type>
+				<name>건물타입</name>
+				<name_eng>base_type</name_eng>
+				<data_type>EBuildType_test</data_type>
+				<min/>
+				<max>EBuildType_test</max>
+				<db_type>INDEX</db_type>
+				<type_note/>
+				<help>Sys_T_BaseObj를상속 받는 테이블의 건물 종류</help>
+			</base_type>
+			<name>
+				<name>건물리소스명</name>
+				<name_eng>name</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물 이미지: 레벨에 따라 이미지 변경 -맵툴에 있는 리소스 이름</help>
+			</name>
+			<upgradetime>
+				<name>업그레이드 시간</name>
+				<name_eng>upgradetime</name_eng>
+				<data_type>uint32</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>업그레이드를 진행할 때 소비되는 시간 /초단위</help>
+			</upgradetime>
+			<tree_num>
+				<name>목재 비용</name>
+				<name_eng>tree_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 목재 비용</help>
+			</tree_num>
+			<stone_num>
+				<name>돌 비용</name>
+				<name_eng>stone_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 돌 비용</help>
+			</stone_num>
+			<iron_num>
+				<name>철 비용</name>
+				<name_eng>iron_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 철 비용</help>
+			</iron_num>
+			<silk_num>
+				<name>비단 비용</name>
+				<name_eng>silk_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 비단 비용</help>
+			</silk_num>
+			<population_num>
+				<name>인구 비용</name>
+				<name_eng>population_num</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건설에 필요한 인구 비용</help>
+			</population_num>
+		</Sys__T_Base>
+		<Sys_T_Test HELP="테스트용">
+			<Sys__T_Base>
+				<b_inherit>true</b_inherit>
+				<name>상속테이블</name>
+				<name_eng>Sys__T_Base</name_eng>
+				<data_type>undefined_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물 기본 정보 상속</help>
+			</Sys__T_Base>
+			<maxbuild>
+				<name>111최대 생성수</name>
+				<name_eng>maxbuild</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>한 마을에 최대 생성 가능한 건물 수</help>
+			</maxbuild>
+			<downlevel>
+				<name>111다운그레이드레벨</name>
+				<name_eng>downlevel</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>다운될때 레벨. 레벨이 0이 되면 건물은 없어짐</help>
+			</downlevel>
+			<populationreturn>
+				<name>111인구 반환비용</name>
+				<name_eng>populationreturn</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물을 다운시킬 때 인구가 반환됨. 인구 100% 반환되며 민가 최대 인구수 만큼만 반환됨.</help>
+			</populationreturn>
+			<test>
+				<name>111test</name>
+				<name_eng>test</name_eng>
+				<data_type>EBuildType_test</data_type>
+				<min/>
+				<max>EBuildType_test</max>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</test>
+			<getgold>
+				<name>111징수</name>
+				<name_eng>getgold</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>징수 명령</help>
+			</getgold>
+		</Sys_T_Test>
+		<Sys_T_Test2 HELP="테스트용2">
+			<Sys_T_Test>
+				<b_inherit>true</b_inherit>
+				<name>상속테이블</name>
+				<name_eng>Sys_T_Test</name_eng>
+				<data_type>undefined_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물 기본 정보 상속</help>
+			</Sys_T_Test>
+			<maxbuild2>
+				<name>222최대 생성수</name>
+				<name_eng>maxbuild2</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>한 마을에 최대 생성 가능한 건물 수</help>
+			</maxbuild2>
+			<downlevel2>
+				<name>2다운그레이드레벨</name>
+				<name_eng>downlevel2</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>다운될때 레벨. 레벨이 0이 되면 건물은 없어짐</help>
+			</downlevel2>
+			<treereturn2>
+				<name>222목재 반환비용</name>
+				<name_eng>treereturn2</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물을 다운시킬 때 자원의 50%가 반환됨. (창고의 남은양만큼 반환됨)</help>
+			</treereturn2>
+			<stonereturn2>
+				<name>222돌 반환비용</name>
+				<name_eng>stonereturn2</name_eng>
+				<data_type>EOutput_test</data_type>
+				<min/>
+				<max>EOutput_test</max>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</stonereturn2>
+			<populationreturn2>
+				<name>222인구 반환비용</name>
+				<name_eng>populationreturn2</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물을 다운시킬 때 인구가 반환됨. 인구 100% 반환되며 민가 최대 인구수 만큼만 반환됨.</help>
+			</populationreturn2>
+			<test2>
+				<name>222test</name>
+				<name_eng>test2</name_eng>
+				<data_type>EBuildType_test</data_type>
+				<min/>
+				<max>EBuildType_test</max>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</test2>
+			<getgold2>
+				<name>222징수</name>
+				<name_eng>getgold2</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>징수 명령</help>
+			</getgold2>
+		</Sys_T_Test2>
+		<Sys_T_Test3 HELP="테스트용2">
+			<Sys__T_Base>
+				<b_inherit>true</b_inherit>
+				<name>상속테이블</name>
+				<name_eng>Sys__T_Base</name_eng>
+				<data_type>undefined_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물 기본 정보 상속</help>
+			</Sys__T_Base>
+			<maxbuild2>
+				<name>333최대 생성수</name>
+				<name_eng>maxbuild2</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>한 마을에 최대 생성 가능한 건물 수</help>
+			</maxbuild2>
+			<stonereturn2>
+				<name>333돌 반환비용</name>
+				<name_eng>stonereturn2</name_eng>
+				<data_type>EOutput_test</data_type>
+				<min/>
+				<max>EOutput_test</max>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</stonereturn2>
+			<populationreturn2>
+				<name>333인구 반환비용</name>
+				<name_eng>populationreturn2</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>건물을 다운시킬 때 인구가 반환됨. 인구 100% 반환되며 민가 최대 인구수 만큼만 반환됨.</help>
+			</populationreturn2>
+			<test2>
+				<name>333test</name>
+				<name_eng>test2</name_eng>
+				<data_type>EBuildType_test</data_type>
+				<min/>
+				<max>EBuildType_test</max>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</test2>
+			<getgold2>
+				<name>333징수</name>
+				<name_eng>getgold2</name_eng>
+				<data_type>int16</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help>징수 명령</help>
+			</getgold2>
+		</Sys_T_Test3>
+	</Sys>
+</excel_test>

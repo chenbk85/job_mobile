@@ -1,0 +1,372 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>TC_1.1.1_Login</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="29">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>77</objId>
+            <ptul X="11" Y="18" />
+            <ptdr X="79" Y="58" />
+            <links num="0" />
+            <objectName>TestClient</objectName>
+            <className>X</className>
+            <actBoxes num="8">
+                <actBox id="80" />
+                <actBox id="84" />
+                <actBox id="86" />
+                <actBox id="90" />
+                <actBox id="92" />
+                <actBox id="96" />
+                <actBox id="98" />
+                <actBox id="101" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>78</objId>
+            <ptul X="354" Y="16" />
+            <ptdr X="425" Y="56" />
+            <links num="0" />
+            <objectName>TestServer</objectName>
+            <className>S</className>
+            <actBoxes num="8">
+                <actBox id="81" />
+                <actBox id="83" />
+                <actBox id="87" />
+                <actBox id="89" />
+                <actBox id="93" />
+                <actBox id="95" />
+                <actBox id="99" />
+                <actBox id="102" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>79</objId>
+            <points num="2">
+                <pt x="382" y="303" />
+                <pt x="52" y="303" />
+            </points>
+            <objStart id="95" />
+            <objEnd id="96" />
+            <message messType="MGEN">S_ECHO</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>80</objId>
+            <ptul X="37" Y="75" />
+            <ptdr X="52" Y="105" />
+            <links num="1">
+                <link id="82" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>81</objId>
+            <ptul X="382" Y="75" />
+            <ptdr X="397" Y="105" />
+            <links num="1">
+                <link id="82" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>82</objId>
+            <points num="2">
+                <pt x="52" y="80" />
+                <pt x="382" y="80" />
+            </points>
+            <objStart id="80" />
+            <objEnd id="81" />
+            <message messType="MRET">tcp connect</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>83</objId>
+            <ptul X="382" Y="114" />
+            <ptdr X="397" Y="144" />
+            <links num="1">
+                <link id="85" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>84</objId>
+            <ptul X="37" Y="114" />
+            <ptdr X="52" Y="144" />
+            <links num="1">
+                <link id="85" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>85</objId>
+            <points num="2">
+                <pt x="382" y="119" />
+                <pt x="52" y="119" />
+            </points>
+            <objStart id="83" />
+            <objEnd id="84" />
+            <message messType="MGEN">S_HELLO</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>86</objId>
+            <ptul X="37" Y="152" />
+            <ptdr X="52" Y="182" />
+            <links num="1">
+                <link id="88" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>87</objId>
+            <ptul X="382" Y="152" />
+            <ptdr X="397" Y="182" />
+            <links num="1">
+                <link id="88" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>88</objId>
+            <points num="2">
+                <pt x="52" y="157" />
+                <pt x="382" y="157" />
+            </points>
+            <objStart id="86" />
+            <objEnd id="87" />
+            <message messType="MGEN">X2S_LOGIN</message>
+            <guardCond>name-wname32_t</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>89</objId>
+            <ptul X="382" Y="194" />
+            <ptdr X="397" Y="224" />
+            <links num="1">
+                <link id="91" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>90</objId>
+            <ptul X="37" Y="194" />
+            <ptdr X="52" Y="224" />
+            <links num="1">
+                <link id="91" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>91</objId>
+            <points num="2">
+                <pt x="382" y="199" />
+                <pt x="52" y="199" />
+            </points>
+            <objStart id="89" />
+            <objEnd id="90" />
+            <message messType="MGEN">S2X_LOGIN_OK</message>
+            <guardCond>server_name-wname32_t</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>92</objId>
+            <ptul X="37" Y="236" />
+            <ptdr X="52" Y="266" />
+            <links num="1">
+                <link id="94" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>93</objId>
+            <ptul X="382" Y="236" />
+            <ptdr X="397" Y="266" />
+            <links num="1">
+                <link id="94" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>94</objId>
+            <points num="2">
+                <pt x="52" y="241" />
+                <pt x="382" y="241" />
+            </points>
+            <objStart id="92" />
+            <objEnd id="93" />
+            <message messType="MGEN">S_ECHO</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>95</objId>
+            <ptul X="382" Y="298" />
+            <ptdr X="397" Y="328" />
+            <links num="1">
+                <link id="79" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>96</objId>
+            <ptul X="37" Y="298" />
+            <ptdr X="52" Y="328" />
+            <links num="1">
+                <link id="79" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[S_ECHO]&#x0A;&#x0A;{PARAM}&#x0A;type-uint8&#x0A;msg-wstring</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>97</objId>
+            <ptul X="410" Y="230" />
+            <ptdr X="488" Y="322" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>98</objId>
+            <ptul X="37" Y="393" />
+            <ptdr X="52" Y="423" />
+            <links num="1">
+                <link id="100" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>99</objId>
+            <ptul X="382" Y="393" />
+            <ptdr X="397" Y="423" />
+            <links num="1">
+                <link id="100" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>100</objId>
+            <points num="2">
+                <pt x="52" y="398" />
+                <pt x="382" y="398" />
+            </points>
+            <objStart id="98" />
+            <objEnd id="99" />
+            <message messType="MGEN">X2S_THREAD_TEST1</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>101</objId>
+            <ptul X="37" Y="472" />
+            <ptdr X="52" Y="502" />
+            <links num="1">
+                <link id="103" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>102</objId>
+            <ptul X="382" Y="472" />
+            <ptdr X="397" Y="502" />
+            <links num="1">
+                <link id="103" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>103</objId>
+            <points num="2">
+                <pt x="52" y="477" />
+                <pt x="382" y="477" />
+            </points>
+            <objStart id="101" />
+            <objEnd id="102" />
+            <message messType="MGEN">X2S_THREAD_TEST2</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[X2S_THREAD_TEST2]&#x0A;&#x0A;{PARAM}&#x0A;type-uint8&#x0A;msg-wstring&#x0A;&#x0A;{OPTION}&#x0A;thread_name=JOBTHREAD2</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>104</objId>
+            <ptul X="610" Y="361" />
+            <ptdr X="785" Y="501" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[X2S_THREAD_TEST1]&#x0A;&#x0A;{PARAM}&#x0A;type-uint8&#x0A;msg-wstring&#x0A;&#x0A;{OPTION}&#x0A;thread_name=JOBTHREAD1</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>105</objId>
+            <ptul X="419" Y="361" />
+            <ptdr X="594" Y="501" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

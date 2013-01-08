@@ -1,0 +1,307 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>C_01_09_DummyServer</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="24">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>32</objId>
+            <ptul X="36" Y="36" />
+            <ptdr X="126" Y="76" />
+            <links num="0" />
+            <objectName>DummyServer</objectName>
+            <className>DT</className>
+            <actBoxes num="6">
+                <actBox id="34" />
+                <actBox id="37" />
+                <actBox id="41" />
+                <actBox id="325" />
+                <actBox id="328" />
+                <actBox id="638" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>33</objId>
+            <ptul X="575" Y="44" />
+            <ptdr X="643" Y="84" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="6">
+                <actBox id="35" />
+                <actBox id="38" />
+                <actBox id="42" />
+                <actBox id="324" />
+                <actBox id="327" />
+                <actBox id="639" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>34</objId>
+            <ptul X="73" Y="646" />
+            <ptdr X="88" Y="676" />
+            <links num="1">
+                <link id="36" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>35</objId>
+            <ptul X="601" Y="646" />
+            <ptdr X="616" Y="676" />
+            <links num="1">
+                <link id="36" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>36</objId>
+            <points num="2">
+                <pt x="88" y="651" />
+                <pt x="601" y="651" />
+            </points>
+            <objStart id="34" />
+            <objEnd id="35" />
+            <message messType="MGEN">DT_ECHO</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>37</objId>
+            <ptul X="73" Y="705" />
+            <ptdr X="88" Y="735" />
+            <links num="1">
+                <link id="39" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>38</objId>
+            <ptul X="601" Y="705" />
+            <ptdr X="616" Y="735" />
+            <links num="1">
+                <link id="39" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>39</objId>
+            <points num="2">
+                <pt x="88" y="710" />
+                <pt x="601" y="710" />
+            </points>
+            <objStart id="37" />
+            <objEnd id="38" />
+            <message messType="MGEN">DT_ERROR</message>
+            <guardCond>ei-jServerInfo</guardCond>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[DT_ERROR]&#x0A;{PARAM}&#x0A;ei-jErrorInfo</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>40</objId>
+            <ptul X="333" Y="684" />
+            <ptdr X="418" Y="744" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>41</objId>
+            <ptul X="73" Y="171" />
+            <ptdr X="88" Y="201" />
+            <links num="1">
+                <link id="43" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>42</objId>
+            <ptul X="601" Y="171" />
+            <ptdr X="616" Y="201" />
+            <links num="1">
+                <link id="43" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>43</objId>
+            <points num="2">
+                <pt x="88" y="176" />
+                <pt x="601" y="176" />
+            </points>
+            <objStart id="41" />
+            <objEnd id="42" />
+            <message messType="MGEN">DT_HELLO</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[DT_HELLO]&#x0A;{PARAM}&#x0A;si-jServerInfo</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>44</objId>
+            <ptul X="639" Y="144" />
+            <ptdr X="720" Y="204" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[DT_ECHO]&#x0A;{PARAM}&#x0A;msg-tname256_t&#x0A;type-int8</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>45</objId>
+            <ptul X="633" Y="609" />
+            <ptdr X="738" Y="685" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>324</objId>
+            <ptul X="601" Y="129" />
+            <ptdr X="616" Y="159" />
+            <links num="1">
+                <link id="326" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>325</objId>
+            <ptul X="73" Y="129" />
+            <ptdr X="88" Y="159" />
+            <links num="1">
+                <link id="326" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>326</objId>
+            <points num="2">
+                <pt x="601" y="134" />
+                <pt x="88" y="134" />
+            </points>
+            <objStart id="324" />
+            <objEnd id="325" />
+            <message messType="MRET">tcp connect</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>640</objId>
+            <points num="2">
+                <pt x="88" y="270" />
+                <pt x="601" y="270" />
+            </points>
+            <objStart id="638" />
+            <objEnd id="639" />
+            <message messType="MGEN">DT_ONLINE</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>328</objId>
+            <ptul X="73" Y="213" />
+            <ptdr X="88" Y="243" />
+            <links num="1">
+                <link id="329" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[DT_ONLINE]&#x0A;&#x0A;{PARAM}&#x0A;test_id-tname32_t-테스트용 계정 접두어&#x0A;&#x0A;TEST_ID_START_NUM-int&#x0A;iDummyCount-uint16-테스트클라이언트당 더미갯수&#x0A;szLoginIP-tname32_t&#x0A;iLoginPort-uint16</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>330</objId>
+            <ptul X="630" Y="234" />
+            <ptdr X="962" Y="390" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>329</objId>
+            <points num="2">
+                <pt x="601" y="224" />
+                <pt x="88" y="224" />
+            </points>
+            <objStart id="327" />
+            <objEnd id="328" />
+            <message messType="MGEN">X2DT_HELLO</message>
+            <guardCond>si-jServerInfo</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>327</objId>
+            <ptul X="601" Y="198" />
+            <ptdr X="616" Y="243" />
+            <links num="1">
+                <link id="329" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>639</objId>
+            <ptul X="601" Y="265" />
+            <ptdr X="616" Y="295" />
+            <links num="1">
+                <link id="640" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>638</objId>
+            <ptul X="73" Y="240" />
+            <ptdr X="88" Y="295" />
+            <links num="1">
+                <link id="640" />
+            </links>
+        </element>
+    </elements>
+</diagram>

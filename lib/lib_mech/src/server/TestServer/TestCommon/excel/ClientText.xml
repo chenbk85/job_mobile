@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<clienttext>
+	<Sys>
+		<Sys_ClientText HELP="설명없음">
+			<id>
+				<name>번호</name>
+				<name_eng>id</name_eng>
+				<data_type>uint16</data_type>
+				<min/>
+				<max/>
+				<db_type>PK</db_type>
+				<type_note/>
+				<help/>
+			</id>
+			<eng_name>
+				<name>이름</name>
+				<name_eng>eng_name</name_eng>
+				<data_type>tname32_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</eng_name>
+			<description>
+				<name>내용</name>
+				<name_eng>description</name_eng>
+				<data_type>tname128_t</data_type>
+				<min/>
+				<max/>
+				<db_type/>
+				<type_note/>
+				<help/>
+			</description>
+		</Sys_ClientText>
+	</Sys>
+</clienttext>

@@ -1,0 +1,41 @@
+# vim:ft=automake
+# included from Top Level Makefile.am
+# All paths should be given relative to the root
+
+EXTRA_DIST+= \
+	     libcassandra/configure.h.in 
+
+nobase_include_HEADERS+= \
+			 libcassandra/cassandra.h \
+			 libcassandra/cassandra_factory.h \
+			 libcassandra/cassandra_host.h \
+			 libcassandra/cassandra_util.h \
+			 libcassandra/column_definition.h \
+			 libcassandra/column_family_definition.h \
+			 libcassandra/exception.h \
+			 libcassandra/indexed_slices_query.h \
+			 libcassandra/keyspace.h \
+			 libcassandra/keyspace_definition.h \
+			 libcassandra/keyspace_factory.h \
+			 libcassandra/util_functions.h \
+			 libcassandra/util/ping.h
+
+lib_LTLIBRARIES+= libcassandra/libcassandra.la
+libcassandra_libcassandra_la_CXXFLAGS= ${AM_CXXFLAGS}
+libcassandra_libcassandra_la_SOURCES = \
+				       libcassandra/cassandra.cc \
+				       libcassandra/cassandra_factory.cc \
+				       libcassandra/cassandra_host.cc \
+				       libcassandra/column_definition.cc \
+				       libcassandra/column_family_definition.cc \
+				       libcassandra/indexed_slices_query.cc \
+				       libcassandra/keyspace.cc \
+				       libcassandra/keyspace_definition.cc \
+				       libcassandra/keyspace_factory.cc \
+				       libcassandra/util_functions.cc \
+				       libcassandra/util/ping.cc
+
+libcassandra_libcassandra_la_DEPENDENCIES= libgenthrift/libgenthrift.la
+libcassandra_libcassandra_la_LIBADD= $(LIBM) libgenthrift/libgenthrift.la
+libcassandra_libcassandra_la_LDFLAGS= ${AM_LDFLAGS} -version-info ${CASSANDRA_LIBRARY_VERSION}
+

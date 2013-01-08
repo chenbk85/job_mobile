@@ -1,0 +1,60 @@
+@ = jIConsoleCmd명령
+! = jIConsoleVar 변수
+# = squerrel명령
+$ = 기타 서버명령
+
+& = ES명령
+* = jGame(jGui)명령
+
+
+
+콘솔변수 란?
+
+	: = console var = jConsoleVar에서 관리되는 원소.
+
+	: 실행시간에 참조되고 변경가능한 변수.
+	: 변경및 참조는 스크립트(squirrel) 와 C++모듈에서 가능하다.
+	: jConsoleMonitor.exe 툴에의해 모든 콘솔변수는 실행시간에 변경가능.
+	: C++에서의 접근은 Get_jIConsoleVar()를 통해 가능.
+	: squirrel에서의 접근은 ??? 아직 미정.
+
+	
+콘솔변수xml파일 = 콘솔XML
+
+	: XML\USER\실행파일닉네임_유저명.XML로 저장된다.
+	: "실행파일닉네임.xml" (줄여서 APP.XML)의 <jIConsoleVar Original_FILE=""에 세팅된 파일명이 원본.
+	: APP.XML의 <jIConsoleVar>의 내용이 오버로딩 된다.
+	: 실행파일닉네임 ==  g_ExeEnv.m_szAppNic
+	: jMech_Init(cstr szAppNic )에 의해 세팅.
+
+	참고 : 설명에서 [jConsole][var_name]이란 표기는 
+				콘솔xml에서 "jConsole"항목 밑의 "var_name"이라는 콘솔변수를 나타냄.
+
+	: 부모 노드중에 b_jMX_SKIP_THIS="1"라는 속성이 있으면 해당 자식에 대한 콘솔변수는 로딩되지 않음.
+
+
+콘솔변수의 초기화 
+
+	1단계:jMech_Init()호출 이전단계
+		: 실행파일의 초기 실행 정보를 나타내는 콘솔변수는 "실행파일.ini"에 저장됨.
+		: "실행파일.ini"파일이 없을땐 jGlobal.ini에 세팅되어 있음.
+		: jGlobal.ini가 없을땐 실행시 새로생성됨 -> class jExeEnv생성자 에서 생성.
+
+	2단계:
+		: jMech_Init()가 호출되어  mech라이브러리가 초기화될때 
+			"콘솔xml파일"이 로딩되면서 세팅된 콘솔변수의 값이 적용됨.
+	3단계
+		: APP.XML의 <jIConsoleVar>의 하위 내용이 오버로딩된다. 
+	
+	4단계
+		: 마지막으로 "실행파일닉네임_유저명.XML"(줄여서 user.xml)의 내용이 오버로딩.
+		: [exe][DELETE_USERSETTING]의 값이 1이면 실행시 user.xml를 삭제하고 새로 생성함.
+
+	
+	
+콘솔변수의 도움말 (HELP속성)의 적용
+	1, 만약 xml에 기술된 HELP와 코드에서 콘솔변수생성(CreateVar)에서 세팅한 도움말이 같다면 xml의 도움말을 사용.
+	2. 만약 내용이 다르다면 [CODE HELP]로 시작하여 XML도움말에 연결해서 코드 도움말을 만듬.
+	3. 만약 XML에 도움말 내용이 없으면 코드에 있는 도움말을 사용.
+	
+	

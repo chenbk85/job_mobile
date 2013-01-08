@@ -1,0 +1,405 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>Orb_3_5_5_XML_Operation</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>2.1</Version>
+    <forceTimeSync />
+    <elements num="32">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>80</objId>
+            <ptul X="288" Y="34" />
+            <ptdr X="356" Y="74" />
+            <links num="0" />
+            <objectName>OrbTool</objectName>
+            <className>T</className>
+            <actBoxes num="8">
+                <actBox id="82" />
+                <actBox id="86" />
+                <actBox id="89" />
+                <actBox id="92" />
+                <actBox id="97" />
+                <actBox id="100" />
+                <actBox id="105" />
+                <actBox id="109" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>81</objId>
+            <ptul X="639" Y="33" />
+            <ptdr X="707" Y="73" />
+            <links num="0" />
+            <objectName>OrbHost</objectName>
+            <className>H</className>
+            <actBoxes num="8">
+                <actBox id="83" />
+                <actBox id="87" />
+                <actBox id="90" />
+                <actBox id="93" />
+                <actBox id="98" />
+                <actBox id="101" />
+                <actBox id="106" />
+                <actBox id="108" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>82</objId>
+            <ptul X="314" Y="126" />
+            <ptdr X="329" Y="156" />
+            <links num="1">
+                <link id="84" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>83</objId>
+            <ptul X="665" Y="126" />
+            <ptdr X="680" Y="156" />
+            <links num="1">
+                <link id="84" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>84</objId>
+            <points num="2">
+                <pt x="329" y="131" />
+                <pt x="665" y="131" />
+            </points>
+            <objStart id="82" />
+            <objEnd id="83" />
+            <message messType="MGEN">H_SAVE_DOC</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[H_SAVE_DOC]&#x0A;&#x0A;{PARAM}&#x0A;doc-tname256_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>85</objId>
+            <ptul X="729" Y="92" />
+            <ptdr X="832" Y="168" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>86</objId>
+            <ptul X="314" Y="203" />
+            <ptdr X="329" Y="233" />
+            <links num="1">
+                <link id="88" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>87</objId>
+            <ptul X="665" Y="203" />
+            <ptdr X="680" Y="233" />
+            <links num="1">
+                <link id="88" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>88</objId>
+            <points num="2">
+                <pt x="329" y="208" />
+                <pt x="665" y="208" />
+            </points>
+            <objStart id="86" />
+            <objEnd id="87" />
+            <message messType="MGEN">H_GET_XML</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>89</objId>
+            <ptul X="314" Y="292" />
+            <ptdr X="329" Y="322" />
+            <links num="1">
+                <link id="91" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>90</objId>
+            <ptul X="665" Y="292" />
+            <ptdr X="680" Y="322" />
+            <links num="1">
+                <link id="91" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>91</objId>
+            <points num="2">
+                <pt x="329" y="297" />
+                <pt x="665" y="297" />
+            </points>
+            <objStart id="89" />
+            <objEnd id="90" />
+            <message messType="MGEN">H_COPY_XML_ELEMENT</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>92</objId>
+            <ptul X="314" Y="382" />
+            <ptdr X="329" Y="412" />
+            <links num="1">
+                <link id="94" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>93</objId>
+            <ptul X="665" Y="382" />
+            <ptdr X="680" Y="412" />
+            <links num="1">
+                <link id="94" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>94</objId>
+            <points num="2">
+                <pt x="329" y="387" />
+                <pt x="665" y="387" />
+            </points>
+            <objStart id="92" />
+            <objEnd id="93" />
+            <message messType="MGEN">H_DEL_XML_ELEMENT</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[H_COPY_XML_ELEMENT]&#x0A;&#x0A;{PARAM}&#x0A;isInsertMode-bool&#x0A;szDoc-tname256_t&#x0A;szXPath-tname1024_t&#x0A;idx-int8&#x0A;szOrbFunc-aname32_t&#x0A;xml-jIE*</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>95</objId>
+            <ptul X="696" Y="237" />
+            <ptdr X="865" Y="393" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[H_DEL_XML_ELEMENT]&#x0A;&#x0A;{PARAM}&#x0A;szDoc-tname256_t&#x0A;szXPath-tname1024_t&#x0A;szOrbFunc-aname32_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>96</objId>
+            <ptul X="109" Y="283" />
+            <ptdr X="266" Y="391" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>97</objId>
+            <ptul X="314" Y="450" />
+            <ptdr X="329" Y="480" />
+            <links num="1">
+                <link id="99" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>98</objId>
+            <ptul X="665" Y="450" />
+            <ptdr X="680" Y="480" />
+            <links num="1">
+                <link id="99" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>99</objId>
+            <points num="2">
+                <pt x="329" y="455" />
+                <pt x="665" y="455" />
+            </points>
+            <objStart id="97" />
+            <objEnd id="98" />
+            <message messType="MGEN">H_CHANGE_XML_NODE</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>100</objId>
+            <ptul X="314" Y="694" />
+            <ptdr X="329" Y="724" />
+            <links num="1">
+                <link id="102" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>101</objId>
+            <ptul X="665" Y="694" />
+            <ptdr X="680" Y="724" />
+            <links num="1">
+                <link id="102" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>102</objId>
+            <points num="2">
+                <pt x="329" y="699" />
+                <pt x="665" y="699" />
+            </points>
+            <objStart id="100" />
+            <objEnd id="101" />
+            <message messType="MGEN">H_GET_UPDATE_XML_NODE</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[H_CHANGE_XML_NODE]&#x0A;pE의 tagname 이나 컨텐츠또는 &#x0A;pA의 컨텐츠 수정사항만 적용함 &#x0A;(자식의 내용은 적용안함)&#x0A;&#x0A;{PARAM}&#x0A;szDoc-tname256_t&#x0A;szXPath-tname1024_t&#x0A;idx-int8&#x0A;isAttr-bool&#x0A;szTag-tname32_t&#x0A;iType-int32&#x0A;szData-tname256_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>103</objId>
+            <ptul X="74" Y="445" />
+            <ptdr X="294" Y="665" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[H_GET_UPDATE_XML_NODE]&#x0A;원격지의 해당 XML노드의 값으로 새로 업데이트를 요청. 자식포함&#x0A;{PARAM}&#x0A;szDoc-tname256_t&#x0A;szXPath-tname1024_t&#x0A;idx-int8&#x0A;isAttr-bool&#x0A;szTag-tname32_t</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>104</objId>
+            <ptul X="398" Y="520" />
+            <ptdr X="838" Y="660" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>105</objId>
+            <ptul X="314" Y="764" />
+            <ptdr X="329" Y="794" />
+            <links num="1">
+                <link id="107" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>106</objId>
+            <ptul X="665" Y="764" />
+            <ptdr X="680" Y="794" />
+            <links num="1">
+                <link id="107" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>107</objId>
+            <points num="2">
+                <pt x="329" y="769" />
+                <pt x="665" y="769" />
+            </points>
+            <objStart id="105" />
+            <objEnd id="106" />
+            <message messType="MGEN">H_GET_XML</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>108</objId>
+            <ptul X="665" Y="817" />
+            <ptdr X="680" Y="847" />
+            <links num="1">
+                <link id="110" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>109</objId>
+            <ptul X="314" Y="817" />
+            <ptdr X="329" Y="847" />
+            <links num="1">
+                <link id="110" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>110</objId>
+            <points num="2">
+                <pt x="665" y="822" />
+                <pt x="329" y="822" />
+            </points>
+            <objStart id="108" />
+            <objEnd id="109" />
+            <message messType="MGEN">H_PUT_XML</message>
+            <guardCond>szTempFile-tname256_t,szXml-tname256_t</guardCond>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[H_GET_XML]&#x0A;해당 XML을 요청하는 메세지&#x0A;{PARAM}&#x0A;szXml-tname256_t&#x0A;</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>111</objId>
+            <ptul X="112" Y="751" />
+            <ptdr X="307" Y="843" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

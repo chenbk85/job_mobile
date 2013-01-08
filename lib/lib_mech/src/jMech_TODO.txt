@@ -1,0 +1,23 @@
+FATE 트레비스 볼드리
+맥스 쉐퍼
+Ping0
+
+
+
+excel - array지원 , link( + self link) 기능, postprocess기능
+
+
+
+서버간 접속유저수 통보 코드 추가.( Login, Channel, Game, DBCache )
+
+생성되는 스레드에 이름붙일것.
+
+defualt_make_packet.cpp -> 추상화 작업 : net xml에서 PACKET_HEADER_TYPE = "DEFAULT"추가할것.
+
+DC죽었을때 DQ가 뛰우고 DQ가 죽었을때 DC가 뛰우기.
+
+class jCircularQueueBuffer -> yVector형태로 바꾸기.
+
+jIPacketSocket_IOCP 시작 종료 재시작 체크할것.
+
+excel에서 매크로 지원. jM_이름 값 -> 자동 체인지.

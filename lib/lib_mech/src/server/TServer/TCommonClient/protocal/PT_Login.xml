@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<PROTOCAL HEADER="LoginServer" VERSION="2000" i_DebugPrint="3" b_jxDEFINE="true" TAG="L">
+	<!-- CODE에서 개행문자 지원안됨. anpersent # x 0 A ; 를 사용할것-->
+	<CODE TYPE="ENUM_FILE">../my_PT_TServer.h</CODE>
+	<STRUCT_LIST/>
+	<PROTOCAL_LIST>
+		<L_ERROR USD="c_01_06_loginserver.usd">
+			<ei TYPE="jErrorInfo"/>
+		</L_ERROR>
+		<L_ECHO USD="\c_01_06_loginserver.usd">
+			<msg TYPE="tname256_t"/>
+			<type TYPE="int8"/>
+		</L_ECHO>
+		<L_HELLO USD="c_01_06_loginserver.usd">
+			<si TYPE="jServerInfo"/>
+		</L_HELLO>
+		<L2X_NOTICE USD="c_09_05_notify.usd">
+			<info TYPE="jNoticeInfo"/>
+			<msg TYPE="wname1024_t"/>
+			<date TYPE="aname32_t"/>
+		</L2X_NOTICE>
+		<X2L_LOGIN/>
+		<L2X_USER_LOGIN_OK USD="l_01_02_01_user_login.usd">
+			<pid TYPE="player_id_t"/>
+			<channel TYPE="serverid_t" i_Length="-1"/>
+			<channel_name TYPE="astring" i_Length="-1"/>
+			<buzy_level TYPE="uint8" i_Length="-1"/>
+		</L2X_USER_LOGIN_OK>
+		<X2L_GET_CHANNEL_LIST USD="\l_01_01_worldserver_list.usd">
+			<world TYPE="aname32_t"/>
+		</X2L_GET_CHANNEL_LIST>
+		<L2X_CHANNEL_LIST USD="l_01_01_worldserver_list.usd" HELP="각 인터넷업체별(또한 성별) 개설된 월드리스트받기&#xA;&#xA;world이름은 xml로 존재한다. data/xml/world_servers.xml&#xA;해당 월드서버리스트를 보냄( 클라이언트에서는 캐슁하세요)&#xA;약 5분이 경과했을때 다시 요청하는게 좋음.">
+			<channel TYPE="serverid_t" i_Length="-1"/>
+			<channel_name TYPE="astring" i_Length="-1"/>
+			<buzy_level TYPE="uint8" i_Length="-1"/>
+		</L2X_CHANNEL_LIST>
+		<X2L_GET_WORLD_LIST/>
+		<L2X_WORLD_LIST USD="\l_01_01_worldserver_list.usd">
+			<worlds TYPE="jWorldServerInfo" i_Length="-1"/>
+		</L2X_WORLD_LIST>
+		<X2L_USER_LOGIN USD="l_01_02_01_user_login.usd" HELP="클라이언트 로긴접속&#xA;">
+			<world TYPE="aname32_t"/>
+			<id TYPE="wname64_t"/>
+			<pwd TYPE="uint8" i_Length="-1"/>
+			<ver TYPE="aname32_t"/>
+			<cpp_ver TYPE="aname32_t"/>
+		</X2L_USER_LOGIN>
+		<X2L_USER_EXIT/>
+		<L2X_USER_EXIT/>
+		<X2L_CHANNEL_SELECT USD="\l_01_03_03_select_chennal.usd">
+			<sid TYPE="serverid_t"/>
+		</X2L_CHANNEL_SELECT>
+		<L2X_CHANNEL_SELECT_RESULT USD="\l_01_03_03_select_chennal.usd">
+			<e TYPE="jError"/>
+			<ip TYPE="aname32_t"/>
+			<port TYPE="uint16"/>
+			<pid TYPE="player_id_t"/>
+		</L2X_CHANNEL_SELECT_RESULT>
+	</PROTOCAL_LIST>
+	<CODE TYPE="ENUM_FILE"/>
+</PROTOCAL>
