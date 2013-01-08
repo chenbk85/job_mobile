@@ -1,0 +1,275 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\testtool.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""l.KOR\\afxres.rc""      // 표준 구성 요소입니다.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\testtool.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "testtool 정보"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "testtool, 버전 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2011",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "확인",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_TESTTOOL_DIALOG DIALOGEX 0, 0, 355, 256
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "테스트 툴"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "접속",IDBUTTON_RUN,73,66,40,16
+    LISTBOX         IDC_LIST1,7,11,50,125,LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "삭제",IDBUTTON_DELETE,105,19,30,20
+    DEFPUSHBUTTON   "생성",IDBUTTON_MAKE,69,19,30,20
+    DEFPUSHBUTTON   "접속 종료",IDBUTTON_STOP,73,87,40,20
+    DEFPUSHBUTTON   "종료",IDBUTTON_EXIT,281,122,67,32
+    GROUPBOX        "클라이언트 동작",IDC_STATIC,62,51,62,85
+    GROUPBOX        "클라이언트 관리",IDC_STATIC,62,7,80,40
+    DEFPUSHBUTTON   "로그 삭제",IDBUTTON_THREAD_CLEARLOG,73,111,40,20
+    DEFPUSHBUTTON   "메인로그 삭제",IDBUTTON_CLEARLOG,287,181,61,20
+    GROUPBOX        "클라이언트 정보",IDC_STATIC,145,7,131,129
+    LTEXT           "아이디 :",IDC_STATIC,152,28,26,8
+    LTEXT           "비밀번호 :",IDC_STATIC,152,44,33,8
+    LTEXT           "스크립트 파일 :",IDC_STATIC,152,60,49,8
+    LTEXT           "아이피 :",IDC_STATIC,152,77,26,8
+    LTEXT           "포트번호 :",IDC_STATIC,152,93,33,8
+    LTEXT           "접속상태 : ",IDC_STATIC,152,109,35,8
+    EDITTEXT        IDC_EDIT_ID,205,27,66,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_PASSWD,205,43,66,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_SCRIPT_FILE,205,59,66,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_IP,205,75,66,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_PORT,205,92,66,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_CONN_STATE,205,108,66,12,ES_AUTOHSCROLL | ES_READONLY
+    LISTBOX         IDC_LIST3,289,17,50,91,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "진행중 체크",IDC_BUTTON1,287,158,61,20
+    GROUPBOX        "진행중인 클라이언트",IDC_STATIC,279,7,70,110
+    DEFPUSHBUTTON   "SHOW &CMD",IDBUTTON_CLEARLOG3,283,223,65,26
+    DEFPUSHBUTTON   "SHOW &LOG",IDBUTTON_SHOW_LOG,283,205,65,15
+    EDITTEXT        IDC_EDIT1,7,150,269,99,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+END
+
+IDD_MAKECLIENTDIALOG DIALOGEX 150, 0, 291, 188
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "대화 상자"
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "생성 정보",IDC_STATIC,16,14,226,122
+    PUSHBUTTON      "생성",IDC_BUTTON_CREATE_CLIENT,166,164,50,14
+    LTEXT           "아이디 태그 :",IDC_STATIC,26,31,42,8
+    LTEXT           "비밀번호 :",IDC_STATIC,26,61,33,8
+    LTEXT           "스크립트 파일 :",IDC_STATIC,26,76,49,8
+    LTEXT           "아이피 :",IDC_STATIC,26,91,26,8
+    LTEXT           "포트번호 :",IDC_STATIC,26,106,33,8
+    LTEXT           "생성 갯수 :",IDC_STATIC,26,121,35,8
+    EDITTEXT        IDC_EDIT1,93,30,132,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,93,60,132,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,93,75,132,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,93,90,132,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,93,105,132,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,93,120,132,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "취소",IDC_BUTTON2,228,164,50,14
+    LTEXT           "아이디 (optional) :",IDC_STATIC,26,46,59,8
+    LTEXT           "※ 아이디 입력시 => 해당 아이디 사용",IDC_STATIC,16,142,121,8
+    LTEXT           "※ 아이디 태그 입력시 => 아이디 태그 + index로 아이디를 생성하여 사용",IDC_STATIC,16,153,229,8
+    EDITTEXT        IDC_EDIT13,93,45,132,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "testtool.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "testtool.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_TESTTOOL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 249
+    END
+
+    IDD_MAKECLIENTDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS 
+BEGIN
+    VK_F5,          ID_SHOW_CONSOLE,        VIRTKEY, NOINVERT
+    VK_F12,         ID_SHOW_CMD,            VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "testtool 정보(&A)..."
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\testtool.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "l.KOR\afxres.rc"      // 표준 구성 요소입니다.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

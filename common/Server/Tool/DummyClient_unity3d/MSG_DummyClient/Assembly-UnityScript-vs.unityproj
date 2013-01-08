@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{437F155A-6AA4-B2CA-F1FC-1DC06261694F}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_6;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_WIN;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\DummyClient_lib\wrapper_Cmd\download_server_list.js" />
+     <None Include="Assets\DummyClient_baseball\gui\guixml_baseball.xml" />
+     <None Include="Assets\DummyClient_rps\gui\guixml_rps.xml" />
+     <None Include="Assets\mech_lib\jXml\readme_jXml.txt" />
+     <None Include="Assets\DummyClient_rps\cmd\file\cmd_file_player2.txt" />
+     <None Include="Assets\DummyClient_baseball\cmd\file\cmd_file_baseball_player2.txt" />
+     <None Include="Assets\DummyClient_baseball\excel\file_Sys_Error.csv.txt" />
+     <None Include="Assets\DummyClient_rps\cmd_file\rps_player_1002.txt" />
+     <None Include="Assets\DummyClient_lib\wrapper_jGui\guixml_dummy_client.xml" />
+     <None Include="Assets\mech_lib\jGui\test\guixml_test1.xml" />
+     <None Include="Assets\DummyClient_baseball\cmd\file\cmd_file_baseball_player12.txt" />
+     <None Include="Assets\DummyClient_rps\cmd_file\rps_player_1003.txt" />
+     <None Include="Assets\DummyClient_asdf\cmd\file\cmd_file_player1.txt" />
+     <None Include="Assets\mech_lib\jGui\test\guixml_dummy_client.xml" />
+     <None Include="Assets\DummyClient_rps\cmd\file\server_list.xml" />
+     <None Include="Assets\DummyClient_rps\cmd_file\rps_player_1001.txt" />
+     <None Include="Assets\DummyClient_rps\excel\file_Sys_Error.csv.txt" />
+     <None Include="Assets\DummyClient_rps\cmd_file\rps_player_1004.txt" />
+     <None Include="Assets\DummyClient_baseball\cmd\file\cmd_file_baseball_player1.txt" />
+     <None Include="Assets\DummyClient_asdf\cmd\file\cmd_file_player2.txt" />
+     <None Include="Assets\mech_lib\jGui\readme_jGui.txt" />
+     <None Include="Assets\DummyClient_lib\DummyClient_template_code.txt" />
+     <None Include="Assets\mech_lib\jXml\test\test_xml_file.xml" />
+     <None Include="Assets\DummyClient_rps\cmd\file\cmd_file_player1.txt" />
+     <None Include="Assets\DummyClient_asdf\cmd\file\server_list.xml" />
+     <None Include="Assets\DummyClient_baseball\cmd\file\baseball_server_list.xml" />
+     <None Include="Assets\DummyClient_asdf\gui\guixml_asdf.xml" />
+     <None Include="Assets\DummyClient_asdf\excel\file_Sys_Error.csv.txt" />
+     <None Include="Assets\DummyClient_asdf\cmd\file\cmd_file_player12.txt" />
+     <None Include="Assets\DummyClient_rps\cmd\file\cmd_file_player12.txt" />
+     <None Include="Assets\mech_lib\jXml\test\test_xml_file_simple.xml" />
+ <Reference Include="Evaluant.Antlr">
+ <HintPath>Assets\mech_lib\jGui\dll_3rdparty\Evaluant.Antlr.dll</HintPath>
+ </Reference>
+ <Reference Include="Evaluant.Calculator">
+ <HintPath>Assets\mech_lib\jGui\dll_3rdparty\Evaluant.Calculator.dll</HintPath>
+ </Reference>
+ <Reference Include="protobuf-aot">
+ <HintPath>Assets\MSGLib\dlls\protobuf-aot.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

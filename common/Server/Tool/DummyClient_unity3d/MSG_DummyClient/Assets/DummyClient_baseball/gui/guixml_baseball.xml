@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<jGuiStage Name="baseball" >
+  <GuiHeader>
+    <NamedRect>
+      <r_CommandWindow>0;0;380;480</r_CommandWindow>
+      <r_LogWindow>380;0;420;480</r_LogWindow>
+    </NamedRect>
+  </GuiHeader>
+
+  <jGui_List>
+    <jGuiWindow Name="MainWindow" b_Enable="true" r_Rect="0;0;500;400" Text="Config" GUIStyle="window" b_DragWindow="true" b_IsScalable="false">
+        <jGuiVertical GUIStyle="box">
+			<jGuiHorizontal b_Enable="true">
+			  <jGuiButton Name="Start" f_Width="-1" TextAnchor="MiddleCenter" Text="Start DummyClient"/>
+			  <jGuiButton Name="Exit" f_Width="-1" TextAnchor="MiddleCenter" />
+			</jGuiHorizontal>
+        </jGuiVertical>
+	</jGuiWindow>  
+  </jGui_List>
+  <Modal_Window>
+  </Modal_Window>
+</jGuiStage>

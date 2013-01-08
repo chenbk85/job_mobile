@@ -1,0 +1,301 @@
+set m_prefix m_
+
+%%
+///////////////////////////////////////////////////////////////////////////////
+//	SGSCli.adl
+///////////////////////////////////////////////////////////////////////////////
+%%
+
+%%
+#ifdef _XADL
+%%
+	#include <AdlCommonStruct.h>
+	#include <AdlCommonStruct_b.h>
+%%
+#else
+%%
+	#include <ADL/MsgCommonStruct.h>
+%%
+#endif
+%%
+
+%%
+// Smart Phone User Info
+%%
+class SPUserBaseInfo
+{
+	LONG			lUSN;				// User Serial Number
+	string			sUserID;			// User ID
+	string			sNickName;			// User Nick Name
+
+	LONG			lUSC;				// 사용자 성별(USER_SEX_CATEGORY)
+	LONG			lJumin;   			// 사용자 주민등록번호
+	LONG			lFirstUSN;			// 필요할까???
+	LONG			lAgeIndex;  		// 사용자 연령(STAT_AGE_INDEX)
+	LONG			lJobIndex;  		// 사용자 직업(STAT_JOB_INDEX)
+	LONG			lRegionIndex;		// 사용자 지역(STAT_REGION_INDEX)
+	LONG			lGuildIndex;		// 사용자 길드여부(STAT_GUILD_INDEX)
+	LONG			lMemberIndex;		// 사용자 회원권여부(STAT_MEMBERSHIP_INDEX)
+
+	LONG			lClientIP;			// 사용자 Client IP
+	LONG			lGatewayIP;			// 사용자 Default Gateway IP
+	LONG			lMacAddress;		// 사용자 Mac Address
+	string			sMobileInfo;		// Mobile 정보, OS 정보
+	string			sAuthKey;			// Web 에서 받은 인증 정보 - MD5(USN + TimeStamp)
+%%
+	SPUserBaseInfo()
+	{
+		Clear();
+	}
+	virtual void Clear()
+	{
+		m_lUSN = -1L;
+		m_sUserID.erase();
+		m_sNickName.erase();
+
+		m_lUSC = 0L;
+		m_lJumin = 0L;
+		m_lFirstUSN = 0L;
+		m_lAgeIndex = 0L;
+		m_lJobIndex = 0L;
+		m_lRegionIndex = 0L;
+		m_lGuildIndex = 0L;
+		m_lMemberIndex = 0L;
+
+		m_lClientIP = 0L;
+		m_lGatewayIP = 0L;
+		m_lMacAddress = 0L;
+		m_sMobileInfo.erase();
+		m_sAuthKey.erase();
+	}
+%%
+};
+
+class SPUserGameInfo
+{
+	string			sUserGameData;		// 사용자 게임 데이타
+%%
+	SPUserGameInfo()
+	{
+		Clear();
+	}
+	virtual void Clear()
+	{
+		m_sUserGameData.erase();
+	}
+%%
+};
+
+class SPUserFullInfo : SPUserBaseInfo
+{
+	string			sUserGameData;		// 사용자 게임 데이타
+%%
+	SPUserFullInfo()
+	{
+		Clear();
+	}
+	virtual void Clear()
+	{
+		SPUserBaseInfo::Clear();
+		m_sUserGameData.erase();
+	}
+%%
+};
+
+class SPUserGameInfoForChannel
+{
+	LONG			lUSN;				// User Serial Number
+	string			sUserID;			// User ID
+	string			sNickName;			// User Nick Name
+
+	string			sUserGameData;		// 사용자 게임 데이타
+%%
+	SPUserGameInfoForChannel()
+	{
+		Clear();
+	}
+	virtual void Clear()
+	{
+		m_lUSN = -1L;
+		m_sUserID.erase();
+		m_sNickName.erase();
+		m_sUserGameData.erase();
+	}
+%%
+};
+
+class SPUserGameInfoForRoom : SPUserGameInfoForChannel
+{
+%%
+	SPUserGameInfoForRoom()
+	{
+		Clear();
+	}
+	virtual void Clear()
+	{
+		SPUserGameInfoForChannel::Clear();
+	}
+%%
+};
+
+%%
+typedef list<SPUserGameInfoForChannel> SPUserGameInfoForChannelList;
+typedef list<SPUserGameInfoForRoom> SPUserGameInfoForRoomList;
+%%
+
+%%
+// Smart Phone Room Info
+%%
+class CreateRoomInfo
+{
+	string			sTitle;
+	string			sPassword;
+	char			bUsePassword;
+	short			nMaxUserCnt;
+	string			sGameOption;
+%%
+	CreateRoomInfo()
+	{
+		Clear();
+	}
+	virtual void Clear()
+	{
+		m_sTitle.erase();
+		m_sPassword.erase();
+		m_bUsePassword = FALSE;
+		m_nMaxUserCnt = 0;
+		m_sGameOption.erase();
+	}
+%%
+};
+
+class SPRoomFullInfo : CreateRoomInfo
+{
+	RoomID			roomID;
+	LONG			lCaptainUSN;
+	short			nRoomState;
+	short			nUserCnt;
+%%
+	SPRoomFullInfo()
+	{
+		Clear();
+	}
+	virtual void Clear()
+	{
+		CreateRoomInfo::Clear();
+		m_roomID.Clear();
+		m_lCaptainUSN = -1L;
+		m_nRoomState = 0;
+		m_nUserCnt = 0;
+	}
+%%
+};
+
+class JoinRoomInfo
+{
+	RoomID			roomID;
+	string			sPassword;
+%%
+	JoinRoomInfo()
+	{
+		Clear();
+	}
+	virtual void Clear()
+	{
+		m_roomID.Clear();
+		m_sPassword.erase();
+	}
+%%
+};
+
+class AutoJoinRoomInfo
+{
+	ChannelID		channelID;
+	NSAP			nsapSGS;
+	RoomID			roomID;
+	string			sAdditionalInfo;
+%%
+	AutoJoinRoomInfo()
+	{
+		Clear();
+	}
+	virtual void Clear()
+	{
+		m_channelID.Clear();
+		m_nsapSGS.Clear();
+		m_roomID.Clear();
+		m_sAdditionalInfo.erase();
+	}
+%%
+};
+
+%%
+typedef list<AutoJoinRoomInfo> AutoJoinRoomInfoList;
+%%
+
+class SPRoomBaseInfo
+{
+	RoomID			roomID;
+	char			bUsePassword;
+	short			nMaxUserCnt;
+	string			sGameOption;
+	short			nRoomState;
+	short			nUserCnt;
+	string			sTitle;
+%%
+	SPRoomBaseInfo()
+	{
+		Clear();
+	}
+	virtual void Clear()
+	{
+		m_roomID.Clear();
+		m_bUsePassword = FALSE;
+		m_nMaxUserCnt = 0;
+		m_sGameOption.erase();
+		m_nRoomState = 0;
+		m_nUserCnt = 0;
+		m_sTitle.erase();
+	}
+%%
+};
+
+class SPRoomInfoForChannel : SPRoomBaseInfo
+{
+	SPUserGameInfoForChannelList	listUserInfo;
+	LONG			lCaptainUSN;
+%%
+	SPRoomInfoForChannel()
+	{
+		Clear();
+	}
+	virtual void Clear()
+	{
+		SPRoomBaseInfo::Clear();
+		m_listUserInfo.clear();
+		m_lCaptainUSN = -1L;
+	}
+%%
+};
+
+class SPRoomInfoForRoom : SPRoomBaseInfo
+{
+	SPUserGameInfoForRoomList	listUserInfo;
+	LONG			lCaptainUSN;
+%%
+	SPRoomInfoForRoom()
+	{
+		Clear();
+	}
+	virtual void Clear()
+	{
+		SPRoomBaseInfo::Clear();
+		m_listUserInfo.clear();
+		m_lCaptainUSN = -1L;
+	}
+%%
+};
+
+%%
+typedef list<SPRoomBaseInfo> SPRoomBaseInfoList;
+%%

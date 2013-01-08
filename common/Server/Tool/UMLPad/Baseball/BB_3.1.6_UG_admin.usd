@@ -1,0 +1,236 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>BB_3.1.6_UG_admin</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="18">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>30</objId>
+            <ptul X="475" Y="21" />
+            <ptdr X="575" Y="61" />
+            <links num="0" />
+            <objectName>UserGateServer</objectName>
+            <className>UG</className>
+            <actBoxes num="5">
+                <actBox id="34" />
+                <actBox id="36" />
+                <actBox id="39" />
+                <actBox id="43" />
+                <actBox id="45" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>31</objId>
+            <ptul X="26" Y="18" />
+            <ptdr X="94" Y="58" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="5">
+                <actBox id="33" />
+                <actBox id="37" />
+                <actBox id="40" />
+                <actBox id="42" />
+                <actBox id="46" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>32</objId>
+            <points num="2">
+                <pt x="517" y="273" />
+                <pt x="67" y="273" />
+            </points>
+            <objStart id="39" />
+            <objEnd id="40" />
+            <message messType="MGEN">ans_ug_error</message>
+            <guardCond>sys_error_id-int32</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>33</objId>
+            <ptul X="52" Y="86" />
+            <ptdr X="67" Y="116" />
+            <links num="1">
+                <link id="35" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>34</objId>
+            <ptul X="517" Y="86" />
+            <ptdr X="532" Y="116" />
+            <links num="1">
+                <link id="35" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>35</objId>
+            <points num="2">
+                <pt x="67" y="98" />
+                <pt x="517" y="98" />
+            </points>
+            <objStart id="33" />
+            <objEnd id="34" />
+            <message messType="MGEN">x2ug_echo</message>
+            <guardCond>type-int32,msg-string,client_time_msec-int32</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>36</objId>
+            <ptul X="517" Y="121" />
+            <ptdr X="532" Y="151" />
+            <links num="1">
+                <link id="38" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>37</objId>
+            <ptul X="52" Y="121" />
+            <ptdr X="67" Y="151" />
+            <links num="1">
+                <link id="38" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>38</objId>
+            <points num="2">
+                <pt x="517" y="131" />
+                <pt x="67" y="131" />
+            </points>
+            <objStart id="36" />
+            <objEnd id="37" />
+            <message messType="MGEN">ug2x_echo</message>
+            <guardCond>type-int32,msg-string,client_time_msec-int32,ug_time_msec-int64</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>39</objId>
+            <ptul X="517" Y="259" />
+            <ptdr X="532" Y="289" />
+            <links num="1">
+                <link id="32" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>40</objId>
+            <ptul X="52" Y="259" />
+            <ptdr X="67" Y="289" />
+            <links num="1">
+                <link id="32" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>sys_error_id ==0 성공&#x0A;sys_error_id &gt;0 에러테이블 참조(Sys_Error)</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>41</objId>
+            <ptul X="188" Y="323" />
+            <ptdr X="465" Y="367" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>42</objId>
+            <ptul X="52" Y="435" />
+            <ptdr X="67" Y="465" />
+            <links num="1">
+                <link id="44" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>43</objId>
+            <ptul X="517" Y="435" />
+            <ptdr X="532" Y="465" />
+            <links num="1">
+                <link id="44" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>44</objId>
+            <points num="2">
+                <pt x="67" y="444" />
+                <pt x="517" y="444" />
+            </points>
+            <objStart id="42" />
+            <objEnd id="43" />
+            <message messType="MGEN">x2ug_get_client_version</message>
+            <guardCond>version-string</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>45</objId>
+            <ptul X="517" Y="480" />
+            <ptdr X="532" Y="510" />
+            <links num="1">
+                <link id="47" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>46</objId>
+            <ptul X="52" Y="480" />
+            <ptdr X="67" Y="510" />
+            <links num="1">
+                <link id="47" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>47</objId>
+            <points num="2">
+                <pt x="517" y="492" />
+                <pt x="67" y="492" />
+            </points>
+            <objStart id="45" />
+            <objEnd id="46" />
+            <message messType="MGEN">ug2x_client_version</message>
+            <guardCond>version-string</guardCond>
+        </element>
+    </elements>
+</diagram>

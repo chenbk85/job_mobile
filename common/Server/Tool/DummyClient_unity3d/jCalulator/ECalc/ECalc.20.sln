@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evaluant.Calculator.20", "Evaluant.Calculator\Evaluant.Calculator.20.csproj", "{5F014003-50D8-49E0-8AFE-91D38DCCC97C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evaluant.Calculator.Play.20", "Evaluant.Calculator.Play\Evaluant.Calculator.Play.20.csproj", "{4183699B-5B7E-4294-9807-9709BAD86477}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evaluant.Calculator.Tests.20", "Evaluant.Calculator.Tests\Evaluant.Calculator.Tests.20.csproj", "{37BA7FE6-8A74-47A5-BD4C-EB1FB1F958D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F014003-50D8-49E0-8AFE-91D38DCCC97C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F014003-50D8-49E0-8AFE-91D38DCCC97C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F014003-50D8-49E0-8AFE-91D38DCCC97C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F014003-50D8-49E0-8AFE-91D38DCCC97C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4183699B-5B7E-4294-9807-9709BAD86477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4183699B-5B7E-4294-9807-9709BAD86477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4183699B-5B7E-4294-9807-9709BAD86477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4183699B-5B7E-4294-9807-9709BAD86477}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37BA7FE6-8A74-47A5-BD4C-EB1FB1F958D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37BA7FE6-8A74-47A5-BD4C-EB1FB1F958D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37BA7FE6-8A74-47A5-BD4C-EB1FB1F958D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37BA7FE6-8A74-47A5-BD4C-EB1FB1F958D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

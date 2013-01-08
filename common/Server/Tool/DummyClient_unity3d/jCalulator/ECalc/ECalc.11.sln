@@ -1,0 +1,39 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evaluant.Calculator.11", "Evaluant.Calculator\Evaluant.Calculator.11.csproj", "{8F302D08-7F0E-4C72-8795-40A8BFD3ADBF}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evaluant.Calculator.Play.11", "Evaluant.Calculator.Play\Evaluant.Calculator.Play.11.csproj", "{071A3B77-BFB9-4993-BB5C-C4699B4B900F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evaluant.Calculator.Tests.11", "Evaluant.Calculator.Tests\Evaluant.Calculator.Tests.11.csproj", "{515C17E3-31EF-4115-BE1B-77D17BE50741}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{8F302D08-7F0E-4C72-8795-40A8BFD3ADBF}.Debug.ActiveCfg = Debug|.NET
+		{8F302D08-7F0E-4C72-8795-40A8BFD3ADBF}.Debug.Build.0 = Debug|.NET
+		{8F302D08-7F0E-4C72-8795-40A8BFD3ADBF}.Release.ActiveCfg = Release|.NET
+		{8F302D08-7F0E-4C72-8795-40A8BFD3ADBF}.Release.Build.0 = Release|.NET
+		{071A3B77-BFB9-4993-BB5C-C4699B4B900F}.Debug.ActiveCfg = Debug|.NET
+		{071A3B77-BFB9-4993-BB5C-C4699B4B900F}.Debug.Build.0 = Debug|.NET
+		{071A3B77-BFB9-4993-BB5C-C4699B4B900F}.Release.ActiveCfg = Release|.NET
+		{071A3B77-BFB9-4993-BB5C-C4699B4B900F}.Release.Build.0 = Release|.NET
+		{515C17E3-31EF-4115-BE1B-77D17BE50741}.Debug.ActiveCfg = Debug|.NET
+		{515C17E3-31EF-4115-BE1B-77D17BE50741}.Debug.Build.0 = Debug|.NET
+		{515C17E3-31EF-4115-BE1B-77D17BE50741}.Release.ActiveCfg = Release|.NET
+		{515C17E3-31EF-4115-BE1B-77D17BE50741}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

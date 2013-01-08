@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<jGuiStage>
+  <GuiHeader>
+    <NamedRect>
+      <r_CommandWindow>0;0;380;480</r_CommandWindow>
+      <r_LogWindow>380;0;420;480</r_LogWindow>
+    </NamedRect>
+  </GuiHeader>
+  <jGui_List>
+    <jGuiWindow Name="CommandWindow" b_Enable="true" Rect="CommandWindow" Text="Command Window" GUIStyle="window" b_DragWindow="true" b_IsScalable="true">
+		<OverrideAttribute>
+			<jGuiButton i_FontSize="20" />
+			<jGuiLabel i_FontSize="20" />
+		</OverrideAttribute>
+      <jGuiVertical GUIStyle="box">
+        <jGuiToolbar Name="PlayerList">
+          <Text>Player1</Text>
+          <Text>Player2</Text>
+          <Text>Player3</Text>
+          <Text>Player4</Text>
+        </jGuiToolbar>
+      </jGuiVertical>
+      <jGuiLayout b_Enable="true" Name="CommandLayout">
+        <jGuiVertical GUIStyle="box">
+          <jGuiScrollView b_Enable="true" f_Width="0" f_Height="0" f_MaxWidth="0" f_MaxHeight="0" f_MinWidth="0" f_MinHeight="0">
+            <jGuiHorizontal b_Enable="true">
+              <jGuiButton f_MinWidth="50" f_MaxWidth="50" Text="Run" />
+              <jGuiButton f_Width="-1" TextAnchor="MiddleLeft" Text="#job_autojoin('10.25.21.104',12000,1001);" />
+            </jGuiHorizontal>
+            <jGuiHorizontal b_Enable="true">
+              <jGuiButton f_MinWidth="50" f_MaxWidth="50" Text="Run" />
+              <jGuiButton f_Width="-1" TextAnchor="MiddleLeft" Text="@user.login 10.25.21.104:12000 1001" />
+            </jGuiHorizontal>
+            <jGuiHorizontal b_Enable="true">
+              <jGuiButton f_MinWidth="50" f_MaxWidth="50" Text="Run" />
+              <jGuiButton f_Width="-1" TextAnchor="MiddleLeft" Text="@game.match_auto_join_team 1001" />
+            </jGuiHorizontal>
+            <jGuiHorizontal b_Enable="true">
+              <jGuiButton f_MinWidth="50" f_MaxWidth="50" Text="Run" />
+              <jGuiButton f_Width="-1" TextAnchor="MiddleLeft" Text="@game.x2bs_auto_match_ready2 1001" />
+            </jGuiHorizontal>
+            <jGuiHorizontal b_Enable="true">
+              <jGuiButton f_MinWidth="50" f_MaxWidth="50" Text="Run" />
+              <jGuiButton f_Width="-1" TextAnchor="MiddleLeft" Text="@game.x2bs_match_ready 1001" />
+            </jGuiHorizontal>
+            <jGuiHorizontal b_Enable="true">
+              <jGuiButton f_MinWidth="50" f_MaxWidth="50" Text="Run" />
+              <jGuiButton f_Width="-1" TextAnchor="MiddleLeft" Text="@game.x2bs_batter_ready 1001" />
+            </jGuiHorizontal>
+            <jGuiHorizontal b_Enable="true">
+              <jGuiButton f_MinWidth="50" f_MaxWidth="50" Text="Run" />
+              <jGuiButton f_Width="-1" TextAnchor="MiddleLeft" Text="@game.req_better_hit 1001" />
+            </jGuiHorizontal>
+            <jGuiHorizontal b_Enable="true">
+              <jGuiButton f_MinWidth="50" f_MaxWidth="50" Text="Run" />
+              <jGuiButton f_Width="-1" TextAnchor="MiddleLeft" Text="Text1" />
+            </jGuiHorizontal>
+            <jGuiHorizontal b_Enable="true">
+              <jGuiButton f_MinWidth="50" f_MaxWidth="50" Text="Run" />
+              <jGuiButton f_Width="-1" TextAnchor="MiddleLeft" Text="Text1" />
+            </jGuiHorizontal>
+            <jGuiHorizontal b_Enable="true">
+              <jGuiButton f_MinWidth="50" f_MaxWidth="50" Text="Run" />
+              <jGuiButton f_Width="-1" TextAnchor="MiddleLeft" Text="Text1asfd a" />
+            </jGuiHorizontal>
+          </jGuiScrollView>
+        </jGuiVertical>
+        <jGuiTextField b_Enable="true" Text="jGuiTextField text" />
+        <jGuiHorizontal>
+          <jGuiButton Name="Run" f_MaxWidth="0" />
+          <jGuiButton Name="History" f_MaxWidth="0" />
+          <jGuiButton Name="Quit" f_MaxWidth="0" />
+        </jGuiHorizontal>
+      </jGuiLayout>
+    </jGuiWindow>
+    <jGuiWindow Name="LogWindow" b_Enable="true" Rect="LogWindow" Text="NetLog Window" GUIStyle="window" b_DragWindow="true" b_IsScalable="true">
+      <jGuiLayout b_Enable="true" Name="CommandLayout">
+        <jGuiVertical GUIStyle="box" f_MinHeigt="30" f_MaxHeight="30">
+          <jGuiToolbar Name="PlayerList">
+            <Text>All Log</Text>
+            <Text>Warning Log</Text>
+            <Text>Error Log</Text>
+          </jGuiToolbar>
+        </jGuiVertical>
+        <jGuiVertical GUIStyle="box">
+          <jGuiScrollView b_Enable="true" f_Width="0" f_Height="0" f_MaxWidth="0" f_MaxHeight="0" f_MinWidth="0" f_MinHeight="0">
+            <jGuiLabel Name="LogLabel" b_Enable="true" f_Width="-1" f_Height="-1" Text="asdf     asdf     
+			a     f     as     
+			d     fas     fas     
+			fas     fas     
+			as     sfdasdf l
+			;kasd
+			;lfkjals
+			;dkfjddddddd 
+			asdfas sfdasdf l
+			;kasd;lfkjals;dkfjddddddd asdfas sfdasdf l;kasd;lfkjals;dkfjddddddd asdfas     fas     asfd     asf     d asdfaaaaaaaaaaaaaaaaaa32222222222222222222222222222222222222222222222222222222222222222222222222222222222222222     safd     
+			asfd          
+			fas     
+			asfd     
+			fasa     
+			sf     
+			asdf" />
+          </jGuiScrollView>
+        </jGuiVertical>
+        <jGuiVertical GUIStyle="box" ff_MinMaxH="30;30">
+          <jGuiHorizontal>
+            <jGuiButton Text="Clear log" />
+          </jGuiHorizontal>
+        </jGuiVertical>
+      </jGuiLayout>
+    </jGuiWindow>
+  </jGui_List>
+</jGuiStage>

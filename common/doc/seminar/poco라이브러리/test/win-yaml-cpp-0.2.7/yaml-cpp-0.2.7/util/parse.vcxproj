@@ -1,0 +1,635 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="mt-gd|x64">
+      <Configuration>mt-gd</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="mt-sgd|x64">
+      <Configuration>mt-sgd</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="mt-s|x64">
+      <Configuration>mt-s</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="mt|x64">
+      <Configuration>mt</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{3894C263-0CE4-43EB-905A-78FBB5573FD0}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>parse</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='mt|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">parse.dir\Debug\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'">parse.dir\Debug\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'">parse.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">parse</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'">parse</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'">parse</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='mt|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">parse.dir\Release\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='mt|x64'">parse.dir\Release\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'">parse.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">parse</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='mt|x64'">parse</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'">parse</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='mt|x64'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='mt|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='mt|x64'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">parse.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">parse</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">parse.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">parse</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4355</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/Debug/parse.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\Debug\libyaml-cppmdd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/Debug/parse.lib</ImportLibrary>
+      <LinkIncremental>true</LinkIncremental>
+      <ProgramDataBaseFile>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/Debug/parse.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4355</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/Debug/parse.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\Debug\libyaml-cppmdd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/Debug/parse.lib</ImportLibrary>
+      <LinkIncremental>true</LinkIncremental>
+      <ProgramDataBaseFile>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/Debug/parse.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4355</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/Debug/parse.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\Debug\libyaml-cppmdd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/Debug/parse.lib</ImportLibrary>
+      <LinkIncremental>true</LinkIncremental>
+      <ProgramDataBaseFile>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/Debug/parse.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4127;4355</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/Release/parse.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\Release\libyaml-cppmd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/Release/parse.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/Release/parse.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='mt|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4127;4355</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/Release/parse.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\Release\libyaml-cppmd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/Release/parse.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/Release/parse.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4127;4355</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/Release/parse.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\Release\libyaml-cppmd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/Release/parse.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/Release/parse.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4127;4355</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>MinSizeRel</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/MinSizeRel/parse.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\MinSizeRel\libyaml-cppmd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/MinSizeRel/parse.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/MinSizeRel/parse.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4355</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>RelWithDebInfo</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/RelWithDebInfo/parse.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\RelWithDebInfo\libyaml-cppmd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/RelWithDebInfo/parse.lib</ImportLibrary>
+      <LinkIncremental>true</LinkIncremental>
+      <ProgramDataBaseFile>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/RelWithDebInfo/parse.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'">Building Custom Rule C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'">Building Custom Rule C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\bin\cmake.exe -HC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 -BC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 --check-stamp-file C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'">setlocal
+C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\bin\cmake.exe -HC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 -BC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 --check-stamp-file C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'">setlocal
+C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\bin\cmake.exe -HC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 -BC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 --check-stamp-file C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'">C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'">C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='mt|x64'">Building Custom Rule C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'">Building Custom Rule C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\bin\cmake.exe -HC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 -BC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 --check-stamp-file C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='mt|x64'">setlocal
+C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\bin\cmake.exe -HC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 -BC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 --check-stamp-file C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'">setlocal
+C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\bin\cmake.exe -HC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 -BC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 --check-stamp-file C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='mt|x64'">C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'">C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='mt|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\bin\cmake.exe -HC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 -BC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 --check-stamp-file C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\bin\cmake.exe -HC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 -BC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 --check-stamp-file C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\util\parse.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/ZERO_CHECK.vcxproj">
+      <Project>9FF28251-5044-4F69-A10F-B94F439AC18C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/yaml-cpp.vcxproj">
+      <Project>A4CC1F10-F7C0-4BE0-A9E4-3633AE1E35A3</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

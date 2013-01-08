@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<ProtocalDefine>
+	<Namespace>
+    <BaseballServer FILE="PT_BaseballServer.xml" >
+      <DOC_ATTRIBUTE TAG="S" VERSION="0" i_DebugPrint='3' b_jxDEFINE="1"/>
+      <Child>
+        <Client/>
+        <Client2/>
+        <Clients/>
+        <UserGateServer/>
+      </Child>
+      <CODE type="ENUM_CPP_INCLUDE">network/my_pt_aq_server.h</CODE>
+    </BaseballServer>
+    <UserGateServer FILE="PT_UserGateServer.xml" >
+      <DOC_ATTRIBUTE TAG="UG" VERSION="0" i_DebugPrint='3' b_jxDEFINE="1"/>
+      <Child>
+        <Client/>
+        <Client2/>
+        <Clients/>
+      </Child>
+      <CODE type="ENUM_CPP_INCLUDE">network/my_pt_aq_server.h</CODE>
+    </UserGateServer>
+	<Client >
+		<TAG>X</TAG>
+	</Client>
+    <Client2 >
+      <TAG>X</TAG>
+    </Client2>
+    <Clients >
+      <TAG>X</TAG>
+    </Clients>
+  </Namespace>
+</ProtocalDefine>

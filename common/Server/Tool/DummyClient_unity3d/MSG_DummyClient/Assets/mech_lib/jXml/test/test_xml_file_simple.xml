@@ -1,0 +1,22 @@
+<a>
+	<aa>
+		<c c="c">asdfasdf23</c>
+		<b c="1" />	
+		<b2 a="2" b="d" ></b2>
+	</aa>
+	<bb>
+		<cc1></cc1>
+		<cc2 />
+		<cc3>cc3</cc3>
+	</bb>
+	<bb>
+		<cc1>
+			<cc1></cc1>
+			<cc2 />
+			<cc3>cc3</cc3>
+		</cc1>
+		<cc2 />
+		<cc3>cc3</cc3>
+	</bb>
+</a>
+

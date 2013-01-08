@@ -1,0 +1,410 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>BB_5.0.5_UG_item</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="32">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>849</objId>
+            <ptul X="391" Y="38" />
+            <ptdr X="491" Y="78" />
+            <links num="0" />
+            <objectName>UserGateServer</objectName>
+            <className>UG</className>
+            <actBoxes num="9">
+                <actBox id="851" />
+                <actBox id="856" />
+                <actBox id="859" />
+                <actBox id="864" />
+                <actBox id="866" />
+                <actBox id="870" />
+                <actBox id="872" />
+                <actBox id="876" />
+                <actBox id="882" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>850</objId>
+            <ptul X="61" Y="35" />
+            <ptdr X="129" Y="75" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="9">
+                <actBox id="852" />
+                <actBox id="855" />
+                <actBox id="858" />
+                <actBox id="863" />
+                <actBox id="867" />
+                <actBox id="869" />
+                <actBox id="873" />
+                <actBox id="875" />
+                <actBox id="881" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>851</objId>
+            <ptul X="433" Y="555" />
+            <ptdr X="448" Y="585" />
+            <links num="1">
+                <link id="853" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>852</objId>
+            <ptul X="87" Y="555" />
+            <ptdr X="102" Y="585" />
+            <links num="1">
+                <link id="853" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>853</objId>
+            <points num="2">
+                <pt x="433" y="560" />
+                <pt x="102" y="560" />
+            </points>
+            <objStart id="851" />
+            <objEnd id="852" />
+            <message messType="MGEN">ans_add_item</message>
+            <guardCond>item-s_tbl_item,reason-int32</guardCond>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>@admin.req_add_item &lt;uid&gt; &lt;sid&gt; &lt;EItemCategory&gt; &lt;etc_info&gt;</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>854</objId>
+            <ptul X="73" Y="88" />
+            <ptdr X="553" Y="107" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>855</objId>
+            <ptul X="87" Y="243" />
+            <ptdr X="102" Y="273" />
+            <links num="1">
+                <link id="857" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>856</objId>
+            <ptul X="433" Y="243" />
+            <ptdr X="448" Y="273" />
+            <links num="1">
+                <link id="857" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>857</objId>
+            <points num="2">
+                <pt x="102" y="251" />
+                <pt x="433" y="251" />
+            </points>
+            <objStart id="855" />
+            <objEnd id="856" />
+            <message messType="MGEN">req_admin_add_item</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>858</objId>
+            <ptul X="87" Y="506" />
+            <ptdr X="102" Y="536" />
+            <links num="1">
+                <link id="860" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>859</objId>
+            <ptul X="433" Y="506" />
+            <ptdr X="448" Y="536" />
+            <links num="1">
+                <link id="860" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>860</objId>
+            <points num="2">
+                <pt x="102" y="511" />
+                <pt x="433" y="511" />
+            </points>
+            <objStart id="858" />
+            <objEnd id="859" />
+            <message messType="MGEN">req_item_buy</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>883</objId>
+            <points num="2">
+                <pt x="102" y="622" />
+                <pt x="433" y="622" />
+            </points>
+            <objStart id="881" />
+            <objEnd id="882" />
+            <message messType="MGEN">x2ug_goto_main</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[req_admin_add_item]&#x0A;Sys_아이템의 sid로 강제로 아이템을 획득&#x0A;&#x0A;{PARAM}&#x0A;sid-int32- Sys_ItemEquip Sys_ItemConsume Sys_ItemStuff&#x0A;category-int32- EItemCategory&#x0A;etc_info-string</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>862</objId>
+            <ptul X="478" Y="236" />
+            <ptdr X="831" Y="360" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>863</objId>
+            <ptul X="87" Y="782" />
+            <ptdr X="102" Y="812" />
+            <links num="1">
+                <link id="865" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>864</objId>
+            <ptul X="433" Y="782" />
+            <ptdr X="448" Y="812" />
+            <links num="1">
+                <link id="865" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>865</objId>
+            <points num="2">
+                <pt x="102" y="787" />
+                <pt x="433" y="787" />
+            </points>
+            <objStart id="863" />
+            <objEnd id="864" />
+            <message messType="MGEN">req_admin_item_clear</message>
+            <guardCond>uid-int64</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>866</objId>
+            <ptul X="433" Y="831" />
+            <ptdr X="448" Y="861" />
+            <links num="1">
+                <link id="868" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>867</objId>
+            <ptul X="87" Y="831" />
+            <ptdr X="102" Y="861" />
+            <links num="1">
+                <link id="868" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>868</objId>
+            <points num="2">
+                <pt x="433" y="836" />
+                <pt x="102" y="836" />
+            </points>
+            <objStart id="866" />
+            <objEnd id="867" />
+            <message messType="MGEN">ans_admin_item_clear</message>
+            <guardCond>ok-bool</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>869</objId>
+            <ptul X="87" Y="133" />
+            <ptdr X="102" Y="163" />
+            <links num="1">
+                <link id="871" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>870</objId>
+            <ptul X="433" Y="133" />
+            <ptdr X="448" Y="163" />
+            <links num="1">
+                <link id="871" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>871</objId>
+            <points num="2">
+                <pt x="102" y="144" />
+                <pt x="433" y="144" />
+            </points>
+            <objStart id="869" />
+            <objEnd id="870" />
+            <message messType="MGEN">req_show_me_the_money</message>
+            <guardCond>uid-int64,game_money-int32</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>872</objId>
+            <ptul X="433" Y="168" />
+            <ptdr X="448" Y="198" />
+            <links num="1">
+                <link id="874" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>873</objId>
+            <ptul X="87" Y="168" />
+            <ptdr X="102" Y="198" />
+            <links num="1">
+                <link id="874" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>874</objId>
+            <points num="2">
+                <pt x="433" y="176" />
+                <pt x="102" y="176" />
+            </points>
+            <objStart id="872" />
+            <objEnd id="873" />
+            <message messType="MGEN">ans_show_me_the_money</message>
+            <guardCond>game_money-int32</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>875</objId>
+            <ptul X="87" Y="450" />
+            <ptdr X="102" Y="480" />
+            <links num="1">
+                <link id="877" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>876</objId>
+            <ptul X="433" Y="450" />
+            <ptdr X="448" Y="480" />
+            <links num="1">
+                <link id="877" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>877</objId>
+            <points num="2">
+                <pt x="102" y="457" />
+                <pt x="433" y="457" />
+            </points>
+            <objStart id="875" />
+            <objEnd id="876" />
+            <message messType="MGEN">x2ug_goto_shop</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>881</objId>
+            <ptul X="87" Y="617" />
+            <ptdr X="102" Y="647" />
+            <links num="1">
+                <link id="883" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>882</objId>
+            <ptul X="433" Y="617" />
+            <ptdr X="448" Y="647" />
+            <links num="1">
+                <link id="883" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[req_item_buy]&#x0A;상점 sid로 해당 물건 구입요청.&#x0A;{PARAM}&#x0A;shop_sid-int32-Sys_Shop_id_t&#x0A;count-int32&#x0A;option-string&#x0A;</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>861</objId>
+            <ptul X="474" Y="497" />
+            <ptdr X="684" Y="621" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

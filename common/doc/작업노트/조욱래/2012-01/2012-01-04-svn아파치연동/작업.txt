@@ -1,0 +1,40 @@
+yum install mod_dav_svn
+
+
+svnserve -d -r /data/svn
+iptables -I INPUT -p tcp --dport 3690 -j ACCEPT
+/etc/rc.d/init.d/iptables save
+/etc/rc.d/init.d/iptables restart
+ps -aux | grep svnserv
+netstat -ant | grep 3690
+vi /etc/rc.d/rc.local
+
+
+
+
+vi /etc/httpd/conf/httpd.conf 
+vi /etc/httpd/conf.d/subversion.conf
+
+<Location /svn>
+   DAV svn
+   SVNParentPath /data/svn/svnroot
+   AuthType Basic
+   AuthName "neowiz mobile svn"
+   AuthUserFile   /etc/svn-auth-users
+	Require valid-user
+</Location>
+
+vi ./test/conf/svnserve.conf 
+
+chown -R apache.apache test
+svnadmin create --fs-type fsfs ./test
+svnadmin create /data/svn/test
+chown -R apache.apache test
+chcon -R -t httpd_sys_content_t /var/www/svn/test
+chcon -R -t httpd_sys_rw_content_t /var/www/svn/test
+
+
+
+touch /etc/svn-auth-users 
+htpasswd /etc/svn-auth-users icandoit
+service httpd restart

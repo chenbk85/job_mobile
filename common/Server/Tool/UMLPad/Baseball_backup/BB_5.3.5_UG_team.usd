@@ -1,0 +1,448 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>BB_5.3.5_UG_team</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="35">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1999</objId>
+            <ptul X="465" Y="32" />
+            <ptdr X="565" Y="72" />
+            <links num="0" />
+            <objectName>UserGateServer</objectName>
+            <className>UG</className>
+            <actBoxes num="10">
+                <actBox id="2002" />
+                <actBox id="2004" />
+                <actBox id="2009" />
+                <actBox id="2011" />
+                <actBox id="2015" />
+                <actBox id="2017" />
+                <actBox id="2023" />
+                <actBox id="2026" />
+                <actBox id="2178" />
+                <actBox id="2180" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2000</objId>
+            <ptul X="23" Y="29" />
+            <ptdr X="91" Y="69" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="10">
+                <actBox id="2001" />
+                <actBox id="2005" />
+                <actBox id="2008" />
+                <actBox id="2012" />
+                <actBox id="2014" />
+                <actBox id="2018" />
+                <actBox id="2022" />
+                <actBox id="2025" />
+                <actBox id="2177" />
+                <actBox id="2181" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2001</objId>
+            <ptul X="49" Y="209" />
+            <ptdr X="64" Y="239" />
+            <links num="1">
+                <link id="2003" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2002</objId>
+            <ptul X="507" Y="209" />
+            <ptdr X="522" Y="239" />
+            <links num="1">
+                <link id="2003" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2003</objId>
+            <points num="2">
+                <pt x="64" y="220" />
+                <pt x="507" y="220" />
+            </points>
+            <objStart id="2001" />
+            <objEnd id="2002" />
+            <message messType="MGEN">req_team_create</message>
+            <guardCond>team-s_tbl_team</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2004</objId>
+            <ptul X="507" Y="242" />
+            <ptdr X="522" Y="272" />
+            <links num="1">
+                <link id="2006" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2005</objId>
+            <ptul X="49" Y="242" />
+            <ptdr X="64" Y="272" />
+            <links num="1">
+                <link id="2006" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2006</objId>
+            <points num="2">
+                <pt x="507" y="259" />
+                <pt x="64" y="259" />
+            </points>
+            <objStart id="2004" />
+            <objEnd id="2005" />
+            <message messType="MGEN">ans_team_create</message>
+            <guardCond>team-s_tbl_team</guardCond>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2007</objId>
+            <points num="2">
+                <pt x="507" y="583" />
+                <pt x="64" y="583" />
+            </points>
+            <objStart id="2017" />
+            <objEnd id="2018" />
+            <message messType="MGEN">ans_team_select</message>
+            <guardCond>team_order-int32</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2008</objId>
+            <ptul X="49" Y="336" />
+            <ptdr X="64" Y="366" />
+            <links num="1">
+                <link id="2010" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2009</objId>
+            <ptul X="507" Y="336" />
+            <ptdr X="522" Y="366" />
+            <links num="1">
+                <link id="2010" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2010</objId>
+            <points num="2">
+                <pt x="64" y="341" />
+                <pt x="507" y="341" />
+            </points>
+            <objStart id="2008" />
+            <objEnd id="2009" />
+            <message messType="MGEN">req_team_delete</message>
+            <guardCond>team_order-int32</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2011</objId>
+            <ptul X="507" Y="372" />
+            <ptdr X="522" Y="402" />
+            <links num="1">
+                <link id="2013" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2012</objId>
+            <ptul X="49" Y="372" />
+            <ptdr X="64" Y="402" />
+            <links num="1">
+                <link id="2013" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2013</objId>
+            <points num="2">
+                <pt x="507" y="387" />
+                <pt x="64" y="387" />
+            </points>
+            <objStart id="2011" />
+            <objEnd id="2012" />
+            <message messType="MGEN">ans_team_delete</message>
+            <guardCond>team_order-int32</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2014</objId>
+            <ptul X="49" Y="535" />
+            <ptdr X="64" Y="565" />
+            <links num="1">
+                <link id="2016" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2015</objId>
+            <ptul X="507" Y="535" />
+            <ptdr X="522" Y="565" />
+            <links num="1">
+                <link id="2016" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2016</objId>
+            <points num="2">
+                <pt x="64" y="547" />
+                <pt x="507" y="547" />
+            </points>
+            <objStart id="2014" />
+            <objEnd id="2015" />
+            <message messType="MGEN">req_team_select</message>
+            <guardCond>team_order-int32</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2017</objId>
+            <ptul X="507" Y="575" />
+            <ptdr X="522" Y="605" />
+            <links num="1">
+                <link id="2007" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2018</objId>
+            <ptul X="49" Y="575" />
+            <ptdr X="64" Y="605" />
+            <links num="1">
+                <link id="2007" />
+            </links>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>@user.team_create &lt;uid&gt; &lt;name&gt; &lt;pid_better&gt; &lt; pid_pitcher&gt;</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2019</objId>
+            <ptul X="34" Y="99" />
+            <ptdr X="502" Y="118" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>@user.team_delete &lt;uid&gt; &lt;tid&gt;</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2020</objId>
+            <ptul X="28" Y="299" />
+            <ptdr X="261" Y="318" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>@user.team_select &lt;uid&gt; &lt;tid&gt;</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2021</objId>
+            <ptul X="43" Y="496" />
+            <ptdr X="275" Y="515" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2022</objId>
+            <ptul X="49" Y="149" />
+            <ptdr X="64" Y="179" />
+            <links num="1">
+                <link id="2024" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2023</objId>
+            <ptul X="507" Y="149" />
+            <ptdr X="522" Y="179" />
+            <links num="1">
+                <link id="2024" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2024</objId>
+            <points num="2">
+                <pt x="64" y="154" />
+                <pt x="507" y="154" />
+            </points>
+            <objStart id="2022" />
+            <objEnd id="2023" />
+            <message messType="MGEN">x2ug_goto_team</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2025</objId>
+            <ptul X="49" Y="816" />
+            <ptdr X="64" Y="846" />
+            <links num="1">
+                <link id="2027" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2026</objId>
+            <ptul X="507" Y="816" />
+            <ptdr X="522" Y="846" />
+            <links num="1">
+                <link id="2027" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2027</objId>
+            <points num="2">
+                <pt x="64" y="821" />
+                <pt x="507" y="821" />
+            </points>
+            <objStart id="2025" />
+            <objEnd id="2026" />
+            <message messType="MGEN">x2ug_goto_main</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2177</objId>
+            <ptul X="49" Y="660" />
+            <ptdr X="64" Y="690" />
+            <links num="1">
+                <link id="2179" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2178</objId>
+            <ptul X="507" Y="660" />
+            <ptdr X="522" Y="690" />
+            <links num="1">
+                <link id="2179" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2179</objId>
+            <points num="2">
+                <pt x="64" y="672" />
+                <pt x="507" y="672" />
+            </points>
+            <objStart id="2177" />
+            <objEnd id="2178" />
+            <message messType="MGEN">req_team_update</message>
+            <guardCond>team-s_tbl_team</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2180</objId>
+            <ptul X="507" Y="698" />
+            <ptdr X="522" Y="728" />
+            <links num="1">
+                <link id="2182" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2181</objId>
+            <ptul X="49" Y="698" />
+            <ptdr X="64" Y="728" />
+            <links num="1">
+                <link id="2182" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>2182</objId>
+            <points num="2">
+                <pt x="507" y="708" />
+                <pt x="64" y="708" />
+            </points>
+            <objStart id="2180" />
+            <objEnd id="2181" />
+            <message messType="MGEN">ans_team_update</message>
+            <guardCond>team-s_tbl_team</guardCond>
+        </element>
+    </elements>
+</diagram>

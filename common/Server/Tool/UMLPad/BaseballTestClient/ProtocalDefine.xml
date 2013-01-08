@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<ProtocalDefine>
+	<Namespace>
+		<BaseballServer FILE="PT_BaseballServer.xml" >
+			<DOC_ATTRIBUTE TAG="BS" VERSION="8000" i_DebugPrint='3' b_jxDEFINE="1"/>
+			<Child>
+				<TestClient/>
+			</Child>
+			<CODE type="ENUM_CPP_INCLUDE">network/my_pt_aq_server.h</CODE>
+		</BaseballServer>
+		<Client >
+			<TAG>X</TAG>
+		</Client>
+	</Namespace>
+</ProtocalDefine>

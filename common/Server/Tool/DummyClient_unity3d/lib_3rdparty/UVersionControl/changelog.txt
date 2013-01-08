@@ -1,0 +1,14 @@
+Unity SVN Integration
+
+Version 0.2.0 (Beta 1)
+* Reworked Inspector GUI
+* Improved and fixed bugs in backend
+* Added right-click context for project view
+* Numerous small features and bug fixes from daily use
+
+Version 0.1.1. (Alpha)
+* Better handling of prefabs in OnInspector for gameObject
+* Unload unused resources in Unity before SVN actions to avoid race on OS file locks
+
+Version 0.1.0. (Alpha)
+* First public release

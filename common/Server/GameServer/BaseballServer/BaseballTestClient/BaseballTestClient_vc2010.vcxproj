@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="UDebug|x64">
+      <Configuration>UDebug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="URelease|x64">
+      <Configuration>URelease</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>BaseballTestClient</ProjectName>
+    <ProjectGuid>{185C0BF5-F3FF-4B05-BFA6-143C0E262A78}</ProjectGuid>
+    <RootNamespace>TestClient</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='URelease|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='URelease|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\lib\lib_mech\src\mech_vc2010.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\lib\lib_mech\src\mech_vc2010.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">$(MECH_BIN)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">$(MECH_TEMP)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">$(MECH_BIN)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">$(MECH_TEMP)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+    <ClCompile>
+      <AdditionalOptions>-Zm200  /w44267 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\excel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;TESTCLIENT_EXPORTS;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libprotobuf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(WindowsSdkDir)\lib\x64;$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OUT)/$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>$(MECH_TEMP)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Xdcmake>
+      <OutputFile>$(OUT)\$(TargetName).xml</OutputFile>
+    </Xdcmake>
+    <Bscmake>
+      <OutputFile>$(OUT)/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+    <ClCompile>
+      <AdditionalOptions>-Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>.\excel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;TESTCLIENT_EXPORTS;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libprotobuf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(WindowsSdkDir)\lib\x64;$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>$(MECH_TEMP)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Xdcmake>
+      <OutputFile>$(OUT)\$(TargetName).xml</OutputFile>
+    </Xdcmake>
+    <Bscmake>
+      <OutputFile>$(OUT)/$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\MSG\presence\client\cmd_admin.cpp" />
+    <ClCompile Include="cmd_admin.cpp" />
+    <ClCompile Include="Cmd_game.cpp" />
+    <ClCompile Include="cmd_item.cpp" />
+    <ClCompile Include="Cmd_player.cpp" />
+    <ClCompile Include="Cmd_team.cpp" />
+    <ClCompile Include="Cmd_test.cpp" />
+    <ClCompile Include="Cmd_user.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="jUser.cpp" />
+    <ClCompile Include="PlugIn_BaseballClient.cpp" />
+    <ClCompile Include="Recv_BaseballServer_Client.cpp" />
+    <ClCompile Include="Recv_UAnsProtocal.cpp" />
+    <ClCompile Include="recv_UserGateServer_Client.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TestClient.cpp" />
+    <ClCompile Include="proto\db.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="proto\excel_baseball_table_db.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="proto\gameLogic.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="proto\PT_BaseballServer.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="proto\PT_UserGateServer.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="proto\ug.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="excel\excel_all.cpp" />
+    <ClCompile Include="excel\excel_custom_code.cpp" />
+    <ClCompile Include="excel\code\excel_baseball_string_table.cpp" />
+    <ClCompile Include="excel\code\excel_baseball_table.cpp" />
+    <ClCompile Include="excel\code\excel_baseball_table_db.cpp" />
+    <ClCompile Include="excel\code\excel_baseball_table_etc.cpp" />
+    <ClCompile Include="excel\code\excel_baseball_table_game.cpp" />
+    <ClCompile Include="excel\code\excel_enum.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common_ug.h" />
+    <ClInclude Include="jUser.h" />
+    <ClInclude Include="PlugIn_BaseballClient.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TestClient.h" />
+    <ClInclude Include="proto\db.pb.h" />
+    <ClInclude Include="proto\excel_baseball_table_db.pb.h" />
+    <ClInclude Include="proto\gameLogic.pb.h" />
+    <ClInclude Include="proto\PT_BaseballServer.pb.h" />
+    <ClInclude Include="proto\PT_BaseballServer.proto.h" />
+    <ClInclude Include="proto\PT_UserGateServer.pb.h" />
+    <ClInclude Include="proto\PT_UserGateServer.proto.h" />
+    <ClInclude Include="proto\ug.pb.h" />
+    <ClInclude Include="excel\db_type.h" />
+    <ClInclude Include="excel\db_uid_type.h" />
+    <ClInclude Include="excel\excel_all.h" />
+    <ClInclude Include="excel\excel_code_util.h" />
+    <ClInclude Include="excel\excel_custom_code.h" />
+    <ClInclude Include="excel\jCSV_File.h" />
+    <ClInclude Include="excel\jDebugPrint.h" />
+    <ClInclude Include="excel\ToString_baseball.h" />
+    <ClInclude Include="excel\uString_stl.h" />
+    <ClInclude Include="excel\uStringParsor.h" />
+    <ClInclude Include="excel\code\excel_baseball_string_table.h" />
+    <ClInclude Include="excel\code\excel_baseball_table.h" />
+    <ClInclude Include="excel\code\excel_baseball_table_db.h" />
+    <ClInclude Include="excel\code\excel_baseball_table_etc.h" />
+    <ClInclude Include="excel\code\excel_baseball_table_game.h" />
+    <ClInclude Include="excel\code\excel_enum.h" />
+    <ClInclude Include="excel\code\table_const_excel_baseball_table.h" />
+    <ClInclude Include="excel\code\table_const_excel_baseball_table_db.h" />
+    <ClInclude Include="excel\code\table_const_excel_baseball_table_etc.h" />
+    <ClInclude Include="excel\code\table_const_excel_baseball_table_game.h" />
+    <ClInclude Include="excel\code\table_const_excel_baseball_table_item.h" />
+    <ClInclude Include="excel\code\table_const_excel_enum.h" />
+    <ClInclude Include="excel\code\table_const_excel_test.h" />
+    <ClInclude Include="excel\code\table_type.h" />
+    <ClInclude Include="T:\svn\baseball\MOB_lib\common_define_const.h" />
+    <ClInclude Include="T:\svn\baseball\MOB_lib\common_typedef.h" />
+    <ClInclude Include="T:\svn\baseball\MOB_lib\common_util.h" />
+    <ClInclude Include="T:\svn\baseball\MOB_lib\DBHelper.h" />
+    <ClInclude Include="T:\svn\baseball\MOB_lib\jUser_base.h" />
+    <ClInclude Include="T:\svn\baseball\MOB_lib\jUser_GameRoomInfo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\protobuf\test_contract.proto" />
+    <None Include="..\..\..\..\..\baseball\src\tool\CShap_ClientSocket\proto\excel_baseball_table_db.proto" />
+    <None Include="T:\svn\baseball\game\gameLogic.proto" />
+    <None Include="..\..\..\Tool\bin\BaseballTestClient.cmd.txt" />
+    <None Include="..\..\..\Tool\bin\DEV-182.162.130.57-1001.txt" />
+    <None Include="..\..\..\Tool\bin\DEV-182.162.130.57-1002.txt" />
+    <None Include="..\..\..\Tool\bin\icandoit-10.25.21.104-1001.cmd.txt" />
+    <None Include="..\..\..\Tool\bin\icandoit-10.25.21.104-1002.cmd.txt" />
+    <None Include="..\..\..\Tool\bin\icandoit-10.25.21.104-1003.cmd.txt" />
+    <None Include="..\..\..\Tool\bin\icandoit-10.25.21.104-1004.cmd.txt" />
+    <None Include="..\..\..\Tool\bin\jinmo-10.25.21.178-1001.cmd.txt" />
+    <None Include="..\..\..\Tool\bin\jinmo-10.25.21.178-1002.cmd.txt" />
+    <None Include="..\..\..\Tool\bin\jinmo-10.25.21.178-1003.cmd.txt" />
+    <None Include="..\..\..\Tool\bin\jinmo-10.25.21.178-1004.cmd.txt" />
+    <None Include="..\..\..\Tool\bin\NEW_QA-1001.txt" />
+    <None Include="..\..\..\Tool\bin\NEW_QA-1001_1002.txt" />
+    <None Include="..\..\..\Tool\bin\NEW_QA-1002.txt" />
+    <None Include="..\..\..\Tool\bin\oh-10.25.22.34-1001.cmd.txt" />
+    <None Include="..\..\..\Tool\bin\oh-10.25.22.34-1002.cmd.txt" />
+    <None Include="..\..\..\Tool\bin\oh-10.25.22.34-1003.cmd.txt" />
+    <None Include="..\..\..\Tool\bin\oh-10.25.22.34-1004.cmd.txt" />
+    <None Include="..\..\..\Tool\bin\QA-182.162.130.57-1001.txt" />
+    <None Include="..\..\..\Tool\bin\QA-182.162.130.57-1002.txt" />
+    <None Include="..\..\..\..\..\..\test\svn\common\Server\Tool\bin\QA-182.162.130.57-9001.txt" />
+    <None Include="..\..\..\..\..\..\test\svn\common\Server\Tool\bin\QA-182.162.130.57-9002.txt" />
+    <None Include="..\..\..\Tool\bin\TEST-182.162.130.57-1001.txt" />
+    <None Include="..\..\..\Tool\bin\TEST-182.162.130.57-1002.txt" />
+    <None Include="BaseballTestClient.xml" />
+    <None Include="..\..\..\Tool\bin\xml\net\BaseballTestClient_NetConfig.xml" />
+    <None Include="ReadMe.txt" />
+    <None Include="..\..\..\Tool\bin\sq\sq_main.nut" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

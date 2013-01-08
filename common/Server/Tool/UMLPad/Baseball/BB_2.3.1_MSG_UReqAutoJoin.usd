@@ -1,0 +1,294 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>BB_2.3.1_MSG_UReqAutoJoin</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="23">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>62</objId>
+            <ptul X="19" Y="146" />
+            <ptdr X="87" Y="186" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="4">
+                <actBox id="65" />
+                <actBox id="68" />
+                <actBox id="77" />
+                <actBox id="82" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>63</objId>
+            <ptul X="526" Y="144" />
+            <ptdr X="621" Y="184" />
+            <links num="0" />
+            <objectName>BaseballServer</objectName>
+            <className>S</className>
+            <actBoxes num="5">
+                <actBox id="64" />
+                <actBox id="69" />
+                <actBox id="72" />
+                <actBox id="78" />
+                <actBox id="81" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>64</objId>
+            <ptul X="566" Y="435" />
+            <ptdr X="581" Y="465" />
+            <links num="1">
+                <link id="71" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>65</objId>
+            <ptul X="45" Y="435" />
+            <ptdr X="60" Y="465" />
+            <links num="1">
+                <link id="71" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>66</objId>
+            <ptul X="751" Y="147" />
+            <ptdr X="819" Y="187" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="1">
+                <actBox id="73" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>67</objId>
+            <points num="2">
+                <pt x="60" y="358" />
+                <pt x="566" y="358" />
+            </points>
+            <objStart id="68" />
+            <objEnd id="69" />
+            <message messType="MRET">client -&gt; UReqAutoJoin</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>68</objId>
+            <ptul X="45" Y="353" />
+            <ptdr X="60" Y="383" />
+            <links num="1">
+                <link id="67" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>69</objId>
+            <ptul X="566" Y="353" />
+            <ptdr X="581" Y="383" />
+            <links num="1">
+                <link id="67" />
+            </links>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>@game.req_room_state &lt;uid&gt; [is_server=false]</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>70</objId>
+            <ptul X="20" Y="485" />
+            <ptdr X="377" Y="504" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>71</objId>
+            <points num="2">
+                <pt x="566" y="440" />
+                <pt x="60" y="440" />
+            </points>
+            <objStart id="64" />
+            <objEnd id="65" />
+            <message messType="MRET">UAnsAutoJoin (client &lt;- server)</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>72</objId>
+            <ptul X="566" Y="399" />
+            <ptdr X="581" Y="429" />
+            <links num="1">
+                <link id="74" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>73</objId>
+            <ptul X="777" Y="399" />
+            <ptdr X="792" Y="429" />
+            <links num="1">
+                <link id="74" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>74</objId>
+            <points num="2">
+                <pt x="581" y="411" />
+                <pt x="777" y="411" />
+            </points>
+            <objStart id="72" />
+            <objEnd id="73" />
+            <message messType="MGEN">ans_join_room</message>
+            <guardCond>gri-GameRoomInfo</guardCond>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>게임방에 있는 다른유저</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>75</objId>
+            <ptul X="660" Y="201" />
+            <ptdr X="838" Y="220" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>&lt;enum BaseballServer::EUserGPS_notuse&gt;&#x0A;_notuseGPS_LOGOUT=0, network is not connect &#x0A;_notuseGPS_LOGIN_OK, UserGateServer login ok&#x0A;_notuseGPS_SHOP, shop &#x0A;_notuseGPS_GAMEROOM, BaseballServer connected&#x0A;</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>76</objId>
+            <ptul X="561" Y="23" />
+            <ptdr X="888" Y="131" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>77</objId>
+            <ptul X="45" Y="519" />
+            <ptdr X="60" Y="549" />
+            <links num="1">
+                <link id="79" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>78</objId>
+            <ptul X="566" Y="519" />
+            <ptdr X="581" Y="549" />
+            <links num="1">
+                <link id="79" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>79</objId>
+            <points num="2">
+                <pt x="60" y="524" />
+                <pt x="566" y="524" />
+            </points>
+            <objStart id="77" />
+            <objEnd id="78" />
+            <message messType="MGEN">req_room_state</message>
+            <guardCond>room-int32</guardCond>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>@game.match_auto_join_team 1001 -&gt; UReqAutoJoin</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>80</objId>
+            <ptul X="25" Y="298" />
+            <ptdr X="434" Y="317" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>81</objId>
+            <ptul X="566" Y="564" />
+            <ptdr X="581" Y="594" />
+            <links num="1">
+                <link id="83" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>82</objId>
+            <ptul X="45" Y="564" />
+            <ptdr X="60" Y="594" />
+            <links num="1">
+                <link id="83" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>83</objId>
+            <points num="2">
+                <pt x="566" y="575" />
+                <pt x="60" y="575" />
+            </points>
+            <objStart id="81" />
+            <objEnd id="82" />
+            <message messType="MGEN">ans_room_state</message>
+            <guardCond>gri-GameRoomInfo</guardCond>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>84</objId>
+            <ptul X="408" Y="144" />
+            <ptdr X="508" Y="184" />
+            <links num="0" />
+            <objectName>UserGateServer</objectName>
+            <className>UG</className>
+            <actBoxes num="0" />
+        </element>
+    </elements>
+</diagram>

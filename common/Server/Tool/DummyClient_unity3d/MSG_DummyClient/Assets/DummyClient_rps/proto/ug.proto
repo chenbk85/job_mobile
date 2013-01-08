@@ -1,0 +1,594 @@
+option optimize_for = LITE_RUNTIME;
+
+import "db.proto";
+
+/* ------------------------------------------------------------------------ */
+// 요청에 따른 게이트웨이 상태 정리
+// 자세한 내용은 위키 참고  
+//  : http://nwmsvn.nwinet.co.kr/index.php/Ug_error_handling#.EC.83.81.ED.83.9C_.EB.8B.A4.EC.9D.B4.EC.96.B4.EA.B7.B8.EB.9E.A8
+// - CONNECTED
+//  * 클라이언트로부터 TCP Connection 생성된 상태
+// - TRYING_TO_LOGIN 
+//  * 클라이언트로부터 UReqConnect 수신
+//	  로그인 시도중인 상태
+// - LOGGED_IN 
+//  * 로비 상태
+//  * Case 1 : UReqConnect에 대한 처리 완료 
+//             UAnsConnect 메시지 클라이언트에 전송 완료
+//  * Case 2 : UReqLeaveGame에 대한 처리 완료 or 강퇴 처리 완료
+//             UAnsLeaveGame 메시지 클라이언트에 전송 완료
+// - IN_GAME_PROGRESS
+//  * 게임 플레이 중인 상태
+//  * UReqAutoJoin 메시지에 대한 처리 완료
+//    UAnsAutoJoin 메시지 클라이언트에 전송
+// - LEAVING_GAME
+//  * 게임방에서 퇴장 중인 상태
+//  * Case 1 : 클라이언트로부터 UReqLeaveGame 수신됨
+//  * Case 2 : 게임방에서 강퇴됨
+// - DISCONNECTED 
+//  * 클라이언트로부터 UReqClose 메시지 수신
+//    로그아웃 처리 완료 
+//    UAnsClose 메시지 클라이언트에 전송
+
+/* ------------------------------------------------------------------------ */
+
+// @brief 클라이언트와 서버간의 버전을 확인하는 정보로 사용하는 자료구조
+// 
+// @param major : 플랫폼 전체의 메이져 버전, 수동으로 프로토 파일을 수정해서 결정
+// @param protocol: 프로토콜의 버전, 7 자리로 구성되며 첫번째 두자리는 연도, 
+//                  두번째 두자리는 달, 세번째 두자리는 날짜, 마지막 한자리는 
+//                  그날에 수정된 일련번호
+// @param framework: 프레임 워크의 버전 정보 MSG::GetVersion() in basekit/version.hpp
+//                  의 정보가 실려서 들어감, MSG 릴리즈에서 관리함
+// @param service: 게임서버가 지원하는 버전 정보로 게임 로직에서 임의로 정해야 
+//                 하는 정보로 게임쪽 게이트웨이에 int gateway_version의 심볼을
+//                 정의해서 넣어주면 가져가도록 되어 있음
+
+message Version {
+    // 메이저 버전 : 1
+    optional int32 major = 1 [default = 1];          
+    // 프로토콜 버전 2012/04/01 #0
+    optional int32 protocol = 2 [default = 1204010]; 
+    required int32 framework = 3;
+    required int32 service = 4;
+}
+
+/* ------------------------------------------------------------------------ */
+
+// @breif 일반적인 에러 표현 방법
+// 
+// @param errorCode: 에러 코드
+// @param errorInfo: 에러 관련 정보가 들어감
+// @param reqMode: 어디에 사용하려 했는지 모름 현재 무조건 0이 들어가서 전달
+
+message Error {
+	required int32 errorCode = 1;
+	required string errorInfo = 2;
+	required int32 reqMode = 3;
+}
+
+/* ------------------------------------------------------------------------ */
+
+// @breif 키와 문자열을 전달하기 위해 만든 범용적인 자료구조
+// 
+// @param id: 키 정보
+// @param desc: 키에 들어있는 문자열 정보
+
+message Desc {
+	required int32 id = 1;
+	required string desc = 2;
+}
+
+/* ------------------------------------------------------------------------ */
+
+// @breif 공지사항을 전달하기 위한 자료구조
+// 
+// @param popup: 팝업공지인지 구분
+// @param srl: 공지의 일련번호
+// @param notice: 공지내용
+
+message Notice {
+	required bool popup = 1;
+	required int32 srl = 2;
+	required string notice = 3;
+}
+
+/* ------------------------------------------------------------------------ */
+
+// @brief 모든 에러를 범용적으로 전달하기 위한 메시지
+// @param error: 에러 정보를 담은 자료구조 
+// @param over: 안쓰고 있음
+message UError {
+	enum EErrorType {
+		EET_VERSION_INCORRECT = 1;
+		EET_DATABASE = 2;		// Database 에러
+		EET_INTERNAL = 3;		// 내부 서버 문제
+		EET_ALREADY_LOGGED = 4;	// 다른 접속이 존재
+		EET_NOT_LOGGED = 5;		// 로그인이 되어 있지 않음
+		EET_ALREADY_PLAYING = 6;	// 이미 게임중임
+		EET_NOT_PLAYING = 7;	// 게임중이 아님
+		EET_CANT_PLUG_GS = 8;	// 게임서버가 플러그를 거부함
+
+        // 요청 인자가 잘못 들어올 경우 : 현재 plug때 game_id가 상이할때
+		EET_INVALID_VALUE = 9; 
+       
+		EET_TIME_OUT = 10;      // unused
+		EET_UNDEFINE = 11;      // unused
+		EET_MAX_REFILL = 12;	//리필 제한
+		EET_OVER_USER = 13;		//유저가 넘친다
+
+        EET_PLUG = 14;          // 플러그가 안됨
+
+        EET_BUSY = 15;          // 현재는 이 패킷은 처리 못함 다시 시도할것
+	}
+
+	required Error error=1;
+    optional bool over=2;
+}
+
+
+
+// Packet type specification
+
+/* ------------------------------------------------------------------------ */
+
+// @brief 접속해서 사용자의 아이덴티티를 알려주는 기능을 하는 패킷 내용
+//        프리젠스 서버에 사용자가 접속했음을 알려주고, 디비에서 사용자 
+//        정보를 읽어들여 게이트웨이에 적재하는 작업을 수행한다
+//
+// @param svcID: 서비스의 고유번호 (게임이 서비스되는 전체 시스템의 구분번호 ex: 맞고개발용:1, 포커 개발용:2 ...)
+// @param gameID: 접속하는 사용자의 고유번호
+// @param lastCloseTime: 마지막 접속 해제한 시간을 보내라고 하는 것 같은데 
+//                       실제 코드에서는 사용 안하고 있는 필드
+// @param version: 클라이언트가 지원하는 버전의 정보
+// @param memberInfo: 피망플러스에서 넘어오는 정보를 변환한 자료구조
+//
+// @warning 버전이 안 맞을 경우 EET_VERSION_INCORRECT 에러가 넘어오고 
+//          접속을 끊어버린다.
+// @warning 프리젠스 서버와의 접속이 안될 경우 EET_INTERNAL에러가 넘어오고 
+//          접속을 끊어버린다
+// @warning 이 패킷은 프리젠스 서버의 승인을 요구한다. 이 경우 프리젠스가 
+//          30초 이내에 응답을 주지 않은 경우 아무런 에러 전송없이 접속을 
+//          종료한다.
+//          그러므로 일정 시간 동안 응답이 안오고 끊어지는 경우에 대한
+//          대비가 필요하다
+// @warning 데이터베이스에서 사용자 정보를 가져올 수 없을 때 EET_DATABASE를
+//          보내고 접속을 종료한다
+// @warning CONNECTED 상태가 아닌 경우 이 메시지를 무시한다
+
+message UReqConnect {
+	required int32 svcID = 1;
+	required int64 gameID = 2;
+	required int32 lastCloseTime = 3;
+	required Version version = 4;
+	required MemberInfo memberInfo = 5;
+}
+
+
+/* ------------------------------------------------------------------------ */
+
+// @brief 게이트웨이가 로그인 되었음을 확인해주는 메시지
+//        이 메시지를 수신하면 게이트웨이와 프리젠스 서버가 클라이언트의 
+//        정체성은 확인하였고, 재접속을 위한 서비스 준비가 되었다는 의미
+//
+// @param svcID: 서비스의 고유번호 (게임이 서비스되는 전체 시스템의 구분번호)
+// @param gameID: 접속하는 사용자의 고유번호
+// @param status: 현재 0으로 고정되어 전송되며, 사용하지 않는 필드
+// @param ip: 다시 플러그인 시도할 때 접속할 서버의 어드레스
+// @param port: 다시 플러그인 시도할 때 접속할 포트에 대한 정보
+// @param passwd: 다시 플러그인 시도할때 재전송 해야 하는 쿠키 정보
+message UAnsConnect {
+	required int32 svcID = 1;
+	required int64 gameID = 2;
+	required int32 status = 3;
+	required string ip = 4;
+	required int32 port = 5;
+	required string passwd = 6;
+}
+
+/* ------------------------------------------------------------------------ */
+
+// @brief 공지사항이 있는지 요구하는 메시지
+
+message UReqNotice {
+}
+
+/* ------------------------------------------------------------------------ */
+
+// @brief 공지사항 정보가 들어오는 메시지 
+//        위에서 설명한 Notice 자료구조가 반복적으로 들어있다.
+//        공지사항이 들어있느 파일이 존재하지 않거나 파싱이 불가능한 경우
+//        notices가 안차있는 메시지라도 무조건 전달된다
+
+message UAnsNotice {
+	repeated Notice notices = 1;
+}
+
+/* ------------------------------------------------------------------------ */
+
+// @brief 채널 정보를 요구하는 메시지
+//
+// @warning LOGGED_IN 상태가 아닌 경우 무시됨.
+
+message UReqChannel {
+}
+
+/* ------------------------------------------------------------------------ */
+
+// @brief 채널 정보에 대한 내용이 위에서 설명한 Desc구조에 실려서 들어온다.
+// 아래는 포커의 채널 정보에 대한 구조로 콜론(:)으로 필드를 구분한 문자열로
+// 채널 정보를 만들어 넘겨준다
+// 게이트웨이의 MSG::Database::get_channel() 을 오버라이드 해서 필드를 채
+// 워주는 코드를 작성하면 된다.
+//  id : 0
+//  desc: category=0:max_user=4000:low_rank=1:high_rank=3:person=0:Enter=0
+//  id : 1
+//  desc: category=1:max_user=4000:low_rank=3:high_rank=5:person=0:Enter=0
+//  id : 2
+//  desc: category=2:max_user=4000:low_rank=4:high_rank=6:person=0:Enter=0
+// id : 3
+//  desc: category=3:max_user=4000:low_rank=5:high_rank=8:person=0:Enter=0
+//  id : 4
+//  desc: category=4:max_user=4000:low_rank=0:high_rank=2:person=0:Enter=0
+
+message UAnsChannel {
+    repeated Desc channelInfo = 1;
+}
+
+
+/* ------------------------------------------------------------------------ */
+
+// @brief 사용 안하는 메시지 - UError로 통합
+
+message UErrChannel {
+	required Error error = 1;
+}
+
+
+/* ------------------------------------------------------------------------ */
+
+// @brief 사용 안하는 메시지 - 상점 구현을 위해서 준비되어 있음
+
+message UReqStore {
+}
+message UAnsStore {
+	repeated Desc itemInfo = 1;
+}
+
+/* ------------------------------------------------------------------------ */
+
+// @brief 사용자 정보 요구 메시지
+//    요구하는 시점의 사용자 정보를 가져온다, 사용자 정보가 갱신되었을때
+//    일괄로 가져올 수 있는 기능을 제공한다
+//
+// @warning LOGGED_IN 상태가 아니면 무시됨
+// @warning IN_GAME_PROGRESS 상태인 경우 게임 정보가 변동되고 있는중이라고 
+//          가정해서 이 요청은 무시된다. (현재는 무시하지 않음)
+
+message UReqInfo {
+}
+
+/* ------------------------------------------------------------------------ */
+
+// @brief 사용자 정보 응답 메시지
+//
+// @param gameInfo 사용자의 정보가 시리얼라이즈되어서 넘어온다. 사용자 정보는
+//      게임마다 다르기 때문에 게임 서버 제작자가 구현한대로 넘어온다.
+// 게이트웨이의 MSG::Database::get_gameuserinfo() 를 상속받아 구현해서 넘어온
+// 값이 패킷에 실려서 넘어간다
+
+message UAnsInfo {
+	required bytes gameInfo = 1;
+}
+
+/* ------------------------------------------------------------------------ */
+
+// @brief 게임에 참여 요청
+//
+// @param categoryID 참가할 게임의 카테고리 구분
+// @param categoryID 참가할 게임의 채널 구분
+// 
+// @warning LOGGED_IN 또는 IN_GAME_PROGRESS 상태가 아니면 무시됨.
+// @warning 프리젠스 서버와 접속이 끊어져 있다면 EET_INTERNAL을 보내준다
+// @warning 이미 사용자가 게임을 하고 있다면 EET_ALREADY_PLAYING 이 보내준다.
+// @warning 프리젠스 서버에 참가할 방에 대한 정보를 요구하는데 30초 안에 응답이 
+//          없으면 클라이언트와의 접속을 종료한다.
+// @warning 프리젠스에서 방 정보를 얻으면 게임 서버에 접속하는데 게임서버에 
+//          접속이 실패하는 경우 클라이언트와의 접속을 종료한다.
+
+message UReqAutoJoin {
+	required int32 categoryID =1;
+	required int32 channelID = 2;
+}
+
+
+// @brief 게임서버의 룸에 입장했을 경우에 넘어오는 메시지
+//
+// @param gameRoomInfo 룸의 구성에 관련된 정보를 시리얼라이즈해서 넘겨준다
+//          게임서버에서 클라이언트와 약속해서 넘겨주는 정보이므로 플랫폼에서는
+//          신경을 쓰지 않는다.
+
+message UAnsAutoJoin {
+	required bytes gameRoomInfo = 1;
+}
+
+/* ------------------------------------------------------------------------ */
+
+// @brief 게임에서 나가기를 요청하는 필드
+// 
+// @param gameID 나갈 사용자의 USN으로 본인의 id를 보내주면 된다. 확인용
+// @param kick  안사용하는 필드 false로 채워져 있다
+// @param leave_info 게임에서 퇴장 사유를 저장
+// 
+// @warning LOGGED_IN, IN_GAME_PROGRESS 상태가 아니면 무시된다.
+// @warning IN_GAME_PROGRESS 상태가 아닌 경우, EET_NOT_PLAYING 에러가 전송된다.
+// @warning 게임서버에서 나가기를 허가하지 않은 경우 클라이언트에 응답이 전송되지 않는다.
+
+message UReqLeaveGame {
+	required int64	gameID		= 1;
+	required bool	kick		= 2;
+	optional bytes	leave_info	= 3;	// 게임에서 퇴장 사유를 지정해 사용할 수
+										// 있도록 하는 필드
+}
+
+/* ------------------------------------------------------------------------ */
+
+
+// @brief 사용자가 게임에서 내보내질때 오는 메시지
+//        클라이언트가 요청해서 게임서버가 나가기를 허가하는 경우와
+//        게임서버에서 독단적으로 내보내기로 결정할때 온다.
+//        게임 서버와의 접속이 끊어지게 되고, 게임중에서 게임 로그인 상태로 상태가 바뀐다.
+//
+// @param gameID 게임에서 나가게 된 사용자의 USN 
+// @param nType 나가게 된 사유 코드
+// @param leave_info 나가게 된 사유 정보
+// 
+// @warning gameID가 본인이 아닌 경우 그냥 포워딩만 해준다, 맞고에서의 요구사항
+// @warning 이 메시지가 발생하는 상황에서 클라이언트가 끊어져 전달 못하는 경우
+//        있는 경우 게이트웨이는 종료된다
+// @warning nType이 KILL인 경우 게이트웨이가 바로 종료된다
+
+message UAnsLeaveGame {
+	enum KICK_TYPE{
+		EXIT_RESERVATION=1;
+  	  	LIMITMONEY=2;
+  	  	ALLIN=3;
+  	  	SYSTEM_ERROR = 4;
+  	  	KICK_ZERO = 5;
+  	  	PURGE = 6; // 강퇴처리
+  	  	KILL = 7; // 게이트웨이 종료
+  	}
+
+	required int64 gameID		= 1;
+  	required KICK_TYPE nType	= 2;
+	optional bytes leave_info	= 3;	// 게임에서 퇴장 사유를 지정해 사용할 수
+										// 있도록 하는 필드
+										// - UReqLeaveGame 에 의한 퇴장인 경우,
+										//	 UReqLeaveGame의 값으로 설정됨
+										// - 서버에 의해 퇴장인 경우, 게임 로직에서
+										//   지정한 값으로 설정됨
+}
+
+/* ------------------------------------------------------------------------ */
+
+// @brief 게이트웨이의 종료 요청 메시지 - 강제 접속 해지해도 되지만 
+//         명시적으로 접속을 종료하기 위한 요청
+//
+// @warning IN_GAME_PROGRESS 상태인 경우 요청을 무시당한다.
+
+message UReqClose {
+}
+
+/* ------------------------------------------------------------------------ */
+
+
+// @brief 게이트웨이의 종료 응답 메시지
+// 
+// @warning UReqClose와 짝이 안맞는 응답의 경우는 에러 상황에서 게이트웨이가 
+//         종료될때 전달된다
+
+message UAnsClose {
+}
+
+/* ------------------------------------------------------------------------ */
+
+// @brief 일정시간동안 게이트웨이와 클라이언트가 통신을 못하고 있는 경우 
+//        UAnsPing이 클라이언트에서 오는데 일정시간 안에 이 메시지로 응답
+//        을 주지 못하면 접속이 끊어진 것으로 간주한다
+//
+// @param seq UAnsPing에서 온 메시지를 보내주면 됨
+
+message UReqPong {
+	required int32 seq = 1;
+}
+
+
+/* ------------------------------------------------------------------------ */
+// @brief 일정시간동안 클라이언트가 통신을 하지 않고 대기하고 있으면 게이트웨이
+//      에서 접속이 살아있는지 검사하는 이 메시지를 보낸다
+//
+// @param seq 게이트웨이에서 생성한 시퀀스 번호
+
+message UAnsPing {
+	required int32 seq = 1;
+}
+
+/* ------------------------------------------------------------------------ */
+
+// @brief 통신 불량으로 접속이 떨어지거나 클라이언트가 오류나 기타 이유로
+//      강제 종료되는 경우 다시 접속을 요구하는 메시지로 UAnsConnect에서 
+//      넘겨준 재접속 포트 정보로 접속을 한 후 아래의 메시지를 전송한다
+//     
+// @param gameID 접속하려는 유저의 아이디
+// @param passwd UAnsConnect에서 준 재접속용 패스워드
+//
+// @warning 게임아이디가 게이트웨이 원래의 주인 아이디와 안맞을 경우 접속 끊음
+// @warning 패스워드가 틀리면 EET_PLUG전송 후 접속 끊음
+// @warning "-!matgo@mobile!-" 마스터키와 패스워드가 같으면 통과시켜 줌
+// @warning 게임이 진행중이 아니면 EET_PLUG를 보내고 게이트웨이 종료
+
+message UReqPlug {
+	required int64 gameID = 1;
+	required string passwd = 2;
+}
+
+/* ------------------------------------------------------------------------ */
+
+// @brief 게임서버에서 재접속 허가를 낸 경우 받는 메시지
+//
+// @param gameID 재접속된 사용자 id
+//
+// @warning 있을 수 없는 일이지만 게임서버의 오류로 재접속 사용자와 게이트웨이 
+//       주인의 아이디가 안맞을 경우 EET_PLUG발생
+
+message UAnsPlug {
+	required int64 gameID = 1;
+}
+
+/* ------------------------------------------------------------------------ */
+
+// @brief 클라이언트가 요청하는 메시지들의 상위 메시지
+//
+// @param type 요청의 분류 정보
+// @param reqConnect 접속 요청 메시지
+// @param reqChannel 채널 요청 메시지
+// @param reqStore 상점 요청 메시지
+// @param reqInfo 본인 정보 요청 메시지
+// @param reqAutoJoin 게임 자동 입장 메시지
+// @param reqClose 종료 요청 메시지
+// @param reqPong 접속이 살아있음을 알리는 메시지
+// @param reqPlug 재접속 시도 메시지
+// @param reqGameProtocol 게임서버에 포워딩해줄 메시지
+// @param reqDB 디비 요청 메시지
+// @param reqNotice 공지사항 요청
+// @param reqGatewayProtocol 게이트웨이에 사용자 메시지 전달
+//
+// @param warning IN_GAME_PROGRESS 상태가 아닌 경우, reqGameProtocol메시지는 무시된다
+// @param warning USER_LOGGED_IN 또는 IN_GAME_PROGRESS 상태가 아닌 경우, reqGatewayProtocol메시지는 무시된다. 
+
+message UReqProtocol {
+enum Type {
+	NONE = 1;
+	UREQCONNECT = 2;
+	UREQCHANNEL = 3;
+	UREQSTORE = 4;
+	UREQINFO = 5;
+	UREQAUTOJOIN = 6;
+	UREQLEAVEGAME = 7;
+	UREQCLOSE = 8;
+	UREQPONG = 9;
+	UREQPLUG = 10;
+	GLREQGAMEPROTOCOL = 11;
+	UREQDB = 12;
+	UREQNOTICE = 13;
+	UREQGATEWAYPROTOCOL = 14;
+}
+
+	required Type type = 1;
+	optional UReqConnect reqConnect = 2;
+	optional UReqChannel reqChannel = 3;
+	optional UReqStore reqStore = 4;
+	optional UReqInfo reqInfo = 5;
+	optional UReqAutoJoin reqAutoJoin = 6;
+	optional UReqLeaveGame reqLeaveGame = 7;
+	optional UReqClose reqClose = 8;
+	optional UReqPong reqPong = 9;
+	optional UReqPlug reqPlug = 10;
+	
+	optional bytes reqGameProtocol = 11;
+	optional ReqDB reqDB = 12;
+	optional UReqNotice reqNotice = 13;
+	optional bytes reqGatewayProtocol = 14;
+};
+
+/* ------------------------------------------------------------------------ */
+
+// @brief 게이트웨이가 보내주는 응답 메시지의 상위 메시지
+//
+// @param type 음답의 분류 정보
+// @param ansConnect 접속에 대한 응답 메시지
+// @param ansChannel 처널정보에 대한 응답 메시지
+// @param ansStore 상점에 대한 응답 메시지
+// @param ansInfo 본인 정보에 대한 응답 메시지
+// @param ansAutoJoin 게임 자동 입장에 대한 응답 메시지
+// @param ansLeaveGame 게임 나가기에 대한 응답 메시지
+// @param ansPing 클라이언트에게 응답을 요청하는 메시지
+// @param ansPlug 재접속 허용 메시지
+// @param ansGameProtocol 게임서버에서부터 나온 게임관련 응답 메시지
+// @param ansDB 디비 요청에 대한 응답 메시지
+// @param ansNotice 공지사항 응답 메시지
+// @param ansError 에러가 발생했을 경우의 처리
+// @param ansGatewayProtocol 게이트웨이의 사용자 메시지에 대한 응답
+//
+// @warning 요청에대한 응답은 반드시 짝이 맞는 것은 아니며 연속되게 같은 요청이 
+//          가는 경우 무시될 수도 있고, 처리가 불가능한 경우 에러 응답이 
+//          나갈 수도 있음
+
+message UAnsProtocol {
+enum Type {
+	NONE = 1;
+
+	UANSCONNECT = 2;
+	UANSCHANNEL = 3;
+	UANSSTORE = 4;
+	UANSINFO = 5;
+	UANSAUTOJOIN = 6;
+	UANSLEAVEGAME = 7;
+	UANSCLOSE = 8;
+	UANSPING = 9;
+	UANSPLUG = 10;
+	GLANSGAMEPROTOCOL = 11;
+	UANSDB = 12;
+	UANSNOTICE = 13;
+
+	UERROR = 14;
+	UANSGATEWAYPROTOCOL = 15;
+}
+	required Type type = 1;
+
+	optional UAnsConnect ansConnect = 2;
+	optional UAnsChannel ansChannel = 3;
+	optional UAnsStore ansStore = 4;
+	optional UAnsInfo ansInfo = 5;
+	optional UAnsAutoJoin ansAutoJoin = 6;
+	optional UAnsLeaveGame ansLeaveGame = 7;
+	optional UAnsClose ansClose = 8;
+	optional UAnsPing ansPing = 9;
+	optional UAnsPlug ansPlug= 10;
+
+	optional bytes ansGameProtocol = 11;
+	optional AnsDB ansDB = 12;
+	optional UAnsNotice ansNotice = 13;
+
+	optional UError ansError = 14;
+	optional bytes ansGatewayProtocol = 15;				
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+// @brief 피망 플러스에서 주어지는 유저 정보를 패킹해서 보내줌
+//
+// @param game_id 사용자 아이디
+// @param avatar_url 아바타의 이미지를 받을 수 있는 url
+// @param nick_name 사용자의 별명
+// @param gender_option 성별이 들어있음 true : 남자, false : 여자
+
+message MemberInfo
+{
+    // 피망플러스 사용자 아이디
+    required int64          game_id = 1;
+
+    // 아바타 이미지 URL
+    required string         avatar_url = 2;
+
+    // 닉네임 정보관리는 PP에서만 하고 게임서버에서는 통보만 받는다.
+    // 이름의 길이등은 알 필요 없다.
+    required string         nick_name = 3;
+
+    required bool           gender_option = 4;
+}
+
+/* -------------------------------------------------------------------------- */
+
+

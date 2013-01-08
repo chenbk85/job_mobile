@@ -1,0 +1,18 @@
+//  "//"로 시작하면 주석이다. 
+// 매크로 {SERVER_IP}는 더미클라이언트에서 선택한 서버주소를 의미. 직접IP를 입력해도 된다.
+// 매크로 {SERVER_PORT}는 더미클라이언트에서 선택한 서버포트를 의미. 직접 PORT번호를 입력해도된다.
+// 매크로 1001는 더미클라이언트에서 세팅한 유저 번호로 대치된다. 직접 USER ID 번호를 입력해도 된다.
+
+@user.login {SERVER_IP}:{SERVER_PORT} 1001
+@user.ReqConnect 1001
+@game.match_auto_join_team 1001
+@user.login {SERVER_IP}:{SERVER_PORT} 1002
+@user.ReqConnect 1002
+@game.match_auto_join_team 1002
+####################################
+@game.UReqLeaveGame 1001
+@user.logout 1001
+@user.destroy 1001
+@game.UReqLeaveGame 1002
+@user.logout 1002
+@user.destroy 1002

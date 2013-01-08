@@ -1,0 +1,665 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>BB_3.5.1_UG_EUserGPS</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="52">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>146</objId>
+            <ptul X="464" Y="55" />
+            <ptdr X="564" Y="95" />
+            <links num="0" />
+            <objectName>UserGateServer</objectName>
+            <className>UG</className>
+            <actBoxes num="16">
+                <actBox id="149" />
+                <actBox id="151" />
+                <actBox id="155" />
+                <actBox id="158" />
+                <actBox id="161" />
+                <actBox id="164" />
+                <actBox id="167" />
+                <actBox id="170" />
+                <actBox id="173" />
+                <actBox id="176" />
+                <actBox id="179" />
+                <actBox id="182" />
+                <actBox id="185" />
+                <actBox id="188" />
+                <actBox id="191" />
+                <actBox id="194" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>147</objId>
+            <ptul X="59" Y="54" />
+            <ptdr X="127" Y="94" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="16">
+                <actBox id="148" />
+                <actBox id="152" />
+                <actBox id="154" />
+                <actBox id="157" />
+                <actBox id="160" />
+                <actBox id="163" />
+                <actBox id="166" />
+                <actBox id="169" />
+                <actBox id="172" />
+                <actBox id="175" />
+                <actBox id="178" />
+                <actBox id="181" />
+                <actBox id="184" />
+                <actBox id="187" />
+                <actBox id="190" />
+                <actBox id="193" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>148</objId>
+            <ptul X="85" Y="111" />
+            <ptdr X="100" Y="141" />
+            <links num="1">
+                <link id="150" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>149</objId>
+            <ptul X="506" Y="111" />
+            <ptdr X="521" Y="141" />
+            <links num="1">
+                <link id="150" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>150</objId>
+            <points num="2">
+                <pt x="100" y="119" />
+                <pt x="506" y="119" />
+            </points>
+            <objStart id="148" />
+            <objEnd id="149" />
+            <message messType="MGEN">x2ug_goto_main</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>151</objId>
+            <ptul X="506" Y="737" />
+            <ptdr X="521" Y="767" />
+            <links num="1">
+                <link id="153" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>152</objId>
+            <ptul X="85" Y="737" />
+            <ptdr X="100" Y="767" />
+            <links num="1">
+                <link id="153" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>153</objId>
+            <points num="2">
+                <pt x="506" y="742" />
+                <pt x="100" y="742" />
+            </points>
+            <objStart id="151" />
+            <objEnd id="152" />
+            <message messType="MGEN">ug2x_goto_ok</message>
+            <guardCond>state-string,prev_level-string,next_level-string</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>154</objId>
+            <ptul X="85" Y="167" />
+            <ptdr X="100" Y="197" />
+            <links num="1">
+                <link id="156" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>155</objId>
+            <ptul X="506" Y="167" />
+            <ptdr X="521" Y="197" />
+            <links num="1">
+                <link id="156" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>156</objId>
+            <points num="2">
+                <pt x="100" y="172" />
+                <pt x="506" y="172" />
+            </points>
+            <objStart id="154" />
+            <objEnd id="155" />
+            <message messType="MGEN">x2ug_goto_charactor_create</message>
+            <guardCond>prev_level-string,next_level-string</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>157</objId>
+            <ptul X="85" Y="205" />
+            <ptdr X="100" Y="235" />
+            <links num="1">
+                <link id="159" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>158</objId>
+            <ptul X="506" Y="205" />
+            <ptdr X="521" Y="235" />
+            <links num="1">
+                <link id="159" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>159</objId>
+            <points num="2">
+                <pt x="100" y="210" />
+                <pt x="506" y="210" />
+            </points>
+            <objStart id="157" />
+            <objEnd id="158" />
+            <message messType="MGEN">x2ug_goto_inventory</message>
+            <guardCond>prev_level-string,next_level-string</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>160</objId>
+            <ptul X="85" Y="256" />
+            <ptdr X="100" Y="286" />
+            <links num="1">
+                <link id="162" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>161</objId>
+            <ptul X="506" Y="256" />
+            <ptdr X="521" Y="286" />
+            <links num="1">
+                <link id="162" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>162</objId>
+            <points num="2">
+                <pt x="100" y="261" />
+                <pt x="506" y="261" />
+            </points>
+            <objStart id="160" />
+            <objEnd id="161" />
+            <message messType="MGEN">x2ug_goto_match</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>163</objId>
+            <ptul X="85" Y="294" />
+            <ptdr X="100" Y="324" />
+            <links num="1">
+                <link id="165" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>164</objId>
+            <ptul X="506" Y="294" />
+            <ptdr X="521" Y="324" />
+            <links num="1">
+                <link id="165" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>165</objId>
+            <points num="2">
+                <pt x="100" y="299" />
+                <pt x="506" y="299" />
+            </points>
+            <objStart id="163" />
+            <objEnd id="164" />
+            <message messType="MGEN">x2ug_goto_single</message>
+            <guardCond>prev_level-string,next_level-string</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>166</objId>
+            <ptul X="85" Y="331" />
+            <ptdr X="100" Y="361" />
+            <links num="1">
+                <link id="168" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>167</objId>
+            <ptul X="506" Y="331" />
+            <ptdr X="521" Y="361" />
+            <links num="1">
+                <link id="168" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>168</objId>
+            <points num="2">
+                <pt x="100" y="336" />
+                <pt x="506" y="336" />
+            </points>
+            <objStart id="166" />
+            <objEnd id="167" />
+            <message messType="MGEN">x2ug_goto_friend_match</message>
+            <guardCond>prev_level-string,next_level-string</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>169</objId>
+            <ptul X="85" Y="371" />
+            <ptdr X="100" Y="401" />
+            <links num="1">
+                <link id="171" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>170</objId>
+            <ptul X="506" Y="371" />
+            <ptdr X="521" Y="401" />
+            <links num="1">
+                <link id="171" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>171</objId>
+            <points num="2">
+                <pt x="100" y="376" />
+                <pt x="506" y="376" />
+            </points>
+            <objStart id="169" />
+            <objEnd id="170" />
+            <message messType="MGEN">x2ug_goto_upgrade_pitcher</message>
+            <guardCond>prev_level-string,next_level-string</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>172</objId>
+            <ptul X="85" Y="409" />
+            <ptdr X="100" Y="439" />
+            <links num="1">
+                <link id="174" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>173</objId>
+            <ptul X="506" Y="409" />
+            <ptdr X="521" Y="439" />
+            <links num="1">
+                <link id="174" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>174</objId>
+            <points num="2">
+                <pt x="100" y="414" />
+                <pt x="506" y="414" />
+            </points>
+            <objStart id="172" />
+            <objEnd id="173" />
+            <message messType="MGEN">x2ug_goto_upgrade_tranner</message>
+            <guardCond>prev_level-string,next_level-string</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>175</objId>
+            <ptul X="85" Y="455" />
+            <ptdr X="100" Y="485" />
+            <links num="1">
+                <link id="177" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>176</objId>
+            <ptul X="506" Y="455" />
+            <ptdr X="521" Y="485" />
+            <links num="1">
+                <link id="177" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>177</objId>
+            <points num="2">
+                <pt x="100" y="460" />
+                <pt x="506" y="460" />
+            </points>
+            <objStart id="175" />
+            <objEnd id="176" />
+            <message messType="MGEN">x2ug_goto_upgrade_maestro</message>
+            <guardCond>prev_level-string,next_level-string</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>178</objId>
+            <ptul X="85" Y="494" />
+            <ptdr X="100" Y="524" />
+            <links num="1">
+                <link id="180" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>179</objId>
+            <ptul X="506" Y="494" />
+            <ptdr X="521" Y="524" />
+            <links num="1">
+                <link id="180" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>180</objId>
+            <points num="2">
+                <pt x="100" y="499" />
+                <pt x="506" y="499" />
+            </points>
+            <objStart id="178" />
+            <objEnd id="179" />
+            <message messType="MGEN">x2ug_goto_etc_ativate</message>
+            <guardCond>prev_level-string,next_level-string</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>181</objId>
+            <ptul X="85" Y="536" />
+            <ptdr X="100" Y="566" />
+            <links num="1">
+                <link id="183" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>182</objId>
+            <ptul X="506" Y="536" />
+            <ptdr X="521" Y="566" />
+            <links num="1">
+                <link id="183" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>183</objId>
+            <points num="2">
+                <pt x="100" y="541" />
+                <pt x="506" y="541" />
+            </points>
+            <objStart id="181" />
+            <objEnd id="182" />
+            <message messType="MGEN">x2ug_goto_rank</message>
+            <guardCond>prev_level-string,next_level-string</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>184</objId>
+            <ptul X="85" Y="576" />
+            <ptdr X="100" Y="606" />
+            <links num="1">
+                <link id="186" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>185</objId>
+            <ptul X="506" Y="576" />
+            <ptdr X="521" Y="606" />
+            <links num="1">
+                <link id="186" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>186</objId>
+            <points num="2">
+                <pt x="100" y="581" />
+                <pt x="506" y="581" />
+            </points>
+            <objStart id="184" />
+            <objEnd id="185" />
+            <message messType="MGEN">x2ug_goto_quest</message>
+            <guardCond>prev_level-string,next_level-string</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>187</objId>
+            <ptul X="85" Y="618" />
+            <ptdr X="100" Y="648" />
+            <links num="1">
+                <link id="189" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>188</objId>
+            <ptul X="506" Y="618" />
+            <ptdr X="521" Y="648" />
+            <links num="1">
+                <link id="189" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>189</objId>
+            <points num="2">
+                <pt x="100" y="623" />
+                <pt x="506" y="623" />
+            </points>
+            <objStart id="187" />
+            <objEnd id="188" />
+            <message messType="MGEN">x2ug_goto_option</message>
+            <guardCond>prev_level-string,next_level-string</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>190</objId>
+            <ptul X="85" Y="655" />
+            <ptdr X="100" Y="685" />
+            <links num="1">
+                <link id="192" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>191</objId>
+            <ptul X="506" Y="655" />
+            <ptdr X="521" Y="685" />
+            <links num="1">
+                <link id="192" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>192</objId>
+            <points num="2">
+                <pt x="100" y="660" />
+                <pt x="506" y="660" />
+            </points>
+            <objStart id="190" />
+            <objEnd id="191" />
+            <message messType="MGEN">x2ug_goto_shop</message>
+            <guardCond>prev_level-string,next_level-string</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>193</objId>
+            <ptul X="85" Y="693" />
+            <ptdr X="100" Y="723" />
+            <links num="1">
+                <link id="195" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>194</objId>
+            <ptul X="506" Y="693" />
+            <ptdr X="521" Y="723" />
+            <links num="1">
+                <link id="195" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>195</objId>
+            <points num="2">
+                <pt x="100" y="698" />
+                <pt x="506" y="698" />
+            </points>
+            <objStart id="193" />
+            <objEnd id="194" />
+            <message messType="MGEN">x2ug_goto_team</message>
+            <guardCond>prev_level-string,next_level-string</guardCond>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[x2ug_goto_main]&#x0A;&#x0A;{PARAM}&#x0A;prev_level-string&#x0A;next_level-string</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>196</objId>
+            <ptul X="628" Y="106" />
+            <ptdr X="739" Y="198" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[x2ug_goto_match]&#x0A;&#x0A;{PARAM}&#x0A;prev_level-string&#x0A;next_level-string</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>197</objId>
+            <ptul X="597" Y="263" />
+            <ptdr X="716" Y="355" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

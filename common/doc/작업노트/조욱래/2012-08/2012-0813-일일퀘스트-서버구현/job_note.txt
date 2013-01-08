@@ -1,0 +1,14 @@
+일감.
+http://10.25.20.82:3000/issues/217
+
+주의사항.
+http://nwmsvn.nwinet.co.kr/svn/baseball/doc/design/excel/21_baseball_table.xlsx에서
+Sys_Quest의 condition_value1은 확률분포를 의미한다.
+
+즉 0~100까지의 숫자를 랜덤하게 뽑아서 condition_value1에 가장 
+근접하게 작은 데일리 케스트의 보상을 하게된다.
+
+ex) 랜덤값이 51 이면 데일리퀘스트_외야플라이(Sys_Quest sid=61)의 보상을 준다.
+
+
+만약 줄 일일보너스가 없으면 ans_ug_error - ERR_DAILY_QUEST_IS_OVER를 보낸다.

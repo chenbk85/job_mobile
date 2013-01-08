@@ -1,0 +1,502 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>Skip_BB_2.2.1_MSG_Connect</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="40">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>94</objId>
+            <ptul X="11" Y="18" />
+            <ptdr X="79" Y="58" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="8">
+                <actBox id="96" />
+                <actBox id="100" />
+                <actBox id="99" />
+                <actBox id="109" />
+                <actBox id="110" />
+                <actBox id="115" />
+                <actBox id="117" />
+                <actBox id="121" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>95</objId>
+            <ptul X="404" Y="16" />
+            <ptdr X="472" Y="56" />
+            <links num="0" />
+            <objectName>UserGate</objectName>
+            <className>UG</className>
+            <actBoxes num="9">
+                <actBox id="97" />
+                <actBox id="101" />
+                <actBox id="105" />
+                <actBox id="108" />
+                <actBox id="111" />
+                <actBox id="113" />
+                <actBox id="118" />
+                <actBox id="120" />
+                <actBox id="128" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>96</objId>
+            <ptul X="37" Y="75" />
+            <ptdr X="52" Y="105" />
+            <links num="1">
+                <link id="98" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>97</objId>
+            <ptul X="431" Y="75" />
+            <ptdr X="446" Y="105" />
+            <links num="1">
+                <link id="98" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>98</objId>
+            <points num="2">
+                <pt x="52" y="80" />
+                <pt x="431" y="80" />
+            </points>
+            <objStart id="96" />
+            <objEnd id="97" />
+            <message messType="MRET">tcp connect</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>99</objId>
+            <ptul X="37" Y="312" />
+            <ptdr X="52" Y="342" />
+            <links num="1">
+                <link id="103" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>100</objId>
+            <ptul X="37" Y="130" />
+            <ptdr X="52" Y="160" />
+            <links num="1">
+                <link id="102" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>101</objId>
+            <ptul X="430" Y="130" />
+            <ptdr X="445" Y="160" />
+            <links num="1">
+                <link id="102" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>102</objId>
+            <points num="2">
+                <pt x="52" y="135" />
+                <pt x="430" y="135" />
+            </points>
+            <objStart id="100" />
+            <objEnd id="101" />
+            <message messType="MGEN">UReqConnect</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>103</objId>
+            <points num="2">
+                <pt x="430" y="317" />
+                <pt x="52" y="317" />
+            </points>
+            <objStart id="105" />
+            <objEnd id="99" />
+            <message messType="MGEN">UAnsConnect</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>message UAnsConnect {&#x0A;&#x09;required int32 svcID = 1;&#x0A;&#x09;required int32 gameID = 2;&#x0A;&#x09;required int32 status = 3;&#x0A;&#x09;required string ip = 4;&#x0A;&#x09;required int32 port = 5;&#x0A;&#x09;required string passwd = 6;&#x0A;}</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>104</objId>
+            <ptul X="453" Y="303" />
+            <ptdr X="618" Y="443" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>105</objId>
+            <ptul X="430" Y="312" />
+            <ptdr X="445" Y="342" />
+            <links num="1">
+                <link id="103" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>message UReqInfo {&#x0A;}&#x0A;message UAnsInfo {&#x0A;&#x09;required bytes gameInfo = 1;&#x0A;}</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>106</objId>
+            <ptul X="651" Y="522" />
+            <ptdr X="824" Y="614" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>107</objId>
+            <points num="2">
+                <pt x="430" y="365" />
+                <pt x="52" y="365" />
+            </points>
+            <objStart id="108" />
+            <objEnd id="109" />
+            <message messType="MGEN">UError</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>108</objId>
+            <ptul X="430" Y="360" />
+            <ptdr X="445" Y="390" />
+            <links num="1">
+                <link id="107" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>109</objId>
+            <ptul X="37" Y="360" />
+            <ptdr X="52" Y="390" />
+            <links num="1">
+                <link id="107" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>110</objId>
+            <ptul X="37" Y="528" />
+            <ptdr X="52" Y="558" />
+            <links num="1">
+                <link id="112" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>111</objId>
+            <ptul X="430" Y="528" />
+            <ptdr X="445" Y="558" />
+            <links num="1">
+                <link id="112" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>112</objId>
+            <points num="2">
+                <pt x="52" y="533" />
+                <pt x="430" y="533" />
+            </points>
+            <objStart id="110" />
+            <objEnd id="111" />
+            <message messType="MGEN">UReqInfo</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>113</objId>
+            <ptul X="430" Y="569" />
+            <ptdr X="445" Y="599" />
+            <links num="1">
+                <link id="114" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>114</objId>
+            <points num="2">
+                <pt x="430" y="574" />
+                <pt x="52" y="574" />
+            </points>
+            <objStart id="113" />
+            <objEnd id="115" />
+            <message messType="MGEN">UAnsInfo</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>115</objId>
+            <ptul X="37" Y="569" />
+            <ptdr X="52" Y="599" />
+            <links num="1">
+                <link id="114" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>message UReqAutoJoin {&#x0A;&#x09;required int32 categoryID =1;&#x0A;&#x09;required int32 channelID = 2;&#x0A;}</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>116</objId>
+            <ptul X="455" Y="526" />
+            <ptdr X="630" Y="602" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>117</objId>
+            <ptul X="37" Y="722" />
+            <ptdr X="52" Y="752" />
+            <links num="1">
+                <link id="119" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>118</objId>
+            <ptul X="430" Y="722" />
+            <ptdr X="445" Y="752" />
+            <links num="1">
+                <link id="119" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>119</objId>
+            <points num="2">
+                <pt x="52" y="727" />
+                <pt x="430" y="727" />
+            </points>
+            <objStart id="117" />
+            <objEnd id="118" />
+            <message messType="MGEN">UReqChannel</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>120</objId>
+            <ptul X="430" Y="757" />
+            <ptdr X="445" Y="787" />
+            <links num="1">
+                <link id="122" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>121</objId>
+            <ptul X="37" Y="757" />
+            <ptdr X="52" Y="787" />
+            <links num="1">
+                <link id="122" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>122</objId>
+            <points num="2">
+                <pt x="430" y="762" />
+                <pt x="52" y="762" />
+            </points>
+            <objStart id="120" />
+            <objEnd id="121" />
+            <message messType="MGEN">UAnsChannel</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>123</objId>
+            <ptul X="1033" Y="9" />
+            <ptdr X="1101" Y="49" />
+            <links num="0" />
+            <objectName>Presence</objectName>
+            <className>P</className>
+            <actBoxes num="0" />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>message Version {&#x0A;&#x09;required int32 major = 1;&#x0A;&#x09;required int32 minor = 2;&#x0A;&#x09;required int32 sub = 3;&#x0A;}</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>124</objId>
+            <ptul X="668" Y="300" />
+            <ptdr X="817" Y="392" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>125</objId>
+            <ptul X="800" Y="14" />
+            <ptdr X="868" Y="38" />
+            <links num="0" />
+            <objectName>DB</objectName>
+            <className></className>
+            <actBoxes num="1">
+                <actBox id="129" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>126</objId>
+            <ptul X="893" Y="12" />
+            <ptdr X="988" Y="52" />
+            <links num="0" />
+            <objectName>BaseballServer</objectName>
+            <className>BS</className>
+            <actBoxes num="0" />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>message MemberInfo&#x0A;{&#x0A; // 피망플러스 사용자 아이디&#x0A; required int32 game_id = 1;&#x0A;&#x0A; // 아바타 이미지 URL&#x0A; required string avatar_url = 2;&#x0A;&#x0A; // 닉네임 정보관리는 PP에서만 하고&#x0A; 게임서버에서는 통보만 받는다.&#x0A; // 이름의 길이등은 알 필요 없다.&#x0A; required string nick_name = 3;&#x0A;&#x0A; required bool gender_option = 4;&#x0A;}</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>127</objId>
+            <ptul X="859" Y="86" />
+            <ptdr X="1108" Y="338" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>128</objId>
+            <ptul X="430" Y="164" />
+            <ptdr X="445" Y="194" />
+            <links num="1">
+                <link id="130" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>129</objId>
+            <ptul X="826" Y="164" />
+            <ptdr X="841" Y="194" />
+            <links num="1">
+                <link id="130" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>130</objId>
+            <points num="2">
+                <pt x="445" y="169" />
+                <pt x="826" y="169" />
+            </points>
+            <objStart id="128" />
+            <objEnd id="129" />
+            <message messType="MGEN">Database :: load_user_info</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>message UReqChannel {&#x0A;}&#x0A;message UAnsChannel {&#x0A; repeated Desc channelInfo = 1;&#x0A;}&#x0A;message UErrChannel {&#x0A;&#x09;required Error error = 1;&#x0A;}&#x0A;&#x0A;</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>131</objId>
+            <ptul X="450" Y="688" />
+            <ptdr X="654" Y="860" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>message UReqConnect {&#x0A;&#x09;required int32 svcID = 1;&#x0A;&#x09;required int32 gameID = 2;&#x0A;&#x09;required int32 lastCloseTime = 3;&#x0A;&#x09;required Version programVer = 4;&#x0A;&#x09;required Version protoVer = 5;&#x0A;&#x09;required MemberInfo memberInfo = 6;&#x0A;}</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>132</objId>
+            <ptul X="121" Y="152" />
+            <ptdr X="344" Y="292" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>message UError {&#x0A;&#x09;enum EErrorType {&#x0A;&#x09;&#x09;EET_VERSION_INCORRECT = 1;&#x0A;&#x09;&#x09;EET_DATABASE = 2;&#x09;&#x09;// Database 에러&#x0A;&#x09;&#x09;EET_INTERNAL = 3;&#x09;&#x09;// 내부 서버 문제&#x0A;&#x09;&#x09;EET_ALREADY_LOGGED = 4;&#x09;// 다른 접속이 존재&#x0A;&#x09;&#x09;EET_NOT_LOGGED = 5;&#x09;&#x09;// 로그인이 되어 있지 않음&#x0A;&#x09;&#x09;EET_ALREADY_PLAYING = 6;&#x09;// 이미 게임중임&#x0A;&#x09;&#x09;EET_NOT_PLAYING = 7;&#x09;// 게임중이 아님&#x0A;&#x09;&#x09;EET_CANT_PLUG_GS = 8;&#x09;// 게임서버가 플러그를 거부함&#x0A;&#x0A;&#x09;&#x09;EET_INVALID_VALUE = 9;&#x0A;&#x09;&#x09;EET_TIME_OUT = 10;&#x0A;&#x09;&#x09;EET_UNDEFINE = 11;&#x0A;&#x09;&#x09;EET_MAX_REFILL = 12;&#x09;//리필 제한&#x0A;&#x09;&#x09;EET_OVER_USER = 13;&#x09;&#x09;//유저가 넘친다&#x0A;&#x09;}&#x0A;&#x0A;&#x09;required Error error=1;&#x0A;}&#x0A;</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>133</objId>
+            <ptul X="849" Y="346" />
+            <ptdr X="1218" Y="694" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

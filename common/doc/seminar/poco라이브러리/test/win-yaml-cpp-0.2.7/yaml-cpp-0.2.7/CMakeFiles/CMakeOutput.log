@@ -1,0 +1,131 @@
+The system is: Windows - 6.1 - x86
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MICROS~2.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec2501867204
+
+Microsoft (R) Visual Studio Version 10.0.40219.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: cmTryCompileExec2501867204, Configuration: Debug x64 ------
+1>Build started 2012-10-18 오후 8:12:37.
+1>PrepareForBuild:
+1>  Creating directory "C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeTmp\Debug\".
+1>InitializeBuildStatus:
+1>  Creating "cmTryCompileExec2501867204.dir\Debug\cmTryCompileExec2501867204.unsuccessfulbuild" because "AlwaysCreate" was specified.
+1>ClCompile:
+1>  Microsoft (R) C/C++ Optimizing Compiler Version 16.00.40219.01 for x64
+1>  Copyright (C) Microsoft Corporation.  All rights reserved.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec2501867204.dir\Debug\\" /Fd"C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2501867204.pdb" /Gd /TC /errorReport:prompt "C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeTmp\testCCompiler.c"  /Zm1000 
+1>  
+1>  testCCompiler.c
+1>Link:
+1>  cmTryCompileExec2501867204.vcxproj -> C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2501867204.exe
+1>LinkEmbedManifest:
+1>  cmTryCompileExec2501867204.vcxproj -> C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2501867204.exe
+1>FinalizeBuildStatus:
+1>  Deleting file "cmTryCompileExec2501867204.dir\Debug\cmTryCompileExec2501867204.unsuccessfulbuild".
+1>  Touching "cmTryCompileExec2501867204.dir\Debug\cmTryCompileExec2501867204.lastbuildstate".
+1>
+1>Build succeeded.
+1>
+1>Time Elapsed 00:00:28.30
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MICROS~2.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec2258865077
+
+Microsoft (R) Visual Studio Version 10.0.40219.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: cmTryCompileExec2258865077, Configuration: Debug x64 ------
+1>Build started 2012-10-18 오후 8:13:24.
+1>InitializeBuildStatus:
+1>  Creating "cmTryCompileExec2258865077.dir\Debug\cmTryCompileExec2258865077.unsuccessfulbuild" because "AlwaysCreate" was specified.
+1>ClCompile:
+1>  Microsoft (R) C/C++ Optimizing Compiler Version 16.00.40219.01 for x64
+1>  Copyright (C) Microsoft Corporation.  All rights reserved.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec2258865077.dir\Debug\\" /Fd"C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2258865077.pdb" /Gd /TC /errorReport:prompt "C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompilerABI.c"  /Zm1000 
+1>  
+1>  CMakeCCompilerABI.c
+1>Link:
+1>  cmTryCompileExec2258865077.vcxproj -> C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2258865077.exe
+1>LinkEmbedManifest:
+1>  cmTryCompileExec2258865077.vcxproj -> C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2258865077.exe
+1>FinalizeBuildStatus:
+1>  Deleting file "cmTryCompileExec2258865077.dir\Debug\cmTryCompileExec2258865077.unsuccessfulbuild".
+1>  Touching "cmTryCompileExec2258865077.dir\Debug\cmTryCompileExec2258865077.lastbuildstate".
+1>
+1>Build succeeded.
+1>
+1>Time Elapsed 00:00:01.60
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MICROS~2.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec1756649353
+
+Microsoft (R) Visual Studio Version 10.0.40219.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: cmTryCompileExec1756649353, Configuration: Debug x64 ------
+1>Build started 2012-10-18 오후 8:13:28.
+1>InitializeBuildStatus:
+1>  Creating "cmTryCompileExec1756649353.dir\Debug\cmTryCompileExec1756649353.unsuccessfulbuild" because "AlwaysCreate" was specified.
+1>ClCompile:
+1>  Microsoft (R) C/C++ Optimizing Compiler Version 16.00.40219.01 for x64
+1>  Copyright (C) Microsoft Corporation.  All rights reserved.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec1756649353.dir\Debug\\" /Fd"C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1756649353.pdb" /Gd /TP /errorReport:prompt "C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"  /Zm1000 
+1>  
+1>  testCXXCompiler.cxx
+1>Link:
+1>  cmTryCompileExec1756649353.vcxproj -> C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1756649353.exe
+1>LinkEmbedManifest:
+1>  cmTryCompileExec1756649353.vcxproj -> C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1756649353.exe
+1>FinalizeBuildStatus:
+1>  Deleting file "cmTryCompileExec1756649353.dir\Debug\cmTryCompileExec1756649353.unsuccessfulbuild".
+1>  Touching "cmTryCompileExec1756649353.dir\Debug\cmTryCompileExec1756649353.lastbuildstate".
+1>
+1>Build succeeded.
+1>
+1>Time Elapsed 00:00:01.80
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MICROS~2.0\Common7\IDE\devenv.com CMAKE_TRY_COMPILE.sln /build Debug /project cmTryCompileExec3331010223
+
+Microsoft (R) Visual Studio Version 10.0.40219.1.
+Copyright (C) Microsoft Corp. All rights reserved.
+1>------ Build started: Project: cmTryCompileExec3331010223, Configuration: Debug x64 ------
+1>Build started 2012-10-18 오후 8:13:31.
+1>InitializeBuildStatus:
+1>  Creating "cmTryCompileExec3331010223.dir\Debug\cmTryCompileExec3331010223.unsuccessfulbuild" because "AlwaysCreate" was specified.
+1>ClCompile:
+1>  Microsoft (R) C/C++ Optimizing Compiler Version 16.00.40219.01 for x64
+1>  Copyright (C) Microsoft Corporation.  All rights reserved.
+1>  
+1>  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3331010223.dir\Debug\\" /Fd"C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3331010223.pdb" /Gd /TP /errorReport:prompt "C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"  /Zm1000 
+1>  
+1>  CMakeCXXCompilerABI.cpp
+1>Link:
+1>  cmTryCompileExec3331010223.vcxproj -> C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3331010223.exe
+1>LinkEmbedManifest:
+1>  cmTryCompileExec3331010223.vcxproj -> C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3331010223.exe
+1>FinalizeBuildStatus:
+1>  Deleting file "cmTryCompileExec3331010223.dir\Debug\cmTryCompileExec3331010223.unsuccessfulbuild".
+1>  Touching "cmTryCompileExec3331010223.dir\Debug\cmTryCompileExec3331010223.lastbuildstate".
+1>
+1>Build succeeded.
+1>
+1>Time Elapsed 00:00:01.19
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+
+

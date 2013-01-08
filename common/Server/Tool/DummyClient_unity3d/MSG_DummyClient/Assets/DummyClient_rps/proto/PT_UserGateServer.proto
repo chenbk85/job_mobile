@@ -1,0 +1,53 @@
+
+//option optimize_for = LITE_RUNTIME;
+
+import "gameLogic.proto";
+
+
+// Packet type specification
+
+
+
+//\bb_3.1.6_ug_admin.usd
+message s_x2ug_echo {
+	optional int32 type = 1;
+	optional string msg = 2;
+	optional int32 client_time_msec = 3;
+}
+
+//\bb_3.1.6_ug_admin.usd
+message s_ug2x_echo {
+	optional int32 type = 1;
+	optional string msg = 2;
+	optional int32 client_time_msec = 3;
+	optional int64 ug_time_msec = 4;
+}
+
+
+message UserGateServer_Client {
+	enum Type {
+		NONE = 1;
+
+		ug2x_echo = 2;
+	}
+
+	required Type type = 1;
+
+	optional s_ug2x_echo m_ug2x_echo = 2;
+}
+//end of message UserGateServer_Client
+
+
+message Client_UserGateServer {
+	enum Type {
+		NONE = 1;
+
+		x2ug_echo = 2;
+	}
+
+	required Type type = 1;
+
+	optional s_x2ug_echo m_x2ug_echo = 2;
+}
+//end of message Client_UserGateServer
+

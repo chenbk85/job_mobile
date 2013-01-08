@@ -1,0 +1,16 @@
+<stageData a="A" b="B">
+	<map3 attr = "1, 1, 1, 1, 1, 1" />
+	<stage f_c="234" ff_c2="1;2"  ff_c3="1;2;3">
+		<map>1, 2, 3, A, B, C</map>
+		<ii_mapii>255;255;0;255</ii_mapii>
+		<argb_map>255;0;255;125</argb_map>
+	</stage>
+	<stage1 i_b="23" ii_b2="11;22" ii_b3="33;44;55">
+	</stage1>
+	<b_bool b_bool1="1" b_bool2="False" >false</b_map>
+	<i_bigVal>12345678</i_bigVal>
+	<i64_bigVal>1234567890123456789</i64_bigVal>
+	<r_map2>255;0;255;125</r_map2>
+	<map4>A, A, A, A, A, A</map4>
+	<map5>3, 3, 3, 3, 3, 3</map5>
+</stageData>

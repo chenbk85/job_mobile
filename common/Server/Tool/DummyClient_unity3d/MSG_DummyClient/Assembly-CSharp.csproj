@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{BA38AA9A-DB23-B545-F9D5-78CB8FF9B782}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_6;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_WIN;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\DummyClient_asdf\cmd\asdf_cmd_game.cs" />
+     <Compile Include="Assets\DummyClient_asdf\cmd\asdf_cmd_test.cs" />
+     <Compile Include="Assets\DummyClient_asdf\cmd\asdf_cmd_user.cs" />
+     <Compile Include="Assets\DummyClient_asdf\gui\GuiEventManager_asdf.cs" />
+     <Compile Include="Assets\DummyClient_asdf\gui\GuiEvent_asdf_MainWindow.cs" />
+     <Compile Include="Assets\DummyClient_asdf\net\NetEventPlugin_asdf.cs" />
+     <Compile Include="Assets\DummyClient_asdf\net\User_asdf.cs" />
+     <Compile Include="Assets\DummyClient_asdf\net\asdf_recv_GameServer_Client.cs" />
+     <Compile Include="Assets\DummyClient_asdf\net\asdf_recv_UserGateServer_Client.cs" />
+     <Compile Include="Assets\DummyClient_asdf\proto\asdf_GameServer.cs" />
+     <Compile Include="Assets\DummyClient_asdf\proto\asdf_UserGateServer.cs" />
+     <Compile Include="Assets\DummyClient_asdf\proto\asdf_gameLogic.cs" />
+     <Compile Include="Assets\DummyClient_baseball\cmd\baseball_cmd_game.cs" />
+     <Compile Include="Assets\DummyClient_baseball\cmd\baseball_cmd_test.cs" />
+     <Compile Include="Assets\DummyClient_baseball\cmd\baseball_cmd_user.cs" />
+     <Compile Include="Assets\DummyClient_baseball\excel\excel_enum.csv.cs" />
+     <Compile Include="Assets\DummyClient_baseball\excel\table_const_excel_enum.cs" />
+     <Compile Include="Assets\DummyClient_baseball\gui\GuiEventManager_baseball.cs" />
+     <Compile Include="Assets\DummyClient_baseball\gui\GuiEvent_baseball_MainWindow.cs" />
+     <Compile Include="Assets\DummyClient_baseball\net\NetEventPlugin_baseball.cs" />
+     <Compile Include="Assets\DummyClient_baseball\net\jUser.cs" />
+     <Compile Include="Assets\DummyClient_baseball\net\recv_BaseballServer_Client.cs" />
+     <Compile Include="Assets\DummyClient_baseball\net\recv_UserGateServer_Client.cs" />
+     <Compile Include="Assets\DummyClient_baseball\proto\PT_BaseballServer.cs" />
+     <Compile Include="Assets\DummyClient_baseball\proto\PT_UserGateServer.cs" />
+     <Compile Include="Assets\DummyClient_baseball\proto\excel_baseball_table_db.cs" />
+     <Compile Include="Assets\DummyClient_baseball\proto\gameLogic.cs" />
+     <Compile Include="Assets\DummyClient_lib\wrapper_Cmd\CmdEventManager.cs" />
+     <Compile Include="Assets\DummyClient_lib\wrapper_Cmd\CmdEvent_base.cs" />
+     <Compile Include="Assets\DummyClient_lib\wrapper_Cmd\jPlayerPrefs.cs" />
+     <Compile Include="Assets\DummyClient_lib\wrapper_MSG\NetEventManager.cs" />
+     <Compile Include="Assets\DummyClient_lib\wrapper_MSG\NetEventPlugin.cs" />
+     <Compile Include="Assets\DummyClient_lib\wrapper_excel\ExcelCSVManager.cs" />
+     <Compile Include="Assets\DummyClient_lib\wrapper_excel\excel_string_table.csv.cs" />
+     <Compile Include="Assets\DummyClient_lib\wrapper_jGui\GuiEventManager.cs" />
+     <Compile Include="Assets\DummyClient_lib\wrapper_jGui\GuiEvent_base.cs" />
+     <Compile Include="Assets\DummyClient_lib\wrapper_jGui\gui\GuiEvent_CommandWindow.cs" />
+     <Compile Include="Assets\DummyClient_lib\wrapper_jGui\gui\GuiEvent_ConfigWindow.cs" />
+     <Compile Include="Assets\DummyClient_lib\wrapper_jGui\gui\GuiEvent_LogFiltterWindow.cs" />
+     <Compile Include="Assets\DummyClient_lib\wrapper_jGui\gui\GuiEvent_LogWindow.cs" />
+     <Compile Include="Assets\DummyClient_lib\wrapper_jGui\gui\GuiEvent_ServerList.cs" />
+     <Compile Include="Assets\DummyClient_lib\wrapper_jGui\jFilteredLog.cs" />
+     <Compile Include="Assets\DummyClient_rps\cmd\rps_cmd_game.cs" />
+     <Compile Include="Assets\DummyClient_rps\cmd\rps_cmd_player.cs" />
+     <Compile Include="Assets\DummyClient_rps\cmd\rps_cmd_test.cs" />
+     <Compile Include="Assets\DummyClient_rps\cmd\rps_cmd_user.cs" />
+     <Compile Include="Assets\DummyClient_rps\gui\GuiEventManager_rps.cs" />
+     <Compile Include="Assets\DummyClient_rps\gui\GuiEvent_rps_MainWindow.cs" />
+     <Compile Include="Assets\DummyClient_rps\net\NetEventPlugin_rps.cs" />
+     <Compile Include="Assets\DummyClient_rps\net\Recv_rps.cs" />
+     <Compile Include="Assets\DummyClient_rps\net\User_rps.cs" />
+     <Compile Include="Assets\DummyClient_rps\net\rps_recv_GameServer_Client.cs" />
+     <Compile Include="Assets\DummyClient_rps\net\rps_recv_UserGateServer_Client.cs" />
+     <Compile Include="Assets\DummyClient_rps\proto\rps_GameServer.cs" />
+     <Compile Include="Assets\DummyClient_rps\proto\rps_UserGateServer.cs" />
+     <Compile Include="Assets\DummyClient_rps\proto\rps_gameLogic.cs" />
+     <Compile Include="Assets\MSGLib\src\MSGClient.cs" />
+     <Compile Include="Assets\MSGLib\src\answers\AnsAutoJoin.cs" />
+     <Compile Include="Assets\MSGLib\src\answers\AnsChannel.cs" />
+     <Compile Include="Assets\MSGLib\src\answers\AnsClose.cs" />
+     <Compile Include="Assets\MSGLib\src\answers\AnsConnect.cs" />
+     <Compile Include="Assets\MSGLib\src\answers\AnsDB.cs" />
+     <Compile Include="Assets\MSGLib\src\answers\AnsError.cs" />
+     <Compile Include="Assets\MSGLib\src\answers\AnsGameProtocol.cs" />
+     <Compile Include="Assets\MSGLib\src\answers\AnsGatewayProtocol.cs" />
+     <Compile Include="Assets\MSGLib\src\answers\AnsInfo.cs" />
+     <Compile Include="Assets\MSGLib\src\answers\AnsLeaveGame.cs" />
+     <Compile Include="Assets\MSGLib\src\answers\AnsNotice.cs" />
+     <Compile Include="Assets\MSGLib\src\answers\AnsPlug.cs" />
+     <Compile Include="Assets\MSGLib\src\answers\AnswerMessage.cs" />
+     <Compile Include="Assets\MSGLib\src\answers\ChannelInfo.cs" />
+     <Compile Include="Assets\MSGLib\src\answers\Notice.cs" />
+     <Compile Include="Assets\MSGLib\src\data\TempData.cs" />
+     <Compile Include="Assets\MSGLib\src\data\keyValueStorage\FileStorage.cs" />
+     <Compile Include="Assets\MSGLib\src\data\keyValueStorage\IKeyValueStorage.cs" />
+     <Compile Include="Assets\MSGLib\src\data\keyValueStorage\KeyValue.cs" />
+     <Compile Include="Assets\MSGLib\src\data\keyValueStorage\StorageSingleton.cs" />
+     <Compile Include="Assets\MSGLib\src\etc\MSGEventQueue.cs" />
+     <Compile Include="Assets\MSGLib\src\etc\Settings.cs" />
+     <Compile Include="Assets\MSGLib\src\event\MSGConnected.cs" />
+     <Compile Include="Assets\MSGLib\src\event\MSGDisconnected.cs" />
+     <Compile Include="Assets\MSGLib\src\event\MSGError.cs" />
+     <Compile Include="Assets\MSGLib\src\event\MSGEvent.cs" />
+     <Compile Include="Assets\MSGLib\src\protocol\db.cs" />
+     <Compile Include="Assets\MSGLib\src\protocol\ug.cs" />
+     <Compile Include="Assets\MSGLib\src\requests\AbstractRequest.cs" />
+     <Compile Include="Assets\MSGLib\src\requests\ReqAutoJoin.cs" />
+     <Compile Include="Assets\MSGLib\src\requests\ReqChannel.cs" />
+     <Compile Include="Assets\MSGLib\src\requests\ReqClose.cs" />
+     <Compile Include="Assets\MSGLib\src\requests\ReqConnect.cs" />
+     <Compile Include="Assets\MSGLib\src\requests\ReqDB.cs" />
+     <Compile Include="Assets\MSGLib\src\requests\ReqGameProtocol.cs" />
+     <Compile Include="Assets\MSGLib\src\requests\ReqGatewayProtocol.cs" />
+     <Compile Include="Assets\MSGLib\src\requests\ReqInfo.cs" />
+     <Compile Include="Assets\MSGLib\src\requests\ReqLeaveGame.cs" />
+     <Compile Include="Assets\MSGLib\src\requests\ReqNotice.cs" />
+     <Compile Include="Assets\MSGLib\src\requests\ReqPlug.cs" />
+     <Compile Include="Assets\MSGLib\src\utils\BoolWrapper.cs" />
+     <Compile Include="Assets\MSGLib\src\utils\CountingQueue.cs" />
+     <Compile Include="Assets\MSGLib\src\utils\Pair.cs" />
+     <Compile Include="Assets\MSGLib\src\utils\logger\CompositeLogger.cs" />
+     <Compile Include="Assets\MSGLib\src\utils\logger\ConsoleLogger\DefaultConsoleLogger.cs" />
+     <Compile Include="Assets\MSGLib\src\utils\logger\ConsoleLogger\UnityConsoleLogger.cs" />
+     <Compile Include="Assets\MSGLib\src\utils\logger\FileLogger\DefaultFileLogger.cs" />
+     <Compile Include="Assets\MSGLib\src\utils\logger\FileLogger\UnityFileLogger.cs" />
+     <Compile Include="Assets\MSGLib\src\utils\logger\Logger.cs" />
+     <Compile Include="Assets\MSGLib\src\utils\logger\LoggerFactory.cs" />
+     <Compile Include="Assets\MSGLib\src\utils\logger\LoggerOption.cs" />
+     <Compile Include="Assets\MSGLib\src\utils\protocol_utils\AnsProtocolConverter.cs" />
+     <Compile Include="Assets\MSGLib\src\utils\protocol_utils\ReqWrapper.cs" />
+     <Compile Include="Assets\MSGLib_TestClient\ObjectDumper.cs" />
+     <Compile Include="Assets\MSGLib_TestClient\TestScene.cs" />
+     <Compile Include="Assets\MSGLib_TestClient\proto\rps_game.cs" />
+     <Compile Include="Assets\mech_lib\jGui\ExtraGuiSkin\SkinTest.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGUILayoutOption.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiArea.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiBox.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiButton.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiComboBox.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiControl.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiControlGroup.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiEventManager.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiGrid.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiGroup.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiHorizontal.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiLabel.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiLayout.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiPassword.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiRepeatButton.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiScrollView.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiScrollbarH.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiScrollbarV.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiSliderH.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiSliderV.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiStage.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiTextArea.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiTextField.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiToggle.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiToolbar.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiVertical.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGuiWindow.cs" />
+     <Compile Include="Assets\mech_lib\jGui\jGui_Unity3d.cs" />
+     <Compile Include="Assets\mech_lib\jGui\test\ComboBox\ComboBoxTest1.cs" />
+     <Compile Include="Assets\mech_lib\jGui\test\ComboBox\ComboBoxTest2.cs" />
+     <Compile Include="Assets\mech_lib\jGui\test\ComboBox\Popup.cs" />
+     <Compile Include="Assets\mech_lib\jGui\test\ComboBox\test_Unity_GUI.cs" />
+     <Compile Include="Assets\mech_lib\jGui\test\test_jGui.cs" />
+     <Compile Include="Assets\mech_lib\jUtil\jCSV_common.cs" />
+     <Compile Include="Assets\mech_lib\jUtil\jCalculator.cs" />
+     <Compile Include="Assets\mech_lib\jUtil\jConsoleCmd.cs" />
+     <Compile Include="Assets\mech_lib\jUtil\jDebug.cs" />
+     <Compile Include="Assets\mech_lib\jUtil\jDumper.cs" />
+     <Compile Include="Assets\mech_lib\jUtil\jIndexString.cs" />
+     <Compile Include="Assets\mech_lib\jUtil\jMemoryPoll.cs" />
+     <Compile Include="Assets\mech_lib\jUtil\jString.cs" />
+     <Compile Include="Assets\mech_lib\jUtil\std_pair.cs" />
+     <Compile Include="Assets\mech_lib\jUtil\test\ctor_dtor_test.cs" />
+     <Compile Include="Assets\mech_lib\jXml\jxDocument.cs" />
+     <Compile Include="Assets\mech_lib\jXml\jxElement.cs" />
+     <Compile Include="Assets\mech_lib\jXml\jxParser.cs" />
+     <Compile Include="Assets\mech_lib\jXml\jxUtil.cs" />
+     <Compile Include="Assets\mech_lib\jXml\jxVar.cs" />
+     <Compile Include="Assets\mech_lib\jXml\test\test_jXml.cs" />
+     <Compile Include="Assets\mech_lib\jXml\test\test_jXml_simple.cs" />
+     <None Include="Assets\DummyClient_baseball\gui\guixml_baseball.xml" />
+     <None Include="Assets\DummyClient_rps\gui\guixml_rps.xml" />
+     <None Include="Assets\mech_lib\jXml\readme_jXml.txt" />
+     <None Include="Assets\DummyClient_rps\cmd\file\cmd_file_player2.txt" />
+     <None Include="Assets\DummyClient_baseball\cmd\file\cmd_file_baseball_player2.txt" />
+     <None Include="Assets\DummyClient_baseball\excel\file_Sys_Error.csv.txt" />
+     <None Include="Assets\DummyClient_rps\cmd_file\rps_player_1002.txt" />
+     <None Include="Assets\DummyClient_lib\wrapper_jGui\guixml_dummy_client.xml" />
+     <None Include="Assets\mech_lib\jGui\test\guixml_test1.xml" />
+     <None Include="Assets\DummyClient_baseball\cmd\file\cmd_file_baseball_player12.txt" />
+     <None Include="Assets\DummyClient_rps\cmd_file\rps_player_1003.txt" />
+     <None Include="Assets\DummyClient_asdf\cmd\file\cmd_file_player1.txt" />
+     <None Include="Assets\mech_lib\jGui\test\guixml_dummy_client.xml" />
+     <None Include="Assets\DummyClient_rps\cmd\file\server_list.xml" />
+     <None Include="Assets\DummyClient_rps\cmd_file\rps_player_1001.txt" />
+     <None Include="Assets\DummyClient_rps\excel\file_Sys_Error.csv.txt" />
+     <None Include="Assets\DummyClient_rps\cmd_file\rps_player_1004.txt" />
+     <None Include="Assets\DummyClient_baseball\cmd\file\cmd_file_baseball_player1.txt" />
+     <None Include="Assets\DummyClient_asdf\cmd\file\cmd_file_player2.txt" />
+     <None Include="Assets\mech_lib\jGui\readme_jGui.txt" />
+     <None Include="Assets\DummyClient_lib\DummyClient_template_code.txt" />
+     <None Include="Assets\mech_lib\jXml\test\test_xml_file.xml" />
+     <None Include="Assets\DummyClient_rps\cmd\file\cmd_file_player1.txt" />
+     <None Include="Assets\DummyClient_asdf\cmd\file\server_list.xml" />
+     <None Include="Assets\DummyClient_baseball\cmd\file\baseball_server_list.xml" />
+     <None Include="Assets\DummyClient_asdf\gui\guixml_asdf.xml" />
+     <None Include="Assets\DummyClient_asdf\excel\file_Sys_Error.csv.txt" />
+     <None Include="Assets\DummyClient_asdf\cmd\file\cmd_file_player12.txt" />
+     <None Include="Assets\DummyClient_rps\cmd\file\cmd_file_player12.txt" />
+     <None Include="Assets\mech_lib\jXml\test\test_xml_file_simple.xml" />
+ <Reference Include="Evaluant.Antlr">
+ <HintPath>Assets\mech_lib\jGui\dll_3rdparty\Evaluant.Antlr.dll</HintPath>
+ </Reference>
+ <Reference Include="Evaluant.Calculator">
+ <HintPath>Assets\mech_lib\jGui\dll_3rdparty\Evaluant.Calculator.dll</HintPath>
+ </Reference>
+ <Reference Include="protobuf-aot">
+ <HintPath>Assets\MSGLib\dlls\protobuf-aot.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

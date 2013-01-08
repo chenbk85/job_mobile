@@ -1,0 +1,223 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>Skip_BB_2.8.5_MSG_Close</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="17">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>507</objId>
+            <ptul X="68" Y="66" />
+            <ptdr X="136" Y="106" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="2">
+                <actBox id="512" />
+                <actBox id="522" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>508</objId>
+            <ptul X="425" Y="64" />
+            <ptdr X="493" Y="104" />
+            <links num="0" />
+            <objectName>UserGate</objectName>
+            <className>UG</className>
+            <actBoxes num="4">
+                <actBox id="513" />
+                <actBox id="515" />
+                <actBox id="519" />
+                <actBox id="521" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>509</objId>
+            <ptul X="827" Y="66" />
+            <ptdr X="922" Y="106" />
+            <links num="0" />
+            <objectName>BaseballServer</objectName>
+            <className>BS</className>
+            <actBoxes num="0" />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>510</objId>
+            <points num="2">
+                <pt x="109" y="157" />
+                <pt x="451" y="157" />
+            </points>
+            <objStart id="512" />
+            <objEnd id="513" />
+            <message messType="MGEN">UReqClose : Under LOGIN status</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>Close</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>511</objId>
+            <ptul X="58" Y="32" />
+            <ptdr X="106" Y="51" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>512</objId>
+            <ptul X="94" Y="152" />
+            <ptdr X="109" Y="182" />
+            <links num="1">
+                <link id="510" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>513</objId>
+            <ptul X="451" Y="152" />
+            <ptdr X="466" Y="182" />
+            <links num="1">
+                <link id="510" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>514</objId>
+            <ptul X="714" Y="64" />
+            <ptdr X="782" Y="104" />
+            <links num="0" />
+            <objectName>Presence</objectName>
+            <className>P</className>
+            <actBoxes num="2">
+                <actBox id="516" />
+                <actBox id="518" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>515</objId>
+            <ptul X="451" Y="195" />
+            <ptdr X="466" Y="225" />
+            <links num="1">
+                <link id="517" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>516</objId>
+            <ptul X="740" Y="195" />
+            <ptdr X="755" Y="225" />
+            <links num="1">
+                <link id="517" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>517</objId>
+            <points num="2">
+                <pt x="466" y="200" />
+                <pt x="740" y="200" />
+            </points>
+            <objStart id="515" />
+            <objEnd id="516" />
+            <message messType="MGEN">LOGOUT Request</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>518</objId>
+            <ptul X="740" Y="231" />
+            <ptdr X="755" Y="261" />
+            <links num="1">
+                <link id="520" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>519</objId>
+            <ptul X="451" Y="231" />
+            <ptdr X="466" Y="261" />
+            <links num="1">
+                <link id="520" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>520</objId>
+            <points num="2">
+                <pt x="740" y="236" />
+                <pt x="466" y="236" />
+            </points>
+            <objStart id="518" />
+            <objEnd id="519" />
+            <message messType="MGEN">LOGOUT Answer</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>521</objId>
+            <ptul X="451" Y="270" />
+            <ptdr X="466" Y="300" />
+            <links num="1">
+                <link id="523" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>522</objId>
+            <ptul X="94" Y="270" />
+            <ptdr X="109" Y="300" />
+            <links num="1">
+                <link id="523" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>523</objId>
+            <points num="2">
+                <pt x="451" y="275" />
+                <pt x="109" y="275" />
+            </points>
+            <objStart id="521" />
+            <objEnd id="522" />
+            <message messType="MGEN">UAnsClose</message>
+            <guardCond />
+        </element>
+    </elements>
+</diagram>

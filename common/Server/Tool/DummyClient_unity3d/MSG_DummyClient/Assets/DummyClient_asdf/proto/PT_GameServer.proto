@@ -1,0 +1,105 @@
+//option optimize_for = LITE_RUNTIME;
+
+import "gameLogic.proto";
+
+message s_x2gs_echo {
+	optional int32 type = 1;
+	optional string msg = 2;
+	optional int32 client_time_msec = 3;
+}
+message s_gs2x_echo {
+	optional int32 type = 1;
+	optional string msg = 2;
+	optional int32 client_time_msec = 3;
+	optional int64 bs_time_msec = 4;
+}
+
+//\bb_3.1.5-bs_admin.usd
+message s_x2gs_echo2 {
+	optional int32 type = 1;
+	optional string msg = 2;
+	optional int32 client_time_msec = 3;
+}
+
+//bb_3.1.5-bs_admin.usd
+//¡÷ºÆ
+message s_gs2x_echo2 {
+	optional int32 type = 1;
+	optional string msg = 2;
+	optional int32 client_time_msec = 3;
+	optional int64 bs_time_msec = 4;
+	optional int32 etc = 5;
+}
+
+//\bb_6.1.5_bs_ug_etc.usd
+message s_ug2bs_echo {
+	optional int32 type = 1;
+	optional string msg = 2;
+	optional int64 bs_time_msec = 3;
+	optional int64 ug_time_msec = 4;
+}
+
+//\bb_6.1.5_bs_ug_etc.usd
+message s_gs2ug_echo {
+	optional int32 type = 1;
+	optional string msg = 2;
+	optional int64 bs_time_msec = 3;
+	optional int64 ug_time_msec = 4;
+}
+
+
+message GameServer_UserGateServer {
+	enum Type {
+		NONE = 1;
+
+		gs2ug_echo = 4;
+	}
+
+	required Type type = 1;
+
+	optional s_gs2ug_echo m_gs2ug_echo = 4;
+}
+//end of message GameServer_UserGateServer
+
+
+message GameServer_Client {
+	enum Type {
+		NONE = 1;
+
+		gs2x_echo2 = 7;
+	}
+
+	required Type type = 1;
+
+	optional s_gs2x_echo m_gs2x_echo = 4;
+}
+//end of message GameServer_Client
+
+
+message UserGateServer_GameServer {
+	enum Type {
+		NONE = 1;
+
+		ug2bs_echo = 4;
+	}
+
+	required Type type = 1;
+
+	optional s_ug2bs_echo m_ug2bs_echo = 4;
+}
+//end of message UserGateServer_GameServer
+
+
+message Client_GameServer {
+	enum Type {
+		NONE = 1;
+
+		x2gs_echo = 3;
+	}
+
+	required Type type = 1;
+
+	optional s_x2gs_echo m_x2gs_echo = 3;
+}
+//end of message Client_GameServer
+

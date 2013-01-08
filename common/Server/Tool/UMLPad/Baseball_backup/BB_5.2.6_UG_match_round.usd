@@ -1,0 +1,429 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>BB_5.2.6_BS_match_round</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="34">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1242</objId>
+            <ptul X="460" Y="53" />
+            <ptdr X="555" Y="93" />
+            <links num="0" />
+            <objectName>BaseballServer</objectName>
+            <className>S</className>
+            <actBoxes num="8">
+                <actBox id="1245" />
+                <actBox id="1249" />
+                <actBox id="1253" />
+                <actBox id="1255" />
+                <actBox id="1261" />
+                <actBox id="1264" />
+                <actBox id="1266" />
+                <actBox id="1274" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1243</objId>
+            <ptul X="84" Y="50" />
+            <ptdr X="152" Y="90" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="4">
+                <actBox id="1244" />
+                <actBox id="1256" />
+                <actBox id="1262" />
+                <actBox id="1273" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1244</objId>
+            <ptul X="110" Y="205" />
+            <ptdr X="125" Y="235" />
+            <links num="1">
+                <link id="1246" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1245</objId>
+            <ptul X="500" Y="205" />
+            <ptdr X="515" Y="235" />
+            <links num="1">
+                <link id="1246" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1246</objId>
+            <points num="2">
+                <pt x="125" y="220" />
+                <pt x="500" y="220" />
+            </points>
+            <objStart id="1244" />
+            <objEnd id="1245" />
+            <message messType="MGEN">req_pitcher_throw</message>
+            <guardCond>info-s_pitcher_throw_info,verify-s_pitcher_throw_info_verify</guardCond>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1247</objId>
+            <points num="2">
+                <pt x="515" y="267" />
+                <pt x="872" y="267" />
+            </points>
+            <objStart id="1249" />
+            <objEnd id="1250" />
+            <message messType="MGEN">ans_pitcher_throw</message>
+            <guardCond>info-s_pitcher_throw_info,is_auto-bool</guardCond>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1248</objId>
+            <ptul X="846" Y="54" />
+            <ptdr X="914" Y="94" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="4">
+                <actBox id="1250" />
+                <actBox id="1252" />
+                <actBox id="1265" />
+                <actBox id="1268" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1249</objId>
+            <ptul X="500" Y="250" />
+            <ptdr X="515" Y="280" />
+            <links num="1">
+                <link id="1247" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1250</objId>
+            <ptul X="872" Y="250" />
+            <ptdr X="887" Y="280" />
+            <links num="1">
+                <link id="1247" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>투수던짐</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1251</objId>
+            <ptul X="12" Y="161" />
+            <ptdr X="80" Y="189" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1252</objId>
+            <ptul X="872" Y="356" />
+            <ptdr X="887" Y="386" />
+            <links num="1">
+                <link id="1254" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1253</objId>
+            <ptul X="500" Y="356" />
+            <ptdr X="515" Y="386" />
+            <links num="1">
+                <link id="1254" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1254</objId>
+            <points num="2">
+                <pt x="872" y="367" />
+                <pt x="515" y="367" />
+            </points>
+            <objStart id="1252" />
+            <objEnd id="1253" />
+            <message messType="MGEN">req_better_hit</message>
+            <guardCond>info-s_better_hit_info,verify-s_better_hit_info_verify</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1255</objId>
+            <ptul X="500" Y="282" />
+            <ptdr X="515" Y="312" />
+            <links num="1">
+                <link id="1257" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1256</objId>
+            <ptul X="110" Y="282" />
+            <ptdr X="125" Y="312" />
+            <links num="1">
+                <link id="1257" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1257</objId>
+            <points num="2">
+                <pt x="500" y="291" />
+                <pt x="125" y="291" />
+            </points>
+            <objStart id="1255" />
+            <objEnd id="1256" />
+            <message messType="MGEN">ans_pitcher_throw</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>pitcher</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1258</objId>
+            <ptul X="83" Y="97" />
+            <ptdr X="137" Y="116" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>@game.req_better_throw &lt;uid&gt; &lt;x&gt; &lt;y&gt; &lt;hit_time&gt;</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1259</objId>
+            <ptul X="543" Y="299" />
+            <ptdr X="926" Y="318" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1260</objId>
+            <points num="2">
+                <pt x="515" y="453" />
+                <pt x="872" y="453" />
+            </points>
+            <objStart id="1264" />
+            <objEnd id="1265" />
+            <message messType="MGEN">ans_better_hit</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1261</objId>
+            <ptul X="500" Y="389" />
+            <ptdr X="515" Y="419" />
+            <links num="1">
+                <link id="1263" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1262</objId>
+            <ptul X="110" Y="389" />
+            <ptdr X="125" Y="419" />
+            <links num="1">
+                <link id="1263" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1263</objId>
+            <points num="2">
+                <pt x="500" y="397" />
+                <pt x="125" y="397" />
+            </points>
+            <objStart id="1261" />
+            <objEnd id="1262" />
+            <message messType="MGEN">ans_better_hit</message>
+            <guardCond>info-s_better_hit_info,is_auto-bool</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1264</objId>
+            <ptul X="500" Y="448" />
+            <ptdr X="515" Y="478" />
+            <links num="1">
+                <link id="1260" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1265</objId>
+            <ptul X="872" Y="448" />
+            <ptdr X="887" Y="478" />
+            <links num="1">
+                <link id="1260" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1266</objId>
+            <ptul X="500" Y="514" />
+            <ptdr X="515" Y="544" />
+            <links num="1">
+                <link id="1275" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>타자 타격 조작.</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1267</objId>
+            <ptul X="801" Y="214" />
+            <ptdr X="911" Y="242" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1268</objId>
+            <ptul X="872" Y="514" />
+            <ptdr X="887" Y="544" />
+            <links num="1">
+                <link id="1275" />
+            </links>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>Better</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1269</objId>
+            <ptul X="841" Y="103" />
+            <ptdr X="888" Y="122" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1270</objId>
+            <points num="2">
+                <pt x="500" y="559" />
+                <pt x="125" y="559" />
+            </points>
+            <objStart id="1274" />
+            <objEnd id="1273" />
+            <message messType="MGEN">ans_result_better_hit</message>
+            <guardCond>info-s_result_round</guardCond>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>시간이 지났는데도 투수가 던지지않을경우.</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1271</objId>
+            <ptul X="191" Y="299" />
+            <ptdr X="485" Y="327" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>@game.req_pitcher_throw &lt;uid&gt; &lt;position&gt; &lt;EPlayerBreakingBall&gt; &lt;ball_focus&gt;</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1272</objId>
+            <ptul X="104" Y="178" />
+            <ptdr X="716" Y="197" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1273</objId>
+            <ptul X="110" Y="546" />
+            <ptdr X="125" Y="576" />
+            <links num="1">
+                <link id="1270" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1274</objId>
+            <ptul X="500" Y="546" />
+            <ptdr X="515" Y="576" />
+            <links num="1">
+                <link id="1270" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1275</objId>
+            <points num="2">
+                <pt x="872" y="519" />
+                <pt x="515" y="519" />
+            </points>
+            <objStart id="1268" />
+            <objEnd id="1266" />
+            <message messType="MGEN">req_result_better_hit</message>
+            <guardCond>info-s_result_round,test-int32</guardCond>
+        </element>
+    </elements>
+</diagram>

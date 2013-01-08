@@ -1,0 +1,300 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>BB_2.5.3_MSG_LeaveGame</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="23">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>68</objId>
+            <ptul X="68" Y="66" />
+            <ptdr X="136" Y="106" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="2">
+                <actBox id="72" />
+                <actBox id="88" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>69</objId>
+            <ptul X="425" Y="64" />
+            <ptdr X="525" Y="104" />
+            <links num="0" />
+            <objectName>UserGateServer</objectName>
+            <className>UG</className>
+            <actBoxes num="6">
+                <actBox id="73" />
+                <actBox id="75" />
+                <actBox id="79" />
+                <actBox id="81" />
+                <actBox id="85" />
+                <actBox id="87" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>70</objId>
+            <points num="2">
+                <pt x="109" y="159" />
+                <pt x="467" y="159" />
+            </points>
+            <objStart id="72" />
+            <objEnd id="73" />
+            <message messType="MRET">send UReqLeaveGame</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>71</objId>
+            <ptul X="758" Y="62" />
+            <ptdr X="853" Y="102" />
+            <links num="0" />
+            <objectName>BaseballServer</objectName>
+            <className>BS</className>
+            <actBoxes num="2">
+                <actBox id="76" />
+                <actBox id="78" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>72</objId>
+            <ptul X="94" Y="154" />
+            <ptdr X="109" Y="184" />
+            <links num="1">
+                <link id="70" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>73</objId>
+            <ptul X="467" Y="154" />
+            <ptdr X="482" Y="184" />
+            <links num="1">
+                <link id="70" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>74</objId>
+            <ptul X="873" Y="60" />
+            <ptdr X="941" Y="100" />
+            <links num="0" />
+            <objectName>Presence</objectName>
+            <className>P</className>
+            <actBoxes num="2">
+                <actBox id="82" />
+                <actBox id="84" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>75</objId>
+            <ptul X="467" Y="201" />
+            <ptdr X="482" Y="231" />
+            <links num="1">
+                <link id="80" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>76</objId>
+            <ptul X="798" Y="201" />
+            <ptdr X="813" Y="231" />
+            <links num="1">
+                <link id="80" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>77</objId>
+            <points num="2">
+                <pt x="798" y="245" />
+                <pt x="482" y="245" />
+            </points>
+            <objStart id="78" />
+            <objEnd id="79" />
+            <message messType="MRET">GAnsGame Leave</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>78</objId>
+            <ptul X="798" Y="236" />
+            <ptdr X="813" Y="266" />
+            <links num="1">
+                <link id="77" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>79</objId>
+            <ptul X="467" Y="236" />
+            <ptdr X="482" Y="266" />
+            <links num="1">
+                <link id="77" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>80</objId>
+            <points num="2">
+                <pt x="482" y="212" />
+                <pt x="798" y="212" />
+            </points>
+            <objStart id="75" />
+            <objEnd id="76" />
+            <message messType="MRET">GReqGame Leave</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>81</objId>
+            <ptul X="467" Y="311" />
+            <ptdr X="482" Y="341" />
+            <links num="1">
+                <link id="83" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>82</objId>
+            <ptul X="899" Y="311" />
+            <ptdr X="914" Y="341" />
+            <links num="1">
+                <link id="83" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>83</objId>
+            <points num="2">
+                <pt x="482" y="316" />
+                <pt x="899" y="316" />
+            </points>
+            <objStart id="81" />
+            <objEnd id="82" />
+            <message messType="MRET">GAMELEAVE Request</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>84</objId>
+            <ptul X="899" Y="348" />
+            <ptdr X="914" Y="378" />
+            <links num="1">
+                <link id="86" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>85</objId>
+            <ptul X="467" Y="348" />
+            <ptdr X="482" Y="378" />
+            <links num="1">
+                <link id="86" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>86</objId>
+            <points num="2">
+                <pt x="899" y="353" />
+                <pt x="482" y="353" />
+            </points>
+            <objStart id="84" />
+            <objEnd id="85" />
+            <message messType="MRET">GAMELEAVE Answer</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>87</objId>
+            <ptul X="467" Y="388" />
+            <ptdr X="482" Y="418" />
+            <links num="1">
+                <link id="89" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>88</objId>
+            <ptul X="94" Y="388" />
+            <ptdr X="109" Y="418" />
+            <links num="1">
+                <link id="89" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>89</objId>
+            <points num="2">
+                <pt x="467" y="399" />
+                <pt x="109" y="399" />
+            </points>
+            <objStart id="87" />
+            <objEnd id="88" />
+            <message messType="MRET">recv UAnsLeaveGame</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>GameLeave: Under GAME?IN?PROGRESS status</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>90</objId>
+            <ptul X="61" Y="115" />
+            <ptdr X="442" Y="134" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

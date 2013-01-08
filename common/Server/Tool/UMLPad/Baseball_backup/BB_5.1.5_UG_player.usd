@@ -1,0 +1,448 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>BB_5.1.5_UG_player</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="35">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>123</objId>
+            <ptul X="498" Y="21" />
+            <ptdr X="598" Y="61" />
+            <links num="0" />
+            <objectName>UserGateServer</objectName>
+            <className>UG</className>
+            <actBoxes num="10">
+                <actBox id="126" />
+                <actBox id="128" />
+                <actBox id="134" />
+                <actBox id="136" />
+                <actBox id="145" />
+                <actBox id="147" />
+                <actBox id="154" />
+                <actBox id="156" />
+                <actBox id="163" />
+                <actBox id="166" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>124</objId>
+            <ptul X="26" Y="18" />
+            <ptdr X="94" Y="58" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="10">
+                <actBox id="125" />
+                <actBox id="129" />
+                <actBox id="133" />
+                <actBox id="132" />
+                <actBox id="144" />
+                <actBox id="148" />
+                <actBox id="153" />
+                <actBox id="157" />
+                <actBox id="162" />
+                <actBox id="165" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>125</objId>
+            <ptul X="52" Y="193" />
+            <ptdr X="67" Y="223" />
+            <links num="1">
+                <link id="127" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>126</objId>
+            <ptul X="540" Y="193" />
+            <ptdr X="555" Y="223" />
+            <links num="1">
+                <link id="127" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>127</objId>
+            <points num="2">
+                <pt x="67" y="197" />
+                <pt x="540" y="197" />
+            </points>
+            <objStart id="125" />
+            <objEnd id="126" />
+            <message messType="MGEN">req_player_create_better</message>
+            <guardCond>player-s_tbl_playerbetter</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>128</objId>
+            <ptul X="540" Y="235" />
+            <ptdr X="555" Y="265" />
+            <links num="1">
+                <link id="130" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>129</objId>
+            <ptul X="52" Y="235" />
+            <ptdr X="67" Y="265" />
+            <links num="1">
+                <link id="130" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>130</objId>
+            <points num="2">
+                <pt x="540" y="251" />
+                <pt x="67" y="251" />
+            </points>
+            <objStart id="128" />
+            <objEnd id="129" />
+            <message messType="MGEN">ans_player_create_better</message>
+            <guardCond>player-s_tbl_playerbetter</guardCond>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>131</objId>
+            <points num="2">
+                <pt x="540" y="731" />
+                <pt x="67" y="731" />
+            </points>
+            <objStart id="136" />
+            <objEnd id="132" />
+            <message messType="MGEN">ans_player_delete</message>
+            <guardCond>is_pitcher-bool,db_id-int64</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>132</objId>
+            <ptul X="52" Y="726" />
+            <ptdr X="67" Y="756" />
+            <links num="1">
+                <link id="131" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>133</objId>
+            <ptul X="52" Y="691" />
+            <ptdr X="67" Y="721" />
+            <links num="1">
+                <link id="152" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>134</objId>
+            <ptul X="540" Y="691" />
+            <ptdr X="555" Y="721" />
+            <links num="1">
+                <link id="152" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>136</objId>
+            <ptul X="540" Y="726" />
+            <ptdr X="555" Y="756" />
+            <links num="1">
+                <link id="131" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>137</objId>
+            <points num="2">
+                <pt x="67" y="390" />
+                <pt x="540" y="390" />
+            </points>
+            <objStart id="144" />
+            <objEnd id="145" />
+            <message messType="MGEN">req_player_create_pitcher</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>144</objId>
+            <ptul X="52" Y="385" />
+            <ptdr X="67" Y="415" />
+            <links num="1">
+                <link id="137" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>145</objId>
+            <ptul X="540" Y="385" />
+            <ptdr X="555" Y="415" />
+            <links num="1">
+                <link id="137" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>146</objId>
+            <points num="2">
+                <pt x="540" y="438" />
+                <pt x="67" y="438" />
+            </points>
+            <objStart id="147" />
+            <objEnd id="148" />
+            <message messType="MGEN">ans_player_create_pitcher</message>
+            <guardCond>info-s_req_player_create_pitcher</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>147</objId>
+            <ptul X="540" Y="433" />
+            <ptdr X="555" Y="463" />
+            <links num="1">
+                <link id="146" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>148</objId>
+            <ptul X="52" Y="433" />
+            <ptdr X="67" Y="463" />
+            <links num="1">
+                <link id="146" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>149</objId>
+            <points num="2">
+                <pt x="67" y="786" />
+                <pt x="540" y="786" />
+            </points>
+            <objStart id="165" />
+            <objEnd id="166" />
+            <message messType="MGEN">x2ug_goto_main</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>152</objId>
+            <points num="2">
+                <pt x="67" y="698" />
+                <pt x="540" y="698" />
+            </points>
+            <objStart id="133" />
+            <objEnd id="134" />
+            <message messType="MGEN">req_player_delete</message>
+            <guardCond>is_pitcher-bool,db_id-int64</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>153</objId>
+            <ptul X="52" Y="577" />
+            <ptdr X="67" Y="607" />
+            <links num="1">
+                <link id="155" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>154</objId>
+            <ptul X="540" Y="577" />
+            <ptdr X="555" Y="607" />
+            <links num="1">
+                <link id="155" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>155</objId>
+            <points num="2">
+                <pt x="67" y="590" />
+                <pt x="540" y="590" />
+            </points>
+            <objStart id="153" />
+            <objEnd id="154" />
+            <message messType="MGEN">req_add_tbl_pitcherskill</message>
+            <guardCond>info-s_tbl_pitcherskill</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>156</objId>
+            <ptul X="540" Y="617" />
+            <ptdr X="555" Y="647" />
+            <links num="1">
+                <link id="158" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>157</objId>
+            <ptul X="52" Y="617" />
+            <ptdr X="67" Y="647" />
+            <links num="1">
+                <link id="158" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>158</objId>
+            <points num="2">
+                <pt x="540" y="628" />
+                <pt x="67" y="628" />
+            </points>
+            <objStart id="156" />
+            <objEnd id="157" />
+            <message messType="MGEN">ans_add_tbl_pitcherskill</message>
+            <guardCond>info-s_tbl_pitcherskill</guardCond>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>@player.req_add_tbl_pitcherskill &lt;uid&gt; &lt;pitcher_order&gt;</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>159</objId>
+            <ptul X="47" Y="553" />
+            <ptdr X="468" Y="572" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>166</objId>
+            <ptul X="540" Y="781" />
+            <ptdr X="555" Y="811" />
+            <links num="1">
+                <link id="149" />
+            </links>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>@player.create_pitcher &lt;user&gt; &lt;nic&gt; &lt;EPlayerNationType&gt; &lt;initial_name&gt; ...</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>161</objId>
+            <ptul X="39" Y="344" />
+            <ptdr X="614" Y="363" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>162</objId>
+            <ptul X="52" Y="93" />
+            <ptdr X="67" Y="123" />
+            <links num="1">
+                <link id="164" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>163</objId>
+            <ptul X="540" Y="93" />
+            <ptdr X="555" Y="123" />
+            <links num="1">
+                <link id="164" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>164</objId>
+            <points num="2">
+                <pt x="67" y="98" />
+                <pt x="540" y="98" />
+            </points>
+            <objStart id="162" />
+            <objEnd id="163" />
+            <message messType="MGEN">x2ug_goto_charactor_create</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>165</objId>
+            <ptul X="52" Y="781" />
+            <ptdr X="67" Y="811" />
+            <links num="1">
+                <link id="149" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[req_player_create_pitcher]&#x0A;&#x0A;{PARAM}&#x0A;player-s_tbl_playerpitcher&#x0A;skill1-s_tbl_pitcherskill&#x0A;skill2-s_tbl_pitcherskill</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>167</objId>
+            <ptul X="588" Y="375" />
+            <ptdr X="753" Y="483" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

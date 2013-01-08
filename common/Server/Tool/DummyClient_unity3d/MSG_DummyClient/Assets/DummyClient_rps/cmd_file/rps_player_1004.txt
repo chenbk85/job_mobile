@@ -1,0 +1,24 @@
+#job_autojoin("10.25.21.178",11200,1004);
+@user.login 10.25.21.178:11200 1004
+@game.match_auto_join_team 1004
+@game.x2bs_auto_match_ready2 1004
+@game.x2bs_match_ready 1004
+@game.x2bs_batter_ready 1004
+@game.req_better_hit 1004
+@game.req_pitcher_throw  1004
+@game.UReqLeaveGame 1004
+@user.logout 1004
+@game.req_room_state 1004
+@player.print_list 1004
+@user.print_info 1004
+@team.print 1004
+@team.req_team_select 1004 0
+@user.x2ug_echo 1004 "echo message"
+@user.x2bs_echo 1004 "echo message"
+@test.simulate_base_runner_count 1004
+@game.print_score 1004
+@item.req_admin_add_item 1004 1 eIC_EQUIP
+@item.req_admin_add_item 1004 1 eIC_CONSUME
+@item.req_admin_add_item 1004 1 eIC_STUFF
+#player_create2(1004);
+#test_run();

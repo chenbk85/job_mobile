@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "src", "src.vcproj", "{DD493FBC-8A72-401E-88A0-71C0BDC93682}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "matgo", "matgo.vcproj", "{024593E9-8F5B-488C-90FF-FF97646DE93A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD493FBC-8A72-401E-88A0-71C0BDC93682}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DD493FBC-8A72-401E-88A0-71C0BDC93682}.Debug|Win32.Build.0 = Debug|Win32
+		{DD493FBC-8A72-401E-88A0-71C0BDC93682}.Release|Win32.ActiveCfg = Release|Win32
+		{DD493FBC-8A72-401E-88A0-71C0BDC93682}.Release|Win32.Build.0 = Release|Win32
+		{024593E9-8F5B-488C-90FF-FF97646DE93A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{024593E9-8F5B-488C-90FF-FF97646DE93A}.Debug|Win32.Build.0 = Debug|Win32
+		{024593E9-8F5B-488C-90FF-FF97646DE93A}.Release|Win32.ActiveCfg = Release|Win32
+		{024593E9-8F5B-488C-90FF-FF97646DE93A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,133 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>test</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="10">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>21</objId>
+            <ptul X="11" Y="18" />
+            <ptdr X="79" Y="58" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="2">
+                <actBox id="23" />
+                <actBox id="27" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>22</objId>
+            <ptul X="354" Y="16" />
+            <ptdr X="449" Y="56" />
+            <links num="0" />
+            <objectName>BaseballServer</objectName>
+            <className>S</className>
+            <actBoxes num="2">
+                <actBox id="24" />
+                <actBox id="26" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>23</objId>
+            <ptul X="37" Y="75" />
+            <ptdr X="52" Y="105" />
+            <links num="1">
+                <link id="25" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>24</objId>
+            <ptul X="394" Y="75" />
+            <ptdr X="409" Y="105" />
+            <links num="1">
+                <link id="25" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>25</objId>
+            <points num="2">
+                <pt x="52" y="80" />
+                <pt x="394" y="80" />
+            </points>
+            <objStart id="23" />
+            <objEnd id="24" />
+            <message messType="MRET">tcp connect</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>26</objId>
+            <ptul X="394" Y="114" />
+            <ptdr X="409" Y="144" />
+            <links num="1">
+                <link id="28" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>27</objId>
+            <ptul X="37" Y="114" />
+            <ptdr X="52" Y="144" />
+            <links num="1">
+                <link id="28" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>28</objId>
+            <points num="2">
+                <pt x="394" y="119" />
+                <pt x="52" y="119" />
+            </points>
+            <objStart id="26" />
+            <objEnd id="27" />
+            <message messType="MGEN">S_HELLO</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>&lt;enum BaseballServer::EAddAccount&gt;&#x0A;AA_SUCCESS=0,¼º°ø&#x0A;AA_AccountDuple, duplication login&#x0A;AA_Auth, not auth&#x0A;AA_Unkown, unkown fail</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>29</objId>
+            <ptul X="494" Y="68" />
+            <ptdr X="728" Y="160" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[S_HELLO]&#x0A;&#x0A;{PARAM}&#x0A;type-int&#x0A;msg-astring</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>30</objId>
+            <ptul X="258" Y="140" />
+            <ptdr X="334" Y="232" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

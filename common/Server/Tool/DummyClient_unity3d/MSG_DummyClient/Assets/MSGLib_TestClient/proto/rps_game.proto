@@ -1,0 +1,152 @@
+
+
+package rps;
+
+/// 사용자 정보
+message UserInfo
+{
+	required int64	game_id		= 1;		/// 피망 game id
+	required string	nick		= 2;		/// 닉네임
+	required int32	win_count	= 3;		/// 승수
+	required int32	lose_count	= 4;		/// 패수
+	required int32	draw_count	= 5;		/// 무승부수
+}
+
+enum RPS_Type
+{
+	RPS_NONE		= 0;			
+	RPS_SCISSORS	= 1;			/// 가위
+	RPS_ROCK		= 2;			/// 바위
+	RPS_PAPER		= 3;			/// 보
+}
+
+/// 방 정보
+message RoomInfo
+{
+	required int64	room_id		= 1;	/// 방 번호
+	repeated int64	game_ids	= 2;	/// 방에 참여한 유저의 게임 아이디들
+}
+
+/// 게임 옵션
+message GameOption
+{
+	enum RoundNum 
+	{
+		THREE	= 3;			/// 3판 2선승
+		FIVE	= 5;			/// 5판 3선승
+	}
+
+	required RoundNum	round_num = 1;	
+}
+
+/// 게임 시작 요청
+message ReqStartGame
+{
+	required GameOption option = 1;		/// 게임 옵션
+}
+
+/// 가위/바위/보 내기
+message ReqToss
+{
+	required int32		round		= 1;	/// 몇번재 라운드의 패인지
+	required RPS_Type	rps_type	= 2;	/// 가위/바위/보
+}
+
+message ReqGameProtocol 
+{
+	enum Type
+	{
+		NONE			= 1;
+		REQ_START_GAME	= 2;
+		REQ_TOSS		= 3;
+	}
+
+	required Type type						= 1;
+
+	optional ReqStartGame	req_start_game	= 2;
+	optional ReqToss		req_toss		= 3;
+}
+
+/// 게임 시작 요청에 대한 응답
+/// 게임 시작 실패 시, 요청자에게만 실패 전송됨
+/// 게임 시작 성공 시, 게임에 참여할 모든 플레이어에게 성공 메시지 전송됨
+message AnsStartGame
+{
+	enum ErrorCode
+	{
+		SUCCESS				= 0;	/// 성공
+		FAIL				= 1;	/// 실패
+	}
+
+	required ErrorCode	error_code	= 1;		/// 에러 코드
+	required GameOption option		= 2;		/// 게임 옵션
+}
+
+/// 라운드 시작 알림
+message AnsStartRound
+{
+	required int32		round	= 1;	/// 몇번째 라운드인지...
+	required int32		timeout = 2;	/// 가위/바위/보를 내기까지의 타임아웃
+										/// 타임아웃 전까지 ReqToss 메시지를 보내야 함
+}
+
+/// 라운드 종료 알림
+message AnsEndRound
+{
+	enum Result
+	{
+		WIN					= 1;	/// 승
+		LOSE				= 2;	/// 패
+		DRAW				= 3;	/// 비김
+	}
+
+	required Result		result			= 1;	/// 승/무/패 
+	required RPS_Type	your_rps_type	= 2;	/// 내가 제출한 패
+	required RPS_Type	other_rps_type	= 3;	/// 상대방이 제출한 패
+}
+
+/// 게임 종료 알림
+message AnsEndGame
+{
+	required int32		win_count	= 1;	/// 승리 수
+	required int32		lose_count	= 2;	/// 패배 수
+	required int32		draw_count	= 3;	/// 비김 수
+}
+
+/// 플레이어 입장 알림
+message AnsJoinPlayer	
+{
+	required int32		join_player_game_id	= 1;	/// 입장한 플레이어의 게임 id
+}
+
+/// 게임 상태를 동기화 함
+message AnsSyncGameState 
+{
+	required int32		round		= 1;	/// 몇번째 라운드인지...
+	required int32		win_count	= 2;	/// 승리 수
+	required int32		lose_count	= 3;	/// 패배 수
+	required int32		draw_count	= 4;	/// 비김 수
+}
+
+message AnsGameProtocol 
+{
+	enum Type
+	{
+		NONE			= 1;
+		ANS_START_GAME	= 2;
+		ANS_START_ROUND	= 3;
+		ANS_END_ROUND	= 4;
+		ANS_END_GAME	= 5;
+		ANS_JOIN_PLAYER	= 6;
+		ANS_SYNC_GAME_STATE = 7;
+	}
+
+	required Type type						= 1;
+
+	optional AnsStartGame	ans_start_game	= 2;
+	optional AnsStartRound	ans_start_round	= 3;
+	optional AnsEndRound	ans_end_round	= 4;
+	optional AnsEndGame		ans_end_game	= 5;
+	optional AnsJoinPlayer	ans_join_player	= 6;
+	optional AnsSyncGameState ans_sync_game_state = 7;
+}

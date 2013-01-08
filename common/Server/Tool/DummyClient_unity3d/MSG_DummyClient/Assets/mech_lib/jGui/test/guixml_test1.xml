@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<jGuiStage>
+  <GuiHeader>
+    <NamedRect>
+      <r_OrangeUnity>20;20;320;400</r_OrangeUnity>
+      <r_MetalVista>260;30;320;420</r_MetalVista>
+      <r_ToggleListbox>50;50;450;350</r_ToggleListbox>
+    </NamedRect>
+  </GuiHeader>
+  <jGui_List>
+    <jGuiGroup b_Enable="false" r_Rect="0;0;500;300">
+      <jGuiBox r_Rect="0;0;500;300" Text="1"></jGuiBox>
+      <jGuiBox r_Rect="0;0;200;30" Text="this is group box"></jGuiBox>
+    </jGuiGroup>
+    <jGuiWindow b_Enable="true" Rect="ToggleListbox" Text="(( ToggleListbox Text ))" GUIStyle="window" b_DragWindow="true" b_IsScalable="true">
+      <jGuiVertical GUIStyle="box">
+        <jGuiToolbar>
+          <Text>Toolbar1</Text>
+          <Text>Toolbar2</Text>
+          <Text>Toolbar3</Text>
+        </jGuiToolbar>
+      </jGuiVertical>
+      <jGuiVertical GUIStyle="box">
+        <jGuiButton Text="jGuiVertical : I am the first button" />
+        <jGuiButton Text="jGuiVertical : I am to the right" />
+      </jGuiVertical>
+      <jGuiLayout b_Enable="false" Name="test_jGuiLayout">
+        <jGuiVertical GUIStyle="box">
+          <jGuiScrollView b_Enable="true" f_Width="0" f_Height="0" f_MaxWidth="0" f_MaxHeight="0" f_MinWidth="0" f_MinHeight="0">
+            <jGuiHorizontal b_Enable="true">
+              <jGuiButton Text="jGuiScrollView : I am 1" />
+              <jGuiLabel Text="Text1" />
+              <jGuiToggle Text="toggle1" />
+            </jGuiHorizontal>
+            <jGuiHorizontal b_Enable="true">
+              <jGuiButton Text="jGuiScrollView : I am 1" />
+              <jGuiLabel Text="Text1" />
+              <jGuiToggle Text="toggle1" />
+            </jGuiHorizontal>
+          </jGuiScrollView>
+        </jGuiVertical>
+        <jGuiTextField b_Enable="true" Text="jGuiTextField text" />
+        <jGuiHorizontal>
+          <jGuiButton Text="History" f_MaxWidth="150"></jGuiButton>
+          <jGuiButton Text="Run" f_MaxWidth="150" />
+        </jGuiHorizontal>
+      </jGuiLayout>
+      <jGuiLayout b_Enable="true" Name="CommandLayout">
+        <jGuiVertical GUIStyle="box">
+          <jGuiScrollView b_Enable="true" f_Width="0" f_Height="0" f_MaxWidth="0" f_MaxHeight="0" f_MinWidth="0" f_MinHeight="0">
+            <jGuiHorizontal b_Enable="true">
+              <jGuiButton f_MinWidth="50" f_MaxWidth="50" Text="Run" />
+              <jGuiButton f_Width="-1" TextAnchor="MiddleLeft" Text="Text1" />
+            </jGuiHorizontal>
+            <jGuiHorizontal b_Enable="true">
+              <jGuiButton f_MinWidth="50" f_MaxWidth="50" Text="Run" />
+              <jGuiButton f_Width="-1" TextAnchor="MiddleLeft" Text="Text1 asdfqoweifjasdfk234dfkjsoidasdfqoweifjasdfk234dfkjsoidasdfqoweifjasdfk234dfkjsoid" />
+            </jGuiHorizontal>
+            <jGuiHorizontal b_Enable="true">
+              <jGuiButton f_MinWidth="50" f_MaxWidth="50" Text="Run" />
+              <jGuiButton f_Width="-1" TextAnchor="MiddleLeft" Text="Text1 asdfqoweifjasdfk234dfkjsoidasdfqoweifjasdfk234dfkjsoidasdfqoweifjasdfk234dfkjsoid" />
+            </jGuiHorizontal>
+          </jGuiScrollView>
+			<jGuiTextArea b_Enable="false" b_ReadOnly="true" i_MaxLength="-1" f_Height="-1"
+				Text = "asdf
+			asdf
+			asf
+			fasa
+			sf
+			asdf"/>
+          
+        </jGuiVertical>
+        <jGuiTextField b_Enable="true" Text="jGuiTextField text" />
+        <jGuiHorizontal>
+          <jGuiButton Text="Run" f_MaxWidth="150"></jGuiButton>
+          <jGuiButton Text="History" f_MaxWidth="150" />
+          
+        </jGuiHorizontal>
+      </jGuiLayout>
+    </jGuiWindow>
+  </jGui_List>
+</jGuiStage>

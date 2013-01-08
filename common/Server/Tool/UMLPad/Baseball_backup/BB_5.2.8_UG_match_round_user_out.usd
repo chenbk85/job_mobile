@@ -1,0 +1,418 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>BB_5.2.8_BS_match_round_user_out</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="33">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1169</objId>
+            <ptul X="394" Y="20" />
+            <ptdr X="489" Y="60" />
+            <links num="0" />
+            <objectName>BaseballServer</objectName>
+            <className>S</className>
+            <actBoxes num="8">
+                <actBox id="1173" />
+                <actBox id="1180" />
+                <actBox id="1181" />
+                <actBox id="1187" />
+                <actBox id="1190" />
+                <actBox id="1192" />
+                <actBox id="1196" />
+                <actBox id="1199" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1170</objId>
+            <ptul X="100" Y="21" />
+            <ptdr X="168" Y="61" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="4">
+                <actBox id="1179" />
+                <actBox id="1189" />
+                <actBox id="1193" />
+                <actBox id="1197" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1171</objId>
+            <ptul X="697" Y="21" />
+            <ptdr X="765" Y="61" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="4">
+                <actBox id="1175" />
+                <actBox id="1182" />
+                <actBox id="1186" />
+                <actBox id="1200" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>pitcher</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1172</objId>
+            <ptul X="99" Y="68" />
+            <ptdr X="153" Y="87" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1173</objId>
+            <ptul X="434" Y="265" />
+            <ptdr X="449" Y="295" />
+            <links num="1">
+                <link id="1183" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1174</objId>
+            <points num="2">
+                <pt x="449" y="189" />
+                <pt x="723" y="189" />
+            </points>
+            <objStart id="1181" />
+            <objEnd id="1182" />
+            <message messType="MGEN">ans_user_disconnect</message>
+            <guardCond>uid-int64,sys_error_id-int32</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1175</objId>
+            <ptul X="723" Y="265" />
+            <ptdr X="738" Y="295" />
+            <links num="1">
+                <link id="1183" />
+            </links>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>Better</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1176</objId>
+            <ptul X="692" Y="70" />
+            <ptdr X="739" Y="89" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1177</objId>
+            <points num="2">
+                <pt x="141" y="142" />
+                <pt x="434" y="142" />
+            </points>
+            <objStart id="1179" />
+            <objEnd id="1180" />
+            <message messType="MRET">tcp disconnect</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>better : pitcher auto play.</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1178</objId>
+            <ptul X="373" Y="231" />
+            <ptdr X="566" Y="250" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1179</objId>
+            <ptul X="126" Y="137" />
+            <ptdr X="141" Y="167" />
+            <links num="1">
+                <link id="1177" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1180</objId>
+            <ptul X="434" Y="137" />
+            <ptdr X="449" Y="167" />
+            <links num="1">
+                <link id="1177" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1181</objId>
+            <ptul X="434" Y="182" />
+            <ptdr X="449" Y="212" />
+            <links num="1">
+                <link id="1174" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1182</objId>
+            <ptul X="723" Y="182" />
+            <ptdr X="738" Y="212" />
+            <links num="1">
+                <link id="1174" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1183</objId>
+            <points num="2">
+                <pt x="723" y="282" />
+                <pt x="449" y="282" />
+            </points>
+            <objStart id="1175" />
+            <objEnd id="1173" />
+            <message messType="MGEN">req_result_better_hit</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>pitcher : better auto play</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1184</objId>
+            <ptul X="81" Y="490" />
+            <ptdr X="266" Y="509" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1185</objId>
+            <points num="2">
+                <pt x="434" y="565" />
+                <pt x="141" y="565" />
+            </points>
+            <objStart id="1196" />
+            <objEnd id="1197" />
+            <message messType="MGEN">ans_game_round_start</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1186</objId>
+            <ptul X="723" Y="412" />
+            <ptdr X="738" Y="442" />
+            <links num="1">
+                <link id="1188" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1187</objId>
+            <ptul X="434" Y="412" />
+            <ptdr X="449" Y="442" />
+            <links num="1">
+                <link id="1188" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1188</objId>
+            <points num="2">
+                <pt x="723" y="427" />
+                <pt x="449" y="427" />
+            </points>
+            <objStart id="1186" />
+            <objEnd id="1187" />
+            <message messType="MRET">tcp disconnect</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1189</objId>
+            <ptul X="126" Y="519" />
+            <ptdr X="141" Y="549" />
+            <links num="1">
+                <link id="1191" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1190</objId>
+            <ptul X="434" Y="519" />
+            <ptdr X="449" Y="549" />
+            <links num="1">
+                <link id="1191" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1191</objId>
+            <points num="2">
+                <pt x="141" y="528" />
+                <pt x="434" y="528" />
+            </points>
+            <objStart id="1189" />
+            <objEnd id="1190" />
+            <message messType="MGEN">req_result_better_hit</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1192</objId>
+            <ptul X="434" Y="448" />
+            <ptdr X="449" Y="478" />
+            <links num="1">
+                <link id="1194" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1193</objId>
+            <ptul X="126" Y="448" />
+            <ptdr X="141" Y="478" />
+            <links num="1">
+                <link id="1194" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1194</objId>
+            <points num="2">
+                <pt x="434" y="453" />
+                <pt x="141" y="453" />
+            </points>
+            <objStart id="1192" />
+            <objEnd id="1193" />
+            <message messType="MGEN">ans_user_disconnect</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>better was disconnected irregularity.</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1195</objId>
+            <ptul X="521" Y="375" />
+            <ptdr X="738" Y="403" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1196</objId>
+            <ptul X="434" Y="554" />
+            <ptdr X="449" Y="584" />
+            <links num="1">
+                <link id="1185" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1197</objId>
+            <ptul X="126" Y="554" />
+            <ptdr X="141" Y="584" />
+            <links num="1">
+                <link id="1185" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>pitcher was disconnected irregularity.</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1198</objId>
+            <ptul X="122" Y="94" />
+            <ptdr X="345" Y="122" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1199</objId>
+            <ptul X="434" Y="307" />
+            <ptdr X="449" Y="337" />
+            <links num="1">
+                <link id="1201" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1200</objId>
+            <ptul X="723" Y="307" />
+            <ptdr X="738" Y="337" />
+            <links num="1">
+                <link id="1201" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>1201</objId>
+            <points num="2">
+                <pt x="449" y="312" />
+                <pt x="723" y="312" />
+            </points>
+            <objStart id="1199" />
+            <objEnd id="1200" />
+            <message messType="MGEN">ans_game_round_start</message>
+            <guardCond />
+        </element>
+    </elements>
+</diagram>

@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<jGuiStage Name="dummy_client">
+  <GuiHeader>
+    <NamedRect>
+      <r_CommandWindow>0;0;380;480</r_CommandWindow>
+      <r_LogWindow>380;0;420;480</r_LogWindow>
+    </NamedRect>
+  </GuiHeader>
+  <jGui_List>
+	<OverrideAttribute>
+		<jGuiButton i_FontSize="15" />
+		<jGuiToolbar i_FontSize="20" />
+	</OverrideAttribute>
+    <jGuiWindow Name="CommandWindow" b_Enable="true" Rect="CommandWindow" Text="Command Window" GUIStyle="window" b_DragWindow="true" b_IsScalable="true">
+      <jGuiVertical GUIStyle="box">
+        <jGuiToolbar Name="PlayerList">
+          <Text>Player1</Text>
+        </jGuiToolbar>
+      </jGuiVertical>
+      <jGuiLayout b_Enable="true" Name="CommandLayout">
+        <jGuiVertical GUIStyle="box">
+			<jGuiScrollView Name="CmdList" b_Enable="true" f_Width="0" f_Height="0" f_MaxWidth="0" f_MaxHeight="0" f_MinWidth="0" f_MinHeight="0">
+				<jGuiHorizontal b_Enable="true">
+				  <jGuiButton Name="CmdEdit" f_MinWidth="50" f_MaxWidth="50" Text="Edit"/>
+				  <jGuiButton Name="CmdRun" f_Width="-1" TextAnchor="MiddleLeft" Text="Please setup TextAsset to m_PlayerCmdFile" />
+				</jGuiHorizontal>
+			</jGuiScrollView>
+        </jGuiVertical>
+        <jGuiHorizontal>
+			<jGuiButton Name="Run" f_MaxWidth="50" />
+			<jGuiTextField Name="CommandLine" b_Enable="true" Text="" />
+        </jGuiHorizontal>
+        <jGuiHorizontal>
+          <jGuiButton Name="ChangeServer" f_MaxWidth="0" />
+          <jGuiButton Name="Config" f_MaxWidth="0" />
+          <jGuiButton Name="GameManu" f_MaxWidth="0" />
+        </jGuiHorizontal>
+      </jGuiLayout>
+    </jGuiWindow>
+    <jGuiWindow Name="LogWindow" b_Enable="true" Rect="LogWindow" Text="NetLog Window" GUIStyle="window" b_DragWindow="true" b_IsScalable="true">
+      <jGuiLayout b_Enable="true" Name="CommandLayout">
+        <jGuiVertical GUIStyle="box" f_MinHeigt="30" f_MaxHeight="30">
+          <jGuiToolbar Name="LogFilter">
+            <Text FILTER="">All</Text>
+            <Text FILTER="WARN|ERROR">Error</Text>
+            <Text FILTER="[Send|[Recv|[Net" >Net</Text>
+            <Text FILTER="1001]">1001</Text>
+            <Text FILTER="1002]">1002</Text>
+          </jGuiToolbar>
+        </jGuiVertical>
+        <jGuiVertical GUIStyle="box">
+          <jGuiScrollView b_Enable="true" b_AutoScroll="true" f_Width="0" f_Height="0" f_MaxWidth="0" f_MaxHeight="0" f_MinWidth="0" f_MinHeight="0">
+            <jGuiLabel Name="LogLabel" b_Enable="true" f_Width="-1" f_Height="-1" 
+            Text="" />
+          </jGuiScrollView>
+        </jGuiVertical>
+        <jGuiVertical GUIStyle="box" ff_MinMaxH="30;30">
+          <jGuiHorizontal>
+            <jGuiButton Name="ClearLog" Text="Clear"/>
+            <jGuiButton Name="Filttering" />
+          </jGuiHorizontal>
+        </jGuiVertical>
+      </jGuiLayout>
+    </jGuiWindow>
+  </jGui_List>
+  <Modal_Window>
+    <jGuiWindow Name="ServerList" b_Enable="true" r_Rect="0;0;420;280" Text="Change Server" GUIStyle="window" b_DragWindow="true" b_IsScalable="false">
+        <jGuiVertical GUIStyle="box">
+			<jGuiScrollView Name="ServerList_ScrollView" b_Enable="true" >
+				<jGuiHorizontal b_Enable="true">
+					<jGuiLabel Name="ServerStatus" b_Enable="true" f_Width="60" f_Height="-1" Text="Status" />
+					<jGuiButton Name="ServerOk" f_Width="-1" TextAnchor="MiddleLeft" Text="ip" />
+				</jGuiHorizontal>
+			</jGuiScrollView>
+			<jGuiHorizontal b_Enable="true">
+			  <jGuiButton Name="Refresh" f_Width="-1" TextAnchor="MiddleCenter" />
+			  <jGuiButton Name="Cancel" f_Width="-1" TextAnchor="MiddleCenter" />
+			</jGuiHorizontal>
+        </jGuiVertical>
+	</jGuiWindow>
+    <jGuiWindow Name="ConfigWindow" b_Enable="true" r_Rect="0;0;500;400" Text="Config" GUIStyle="window" b_DragWindow="true" b_IsScalable="false">
+        <jGuiVertical GUIStyle="box">
+			<jGuiScrollView Name="ConfigWindow_ScrollView" b_Enable="true" >
+				<OverrideAttribute>
+					<jGuiLabel f_Width="120"  b_Enable="true" f_Height="-1" TextAnchor="MiddleRight" />
+					<jGuiTextField f_Width="340"  TextAnchor="MiddleLeft" />
+				</OverrideAttribute>
+				<jGuiHorizontal b_Enable="true">
+					<jGuiLabel Text="Player1 ID"  />
+					<jGuiTextField Name="Player1" Text="1001" />
+				</jGuiHorizontal>
+				<jGuiHorizontal b_Enable="true">
+					<jGuiLabel Text="Player2 ID"  />
+					<jGuiTextField Name="Player2" Text="1002" />
+				</jGuiHorizontal>
+				<jGuiHorizontal b_Enable="true">
+					<jGuiLabel Text="Player3 ID"  />
+					<jGuiTextField Name="Player3" Text="1003" />
+				</jGuiHorizontal>
+				<jGuiHorizontal b_Enable="true">
+					<jGuiLabel Text="Player4 ID"  />
+					<jGuiTextField Name="Player4" Text="1004" />
+				</jGuiHorizontal>
+				<jGuiHorizontal b_Enable="true">
+					<jGuiToggle Name="AddLogCount" TextAnchor="MiddleLeft" b_ToggleValue="true" />
+					<jGuiToggle Name="AutoPlay" TextAnchor="MiddleLeft" b_ToggleValue="true" />
+				</jGuiHorizontal>
+				<jGuiHorizontal b_Enable="true">
+					<jGuiLabel Text="LogLine"  />
+					<jGuiTextField Name="MaxLogLine" Text="300" />
+				</jGuiHorizontal>
+				<jGuiHorizontal b_Enable="true">
+					<jGuiLabel Text="Version"  />
+					<jGuiTextField Name="Version" Text="0" />
+				</jGuiHorizontal>
+				<jGuiHorizontal b_Enable="true">
+					<jGuiLabel Text="ServerList URL(ReadOnly)"  />
+					<jGuiTextField Name="ServerListURL" Text="Server_list_xml.txt" />
+				</jGuiHorizontal>
+			</jGuiScrollView>
+			<jGuiHorizontal b_Enable="true">
+			  <jGuiButton Name="Ok" f_Width="-1" TextAnchor="MiddleCenter" />
+			  <jGuiButton Name="Cancel" f_Width="-1" TextAnchor="MiddleCenter" />
+			</jGuiHorizontal>
+        </jGuiVertical>
+	</jGuiWindow>  
+    <jGuiWindow Name="LogFiltterWindow" b_Enable="true" r_Rect="0;0;420;280" GUIStyle="window" b_DragWindow="true" b_IsScalable="false">
+        <jGuiVertical GUIStyle="box">
+			<jGuiScrollView Name="ServerList_ScrollView" b_Enable="true" >
+				<jGuiHorizontal b_Enable="true">
+					<jGuiLabel Name="ObjName" b_Enable="true" f_Width="60" f_Height="-1" Text="Status" />
+					<jGuiButton Name="ServerOk" f_Width="-1" TextAnchor="MiddleLeft" Text="ip" />
+				</jGuiHorizontal>
+			</jGuiScrollView>
+			<jGuiHorizontal b_Enable="true">
+			  <jGuiButton Name="Refresh" f_Width="-1" TextAnchor="MiddleCenter" />
+			  <jGuiButton Name="Cancel" f_Width="-1" TextAnchor="MiddleCenter" />
+			</jGuiHorizontal>
+        </jGuiVertical>
+	</jGuiWindow>
+  </Modal_Window>
+</jGuiStage>

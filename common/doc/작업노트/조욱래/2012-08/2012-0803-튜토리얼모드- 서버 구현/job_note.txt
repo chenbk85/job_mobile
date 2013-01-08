@@ -1,0 +1,44 @@
+h3. 추가된 DB테이블
+<pre>
+
+http://nwmsvn.nwinet.co.kr/svn/baseball/doc/design/excel/21_baseball_table_db.xlsx 에서 
+	Tbl_Quest
+	Tbl_Title
+
+t:\svn\baseball\game\gameLogic.proto 의 message GameInfo 에서 다음이 추가 되었슴.
+	repeated s_tbl_quest			m_tbl_quest				= 10; 
+	repeated s_tbl_title			m_tbl_title				= 11;
+
+또한 유저접속시 서버로 부터 위의 테이블도 가져와야함.( To 백훈님.)	
+	
+</pre>
+
+h3. 추가된 프로토콜.
+<pre>
+http://nwmsvn.nwinet.co.kr/svn/common/Server/Tool/UMLPad/Baseball/BB_4.6.5_UG_quest.usd
+</pre>
+
+h3. 추가된 Sys_Quest 데이타.
+http://nwmsvn.nwinet.co.kr/svn/baseball/doc/design/excel/21_baseball_table.xlsx 에서.
+<pre>
+52	q_ingame_tutorial	EQT_INGAMETUTORIAL	1000	0	30	ECCT_NULL	인게임 튜토리얼 완료
+53	q_pitcher_coach_tutorial	EQT_INGAMETUTORIAL	1000	0	30	ECCT_NULL	투수코치 튜토리얼 완료
+</pre>
+
+
+h3. 더미클라이언트 테스트 명령.
+* 튜토리얼 시작. (quest_sid는 quest_type이 EQT_INGAMETUTORIAL여야 한다.)
+<pre>
+@user.x2ug_quest_start <uid> <quest_sid>
+</pre>
+* 튜토리얼 끝.
+<pre>
+@user.x2ug_quest_end <uid> <quest_sid>
+</pre>
+
+Tbl__PlayerBase( Tbl_PlayerBetter , Tbl_PlayerPitcher)에서 아래 필드 다시 삭제됨.
+player_title	EConditionCharacterTitle
+
+
+http://nwmsvn.nwinet.co.kr/svn/common/doc/프로젝트세팅/Lib_mech설명.pptx에 
+"새로운 DB테이블 추가." 세션 추가.

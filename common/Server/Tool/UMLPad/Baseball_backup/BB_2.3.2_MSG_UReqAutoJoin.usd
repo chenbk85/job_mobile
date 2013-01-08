@@ -1,0 +1,420 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>Skip_BB_2.3.2_MSG_UReqAutoJoin</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="33">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>339</objId>
+            <ptul X="11" Y="18" />
+            <ptdr X="79" Y="58" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="4">
+                <actBox id="343" />
+                <actBox id="354" />
+                <actBox id="356" />
+                <actBox id="366" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>340</objId>
+            <ptul X="343" Y="16" />
+            <ptdr X="411" Y="56" />
+            <links num="0" />
+            <objectName>UserGate</objectName>
+            <className>UG</className>
+            <actBoxes num="8">
+                <actBox id="344" />
+                <actBox id="346" />
+                <actBox id="350" />
+                <actBox id="353" />
+                <actBox id="355" />
+                <actBox id="359" />
+                <actBox id="363" />
+                <actBox id="365" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>341</objId>
+            <points num="2">
+                <pt x="716" y="400" />
+                <pt x="384" y="400" />
+            </points>
+            <objStart id="362" />
+            <objEnd id="363" />
+            <message messType="MGEN">GAnsGame Enter</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>342</objId>
+            <ptul X="598" Y="13" />
+            <ptdr X="666" Y="53" />
+            <links num="0" />
+            <objectName>Presence</objectName>
+            <className>P</className>
+            <actBoxes num="2">
+                <actBox id="347" />
+                <actBox id="349" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>343</objId>
+            <ptul X="37" Y="81" />
+            <ptdr X="52" Y="111" />
+            <links num="1">
+                <link id="345" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>344</objId>
+            <ptul X="369" Y="81" />
+            <ptdr X="384" Y="111" />
+            <links num="1">
+                <link id="345" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>345</objId>
+            <points num="2">
+                <pt x="52" y="86" />
+                <pt x="369" y="86" />
+            </points>
+            <objStart id="343" />
+            <objEnd id="344" />
+            <message messType="MGEN">UReqAutoJoin</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>346</objId>
+            <ptul X="369" Y="153" />
+            <ptdr X="384" Y="183" />
+            <links num="1">
+                <link id="348" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>347</objId>
+            <ptul X="625" Y="153" />
+            <ptdr X="640" Y="183" />
+            <links num="1">
+                <link id="348" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>348</objId>
+            <points num="2">
+                <pt x="384" y="158" />
+                <pt x="625" y="158" />
+            </points>
+            <objStart id="346" />
+            <objEnd id="347" />
+            <message messType="MGEN">GAMEENTER Request</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>349</objId>
+            <ptul X="625" Y="196" />
+            <ptdr X="640" Y="226" />
+            <links num="1">
+                <link id="351" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>350</objId>
+            <ptul X="369" Y="196" />
+            <ptdr X="384" Y="226" />
+            <links num="1">
+                <link id="351" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>351</objId>
+            <points num="2">
+                <pt x="625" y="201" />
+                <pt x="384" y="201" />
+            </points>
+            <objStart id="349" />
+            <objEnd id="350" />
+            <message messType="MGEN">GAMEENTER Answer</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>352</objId>
+            <points num="2">
+                <pt x="369" y="282" />
+                <pt x="52" y="282" />
+            </points>
+            <objStart id="353" />
+            <objEnd id="354" />
+            <message messType="MGEN">UError</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>353</objId>
+            <ptul X="369" Y="277" />
+            <ptdr X="384" Y="307" />
+            <links num="1">
+                <link id="352" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>354</objId>
+            <ptul X="37" Y="277" />
+            <ptdr X="52" Y="307" />
+            <links num="1">
+                <link id="352" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>355</objId>
+            <ptul X="369" Y="313" />
+            <ptdr X="384" Y="343" />
+            <links num="1">
+                <link id="357" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>356</objId>
+            <ptul X="37" Y="313" />
+            <ptdr X="52" Y="343" />
+            <links num="1">
+                <link id="357" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>357</objId>
+            <points num="2">
+                <pt x="369" y="318" />
+                <pt x="52" y="318" />
+            </points>
+            <objStart id="355" />
+            <objEnd id="356" />
+            <message messType="MGEN">UAnsClose</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>358</objId>
+            <ptul X="676" Y="12" />
+            <ptdr X="771" Y="52" />
+            <links num="0" />
+            <objectName>BaseballServer</objectName>
+            <className>BS</className>
+            <actBoxes num="2">
+                <actBox id="360" />
+                <actBox id="362" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>359</objId>
+            <ptul X="369" Y="363" />
+            <ptdr X="384" Y="393" />
+            <links num="1">
+                <link id="361" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>360</objId>
+            <ptul X="716" Y="363" />
+            <ptdr X="731" Y="393" />
+            <links num="1">
+                <link id="361" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>361</objId>
+            <points num="2">
+                <pt x="384" y="368" />
+                <pt x="716" y="368" />
+            </points>
+            <objStart id="359" />
+            <objEnd id="360" />
+            <message messType="MGEN">GReqGame Enter</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>362</objId>
+            <ptul X="716" Y="395" />
+            <ptdr X="731" Y="425" />
+            <links num="1">
+                <link id="341" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>363</objId>
+            <ptul X="369" Y="395" />
+            <ptdr X="384" Y="425" />
+            <links num="1">
+                <link id="341" />
+            </links>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>if the client could not connect the game server</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>364</objId>
+            <ptul X="12" Y="240" />
+            <ptdr X="363" Y="259" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>365</objId>
+            <ptul X="369" Y="450" />
+            <ptdr X="384" Y="480" />
+            <links num="1">
+                <link id="367" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>366</objId>
+            <ptul X="37" Y="450" />
+            <ptdr X="52" Y="480" />
+            <links num="1">
+                <link id="367" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>367</objId>
+            <points num="2">
+                <pt x="369" y="455" />
+                <pt x="52" y="455" />
+            </points>
+            <objStart id="365" />
+            <objEnd id="366" />
+            <message messType="MGEN">UAnsAutoJoin</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>message UReqAutoJoin {&#x0A;&#x09;required int32 categoryID =1;&#x0A;&#x09;required int32 channelID = 2;&#x0A;}&#x0A;</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>368</objId>
+            <ptul X="92" Y="97" />
+            <ptdr X="267" Y="189" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>message UAnsClose {&#x0A;}</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>369</objId>
+            <ptul X="213" Y="323" />
+            <ptdr X="351" Y="367" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>message UAnsAutoJoin {&#x0A;&#x09;required bytes gameRoomInfo = 1;&#x0A;}</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>370</objId>
+            <ptul X="67" Y="467" />
+            <ptdr X="274" Y="527" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>TODO&#x0A;&#x0A;on_create() room init &#x0A;on_join() : user join init</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>371</objId>
+            <ptul X="581" Y="281" />
+            <ptdr X="724" Y="357" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

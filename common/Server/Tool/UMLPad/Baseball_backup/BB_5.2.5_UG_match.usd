@@ -1,0 +1,253 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>BB_5.2.5_BS_match</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="20">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>44</objId>
+            <ptul X="637" Y="127" />
+            <ptdr X="732" Y="167" />
+            <links num="0" />
+            <objectName>BaseballServer</objectName>
+            <className>S</className>
+            <actBoxes num="4">
+                <actBox id="47" />
+                <actBox id="49" />
+                <actBox id="53" />
+                <actBox id="58" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>45</objId>
+            <ptul X="12" Y="124" />
+            <ptdr X="80" Y="164" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="4">
+                <actBox id="46" />
+                <actBox id="50" />
+                <actBox id="54" />
+                <actBox id="56" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>46</objId>
+            <ptul X="38" Y="301" />
+            <ptdr X="53" Y="331" />
+            <links num="1">
+                <link id="48" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>47</objId>
+            <ptul X="677" Y="301" />
+            <ptdr X="692" Y="331" />
+            <links num="1">
+                <link id="48" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>48</objId>
+            <points num="2">
+                <pt x="53" y="314" />
+                <pt x="677" y="314" />
+            </points>
+            <objStart id="46" />
+            <objEnd id="47" />
+            <message messType="MGEN">req_team_match_ready</message>
+            <guardCond>uid-int64</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>49</objId>
+            <ptul X="677" Y="451" />
+            <ptdr X="692" Y="481" />
+            <links num="1">
+                <link id="57" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>50</objId>
+            <ptul X="38" Y="451" />
+            <ptdr X="53" Y="481" />
+            <links num="1">
+                <link id="57" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>51</objId>
+            <points num="2">
+                <pt x="677" y="525" />
+                <pt x="53" y="525" />
+            </points>
+            <objStart id="53" />
+            <objEnd id="54" />
+            <message messType="MGEN">ans_game_start</message>
+            <guardCond>attack_user-int64,sid_Sys_Runner_State-int32</guardCond>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[req_team_match_ready]&#x0A;&#x0A;만약 GAMESTART_ZERO_PLAYER_READY_COUNT_FIRST 와 &#x0A;GAMESTART_ZERO_PLAYER_READY_COUNT_SECOND&#x0A;가 지났는데도 ready를 안하면 &#x0A;ans_team_match_ready가 자동으로 날라간다.&#x0A;timer_req_team_match_ready발동.&#x0A;&#x0A;{PARAM}&#x0A;uid-int64</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>63</objId>
+            <ptul X="755" Y="153" />
+            <ptdr X="1145" Y="325" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>53</objId>
+            <ptul X="677" Y="516" />
+            <ptdr X="692" Y="546" />
+            <links num="1">
+                <link id="51" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>54</objId>
+            <ptul X="38" Y="516" />
+            <ptdr X="53" Y="546" />
+            <links num="1">
+                <link id="51" />
+            </links>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>Timer : time_out_req_pitcher_throw</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>55</objId>
+            <ptul X="375" Y="650" />
+            <ptdr X="647" Y="669" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>56</objId>
+            <ptul X="38" Y="604" />
+            <ptdr X="53" Y="634" />
+            <links num="1">
+                <link id="62" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>57</objId>
+            <points num="2">
+                <pt x="677" y="462" />
+                <pt x="53" y="462" />
+            </points>
+            <objStart id="49" />
+            <objEnd id="50" />
+            <message messType="MGEN">ans_team_match_ready</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>58</objId>
+            <ptul X="677" Y="604" />
+            <ptdr X="692" Y="634" />
+            <links num="1">
+                <link id="62" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[ans_game_round_start]&#x0A;서버가 ans_game_start를 보낸후 &#x0A;GAME_FIRST_ROUND_WAIT_TIME만큼&#x0A;기다리고 ans_game_round_start를 보낸다.&#x0A;&#x0A;또한 GAME_PITCHER_THROW_WAIT_TIME_COUNT만큼&#x0A;기다려도 req_pitcher_throw가 안날라오면&#x0A;timer_out_req_pitcher_throw에 의해 자동으로 &#x0A;ans_pitcher_throw가 날라간다.&#x0A;&#x0A;{PARAM}&#x0A;round-int32&#x0A;runner_state-int32-ERunnerStateRound</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>59</objId>
+            <ptul X="710" Y="505" />
+            <ptdr X="1065" Y="725" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>Timer : timer_req_team_match_ready</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>60</objId>
+            <ptul X="92" Y="271" />
+            <ptdr X="375" Y="290" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>i_TIME_1_PLAYER_READY&#x09;(10초)&#x09;한팀만 레디시 다른팀 자동레디 시키는 시간&#x0A;i_TIME_ALL_PLAYER_NOT_READY&#x09;20초 - &#x09;모두 레디를 하지 않았을 경우 자동레디 시키는 시간&#x0A;i_TIME_ALL_PLAYER_READY&#x09;5초-&#x09;모두 레디를 하였을 경우 5초 카운트 후 선후공 결정&#x0A;</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>61</objId>
+            <ptul X="76" Y="347" />
+            <ptdr X="685" Y="423" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>62</objId>
+            <points num="2">
+                <pt x="677" y="621" />
+                <pt x="53" y="621" />
+            </points>
+            <objStart id="58" />
+            <objEnd id="56" />
+            <message messType="MGEN">ans_game_round_start</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[ans_team_match_ready]&#x0A;만약 이 패킷을 받고 모두 레디이면&#x0A;GAMESTART_ZERO_PLAYER_READY_COUNT_BOTH(5)초 후에 &#x0A;서버로부터 ans_game_start가 날라온다.&#x0A;&#x0A;{PARAM}&#x0A;uid-int64</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>52</objId>
+            <ptul X="705" Y="356" />
+            <ptdr X="1105" Y="480" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

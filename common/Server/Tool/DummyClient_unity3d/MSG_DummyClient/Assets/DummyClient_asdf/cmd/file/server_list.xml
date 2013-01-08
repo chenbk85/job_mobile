@@ -1,0 +1,12 @@
+<ServerList>
+	<asdfServerList>
+		<Server NAME="QA"		IP="182.162.130.34" i_PORT="15200" />
+		<Server NAME="DEV"		IP="182.162.130.34" i_PORT="15520" />
+		<Server NAME="TEST"		IP="182.162.130.34" i_PORT="15620" />
+		<Server NAME="M3_QA"	IP="182.162.130.57" i_PORT="15200" />
+		<Server NAME="M3_DEV"	IP="182.162.130.57" i_PORT="15520" />
+		<Server NAME="M3_TEST"	IP="182.162.130.57" i_PORT="15620" />
+		<Server NAME="PUDEA"	IP="10.25.21.178"	i_PORT="15620" />
+		<Server NAME="ICANDOIT"	IP="10.25.21.104"	i_PORT="12000" />
+	</asdfServerList>
+</ServerList>

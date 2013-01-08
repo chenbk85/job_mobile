@@ -1,0 +1,453 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>BB_5.2.7_BS_match_end</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="36">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>84</objId>
+            <ptul X="378" Y="16" />
+            <ptdr X="473" Y="56" />
+            <links num="0" />
+            <objectName>BaseballServer</objectName>
+            <className>S</className>
+            <actBoxes num="8">
+                <actBox id="89" />
+                <actBox id="92" />
+                <actBox id="95" />
+                <actBox id="98" />
+                <actBox id="102" />
+                <actBox id="105" />
+                <actBox id="111" />
+                <actBox id="117" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>85</objId>
+            <ptul X="89" Y="13" />
+            <ptdr X="157" Y="53" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="3">
+                <actBox id="90" />
+                <actBox id="96" />
+                <actBox id="103" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>86</objId>
+            <ptul X="661" Y="17" />
+            <ptdr X="729" Y="57" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="3">
+                <actBox id="93" />
+                <actBox id="99" />
+                <actBox id="106" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>pitcher</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>87</objId>
+            <ptul X="88" Y="60" />
+            <ptdr X="142" Y="79" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>88</objId>
+            <points num="2">
+                <pt x="433" y="601" />
+                <pt x="687" y="601" />
+            </points>
+            <objStart id="105" />
+            <objEnd id="106" />
+            <message messType="MGEN">ans_game_end</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>89</objId>
+            <ptul X="418" Y="145" />
+            <ptdr X="433" Y="175" />
+            <links num="1">
+                <link id="91" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>90</objId>
+            <ptul X="115" Y="145" />
+            <ptdr X="130" Y="175" />
+            <links num="1">
+                <link id="91" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>91</objId>
+            <points num="2">
+                <pt x="418" y="150" />
+                <pt x="130" y="150" />
+            </points>
+            <objStart id="89" />
+            <objEnd id="90" />
+            <message messType="MGEN">ans_game_round_start</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>92</objId>
+            <ptul X="418" Y="180" />
+            <ptdr X="433" Y="210" />
+            <links num="1">
+                <link id="94" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>93</objId>
+            <ptul X="687" Y="180" />
+            <ptdr X="702" Y="210" />
+            <links num="1">
+                <link id="94" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>94</objId>
+            <points num="2">
+                <pt x="433" y="185" />
+                <pt x="687" y="185" />
+            </points>
+            <objStart id="92" />
+            <objEnd id="93" />
+            <message messType="MGEN">ans_game_round_start</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>95</objId>
+            <ptul X="418" Y="226" />
+            <ptdr X="433" Y="256" />
+            <links num="1">
+                <link id="97" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>96</objId>
+            <ptul X="115" Y="226" />
+            <ptdr X="130" Y="256" />
+            <links num="1">
+                <link id="97" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>97</objId>
+            <points num="2">
+                <pt x="418" y="240" />
+                <pt x="130" y="240" />
+            </points>
+            <objStart id="95" />
+            <objEnd id="96" />
+            <message messType="MGEN">ans_change_attack_team</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>98</objId>
+            <ptul X="418" Y="267" />
+            <ptdr X="433" Y="297" />
+            <links num="1">
+                <link id="100" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>99</objId>
+            <ptul X="687" Y="267" />
+            <ptdr X="702" Y="297" />
+            <links num="1">
+                <link id="100" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>100</objId>
+            <points num="2">
+                <pt x="433" y="272" />
+                <pt x="687" y="272" />
+            </points>
+            <objStart id="98" />
+            <objEnd id="99" />
+            <message messType="MGEN">ans_change_attack_team</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>GAME_ROUND_WAIT_TIME is passed then server will send ans_game_round_start</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>101</objId>
+            <ptul X="156" Y="109" />
+            <ptdr X="788" Y="128" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>102</objId>
+            <ptul X="418" Y="558" />
+            <ptdr X="433" Y="588" />
+            <links num="1">
+                <link id="104" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>103</objId>
+            <ptul X="115" Y="558" />
+            <ptdr X="130" Y="588" />
+            <links num="1">
+                <link id="104" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>104</objId>
+            <points num="2">
+                <pt x="418" y="563" />
+                <pt x="130" y="563" />
+            </points>
+            <objStart id="102" />
+            <objEnd id="103" />
+            <message messType="MGEN">ans_game_end</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>105</objId>
+            <ptul X="418" Y="596" />
+            <ptdr X="433" Y="626" />
+            <links num="1">
+                <link id="88" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>106</objId>
+            <ptul X="687" Y="596" />
+            <ptdr X="702" Y="626" />
+            <links num="1">
+                <link id="88" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>107</objId>
+            <points num="2">
+                <pt x="433" y="413" />
+                <pt x="909" y="413" />
+            </points>
+            <objStart id="111" />
+            <objEnd id="112" />
+            <message messType="MGEN">bs2ug_game_end</message>
+            <guardCond>rg-s_result_game,is_better-bool,rr-s_result_round[?]</guardCond>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[ans_change_attack_team]&#x0A;TOTAL_ROUND만큼 지나면 공수전환.&#x0A;{PARAM}&#x0A;round-int32&#x0A;attack_user-int64</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>108</objId>
+            <ptul X="154" Y="279" />
+            <ptdr X="402" Y="371" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>Better</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>109</objId>
+            <ptul X="671" Y="72" />
+            <ptdr X="718" Y="91" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>110</objId>
+            <ptul X="867" Y="16" />
+            <ptdr X="967" Y="56" />
+            <links num="0" />
+            <objectName>UserGateServer</objectName>
+            <className>UG</className>
+            <actBoxes num="2">
+                <actBox id="112" />
+                <actBox id="116" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>111</objId>
+            <ptul X="418" Y="408" />
+            <ptdr X="433" Y="438" />
+            <links num="1">
+                <link id="107" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>112</objId>
+            <ptul X="909" Y="408" />
+            <ptdr X="924" Y="438" />
+            <links num="1">
+                <link id="107" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>113</objId>
+            <points num="2">
+                <pt x="909" y="503" />
+                <pt x="433" y="503" />
+            </points>
+            <objStart id="116" />
+            <objEnd id="117" />
+            <message messType="MGEN">ug2bs_game_end</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>one round end</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>114</objId>
+            <ptul X="376" Y="69" />
+            <ptdr X="470" Y="97" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>보상 아이템추가및 통보</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>115</objId>
+            <ptul X="768" Y="447" />
+            <ptdr X="946" Y="466" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>116</objId>
+            <ptul X="909" Y="496" />
+            <ptdr X="924" Y="526" />
+            <links num="1">
+                <link id="113" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>117</objId>
+            <ptul X="418" Y="496" />
+            <ptdr X="433" Y="526" />
+            <links num="1">
+                <link id="113" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[ug2bs_game_end]&#x0A;&#x0A;{PARAM}&#x0A;rg-s_result_game&#x0A;bonus_item-s_tbl_item[?]&#x0A;user-s_tbl_user&#x0A;better-s_tbl_playerbetter&#x0A;pitcher-s_tbl_playerpitcher&#x0A;</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>118</objId>
+            <ptul X="740" Y="510" />
+            <ptdr X="901" Y="666" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[ans_game_end]&#x0A;만약 TOTAL_ROUND*2만큼 지나면 게임끝낸다.&#x0A;{PARAM}&#x0A;rg-s_result_game&#x0A;bonus_item-s_tbl_item[?]&#x0A;user-s_tbl_user&#x0A;better-s_tbl_playerbetter&#x0A;pitcher-s_tbl_playerpitcher</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>119</objId>
+            <ptul X="90" Y="606" />
+            <ptdr X="398" Y="746" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

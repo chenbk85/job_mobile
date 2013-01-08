@@ -1,0 +1,294 @@
+set m_prefix m_
+
+%%
+///////////////////////////////////////////////////////////////////////////////
+//	SGSCli.adl
+///////////////////////////////////////////////////////////////////////////////
+%%
+
+%%
+#ifdef _XADL
+%%
+	#include <AdlSGSCommon.h>
+	#include <AdlSGSCommon_b.h>
+	#include <ADL/AdlEncryptedMsg.h>
+	#include <ADL/AdlEncryptedMsg_b.h>
+%%
+#else
+%%
+	#include <MsgSGSCommon.h>
+	#include <ADL/EncryptedMsg.h>
+%%
+#endif
+%%
+
+%%
+//////////////////////////////////////////
+//             Cli --> SGS
+//////////////////////////////////////////
+%%
+
+class MsgCliSGS_JoinChannelReq
+{
+	ChannelID 		channelID;
+	SPUserBaseInfo	userBaseInfo;
+};
+
+class MsgCliSGS_LeaveChannelNtf
+{
+};
+
+class MsgCliSGS_GetRoomListReq
+{
+};
+
+class MsgCliSGS_GetRoomInfoReq
+{
+	RoomID 			roomID;
+};
+
+class MsgCliSGS_GetChannelListReq
+{
+	DWORD 			dwCategory;
+};
+
+class MsgCliSGS_ChangeNickNameNtf
+{
+	string 			sNickName;
+};
+
+class MsgCliSGS_ChangeAvatarNtf
+{
+	short			nAvatarType;		// Avatar Type
+	string			sAvatarName;		// Avatar Name
+};
+
+class MsgCliSGS_ChangeItemNtf
+{
+	string			sItem;
+};
+
+class MsgCliSGS_ForwardToIBBReq
+{
+	string			sPayloadCliIBB;
+};
+
+class MsgCliSGS_AccuseReq
+{
+	LONG			lAccusedUSN;
+	string			sType;
+	string			sContent;
+};
+
+class MsgCliSGS_GameData
+{
+//	LONG			lIndex;
+	string			sData;
+%%
+	virtual void Clear()
+	{
+//		m_lIndex = -1;
+		m_sData.erase();
+	}
+%%
+};
+
+class MsgCliSGS_CreateRoomReq
+{
+	CreateRoomInfo	roomInfo;
+};
+
+class MsgCliSGS_JoinRoomReq
+{
+	JoinRoomInfo	roomInfo;
+};
+
+class MsgCliSGS_GetMatchedRoomListInChannelReq
+{
+};
+
+class MsgCliSGS_LeaveRoomReq
+{
+};
+
+class MsgCliSGS_JoinMatchedRoomReq
+{
+	list<RoomID>	listJoinRoomID;
+	SPUserBaseInfo	userBaseInfo;
+	char			bCreateRoom;
+	CreateRoomInfo	createRoomInfo;
+};
+
+choice PayloadCliSGS
+{
+	MsgCliSGS_JoinChannelReq				msgJoinChannelReq;
+	MsgCliSGS_LeaveChannelNtf				msgLeaveChannelNtf;
+	MsgCliSGS_GetRoomListReq				msgGetRoomListReq;
+	MsgCliSGS_GetRoomInfoReq				msgGetRoomInfoReq;
+	MsgCliSGS_GetChannelListReq				msgGetChannelListReq;
+
+	MsgCliSGS_ChangeNickNameNtf				msgChangeNickNameNtf;
+	MsgCliSGS_ChangeAvatarNtf				msgChangeAvatarNtf;
+	MsgCliSGS_ChangeItemNtf					msgChangeItemNtf;
+	MsgCliSGS_ForwardToIBBReq				msgForwardToIBBReq;
+	MsgCliSGS_AccuseReq						msgAccuseReq;
+
+	MsgCliSGS_GameData						msgGameData;
+	MsgCliSGS_CreateRoomReq					msgCreateRoomReq;
+	MsgCliSGS_JoinRoomReq					msgJoinRoomReq;
+	MsgCliSGS_GetMatchedRoomListInChannelReq	msgGetMatchedRoomListInChannelReq;
+	MsgCliSGS_LeaveRoomReq					msgLeaveRoomReq;
+	MsgCliSGS_JoinMatchedRoomReq			msgJoinMatchedRoomReq;
+
+	EncryptedMsg							msgEncrypted;
+};
+
+%%
+////////////////////////////////////////////
+//             SGS --> Cli
+////////////////////////////////////////////
+%%
+
+class MsgSGSCli_JoinChannelAns
+{
+	LONG			lErrorCode;			// Error Code
+	SPUserGameInfo	userGameInfo;
+};
+
+class MsgSGSCli_GetRoomListAns
+{
+	LONG			lErrorCode;			// Error Code
+	SPRoomBaseInfoList	listRoomInfo;
+};
+
+class MsgSGSCli_GetRoomInfoAns 
+{
+	LONG			lErrorCode;			// Error Code
+	SPRoomInfoForChannel	roomInfo;
+};
+
+class MsgSGSCli_GetChannelListAns
+{
+	LONG			lErrorCode;			// Error Code
+	DWORD			dwCategory;
+	ChannelInfoList	listChannelInfo;
+};
+
+class MsgSGSCli_ChangeNickNameNtf
+{
+	LONG			lUSN;
+	string			sNickName;
+};
+
+class MsgSGSCli_ChangeItemNtf
+{
+	LONG			lUSN;
+	string			sItem;
+};
+
+class MsgSGSCli_ForwardToIBBAns
+{
+	LONG 			lErrorCode;			// Error Code
+	string 			sPayloadIBBCli;
+};
+
+class MsgSGSCli_AnnounceNtf
+{
+	string 			sAnnounce;
+};
+
+class MsgSGSCli_AccuseAns
+{
+	LONG			lErrorCode;			// Error Code
+};
+
+class MsgSGSCli_GameData
+{
+//	LONG			lIndex;
+	string			sData;
+%%
+	virtual void Clear()
+	{
+//		m_lIndex = -1;
+		m_sData.erase();
+	}
+%%
+};
+
+class MsgSGSCli_CreateRoomAns
+{
+	LONG 			lErrorCode;			// Error Code
+};
+
+class MsgSGSCli_JoinRoomAns
+{
+	LONG 			lErrorCode;			// Error Code
+	RoomID 			roomID;
+};
+
+class MsgSGSCli_GetMatchedRoomListInChannelAns
+{
+	LONG 			lErrorCode;			// Error Code
+	AutoJoinRoomInfoList	listRoomInfo;
+};
+
+class MsgSGSCli_LeaveRoomAns
+{
+	LONG 			lErrorCode;			// Error Code
+};
+
+class MsgSGSCli_JoinMatchedRoomAns
+{
+	LONG 			lErrorCode;			// Error Code
+	RoomID			roomID;
+	SPUserGameInfo	userGameInfo;
+};
+
+class MsgSGSCli_CreateRoomNtf
+{
+	SPRoomBaseInfo	roomInfo;
+};
+
+class MsgSGSCli_JoinRoomNtf
+{
+	RoomID 			roomID;
+	LONG 			lUSN;
+};
+
+class MsgSGSCli_LeaveRoomNtf
+{
+	RoomID 			roomID;
+	LONG 			lUSN;
+};
+
+class MsgSGSCli_DestroyRoomNtf
+{
+	RoomID 			roomID;
+};
+
+choice PayloadSGSCli
+{
+	MsgSGSCli_JoinChannelAns				msgJoinChannelAns;
+	MsgSGSCli_GetRoomListAns				msgGetRoomListAns;
+	MsgSGSCli_GetRoomInfoAns				msgGetRoomInfoAns;
+	MsgSGSCli_GetChannelListAns				msgGetChannelListAns;
+	
+	MsgSGSCli_ChangeNickNameNtf				msgChangeNickNameNtf;
+	MsgSGSCli_ChangeItemNtf					msgChangeItemNtf;
+	MsgSGSCli_ForwardToIBBAns				msgForwardToIBBAns;
+	MsgSGSCli_AnnounceNtf					msgAnnounceNtf;
+	MsgSGSCli_AccuseAns						msgAccuseAns;
+
+	MsgSGSCli_GameData						msgGameData;
+	MsgSGSCli_CreateRoomAns					msgCreateRoomAns;
+	MsgSGSCli_JoinRoomAns					msgJoinRoomAns;
+	MsgSGSCli_GetMatchedRoomListInChannelAns	msgGetMatchedRoomListInChannelAns;
+	MsgSGSCli_LeaveRoomAns					msgLeaveRoomAns;
+	MsgSGSCli_JoinMatchedRoomAns			msgJoinMatchedRoomAns;
+	MsgSGSCli_CreateRoomNtf					msgCreateRoomNtf;
+	MsgSGSCli_JoinRoomNtf					msgJoinRoomNtf;
+	MsgSGSCli_LeaveRoomNtf					msgLeaveRoomNtf;
+	MsgSGSCli_DestroyRoomNtf				msgDestroyRoomNtf;
+
+	EncryptedMsg							msgEncrypted;
+};

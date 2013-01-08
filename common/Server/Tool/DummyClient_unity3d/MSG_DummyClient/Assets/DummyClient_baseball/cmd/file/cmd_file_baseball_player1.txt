@@ -1,0 +1,35 @@
+//  "//"로 시작하면 주석이다. 
+// 매크로 {SERVER_IP}는 더미클라이언트에서 선택한 서버주소를 의미. 직접IP를 입력해도 된다.
+// 매크로 {SERVER_PORT}는 더미클라이언트에서 선택한 서버포트를 의미. 직접 PORT번호를 입력해도된다.
+// 매크로 {USER_ID}는 더미클라이언트에서 세팅한 유저 번호로 대치된다. 직접 USER ID 번호를 입력해도 된다.
+
+#job_autojoin("{SERVER_IP}",{SERVER_PORT},{USER_ID});
+@user.login {SERVER_IP}:{SERVER_PORT} {USER_ID}
+@user.ReqConnect {USER_ID}
+@game.match_auto_join_team {USER_ID}
+@game.x2bs_auto_match_ready2 {USER_ID} 1 2
+@game.x2bs_match_ready {USER_ID}
+####################################
+@game.x2bs_batter_ready {USER_ID}
+@game.req_better_hit {USER_ID}
+@game.req_pitcher_throw  {USER_ID}
+####################################
+@game.req_rematch {USER_ID}
+@game.req_answer_restart_game {USER_ID} true
+@game.UReqLeaveGame {USER_ID}
+@user.logout {USER_ID}
+@user.destroy {USER_ID}
+####################################
+@user.x2ug_get_client_version {USER_ID}
+@user.ReqChannel {USER_ID}
+####################################
+####### NOT IMPLEMENTED
+@game.req_room_state {USER_ID}
+@player.print_list {USER_ID}
+@user.print_info {USER_ID}
+@team.print {USER_ID}
+@team.req_team_select {USER_ID} 0
+@user.x2ug_echo {USER_ID} "echo message"
+@user.x2bs_echo {USER_ID} "echo message"
+@game.print_score {USER_ID}
+#test_run();

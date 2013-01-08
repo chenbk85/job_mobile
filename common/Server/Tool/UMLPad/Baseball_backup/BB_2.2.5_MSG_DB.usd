@@ -1,0 +1,155 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>Skip_BB_2.2.5_MSG_DB</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="12">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>158</objId>
+            <ptul X="351" Y="18" />
+            <ptdr X="419" Y="58" />
+            <links num="0" />
+            <objectName>UserGate</objectName>
+            <className>UG</className>
+            <actBoxes num="2">
+                <actBox id="161" />
+                <actBox id="163" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>159</objId>
+            <ptul X="26" Y="15" />
+            <ptdr X="94" Y="55" />
+            <links num="0" />
+            <objectName>Client</objectName>
+            <className>X</className>
+            <actBoxes num="2">
+                <actBox id="160" />
+                <actBox id="164" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>160</objId>
+            <ptul X="52" Y="139" />
+            <ptdr X="67" Y="169" />
+            <links num="1">
+                <link id="162" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>161</objId>
+            <ptul X="377" Y="139" />
+            <ptdr X="392" Y="169" />
+            <links num="1">
+                <link id="162" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>162</objId>
+            <points num="2">
+                <pt x="67" y="144" />
+                <pt x="377" y="144" />
+            </points>
+            <objStart id="160" />
+            <objEnd id="161" />
+            <message messType="MGEN">UREQDB</message>
+            <guardCond>ReqDB</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>163</objId>
+            <ptul X="377" Y="206" />
+            <ptdr X="392" Y="236" />
+            <links num="1">
+                <link id="165" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>164</objId>
+            <ptul X="52" Y="206" />
+            <ptdr X="67" Y="236" />
+            <links num="1">
+                <link id="165" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>165</objId>
+            <points num="2">
+                <pt x="377" y="211" />
+                <pt x="67" y="211" />
+            </points>
+            <objStart id="163" />
+            <objEnd id="164" />
+            <message messType="MGEN">UANSDB</message>
+            <guardCond>AnsDB</guardCond>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>message ReqDB {&#x0A;&#x09;required int32 seq = 1;&#x0A;&#x09;required string query = 2;&#x0A;&#x09;repeated DBIn params = 3;&#x0A;}</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>166</objId>
+            <ptul X="36" Y="267" />
+            <ptdr X="200" Y="359" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>message AnsDB {&#x0A;&#x09;required int32 seq = 1;&#x0A;&#x09;required string query = 2;&#x0A;&#x09;required int32 retCode = 3;&#x0A;&#x09;required bytes result = 4;&#x0A;}</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>167</objId>
+            <ptul X="268" Y="262" />
+            <ptdr X="430" Y="370" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>message DBIn {&#x0A;&#x09;enum Type {&#x0A;&#x09;&#x09;INT = 1;&#x0A;&#x09;&#x09;INT64 = 2;&#x0A;&#x09;&#x09;STR = 3;&#x0A;&#x09;}&#x0A;&#x09;required Type type = 1;&#x0A;&#x09;required string val= 2;&#x0A;&#x0A;}</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>168</objId>
+            <ptul X="467" Y="130" />
+            <ptdr X="608" Y="302" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>Database::query_from_client(const ReqDB&amp; query, AnsDB&amp; result)</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>169</objId>
+            <ptul X="30" Y="82" />
+            <ptdr X="545" Y="101" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

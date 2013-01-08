@@ -1,0 +1,565 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="mt-gd|x64">
+      <Configuration>mt-gd</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="mt-sgd|x64">
+      <Configuration>mt-sgd</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="mt-s|x64">
+      <Configuration>mt-s</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="mt|x64">
+      <Configuration>mt</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{A4CC1F10-F7C0-4BE0-A9E4-3633AE1E35A3}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>yaml-cpp static md</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='mt|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'">lib\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'">lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">yaml-cpp.dir\Debug\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'">yaml-cpp.dir\Debug\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'">yaml-cpp.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libyaml-cppmdd</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'">libyaml-cpp-vc$(PlatformToolsetVersion)-mt-gd-0_27</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'">libyaml-cpp-vc$(PlatformToolsetVersion)-mt-sgd-0_27</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='mt|x64'">lib\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'">lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">yaml-cpp.dir\Release\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='mt|x64'">yaml-cpp.dir\Release\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'">yaml-cpp.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libyaml-cppmd</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='mt|x64'">libyaml-cpp-vc$(PlatformToolsetVersion)-mt-0_27</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'">libyaml-cpp-vc$(PlatformToolsetVersion)-mt-s-0_27</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='mt|x64'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">yaml-cpp.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libyaml-cppmd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">yaml-cpp.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libyaml-cppmd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4355</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/Debug/libyaml-cppmdd.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 /wd4267 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4355</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 /wd4267 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4355</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4127;4355</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/Release/libyaml-cppmd.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='mt|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000  /wd4267 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>./include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4127;4355</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>Full</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000  /wd4267 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>./include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4127;4355</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>Full</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4127;4355</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>MinSizeRel</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/MinSizeRel/libyaml-cppmd.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4355</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>RelWithDebInfo</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/RelWithDebInfo/libyaml-cppmd.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'">Building Custom Rule C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'">Building Custom Rule C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\bin\cmake.exe -HC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 -BC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 --check-stamp-file C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'">setlocal
+C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\bin\cmake.exe -HC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 -BC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 --check-stamp-file C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'">setlocal
+C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\bin\cmake.exe -HC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 -BC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 --check-stamp-file C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeLists.txt;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CheckCXXCompilerFlag.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CheckCXXSourceCompiles.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeExpandImportedTargets.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCPlatform.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXPlatform.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXCompiler.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'">C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeLists.txt;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CheckCXXCompilerFlag.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CheckCXXSourceCompiles.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeExpandImportedTargets.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCPlatform.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXPlatform.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXCompiler.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'">C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeLists.txt;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CheckCXXCompilerFlag.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CheckCXXSourceCompiles.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeExpandImportedTargets.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCPlatform.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXPlatform.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXCompiler.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='mt-gd|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='mt-sgd|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='mt|x64'">Building Custom Rule C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'">Building Custom Rule C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\bin\cmake.exe -HC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 -BC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 --check-stamp-file C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='mt|x64'">setlocal
+C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\bin\cmake.exe -HC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 -BC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 --check-stamp-file C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'">setlocal
+C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\bin\cmake.exe -HC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 -BC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 --check-stamp-file C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeLists.txt;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CheckCXXCompilerFlag.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CheckCXXSourceCompiles.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeExpandImportedTargets.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCPlatform.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXPlatform.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXCompiler.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='mt|x64'">C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeLists.txt;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CheckCXXCompilerFlag.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CheckCXXSourceCompiles.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeExpandImportedTargets.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCPlatform.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXPlatform.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXCompiler.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'">C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeLists.txt;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CheckCXXCompilerFlag.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CheckCXXSourceCompiles.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeExpandImportedTargets.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCPlatform.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXPlatform.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXCompiler.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='mt|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='mt-s|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\bin\cmake.exe -HC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 -BC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 --check-stamp-file C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeLists.txt;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CheckCXXCompilerFlag.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CheckCXXSourceCompiles.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeExpandImportedTargets.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCPlatform.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXPlatform.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXCompiler.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\bin\cmake.exe -HC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 -BC:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7 --check-stamp-file C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeLists.txt;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeLists.txt;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CheckCXXCompilerFlag.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CheckCXXSourceCompiles.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeExpandImportedTargets.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeVS10FindMake.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake.in;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\Windows-cl.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCPlatform.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXPlatform.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\Platform\cl.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\etc\Install\cmake-2.8.8-win32-x86\cmake-2.8.8-win32-x86\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\CMakeCXXCompiler.cmake;C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\aliasmanager.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\anchor.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\conversion.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\dll.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\emitfromevents.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\emitter.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\emittermanip.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\eventhandler.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\exceptions.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\iterator.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\ltnode.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\mark.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\node.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\nodeimpl.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\nodereadimpl.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\nodeutil.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\noncopyable.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\null.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\ostream.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\parser.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\stlemitter.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\stlnode.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\traits.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\yaml.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\collectionstack.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\directives.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\emitterstate.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\emitterutils.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\exp.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\indentation.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\iterpriv.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\nodebuilder.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\nodeownership.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\ptr_stack.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\ptr_vector.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\regex.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\regeximpl.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\scanner.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\scanscalar.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\scantag.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\setting.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\singledocparser.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\stream.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\streamcharsource.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\stringsource.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\tag.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\token.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\contrib\anchordict.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\include\yaml-cpp\contrib\graphbuilder.h" />
+    <ClInclude Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\contrib\graphbuilderadapter.h" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\aliasmanager.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\conversion.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\directives.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\emitfromevents.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\emitter.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\emitterstate.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\emitterutils.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\exp.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\iterator.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\node.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\nodebuilder.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\nodeownership.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\null.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\ostream.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\parser.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\regex.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\scanner.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\scanscalar.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\scantag.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\scantoken.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\simplekey.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\singledocparser.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\stream.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\tag.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\contrib\graphbuilder.cpp" />
+    <ClCompile Include="C:\Mobile\MSG\trunk\thirdparty\package\yaml-cpp-0.2.7.tar\yaml-cpp-0.2.7\src\contrib\graphbuilderadapter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/ZERO_CHECK.vcxproj">
+      <Project>9FF28251-5044-4F69-A10F-B94F439AC18C</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

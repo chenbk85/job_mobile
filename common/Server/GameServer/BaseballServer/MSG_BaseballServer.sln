@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "T_baseball", "..\..\..\..\baseball\src\server\trunk\T_baseball.vcproj", "{375D5CF2-5053-4E8D-8D4E-F6FDFF573A20}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "T_MSG", "..\..\..\..\baseball\src\server\trunk\T_MSG.vcproj", "{F9D1BF6B-4AEE-41ED-8B99-B3DE0FE25157}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		MDebug|Win32 = MDebug|Win32
+		MRelease|Win32 = MRelease|Win32
+		UDebug|Win32 = UDebug|Win32
+		URelease|Win32 = URelease|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{375D5CF2-5053-4E8D-8D4E-F6FDFF573A20}.MDebug|Win32.ActiveCfg = MDebug|Win32
+		{375D5CF2-5053-4E8D-8D4E-F6FDFF573A20}.MRelease|Win32.ActiveCfg = MRelease|Win32
+		{375D5CF2-5053-4E8D-8D4E-F6FDFF573A20}.UDebug|Win32.ActiveCfg = MRelease|Win32
+		{375D5CF2-5053-4E8D-8D4E-F6FDFF573A20}.URelease|Win32.ActiveCfg = MRelease|Win32
+		{F9D1BF6B-4AEE-41ED-8B99-B3DE0FE25157}.MDebug|Win32.ActiveCfg = MDebug|Win32
+		{F9D1BF6B-4AEE-41ED-8B99-B3DE0FE25157}.MRelease|Win32.ActiveCfg = MRelease|Win32
+		{F9D1BF6B-4AEE-41ED-8B99-B3DE0FE25157}.UDebug|Win32.ActiveCfg = MRelease|Win32
+		{F9D1BF6B-4AEE-41ED-8B99-B3DE0FE25157}.URelease|Win32.ActiveCfg = MRelease|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

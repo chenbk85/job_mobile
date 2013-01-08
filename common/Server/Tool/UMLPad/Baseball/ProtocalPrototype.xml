@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding="euc-kr"?>
+<PROTOCAL HEADER="NULL" VERSION="1" i_DebugPrint="2" b_jxDEFINE="1" >
+	<!-- CODE에서 개행문자 지원안됨. anpersent # x 0 A ; 를 사용할것-->
+	<CODE TYPE="ENUM_FILE"></CODE>
+	<STRUCT_LIST>
+	</STRUCT_LIST>
+	<PROTOCAL_LIST>
+	</PROTOCAL_LIST>
+  <GOOGLE_PROTOCAL_BUFFER>
+    <BEGIN_CODE_FILE>proto_code_begin.txt</BEGIN_CODE_FILE>
+    <END_CODE_FILE>proto_code_end.txt</END_CODE_FILE>
+    <MESSAGE_TAG>s_</MESSAGE_TAG>
+    <MESSAGE_ENUM_TAG></MESSAGE_ENUM_TAG>
+    <MESSAGE_MEMEBER_TAG>m_</MESSAGE_MEMEBER_TAG>
+    <MEMBER_OPTOIN>optional</MEMBER_OPTOIN>
+    <PROTO_BUF_SERIALIZER_NAME_FOR_IPHONE>BaseballClient_proto_Serializer</PROTO_BUF_SERIALIZER_NAME_FOR_IPHONE>
+    <protobuf_net HELP='protobuf-net라입용 cs핼프코드 생성시사용'>
+		<include_namespace>
+			<namespace>System</namespace>
+			<namespace>System.Collections</namespace>
+			<namespace>System.Collections.Generic</namespace>
+			<namespace>System.Runtime.Serialization</namespace>
+			<namespace>System.IO</namespace>
+			<namespace>ProtoBuf</namespace>
+			<namespace>nPROTO</namespace>
+			<namespace>nEXCEL</namespace>
+		</include_namespace>
+    </protobuf_net>
+	<PROTO_CONTRACT_NAMESPACE>
+		<USING>System</USING>
+		<USING>System.Collections</USING>
+		<USING>System.Collections.Generic</USING>
+		<USING>System.Text</USING>
+		<USING>ProtoBuf</USING>
+		<USING>nEXCEL</USING>
+		<USING>nPROTO</USING>
+	</PROTO_CONTRACT_NAMESPACE>
+  </GOOGLE_PROTOCAL_BUFFER>
+</PROTOCAL>

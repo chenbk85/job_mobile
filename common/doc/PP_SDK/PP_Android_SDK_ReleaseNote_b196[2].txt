@@ -1,0 +1,83 @@
+*****************************************
+PmangPlus Android SDK Release Note
+배포 SDK 버전에서 추가되거나 변경된 내용
+****************************************
+
+b196
+- UI 수정
+ > 일부 margin값 조정
+
+- 오류 수정
+ > 익명 사용자 전환 관련 버튼을 연타했을 때 전환 가입 창 중복 표시 막음
+ > 도전과제 화면에서 익명 사용자 전환 시도 후 취소 시 대시보드로 이동하는 문제 수정
+ 
+
+- 기타
+ > 익명 사용자가 순위표와 도전과제에 접근한 상태에서 대시보드로 이동하는 경우엔 PPDelegate.onPmangPlusDisappear 를 호출하지 않고 바로 이동함.
+ > 플레이하지 않은 사용자/친구와 등수 비교 후 메시지 보낼 경우, 플레이하지 않은 쪽 등수 표현을 '하위 1%' 에서 '등수 없음'으로 변경
+
+
+b195
+- 오류 수정
+ > 회원가입 창에서 기존 계정으로 로그인 버튼을 눌렀을 때 회원 가입 창이 중복 표시되는 문제 수정
+ > 회원정보 수정 페이지에서 메뉴 키나 검색 키를 누른 경우 비밀번호 입력 창이 사라지는 문제 수정
+
+- UI 수정
+ > ID결제의 비밀번호 확인 화면에 상품 가격과 이름 노출
+
+b194
+
+- 오류 수정
+ > 갤럭시노트에서 일부 화면 깨짐 문제 수정
+ > 대시보드에서 back버튼으로 게임으로 돌아갈 경우 PmangPlus.onPmangPlusDisappear() 호출되지 않은 문제 수정
+
+- 기타
+ > facebook SDK 최신버전으로 교체
+
+b193
+
+- API 삭제
+ > PP.autoLogin(Activity act, ApiCallback<Member> callback, int reqSender) : SDK 내부 용 API
+- API 추가
+ > PP.openDashboard(Activity act, TabId tabId) : 특정 탭으로 대시보드 표출
+
+- 기타 
+ > com.pmangplus.core.ErrorCode 리펙터링 : ErrorCode의 javadoc 추가
+
+b191
+
+- API 삭제
+ > PP.openAppBanner : SDK 기능 개선에 따라 변경될 여지가 있어 삭제함
+
+- 오류 수정
+ > 최초 결제 시 gameAuth 값이 제대로 전달되지 않은 문제 수정
+
+- UI 수정
+ > ID결제 화면에 결제 약관 확인 링크 추가
+ > ID결제를 위한 계정 정보 확인 시 progress 노출
+  
+
+b190
+
+- API 삭제
+ > isStandalone : SDK 내부용 API
+
+- 탭소닉 관련 기능 변경
+ > 새로 정의된 탭소닉 앱 ID 반영: 101, 206, 208, 209
+
+
+b182
+
+- API 추가
+ > PP.listLeaderboardRankForMeInFriends
+ > PP.listLeaderboardRankForMeInGlobal
+
+- API 변경
+ > PP.openPurchaseItemView : 결제에 성공했을 때 onActivityResult의 intent로 전달되는 데이터의 type이 AppProduct 로 변경됨.
+ > PP.openPurchaseCashView : 결제에 성공했을 때 onActivityResult의 intent로 전달되는 데이터의 type이 VaProduct 로 변경됨.
+
+- PPConfig 초기화 방식 변경: 기존 생성자에 모든 정보를 매개변수로 넣는 방식에서 세부 설정을 OptionalConfig 로 분리함. API 문서와 가이드 참고.
+
+- 기능 추가
+ > 일본어, 중국어 지원
+ > 중국 SNS 지원: weibo, kaixin

@@ -1,0 +1,63 @@
+gameLogic.proto와 game.proto, ug.proto가 기존에는 밀접하게 연관되어 있었습니다.
+
+하지만 논리적으로 보면 그렇게 연결 고리가 있지는 않습니다. gateway의 역할에서 딱히 gameLogic.proto를 까서 봐야 하는 부분이 디비쪽으로 한정적이라서 gameLogic.proto안에 있는 패킷들은 bytes 자료형을 이용해서 감싸주는 방법으로 분리를 했습니다.
+
+그래서 조금 숙지해야 하는 작업이 있습니다.
+
+UAnsInfo같은 패킷은 내부에 gameinfo를 bytes형태로 받습니다. 이 내용을 확인하려면 풀어내기 위한 코드를 작성해야 합니다.
+
+UAnsProtocol answer;
+
+if (answer.type() == UAnsProtocol::UANSINFO)
+{
+           if (answer.has_ansinfo())
+           {
+                     GameInfo info;
+                     if (info.ParseFromString(answer.ansinfo().gameinfo()))
+                     {
+                                gameid = info.gameid()
+                                ...
+                     }
+           }
+}
+
+위와 같이 bytes형에서 패킷으로 변형시켜주는 코드를 작성해야 합니다.
+
+게임 패킷도 같은 방법으로 풀어줘야 합니다.
+
+UAnsProtocol answer;
+
+if (answer.type == UAnsProtocol::GLANSGAMEPROTOCOL)
+{
+           if (answer.has_ansgameprotocol())
+           {
+                     GLAnsGameProtocol game_ans;
+                     if (game_ans.ParseFromString(answer.ansgameprotocol())
+                     {
+                                switch(game_ans.type())
+                                {
+                                case GLAnsGameProtocol:....
+                                          ....
+                                }
+                     }
+           }
+}
+
+또한 역으로 전송시에는 패킷을 감싸줘야 합니다.
+
+UReqProtocol request
+
+GLReqGameProtocol game_req;
+
+....
+request.set_type(UReqProtocol::GLREQGAMEPROTOCOL);
+
+if (!game_req.SerializeToString(request.mutable_reqgameprotocol()))
+{
+           print error;
+}
+
+send(request);
+
+위와 같은 요령으로 패킷을 묶어서 작성해주시면 됩니다.
+

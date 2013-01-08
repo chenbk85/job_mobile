@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding="euc-kr"?>
+<PROTOCAL HEADER="NULL" VERSION="1" i_DebugPrint="2" b_jxDEFINE="1" >
+	<!-- CODE에서 개행문자 지원안됨. anpersent # x 0 A ; 를 사용할것-->
+	<CODE TYPE="ENUM_FILE"></CODE>
+	<STRUCT_LIST>
+	</STRUCT_LIST>
+	<PROTOCAL_LIST>
+	</PROTOCAL_LIST>
+  <GOOGLE_PROTOCAL_BUFFER>
+    <BEGIN_CODE_FILE>proto_code_begin.txt</BEGIN_CODE_FILE>
+    <END_CODE_FILE>proto_code_end.txt</END_CODE_FILE>
+    <MESSAGE_TAG>s_</MESSAGE_TAG>
+    <MESSAGE_ENUM_TAG></MESSAGE_ENUM_TAG>
+    <MESSAGE_MEMEBER_TAG>m_</MESSAGE_MEMEBER_TAG>
+    <MEMBER_OPTOIN>required</MEMBER_OPTOIN>
+  </GOOGLE_PROTOCAL_BUFFER>
+</PROTOCAL>

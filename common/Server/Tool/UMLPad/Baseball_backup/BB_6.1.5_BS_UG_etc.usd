@@ -1,0 +1,274 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>BB_6.1.5_BS_UG_etc</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="21">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>57</objId>
+            <ptul X="78" Y="39" />
+            <ptdr X="178" Y="79" />
+            <links num="0" />
+            <objectName>UserGateServer</objectName>
+            <className>UG</className>
+            <actBoxes num="6">
+                <actBox id="59" />
+                <actBox id="63" />
+                <actBox id="65" />
+                <actBox id="69" />
+                <actBox id="72" />
+                <actBox id="75" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>58</objId>
+            <ptul X="619" Y="43" />
+            <ptdr X="714" Y="83" />
+            <links num="0" />
+            <objectName>BaseballServer</objectName>
+            <className>S</className>
+            <actBoxes num="6">
+                <actBox id="60" />
+                <actBox id="62" />
+                <actBox id="66" />
+                <actBox id="68" />
+                <actBox id="71" />
+                <actBox id="76" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>59</objId>
+            <ptul X="120" Y="136" />
+            <ptdr X="135" Y="166" />
+            <links num="1">
+                <link id="61" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>60</objId>
+            <ptul X="659" Y="136" />
+            <ptdr X="674" Y="166" />
+            <links num="1">
+                <link id="61" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>61</objId>
+            <points num="2">
+                <pt x="135" y="141" />
+                <pt x="659" y="141" />
+            </points>
+            <objStart id="59" />
+            <objEnd id="60" />
+            <message messType="MGEN">ug2bs_echo</message>
+            <guardCond>type-int32,msg-string,bs_time_msec-int64,ug_time_msec-int64</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>62</objId>
+            <ptul X="659" Y="171" />
+            <ptdr X="674" Y="201" />
+            <links num="1">
+                <link id="64" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>63</objId>
+            <ptul X="120" Y="171" />
+            <ptdr X="135" Y="201" />
+            <links num="1">
+                <link id="64" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>64</objId>
+            <points num="2">
+                <pt x="659" y="176" />
+                <pt x="135" y="176" />
+            </points>
+            <objStart id="62" />
+            <objEnd id="63" />
+            <message messType="MGEN">bs2ug_echo</message>
+            <guardCond>type-int32,msg-string,bs_time_msec-int64,ug_time_msec-int64</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>65</objId>
+            <ptul X="120" Y="247" />
+            <ptdr X="135" Y="277" />
+            <links num="1">
+                <link id="67" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>66</objId>
+            <ptul X="659" Y="247" />
+            <ptdr X="674" Y="277" />
+            <links num="1">
+                <link id="67" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>67</objId>
+            <points num="2">
+                <pt x="135" y="257" />
+                <pt x="659" y="257" />
+            </points>
+            <objStart id="65" />
+            <objEnd id="66" />
+            <message messType="MGEN">ug2bs_error</message>
+            <guardCond>sys_error_id-int32</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>68</objId>
+            <ptul X="659" Y="278" />
+            <ptdr X="674" Y="308" />
+            <links num="1">
+                <link id="70" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>69</objId>
+            <ptul X="120" Y="278" />
+            <ptdr X="135" Y="308" />
+            <links num="1">
+                <link id="70" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>70</objId>
+            <points num="2">
+                <pt x="659" y="288" />
+                <pt x="135" y="288" />
+            </points>
+            <objStart id="68" />
+            <objEnd id="69" />
+            <message messType="MGEN">bs2ug_error</message>
+            <guardCond>sys_error_id-int32</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>71</objId>
+            <ptul X="659" Y="397" />
+            <ptdr X="674" Y="427" />
+            <links num="1">
+                <link id="73" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>72</objId>
+            <ptul X="120" Y="397" />
+            <ptdr X="135" Y="427" />
+            <links num="1">
+                <link id="73" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>73</objId>
+            <points num="2">
+                <pt x="659" y="407" />
+                <pt x="135" y="407" />
+            </points>
+            <objStart id="71" />
+            <objEnd id="72" />
+            <message messType="MGEN">bs2ug_add_discon_tot</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>77</objId>
+            <points num="2">
+                <pt x="135" y="450" />
+                <pt x="659" y="450" />
+            </points>
+            <objStart id="75" />
+            <objEnd id="76" />
+            <message messType="MGEN">ug2bs_add_discon_tot</message>
+            <guardCond>discon_uid-int64</guardCond>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>75</objId>
+            <ptul X="120" Y="439" />
+            <ptdr X="135" Y="469" />
+            <links num="1">
+                <link id="77" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>76</objId>
+            <ptul X="659" Y="439" />
+            <ptdr X="674" Y="469" />
+            <links num="1">
+                <link id="77" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>[bs2ug_add_discon_tot]&#x0A;만약 플레이도중 유저가 disconnect되면&#x0A;Tbl_User의 discon_tot값을 증가.&#x0A;&#x0A;{PARAM}&#x0A;discon_uid-int64</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>74</objId>
+            <ptul X="395" Y="494" />
+            <ptdr X="658" Y="602" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

@@ -1,0 +1,1055 @@
+package Game_Poker;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// ADL Message & Payloads.
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+//=================================================================================================
+//	Client -> GRC
+//=================================================================================================
+//내용 정의할것 
+//////////////////////
+message _Cards
+{
+	enum state{
+		CARDTYPE_NORMAL=0;
+		CARDTYPE_HIDDEN=1;
+		CARDTYPE_SAME=2;
+	};
+
+	repeated int32 m_vtCards = 1;
+	repeated int32 m_lResultIdx = 2;
+	required _VecUSN m_vUserUSN = 3;
+};
+
+message _Money
+{
+	required sint64	m_llCMoney = 1;
+	required sint64	m_llCallMoney = 2;
+	required sint64	m_llSideMoney = 3;
+	required sint64	m_llCallHabMoney = 4;
+	required sint64	m_llTakeMoney = 5;
+	required sint64	m_llJackpotMoney = 6;
+	required sint32	m_lBetState = 7;
+	required sint32	m_lBetReceive = 8;
+	required sint32	m_lBetCount = 9;
+	required sint32	m_lResultIdx = 10;
+	required string	m_sMoneyMsg = 11;
+};
+
+message UserMoney
+{
+	required sint32	m_lUSN = 1;
+	required sint32	m_lState = 2;
+	required sint64	m_llMoney = 3;
+	required sint64	m_llCallHabMoney = 4;
+	required sint64	m_llTakeMoney = 5;
+	required sint64	m_llDealMoney = 6;
+	required string	m_sNickName = 7;
+	required string	m_sDealerTax = 8;
+};
+
+message _CWinLose
+{
+	required sint32	m_lWin = 1;
+	required sint32	m_lLose = 2;
+	required sint32	m_lContinue = 3;
+};
+
+message _UserInfo
+{
+	required sint32	m_lUSN = 1;
+	required sint32	m_nIndex = 2;
+	required string	m_sNickName = 3;
+	required string	m_sID = 4;
+	required sint32	m_lCLevel = 5;
+	required sint32	m_lSoundType = 6;
+	required string	m_sAvt = 7;
+	required sint32	m_lUserState = 8;
+	required _CWinLose m_cWinLose = 9;
+	required _CWinLose m_cWinLose_Today = 10;
+	required _CWinLose m_cWinLose_Room = 11;
+	required sint64	m_llCMoney = 12;
+	required sint64	m_llFMoney = 13;
+	required sint32	m_lExit = 14;
+	required sint32	m_nItemType = 15;
+	required sint32	m_lAck = 16;
+	required sint32	m_lJackpot = 17;
+	required sint32	m_lDieCardsDealt = 18;
+};
+
+message _OneCard
+{
+	required int32	m_nIndex = 1;
+	required int32	m_lCardIndex = 2;
+};
+
+message _VecMoney
+{
+	required sint64	VecMoney = 1;
+};
+
+message _WinLoseInfo
+{
+	required sint64	m_llCMoney = 1;
+	required sint32	m_lWin = 2;
+	required sint32	m_lLose = 3;
+	required sint32	m_lReserved = 4;
+};
+
+message _VecUSN
+{
+	required int64	USN = 1;
+};
+
+message _WAITINGUSERDATA
+{
+	required int32	m_lUSN = 1;
+	required int32	m_lTicketNum = 2;
+	required int32	m_lBackColor = 3;
+	required int32	m_bCallWeb = 4;
+};
+
+message CRefill
+{
+	required int64	m_llTime = 1;
+	required int32	m_nCnt = 2;
+	required int32	m_lPLevel = 3;
+};
+
+message _ItemList
+{
+	repeated _Item m_lstItem = 1;
+};
+
+message _Item
+{
+	required int32	m_lFucnsrl = 1;
+	required int64	m_llStartTime = 2;
+	required int64	m_llEndTime = 3;
+	required int64	m_llCount = 4;
+};
+
+message _RCUser
+{
+	required int32	m_lUSN = 1;
+	required int32	m_lJumin = 2;
+	required int32	m_lFirstUSN = 3;
+	required int32	m_lAgeIndex = 4;
+	required int32	m_lJobIndex = 5;
+	required int32	m_lRegionIndex = 6;
+	required int32	m_lGuildIndex = 7;
+	required int32	m_lMemberIndex = 8;
+	required int32	m_lClientIP = 9;
+	required int32	m_lGatewayIP = 10;
+	required int32	m_lMacAddress = 11;
+	required string	m_sMobileInfo = 12;
+	required string	m_sAuthKey = 13;
+	required string	m_sUserGameData = 14;
+	required int32	m_nIndex = 15;
+	required string	m_sNickName = 16;
+	required string	m_sUserID = 17;
+	required string	m_sAvt = 18;
+	required int32	m_lCLevel = 19;
+	required int32	m_lSex = 20;
+	required int64	m_llCMoney = 21;
+	required int64	m_llFMoney = 22;
+	required int64	m_llSafeMoney = 23;
+	required int64	m_llPlastAllinDate = 24;
+	required int64	m_llPlastLogonDay = 25;
+	required int32	m_lMTodayPlayCount = 26;
+	required int32	m_lMTodayPlayTime = 27;
+	required int32	m_lPTotalPlayCount = 28;
+	required CRefill	m_cRefill = 29;
+	required int64	m_llPExtMoney = 30;
+	required int64	m_llPExtendDate = 31;
+	required int64	m_llPBonusDate = 32;
+	required int32	m_lMMonthPlayCount = 33;
+	required int32	m_lMMonthPlayTime = 34;
+	required _CWinLose	m_cWinLose = 35;
+	required int32	m_lGDisCnt = 36;
+	required int64	m_llGlastLogonDay = 37;
+	required int64	m_llGRegDate = 38;
+	required int64	m_llGFirstPlayDate = 39;
+	required int32	m_lGTodayPlayCount = 40;
+	required int32	m_lGTodayPlayTime = 41;
+	required int32	m_lGTotalPlayCount = 42;
+	required int32	m_lGTotalPlayTime = 43;
+	required int32	m_lGAllinCnt = 44;
+	required int32	m_lGAllinOut = 45;
+	required int64	m_llGLastAllinDate = 46;
+	required _CWinLose	m_cWinLose_Today = 47;
+	required int64	m_llGTodayMoney = 48;
+	required int32	m_lFourCardCnt = 49;
+	required int32	m_lStraightFlushCnt = 50;
+	required int32	m_lRoyalStraightFlushCnt = 51;
+	required int32	m_nReserve01 = 52;
+	required int32	m_nReserve02 = 53;
+	required _ItemList	m_ItemList = 54;
+	required int64	m_llJoinDate = 55;
+	required int64	m_llPlayDate = 56;
+};
+
+message _RCUserData
+{
+};
+
+message _Option
+{
+	required string	m_sRoomTitle = 1;
+	required string	m_sPassword = 2;
+	required int32	m_lMaxUserCnt = 3;
+	required int32	m_lMaxPlayerUserCnt = 4;
+	required int32	m_lMaxPlayerCardCnt = 5;
+	required int32	m_lChoiceMode = 6;
+	required int32	m_lRoomType = 7;
+	required int32	m_lBetRule = 8;
+	required int32	m_lBetType = 9;
+	required int32	m_lAddRule = 10;
+	required int32	m_lRematchJoin = 11;
+	required int32	m_lLimitMoney = 12;
+	required sint64	m_llGameAnteMoney = 13;
+	required int32	m_bEcho = 14;
+	required int32	m_lMakeUSN = 15;
+	required int32	m_lCategory = 16;
+	required int32	m_lChannelID = 17;
+	required sint64	m_llAnteMoney = 18;
+};
+
+message _BettingMsg
+{
+	required int32	m_lUSN = 1;
+	required int32	m_nIndex = 2;
+	required int32	m_BetType = 3;
+	required int32	m_bBettingMoney = 4;
+	required int32	m_bMoneyLack = 5;
+	required int32	m_bCallMoneyZero = 6;
+	required int64	m_llCallMoney = 7;
+	required int64	m_llRaiseMoney = 8;
+};
+
+message _BettingMsgTable
+{
+	repeated _BettingMsg BettingMsgTable = 1;
+};
+
+message _MoneyTable
+{
+	repeated _Money MoneyTable = 1;
+};
+
+message _CardTable
+{
+	repeated _Cards CardTable = 1;
+};
+
+message _UITable
+{
+	repeated _UserInfo UITable = 1;	
+};
+
+message _RCRoomData
+{
+	required int32	m_lGameMaster = 1;
+	required int32	m_lRoomIndex = 2;
+	required int32	m_lState = 3;
+	required _Option	m_option = 4;
+	optional _UITable	m_tblUI = 5;
+	optional _CardTable	m_tblCard = 6;
+	optional _MoneyTable	m_tblMoney = 7;
+	optional _BettingMsgTable m_tblBettingMsg = 8;
+};
+
+message _SPUserBaseInfo
+{
+	required int32	m_lUSN = 1;
+	required string	m_sUserID = 2;
+	required string	m_sNickName = 3;
+	required int32	m_lUSC = 4;
+	required int32	m_lJumin = 5;
+	required int32	m_lFirstUSN = 6;
+	required int32	m_lAgeIndex = 7;
+	required int32	m_lJobIndex = 8;
+	required int32	m_lRegionIndex = 9;
+	required int32	m_lGuildIndex = 10;
+	required int32	m_lMemberIndex = 11;
+	required int32	m_lClientIP = 12;
+	required int32	m_lGatewayIP = 13;
+	required int32	m_lMacAddress = 14;
+	required string	m_sMobileInfo = 15;
+	required string	m_sAuthKey = 16;
+};
+//////////////////////
+
+//=================================================================================================
+//	Client -> GRC
+//=================================================================================================
+
+message _MsgCS_Entry
+{
+	required int32	m_nVersion = 1;
+	required sint32	m_bWelcomeSound = 2;
+	required sint32	m_lSoundType = 3;
+	required string	m_sNickName = 4;
+	required string	m_sAvt = 5;
+	required sint32	m_lCLevel = 6;
+	required sint32	m_lSex = 7;
+};
+
+
+message _MsgCS_Observe
+{
+};
+
+
+message _MsgCS_Start
+{
+};
+
+
+message _MsgCS_SelectedCardReq
+{
+	required sint32	m_lCardIdx = 1;
+};
+
+
+message _MsgCS_BettingReq
+{
+	required sint32	m_lBetType = 1;
+};
+
+
+message _MsgCS_ChoiceRemoveCard
+{
+	required sint32	m_lUSN = 1;
+	required int32	m_nRemoveCardIndex = 2;
+};
+
+
+message _MsgCS_Purge
+{
+	required sint32	m_lType = 1;
+	required sint32	m_lPurgeUSN = 2;
+};
+
+
+message _MsgCS_Abuse
+{
+	required sint32	m_lType = 1;
+	required string	m_sDay = 2;
+};
+
+
+message _MsgCS_AskPurgeVote
+{
+	required sint32	m_lPurgeUSN = 1;
+};
+
+
+message _MsgCS_AnswerPurgeVote
+{
+	required sint32	m_lAnswer = 1;
+};
+
+
+message _MsgCS_WaitingUserTicketReq
+{
+	required int32	m_nType = 1;
+	required sint32	m_bValue = 2;
+};
+
+
+message _MsgCS_UpdateWaitingUserInfoReq
+{
+};
+
+
+message _MsgCS_SoundType
+{
+	required sint32	m_lSoundType = 1;
+};
+
+
+message _MsgCS_ExitQue
+{
+	required sint32	m_lExit = 1;
+	required sint32	m_bAction = 2;
+};
+
+
+message _MsgCS_Continue
+{
+	required sint32	m_lExit = 1;
+};
+
+
+message _MsgCS_RuleSet
+{
+	required int32	m_nRuleIdx = 1;
+};
+
+
+message _MsgCS_GameMasterCall
+{
+};
+
+
+message _MsgCS_FieldReserved
+{
+	required int32	m_nReserved1 = 1;
+	required int32	m_nReserved2 = 2;
+};
+
+
+message _MsgCS_JokboSet
+{
+	required sint32	m_lKey1 = 1;
+	required sint32	m_lKey2 = 2;
+	required sint32	m_lKey3 = 3;
+	required sint32	m_lKey4 = 4;
+	required sint32	m_lKey5 = 5;
+};
+
+
+message _MsgCS_TestKeySetting
+{
+	required uint32	m_nChar = 1;
+};
+
+
+message _MsgCS_CheckNotice
+{
+	required int32	m_nType = 1;
+};
+
+
+message _MsgCS_Ack
+{
+	required int32	m_nTagID = 1;
+};
+
+
+message _MsgCS_Ping
+{
+};
+
+
+
+//=========================================================
+//	CS Payloads...
+//=========================================================
+
+
+//=================================================================================================
+//	GRC -> Client
+//=================================================================================================
+
+
+message _MsgSC_UserJoinAns
+{
+	required sint32	m_lState = 1;
+	required int32	m_nEnter = 2;
+	required int32	m_nSet = 3;
+	required int32	m_lChannel_idx = 4;
+	required sint32	m_lOwnerUSN = 5;
+	required sint32	m_lBossUSN = 6;
+	required int32	m_nRoomPurgeCnt = 7;
+	required _Option	m_option = 8;
+};
+
+
+message _MsgSC_UserJoinErr
+{
+	required sint32	m_lUSN = 1;
+	required sint32	m_lErrorCode = 2;
+};
+
+message _MsgSC_UserDisconnect
+{
+	required sint32	m_lUSN = 1;
+	required _UserInfo	m_uinfo = 2;
+	required sint32	m_lState = 3;
+	required sint32	m_lOwnerUSN = 4;
+};
+
+
+
+message _MsgSC_CardData
+{
+	required int32	m_nDealCnt = 1;
+	required sint32	m_lCardsDealt = 2;
+	//std::vector<_Cards>	m_tblCard = 3;
+	repeated _Cards	m_tblCard = 3;
+	//std::vector<_Money>	m_tblMoney = 4;
+	repeated _Money m_tblMoney = 4;
+	required sint64	m_llPoolMoney = 5;
+};
+
+
+
+message _MsgSC_EntryAns
+{
+	required sint32	m_lUSN = 1;
+	required int32	m_nIndex = 2;
+	required sint32	m_lOwnerUSN = 3;
+	repeated _UserInfo m_tblUI = 4;
+	repeated _Money	m_tblMoney = 5;
+	required sint32	m_bWelcomeSound = 6;
+	required sint32	m_lObserveCnt = 7;
+};
+
+
+message _MsgSC_EntryReject
+{
+	required sint32	m_lType = 1;
+	required sint64	m_llCMoney = 2;
+};
+
+
+message _MsgSC_ObserveAns
+{
+	required sint32	m_lUSN = 1;
+	required int32	m_nIndex = 2;
+	required sint32	m_lOwnerUSN = 3;
+	required _UserInfo	m_uinfo = 4;
+	required _Money	m_money = 5;
+};
+
+
+message _MsgSC_StartReq
+{
+};
+
+
+message _MsgSC_StartAns
+{
+	required sint32	m_lState = 1;
+	repeated sint32	m_vtState = 2;
+	required sint64	m_llSystemTime = 3;
+};
+
+
+message _MsgSC_NoStart
+{
+};
+
+
+message _MsgSC_DealCards
+{
+	required sint32	m_lBossUSN = 1;
+	required sint32	m_lState = 2;
+	required int32	m_nType = 3;
+	repeated _Cards	m_tblCard = 4;
+	repeated _Money	m_tblMoney = 5;
+	required sint64	m_llPoolMoney = 6;
+};
+
+
+message _MsgSC_SelectedCardAns
+{
+	required sint32	m_lUSN = 1;
+	required int32	m_nSelect = 2;
+	required sint32	m_lCardIndex = 3;
+	required sint32	m_lChoiceType = 4;
+};
+
+//typedef vector<_OneCard> OneCardVector = 1;
+
+
+message _MsgSC_DealOpenCard
+{
+	required sint32	m_lState = 1;
+	repeated _Cards	m_tblCard = 2;
+	repeated sint32	m_vtState = 3;
+};
+
+
+message _MsgSC_DealCard
+{
+	required sint32	m_lBossUSN = 1;
+	required int32	m_nType = 2;
+	required sint32	m_lCardsDealt = 3;
+	//OneCardVector	m_vtOneCard = 4;
+	repeated _OneCard m_vtOneCard = 4;
+};
+
+
+message _MsgSC_Boss
+{
+	required sint32	m_lBossUSN = 1;
+	required int32	m_nBossRank = 2;
+};
+
+
+message _MsgSC_Betting
+{
+	required sint32	m_lBetUSN = 1;
+	required sint32	m_lBetBtnType = 2;
+};
+
+
+message _MsgSC_BettingAns
+{
+	required int32	m_nIndex = 1;
+	required sint32	m_lBetType = 2;
+	required _Money	m_money = 3;
+	repeated _VecMoney m_vtCallMoney = 4;
+	required sint64	m_lPoolMoney = 5;
+};
+
+
+message _MsgSC_BettingAnsMsg
+{
+	required sint32	m_lUSN = 1;
+	required int32	m_nIndex = 2;
+	required sint32	m_BetType = 3;
+	required sint32	m_bBettingMoney = 4;
+	required sint32	m_bMoneyLack = 5;
+	required sint32	m_bCallMoneyZero = 6;
+	required sint64	m_llCallMoney = 7;
+	required sint64	m_llRaiseMoney = 8;
+	required sint64	m_llSideMoney = 9;
+	required sint32	m_lBetType = 10;
+	required sint32	m_lBetTurn = 11;
+	required _Money	m_money = 12;
+	repeated _VecMoney	m_vtCallMoney = 13;
+	required sint64	m_llPoolMoney = 14;
+};
+
+
+message _MsgSC_DealHiddenCard
+{
+	required sint32	m_lBossUSN = 1;
+	required sint32	m_lCardsDealt = 2;
+	//OneCardVector	m_vtOneCard = 3;
+	repeated _OneCard m_vtOneCard = 3;
+};
+
+
+message _MsgSC_AnteMoney
+{
+	required sint64	m_llAnteMoney = 1;
+};
+
+
+message _MsgSC_RuleQuaterHalf
+{
+	required sint64	m_llRuleQuaterHalf = 1;
+	required sint64	m_llPoolMoney = 2;
+};
+
+
+message _MsgSC_Finished
+{
+	required sint32	m_lState = 1;
+	required sint32	m_bGiveUp = 2;
+	required sint32	m_lRank = 3;
+	required sint32	m_lBossUSN = 4;
+	required sint64	m_llGiveMoney = 5;
+	repeated int32	m_vtWin = 6;
+	repeated int32	m_vtResult = 7;
+	repeated sint64	m_vtGiveMoney = 8;
+	repeated _Cards m_tblCard = 9;
+	repeated _Money m_tblMoney = 10;
+	required sint64	m_llPoolMoney = 11;
+	repeated UserMoney m_vtUserMoney = 12;
+	required sint32	m_lResultIdx = 13;
+	required sint64	m_llJackpot = 14;
+};
+
+//typedef vector<WinLoseInfo> VectorWinLoseInfo = 1;
+
+
+message _MsgSC_NewGame
+{
+	//VectorWinLoseInfo	m_vtWinLoseInfo = 1;
+	repeated _WinLoseInfo m_vtWinLoseInfo = 1;
+};
+
+
+message _MsgSC_ContinueAns
+{
+	required sint32	m_lUSN = 1;
+};
+
+
+message _MsgSC_Continue
+{
+	//VectorWinLoseInfo	m_vtWinLoseInfo = 1;
+	repeated _WinLoseInfo m_vtWinLoseInfo = 1;
+};
+
+
+message _MsgSC_SystemMsg
+{
+	required sint32	m_lType = 1;
+};
+
+
+message _MsgSC_PurgeAns
+{
+};
+
+
+message _MsgSC_PurgeInfo
+{
+	repeated _VecUSN m_vtPurgeUSN = 1;
+	required int32	m_nCount = 2;
+};
+
+
+message _MsgSC_SetPurgeMoney
+{
+	required sint32	m_lUSN = 1;
+	required _Money	m_money = 2;
+};
+
+
+message _MsgSC_AssaItemNotify
+{
+	required sint32	m_lUSN = 1;
+	required sint32	m_lRankType = 2;
+	required string	m_sItem = 3;
+};
+
+
+message _MsgSC_ThankYouItemNotify
+{
+	required sint32	m_lUSN = 1;
+	required sint32	m_lRankType = 2;
+	required sint64	m_llBasicDDangMoney = 3;
+	required string	m_sItem = 4;
+};
+
+
+message _MsgSC_MadeItemNotify
+{
+	required sint32	m_lUSN = 1;
+	required sint32	m_lRankType = 2;
+	required string	m_sItem = 3;
+};
+
+
+message _MsgSC_ExtMoneyNotify
+{
+	required sint32	m_lUSN = 1;
+	required sint32	m_bExtType = 2;
+	required sint64	m_llCMoney = 3;
+	required sint64	m_llCashBox = 4;
+	required sint64	m_llExtMoney = 5;
+	required sint64	m_llExtDate = 6;
+};
+
+
+message _MsgSC_GameEndSystemMsg
+{
+	required sint32	m_lType = 1;
+	required sint32	m_lUSN = 2;
+	required sint32	m_bGiveUp = 3;
+	required sint64	m_llMoney = 4;
+	required string	m_sMsg = 5;
+};
+
+
+message _MsgSC_ChangeAvatarNotify
+{
+	required sint32	m_lUSN = 1;
+	required int32	m_nIndex = 2;
+	required _UserInfo	m_uinfo = 3;
+};
+
+
+message _MsgSC_AbuseAns
+{
+};
+
+
+message _MsgSC_SoundTypeAns
+{
+	required sint32	m_lUSN = 1;
+	required int32	m_nIndex = 2;
+	required sint32	m_lSoundType = 3;
+};
+
+
+message _MsgSC_FMoney
+{
+	required string	m_sFMoney = 1;
+};
+
+
+message _MsgSC_ItemNotify
+{
+	required sint32	m_lLimitTotalCnt = 1;
+	required sint32	m_lLimitTodayCnt = 2;
+	required sint32	m_bInfinitySpeedItem = 3;
+	required sint64	m_llSpeedToTime = 4;
+};
+
+
+message _MsgSC_DisconnectMoneyNotify
+{
+	required string	m_sNickName = 1;
+	required sint64	m_llDisconnectMoney = 2;
+};
+
+
+message _MsgSC_ExitNtf
+{
+	required sint32	m_lUSN = 1;
+	required int32	m_nIndex = 2;
+	required sint32	m_lExit = 3;
+	required sint32	m_bExit = 4;
+};
+
+
+message _MsgSC_RematchOKAns
+{
+	required sint32	m_lUSN = 1;
+	required sint64	m_llPoolMoney = 2;
+	required _Money	m_money = 3;
+	required sint32	m_bRematchOK = 4;
+};
+
+
+message _MsgSC_RuleNotify
+{
+	required int32	m_nRuleIdx = 1;
+};
+
+
+message _MsgSC_AllowEntryWaitingUser
+{
+};
+
+
+message _MsgSC_AllWaitingUserDataNtf
+{
+	required sint32	m_bSendWaitingUser = 1;
+	repeated _WAITINGUSERDATA m_WaitingUserData = 2;
+};
+
+
+message _MsgSC_UserDataChangeNtf
+{
+	required _RCUserData	m_userData = 1;
+};
+
+
+message _MsgSC_RefillMoneyNtf
+{
+	required sint32	m_lUSN = 1;
+	required int32	m_nRefillCnt = 2;
+	required sint64	m_llRefillMoney = 3;
+};
+
+
+message _MsgSC_JackpotMoneyNtf
+{
+	required sint32	m_lUSN = 1;
+	required sint64	m_llJackpotMoney = 2;
+};
+
+
+message _MsgSC_GuardianAngelMoney
+{
+	required sint32	m_lUSN = 1;
+	required int32	m_nGuardianAngelCnt = 2;
+	required sint64	m_llAngelMoney = 3;
+};
+
+
+message _MsgSC_GameMasterCallNtf
+{
+	required sint32	m_lGMCall_USN = 1;
+};
+
+
+message _MsgSC_ObserverCnt
+{
+	required int32	m_nObserverCnt = 1;
+};
+
+
+message _MsgSC_Bonus
+{
+	required sint64	m_llBonus = 1;
+};
+
+
+message _MsgSC_PoliceNotify
+{
+	required string	m_policeMsg = 1;
+};
+
+
+
+message GLAnsGameProtocol {
+
+	enum Type {
+		NONE = 1;
+
+		GAME_STARTREADY = 2;
+		GAME_RESETREADY = 3;
+		GAME_INIT = 4;
+		GAME_START = 5;
+		GAME_RESET = 6;
+		GAME_NOTISUN = 7;
+		GAME_SELECTSUN = 8;
+		GAME_NOTISELECTSUN = 9;
+		GAME_SHARING = 10;
+		GAME_NAGARI = 11;
+		GAME_CHONGTONG = 12;
+		GAME_SELECTCARD = 13;
+		GAME_BONUS = 14;
+		GAME_TAKEPEE = 15;
+		GAME_BBUCK = 16;
+		GAME_SERISEBBUK = 17;
+		GAME_BBUCKEAT = 18;
+		GAME_BOMB = 19;
+		GAME_PAN = 20;
+		GAME_DADAK = 21;
+		GAME_JJOK = 22;
+		GAME_UPSET = 23;
+		GAME_ALLEATUP = 24;
+		GAME_NOTITURN = 25;
+		GAME_MOVETEN = 26;
+		GAME_MOVETENANS = 27;
+		GAME_CHOICECARD = 28;
+		GAME_SHAKE = 29;
+		GAME_SHAKEANS = 30;
+		GAME_SHAKECOUNT = 31;
+		GAME_CAPTYPE = 32;
+		GAME_GODORI = 33;
+		GAME_KUSA = 34;
+		GAME_RED = 35;
+		GAME_BLUE = 36;
+		GAME_BAK = 37;
+		GAME_BAKFAIL = 38;
+		GAME_NOTYMISSION = 39;
+		GAME_NOTIMISSIONCARD = 40;
+		GAME_MISSIONSTATE = 41;
+		GAME_GOSTOP = 42;
+		GAME_GOSTOPANS = 43;
+		GAME_STOPANS = 44;
+		GAME_RESULT = 45;
+		GAME_NOTIPOINT = 46;
+		GAME_END = 47;
+		GAME_KICK = 48;
+		GAME_EMOTI = 49;
+		GAME_AUTOPLAY = 50;
+		GAME_RELAYINFO = 51;
+		GAME_EXITRESERVATION = 52;
+	}
+
+	required Type type = 1;
+
+	optional GLAnsGameStartReady gameStartReady = 2;
+	optional GLAnsGameResetReady gameResetReady = 3;
+	optional GLAnsGameInit gameinit = 4;
+	optional GLAnsGameStart gameStart = 5;
+	optional GLAnsGameReset gameReset = 6;
+	optional GLAnsGameNotiSun gameNotiSun = 7;
+	optional GLAnsGameSelectSun gameSelectSun = 8;
+	optional GLAnsGameNotiSelectSun gameNotiSelectSun = 9;
+	optional GLAnsGameSharing gameSharing = 10;
+	optional GLAnsGameNagari gameNagari = 11;
+	optional GLAnsGameChongTong gameChongTong = 12;
+	optional GLAnsGameSelectCard gameSelectCard = 13;
+	optional GLAnsGameBonus gameBonus = 14;
+	optional GLAnsGameTakePee gameTakePee = 15;
+	optional GLAnsGameBbuck gameBbuck = 16;
+	optional GLAnsGameSeriseBbuck gameSeriseBbuck = 17;
+	optional GLAnsGameBbuckEat gameBbuckEat = 18;
+	optional GLAnsGameBomb gameBomb = 19;
+	optional GLAnsGamePan gamePan = 20;
+	optional GLAnsGameDadak gameDadak = 21;
+	optional GLAnsGameJjok gameJjok = 22;
+	optional GLAnsGameUpset gameUpset = 23;
+	optional GLAnsGameAllEatUp gameAllEatUp = 24;
+	optional GLAnsGameNotiTurn gameNotiTurn = 25;
+	optional GLAnsGameMoveTen gameMoveTen = 26;
+	optional GLAnsGameMoveTenAns gameMoveTenAns = 27;
+	optional GLAnsGameChoiceCard gameChoiceCard = 28;
+	optional GLAnsGameShake gameShake = 29;
+	optional GLAnsGameShakeAns gameShakeAns = 30;
+	optional GLAnsGameShakeCount gameShakeCount = 31;
+	optional GLAnsGameCapType gameCapType = 32;
+	optional GLAnsGameGodori gameGodori = 33;
+	optional GLAnsGameKusa gameKusa = 34;
+	optional GLAnsGameRed gameRed = 35;
+	optional GLAnsGameBlue gameBlue = 36;
+	optional GLAnsGameBak gameBak = 37;
+	optional GLAnsGameBakFail gameBakFail = 38;
+	optional GLAnsGameNotiMission gameNotiMission = 39;
+	optional GLAnsGameNotiMissionCard gameNotiMissionCard = 40;
+	optional GLAnsGameMissionState gameMissionState = 41;
+	optional GLAnsGameGostop gameGostop = 42;
+	optional GLAnsGameGostopAns gameGostopAns = 43;
+	optional GLAnsGameStopAns gameStopAns = 44;
+	optional GLAnsGameResult gameResult = 45;
+	optional GLAnsGameNotiPoint gameNotiPoint = 46;
+	optional GLAnsGameEnd gameEnd = 47;
+	optional GLAnsGameKick gameKick = 48;
+	optional GLAnsGameEmoti ansGameEmoti = 49;
+	optional GLAnsGameAutoPlay ansGameAutoPlay = 50;
+	optional GLAnsGameRelayInfo ansGameRelayInfo = 51;
+	optional GLAnsExitReservation ansExitReservation = 52;
+
+}
+
+message GLReqGameProtocol {
+
+	enum Type {
+		NONE = 1;
+
+		REQ_GAME_READY = 2;
+		REQ_GAME_RESETREADY = 3;
+		REQ_GAME_INITGAME = 4;
+		REQ_GAME_RESET = 5;
+		REQ_GAME_START = 6;
+		REQ_GAME_SELECTSUNCARD = 7;
+		REQ_GAME_SELECTCARD = 8;
+		REQ_GAME_ASKGOSTOPANS = 9;
+		REQ_GAME_ASKSHAKEANS = 10;
+		REQ_GAME_CHOICECARDANS = 11;
+		REQ_GAME_MOVETEN = 12;
+		REQ_GAME_CHONGTONG = 13;
+		REQ_GAME_END = 14;
+		REQ_GAME_RESULTOK = 15;
+
+		REQ_GAME_AUTOPLAY = 16;
+
+		REQ_GAME_EMOTI = 17;
+
+		REQ_GAME_EXITRESERVATION = 18;
+		REQ_GAME_RELAYINFO = 19;
+
+		REQ_GAME_TEST_PACKET= 20;
+	}
+
+	required Type type = 1;
+	
+	optional GLReqGameReady reqGameReady = 2;
+	optional GLReqResetReady reqResetReady = 3; 
+	optional GLReqGameInitGame reqInitGame = 4;
+	optional GLReqGameReset reqReset = 5;
+	optional GLReqGameStart reqStart = 6;
+	optional GLReqGameSelectSunCard reqSelectSunCard = 7;
+	optional GLReqGameSelectCard reqSelectCard = 8;
+	optional GLReqGameAskGoStopAns reqAskGoStopAns = 9;
+	optional GLReqGameAskShakeAns reqAskShakeAns = 10;
+	optional GLReqGameChoiceCardAns reqChoiceCardAns = 11;
+	optional GLReqGameMoveTen reqMoveTen = 12;
+	optional GLReqGameChongTong reqChongTong = 13;
+	optional GLReqGameEnd reqGameEnd = 14;
+	optional GLReqResultOk reqResultOk = 15;
+	optional GLReqGameAutoPlay reqGameAutoPlay = 16;
+	optional GLReqGameEmoti reqGameEmoti = 17;
+	optional GLReqExitReservation reqExitReservation = 18;
+	optional GLReqRelayInfo reqRelayInfo = 19;
+
+	optional G_REQ_GAME_TEST_PACKET g_REQ_GAME_TEST_PACKET =20;
+}
+
+

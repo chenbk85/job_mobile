@@ -1,0 +1,47 @@
+option optimize_for = LITE_RUNTIME;
+
+// @brief 디비 파라미터 정보를 저장하는 자료구조 
+//
+// @param type 파라미터의 형식
+// @param val 파라미터의 값 정보를 문자열로 변환하여 저장
+
+message DBIn {
+	enum Type {
+		INT = 1;
+		INT64 = 2;
+		STR = 3;
+	}
+	required Type type = 1;
+	required string val= 2;
+}
+
+
+// @brief 디비 요청 메시지
+//
+// @param seq 쿼리의 시퀀스 번호
+// @param query 쿼리 정보
+// @param params 쿼리의 파라미터 정보 리스트
+// @param options 부가 정보가 들어있는 필드
+
+message ReqDB {
+	required int32 seq = 1;
+	required string query = 2;
+	repeated DBIn params = 3;
+    optional bytes options = 4;
+}
+
+
+// @brief 디비 응답 메시지
+// 
+// @param seq 쿼리의 시퀀스 번호
+// @param query 쿼리 정보
+// @param retCode 디비 처리 결과 코드
+// @param result 디비 응답 결과를 시리얼라이즈해서 저장
+
+message AnsDB {
+	required int32 seq = 1;
+	required string query = 2;
+	required int32 retCode = 3;
+	required bytes result = 4;
+}
+

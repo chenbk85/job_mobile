@@ -1,0 +1,40 @@
+//option optimize_for = LITE_RUNTIME;
+
+
+// 외부 참조용 proto 파일 import "excel_baseball_table_db.proto";
+
+/* -------------------------------------------------------------------------- */
+
+message GameUserInfo 
+{ 
+    // 게임의 구동에 필요한 정보 - 디비에서오는 정보와 서버에서 생성된 정보
+	required GameInfo       game_info = 1; 
+
+    // 피망플러스에서 오는 정보
+	required bytes          member_info = 2;
+}
+
+/* -------------------------------------------------------------------------- */
+message GameInfo // Client , UserGateServer에서 가지고 있는 유저 정보.
+{
+    // 피망 플러스 유저 번호
+	// repeated s_tbl_user				m_tbl_user				= 1;
+}
+
+/* -------------------------------------------------------------------------- */
+
+
+message GameRoomInfo // 그방안에 있는 모든유저가 공유해야 하는정보. 최초 방만들고 join상황에서만 주고받는 정보.
+{
+	required int32						room_id				= 1;// 룸 구분 번호
+	optional int64						m_attack_user		= 3; //누가 선공인지. user db_id()
+	optional int32						m_round_count		= 4; //현재 라운드 정보. 0부터시작  TOTAL_ROUND-1 까지.
+	optional bool						m_is_auto_play		= 7; // 한유저가 나가서 자동플레이 상황인지?
+}
+
+message GLReqGameProtocol  //지우지말것.
+{
+}
+message GLAnsGameProtocol //지우지말것.
+{
+}

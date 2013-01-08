@@ -1,0 +1,5 @@
+C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeFiles/ALL_BUILD.dir
+C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeFiles/ZERO_CHECK.dir
+C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/util/CMakeFiles/parse.dir
+C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/test/CMakeFiles/run-tests.dir
+C:/Mobile/MSG/trunk/thirdparty/package/yaml-cpp-0.2.7.tar/yaml-cpp-0.2.7/CMakeFiles/yaml-cpp.dir

@@ -1,0 +1,37 @@
+룸과 유저에 로그를 기록할 수 있는 기능이 추가되어 있습니다.
+
+MSG 업데이트 하셔서 MSG/src에서 make install  하시면 사용하실 수 있습니다. 
+
+이 기능은 CCS의 로그 기능과는 별개로 게임 서버만 가지는 기능입니다.
+
+./poker_game --logging=false
+./baseball_game --logging=false
+
+이런 식으로 인자를 주면 로깅을 안하게 됩니다. 기본적으로 켜져있는 기능입니다.
+
+user 클래스 안에서
+info("test code %d", 119);
+debug("hi, game %s", "poker");
+
+위와 갈은 식으로 사용하시면 됩니다. room 안에서도 같습니다.
+
+이렇게 하면 실행 파일과 같은 경로에 
+session_00001.log
+room_00010.log
+뒤의 숫자는 유저의 game id와 room id 입니다.
+
+이런 식으로 로그 파일이 생겨서 
+
+Mon Mar  5 12:18:22 2012 INFO>TEST INFO
+Mon Mar  5 12:18:22 2012 DEBUG>TEST DEBUG
+Mon Mar  5 12:18:22 2012 WARNING>TEST WARNING
+Mon Mar  5 12:18:22 2012 ERROR>TEST ERROR
+
+위와 같은 포맷으로 로그가 파일에 기록됩니다.
+
+디버그 용도로 사용하시면 됩니다. 터미널에서 로그파일을 모니터링 하고 싶으시면
+
+tail -f ./session_00011.log 
+
+이렇게 명령을 내려놓으면 파일이 갱신될 때마다 터미널에 추가된 내용이 자동으로 출력됩니다.
+

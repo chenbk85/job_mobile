@@ -1,0 +1,22 @@
+
+1 순위 
+	void CMultiGoManager::handle_accept(user_ptr user, const boost::system::error_code& error)
+	void CMultiUser::handle_read(const boost::system::error_code& error, size_t bytes_transferred)
+	void CMultiUser::handle_write(const boost::system::error_code& error)
+
+2. 유저관리. 
+	붙어 있는 소켓을 어떻게 관리.
+	
+flow.proto : user gamte. : game server <-> user gate server
+	d:\svn\common\protobuf\flow.proto
+	
+gamegostop.proto : client <-> game server.
+	d:\svn\common\protobuf\gameGostop.proto
+
+	
+class CLogicMultiCommand 
+		: 로직 : gamegostop.proto에 대한 처리코드.
+
+D:\svn\common\lib\Tester\Tester
+
+matgoClient.py 열어서.
