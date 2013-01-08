@@ -1,0 +1,60 @@
+id,name,help
+1,ERR_UNKOWN_ERROR,알수없는에러
+2,ERR_PLAYER_CREATE_FULL,선수생성실패-최대생성가능한 플레이어수 초가
+3,ERR_PLAYER_NAME_DUPLCATE,선수생성시 이름중복
+4,ERR_TEAM_NAME_DUPLICATE,팀이름 중복
+5,ERR_TEAM_SELECT_NOT_EXIST_TEAM,기본팀선택중에 존재하지 않는 팀이다.
+6,ERR_PLAYER_DELETE_NOT_EXIST,선수삭제시 존재하지 않는 선수다.
+7,ERR_PLAYER_DELETE_IN_TEAM,선수삭제시 팀에 소속된 선수 삭제불가
+8,ERR_ADD_SKILL_PITCHER_NOT_FOUND,req_add_tbl_pitcherskill 에서 해당 투수 못찾음
+9,ERR_ADD_SKILL_PITCHER_DUP_GESTURE_BB,req_add_tbl_pitcherskill 에서 중복된 제스쳐 또는 변화구 요청 발생
+10,ERR_req_better_hit_IS_NOT_BETTER,타자가 아님.
+11,ERR_SERVER_DATA_ROOM_NULL,서버 데이터 오류.(pRoom==NULL)
+12,ERR_SERVER_DATA,서버 데이터 오류.
+13,ERR_TIME_OUT_req_better_hit,타자가 시간이 되어도 배트결과를 서버로 안보냄. 타자는 DISCONN 시키고 자동플레이필요.
+14,ERR_ROUND_RESULT_MISSMATCH,클라에서 날라온 계산결과 오류
+15,ERR_ITEM_BUY_CATEGORY_ERROR,ERR_ITEM_BUY_CATEGORY_ERROR
+16,ERR_ITEM_BUY_CHECK,ERR_ITEM_BUY_CHECK
+17,ERR_ITEM_BUY_DATA,ERR_ITEM_BUY_DATA
+18,ERR_NOT_FOUND_SHOP_ITEM,ERR_NOT_FOUND_SHOP_ITEM
+19,ERR_NOT_EXIST_ITEM,ERR_NOT_EXIST_ITEM
+20,ERR_NEED_ITEM_DETACH,ERR_NEED_ITEM_DETACH
+21,ERR_PLAYER_PID_NOT_FOUND,대상 선수를 찾을수 없음
+22,ERR_DONT_ATTACH_DETTACH_EQUIP,장착아이템이아니라 장착해제불가능
+23,ERR_PLAYER_NOT_HAVE_ITEM,해당선수의 아이템이 아님
+24,ERR_ITEM_WAS_OWNED,해당 아이템은 귀속된 상태입니다.
+25,ERR_ITEM_NOT_USE_CATEGORY,USE 할수 없는 아이템(EQUP!)입니다.
+26,ERR_SERVER_DATA_ITEM_COUNT_ZERO,서버 데이터 오류 해당아이템사용카운트 모지람
+27,ERR_SERVER_DATA_UID_DISMATCH,서버 데이터 오류. Client uid !=server uid
+28,ERR_SINGLEPLAY_ID,서버발급 싱글플레이 아이디오류
+29,ERR_USER_UID_INVALID,UID인벌리드
+30,ERR_USER_STATE_ILLEGAL,유저 gps상태에러
+31,ERR_DEFAULT_TEAM_INVALID,디필트팀정보에러. 디펄트팀을 다시세팅하시오
+32,ERR_SINGLE_PLAY_TIME,싱글플레이타임이너무짦음
+33,ERR_SERVER_XML,서버 XML데이타에러
+34,ERR_TEAM_ORDER,팀ORDER번호가 범위를 벋어났습니다.
+35,ERR_GPS_NEED_LOBBY,로비가 아님
+36,ERR_GPS_NOT_SINGLEMODE,싱글플레이상태아님
+37,ERR_x2ug_goto_main,다음패킷을 먼저보내시오.x2ug_goto_main
+38,ERR_x2ug_goto_charactor_create,다음패킷을 먼저보내시오.x2ug_goto_charactor_create
+39,ERR_x2ug_goto_inventory,다음패킷을 먼저보내시오.x2ug_goto_inventory
+40,ERR_x2ug_goto_match,다음패킷을 먼저보내시오.x2ug_goto_match
+41,ERR_x2ug_goto_single,다음패킷을 먼저보내시오.x2ug_goto_single
+42,ERR_x2ug_goto_friend_match,다음패킷을 먼저보내시오.x2ug_goto_friend_match
+43,ERR_x2ug_goto_upgrade_pitcher,다음패킷을 먼저보내시오.x2ug_goto_upgrade_pitcher
+44,ERR_x2ug_goto_upgrade_tranner,다음패킷을 먼저보내시오.x2ug_goto_upgrade_tranner
+45,ERR_x2ug_goto_upgrade_maestro,다음패킷을 먼저보내시오.x2ug_goto_upgrade_maestro
+46,ERR_x2ug_goto_etc_ativate,다음패킷을 먼저보내시오.x2ug_goto_etc_ativate
+47,ERR_x2ug_goto_rank,다음패킷을 먼저보내시오.x2ug_goto_rank
+48,ERR_x2ug_goto_quest,다음패킷을 먼저보내시오.x2ug_goto_quest
+49,ERR_x2ug_goto_option,다음패킷을 먼저보내시오.x2ug_goto_option
+50,ERR_x2ug_goto_shop,다음패킷을 먼저보내시오.x2ug_goto_shop
+51,ERR_x2ug_goto_team,다음패킷을 먼저보내시오.x2ug_goto_team
+52,ERR_x2ug_goto_tutorial,다음패킷을 먼저보내시오.x2ug_goto_tutorial
+53,ERR_QUEST_ID,퀘스트ID가 안맞음.
+54,ERR_QUEST_SID_NOT_FOUND,존제하지 않는 퀘스트 SID
+55,ERR_QUEST_RUN,시작할수없는 퀘스트
+56,ERR_COND_DEFAULT_TEAM,디펄트팀세팅필요
+57,ERR_COND_DEFAULT_BETTER,디펄트팀의타자세팅필요
+58,ERR_COND_DEFAULT_PITCHER,디펄트팀의투수세팅필요
+59,ERR_INVALID_NAME,이름이 금칙어 규정에 어긋납니다.

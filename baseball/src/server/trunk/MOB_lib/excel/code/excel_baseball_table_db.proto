@@ -1,0 +1,236 @@
+
+// command line : Excel_Converter.exe D:\svn\baseball\doc\design\excel\code\excel_enum.txt D:\svn\baseball\doc\design\excel\code\excel_baseball_table_db.txt 
+
+
+
+option optimize_for = LITE_RUNTIME;
+
+// -------------------------------------------------
+// 설명없음
+// -------------------------------------------------
+
+message s_tbl__playerbase
+{
+	required int64 pid = 1; 	// Tbl__PlayerBase_id_t [PK index] 선수 database table PK 
+	required int32 sid = 2; 	// Sys_PlayerCard_id_t [Sys_Player아이디] 구매한 선수카드의 번호(Sys_Player의 sid) 값이 0 이면 가상선수 
+	required int32 ppid = 3; 	// pimang_id_t [PP_ID] 피망아이디번호 
+	required string pname = 4; 	// aname32_t [닉네임]  
+	required int32 city = 5; 	// EPlayerNationType [출신국가] 캐주얼야구 게임기획서 3차 (20111031).docx참조 
+	required string initial_name = 6; 	// aname32_t [이니셜] 생성시 세팅. 등뒤의이니셜글자. 중복가능 
+	required int32 back_number = 7; 	// int16 [백넘버] 생성시 세팅. 변경아이템으로 변경가능 
+	required int32 age = 8; 	// int16 [나이] 생성시 세팅. 
+	required int32 bady_type = 9; 	// EplayerBadyType [체형]  
+	required bool leftright_type = 10; 	// bool [좌우타입] 캐릭터의 좌우 구분 1이면 좌선수 0이면 우선수 
+	required int64 exp = 11; 	// int64 [경험치] 레벨은 경험치에 해당하는 Sys_PlayerLevel의 값에 따라 결정 
+	required int32 questcomplete_count = 12; 	// Sys_Quest_id_t [퀘스트완료_카운트] 완료 퀘스트 카운트 
+	required int32 win_continue = 13; 	// int16 [연승] 연속으로 승리한 개수 
+	required int32 lose_continue = 14; 	// int16 [연패] 연속 패한 개수 
+	required int64 last_game_result = 15; 	// Tbl_Result_id_t [마지막경기id] 마지막으로 플레이한 경기결과 식별자 
+	required int32 win_tot = 16; 	// int32 [총전적_승] 토탈 승 카운트 
+	required int32 lose_tot = 17; 	// int32 [총전적_패] 토탈 패 카운트 
+	required int32 win_season = 18; 	// int32 [시즌전적_승] 시즌 승 카운트(3개월) 
+	required int32 lose_season = 19; 	// int32 [시즌전적_패] 시즌 패 카운트(3개월) 
+	required string skill_sticker = 20; 	// aname1024_t [특수능력이름] Sys_PlayeSkillSticker에서의 name  ";"로 구분되어 여러개입력 
+	required int32 elo_point = 21; 	// int32 [ELO_포인트] 경기마다 캐릭터에 갱신되는 매칭용 포인트 
+	required int64 team = 22; 	// Tbl_Team_id_t [소속팀id] 소속된 팀번호 
+}//massage s_tbl__playerbase
+
+
+
+// -------------------------------------------------
+// 설명없음
+// -------------------------------------------------
+
+message s_tbl_item
+{
+	required int64 iid = 1; 	// Tbl_Item_id_t [고유식별자] db pk 
+	required int32 sid = 2; 	// Sys__ItemBase_id_t [구매한 아이템종류] Sys__ItemBase_id_t 
+	required int32 category = 3; 	// EItemCategory [대분류] 장비 스텁 소비 구분 
+	required int32 ppid = 4; 	// pimang_id_t [PP_ID] 피망아이디번호 
+	required int64 uid = 5; 	// Tbl_User_id_t [소유자id]  
+	required int64 used_player_id = 6; 	// Tbl__PlayerBase_id_t [귀속된선수ID] 귀속된 선수id이며 소모용아이템은 특별히귀속되지않고쓴다.캐쉬인벤 or 게임인벤 환불여부가 결정된다 
+	required int64 rid = 7; 	// Tbl_Result_id_t [게임결과식별자] 보상아이템의경우 해당경기결과 식별자 
+	required string upgrade_level = 8; 	// aname32_t [업그레이드등급] baseball.xml에서 ITEM_UPGRADE_LOGIC 참조 
+	required string upgrade_endtime = 9; 	// DATETIME [업그레이드진행완료시간] 현제시간보다 미래의 시간이 세팅되면 업그레이드상태이다. 
+	required string etc_info = 10; 	// aname32_t [기타정보] 등번호 아이템일때는 등번호. 마킹 아이템일때는 마킹글자를 저장. 
+	required string grade = 11; 	// aname32_t [등급] 아이템 업그레이드 등급(최초는 S,A,B,C,D,E중의 한 개) 
+	required int32 bought_real_money = 12; 	// real_money_t [구매캐쉬] 구매시 사용한 리얼캐쉬 
+	required int32 bought_point_money = 13; 	// real_money_t [구매포인트] 구매시 사용한 포인트 
+	required int32 bought_game_money = 14; 	// game_money_t [구매게임머니] 구매시 사용한 게임머니 
+	required bool is_equiped = 15; 	// bool [장착상태] 장착아이템의경우 장착상태인지 여부 
+	required int32 item_buy_type = 16; 	// EItemBuyType [구매상태] 아이템획득경로 정보 ( 보상아이템  또는 상점구매  or 이벤트) 
+	required int32 shop_id = 17; 	// Sys_Shop_id_t [상점판매번호] 상점으로부터 구매한경우 상점판매정보 
+	required int32 usable_hour = 18; 	// int16 [기간제아이템의사용시간] 기간제아이템의경우 사용가능한 시간 
+	required string buy_date = 19; 	// DATETIME [구매한날짜]  
+	required int32 used_game_count = 20; 	// int16 [사용한 경기횟수] 사용한 게임의 경기 횟수 
+}//massage s_tbl_item
+
+
+
+// -------------------------------------------------
+// 설명없음
+// -------------------------------------------------
+
+message s_tbl_pitcherskill
+{
+	required int64 psid = 1; 	// Tbl_BreakingBall_id_t [고유번호]  
+	required int64 uid = 2; 	// Tbl_User_id_t [소유자id]  
+	required int64 pid = 3; 	// Tbl_PlayerPitcher_id_t [소유투수id] 디펄트명은 pp_name이다 
+	required int32 gesture = 4; 	// EGestureType [제스쳐타입] 제스쳐종류 
+	required int32 exp = 5; 	// int32 [투수변화구 경험치] 투수코치가 주는 경험치이며 이것에 의해 변화구 레벨이결정됨(Sys_BreakingBallLevel) 
+	required int32 type = 6; 	// EPlayerBreakingBall [투수변화구종류] 투수 변화구종류 
+}//massage s_tbl_pitcherskill
+
+
+
+// -------------------------------------------------
+// 설명없음
+// -------------------------------------------------
+
+message s_tbl_playerbetter
+{
+	required s_tbl__playerbase m_tbl__playerbase=1;// [상속테이블] 선수기본정보
+	required int32 batting_average = 2; 	// int16 [타율] 0.001~0.999 천분율로 표시 
+	required int32 continue_homerun_count = 3; 	// int16 [연속홈런수] 연속_홈런수 
+	required int32 homeruntotal_count = 4; 	// int16 [총_홈런수] 총_홈런수 
+	required int32 single_homerun_count = 5; 	// int16 [싱글홈런카운트] 싱글홈런 카운트 
+	required int32 tworun_homerun_count = 6; 	// int16 [더블홈런카운트] 더블홈런 카운트 
+	required int32 threerun_homerun_count = 7; 	// int16 [쓰리런홈런카운트] 쓰리런홈런 카운트 
+	required int32 grandslam_homerun_count = 8; 	// int16 [만루홈런카운트] 만루홈런 카운트 
+	required int32 one_hit_count = 9; 	// int16 [일루타카운트] 일루타 카운트 
+	required int32 double_hit_count = 10; 	// int16 [이루타카운트] 이루타 카운트 
+	required int32 triple_hit_count = 11; 	// int16 [삼루타카운트] 삼루타 카운트 
+	required int32 foul_hit_count = 12; 	// int16 [파울카운트] 파울 카운트 
+	required int32 out_hit_count = 13; 	// int16 [아웃카운트] 아웃 카운트 
+	required int32 score_count = 14; 	// int16 [점수카운트] 점수 카운트 
+	required int32 betting_type = 15; 	// EPlayerBetterSkill [타자타입] 타자 대투수 스킬 
+	required int32 betting_form = 16; 	// EBetterBasicSkill [타격폼] 타자 폼 
+	required int32 better_power = 17; 	// int16 [타자 파워]  
+	required int32 better_focus = 18; 	// int16 [타자 집중]  
+	required int32 better_power_buff = 19; 	// int16 [타자 파워 버프]  
+	required int32 better_focus_buff = 20; 	// int16 [타자 집중 버프]  
+}//massage s_tbl_playerbetter
+
+
+
+// -------------------------------------------------
+// 설명없음
+// -------------------------------------------------
+
+message s_tbl_playerpitcher
+{
+	required s_tbl__playerbase m_tbl__playerbase=1;// [상속테이블] 선수기본정보
+	required int32 pitching_average = 2; 	// int16 [방어율] 0.001~0.999 천분율로 표시 
+	required int32 hit_count = 3; 	// int16 [피안타율] 피안타율 
+	required int32 strikeout_count = 4; 	// int16 [탈삼진수] 탈삼진수 
+	required int32 homerun_pitching_count = 5; 	// int16 [피홈런수] 피홈런수 
+	required int32 continue_strikeout_count = 6; 	// int16 [연속삼진수] 연속삼진수 
+	required int32 continue_homerun_pitching_count = 7; 	// int16 [연속피홈런수] 연속피홈런수 
+	required int32 pitching_type = 8; 	// EPlayerPitcherSkill [투수타입] 투수 대타자 스킬 
+	required int32 piching_form = 9; 	// EPitcherrBasicSkill [투구폼] 투수 폼 
+	required int32 pitcher_control = 10; 	// int16 [투수 제구]  
+	required int32 pitcher_ballspeed = 11; 	// int16 [투수 구속]  
+	required int32 pitcher_control_buff = 12; 	// int16 [투수 제구 버프]  
+	required int32 pitcher_ballspeed_buff = 13; 	// int16 [투수 구속 버프]  
+	required int32 pitcher_breakingball_value_buff = 14; 	// int16 [투수 변화구 수치 버프]  
+}//massage s_tbl_playerpitcher
+
+
+
+// -------------------------------------------------
+// 설명없음
+// -------------------------------------------------
+
+message s_tbl_result
+{
+	required int64 grid = 1; 	// Tbl_Result_id_t [game고유번호] 일별 파티션 키 
+	required bool is_singlemode = 2; 	// bool [is_singlemode] 0=멀티플레이 1=싱글플레이 
+	required int32 win_ppid = 3; 	// int32 [PP_ID] 승자의 피망아이디번호 
+	required int64 win_uid = 4; 	// Tbl_User_id_t [고유번호] 승자 고유번호 
+	required int64 win_better = 5; 	// Tbl_PlayerBetter_id_t [타자 pid] 승자 
+	required int64 win_pitcher = 6; 	// Tbl_PlayerPitcher_id_t [투수 pid] 승자 
+	required int64 win_team = 7; 	// Tbl_Team_id_t [팀id]  
+	required int32 win_score = 8; 	// int8 [승자스코어]  
+	required int32 win_reward_exp = 9; 	// int32 [승자 보상경험치] 플레이어1의 보상경험치 
+	required int32 win_reward_gamemoney = 10; 	// game_money_t [승자 보상게임머니] 보상게임머니 
+	required int32 lose_ppid = 11; 	// int32 [PP_ID] 패자 피망아이디번호 
+	required int64 lose_uid = 12; 	// Tbl_User_id_t [고유번호] 패자 고유번호 
+	required int64 lose_better = 13; 	// Tbl_PlayerBetter_id_t [타자 pid] 패자 
+	required int64 lose_pitcher = 14; 	// Tbl_PlayerPitcher_id_t [투수 pid] 패자 
+	required int64 lose_team = 15; 	// Tbl_Team_id_t [패자팀id]  
+	required int32 lose_score = 16; 	// int8 [패자스코어]  
+	required int32 lose_reward_exp = 17; 	// int32 [패자 보상경험치] 보상경험치 
+	required int32 lose_reward_gamemoney = 18; 	// game_money_t [패자 보상게임머니] 보상게임머니 
+	required string time_start = 19; 	// DATETIME [게임시작시간] 시작 일시 
+	required string time_end = 20; 	// DATETIME [게임종료시간] 플레이 시간 
+}//massage s_tbl_result
+
+
+
+// -------------------------------------------------
+// 설명없음
+// -------------------------------------------------
+
+message s_tbl_roundresult
+{
+	required int64 grid2 = 1; 	// Tbl_RoundResult_id_t [고유번호] 일별 파티션 키 
+	required int64 grid = 2; 	// Tbl_Result_id_t [Tbl_Result_M의 고유번호]  
+	required int32 round_number = 3; 	// int8 [라운드번호] 1~10은 라운드 한게임의 토탈집계는 Tbl_Result에 저장 
+	required int64 pid_better = 4; 	// Tbl_PlayerPitcher_id_t [better]  
+	required int32 score = 5; 	// int8 [better의점수]  
+	required int32 base_runner_count = 6; 	// int8 [출루한주자수] 최대는 xml에서  i_max_runner_per_game=19이다 
+	required int32 hit_type = 7; 	// EBetterHitType [안타종류] 0=아웃 1일루타 2이루타 3삼루타 4싱글홈런 5더블홈런 6 
+	required int32 strike = 8; 	// int8 [스트라익카운트]  
+	required int32 foul = 9; 	// int8 [파울카운트]  
+}//massage s_tbl_roundresult
+
+
+
+// -------------------------------------------------
+// 설명없음
+// -------------------------------------------------
+
+message s_tbl_team
+{
+	required int64 tid = 1; 	// Tbl_Team_id_t [고유번호]  
+	required string name = 2; 	// aname32_t [팀이름] 디펄트명은 pp_name이다 
+	required int64 pid_better = 3; 	// Tbl_PlayerBetter_id_t [타자]  
+	required int64 pid_pitcher = 4; 	// Tbl_PlayerPitcher_id_t [투수]  
+	required int32 win = 5; 	// int16 [승]  
+	required int32 lose = 6; 	// int16 [패]  
+}//massage s_tbl_team
+
+
+
+// -------------------------------------------------
+// 설명없음
+// -------------------------------------------------
+
+message s_tbl_user
+{
+	required int64 uid = 1; 	// Tbl_User_id_t [고유번호] db pk 
+	required int32 ppid = 2; 	// pimang_id_t [PP_ID] 피망아이디번호 
+	required string uname = 3; 	// aname32_t [닉네임] 베이스볼에서의 유저닉네임 
+	required string email = 4; 	// aname256_t [email] 피망이메일주소 
+	required int32 pitcher_tot_win = 5; 	// int16 [투수총전적_승] 투수총전적_승 
+	required int32 pitcher_tot_lose = 6; 	// int16 [투수총전적_패] 투수총전적_패 
+	required int32 pitcher_tot_strikeout = 7; 	// int16 [탈삼진수] 투수총_탈삼진 
+	required int32 pitcher_tot_average_level = 8; 	// int16 [투수총평균_레벨] 투수총평균_레벨 
+	required int32 better_tot_win = 9; 	// int16 [타자총전적_승] 타자총전적_승 
+	required int32 better_tot_lose = 10; 	// int16 [타자총전적_패] 타자총전적_패 
+	required int32 better_tot_homerun = 11; 	// int16 [총_홈런수] 타자총_홈런 
+	required int32 better_tot__average_level = 12; 	// int16 [타자총평균_레벨] 타자총평균_레벨 
+	required int32 cash_item_buy_count = 13; 	// int16 [캐쉬템구매갯수] 캐쉬템구매갯수 
+	required string last_login_time = 14; 	// DATETIME [마지막로긴시간] 마지막로긴시간 
+	required string last_logout_time = 15; 	// DATETIME [마지막로그아웃시간] 마지막 로그아웃시간 
+	required int32 continu_attend_day = 16; 	// int16 [연속출석일수] 연속출석한 일수 
+	required string regist_date = 17; 	// DATETIME [게임등록시간] 최초게임등록일 
+	required string option = 18; 	// aname256_t [옵션] 옵션(클라에서임의로저장할내용) 
+	required int64 playtime_tot = 19; 	// int64 [총_플레이_타임] 총_플레이_타임(분) 
+}//massage s_tbl_user
+
+
+
+
+
+

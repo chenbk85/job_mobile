@@ -1,0 +1,7 @@
+pushd ~
+cd svn/baseball
+rm CMakeCache.txt
+cmake .
+make clean
+make all
+popd

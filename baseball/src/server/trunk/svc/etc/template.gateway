@@ -1,0 +1,73 @@
+control_center:
+    # CCS 서버 IP 지정
+    ip: 127.0.0.1
+    # CCS 서버 포트
+    port: 15500
+
+service:
+    # pid 파일.  반드시 절대 경로를 사용해야 함
+    # 파일 이름은 호스트명.바이너리명.pid 형식으로 지정해야 함
+    pid-file: /home/pudae/svn/baseball/svc/var/run/localhost.localdomain.com.gateway.pid
+    # gateway 서버 포트
+    port: 15520
+    # gateway 서버 IP
+    ip: 10.25.21.178
+    id: 2
+    # 최대 연결 세션 수
+    max-child: 1000
+    # ping 타임아웃
+    client-timeout: 30    # 30초
+    # 로깅 여부
+    enable-log: true
+    # 버전 체킹 여부
+    skip-version-check: true
+
+log:
+    # 로그 폴더 경로
+    path: ~/svc/log
+    # 각종 로그 옵션 
+    traffic: true
+    packet: true
+    debug: true
+    warning: true
+    info: true
+    error: true
+
+presence:   
+    # 프레젠스 서버 IP
+    ip: 127.0.0.1
+    # 프레젠스 서버 포트
+    port: 15510
+
+channels:
+# 10 골드
+  - id: 0
+    max_user: 4000
+    low_rank: 1
+    high_rank: 3
+
+# 1천 골드
+  - id: 1
+    max_user: 4000
+    low_rank: 3
+    high_rank: 5
+
+# 5만 골드
+  - id: 2
+    max_user: 4000
+    low_rank: 4
+    high_rank: 6
+
+# 50만 골드
+  - id: 3
+    max_user: 4000
+    low_rank: 5
+    high_rank: 8
+
+# 자유 - 10골드
+  - id: 4
+    max_user: 4000
+    low_rank: 0
+    high_rank: 2
+
+

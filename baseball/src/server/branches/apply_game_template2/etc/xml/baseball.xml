@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<baseball>
+  <!--
+
+<a>aa</a>
+<a>
+aa
+</a>
+
+<b c="a" d='a'>
+</b>
+
+
+A =엘리먼트
+<A B='dddd' C="cccc"></A>
+
+
+B='dddd'
+
+B : A라는 엘리먼트의 속성인데 이름 B이다.
+'dddd'는 A Element의 B속성의 값.value
+
+
+<A B='aaa'></A>
+<A B='aaa'/>
+
+<A>
+as;dlfdfkls;ja;lsd
+</A>
+<A>
+	<A/>
+</A>
+		
+
+
+<IGT_E i_COUNT='5' />
+<i_IGT_E>5</i_IGT_E>
+
+-->
+  <create_player>
+    <player_name HELP="PP기준이며 한글 6자 or 영문/숫자 조합으로 12자까지 가능">12</player_name>
+    <player_initial HELP="유니폼용 약칭 선수명으로 영문 4자까지 가능">4</player_initial>
+    <i2_player_age HELP="15 ~ 99 사이에서 설정 가능">15;99</i2_player_age>
+    <player_EPlayerNationType HELP="도시/국가가 1개의 세트로 제공하는 리스트에서 선택 excel enum table에 정의 되어 있슴." />
+    <player_EPlayerBodyType HELP="남자 3종(덩치, 보통, 작음), 여자 1종 중 택1. excel enum table 참조할것." />
+    <player_EPlayerType HELP="타자, 투수 " />
+    <player_left_right HELP="가상캐릭터 생성시 선택할수 있는 특수능력종류_ Sys_PlayeSkillSticker의 항목">
+      <player_left />
+      <player_right />
+    </player_left_right>
+    <player_form HELP="투수 오버, 3쿼터, 사이드암, 언더  중 택1  타자 스퀘어, 오픈, 클로즈드 중 택1 (오픈시 스퀘어만 지원) excel enum참조">
+      <EBetterForm />
+      <EPitcherForm />
+    </player_form>
+    <EPlayerBreakingBall HELP="선추 최초 생성시 선택할수 있는 스킬. 슬라이더, 커브, 체인지업, 포심 중 택2">
+      <PBB_FOURSEAM />
+      <PBB_SLIDER />
+      <PBB_CHANGEUP />
+      <PBB_CURVE />
+    </EPlayerBreakingBall>
+    <player_Ability HELP="플레이어 특수 능력 중 택1">
+      <EBetterAbility HELP="선수 생성시 EBetterAbility중에서 선택할수 있는것." />
+      <EPitcherAbility HELP="투수 생성시 선택할수 있는 스킬." />
+    </player_Ability>
+  </create_player>
+  <play_data>
+    <i_max_runner_per_game HELP="한판당 주루할 수 있는 총주자의 수">19</i_max_runner_per_game>
+    <i_final_runner_count help="플레이중 마지막 라운드의 주자는 항상 만루 이다">3</i_final_runner_count>
+    <runner_count_score HELP="주자 상황에 따른 점수 계산식">
+      <runner i_state="1" i_hit="0" i_two_base_hit="0" i_three_base_hit="1" i_homerun="2" />
+      <runner i_state="2" i_hit="0" i_two_base_hit="1" i_three_base_hit="1" i_homerun="2" />
+      <runner i_state="3" i_hit="1" i_two_base_hit="1" i_three_base_hit="1" i_homerun="2" />
+      <runner i_state="1;2" i_hit="1" i_two_base_hit="1" i_three_base_hit="2" i_homerun="3" />
+      <runner i_state="1;3" i_hit="1" i_two_base_hit="1" i_three_base_hit="2" i_homerun="3" />
+      <runner i_state="2;3" i_hit="2" i_two_base_hit="2" i_three_base_hit="2" i_homerun="3" />
+      <runner i_state="1;2;3" i_hit="2" i_two_base_hit="2" i_three_base_hit="3" i_homerun="4" />
+    </runner_count_score>
+    <BallSpeed_Output HELP="출력구속 계산 파라미터">
+      <!-- 최대구속이 150일때 50%의 확률로 150 ~ 120 (150-30) 의 구속이 나옴. -->
+      <i_Speed i_RandomPercent="50">30</i_Speed>
+      <i_Speed i_RandomPercent="30">20</i_Speed>
+      <i_Speed i_RandomPercent="15">10</i_Speed>
+      <i_Speed i_RandomPercent="5">5</i_Speed>
+    </BallSpeed_Output>
+    <EPlayerBreakingBall_state HELP="각 변화구의 구속보정(플레이어의 최대구속에서 연산)_ 비거리보정의 정의(상대 플레이어의 최대 비거리에서 연산)">
+      <PBB_FOURSEAM i_BallSpeed="0" i_flyingdistance="16" />
+      <PBB_TWOSEAM i_BallSpeed="1" i_flyingdistance="15" />
+      <PBB_RISINGFAST i_BallSpeed="2" i_flyingdistance="20" />
+      <PBB_UPSHOUT i_BallSpeed="2" i_flyingdistance="19" />
+      <PBB_SLIDER i_BallSpeed="-12" i_flyingdistance="19" />
+      <PBB_HSLIDER i_BallSpeed="-5" i_flyingdistance="18" />
+      <PBB_CUTFAST i_BallSpeed="-1" i_flyingdistance="17" />
+      <PBB_VSLIDER i_BallSpeed="-12" i_flyingdistance="21" />
+      <PBB_SLUB i_BallSpeed="-19" i_flyingdistance="21" />
+      <PBB_CHANGEUP i_BallSpeed="-23" i_flyingdistance="25" />
+      <PBB_CIRCLECHANGEUP i_BallSpeed="-25" i_flyingdistance="23" />
+      <PBB_KNUCKLE i_BallSpeed="-29" i_flyingdistance="30" />
+      <PBB_CURVE i_BallSpeed="-29" i_flyingdistance="20" />
+      <PBB_SLOWCURVE i_BallSpeed="-38" i_flyingdistance="25" />
+      <PBB_DROPCURVE i_BallSpeed="-24" i_flyingdistance="20" />
+      <PBB_POWERCURVE i_BallSpeed="-22" i_flyingdistance="18" />
+      <PBB_SHOUT i_BallSpeed="-8" i_flyingdistance="18" />
+      <PBB_HSHOUT i_BallSpeed="-4" i_flyingdistance="17" />
+      <PBB_FORK i_BallSpeed="-18" i_flyingdistance="25" />
+      <PBB_PALM i_BallSpeed="-23" i_flyingdistance="26" />
+      <PBB_SFF i_BallSpeed="-8" i_flyingdistance="25" />
+      <PBB_SINKER i_BallSpeed="-22" i_flyingdistance="22" />
+      <PBB_HSINKER i_BallSpeed="-12" i_flyingdistance="20" />
+    </EPlayerBreakingBall_state>
+    <BreakingBall_Upgrade_System>
+      <!--
+		변화구 업그레이드 시에 한번에 소요되는 시간_변화구의 트레이닝 완료 결과_해당 변화구의 트레이닝 소요횟수
+		-->
+      <Basic_Time HELP="모든 변화구는 한번 트레이닝 당 4시간 소요된다">4</Basic_Time>
+      <Basic_GameMoney HELP="모든 변화구는 한번 트레이닝 당 2000BALL이 소요된다">2000</Basic_GameMoney>
+      <Skill_Tree>
+        <!-- 
+			각 변화구의 업그레이드 완료 시의 프리뷰 변화구_PBB_SLUB는 PBB_HSLIDER와 PBB_POWERCURVE의 업그레이드가 끝나야 언락된다_PBB_DROPCURVE는 PBB_POWERCURVE와 PBB_PALM의 업그레이드가 끝나야 언락된다_PBB_KNUCKLE는 PBB_VSLIDER와 PBB_CIRCLECHANGEUP의 업그레이드가 끝나야 언락된다
+			-->
+        <PBB_FOURSEAM UPGRADE_PREVIEW="PBB_TWOSEAM" />
+        <PBB_TWOSEAM UPGRADE_PREVIEW="PBB_RISINGFAST;PBB_UPSHOUT" />
+        <PBB_RISINGFAST UPGRADE_PREVIEW="NULL" />
+        <PBB_UPSHOUT UPGRADE_PREVIEW="NULL" />
+        <PBB_SLIDER UPGRADE_PREVIEW="PBB_CUTFAST" />
+        <PBB_HSLIDER UPGRADE_PREVIEW="PBB_SLUB" />
+        <PBB_CUTFAST UPGRADE_PREVIEW="PBB_HSLIDER" />
+        <PBB_VSLIDER UPGRADE_PREVIEW="BB_KNUCKLE" />
+        <PBB_SLUB UPGRADE_PREVIEW="NULL" />
+        <PBB_CHANGEUP UPGRADE_PREVIEW="PBB_PALM" />
+        <PBB_CIRCLECHANGEUP UPGRADE_PREVIEW="BB_KNUCKLE" />
+        <PBB_KNUCKLE UPGRADE_PREVIEW="NULL" />
+        <PBB_CURVE UPGRADE_PREVIEW="PBB_SLOWCURVE" />
+        <PBB_SLOWCURVE UPGRADE_PREVIEW="PBB_POWERCURVE" />
+        <PBB_DROPCURVE UPGRADE_PREVIEW="NULL" />
+        <PBB_POWERCURVE UPGRADE_PREVIEW="PBB_DROPCURVE" />
+        <PBB_SHOUT UPGRADE_PREVIEW="PBB_HSHOUT" />
+        <PBB_HSHOUT UPGRADE_PREVIEW="NULL" />
+        <PBB_FORK UPGRADE_PREVIEW="PBB_SFF" />
+        <PBB_PALM UPGRADE_PREVIEW="PBB_CIRCLECHANGEUP" />
+        <PBB_SFF UPGRADE_PREVIEW="PBB_VSLIDER" />
+        <PBB_SINKER UPGRADE_PREVIEW="PBB_HSINKER" />
+        <PBB_HSINKER UPGRADE_PREVIEW="NULL" />
+      </Skill_Tree>
+    </BreakingBall_Upgrade_System>
+    <AI_STATE>
+      <!--
+	싱글 플레이시 또는 멀티플레이시 등장하는 AI의 플레이어 레벨에 대응하는 
+	값_타자일 경우 스텟_투수일 경우 스텟과 변화구의 수 및 레벨_하위 i2의 값은 MIN과 MAX의 값임		
+	-->
+      <BETTER>
+        <PGT_E i2_PLAYERLEVEL="1;5" i2_ACCURACY="1;5" i2_POWER="1;5" SPRAY_RATE="75;80" HIT_SCALE="65;80" />
+        <!--SPRAY_RATE와 HIT_SCALE 설명 필요-->
+        <PGT_D i2_PLAYERLEVEL="6;20" i2_ACCURACY="1;20" i2_POWER="1;20" SPRAY_RATE="85" HIT_SCALE="80"></PGT_D>
+        <PGT_C i2_PLAYERLEVEL="21;40" i2_ACCURACY="21;40" i2_POWER="21;40" SPRAY_RATE="82" HIT_SCALE="77"></PGT_C>
+        <PGT_B i2_PLAYERLEVEL="41;60" i2_ACCURACY="41;60" i2_POWER="41;60" SPRAY_RATE="79" HIT_SCALE="73"></PGT_B>
+        <PGT_A i2_PLAYERLEVEL="61;80" i2_ACCURACY="61;80" i2_POWER="61;80" SPRAY_RATE="77" HIT_SCALE="69"></PGT_A>
+        <PGT_S i2_PLAYERLEVEL="81;99" i2_ACCURACY="81;99" i2_POWER="81;99" SPRAY_RATE="75" HIT_SCALE="65"></PGT_S>
+      </BETTER>
+      <PITCHER>
+        <AI_E_PITCHER i2_PLAYERLEVEL="1;20" i2_BALLSPEED="125;130" i2_FOCUS="1;20" BREAKINGBALL="PBB_FOURSEAM;PBB_CURVE" i2_SCALE_RATE="0;0.99" i2_AI_RANGE="0">
+          <!--AI RANGE는 천분률이며 설명 필요-->
+        </AI_E_PITCHER>
+        <AI_D_PITCHER i2_PLAYERLEVEL="21;40" i2_BALLSPEED="131;135" i2_FOCUS="21;40" BREAKINGBALL="PBB_FOURSEAM;PBB_CURVE;PBB_FORK" i2_SCALE_RATE="0.1;0.3" i2_AI_RANGE="100" />
+        <AI_C_PITCHER i2_PLAYERLEVEL="41;60" i2_BALLSPEED="136;140" i2_FOCUS="41;60" BREAKINGBALL="PBB_FOURSEAM;PBB_CURVE;PBB_FORK;PBB_CHANGEUP" i2_SCALE_RATE="0.2;0.4" i2_AI_RANGE="200" />
+        <AI_B_PITCHER i2_PLAYERLEVEL="61;80" i2_BALLSPEED="141;145" i2_FOCUS="61;80" BREAKINGBALL="PBB_FOURSEAM;PBB_CURVE;PBB_FORK;PBB_CHANGEUP;PBB_SLIDER" i2_SCALE_RATE="0.3;0.6" i2_AI_RANGE="300" />
+        <AI_A_PITCHER i2_PLAYERLEVEL="81;99" i2_BALLSPEED="146;150" i2_FOCUS="81;99" BREAKINGBALL="PBB_FOURSEAM;PBB_CURVE;PBB_FORK;PBB_CHANGEUP;PBB_SLIDER;PBB_SINKER" i2_SCALE_RATE="0.4;0.8" i2_AI_RANGE="400" />
+        <AI_S_PITCHER i2_PLAYERLEVEL="81;99" i2_BALLSPEED="146;150" i2_FOCUS="81;99" BREAKINGBALL="PBB_FOURSEAM;PBB_CURVE;PBB_FORK;PBB_CHANGEUP;PBB_SLIDER;PBB_SINKER" i2_SCALE_RATE="0.5;1" i2_AI_RANGE="500" />
+      </PITCHER>
+    </AI_STATE>
+    <ASSIST_HIT HELP="타자로 플레이시에 어시스트 옵션을 발동하면 마이너스 비거리 보정을 받게 됨">
+      <ASSIST_USE i_flyingdistance_percente="-10" />
+    </ASSIST_HIT>
+    <COUNTER_SYSTEM HELP="타자로 플레이시 연속 3번 스트라이크 당하거나 투수로 플레이시 연속 3번 안타이상을 허용하면 발동_발동 효과는 1판만 지속">
+      <BETTER_PLAY i_strike_allow="3" i_power="20" />
+      <PITCHER_PLAY i_hit_allow="3" i_ballspeed="10" />
+    </COUNTER_SYSTEM>
+    <PLAYER_RECODE HELP="플레이어의 기록되어질 경기 정보">
+      <better_record>
+        <single_homerun_count help="싱글 홈런 카운트" />
+        <tworun_homerun_count help="더블 홈런 카운트" />
+        <threerun_homerun_count help="쓰리런 홈런 카운트" />
+        <grandslam_homerun_count help="만루 홈런 카운트" />
+        <one_hit_count help="일루타 카운트" />
+        <double_hit_count help="이루타 카운트" />
+        <triple_hit_count help="삼루타 카운트" />
+        <foul_count help="파울 카운트" />
+        <out_count help="아웃 카운트" />
+        <score_count help="점수 카운트" />
+      </better_record>
+      <picher_record>
+        <strike_out_count help="삼진 카운트" />
+        <out_count help="아웃 카운트" />
+        <all_hit_count help="모든 안타 카운트" />
+        <all_homerun_count help="모든 홈런 카운트" />
+        <foul_count help="파울 카운트" />
+        <best_ballspeed_count help="최고 구속 카운트" />
+      </picher_record>
+    </PLAYER_RECODE>
+    <PLAY_ELO_POINT i_elo_default="1000" HELP="각 경기 매칭시 자신의 ELO포인트와 상대의 ELO포인트에 따라 매칭을 함">
+      <ELO_STATE>
+        <ELO_STATE value="1;999" i_k_value="40" />
+        <ELO_STATE value="1000;1799" i_k_value="32" />
+        <ELO_STATE value="1800;2399" i_k_value="24" />
+        <ELO_STATE value="2400;10000" i_k_value="16" />
+      </ELO_STATE>
+    </PLAY_ELO_POINT>
+    <MainItem_upgrade_table HELP="메인아이템 등급별 업그레이드가능한 종류_EItemGradeType를 참조하세요">
+      <IGT_E>
+        <!-- E등급은 EE까지가능 -->
+        <EE />
+      </IGT_E>
+      <IGT_D>
+        <!-- D등급은 EE_ED까지가능 -->
+        <DE />
+        <DD />
+      </IGT_D>
+      <IGT_C>
+        <!-- C등급은 CE_CD_CC까지가능 -->
+        <CE />
+        <CD />
+        <CC />
+      </IGT_C>
+      <IGT_B>
+        <!-- B등급은 BE_BD_BC_BB까지가능 -->
+        <BE />
+        <BD />
+        <BC />
+        <BB />
+      </IGT_B>
+      <IGT_A>
+        <!-- A등급은 AE_AD_AC_AB_AA까지가능 -->
+        <AE />
+        <AD />
+        <AC />
+        <AB />
+        <AA />
+      </IGT_A>
+      <IGT_S>
+        <!-- S등급은 SE_SD_SC_SB_SA_SS까지가능 -->
+        <SE />
+        <SD />
+        <SC />
+        <SB />
+        <SA />
+        <SS />
+      </IGT_S>
+    </MainItem_upgrade_table>
+    <GAME_RESULT HELP="경기결과에 따른 보상 EBHT_는 보상머니">
+      <RandomGiftPercent help="레벨별로 줄수 있는 아이템의 등급분포">
+        <IGT_E i_MINMAX_PLAYER_LEVEL="9" />
+        <IGT_D i_MINMAX_PLAYER_LEVEL="19" />
+        <IGT_C i_MINMAX_PLAYER_LEVEL="39" />
+        <IGT_B i_MINMAX_PLAYER_LEVEL="59" />
+        <IGT_A i_MINMAX_PLAYER_LEVEL="79" />
+        <IGT_S i_MINMAX_PLAYER_LEVEL="100" />
+      </RandomGiftPercent>
+      <PVP>
+        <WIN i_EXP="30" EBHT_ONEHIT="5" EBHT_DOUBLEHIT="10" EBHT_TRIPLEHIT="15" EBHT_HOMERUN_1="40" EBHT_HOMERUN_2="60" EBHT_HOMERUN_3="80" EBHT_HOMERUN_4="100">
+          <RewardItemCount help="보상선물로 줄수있는 아이템 갯수">
+            <IC_STUFF>
+              <i_PERCENT i_COUNT="1">50</i_PERCENT>
+              <i_PERCENT i_COUNT="2">40</i_PERCENT>
+              <i_PERCENT i_COUNT="3">10</i_PERCENT>
+            </IC_STUFF>
+            <IC_CONSUME HELP="드링크제만 줄수있다.">
+              <i_PERCENT i_COUNT="0">50</i_PERCENT>
+              <i_PERCENT i_COUNT="1">50</i_PERCENT>
+            </IC_CONSUME>
+          </RewardItemCount>
+        </WIN>
+        <LOSE i_EXP="26" EBHT_ONEHIT="3" EBHT_DOUBLEHIT="5" EBHT_TRIPLEHIT="8" EBHT_HOMERUN_1="15" EBHT_HOMERUN_2="30" EBHT_HOMERUN_3="50" EBHT_HOMERUN_4="80">
+          <RewardItemCount help="보상선물로 줄수있는 아이템 갯수">
+            <IC_STUFF>
+              <i_PERCENT i_COUNT="0">50</i_PERCENT>
+              <i_PERCENT i_COUNT="1">50</i_PERCENT>
+            </IC_STUFF>
+            <IC_CONSUME HELP="드링크제만 줄수있다.">
+              <i_PERCENT i_COUNT="0">100</i_PERCENT>
+            </IC_CONSUME>
+          </RewardItemCount>
+        </LOSE>
+      </PVP>
+      <PVE>
+        <WIN i_EXP="16" EBHT_ONEHIT="1" EBHT_DOUBLEHIT="2" EBHT_TRIPLEHIT="4" EBHT_HOMERUN_1="7" EBHT_HOMERUN_2="10" EBHT_HOMERUN_3="20" EBHT_HOMERUN_4="30" />
+        <LOSE i_EXP="12" EBHT_ONEHIT="0" EBHT_DOUBLEHIT="1" EBHT_TRIPLEHIT="2" EBHT_HOMERUN_1="3" EBHT_HOMERUN_2="5" EBHT_HOMERUN_3="10" EBHT_HOMERUN_4="15" />
+      </PVE>
+    </GAME_RESULT>
+    <BETTER_CURSORS_RANGE HELP="타자의 정확 능력에 따라 커서의 크기가 달라짐">
+      <f_STEP_ONE CURSORS_SIZE="0.5" i2_FOCUS_RANGE="1;30"></f_STEP_ONE>
+      <f_STEP_TWO CURSORS_SIZE="0.6" i2_FOCUS_RANGE="31;60"></f_STEP_TWO>
+      <f_STEP_THREE CURSORS_SIZE="0.7" i2_FOCUS_RANGE="61;90"></f_STEP_THREE>
+      <f_STEP_FOUR CURSORS_SIZE="0.8" i2_FOCUS_RANGE="91;120"></f_STEP_FOUR>
+      <f_STEP_FIVE CURSORS_SIZE="0.9" i2_FOCUS_RANGE="121;150"></f_STEP_FIVE>
+      <f_STEP_SIX CURSORS_SIZE="1.0" i2_FOCUS_RANGE="151;180"></f_STEP_SIX>
+      <f_STEP_SEVEN CURSORS_SIZE="1.1" i2_FOCUS_RANGE="181;210"></f_STEP_SEVEN>
+      <f_STEP_EIGHT CURSORS_SIZE="1.2" i2_FOCUS_RANGE="211;240"></f_STEP_EIGHT>
+      <f_STEP_NINE CURSORS_SIZE="1.3" i2_FOCUS_RANGE="241;270"></f_STEP_NINE>
+      <f_STEP_TEN CURSORS_SIZE="1.4" i2_FOCUS_RANGE="271;300"></f_STEP_TEN>
+    </BETTER_CURSORS_RANGE>
+  </play_data>
+  <player_data>
+    <select_skill_list HELP="가상캐릭터 생성시 선택할수 있는 특수능력종류_ Sys_PlayeSkillSticker의 항목">
+      <better>
+        <skill4 />
+        <skill5 />
+        <skill6 />
+      </better>
+      <pitcher>
+        <skill12 />
+        <skill13 />
+        <skill14 />
+        <skill15 />
+      </pitcher>
+    </select_skill_list>
+    <TRAINER_EFFECT i_RANDOM_EXP="10" HELP="OPEN에서 제외_EItemGradeType 랜덤증가치는 10%로한다">
+      <IGT_E TRAINING_NAME="스트레칭" TRAINING_EFFECT_PLUS_EXP="10" NEED_PLAYER_LEVEL="0" />
+      <IGT_D TRAINING_NAME="25M왕복" TRAINING_EFFECT_PLUS_EXP="20" NEED_PLAYER_LEVEL="0" />
+      <IGT_C TRAINING_NAME="쉐도우피칭" TRAINING_EFFECT_PLUS_EXP="30" NEED_PLAYER_LEVEL="10" />
+      <IGT_B TRAINING_NAME="티배팅" TRAINING_EFFECT_PLUS_EXP="40" NEED_PLAYER_LEVEL="20" />
+      <IGT_A TRAINING_NAME="종합훈련" TRAINING_EFFECT_PLUS_EXP="50" NEED_PLAYER_LEVEL="30" />
+      <IGT_S TRAINING_NAME="특별훈련" TRAINING_EFFECT_PLUS_EXP="60" NEED_PLAYER_LEVEL="40" />
+    </TRAINER_EFFECT>
+    <OUT_OF_THE_PARK_ACTIVE HELP=" OPEN 에서 제외_장외활동 선택시 요구시간_필요 레벨_보상 게임머니_추가보상아이템의 종류">
+      <FANMEETING NEED_TIME="1" NEED_LEVEL="0" REWARD_MONEY="500" REWARD_ITEM="STUFFITEM_E_GRADE" />
+      <BASEBALL_STUDY_TEACHER NEED_TIME="2" NEED_LEVEL="0" REWARD_MONEY="1000" REWARD_ITEM="STUFFITEM_D_GRADE" />
+      <LECTURE NEED_TIME="24" NEED_LEVEL="30" REWARD_MONEY="2000" REWARD_ITEM="STUFFITEM_C_GRADE" />
+      <CHARITY_GAME NEED_TIME="24" NEED_LEVEL="50" REWARD_MONEY="5000" REWARD_ITEM="STUFFITEM_B_GRADE" />
+      <TEAM_COMMERCIAL_MESSAGE NEED_TIME="48" NEED_LEVEL="70" REWARD_MONEY="20000" REWARD_ITEM="STUFFITEM_A_GRADE" />
+      <PLAYER_COMMERCIAL_FILM NEED_TIME="72" NEED_LEVEL="90" REWARD_MONEY="40000" REWARD_ITEM="STUFFITEM_S_GRADE" />
+    </OUT_OF_THE_PARK_ACTIVE>
+    <ITEM_UPGRADE_LOGIC>
+      <!-- 
+				가령 IGT_E급 메인아이템을 업글할수 있는 등급은 EE이며 이때 E급 스텁 아이템 5개가 필요.
+			-->
+      <IGT_E HELP="E급에서 업글 가능한 등급리스트">
+        <IGT_EE>
+          <i_IGT_E>5</i_IGT_E>
+        </IGT_EE>
+      </IGT_E>
+      <IGT_D>
+        <IGT_DE>
+          <i_IGT_E>99</i_IGT_E>
+        </IGT_DE>
+        <IGT_DD>
+          <i_IGT_D>99</i_IGT_D>
+        </IGT_DD>
+      </IGT_D>
+      <IGT_C>
+        <IGT_CE>
+          <i_IGT_E>99</i_IGT_E>
+        </IGT_CE>
+        <IGT_CD>
+          <i_IGT_D>99</i_IGT_D>
+        </IGT_CD>
+        <IGT_CC>
+          <i_IGT_C>99</i_IGT_C>
+        </IGT_CC>
+      </IGT_C>
+      <IGT_B>
+        <IGT_BE>
+          <i_IGT_E>99</i_IGT_E>
+        </IGT_BE>
+        <IGT_BD>
+          <i_IGT_D>99</i_IGT_D>
+        </IGT_BD>
+        <IGT_BC>
+          <i_IGT_C>99</i_IGT_C>
+        </IGT_BC>
+        <IGT_BB>
+          <i_IGT_B>99</i_IGT_B>
+        </IGT_BB>
+      </IGT_B>
+      <IGT_A>
+        <IGT_AE>
+          <i_IGT_E>99</i_IGT_E>
+        </IGT_AE>
+        <IGT_AD>
+          <i_IGT_D>99</i_IGT_D>
+        </IGT_AD>
+        <IGT_AC>
+          <i_IGT_C>99</i_IGT_C>
+        </IGT_AC>
+        <IGT_AB>
+          <i_IGT_B>99</i_IGT_B>
+        </IGT_AB>
+        <IGT_AA>
+          <i_IGT_A>99</i_IGT_A>
+        </IGT_AA>
+      </IGT_A>
+      <IGT_S>
+        <IGT_SE>
+          <i_IGT_E>99</i_IGT_E>
+        </IGT_SE>
+        <IGT_SD>
+          <i_IGT_D>99</i_IGT_D>
+        </IGT_SD>
+        <IGT_SC>
+          <i_IGT_C>99</i_IGT_C>
+        </IGT_SC>
+        <IGT_SB>
+          <i_IGT_B>99</i_IGT_B>
+        </IGT_SB>
+        <IGT_SA>
+          <i_IGT_A>99</i_IGT_A>
+        </IGT_SA>
+        <IGT_SS>
+          <i_IGT_A>99</i_IGT_A>
+        </IGT_SS>
+      </IGT_S>
+    </ITEM_UPGRADE_LOGIC>
+  </player_data>
+</baseball>

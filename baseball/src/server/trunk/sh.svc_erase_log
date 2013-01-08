@@ -1,0 +1,4 @@
+rm -rf svc/backup/*
+rm -rf svc/log/*
+rm -rf svc/etc/file_db/*
+

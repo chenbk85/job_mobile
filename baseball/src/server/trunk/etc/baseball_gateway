@@ -1,0 +1,66 @@
+control_center:
+    ip: 127.0.0.1
+    port: 15600
+
+service:
+    pid-file: /home/inki/svn/baseball/svc/var/run/localhost.localdomain.gateway.pid
+    port: 15620
+    ip: 10.25.21.178
+    id: 2
+    max-child: 1000
+    client-timeout: 30    # 30초
+    enable-log: true
+    skip-version-check: true
+
+log:
+    path: /home/inki/svn/baseball/svc/log
+    traffic: true
+    packet: true
+    debug: true
+    warning: true
+    info: true
+    error: true
+
+presence:   
+    ip: 127.0.0.1
+    port: 15610
+
+channels:
+# 10 골드
+  - id: 0
+    max_user: 4000
+    low_rank: 1
+    high_rank: 3
+
+# 1천 골드
+  - id: 1
+    max_user: 4000
+    low_rank: 3
+    high_rank: 5
+
+# 5만 골드
+  - id: 2
+    max_user: 4000
+    low_rank: 4
+    high_rank: 6
+
+# 50만 골드
+  - id: 3
+    max_user: 4000
+    low_rank: 5
+    high_rank: 8
+
+# 자유 - 10골드
+  - id: 4
+    max_user: 4000
+    low_rank: 0
+    high_rank: 2
+
+db:
+    ip: dbcairo.bugs.co.kr
+    port: 1521
+    user: baseball
+    password: j10
+    retry_time: 3
+    tries: 10
+

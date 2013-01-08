@@ -1,0 +1,3 @@
+10_excel_enum.xls
+
+// 공통 enum 테이블이 존재하는 xls파일명.

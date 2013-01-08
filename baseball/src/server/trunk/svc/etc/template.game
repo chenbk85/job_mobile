@@ -1,0 +1,27 @@
+control_center:
+    # CCS 서버 IP 지정
+    ip: 127.0.0.1
+    # CCS 서버 포트
+    port: 15500
+
+service:
+    # game 서버 포트
+    port: 15530
+    # 로깅 여부
+    enable-log: true
+    # pid 파일.  반드시 절대 경로를 사용해야 함
+    # 파일 이름은 호스트명.바이너리명.pid 형식으로 지정해야 함
+    pid-file: /home/pudae/svn/baseball/svc/var/run/localhost.localdomain.game.pid
+
+log:
+    # 로그 폴더 경로
+    path: ~/svc/log
+    # 각종 로그 옵션
+    traffic: true
+    packet: true
+    session: true
+    room: true
+    debug: true
+    info: true
+    warning: true
+    error: true

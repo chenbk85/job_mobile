@@ -1,0 +1,65 @@
+control_center:
+  ip: 127.0.0.1
+  port: 10000
+
+service:
+  pid-file: ../var/run/mob-yongs-mac.local.baseball_gateway.pid
+  port: 12000
+  ip: 10.25.20.37 
+  id: 3
+  max-child: 1000
+  client-timeout: 30000
+  notice-file: ~/svn/baseball/etc/notice.txt
+  enable-log: true
+  skip-version-check: true
+
+log:
+  path: ../log
+  traffic: false
+  packet: false
+  session: false
+  room: false
+  warning : true
+  info: true
+  debug: true
+  error: true
+  
+
+presence:
+  ip: 127.0.0.1
+  port: 6000
+
+
+
+
+
+channels:
+# 자유 - 10골드
+  - id: 0
+    max_user: 4000
+    low_rank: 0
+    high_rank: 2
+
+# 10 골드
+  - id: 1
+    max_user: 4000
+    low_rank: 1
+    high_rank: 3
+
+# 1천 골드
+  - id: 2
+    max_user: 4000
+    low_rank: 3
+    high_rank: 5
+
+# 5만 골드
+  - id: 3
+    max_user: 4000
+    low_rank: 4
+    high_rank: 6
+
+# 50만 골드
+  - id: 4
+    max_user: 4000
+    low_rank: 5
+    high_rank: 8

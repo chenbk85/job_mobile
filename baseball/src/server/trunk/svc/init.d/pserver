@@ -1,0 +1,32 @@
+#!/bin/bash
+
+source ../bin/common.sh
+
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/eins/local/lib:/neowiz/cpool3/lib
+export LD_LIBRARY_PATH
+export SQLRELAY_CLIENT_TIMEOUT_SHORT=300
+export SQLRELAY_CLIENT_TIMEOUT_LONG=300
+
+case $1 in
+    start)
+        echo "start presence"
+        python2.6 $SVC_PATH/presence/pserver.py >& $SVC_PATH/log/presence.log &
+
+        ;;
+    stop)
+        ps ux | egrep 'presence/pserver.py' | egrep 'python' | awk '{ print $2 }' | xargs kill -9;
+
+        ;;
+    restart)
+        $0 stop
+        $0 start
+        ;;
+
+    *)
+        N=`pwd`/$NAME
+        echo "Usage: $N {start|stop|restart}" >&2
+        exit 1
+        ;;
+esac
+
+

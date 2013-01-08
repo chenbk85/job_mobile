@@ -1,0 +1,38 @@
+#!/bin/bash
+
+source ../bin/common.sh
+
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/eins/local/lib:/neowiz/cpool3/lib:/usr/local/lib
+export LD_LIBRARY_PATH
+export SQLRELAY_CLIENT_TIMEOUT_SHORT=300
+export SQLRELAY_CLIENT_TIMEOUT_LONG=300
+
+case $1 in
+    start)
+        echo "start ccs service"
+
+        # $SVC_PATH/bin/sync_bin.sh
+        cd ${SVC_PATH}/bin
+		# --port 15500 부분을 ccs에서 사용할 포트 번호로 수정한다.
+        ./ccs --log-path=$SVC_PATH/log --config-path=$SVC_PATH/etc --port $CCS_PORT >& $SVC_PATH/log/ccs.log &
+        sleep 1
+
+        ;;
+    stop)
+        echo "stop ccs service"
+        ps ux | egrep 'ccs' | egrep 'log-path' | awk '{ print $2 }' | xargs kill -9;
+
+        ;;
+    restart)
+        $0 stop
+        $0 start
+        ;;
+
+    *)
+        N=`pwd`/$NAME
+        echo "Usage: $N {start|stop|restart}" >&2
+        exit 1
+        ;;
+esac
+
+

@@ -1,0 +1,10 @@
+sid,name,group,object_type,help
+1,T_ACORNER,1,BOT_user,유망주
+2,T_LEGEND,1,BOT_user,레전드
+3,T_DESTROYFRIENDSHIP,1,BOT_user,우정파괴자
+4,T_SLUGGER,1,BOT_user,슬러거
+5,T_DOCTORK,1,BOT_user,닥터K
+6,T_FINALKING,1,BOT_user,끝판왕
+7,T_SCROOGE,1,BOT_user,스크루지
+8,T_VVIP,1,BOT_user,고객님
+9,T_ACE,1,BOT_user,에이스

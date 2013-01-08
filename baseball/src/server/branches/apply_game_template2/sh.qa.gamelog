@@ -1,0 +1,2 @@
+tail -f ~/svc/log/qa-arpg.pmangplus.com.game.log
+

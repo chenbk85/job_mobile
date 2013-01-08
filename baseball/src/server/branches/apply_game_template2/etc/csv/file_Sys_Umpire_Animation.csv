@@ -1,0 +1,12 @@
+index,umpire_animation,animation_number,animation_filename
+1,EEAT_PLAYBALL,1,jg@pb_001
+2,EEAT_IDLE,1,jg@idle_001
+3,EEAT_IDLE,2,jg@idle_002
+4,EEAT_IDLE,3,jg@idle_003
+5,EEAT_IDLE,4,jg@idle_004
+6,EEAT_IDLE,5,jg@idle_005
+7,EEAT_IDLE,6,jg@idle_006
+8,EEAT_DECISION_PERFECT,1,jg@bsk_001
+9,EEAT_DECISION_GOOD,2,jg@bsk_002
+10,EEAT_DECISION_NORMAL,3,jg@bsk_003
+11,EEAT_DECISION_BAD,4,jg@bsk_004

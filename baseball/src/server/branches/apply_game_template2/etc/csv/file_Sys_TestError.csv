@@ -1,0 +1,4 @@
+id,name,val1,va2,erro1
+1,asdf1,21,asdf,ERR_PLAYER_CREATE_FULL
+2,asdf2,22,asdffasdsdfa,ERR_PLAYER_CREATE_FULL
+3,asdf3,1,asdffsdfds,ERR_PLAYER_CREATE_FULL

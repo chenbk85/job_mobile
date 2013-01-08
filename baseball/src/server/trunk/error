@@ -1,0 +1,311 @@
+jRECV_FROM_CLIENT_TO_BS(req_result_better_hit)
+
+
+eType = EBHT_DOUBLEHIT,10
+prev_state=010, eHitType=EBHT_DOUBLEHIT  => ??? score=1 ,state=010
+client data
+s_tbl_roundresult[uid=1001]
+db_id = 0
+grid = 0
+round_number = 0
+uid_attack = 0
+score = 0
+base_runner_state = 0
+hit_type = 10
+
+
+server data
+s_tbl_roundresult[uid=1001]
+db_id = 0
+grid = 0
+round_number = 1
+uid_attack = 1001
+score = 1
+base_runner_state = 2
+hit_type = 10
+
+
+bool CB_Client_BaseballServer(User*, const s_req_result_better_hit&)>send message : ans_result_better_hit-->(0x7fa7a343f770) void MSG::Session::send(const GAnsProtocol&)
+{pudae} at void MSG::Session::send(const GAnsProtocol&) (0x7fa7a343f770)
+@before
+write_buffer_size_ 4096
+write_buffer_length_ 0
+first write
+to_write_ 18
+@after
+write_buffer_size_ 4096
+write_buffer_length_ 18
+<--(0x7fa7a343f770) void MSG::Session::send(const GAnsProtocol&)
+
+curr calculated round = 2
+다음 라운드 실행.curr=2 tot=3
+void Room::Timer_Create(const char*, MOB_Timer_handler_t&, int)>timer_job_ans_game_round_start( sec=1 ) 
+void Room::Timer_Create(const char*, MOB_Timer_handler_t&, int) > exist timer deleting: timer_job_ans_game_round_start
+pTimer->async_wait ok(0x7fa7a34437a8) - release : 2
+(0x7fa7a3441e18) - release : 3
+<--(0x7fa7a3440c80) void MSG::Connection::handle_read(const boost::system::error_code&, size_t)
+-->(0x7fa7a343edd0) void MSG::Connection::handle_write(const boost::system::error_code&)
+@complete
+write_buffer_size_ 4096
+write_buffer_length_ 0
+to_write_ 0
+<--(0x7fa7a343edd0) void MSG::Connection::handle_write(const boost::system::error_code&)
+
+void timer_job_ans_game_round_start(Room*)>send message : ans_game_round_start-->(0x7fa7a343f770) void MSG::Session::send(const GAnsProtocol&)
+{pudae} at void MSG::Session::send(const GAnsProtocol&) (0x7fa7a343f770)
+@before
+write_buffer_size_ 4096
+write_buffer_length_ 0
+first write
+to_write_ 16
+@after
+write_buffer_size_ 4096
+write_buffer_length_ 16
+<--(0x7fa7a343f770) void MSG::Session::send(const GAnsProtocol&)
+-->(0x7fa7a3443760) void MSG::Session::send(const GAnsProtocol&)
+{pudae} at void MSG::Session::send(const GAnsProtocol&) (0x7fa7a3443760)
+@before
+write_buffer_size_ 4096
+write_buffer_length_ 0
+first write
+to_write_ 16
+@after
+write_buffer_size_ 4096
+write_buffer_length_ 16
+<--(0x7fa7a3443760) void MSG::Session::send(const GAnsProtocol&)
+
+
+
+send : ans_game_round_start : runner state= ERSR_1
+
+
+-->(0x7fa7a343edd0) void MSG::Connection::handle_write(const boost::system::error_code&)
+@complete
+write_buffer_size_ 4096
+write_buffer_length_ 0
+to_write_ 0
+<--(0x7fa7a343edd0) void MSG::Connection::handle_write(const boost::system::error_code&)
+-->(0x7fa7a3440c80) void MSG::Connection::handle_write(const boost::system::error_code&)
+@complete
+write_buffer_size_ 4096
+write_buffer_length_ 0
+to_write_ 0
+<--(0x7fa7a3440c80) void MSG::Connection::handle_write(const boost::system::error_code&)
+-->(0x7fa7a343edd0) void MSG::Connection::handle_read(const boost::system::error_code&, size_t)
+-->(0x7fa7a343edd0) virtual bool MSG::Connection::dispatch(unsigned char*, size_t)
+(0x7fa7a3441e18) - grab : 4
+(0x7fa7a343f7b8) - grab : 3
+
+[WARNING]:/Users/yongs/svn/baseball/game/user.cpp:175 virtual bool User::on_detach(const GReqDetach&)>
+[WARNING]virtual bool User::on_detach(const GReqDetach&) : uid = 1002(0x7fa7a343f7b8) - release : 2
+(0x7fa7a3441e18) - release : 3
+<--(0x7fa7a343edd0) void MSG::Connection::handle_read(const boost::system::error_code&, size_t)
+-->(0x7fa7a343edd0) void MSG::Connection::handle_read(const boost::system::error_code&, size_t)
+-->(0x7fff69081a88) void MSG::ConnectionManager::stop(boost::shared_ptr<MSG::Connection>)
+-->(0x7fa7a343edd0) void MSG::Connection::stop()
+-->(0x7fa7a343edd0) bool MSG::Connection::handle_disconnect()
+ROOM #359
+  Category : 0
+  Channel : 0
+  Session (2)
+{pudae}/Users/yongs/svn/MSG/src/game/connection.cpp:916 room:3 session:2 at bool MSG::Connection::handle_disconnect() (0x7fa7a343edd0)
+-->(0x7fa7a3441dd0) virtual int MSG::Room::leave(MSG::Session*, bool)
+ROOM #359
+  Category : 0
+  Channel : 0
+  Session (2)
+
+<<< virtual int Room::on_leave(MSG::Session*, bool):255(/Users/yongs/svn/baseball/game/room.cpp) Room:359>>> -->(0x7fa7a3441dd0) bool MSG::Room::remove_session(int)
+remove session at bool MSG::Room::remove_session(int) (0x7fa7a3441dd0)
+ERASE SESSION in SESSION LIST at bool MSG::Room::remove_session(int) (0x7fa7a3441dd0)
+(0x7fa7a343f7b8) - release : 1
+(0x7fa7a3441e18) - release : 2
+<--(0x7fa7a3441dd0) bool MSG::Room::remove_session(int)
+<--(0x7fa7a3441dd0) virtual int MSG::Room::leave(MSG::Session*, bool)
+{pudae}/Users/yongs/svn/MSG/src/game/connection.cpp:920 room:2 session:1 at bool MSG::Connection::handle_disconnect() (0x7fa7a343edd0)
+
+virtual void User::on_disconnect(const char*, int) : uid = 1002session ref: 1 at bool MSG::Connection::handle_disconnect() (0x7fa7a343edd0)
+(0x7fa7a343f7b8) - release : 0
+-->(0x7fa7a343f770) virtual void MSG::Session::remove_self()
+
+<<< virtual User::~User():32(/Users/yongs/svn/baseball/game/user.cpp) >>> -->(0x7fa7a343f770) virtual MSG::Session::~Session()
+<--(0x7fa7a343f770) virtual MSG::Session::~Session()
+-->(0x7fa7a343f770) virtual MSG::Watch::~Watch()
+stop watch timer at virtual MSG::Watch::~Watch() (0x7fa7a343f770)
+<--(0x7fa7a343f770) virtual MSG::Watch::~Watch()
+<--(0x7fa7a343f770) virtual void MSG::Session::remove_self()
+<--(0x7fa7a343edd0) bool MSG::Connection::handle_disconnect()
+socket closed at void MSG::Connection::stop() (0x7fa7a343edd0)
+<--(0x7fa7a343edd0) void MSG::Connection::stop()
+<--(0x7fff69081a88) void MSG::ConnectionManager::stop(boost::shared_ptr<MSG::Connection>)
+-->(0x7fa7a343edd0) virtual MSG::Connection::~Connection()
+<--(0x7fa7a343edd0) virtual MSG::Connection::~Connection()
+-->(0x7fa7a3440c80) void MSG::Connection::handle_read(const boost::system::error_code&, size_t)
+-->(0x7fff69081a88) void MSG::ConnectionManager::stop(boost::shared_ptr<MSG::Connection>)
+-->(0x7fa7a3440c80) void MSG::Connection::stop()
+-->(0x7fa7a3440c80) bool MSG::Connection::handle_disconnect()
+ROOM #359
+  Category : 0
+  Channel : 0
+  Session (1)
+{pudae}/Users/yongs/svn/MSG/src/game/connection.cpp:916 room:2 session:2 at bool MSG::Connection::handle_disconnect() (0x7fa7a3440c80)
+-->(0x7fa7a3441dd0) virtual int MSG::Room::leave(MSG::Session*, bool)
+ROOM #359
+  Category : 0
+  Channel : 0
+  Session (1)
+
+<<< virtual int Room::on_leave(MSG::Session*, bool):255(/Users/yongs/svn/baseball/game/room.cpp) Room:359>>> -->(0x7fa7a3441dd0) bool MSG::Room::remove_session(int)
+remove session at bool MSG::Room::remove_session(int) (0x7fa7a3441dd0)
+ERASE SESSION in SESSION LIST at bool MSG::Room::remove_session(int) (0x7fa7a3441dd0)
+(0x7fa7a34437a8) - release : 1
+(0x7fa7a3441e18) - release : 1
+<--(0x7fa7a3441dd0) bool MSG::Room::remove_session(int)
+
+<<< virtual void Room::on_destroy():89(/Users/yongs/svn/baseball/game/room.cpp) Room:359>>> (0x7fa7a3441e18) - release : 0
+destroy room #359
+-->(0x7fa7a3441dd0) virtual MSG::Room::~Room()
+room destroyed at virtual MSG::Room::~Room() (0x7fa7a3441dd0)
+<--(0x7fa7a3441dd0) virtual MSG::Room::~Room()
+-->(0x7fa7a3441dd0) virtual MSG::Watch::~Watch()
+stop watch timer at virtual MSG::Watch::~Watch() (0x7fa7a3441dd0)
+<--(0x7fa7a3441dd0) virtual MSG::Watch::~Watch()
+{pudae}/Users/yongs/svn/MSG/src/game/connection.cpp:920 room:0 session:1 at bool MSG::Connection::handle_disconnect() (0x7fa7a3440c80)
+
+virtual void User::on_disconnect(const char*, int) : uid = 1001session ref: 1 at bool MSG::Connection::handle_disconnect() (0x7fa7a3440c80)
+(0x7fa7a34437a8) - release : 0
+-->(0x7fa7a3443760) virtual void MSG::Session::remove_self()
+
+<<< virtual User::~User():32(/Users/yongs/svn/baseball/game/user.cpp) >>> -->(0x7fa7a3443760) virtual MSG::Session::~Session()
+<--(0x7fa7a3443760) virtual MSG::Session::~Session()
+-->(0x7fa7a3443760) virtual MSG::Watch::~Watch()
+stop watch timer at virtual MSG::Watch::~Watch() (0x7fa7a3443760)
+<--(0x7fa7a3443760) virtual MSG::Watch::~Watch()
+<--(0x7fa7a3443760) virtual void MSG::Session::remove_self()
+<--(0x7fa7a3440c80) bool MSG::Connection::handle_disconnect()
+socket closed at void MSG::Connection::stop() (0x7fa7a3440c80)
+<--(0x7fa7a3440c80) void MSG::Connection::stop()
+<--(0x7fff69081a88) void MSG::ConnectionManager::stop(boost::shared_ptr<MSG::Connection>)
+-->(0x7fa7a3440c80) virtual MSG::Connection::~Connection()
+<--(0x7fa7a3440c80) virtual MSG::Connection::~Connection()
+^C-->(0x1098b7c60) void MSG::Timer::Deinitialize()
+not removed timer size:0 at void MSG::Timer::Deinitialize() (0x1098b7c60)
+<--(0x1098b7c60) void MSG::Timer::Deinitialize()
+-->(0x7fff69081a88) void MSG::ConnectionManager::stop_all()
+<--(0x7fff69081a88) void MSG::ConnectionManager::stop_all()
+stop game server
+-->(0x7fa7a343fab0) virtual MSG::Connection::~Connection()
+<--(0x7fa7a343fab0) virtual MSG::Connection::~Connection()
+mob-yongs-mac:game yongs$ 
+mob-yongs-mac:game yongs$ ./baseball_game 
+virtual void nMech::nLOG::jBase_Log::SetFileName(const char*)>log file : /Users/yongs/svn/baseball/game/log/[2012-7-24]/logfile.log
+jBase_Log() ok
+initizlise server...
+
+jLOG on
+.
+i_MAX_FRIEND = 50(EDint)
+i_TOTAL_ROUND = 3(EDint)
+i_MAX_PLAYER_CREATE_NUM = 3(EDint)
+i_MAX_FRIEND_RECORD_MONTH = 1(EDint)
+i_DEFAULT_USER_TEAM_COUNT = 2(EDint)
+i_MAX_USER_TEAM_COUNT = 5(EDint)
+i_MAX_PITCHER_SKILL_COUNT = 10(EDint)
+i_MAX_PITCHER_SKILL_EQUIP = 5(EDint)
+i_TIME_1_PLAYER_READY = 10(EDint)
+i_TIME_ALL_PLAYER_NOT_READY = 20(EDint)
+i_TIME_ALL_PLAYER_READY = 1(EDint)
+i_TIME_PLAYER_INTRODUCE = 1(EDint)
+i_TIME_GAME_FIRST_ATTACK_DECIDE_COUNT = 1(EDint)
+i_WAIT_TIME_PITCHER_THROW = 12(EDint)
+i_WAIT_TIME_BATTER_HIT = 5(EDint)
+i_TIME_GAME_ROUND_CHANGE_TEAM = 1(EDint)
+i_TIME_RESULT_WHEN_AUTOPLAY = 20(EDint)
+i_TIME_GAME_ROUND = 1(EDint)
+i_TIME_GAME_ROUND_TEAMCHANGE = 1(EDint)
+i_TIME_GAME_ROUND_END = 1(EDint)
+i_THROW_PER_ROUND = 9(EDint)
+i_ROUND_PER_GAME = 1(EDint)
+i_MAX_PLAYING_USER = 2(EDint)
+i_PITCHER_THROW_POSITION_SIZE = 9(EDint)
+b_IS_FIRST_ATTACK_USER_IS_RANDOM = false(EDbool)
+i_ID_PACKAGE = 5000(EDint)
+file load skipped: /Users/yongs/svn/baseball/game/../etc/csv/file_Sys_Base_PlayerStat.csv
+LOAD OK /Users/yongs/svn/baseball/game/../etc/csv/file_Sys_Daily_Quest.csv
+LOAD OK /Users/yongs/svn/baseball/game/../etc/csv/file_Sys_PlayerCard.csv
+LOAD OK /Users/yongs/svn/baseball/game/../etc/csv/file_Sys_PlayerLevel.csv
+LOAD OK /Users/yongs/svn/baseball/game/../etc/csv/file_Sys_PlayerSkillSticker.csv
+LOAD OK /Users/yongs/svn/baseball/game/../etc/csv/file_Sys_Quest.csv
+LOAD OK /Users/yongs/svn/baseball/game/../etc/csv/file_Sys_ItemEquip.csv
+LOAD OK /Users/yongs/svn/baseball/game/../etc/csv/file_Sys_ItemStuff.csv
+LOAD OK /Users/yongs/svn/baseball/game/../etc/csv/file_Sys_ItemConsume.csv
+LOAD OK /Users/yongs/svn/baseball/game/../etc/csv/file_Sys_BreakingBallUpgrade.csv
+LOAD OK /Users/yongs/svn/baseball/game/../etc/csv/file_Sys_Error.csv
+LOAD OK /Users/yongs/svn/baseball/game/../etc/csv/file_Sys_Runner_State.csvcontrol_center:
+    ip: 127.0.0.1
+    port: 10000
+
+service:
+    port: 13000
+    enable-log: true
+    pid-file: ../var/run/mob-yongs-mac.local.baseball_game.pid
+
+log:
+    path: ../log
+    traffic: false
+    packet: true
+    session: true
+    room: true
+
++++fetch_config()
+start baseball_game game service(1.1204010.351.265) (mob-yongs-mac.local:13000 port)
+-->(0x7faf78440c80) MSG::Connection::Connection(boost::asio::io_service&, MSG::ConnectionManager&)
+<--(0x7faf78440c80) MSG::Connection::Connection(boost::asio::io_service&, MSG::ConnectionManager&)
+-->(0x10a277c60) void MSG::Timer::Initialize(boost::asio::io_service*)
+<--(0x10a277c60) void MSG::Timer::Initialize(boost::asio::io_service*)
+-->(0x7fff69a41a88) void MSG::ConnectionManager::start(boost::shared_ptr<MSG::Connection>)
+-->(0x7faf78440c80) void MSG::Connection::start()
+-->(0x7faf78440c80) void MSG::Connection::check_read_deadline()
+<--(0x7faf78440c80) void MSG::Connection::check_read_deadline()
+-->(0x7faf78440c80) void MSG::Connection::check_write_deadline()
+<--(0x7faf78440c80) void MSG::Connection::check_write_deadline()
+<--(0x7faf78440c80) void MSG::Connection::start()
+<--(0x7fff69a41a88) void MSG::ConnectionManager::start(boost::shared_ptr<MSG::Connection>)
+-->(0x7faf78441e50) MSG::Connection::Connection(boost::asio::io_service&, MSG::ConnectionManager&)
+<--(0x7faf78441e50) MSG::Connection::Connection(boost::asio::io_service&, MSG::ConnectionManager&)
+-->(0x7faf78440c80) void MSG::Connection::handle_read(const boost::system::error_code&, size_t)
+-->(0x7faf78440c80) virtual bool MSG::Connection::dispatch(unsigned char*, size_t)
+-->(0x7faf78440c80) bool MSG::Connection::handle_game_enter(const GReqGameEnter&)
+-->(0x7faf784430f0) MSG::Watch::Watch(boost::asio::io_service&)
+<--(0x7faf784430f0) MSG::Watch::Watch(boost::asio::io_service&)
+-->(0x7faf784430f0) MSG::Session::Session(int)
+<--(0x7faf784430f0) MSG::Session::Session(int)
+
+<<< User::User(int):24(/Users/yongs/svn/baseball/game/user.cpp) >>> -->(0x7faf78440c80) void MSG::Connection::associate(MSG::Session*)
+(0x7faf78443138) - grab : 1
+
+virtual void User::on_connect() : uid = 1001session ref: 1 at void MSG::Connection::associate(MSG::Session*) (0x7faf78440c80)
+<--(0x7faf78440c80) void MSG::Connection::associate(MSG::Session*)
+-->(0x7faf784433b0) MSG::Watch::Watch(boost::asio::io_service&)
+<--(0x7faf784433b0) MSG::Watch::Watch(boost::asio::io_service&)
+{pudae} at MSG::Room::Room(int, int, int) (0x7faf784433b0)
+-->(0x7faf784433b0) MSG::Room::Room(int, int, int)
+<--(0x7faf784433b0) MSG::Room::Room(int, int, int)
+create room #698
+(0x7faf784433f8) - grab : 1
+CREATE ROOM at bool MSG::Connection::handle_game_enter(const GReqGameEnter&) (0x7faf78440c80)
+
+<<< virtual void Room::on_create():80(/Users/yongs/svn/baseball/game/room.cpp) Room:698>>> 
+<<< virtual void User::set_info(const std::string&):47(/Users/yongs/svn/baseball/game/user.cpp) >>> 
+s_tbl_user
+win_tot = 13
+lose_tot = 0
+win_season = 13
+lose_season = 0
+win_continue = 0
+lose_continue = 4
+win_tot_single = 0
+lose_tot_single = 0
+win_season_single = 0
+lose_season_single = 0
+:wq

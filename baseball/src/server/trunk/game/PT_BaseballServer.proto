@@ -1,0 +1,484 @@
+
+//from(d:\svn\common\server\tool\umlpad\baseball\code\pt_baseballserver.xml)
+
+//[[begin of d:\svn\common\server\tool\umlpad\baseball\proto_code_begin.txt
+
+//option optimize_for = LITE_RUNTIME;
+
+import "excel_baseball_table_db.proto";
+import "gameLogic.proto";
+
+
+
+
+//]]end of d:\svn\common\server\tool\umlpad\baseball\proto_code_begin.txt
+
+
+
+
+// Packet type specification
+
+enum EUserGPS_notuse {
+	_notuseGPS_LOGOUT = 0;
+	_notuseGPS_LOGIN_OK = 1;
+	_notuseGPS_SHOP = 2;
+	_notuseGPS_GAMEROOM = 3;
+} // end of enum EUserGPS_notuse
+
+
+
+//\bb_2.3.1_msg_ureqautojoin.usd
+message s_ans_join_room {
+	optional GameRoomInfo gri = 1;
+}
+
+//\bb_2.3.1_msg_ureqautojoin.usd
+message s_req_room_state {
+	optional int32 room = 1;
+}
+
+//\bb_2.3.1_msg_ureqautojoin.usd
+message s_ans_room_state {
+	optional GameRoomInfo gri = 1;
+}
+
+//bb_3.1.5-bs_admin.usd
+//type 의미 
+//0-99 : send to me
+//100-199 : send to other
+//200 이상 : send to all
+message s_x2bs_echo {
+	optional int32 type = 1;
+	optional string msg = 2;
+	optional int32 client_time_msec = 3;
+}
+
+//bb_3.1.5-bs_admin.usd
+//type msg client_time_msec은 
+//x2bs_echo에서 보낸 데이타를 
+//그대로 서버가 클라로 보냄.
+//bs_time_msec는 게임서버의 현제시간이다&#x0A;
+message s_bs2x_echo {
+	optional int32 type = 1;
+	optional string msg = 2;
+	optional int32 client_time_msec = 3;
+	optional int64 bs_time_msec = 4;
+}
+
+//\bb_3.1.5-bs_admin.usd
+message s_req_chat {
+	optional int32 type = 1;
+	optional string msg = 2;
+	optional string etc = 3;
+}
+
+//bb_3.1.5-bs_admin.usd
+//채팅응답&#x0A;
+message s_ans_chat {
+	optional int32 type = 1;
+	optional string msg = 2;
+	optional string etc = 3;
+}
+
+//bb_3.1.5-bs_admin.usd
+//클라에서 req_timer_start가 오면 &#x0A;term초만큼 주기적으로 해당방의 
+//클라에 msg를 보냄
+message s_ans_timer_start {
+	optional int32 count = 1;
+	optional string msg = 2;
+}
+
+//bb_3.1.5-bs_admin.usd
+//term초 마다 서버에서 메세지를 보내라가 요청. 
+//term=0이면 메세지보내기중지
+message s_req_timer_start {
+	optional int32 term = 1;
+	optional string msg = 2;
+}
+
+//\bb_3.1.5-bs_admin.usd
+message s_req_do_disconnect {
+	optional string reason = 1;
+}
+
+//\bb_3.1.5-bs_admin.usd
+message s_x2bs_echo2 {
+	optional int32 type = 1;
+	optional string msg = 2;
+	optional int32 client_time_msec = 3;
+}
+
+//bb_3.1.5-bs_admin.usd
+//주석
+message s_bs2x_echo2 {
+	optional int32 type = 1;
+	optional string msg = 2;
+	optional int32 client_time_msec = 3;
+	optional int64 bs_time_msec = 4;
+	optional int32 etc = 5;
+}
+
+//\bb_3.1.5-bs_admin.usd
+message s_ans_bs_error {
+	optional int32 sys_error_id = 1;
+}
+
+//\bb_3.1.5-bs_admin.usd
+message s_req_get_cvar {
+	optional string name = 1;
+}
+
+//\bb_3.1.5-bs_admin.usd
+message s_req_set_cvar {
+	optional string name = 1;
+	optional string val = 2;
+}
+
+//\bb_3.1.5-bs_admin.usd
+message s_bs2ug_set_cvar {
+	optional string name = 1;
+	optional string val = 2;
+}
+
+//\bb_3.1.5-bs_admin.usd
+message s_ug2bs_ans_set_cvar {
+	optional string name = 1;
+	optional string val = 2;
+}
+
+//\bb_5.2.5_ug_match.usd
+message s_x2bs_auto_match_ready2 {
+	optional int64 uid = 1;
+	optional int32 batter = 2;
+	optional int32 pitcher = 3;
+}
+
+//bb_5.2.5_ug_match.usd
+message s_bs2x_auto_match_ready2 {
+	optional int64 uid = 1;
+	optional int32 batter = 2;
+	optional int32 pitcher = 3;
+	optional int32 other_batter = 4;
+	optional int32 other_pitcher = 5;
+}
+
+//\bb_5.2.5_ug_match.usd
+message s_ans_game_start {
+	optional int64 attack_user = 1;
+	optional int32 sid_Sys_Runner_State = 2;
+	optional int32 baseball_park = 3;
+}
+
+//bb_5.2.5_ug_match.usd
+//서버가 ans_game_start를 보낸후 
+//GAME_FIRST_ROUND_WAIT_TIME만큼
+//기다리고 ans_game_round_start를 보낸다.
+//또한 GAME_PITCHER_THROW_WAIT_TIME_COUNT만큼
+//기다려도 req_pitcher_throw가 안날라오면&#x0A;timer_out_req_pitcher_throw에 의해 자동으로 
+//ans_pitcher_throw가 날라간다.
+message s_ans_game_round_start {
+	optional int32 round = 1;
+	optional int32 runner_state = 2;
+}
+
+//\bb_5.2.5_ug_match.usd
+message s_x2bs_match_ready {
+	optional int64 uid = 1;
+}
+
+//\bb_5.2.5_ug_match.usd
+message s_bs2x_match_ready {
+	optional int64 uid = 1;
+}
+
+//bb_5.2.6_ug_match_round.usd
+message s_req_pitcher_throw {
+	optional s_pitcher_throw_info info = 1;
+	optional int32 used_gesturetype = 2;
+	optional int32 gesturetype_input_error = 3;
+}
+
+//\bb_5.2.6_ug_match_round.usd
+message s_ans_pitcher_throw {
+	optional s_pitcher_throw_info info = 1;
+	optional bool is_auto = 2;
+}
+
+//\bb_5.2.6_ug_match_round.usd
+message s_req_better_hit {
+	optional s_better_hit_info info = 1;
+}
+
+//\bb_5.2.6_ug_match_round.usd
+message s_ans_better_hit {
+	optional s_better_hit_info info = 1;
+	optional bool is_auto = 2;
+}
+
+//\bb_5.2.6_ug_match_round.usd
+message s_req_result_better_hit {
+	optional s_result_round info = 1;
+	optional int32 test = 2;
+}
+
+//bb_5.2.6_ug_match_round.usd
+message s_ans_result_better_hit {
+	optional s_result_round info = 1;
+	optional int32 end_type = 2;
+}
+
+message s_x2bs_batter_ready {
+}
+
+message s_bs2x_batter_ready {
+}
+
+//bb_5.2.7_ug_match_end.usd
+//TOTAL_ROUND만큼 지나면 공수전환.
+message s_ans_change_attack_team {
+	optional int32 round = 1;
+	optional int64 attack_user = 2;
+}
+
+//bb_5.2.7_ug_match_end.usd
+//만약 TOTAL_ROUND*2만큼 지나면 게임끝낸다.
+//자신의 게임결과정보를 받는다.
+message s_ans_game_end {
+	optional s_result_game rg = 1;
+	optional s_tbl_user user = 2;
+	optional int32 end_type = 3;
+}
+
+//bb_5.2.7_ug_match_end.usd
+//게임 결과시 자신의 정보를 다른 유저에게 전달&#x0A;
+message s_bs2x_game_end_other_user_info {
+	optional s_tbl_user other_user = 1;
+}
+
+//bb_5.2.7_ug_match_end.usd
+//게임 결과 DB 저장&#x0A;
+message s_bs2ug_game_end {
+	optional s_result_game rg = 1;
+	optional bool is_better = 2;
+	repeated s_result_round rr = 3;
+	optional int32 end_type = 4;
+}
+
+//bb_5.2.7_ug_match_end.usd
+message s_ug2bs_game_end {
+	optional s_result_game rg = 1;
+	optional s_tbl_user user = 2;
+}
+
+//\bb_5.2.8_ug_match_round_user_out.usd
+message s_ans_user_disconnect {
+	optional int64 uid = 1;
+	optional int32 sys_error_id = 2;
+}
+
+//\bb_5.2.9_bs_rematch.usd
+message s_req_rematch {
+	optional int64 uid = 1;
+}
+
+//\bb_5.2.9_bs_rematch.usd
+message s_ans_rematch {
+	optional int64 uid = 1;
+}
+
+//\bb_5.2.9_bs_rematch.usd
+message s_req_answer_restart_game {
+	optional int64 uid = 1;
+	optional bool ok = 2;
+}
+
+//bb_5.2.9_bs_rematch.usd
+//ok=false 면 둘다 자동으로 나감.
+//ok=true면 서버에서는&#x0A;i_TIME_ALL_PLAYER_NOT_READY(5)초 후에 
+//ans_game_start를 다시 보낸다.
+message s_ans_answer_restart_game {
+	repeated int64 uid = 1;
+	repeated bool ok = 2;
+	optional int32 baseball_park = 3;
+	optional int64 attack_user = 4;
+}
+
+//\bb_6.1.5_bs_ug_etc.usd
+message s_ug2bs_echo {
+	optional int32 type = 1;
+	optional string msg = 2;
+	optional int64 bs_time_msec = 3;
+	optional int64 ug_time_msec = 4;
+}
+
+//\bb_6.1.5_bs_ug_etc.usd
+message s_bs2ug_echo {
+	optional int32 type = 1;
+	optional string msg = 2;
+	optional int64 bs_time_msec = 3;
+	optional int64 ug_time_msec = 4;
+}
+
+//\bb_6.1.5_bs_ug_etc.usd
+message s_ug2bs_error {
+	optional int32 sys_error_id = 1;
+}
+
+//\bb_6.1.5_bs_ug_etc.usd
+message s_bs2ug_error {
+	optional int32 sys_error_id = 1;
+}
+
+//bb_6.1.5_bs_ug_etc.usd
+//만약 플레이도중 유저가 disconnect되면&#x0A;Tbl_User의 discon_tot값을 증가.
+message s_bs2ug_add_discon_tot {
+	optional int64 discon_uid = 1;
+}
+
+//\bb_6.1.5_bs_ug_etc.usd
+message s_ug2bs_add_discon_tot {
+	optional int64 discon_uid = 1;
+}
+
+
+message BaseballServer_UserGateServer {
+	enum Type {
+		NONE = 1;
+
+		bs2ug_set_cvar = 2;
+		bs2ug_game_end = 3;
+		bs2ug_echo = 4;
+		bs2ug_error = 5;
+		bs2ug_add_discon_tot = 6;
+	}
+
+	required Type type = 1;
+
+	optional s_bs2ug_set_cvar m_bs2ug_set_cvar = 2;
+	optional s_bs2ug_game_end m_bs2ug_game_end = 3;
+	optional s_bs2ug_echo m_bs2ug_echo = 4;
+	optional s_bs2ug_error m_bs2ug_error = 5;
+	optional s_bs2ug_add_discon_tot m_bs2ug_add_discon_tot = 6;
+}
+//end of message BaseballServer_UserGateServer
+
+
+message BaseballServer_Client {
+	enum Type {
+		NONE = 1;
+
+		ans_join_room = 2;
+		ans_room_state = 3;
+		bs2x_echo = 4;
+		ans_chat = 5;
+		ans_timer_start = 6;
+		bs2x_echo2 = 7;
+		ans_bs_error = 8;
+		bs2x_auto_match_ready2 = 9;
+		ans_game_start = 10;
+		ans_game_round_start = 11;
+		bs2x_match_ready = 12;
+		ans_pitcher_throw = 13;
+		ans_better_hit = 14;
+		ans_result_better_hit = 15;
+		bs2x_batter_ready = 16;
+		ans_change_attack_team = 17;
+		ans_game_end = 18;
+		bs2x_game_end_other_user_info = 19;
+		ans_user_disconnect = 20;
+		ans_rematch = 21;
+		ans_answer_restart_game = 22;
+	}
+
+	required Type type = 1;
+
+	optional s_ans_join_room m_ans_join_room = 2;
+	optional s_ans_room_state m_ans_room_state = 3;
+	optional s_bs2x_echo m_bs2x_echo = 4;
+	optional s_ans_chat m_ans_chat = 5;
+	optional s_ans_timer_start m_ans_timer_start = 6;
+	optional s_bs2x_echo2 m_bs2x_echo2 = 7;
+	optional s_ans_bs_error m_ans_bs_error = 8;
+	optional s_bs2x_auto_match_ready2 m_bs2x_auto_match_ready2 = 9;
+	optional s_ans_game_start m_ans_game_start = 10;
+	optional s_ans_game_round_start m_ans_game_round_start = 11;
+	optional s_bs2x_match_ready m_bs2x_match_ready = 12;
+	optional s_ans_pitcher_throw m_ans_pitcher_throw = 13;
+	optional s_ans_better_hit m_ans_better_hit = 14;
+	optional s_ans_result_better_hit m_ans_result_better_hit = 15;
+	optional s_bs2x_batter_ready m_bs2x_batter_ready = 16;
+	optional s_ans_change_attack_team m_ans_change_attack_team = 17;
+	optional s_ans_game_end m_ans_game_end = 18;
+	optional s_bs2x_game_end_other_user_info m_bs2x_game_end_other_user_info = 19;
+	optional s_ans_user_disconnect m_ans_user_disconnect = 20;
+	optional s_ans_rematch m_ans_rematch = 21;
+	optional s_ans_answer_restart_game m_ans_answer_restart_game = 22;
+}
+//end of message BaseballServer_Client
+
+
+message UserGateServer_BaseballServer {
+	enum Type {
+		NONE = 1;
+
+		ug2bs_ans_set_cvar = 2;
+		ug2bs_game_end = 3;
+		ug2bs_echo = 4;
+		ug2bs_error = 5;
+		ug2bs_add_discon_tot = 6;
+	}
+
+	required Type type = 1;
+
+	optional s_ug2bs_ans_set_cvar m_ug2bs_ans_set_cvar = 2;
+	optional s_ug2bs_game_end m_ug2bs_game_end = 3;
+	optional s_ug2bs_echo m_ug2bs_echo = 4;
+	optional s_ug2bs_error m_ug2bs_error = 5;
+	optional s_ug2bs_add_discon_tot m_ug2bs_add_discon_tot = 6;
+}
+//end of message UserGateServer_BaseballServer
+
+
+message Client_BaseballServer {
+	enum Type {
+		NONE = 1;
+
+		req_room_state = 2;
+		x2bs_echo = 3;
+		req_chat = 4;
+		req_timer_start = 5;
+		req_do_disconnect = 6;
+		x2bs_echo2 = 7;
+		req_get_cvar = 8;
+		req_set_cvar = 9;
+		x2bs_auto_match_ready2 = 10;
+		x2bs_match_ready = 11;
+		req_pitcher_throw = 12;
+		req_better_hit = 13;
+		req_result_better_hit = 14;
+		x2bs_batter_ready = 15;
+		req_rematch = 16;
+		req_answer_restart_game = 17;
+	}
+
+	required Type type = 1;
+
+	optional s_req_room_state m_req_room_state = 2;
+	optional s_x2bs_echo m_x2bs_echo = 3;
+	optional s_req_chat m_req_chat = 4;
+	optional s_req_timer_start m_req_timer_start = 5;
+	optional s_req_do_disconnect m_req_do_disconnect = 6;
+	optional s_x2bs_echo2 m_x2bs_echo2 = 7;
+	optional s_req_get_cvar m_req_get_cvar = 8;
+	optional s_req_set_cvar m_req_set_cvar = 9;
+	optional s_x2bs_auto_match_ready2 m_x2bs_auto_match_ready2 = 10;
+	optional s_x2bs_match_ready m_x2bs_match_ready = 11;
+	optional s_req_pitcher_throw m_req_pitcher_throw = 12;
+	optional s_req_better_hit m_req_better_hit = 13;
+	optional s_req_result_better_hit m_req_result_better_hit = 14;
+	optional s_x2bs_batter_ready m_x2bs_batter_ready = 15;
+	optional s_req_rematch m_req_rematch = 16;
+	optional s_req_answer_restart_game m_req_answer_restart_game = 17;
+}
+//end of message Client_BaseballServer
+

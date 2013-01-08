@@ -1,0 +1,4 @@
+pushd ~/svc/bin
+~/svc/bin/baseball.sh restart
+popd
+

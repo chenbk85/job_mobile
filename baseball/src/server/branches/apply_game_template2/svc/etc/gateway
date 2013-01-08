@@ -1,0 +1,17 @@
+service:
+    port: 15200
+    ip: 182.162.130.57
+    id: 2
+    max-child: 1000
+    client-timeout: 30    # 30초
+    enable-log: true
+    skip-version-check: true
+
+log:
+    path: /home/baseball/svc/log
+    traffic: false
+    packet: true
+
+presence:   
+    ip: 127.0.0.1
+    port: 15100

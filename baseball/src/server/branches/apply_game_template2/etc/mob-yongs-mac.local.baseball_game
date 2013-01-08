@@ -1,0 +1,15 @@
+control_center:
+    ip: 127.0.0.1
+    port: 10000
+
+service:
+    port: 13000
+    enable-log: true
+    pid-file: ../var/run/mob-yongs-mac.local.baseball_game.pid
+
+log:
+    path: ../log
+    traffic: false
+    packet: true
+    session: true
+    room: true

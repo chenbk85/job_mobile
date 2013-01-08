@@ -1,0 +1,34 @@
+#!/bin/bash
+
+source ../bin/common.sh
+
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/eins/local/lib:/neowiz/cpool3/lib:/usr/local/lib
+export LD_LIBRARY_PATH
+export SQLRELAY_CLIENT_TIMEOUT_SHORT=300
+export SQLRELAY_CLIENT_TIMEOUT_LONG=300
+
+
+case $1 in
+    start)
+        echo "start gameserver"
+
+        $SVC_PATH/bin/service game start
+
+        ;;
+    stop)
+        echo "stop gameserver"
+
+        $SVC_PATH/bin/service game stop
+
+        ;;
+    restart)
+        $0 stop
+        $0 start
+        ;;
+
+    *)
+        N=`pwd`/$NAME
+        echo "Usage: $N {start|stop|restart}" >&2
+        exit 1
+        ;;
+esac

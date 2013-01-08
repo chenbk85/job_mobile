@@ -1,0 +1,424 @@
+<?xml version="1.0" standalone="yes" ?>
+<diagram>
+    <title>야구 시나리오4</title>
+    <DiagramType>Sequence Diagram</DiagramType>
+    <Version>3.2</Version>
+    <forceTimeSync />
+    <elements num="34">
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>200</objId>
+            <ptul X="987" Y="78" />
+            <ptdr X="1055" Y="102" />
+            <links num="0" />
+            <objectName>타자</objectName>
+            <className></className>
+            <actBoxes num="2">
+                <actBox id="209" />
+                <actBox id="222" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>201</objId>
+            <ptul X="688" Y="77" />
+            <ptdr X="756" Y="101" />
+            <links num="0" />
+            <objectName>서버</objectName>
+            <className></className>
+            <actBoxes num="5">
+                <actBox id="205" />
+                <actBox id="217" />
+                <actBox id="224" />
+                <actBox id="223" />
+                <actBox id="228" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLSDOBJ</type>
+            <bgrColor R="128" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>202</objId>
+            <ptul X="430" Y="78" />
+            <ptdr X="498" Y="102" />
+            <links num="0" />
+            <objectName>투수</objectName>
+            <className></className>
+            <actBoxes num="4">
+                <actBox id="204" />
+                <actBox id="227" />
+                <actBox id="229" />
+                <actBox id="236" />
+            </actBoxes>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>2) 타격조작</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>203</objId>
+            <ptul X="1040" Y="172" />
+            <ptdr X="1126" Y="191" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>204</objId>
+            <ptul X="456" Y="117" />
+            <ptdr X="471" Y="174" />
+            <links num="1">
+                <link id="207" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>205</objId>
+            <ptul X="714" Y="156" />
+            <ptdr X="729" Y="200" />
+            <links num="3">
+                <link id="207" />
+                <link id="208" />
+                <link id="237" />
+            </links>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>1) 투구정보 보내기</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>206</objId>
+            <ptul X="315" Y="107" />
+            <ptdr X="456" Y="126" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>207</objId>
+            <points num="2">
+                <pt x="471" y="157" />
+                <pt x="714" y="157" />
+            </points>
+            <objStart id="204" />
+            <objEnd id="205" />
+            <message messType="MGEN" />
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>208</objId>
+            <points num="2">
+                <pt x="729" y="180" />
+                <pt x="1013" y="180" />
+            </points>
+            <objStart id="205" />
+            <objEnd id="209" />
+            <message messType="MGEN">투구(+랜덤)정보전송</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>209</objId>
+            <ptul X="1013" Y="175" />
+            <ptdr X="1028" Y="298" />
+            <links num="2">
+                <link id="208" />
+                <link id="210" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>210</objId>
+            <points num="2">
+                <pt x="1013" y="227" />
+                <pt x="729" y="227" />
+            </points>
+            <objStart id="209" />
+            <objEnd id="217" />
+            <message messType="MGEN">타격정보 전송</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>투구 랜덤 정보 결정</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>211</objId>
+            <ptul X="645" Y="126" />
+            <ptdr X="793" Y="145" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>투수 연출 시점 수정</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>212</objId>
+            <ptul X="3" Y="6" />
+            <ptdr X="151" Y="25" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>213</objId>
+            <points num="2">
+                <pt x="1013" y="311" />
+                <pt x="729" y="311" />
+            </points>
+            <objStart id="222" />
+            <objEnd id="223" />
+            <message messType="MGEN">계산결과 검증</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>3) 결과 계산 완료(클)</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>214</objId>
+            <ptul X="1033" Y="236" />
+            <ptdr X="1188" Y="255" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>4) 결과 계산 완료(클)</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>220</objId>
+            <ptul X="297" Y="252" />
+            <ptdr X="452" Y="271" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>216</objId>
+            <points num="2">
+                <pt x="471" y="359" />
+                <pt x="714" y="359" />
+            </points>
+            <objStart id="227" />
+            <objEnd id="224" />
+            <message messType="MGEN">계산결과 검증</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>217</objId>
+            <ptul X="714" Y="217" />
+            <ptdr X="729" Y="263" />
+            <links num="1">
+                <link id="210" />
+            </links>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>3-1) 타자 연출 시작</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>218</objId>
+            <ptul X="1035" Y="268" />
+            <ptdr X="1177" Y="287" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>219</objId>
+            <points num="2">
+                <pt x="714" y="249" />
+                <pt x="471" y="249" />
+            </points>
+            <objStart id="228" />
+            <objEnd id="229" />
+            <message messType="MGEN">타격정보 전송</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>타자는 거의 실시간 플레이처럼 보인다.</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>215</objId>
+            <ptul X="941" Y="343" />
+            <ptdr X="1209" Y="371" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>1-1) 투수 연출 가) 와 나)를 진행</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>234</objId>
+            <ptul X="223" Y="187" />
+            <ptdr X="455" Y="206" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>222</objId>
+            <ptul X="1013" Y="306" />
+            <ptdr X="1028" Y="336" />
+            <links num="1">
+                <link id="213" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>223</objId>
+            <ptul X="714" Y="306" />
+            <ptdr X="729" Y="336" />
+            <links num="1">
+                <link id="213" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>224</objId>
+            <ptul X="714" Y="347" />
+            <ptdr X="729" Y="374" />
+            <links num="1">
+                <link id="216" />
+            </links>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>6 서버는 투수와 타자의 결과정보 검증.</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>225</objId>
+            <ptul X="602" Y="379" />
+            <ptdr X="890" Y="398" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>투수의 1)과 4)사이의 시간 딜레이&#x0A;: 0.5초 ~ 무한대&#x0A;&#x0A;best case : 0.5 ~1.5초&#x0A;normal case : 2 ~ 4초&#x0A;bad case : 4 ~ 10초</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>226</objId>
+            <ptul X="536" Y="432" />
+            <ptdr X="762" Y="540" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>227</objId>
+            <ptul X="456" Y="261" />
+            <ptdr X="471" Y="381" />
+            <links num="1">
+                <link id="216" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>228</objId>
+            <ptul X="714" Y="244" />
+            <ptdr X="729" Y="274" />
+            <links num="1">
+                <link id="219" />
+            </links>
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>229</objId>
+            <ptul X="456" Y="244" />
+            <ptdr X="471" Y="274" />
+            <links num="1">
+                <link id="219" />
+            </links>
+        </element>
+        <element>
+            <type>UMLNOTE</type>
+            <description>&lt;투수 연출&gt;&#x0A;가). 카메라 회전 단계.&#x0A;  : 2초&#x0A;나). 와인드업 단계.&#x0A;  : 1초&#x0A;다). 투구 단계.&#x0A;  : 1초 - 직구&#x0A;  : 2초 - 변화구.</description>
+            <bgrColor R="255" G="255" B="128" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>230</objId>
+            <ptul X="790" Y="433" />
+            <ptdr X="942" Y="573" />
+            <links num="0" />
+            <name />
+        </element>
+        <element>
+            <type>UMLSDMESS</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>237</objId>
+            <points num="2">
+                <pt x="714" y="189" />
+                <pt x="471" y="189" />
+            </points>
+            <objStart id="205" />
+            <objEnd id="236" />
+            <message messType="MGEN">투구(+랜덤)정보전송</message>
+            <guardCond />
+        </element>
+        <element>
+            <type>UMLSDACTBOX</type>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>236</objId>
+            <ptul X="456" Y="184" />
+            <ptdr X="471" Y="214" />
+            <links num="1">
+                <link id="237" />
+            </links>
+        </element>
+        <element>
+            <type>UMLTEXT</type>
+            <description>5) 투수연출- 투구단계</description>
+            <bgrColor R="255" G="255" B="255" />
+            <fgrColor R="0" G="0" B="0" />
+            <objId>221</objId>
+            <ptul X="288" Y="285" />
+            <ptdr X="451" Y="304" />
+            <links num="0" />
+            <name />
+        </element>
+    </elements>
+</diagram>

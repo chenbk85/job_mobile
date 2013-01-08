@@ -1,0 +1,751 @@
+index,category,name,text1,text2,text3
+1,ECS_ITEM,item_bat_e,E급 배트,파워 + 1,NULL
+2,ECS_ITEM,item_bat_d,D급 배트,파워 + 3,NULL
+3,ECS_ITEM,item_bat_c,C급 배트,파워 + 7,NULL
+4,ECS_ITEM,item_bat_b,B급 배트,파워 + 14,NULL
+5,ECS_ITEM,item_bat_a,A급 배트,파워 + 25,NULL
+6,ECS_ITEM,item_bat_s,S급 배트,파워 + 45,NULL
+7,ECS_ITEM,item_ball_e,E급 볼,NULL,구속 + 0.2
+8,ECS_ITEM,item_ball_d,D급 볼,NULL,구속 + 0.5
+9,ECS_ITEM,item_ball_c,C급 볼,NULL,구속 + 1
+10,ECS_ITEM,item_ball_b,B급 볼,NULL,구속 + 2
+11,ECS_ITEM,item_ball_a,A급 볼,NULL,구속 + 3.5
+12,ECS_ITEM,item_ball_s,S급 볼,NULL,구속 + 6
+13,ECS_ITEM,item_helmet_e,E급 헬멧,정확 + 1,NULL
+14,ECS_ITEM,item_helmet_d,D급 헬멧,정확 + 3,NULL
+15,ECS_ITEM,item_helmet_c,C급 헬멧,정확 + 7,NULL
+16,ECS_ITEM,item_helmet_b,B급 헬멧,정확 + 14,NULL
+17,ECS_ITEM,item_helmet_a,A급 헬멧,정확 + 25,NULL
+18,ECS_ITEM,item_helmet_s,S급 헬멧,정확 + 45,NULL
+19,ECS_ITEM,item_cap_e,E급 모자,NULL,제구 + 1
+20,ECS_ITEM,item_cap_d,D급 모자,NULL,제구 + 3
+21,ECS_ITEM,item_cap_c,C급 모자,NULL,제구 + 7
+22,ECS_ITEM,item_cap_b,B급 모자,NULL,제구 + 14
+23,ECS_ITEM,item_cap_a,A급 모자,NULL,제구 + 25
+24,ECS_ITEM,item_cap_s,S급 모자,NULL,제구 + 45
+25,ECS_ITEM,item_globe_e,E급 타자 장갑,정확 + 1,NULL
+26,ECS_ITEM,item_globe_d,D급 타자 장갑,정확 + 3,NULL
+27,ECS_ITEM,item_globe_c,C급 타자 장갑,정확 + 7,NULL
+28,ECS_ITEM,item_globe_b,B급 타자 장갑,정확 + 14,NULL
+29,ECS_ITEM,item_globe_a,A급 타자 장갑,정확 + 25,NULL
+30,ECS_ITEM,item_globe_s,S급 타자 장갑,정확 + 45,NULL
+31,ECS_ITEM,item_glove_e,E급 투수 장갑,NULL,제구 + 1
+32,ECS_ITEM,item_glove_d,D급 투수 장갑,NULL,제구 + 3
+33,ECS_ITEM,item_glove_c,C급 투수 장갑,NULL,제구 + 7
+34,ECS_ITEM,item_glove_b,B급 투수 장갑,NULL,제구 + 14
+35,ECS_ITEM,item_glove_a,A급 투수 장갑,NULL,제구 + 25
+36,ECS_ITEM,item_glove_s,S급 투수 장갑,NULL,제구 + 45
+37,ECS_ITEM,item_shoes_e,E급 신발,파워 + 1,NULL
+38,ECS_ITEM,item_shoes_d,D급 신발,파워 + 3,NULL
+39,ECS_ITEM,item_shoes_c,C급 신발,파워 + 7,NULL
+40,ECS_ITEM,item_shoes_b,B급 신발,파워 + 14,NULL
+41,ECS_ITEM,item_shoes_a,A급 신발,파워 + 25,NULL
+42,ECS_ITEM,item_shoes_s,S급 신발,파워 + 45,NULL
+43,ECS_ITEM,item_shirt_m_e,E급 남자 셔츠,정확 + 1,제구 + 1
+44,ECS_ITEM,item_shirt_m_d,D급 남자 셔츠,정확 + 3,제구 + 3
+45,ECS_ITEM,item_shirt_m_c,C급 남자 셔츠,정확 + 5,제구 + 6
+46,ECS_ITEM,item_shirt_m_b,B급 남자 셔츠,정확 + 8,제구 + 10
+47,ECS_ITEM,item_shirt_m_a,A급 남자 셔츠,정확 + 12,제구 + 15
+48,ECS_ITEM,item_shirt_m_s,S급 남자 셔츠,정확 + 20,제구 + 25
+49,ECS_ITEM,item_pant_m_e,E급 남자 바지,파워 + 1,구속 + 0.1
+50,ECS_ITEM,item_pant_m_d,D급 남자 바지,파워 + 3,구속 + 0.2
+51,ECS_ITEM,item_pant_m_c,C급 남자 바지,파워 + 5,구속 + 0.4
+52,ECS_ITEM,item_pant_m_b,B급 남자 바지,파워 + 8,구속 + 0.6
+53,ECS_ITEM,item_pant_m_a,A급 남자 바지,파워 + 12,구속 + 0.8
+54,ECS_ITEM,item_pant_w_s,S급 남자 바지,파워 + 20,구속 + 0.9
+55,ECS_ITEM,item_shirt_w_e,E급 여자 셔츠,정확 + 1,제구 + 1
+56,ECS_ITEM,item_shirt_w_d,D급 여자 셔츠,정확 + 3,제구 + 3
+57,ECS_ITEM,item_shirt_w_c,C급 여자 셔츠,정확 + 5,제구 + 6
+58,ECS_ITEM,item_shirt_w_b,B급 여자 셔츠,정확 + 8,제구 + 10
+59,ECS_ITEM,item_shirt_w_a,A급 여자 셔츠,정확 + 12,제구 + 15
+60,ECS_ITEM,item_shirt_w_s,S급 여자 셔츠,정확 + 20,제구 + 25
+61,ECS_ITEM,item_pant_w_e,E급 여자 바지,파워 + 1,구속 + 0.1
+62,ECS_ITEM,item_pant_w_d,D급 여자 바지,파워 + 3,구속 + 0.2
+63,ECS_ITEM,item_pant_w_c,C급 여자 바지,파워 + 5,구속 + 0.4
+64,ECS_ITEM,item_pant_w_b,B급 여자 바지,파워 + 8,구속 + 0.6
+65,ECS_ITEM,item_pant_w_a,A급 여자 바지,파워 + 12,구속 + 0.8
+66,ECS_ITEM,item_pant_w_s,S급 여자 바지,파워 + 20,구속 + 0.9
+67,ECS_ITEM,item_undershirt_m_e,E급 남자 언더 셔츠,파워 + 1,제구 + 1
+68,ECS_ITEM,item_undershirt_m_d,D급 남자 언더 셔츠,파워 + 2,제구 + 3
+69,ECS_ITEM,item_undershirt_m_c,C급 남자 언더 셔츠,파워 + 3,제구 + 5
+70,ECS_ITEM,item_undershirt_m_b,B급 남자 언더 셔츠,파워 + 4,제구 + 7
+71,ECS_ITEM,item_undershirt_m_a,A급 남자 언더 셔츠,파워 + 5,제구 + 9
+72,ECS_ITEM,item_undershirt_m_s,S급 남자 언더 셔츠,파워 + 10,제구 + 15
+73,ECS_ITEM,item_undershirt_w_e,E급 여자 언더 셔츠,파워 + 1,제구 + 1
+74,ECS_ITEM,item_undershirt_w_d,D급 여자 언더 셔츠,파워 + 2,제구 + 3
+75,ECS_ITEM,item_undershirt_w_c,C급 여자 언더 셔츠,파워 + 3,제구 + 5
+76,ECS_ITEM,item_undershirt_w_b,B급 여자 언더 셔츠,파워 + 4,제구 + 7
+77,ECS_ITEM,item_undershirt_w_a,A급 여자 언더 셔츠,파워 + 5,제구 + 9
+78,ECS_ITEM,item_undershirt_w_s,S급 여자 언더 셔츠,파워 + 10,제구 + 15
+79,ECS_ITEM,item_socks_m_e,E급 남자 양말,정확 + 1,구속 + 0.1
+80,ECS_ITEM,item_socks_m_d,D급 남자 양말,정확 + 2,구속 + 0.2
+81,ECS_ITEM,item_socks_m_c,C급 남자 양말,정확 + 3,구속 + 0.4
+82,ECS_ITEM,item_socks_m_b,B급 남자 양말,정확 + 4,구속 + 0.6
+83,ECS_ITEM,item_socks_m_a,A급 남자 양말,정확 + 5,구속 + 0.8
+84,ECS_ITEM,item_socks_m_s,S급 남자 양말,정확 + 10,구속 + 0.9
+85,ECS_ITEM,item_socks_w_e,E급 여자 양말,정확 + 1,구속 + 0.1
+86,ECS_ITEM,item_socks_w_d,D급 여자 양말,정확 + 2,구속 + 0.2
+87,ECS_ITEM,item_socks_w_c,C급 여자 양말,정확 + 3,구속 + 0.4
+88,ECS_ITEM,item_socks_w_b,B급 여자 양말,정확 + 4,구속 + 0.6
+89,ECS_ITEM,item_socks_w_a,A급 여자 양말,정확 + 5,구속 + 0.8
+90,ECS_ITEM,item_socks_w_s,S급 여자 양말,정확 + 10,구속 + 0.9
+91,ECS_ITEM,item_armguard_e,E급 팔보호대,정확 + 1,NULL
+92,ECS_ITEM,item_armguard_d,D급 팔보호대,정확 + 3,NULL
+93,ECS_ITEM,item_armguard_c,C급 팔보호대,정확 + 5,NULL
+94,ECS_ITEM,item_armguard_b,B급 팔보호대,정확 + 7,NULL
+95,ECS_ITEM,item_armguard_a,A급 팔보호대,정확 + 9,NULL
+96,ECS_ITEM,item_armguard_s,S급 팔보호대,정확 + 15,NULL
+97,ECS_ITEM,item_legguard_e,E급 다리보호대,파워 + 1,NULL
+98,ECS_ITEM,item_legguard_d,D급 다리보호대,파워 + 3,NULL
+99,ECS_ITEM,item_legguard_c,C급 다리보호대,파워 + 5,NULL
+100,ECS_ITEM,item_legguard_b,B급 다리보호대,파워 + 7,NULL
+101,ECS_ITEM,item_legguard_a,A급 다리보호대,파워 + 9,NULL
+102,ECS_ITEM,item_legguard_s,S급 다리보호대,파워 + 15,NULL
+103,ECS_ITEM,item_wriistband_e,E급 손목밴드,정확 + 1,제구 + 1
+104,ECS_ITEM,item_wriistband_d,D급 손목밴드,정확 + 2,제구 + 2
+105,ECS_ITEM,item_wriistband_c,C급 손목밴드,정확 + 3,제구 + 3
+106,ECS_ITEM,item_wriistband_b,B급 손목밴드,정확 + 4,제구 + 4
+107,ECS_ITEM,item_wriistband_a,A급 손목밴드,정확 + 5,제구 + 5
+108,ECS_ITEM,item_wriistband_s,S급 손목밴드,정확 + 10,제구 + 10
+109,ECS_ITEM,item_necklace_e,E급 목걸이,정확 + 1,구속 + 0.1
+110,ECS_ITEM,item_necklace_d,D급 목걸이,정확 + 2,구속 + 0.2
+111,ECS_ITEM,item_necklace_c,C급 목걸이,정확 + 3,구속 + 0.3
+112,ECS_ITEM,item_necklace_b,B급 목걸이,정확 + 4,구속 + 0.4
+113,ECS_ITEM,item_necklace_a,A급 목걸이,정확 + 5,구속 + 0.5
+114,ECS_ITEM,item_necklace_s,S급 목걸이,정확 + 10,구속 + 0.6
+115,ECS_ITEM,item_ring_e,E급 반지,파워 + 1,제구 + 1
+116,ECS_ITEM,item_ring_d,D급 반지,파워 + 2,제구 + 2
+117,ECS_ITEM,item_ring_c,C급 반지,파워 + 3,제구 + 3
+118,ECS_ITEM,item_ring_b,B급 반지,파워 + 4,제구 + 4
+119,ECS_ITEM,item_ring_a,A급 반지,파워 + 5,제구 + 5
+120,ECS_ITEM,item_ring_s,S급 반지,파워 + 10,제구 + 10
+121,ECS_ITEM,item_earring_e,E급 귀걸이,파워 + 1,구속 + 0.1
+122,ECS_ITEM,item_earring_d,D급 귀걸이,파워 + 2,구속 + 0.2
+123,ECS_ITEM,item_earring_c,C급 귀걸이,파워 + 3,구속 + 0.3
+124,ECS_ITEM,item_earring_b,B급 귀걸이,파워 + 4,구속 + 0.4
+125,ECS_ITEM,item_earring_a,A급 귀걸이,파워 + 5,구속 + 0.5
+126,ECS_ITEM,item_earring_s,S급 귀걸이,파워 + 10,구속 + 0.6
+127,ECS_ITEM,item_tatoo_b,B급 문신,파워 + 1,구속 + 0.1
+128,ECS_ITEM,item_tatoo_a,A급 문신,파워 + 5,구속 + 0.2
+129,ECS_ITEM,item_tatoo_s,S급 문신,파워 + 10,구속 + 0.3
+130,ECS_ITEM,item_sunglass_b,B급 선글라스,NULL,NULL
+131,ECS_ITEM,item_sunglass_a,A급 선글라스,NULL,NULL
+132,ECS_ITEM,item_sunglass_s,S급 선글라스,NULL,NULL
+133,ECS_ITEM,item_eyepatch_b,B급 아이패치,정확 + 1,제구 + 1
+134,ECS_ITEM,item_eyepatch_a,A급 아이패치,정확 + 3,제구 + 5
+135,ECS_ITEM,item_eyepatch_s,S급 아이패치,정확 + 5,제구 + 9
+136,ECS_ITEM,item_beard_1,수염 1,NULL,NULL
+137,ECS_ITEM,item_beard_2,수염 2,NULL,NULL
+138,ECS_ITEM,item_beard_3,수염 3,NULL,NULL
+139,ECS_ITEM,item_beard_4,수염 4,NULL,NULL
+140,ECS_ITEM,item_beard_5,수염 5,NULL,NULL
+141,ECS_ITEM,item_beard_6,수염 6,NULL,NULL
+142,ECS_ITEM,item_beard_7,수염 7,NULL,NULL
+143,ECS_ITEM,item_beard_8,수염 8,NULL,NULL
+144,ECS_ITEM,item_beard_9,수염 9,NULL,NULL
+145,ECS_ITEM,item_beard_10,수염 10,NULL,NULL
+146,ECS_ITEM,item_hair_m_1,남자 헤어 1,NULL,NULL
+147,ECS_ITEM,item_hair_m_2,남자 헤어 2,NULL,NULL
+148,ECS_ITEM,item_hair_m_3,남자 헤어 3,NULL,NULL
+149,ECS_ITEM,item_hair_m_4,남자 헤어 4,NULL,NULL
+150,ECS_ITEM,item_hair_m_5,남자 헤어 5,NULL,NULL
+151,ECS_ITEM,item_hair_m_6,남자 헤어 6,NULL,NULL
+152,ECS_ITEM,item_hair_m_7,남자 헤어 7,NULL,NULL
+153,ECS_ITEM,item_hair_m_8,남자 헤어 8,NULL,NULL
+154,ECS_ITEM,item_hair_m_9,남자 헤어 9,NULL,NULL
+155,ECS_ITEM,item_hair_m_10,남자 헤어 10,NULL,NULL
+156,ECS_ITEM,item_hair_w_1,여자 헤어 1,NULL,NULL
+157,ECS_ITEM,item_hair_w_2,여자 헤어 2,NULL,NULL
+158,ECS_ITEM,item_hair_w_3,여자 헤어 3,NULL,NULL
+159,ECS_ITEM,item_hair_w_4,여자 헤어 4,NULL,NULL
+160,ECS_ITEM,item_hair_w_5,여자 헤어 5,NULL,NULL
+161,ECS_ITEM,item_hair_w_6,여자 헤어 6,NULL,NULL
+162,ECS_ITEM,item_hair_w_7,여자 헤어 7,NULL,NULL
+163,ECS_ITEM,item_hair_w_8,여자 헤어 8,NULL,NULL
+164,ECS_ITEM,item_hair_w_9,여자 헤어 9,NULL,NULL
+165,ECS_ITEM,item_hair_w_10,여자 헤어 10,NULL,NULL
+166,ECS_ITEM,item_patch_1,패치 1,NULL,NULL
+167,ECS_ITEM,item_patch_2,패치 2,NULL,NULL
+168,ECS_ITEM,item_patch_3,패치 3,NULL,NULL
+169,ECS_ITEM,item_patch_4,패치 4,NULL,NULL
+170,ECS_ITEM,item_patch_5,패치 5,NULL,NULL
+171,ECS_ITEM,item_patch_6,패치 6,NULL,NULL
+172,ECS_ITEM,item_patch_7,패치 7,NULL,NULL
+173,ECS_ITEM,item_patch_8,패치 8,NULL,NULL
+174,ECS_ITEM,item_patch_9,패치 9,NULL,NULL
+175,ECS_ITEM,item_patch_10,패치 10,NULL,NULL
+176,ECS_ITEM,item_mask_1,마스크 1,NULL,NULL
+177,ECS_ITEM,item_mask_2,마스크 2,NULL,NULL
+178,ECS_ITEM,item_mask_3,마스크 3,NULL,NULL
+179,ECS_ITEM,item_mask_4,마스크 4,NULL,NULL
+180,ECS_ITEM,item_mask_5,마스크 5,NULL,NULL
+181,ECS_ITEM,item_backnumber,등번호,등번호 수정,등번호 수정
+182,ECS_ITEM,item_marking,마킹,이니셜 수정,이니셜 수정
+183,ECS_ITEM,item_haircolor,헤어 컬러,헤어컬러 변경,헤어컬러 변경
+184,ECS_ITEM,ci_superpowerdrink_e,슈퍼 파워 드링크 E,3시간 동안 파워 10퍼센트 증가,NULL
+185,ECS_ITEM,ci_superpowerdrink_d,슈퍼 파워 드링크 D,6시간 동안 파워 10퍼센트 증가,NULL
+186,ECS_ITEM,ci_superpowerdrink_c,슈퍼 파워 드링크 C,9시간 동안 파워 10퍼센트 증가,NULL
+187,ECS_ITEM,ci_superpowerdrink_b,슈퍼 파워 드링크 B,16시간 동안 파워 20퍼센트 증가,NULL
+188,ECS_ITEM,ci_superpowerdrink_a,슈퍼 파워 드링크 A,24시간 동안 파워 20퍼센트 증가,NULL
+189,ECS_ITEM,ci_superpowerdrink_s,슈퍼 파워 드링크 S,36시간 동안 파워 20퍼센트 증가,NULL
+190,ECS_ITEM,ci_eagleeyedrink_e,이글 아이 드링크 E,3시간 동안 정확 10퍼센트 증가,NULL
+191,ECS_ITEM,ci_eagleeyedrink_d,이글 아이 드링크 D,6시간 동안 정확 10퍼센트 증가,NULL
+192,ECS_ITEM,ci_eagleeyedrink_c,이글 아이 드링크 C,9시간 동안 정확 10퍼센트 증가,NULL
+193,ECS_ITEM,ci_eagleeyedrink_b,이글 아이 드링크 B,16시간 동안 정확 20퍼센트 증가,NULL
+194,ECS_ITEM,ci_eagleeyedrink_a,이글 아이 드링크 A,24시간 동안 정확 20퍼센트 증가,NULL
+195,ECS_ITEM,ci_eagleeyedrink_s,이글 아이 드링크 S,36시간 동안 정확 20퍼센트 증가,NULL
+196,ECS_ITEM,ci_healthbodydrink_e,헬씨 바디 드링크 E,NULL,3시간 동안 구속 10퍼센트 증가
+197,ECS_ITEM,ci_healthbodydrink_d,헬씨 바디 드링크 D,NULL,6시간 동안 구속 10퍼센트 증가
+198,ECS_ITEM,ci_healthbodydrink_c,헬씨 바디 드링크 C,NULL,9시간 동안 구속 10퍼센트 증가
+199,ECS_ITEM,ci_healthbodydrink_b,헬씨 바디 드링크 B,NULL,16시간 동안 구속 20퍼센트 증가
+200,ECS_ITEM,ci_healthbodydrink_a,헬씨 바디 드링크 A,NULL,24시간 동안 구속 20퍼센트 증가
+201,ECS_ITEM,ci_healthbodydrink_s,헬씨 바디 드링크 S,NULL,36시간 동안 구속 20퍼센트 증가
+202,ECS_ITEM,ci_skingrowdrink_e,스킨 글로우 드링크 E,NULL,3시간 동안 제구 10퍼센트 증가
+203,ECS_ITEM,ci_skingrowdrink_d,스킨 글로우 드링크 D,NULL,6시간 동안 제구 10퍼센트 증가
+204,ECS_ITEM,ci_skingrowdrink_c,스킨 글로우 드링크 C,NULL,9시간 동안 제구 10퍼센트 증가
+205,ECS_ITEM,ci_skingrowdrink_b,스킨 글로우 드링크 B,NULL,16시간 동안 제구 20퍼센트 증가
+206,ECS_ITEM,ci_skingrowdrink_a,스킨 글로우 드링크 A,NULL,24시간 동안 제구 20퍼센트 증가
+207,ECS_ITEM,ci_skingrowdrink_s,스킨 글로우 드링크 S,NULL,36시간 동안 제구 20퍼센트 증가
+208,ECS_ITEM,ci_winfingerdrink_e,위닝 핑거 드링크 E,NULL,3시간 동안 변화구  1종 사용 증가
+209,ECS_ITEM,ci_winfingerdrink_d,위닝 핑거 드링크 D,NULL,6시간 동안 변화구  1종 사용 증가
+210,ECS_ITEM,ci_winfingerdrink_c,위닝 핑거 드링크 C,NULL,9시간 동안 변화구  1종 사용 증가
+211,ECS_ITEM,ci_winfingerdrink_b,위닝 핑거 드링크 B,NULL,16시간 동안 변화구  2종 사용 증가
+212,ECS_ITEM,ci_winfingerdrink_a,위닝 핑거 드링크 A,NULL,24시간 동안 변화구  2종 사용 증가
+213,ECS_ITEM,ci_winfingerdrink_s,위닝 핑거 드링크 S,NULL,36시간 동안 변화구  2종 사용 증가
+214,ECS_ITEM,ci_bacchusf,바쿠스 F,12시간 동안 볼 지급 2배,12시간 동안 볼 지급 2배
+215,ECS_ITEM,ci_bacchusd,바쿠스 D,24시간 동안 볼 지급 2배,24시간 동안 볼 지급 2배
+216,ECS_ITEM,ci_charm_e,부적 E,3시간 동안 모든 능력치 5퍼센트 상승,3시간 동안 모든 능력치 5퍼센트 상승
+217,ECS_ITEM,ci_charm_d,부적 D,6시간 동안 모든 능력치 10퍼센트 상승,6시간 동안 모든 능력치 10퍼센트 상승
+218,ECS_ITEM,ci_charm_c,부적 C,9시간 동안 모든 능력치 15퍼센트 상승,9시간 동안 모든 능력치 15퍼센트 상승
+219,ECS_ITEM,ci_charm_b,부적 B,16시간 동안 모든 능력치 20퍼센트 상승,16시간 동안 모든 능력치 20퍼센트 상승
+220,ECS_ITEM,ci_charm_a,부적 A,24시간 동안 모든 능력치 25퍼센트 상승,24시간 동안 모든 능력치 25퍼센트 상승
+221,ECS_ITEM,ci_charm_s,부적 S,48시간 동안 모든 능력치 30퍼센트 상승,48시간 동안 모든 능력치 30퍼센트 상승
+222,ECS_ITEM,ci_audiencecry,관중의 함성,1게임 동안 모든 능력치 30퍼센트 상승,1게임 동안 모든 능력치 30퍼센트 상승
+223,ECS_ITEM,ci_rosinbag,송진 가루,1게임 동안 모든 능력치 15퍼센트 상승,1게임 동안 모든 능력치 15퍼센트 상승
+224,ECS_ITEM,ci_gum,껌,1게임 동안 모든 능력치 10퍼센트 상승,1게임 동안 모든 능력치 10퍼센트 상승
+225,ECS_ITEM,ci_bulebull,블루불,5게임 동안 아이템 드롭 확률 30퍼센트 증가,5게임 동안 아이템 드롭 확률 30퍼센트 증가
+226,ECS_ITEM,ci_cooldog,쿨독,5게임 동안 아이템 드롭 확률 20퍼센트 증가,5게임 동안 아이템 드롭 확률 20퍼센트 증가
+227,ECS_ITEM,ci_coolsix,쿨식스,5게임 동안 아이템 드롭 확률 10퍼센트 증가,5게임 동안 아이템 드롭 확률 10퍼센트 증가
+228,ECS_ITEM,ci_bronzegrovetrophy,브론즈 글로브 트로피,모든 능력치 영구적으로 +1 증가,모든 능력치 영구적으로 +1 증가
+229,ECS_ITEM,ci_bronzebattrophy,브론즈 배트 트로피,모든 능력치 영구적으로 +1 증가,모든 능력치 영구적으로 +1 증가
+230,ECS_ITEM,ci_silvergrovetrophy,실버 글로브 트로피,모든 능력치 영구적으로 +3증가,모든 능력치 영구적으로 +3 증가
+231,ECS_ITEM,ci_silverbattrophy,실버 배트 트로피,모든 능력치 영구적으로 +3 증가,모든 능력치 영구적으로 +3 증가
+232,ECS_ITEM,ci_goldgrovetrophy,골드 글로브 트로피,모든 능력치 영구적으로 +5 증가,모든 능력치 영구적으로 +5 증가
+233,ECS_ITEM,ci_goldbattrophy,골드 배트 트로피,모든 능력치 영구적으로 +5 증가,모든 능력치 영구적으로 +5 증가
+234,ECS_ITEM,ci_legendgrovetrophy,전설의 글로브 트로피,모든 능력치 영구적으로 +7 증가,모든 능력치 영구적으로 +7 증가
+235,ECS_ITEM,ci_legendbattrophy,전설의 배트 트로피,모든 능력치 영구적으로 +7 증가,모든 능력치 영구적으로 +7 증가
+236,ECS_ITEM,ci_maestrohand_e,장인의 손길 E,E급 아이템 업그레이드 성공 확률 100%,E급 아이템 업그레이드 성공 확률 100%
+237,ECS_ITEM,ci_maestrohand_d,장인의 손길 D,D급 아이템 업그레이드 성공 확률 100%,D급 아이템 업그레이드 성공 확률 100%
+238,ECS_ITEM,ci_maestrohand_c,장인의 손길 C,C급 아이템 업그레이드 성공 확률 100%,C급 아이템 업그레이드 성공 확률 100%
+239,ECS_ITEM,ci_maestrohand_b,장인의 손길 B,B급 아이템 업그레이드 성공 확률 100%,B급 아이템 업그레이드 성공 확률 100%
+240,ECS_ITEM,ci_maestrohand_a,장인의 손길 A,A급 아이템 업그레이드 성공 확률 100%,A급 아이템 업그레이드 성공 확률 100%
+241,ECS_ITEM,ci_maestrohand_s,장인의 손길 S,S급 아이템 업그레이드 성공 확률 100%,S급 아이템 업그레이드 성공 확률 100%
+242,ECS_ITEM,ci_supertimesteal_s_a,슈퍼 타임 스틸 A,S급 아이템 업그레이드 타임 70% 감소,S급 아이템 업그레이드 타임 70% 감소
+243,ECS_ITEM,ci_supertimesteal_s_b,슈퍼 타임 스틸 B,S급 아이템 업그레이드 타임 50% 감소,S급 아이템 업그레이드 타임 50% 감소
+244,ECS_ITEM,ci_supertimesteal_s_c,슈퍼 타임 스틸 C,S급 아이템 업그레이드 타임 30% 감소,S급 아이템 업그레이드 타임 30% 감소
+245,ECS_ITEM,ci_goldtimesteal_ab_a,골드 타임 스틸 A,A~B 급 아이템 업그레이드 타임 80% 감소,A~B 급 아이템 업그레이드 타임 80% 감소
+246,ECS_ITEM,ci_goldtimesteal_ab_b,골드 타임 스틸 B,A~B 급 아이템 업그레이드 타임 50% 감소,A~B 급 아이템 업그레이드 타임 50% 감소
+247,ECS_ITEM,ci_goldtimesteal_ab_c,골드 타임 스틸 C,A~B 급 아이템 업그레이드 타임 30% 감소,A~B 급 아이템 업그레이드 타임 30% 감소
+248,ECS_ITEM,ci_silvtimesteal_cd_a,실버 타임 스틸 A,C~E 급 아이템 업그레이드 타임 90% 감소,C~E 급 아이템 업그레이드 타임 90% 감소
+249,ECS_ITEM,ci_silvtimesteal_cd_b,실버 타임 스틸 B,C~E 급 아이템 업그레이드 타임 50% 감소,C~E 급 아이템 업그레이드 타임 50% 감소
+250,ECS_ITEM,ci_silvtimesteal_cd_c,실버 타임 스틸 C,C~E 급 아이템 업그레이드 타임 30% 감소,C~E 급 아이템 업그레이드 타임 30% 감소
+251,ECS_ITEM,ci_majorexcite,메이저의 도발,S급 아이템을 LV70부터 사용 가능,S급 아이템을 LV70부터 사용 가능
+252,ECS_ITEM,ci_minorexcite,마이너의 도발,A급 아이템을 LV50부터 사용 가능,A급 아이템을 LV50부터 사용 가능
+253,ECS_ITEM,ci_rookieexcite,루키의 도발,B급 아이템을 LV30부터 사용 가능,B급 아이템을 LV30부터 사용 가능
+254,ECS_ITEM,ci_majorregret,메이저의 후회,S급 아이템을 한단계 강화 취소함,S급 아이템을 한단계 강화 취소함
+255,ECS_ITEM,ci_minorregret,마이너의 후회,A~B급 아이템을 한단계 강화 취소함,A~B급 아이템을 한단계 강화 취소함
+256,ECS_ITEM,ci_rookieregret,루키의 후회,C~E급 아이템을 한단계 강화 취소함,C~E급 아이템을 한단계 강화 취소함
+257,ECS_ITEM,ci_profilechange,닉네임 변경,이름과 등번호 바꾸기,이름과 등번호 바꾸기
+258,ECS_ITEM,p_godofbaseball_s,S급 야구의 신 패키지,NULL,NULL
+259,ECS_ITEM,p_godofbaseball_a,A급 야구의 신 패키지,NULL,NULL
+260,ECS_ITEM,p_godofbaseball_b,B급 야구의 신 패키지,NULL,NULL
+261,ECS_ITEM,p_godofbaseball_c,C급 야구의 신 패키지,NULL,NULL
+262,ECS_ITEM,p_godofbaseball_d,D급 야구의 신 패키지,NULL,NULL
+263,ECS_ITEM,p_godofbaseball_e,E급 야구의 신 패키지,NULL,NULL
+264,ECS_ITEM,p_fullset_s,S급 풀세트,NULL,NULL
+265,ECS_ITEM,p_fullset_a,A급 풀세트,NULL,NULL
+266,ECS_ITEM,p_fullset_b,B급 풀세트,NULL,NULL
+267,ECS_ITEM,p_fullset_c,C급 풀세트,NULL,NULL
+268,ECS_ITEM,p_fullset_d,D급 풀세트,NULL,NULL
+269,ECS_ITEM,p_fullset_e,E급 풀세트,NULL,NULL
+270,ECS_ITEM,p_goldenball,골든 볼,NULL,NULL
+271,ECS_ITEM,p_silverball,실버 볼,NULL,NULL
+272,ECS_ITEM,p_bronzeball ,브론즈 볼,NULL,NULL
+273,ECS_ITEM,stuff_item_brightener_e,저급광택제 (E),NULL,NULL
+274,ECS_ITEM,stuff_item_brightener_d,하급광택제 (D),NULL,NULL
+275,ECS_ITEM,stuff_item_brightener_c,중급광택제 (C),NULL,NULL
+276,ECS_ITEM,stuff_item_brightener_b,상급광택제 (B),NULL,NULL
+277,ECS_ITEM,stuff_item_brightener_a,고급광택제 (A),NULL,NULL
+278,ECS_ITEM,stuff_item_brightener_s,특급광택제 (S),NULL,NULL
+279,ECS_ITEM,stuff_item_piecewood_e,회초리조각 (E),NULL,NULL
+280,ECS_ITEM,stuff_item_piecewood_d,단풍나무조각 (D),NULL,NULL
+281,ECS_ITEM,stuff_item_piecewood_c,백목조각 (C),NULL,NULL
+282,ECS_ITEM,stuff_item_piecewood_b,물푸레나무조각 (B),NULL,NULL
+283,ECS_ITEM,stuff_item_piecewood_a,참나무조각 (A),NULL,NULL
+284,ECS_ITEM,stuff_item_piecewood_s,오동나무조각 (S),NULL,NULL
+285,ECS_ITEM,stuff_item_leather_e,나일론조각 (E),NULL,NULL
+286,ECS_ITEM,stuff_item_leather_d,인조가죽 (D),NULL,NULL
+287,ECS_ITEM,stuff_item_leather_c,돼지가죽 (C),NULL,NULL
+288,ECS_ITEM,stuff_item_leather_b,양가죽 (B),NULL,NULL
+289,ECS_ITEM,stuff_item_leather_a,송아지가죽 (A),NULL,NULL
+290,ECS_ITEM,stuff_item_leather_s,소가죽 (S),NULL,NULL
+291,ECS_ITEM,stuff_item_spike_e,고무스파이크 (E),NULL,NULL
+292,ECS_ITEM,stuff_item_spike_d,플라스틱스파이크 (D),NULL,NULL
+293,ECS_ITEM,stuff_item_spike_c,나무스파이크 (C),NULL,NULL
+294,ECS_ITEM,stuff_item_spike_b,구리스파이크 (B),NULL,NULL
+295,ECS_ITEM,stuff_item_spike_a,강철스파이크 (A),NULL,NULL
+296,ECS_ITEM,stuff_item_spike_s,티타늄스파이크 (S),NULL,NULL
+297,ECS_ITEM,stuff_item_fiber_e,폴리에스테르조각 (E),NULL,NULL
+298,ECS_ITEM,stuff_item_fiber_d,질긴 나일론조각 (D),NULL,NULL
+299,ECS_ITEM,stuff_item_fiber_c,합성섬유조각 (C),NULL,NULL
+300,ECS_ITEM,stuff_item_fiber_b,마섬유조각 (B),NULL,NULL
+301,ECS_ITEM,stuff_item_fiber_a,면섬유조각 (A),NULL,NULL
+302,ECS_ITEM,stuff_item_fiber_s,최고급면섬유조각 (S),NULL,NULL
+303,ECS_ITEM,stuff_item_thread_e,합성실 (E),NULL,NULL
+304,ECS_ITEM,stuff_item_thread_d,모직실 (D),NULL,NULL
+305,ECS_ITEM,stuff_item_thread_c,면직실 (C),NULL,NULL
+306,ECS_ITEM,stuff_item_thread_b,인조가죽안감 (B),NULL,NULL
+307,ECS_ITEM,stuff_item_thread_a,소가죽안감 (A),NULL,NULL
+308,ECS_ITEM,stuff_item_thread_s,말가죽안감 (S),NULL,NULL
+309,ECS_ITEM,stuff_item_liningleather_e,저급나일론조각 (E),NULL,NULL
+310,ECS_ITEM,stuff_item_liningleather_d,하급인조가죽 (D),NULL,NULL
+311,ECS_ITEM,stuff_item_liningleather_c,중급돼지가죽 (C),NULL,NULL
+312,ECS_ITEM,stuff_item_liningleather_b,고급양가죽 (B),NULL,NULL
+313,ECS_ITEM,stuff_item_liningleather_a,송아지가죽 (A),NULL,NULL
+314,ECS_ITEM,stuff_item_liningleather_s,최고급소가죽 (S),NULL,NULL
+315,ECS_SKILL,pbb_fourseam,포심,NULL,NULL
+316,ECS_SKILL,pbb_twoseam,투심,NULL,NULL
+317,ECS_SKILL,pbb_risingfast,라이징패스트 볼,NULL,NULL
+318,ECS_SKILL,pbb_upshout,업슛,NULL,NULL
+319,ECS_SKILL,pbb_slider,슬라이더,NULL,NULL
+320,ECS_SKILL,pbb_hslider,H 슬라이더,NULL,NULL
+321,ECS_SKILL,pbb_cutfast,컷패스트 볼,NULL,NULL
+322,ECS_SKILL,pbb_vslider,V 슬라이더,NULL,NULL
+323,ECS_SKILL,pbb_slub,슬러브,NULL,NULL
+324,ECS_SKILL,pbb_changeup,체인지업,NULL,NULL
+325,ECS_SKILL,pbb_circlechangeup,서클 체인지 업,NULL,NULL
+326,ECS_SKILL,pbb_knuckle,너클,NULL,NULL
+327,ECS_SKILL,pbb_curve,커브,NULL,NULL
+328,ECS_SKILL,pbb_slowcurve,슬로우 커브,NULL,NULL
+329,ECS_SKILL,pbb_dropcurve,드롭 커브,NULL,NULL
+330,ECS_SKILL,pbb_powercurve,파워 커브,NULL,NULL
+331,ECS_SKILL,pbb_shout,슈트,NULL,NULL
+332,ECS_SKILL,pbb_hshout,H 슈트,NULL,NULL
+333,ECS_SKILL,pbb_fork,포크,NULL,NULL
+334,ECS_SKILL,pbb_palm,팜,NULL,NULL
+335,ECS_SKILL,pbb_sff,SFF,NULL,NULL
+336,ECS_SKILL,pbb_sinker,싱커,NULL,NULL
+337,ECS_SKILL,pbb_hsinker,H 싱커,NULL,NULL
+338,ECS_SKILL,ba_left,대좌투수,NULL,NULL
+339,ECS_SKILL,ba_right,대우투수,NULL,NULL
+340,ECS_SKILL,ba_homerun,홈런타자,NULL,NULL
+341,ECS_SKILL,ba_wide,광각타법,NULL,NULL
+342,ECS_SKILL,ba_fullhit,풀히터,NULL,NULL
+343,ECS_SKILL,ba_lowhit,로우볼 히터,NULL,NULL
+344,ECS_SKILL,ba_highhit,하이볼 히터,NULL,NULL
+345,ECS_SKILL,ba_runfire,연발,NULL,NULL
+346,ECS_SKILL,pa_left,대좌타자,NULL,NULL
+347,ECS_SKILL,pa_right,대우타자,NULL,NULL
+348,ECS_SKILL,pa_fastball,속구파,NULL,NULL
+349,ECS_SKILL,pa_fullskill,기교파,NULL,NULL
+350,ECS_SKILL,pa_runfire,연투,NULL,NULL
+351,ECS_SKILL,pa_swordcon,칼제구,NULL,NULL
+352,ECS_SKILL,pa_dock,닥터 K,NULL,NULL
+353,ECS_SKILL,pa_infight,스퀘어,NULL,NULL
+354,ECS_SKILL,pa_outfight,오픈,NULL,NULL
+355,ECS_SKILL,BF_CLOSE,클로즈드,NULL,NULL
+356,ECS_SKILL,PF_OVER,오버핸드,NULL,NULL
+357,ECS_SKILL,PF_THREEQUARTER,쓰리쿼터,NULL,NULL
+358,ECS_SKILL,PF_SIDEARM,사이드암,NULL,NULL
+359,ECS_SKILL,PF_UNDER,언더핸드,NULL,NULL
+360,ECS_GUI,Top_Notice_T,Notice String,NULL,NULL
+361,ECS_GUI,Option_ControlT,Control,NULL,NULL
+362,ECS_GUI,Option_CreditT,Credit,NULL,NULL
+363,ECS_GUI,Option_CustomerT,고객센터,NULL,NULL
+364,ECS_GUI,Option_OptionT,Option,NULL,NULL
+365,ECS_GUI,Option_Sound_BGMT,BGM,NULL,NULL
+366,ECS_GUI,Option_Sound_FXT,FX,NULL,NULL
+367,ECS_GUI,Option_SoundT,Sound,NULL,NULL
+368,ECS_GUI,Option_VibrationT,Vibration,NULL,NULL
+369,ECS_GUI,Game_FriendlyT,다른 플레이어와의 승부!,NULL,NULL
+370,ECS_GUI,Game_MatchT,친구와 함께!,NULL,NULL
+371,ECS_GUI,Game_SingleT,개인 기록에 도전!,NULL,NULL
+372,ECS_GUI,PopupFriends_TitleT,Friends List,NULL,NULL
+373,ECS_GUI,PopupNews_TitleT,News,NULL,NULL
+374,ECS_GUI,Page_1_Info_HitterT,Hitter,NULL,NULL
+375,ECS_GUI,Page_1_Info_PitcherT,Pitcher,NULL,NULL
+376,ECS_GUI,Page_2_Info_T,Normal,NULL,NULL
+377,ECS_GUI,Page_2_Input_Age_T,나이,NULL,NULL
+378,ECS_GUI,Page_2_Input_Country_T,출신지역,NULL,NULL
+379,ECS_GUI,Page_2_Input_Initial_T,이니셜,NULL,NULL
+380,ECS_GUI,Page_2_Input_Name_T,이름,NULL,NULL
+381,ECS_GUI,Page_3_Info_T,Normal,NULL,NULL
+382,ECS_GUI,Page_3_Input_Detail_1T,투구폼,NULL,NULL
+383,ECS_GUI,Page_3_Input_Detail_2T,포지션,NULL,NULL
+384,ECS_GUI,Page_3_Input_Detail_3T,제1변화구,NULL,NULL
+385,ECS_GUI,Page_3_Input_Detail_4T,제2변화구,NULL,NULL
+386,ECS_GUI,Page_3_Input_Detail_5T,특수능력,NULL,NULL
+387,ECS_GUI,Page_4_Info_T,Normal,NULL,NULL
+388,ECS_GUI,Page_4_Input_Detail_1T,타격폼,NULL,NULL
+389,ECS_GUI,Page_4_Input_Detail_2T,포지션,NULL,NULL
+390,ECS_GUI,Page_4_Input_Detail_3T,특수능력,NULL,NULL
+391,ECS_GUI,BreakingBall_1_TitleT,제1변화구,NULL,NULL
+392,ECS_GUI,BreakingBall_2_TitleT,제2변화구,NULL,NULL
+393,ECS_GUI,Character_Cancel_TitleT,캐릭터 생성,NULL,NULL
+394,ECS_GUI,Character_Cancel_Character_CancelT,캐릭터 생성을 취소하시겠습니까?,NULL,NULL
+395,ECS_GUI,Character_Cancel_Character_MoveHomeT,OK를 누르면[HOME]으로 이동합니다.,NULL,NULL
+396,ECS_GUI,Character_Cancel_Character_MoveOptionT,OK를 누르면[OPTION]으로 이동합니다.,NULL,NULL
+397,ECS_GUI,Character_Cancel_Character_MovePmangT,OK를 누르면[PMANG+]으로 이동합니다.,NULL,NULL
+398,ECS_GUI,Character_Cancel_Character_MoveShopT,OK를 누르면[SHOP]으로 이동합니다.,NULL,NULL
+399,ECS_GUI,Character_Cancel_Character_MoveUpgradeT,OK를 누르면[UPGRADE]으로 이동합니다.,NULL,NULL
+400,ECS_GUI,Character_OK_TitleT,캐릭터 생성,NULL,NULL
+401,ECS_GUI,Character_OK_Character_MoveT,OK를 누르면 게임방 대기화면으로 이동합니다.,NULL,NULL
+402,ECS_GUI,Character_OK_Character_OkT,이대로 생성 하시겠습니까?,NULL,NULL
+403,ECS_GUI,HitterPosition_TitleT,포지션,NULL,NULL
+404,ECS_GUI,HitterSpecialAbility_TitleT,특수능력,NULL,NULL
+405,ECS_GUI,HittingStyle_TitleT,타격폼,NULL,NULL
+406,ECS_GUI,PitcherPosition_TitleT,포지션,NULL,NULL
+407,ECS_GUI,PitcherSpecialAbility_TitleT,특수능력,NULL,NULL
+408,ECS_GUI,PitchingStyle_TitleT,투구폼,NULL,NULL
+409,ECS_GUI,SelectCountry_TitleT,출신지역,NULL,NULL
+410,ECS_GUI,Hitter->Ability_SpecialT,능력,NULL,NULL
+411,ECS_GUI,Hitter->Ability_StyleT,타격폼,NULL,NULL
+412,ECS_GUI,Hitter->Record11_Record1T,R,NULL,NULL
+413,ECS_GUI,Hitter->Record11_Record2T,W/L,NULL,NULL
+414,ECS_GUI,Hitter->Record11_Record3T,BA,NULL,NULL
+415,ECS_GUI,Hitter->Record11_Record4T,HR,NULL,NULL
+416,ECS_GUI,Hitter->Record22_Record1T,H,NULL,NULL
+417,ECS_GUI,Hitter->Record22_Record2T,2B,NULL,NULL
+418,ECS_GUI,Hitter->Record22_Record3T,3B,NULL,NULL
+419,ECS_GUI,Hitter->Record22_Record4T,SO,NULL,NULL
+420,ECS_GUI,Hitter->Record22_Record5T,Foul,NULL,NULL
+421,ECS_GUI,Hitter->Register_Register_T,이름,NULL,NULL
+422,ECS_GUI,Pitcher->Ability_BreakingBall1T,변화구1,NULL,NULL
+423,ECS_GUI,Pitcher->Ability_BreakingBall2T,변화구2,NULL,NULL
+424,ECS_GUI,Pitcher->Ability_SpecialT,능력,NULL,NULL
+425,ECS_GUI,Pitcher->Ability_StyleT,투구폼,NULL,NULL
+426,ECS_GUI,Pitcher->Information_InfomationT,Pitcher Info,NULL,NULL
+427,ECS_GUI,Pitcher->Record11_Record1T,R,NULL,NULL
+428,ECS_GUI,Pitcher->Record11_Record2T,W/L,NULL,NULL
+429,ECS_GUI,Pitcher->Record11_Record3T,BA,NULL,NULL
+430,ECS_GUI,Pitcher->Record11_Record4T,SO,NULL,NULL
+431,ECS_GUI,Pitcher->Record22_Record1T,OHR,NULL,NULL
+432,ECS_GUI,Pitcher->Record22_Record2T,HPS,NULL,NULL
+433,ECS_GUI,Pitcher->Register_Register_T,이름,NULL,NULL
+434,ECS_GUI,Team_Name_T,팀이름,NULL,NULL
+435,ECS_GUI,Disband_OK_TitleT,팀해제,NULL,NULL
+436,ECS_GUI,Disband_OK_Team_OkT,설정된 팀을 해제하시겠습니까?,NULL,NULL
+437,ECS_GUI,Disband_OK_Team_DisbandT,OK를 누르면 해제됩니다.,NULL,NULL
+438,ECS_GUI,Team_Cancel_TitleT,취소,NULL,NULL
+439,ECS_GUI,Team_Cancel_Team_CancelT,팀생성을 취소하시겠습니까?,NULL,NULL
+440,ECS_GUI,Team_Cancel_Team_MoveHomeT,OK를 누르면[HOME]으로 이동합니다.,NULL,NULL
+441,ECS_GUI,Team_Cancel_Team_MoveOptionT,OK를 누르면[OPTION]으로 이동합니다.,NULL,NULL
+442,ECS_GUI,Team_Cancel_Team_MovePmangT,OK를 누르면[PMANG+]으로 이동합니다.,NULL,NULL
+443,ECS_GUI,Team_Cancel_Team_MoveShopT,OK를 누르면[SHOP]으로 이동합니다.,NULL,NULL
+444,ECS_GUI,Team_Cancel_Team_MoveUpgradeT,OK를 누르면[UPGRADE]으로 이동합니다.,NULL,NULL
+445,ECS_GUI,Team_OK_TitleT,팀생성,NULL,NULL
+446,ECS_GUI,Team_OK_Team_MoveT,OK를 누르면 게임방 대기화면으로 이동합니다.,NULL,NULL
+447,ECS_GUI,Team_OK_Team_OkT,이대로 생성 하시겠습니까?,NULL,NULL
+448,ECS_GUI,Team_OK_Team_WarningOkT,이대로 생성 하시겠습니까?,NULL,NULL
+449,ECS_GUI,Team_OK_Team_WarningT,(기존에 있던 팀이 자동해제됩니다.),NULL,NULL
+450,ECS_GUI,1P->Information_InfomationT,Record,NULL,NULL
+451,ECS_GUI,1P->RecordH1_Record1T,R,NULL,NULL
+452,ECS_GUI,1P->RecordH1_Record2T,W/L,NULL,NULL
+453,ECS_GUI,1P->RecordH1_Record3T,BA,NULL,NULL
+454,ECS_GUI,1P->RecordH1_Record4T,HR,NULL,NULL
+455,ECS_GUI,1P->RecordH2_Record1T,H,NULL,NULL
+456,ECS_GUI,1P->RecordH2_Record2T,2B,NULL,NULL
+457,ECS_GUI,1P->RecordH2_Record3T,3B,NULL,NULL
+458,ECS_GUI,1P->RecordH2_Record4T,SO,NULL,NULL
+459,ECS_GUI,1P->RecordH2_Record5T,Foul,NULL,NULL
+460,ECS_GUI,1P->RecordP1_Record1T,R,NULL,NULL
+461,ECS_GUI,1P->RecordP1_Record2T,W/L,NULL,NULL
+462,ECS_GUI,1P->RecordP1_Record3T,OH,NULL,NULL
+463,ECS_GUI,1P->RecordP1_Record4T,SO,NULL,NULL
+464,ECS_GUI,1P->RecordP2_Record1T,OHR,NULL,NULL
+465,ECS_GUI,1P->RecordP2_Record2T,HPS,NULL,NULL
+466,ECS_GUI,1P->SingleInfo_GradeT,GRADE,NULL,NULL
+467,ECS_GUI,2P->Info_base_LevelNum_T,69,NULL,NULL
+468,ECS_GUI,2P->Information_InfomationT,Record,NULL,NULL
+469,ECS_GUI,2P->RecordH1_Record1T,R,NULL,NULL
+470,ECS_GUI,2P->RecordH1_Record2T,W/L,NULL,NULL
+471,ECS_GUI,2P->RecordH1_Record3T,BA,NULL,NULL
+472,ECS_GUI,2P->RecordH1_Record4T,HR,NULL,NULL
+473,ECS_GUI,2P->RecordH2_Record1T,H,NULL,NULL
+474,ECS_GUI,2P->RecordH2_Record2T,2B,NULL,NULL
+475,ECS_GUI,2P->RecordH2_Record3T,3B,NULL,NULL
+476,ECS_GUI,2P->RecordH2_Record4T,SO,NULL,NULL
+477,ECS_GUI,2P->RecordH2_Record5T,Foul,NULL,NULL
+478,ECS_GUI,2P->RecordP1_Record1T,R,NULL,NULL
+479,ECS_GUI,2P->RecordP1_Record2T,W/L,NULL,NULL
+480,ECS_GUI,2P->RecordP1_Record3T,OH,NULL,NULL
+481,ECS_GUI,2P->RecordP1_Record4T,SO,NULL,NULL
+482,ECS_GUI,2P->RecordP2_Record1T,OHR,NULL,NULL
+483,ECS_GUI,2P->RecordP2_Record2T,HPS,NULL,NULL
+484,ECS_GUI,Center_PeriodT,Within A Month,NULL,NULL
+485,ECS_GUI,Info_Hitter_Ability1T,정확,NULL,NULL
+486,ECS_GUI,Info_Hitter_Ability2T,파워,NULL,NULL
+487,ECS_GUI,Info_Pitcher_Ability1T,구속,NULL,NULL
+488,ECS_GUI,Info_Pitcher_Ability2T,제구,NULL,NULL
+489,ECS_GUI,Info_Pitcher_Ability3T,변화구,NULL,NULL
+490,ECS_GUI,Menu_Coach_T,변화구 강화하기,NULL,NULL
+491,ECS_GUI,Menu_Master_T,아이템 강화하기,NULL,NULL
+492,ECS_GUI,Menu_tCoachState,NowCoachState + "%",NULL,NULL
+493,ECS_GUI,Menu_tMasterState,NowMasterState + "%",NULL,NULL
+494,ECS_GUI,ViewCoach_Coach1_T,컷패스트볼 훈련은,NULL,NULL
+495,ECS_GUI,ViewCoach_Coach2_T,Lv10부터 가능하며, 40분이 소요됩니다.,NULL,NULL
+496,ECS_GUI,PopupBreakingBallList_Empty_T,EMPTY,NULL,NULL
+497,ECS_GUI,BreakingBallInstallStep1_TitleT,장착,NULL,NULL
+498,ECS_GUI,BreakingBallInstallStep1_Gesture1_T,미선택,NULL,NULL
+499,ECS_GUI,BreakingBallInstallStep1_Gesture2_T,미선택,NULL,NULL
+500,ECS_GUI,BreakingBallInstallStep1_Gesture3_T,미선택,NULL,NULL
+501,ECS_GUI,BreakingBallInstallStep1_Gesture4_T,미선택,NULL,NULL
+502,ECS_GUI,BreakingBallInstallStep1_Gesture5_T,미선택,NULL,NULL
+503,ECS_GUI,BreakingBallInstallStep1_Explain_T,구질설명,NULL,NULL
+504,ECS_GUI,BreakingBallInstallStep1_Name_T,미선택,NULL,NULL
+505,ECS_GUI,BreakingBallInstallStep2_TitleT,장착,NULL,NULL
+506,ECS_GUI,BreakingBallInstallStep2_Middle_T,선택한 구종으로 변경하시려면 "등록"을 기존것만 해제하시려면"해제"를 누르십시오.,NULL,NULL
+507,ECS_GUI,BreakingBallInstallStep2_Bottom_T,이 제스쳐를 등록하시겠습니까?,NULL,NULL
+508,ECS_GUI,BreakingBallRegisterClear_TitleT,장착,NULL,NULL
+509,ECS_GUI,BreakingBallRegisterClear_Middle_T,장착된 변화구를 해제 하시겠습니까?,NULL,NULL
+510,ECS_GUI,BreakingBallRegisterClear_Bottom_T,OK를 누르면 해제 됩니다,NULL,NULL
+511,ECS_GUI,BreakingBallRegisterOK_TitleT,장착,NULL,NULL
+512,ECS_GUI,BreakingBallRegisterOK_Middle_T,변화구 장착을 완료 하시겠습니까?,NULL,NULL
+513,ECS_GUI,BreakingBallRegisterOK_Bottom_T,OK를 누르면 등록 됩니다.,NULL,NULL
+514,ECS_GUI,PitchinglBuyStep1_TitleT,구입,NULL,NULL
+515,ECS_GUI,TrainingCancel_TitleT,훈련,NULL,NULL
+516,ECS_GUI,TrainingCancel_Middle_T,훈련을 취소하시겠습니까?,NULL,NULL
+517,ECS_GUI,TrainingCancel_Bottom_T,OK를 누르면 취소 됩니다,NULL,NULL
+518,ECS_GUI,TrainingOK_TitleT,훈련,NULL,NULL
+519,ECS_GUI,TrainingOK_Middle_T,훈련이 완료되었습니다.,NULL,NULL
+520,ECS_GUI,TrainingOK_Bottom_T,OK를 누르면 취소 됩니다,NULL,NULL
+521,ECS_GUI,TrainingStart_TitleT,훈련,NULL,NULL
+522,ECS_GUI,TrainingStart_Middle_T,훈련을 시작 하시겠습니까?,NULL,NULL
+523,ECS_GUI,TrainingStart_Bottom_T,OK를 누르면 시작 됩니다,NULL,NULL
+524,ECS_GUI,Win_Eng_Logo_T,Win,NULL,NULL
+525,ECS_GUI,Lose_Eng_Logo_T,Lose,NULL,NULL
+526,ECS_GUI,Win_Kor_Logo_T,승,NULL,NULL
+527,ECS_GUI,Lose_Kor_Logo_T,패,NULL,NULL
+528,ECS_GUI,height_T,cm,NULL,NULL
+529,ECS_GUI,Percent_T,%,NULL,NULL
+530,ECS_GUI,Age_Kor_T,세,NULL,NULL
+531,ECS_GUI,Man_T,남성,NULL,NULL
+532,ECS_GUI,Woman_T,여성,NULL,NULL
+533,ECS_GUI,Big_Character_T,Big,NULL,NULL
+534,ECS_GUI,Normal_Character_T,Normal,NULL,NULL
+535,ECS_GUI,Small_Character_T,Small,NULL,NULL
+536,ECS_GUI,Woman_Character_T,Woman,NULL,NULL
+537,ECS_GUI,bottom_home,HOME,NULL,NULL
+538,ECS_GUI,bottom_home_sel,HOME,NULL,NULL
+539,ECS_GUI,bottom_option,OPTION,NULL,NULL
+540,ECS_GUI,bottom_option_sel,OPTION,NULL,NULL
+541,ECS_GUI,bottom_pp,PMANG+,NULL,NULL
+542,ECS_GUI,bottom_pp_sel,PMANG+,NULL,NULL
+543,ECS_GUI,bottom_shop,SHOP,NULL,NULL
+544,ECS_GUI,bottom_shop_sel,SHOP,NULL,NULL
+545,ECS_GUI,bottom_up,UPGRADE,NULL,NULL
+546,ECS_GUI,bottom_up_sel,UPGRADE,NULL,NULL
+547,ECS_GUI,btn_add,친구추가,NULL,NULL
+548,ECS_GUI,btn_add_press,친구추가,NULL,NULL
+549,ECS_GUI,btn_break_team,팀해제,NULL,NULL
+550,ECS_GUI,btn_break_team_press,팀해제,NULL,NULL
+551,ECS_GUI,btn_breakingball,변화구 장착하기,NULL,NULL
+552,ECS_GUI,btn_breakingball_press,변화구 장착하기,NULL,NULL
+553,ECS_GUI,btn_buy,구매,NULL,NULL
+554,ECS_GUI,btn_buy_press,구매,NULL,NULL
+555,ECS_GUI,btn_cancel,CANCEL,NULL,NULL
+556,ECS_GUI,btn_cancel_02,CANCEL,NULL,NULL
+557,ECS_GUI,btn_cancel_02_press,CANCEL,NULL,NULL
+558,ECS_GUI,btn_cancel_press,CANCEL,NULL,NULL
+559,ECS_GUI,btn_clear,모두해제,NULL,NULL
+560,ECS_GUI,btn_clear_02,해제,NULL,NULL
+561,ECS_GUI,btn_clear_02_press,해제,NULL,NULL
+562,ECS_GUI,btn_clear_press,모두해제,NULL,NULL
+563,ECS_GUI,btn_com,완료,NULL,NULL
+564,ECS_GUI,btn_com_press,완료,NULL,NULL
+565,ECS_GUI,btn_create_player,선수생성,NULL,NULL
+566,ECS_GUI,btn_create_player_press,선수생성,NULL,NULL
+567,ECS_GUI,btn_create_team,팀생성,NULL,NULL
+568,ECS_GUI,btn_create_team_02,팀생성,NULL,NULL
+569,ECS_GUI,btn_create_team_02_press,팀세팅,NULL,NULL
+570,ECS_GUI,btn_create_team_press,팀세팅,NULL,NULL
+571,ECS_GUI,btn_default,기본설정,NULL,NULL
+572,ECS_GUI,btn_default_press,기본설정,NULL,NULL
+573,ECS_GUI,btn_default02,기본설정,NULL,NULL
+574,ECS_GUI,btn_default02_press,기본설정,NULL,NULL
+575,ECS_GUI,btn_detail,상세설정,NULL,NULL
+576,ECS_GUI,btn_detail_dim,상세설정,NULL,NULL
+577,ECS_GUI,btn_detail_press,상세설정,NULL,NULL
+578,ECS_GUI,btn_equip,착용,NULL,NULL
+579,ECS_GUI,btn_equip_press,착용,NULL,NULL
+580,ECS_GUI,btn_myball,구종보기,NULL,NULL
+581,ECS_GUI,btn_myball_press,구종보기,NULL,NULL
+582,ECS_GUI,btn_ok,OK,NULL,NULL
+583,ECS_GUI,btn_ok_02,OK,NULL,NULL
+584,ECS_GUI,btn_ok_02_press,OK,NULL,NULL
+585,ECS_GUI,btn_ok_press,OK,NULL,NULL
+586,ECS_GUI,btn_position,투타설정,NULL,NULL
+587,ECS_GUI,btn_position_press,투타설정,NULL,NULL
+588,ECS_GUI,btn_register,등록,NULL,NULL
+589,ECS_GUI,btn_register_press,등록,NULL,NULL
+590,ECS_GUI,btn_request,대전신청,NULL,NULL
+591,ECS_GUI,btn_request_dim,대전신청,NULL,NULL
+592,ECS_GUI,btn_request_press,대전신청,NULL,NULL
+593,ECS_GUI,btn_revert,귀 속,NULL,NULL
+594,ECS_GUI,btn_revert_press,귀 속,NULL,NULL
+595,ECS_GUI,btn_search,친구찾기,NULL,NULL
+596,ECS_GUI,btn_search_press,친구찾기,NULL,NULL
+597,ECS_GUI,btn_skip,SKIP,NULL,NULL
+598,ECS_GUI,btn_skip_press,SKIP,NULL,NULL
+599,ECS_GUI,btn_start,START,NULL,NULL
+600,ECS_GUI,btn_start_press,START,NULL,NULL
+601,ECS_GUI,btn_switch_g,G SENSER,NULL,NULL
+602,ECS_GUI,btn_switch_g_press,G SENSER,NULL,NULL
+603,ECS_GUI,btn_switch_off,OFF,NULL,NULL
+604,ECS_GUI,btn_switch_off_press,OFF,NULL,NULL
+605,ECS_GUI,btn_switch_on,ON,NULL,NULL
+606,ECS_GUI,btn_switch_on_press,ON,NULL,NULL
+607,ECS_GUI,btn_switch_s,VIRTUAL STICK,NULL,NULL
+608,ECS_GUI,btn_switch_s_press,VIRTUAL STICK,NULL,NULL
+609,ECS_GUI,btn_upgrade,UPGRADE,NULL,NULL
+610,ECS_GUI,btn_upgrade_press,UPGRADE,NULL,NULL
+611,ECS_GUI,icon_buy,BUY,NULL,NULL
+612,ECS_GUI,icon_continue,CONTINUE,NULL,NULL
+613,ECS_GUI,icon_ing,ING,NULL,NULL
+614,ECS_GUI,icon_learn,COMPLETE,NULL,NULL
+615,ECS_GUI,icon_off,OFF,NULL,NULL
+616,ECS_GUI,icon_on,ON,NULL,NULL
+617,ECS_GUI,icon_victory_1,연 승,NULL,NULL
+618,ECS_GUI,icon_victory_2,연 승,NULL,NULL
+619,ECS_GUI,icon_victory_3,연 승,NULL,NULL
+620,ECS_GUI,icon_victory_4,연 승,NULL,NULL
+621,ECS_GUI,icon_victory_5,연 승,NULL,NULL
+622,ECS_GUI,icon_victory_6,연 승,NULL,NULL
+623,ECS_GUI,icon_victory_7,연 승,NULL,NULL
+624,ECS_GUI,icon_victory_8,연 승,NULL,NULL
+625,ECS_GUI,icon_victory_9,연 승,NULL,NULL
+626,ECS_GUI,icon_victory_ing,연승중,NULL,NULL
+627,ECS_GUI,img_complete,COMPLETE,NULL,NULL
+628,ECS_GUI,img_item_a,A,NULL,NULL
+629,ECS_GUI,img_item_aa,AA,NULL,NULL
+630,ECS_GUI,img_item_ab,AB,NULL,NULL
+631,ECS_GUI,img_item_ac,AC,NULL,NULL
+632,ECS_GUI,img_item_ad,AD,NULL,NULL
+633,ECS_GUI,img_item_ae,AE,NULL,NULL
+634,ECS_GUI,img_item_b,BUY,NULL,NULL
+635,ECS_GUI,img_item_bb,BB,NULL,NULL
+636,ECS_GUI,img_item_bc,BC,NULL,NULL
+637,ECS_GUI,img_item_bd,BD,NULL,NULL
+638,ECS_GUI,img_item_be,BE,NULL,NULL
+639,ECS_GUI,img_item_c,C,NULL,NULL
+640,ECS_GUI,img_item_cc,CC,NULL,NULL
+641,ECS_GUI,img_item_cd,CD,NULL,NULL
+642,ECS_GUI,img_item_ce,CE,NULL,NULL
+643,ECS_GUI,img_item_d,D,NULL,NULL
+644,ECS_GUI,img_item_dd,DD,NULL,NULL
+645,ECS_GUI,img_item_de,DE,NULL,NULL
+646,ECS_GUI,img_item_e,E,NULL,NULL
+647,ECS_GUI,img_item_ee,EE,NULL,NULL
+648,ECS_GUI,img_item_s,S,NULL,NULL
+649,ECS_GUI,img_item_sa,SA,NULL,NULL
+650,ECS_GUI,img_item_sb,SB,NULL,NULL
+651,ECS_GUI,img_item_sc,SC,NULL,NULL
+652,ECS_GUI,img_item_sd,SD,NULL,NULL
+653,ECS_GUI,img_item_se,SE,NULL,NULL
+654,ECS_GUI,img_item_ss,SS,NULL,NULL
+655,ECS_GUI,info_match_bg,TEAM,NULL,NULL
+656,ECS_GUI,info_match_bg_02,TEAM,NULL,NULL
+657,ECS_GUI,info_player_bg,선수보기,NULL,NULL
+658,ECS_GUI,info_player_hitter,타자보기,NULL,NULL
+659,ECS_GUI,info_player_hitter_sel,타자보기,NULL,NULL
+660,ECS_GUI,info_player_pitcher,투수보기,NULL,NULL
+661,ECS_GUI,info_player_pitcher_sel,투수보기,NULL,NULL
+662,ECS_GUI,img_update,UPGRADE,NULL,NULL
+663,ECS_GUI,myball_02_com,COMPLETE,NULL,NULL
+664,ECS_GUI,myball_02_con,CONTINUE,NULL,NULL
+665,ECS_GUI,myball_02_ing,ING,NULL,NULL
+666,ECS_GUI,myball_03_com,CONTINUE,NULL,NULL
+667,ECS_GUI,myball_03_con,ING,NULL,NULL
+668,ECS_GUI,myball_03_ing,ING,NULL,NULL
+669,ECS_GUI,myball_04_com,COMPLETE,NULL,NULL
+670,ECS_GUI,myball_04_con,CONTINUE,NULL,NULL
+671,ECS_GUI,myball_04_ing,ING,NULL,NULL
+672,ECS_GUI,myball_com,COMPLETE,NULL,NULL
+673,ECS_GUI,myball_con,CONTINUE,NULL,NULL
+674,ECS_GUI,myball_ing,ING,NULL,NULL
+675,ECS_GUI,play_btn_friendly,Friendly,NULL,NULL
+676,ECS_GUI,play_btn_friendly_press,Friendly,NULL,NULL
+677,ECS_GUI,play_btn_match,Match,NULL,NULL
+678,ECS_GUI,play_btn_match_press,Match,NULL,NULL
+679,ECS_GUI,play_btn_single,Single,NULL,NULL
+680,ECS_GUI,play_btn_single_press,Single,NULL,NULL
+681,ECS_GUI,shop_icon_best,BEST,NULL,NULL
+682,ECS_GUI,shop_icon_equip,EQUIP,NULL,NULL
+683,ECS_GUI,shop_icon_hot,HOT,NULL,NULL
+684,ECS_GUI,shop_icon_new,NEW,NULL,NULL
+685,ECS_GUI,shop_item_tab_a,A,NULL,NULL
+686,ECS_GUI,shop_item_tab_b,B,NULL,NULL
+687,ECS_GUI,shop_item_tab_c,C,NULL,NULL
+688,ECS_GUI,shop_item_tab_d,D,NULL,NULL
+689,ECS_GUI,shop_item_tab_e,E,NULL,NULL
+690,ECS_GUI,shop_item_tab_s,S,NULL,NULL
+691,ECS_GUI,shop_tap_02_all,ALL,NULL,NULL
+692,ECS_GUI,shop_tap_02_all_press,ALL,NULL,NULL
+693,ECS_GUI,shop_tap_02_all_sel,ALL,NULL,NULL
+694,ECS_GUI,sub_title_default,DEFAULT,NULL,NULL
+695,ECS_GUI,sub_title_detail,DETAIL,NULL,NULL
+696,ECS_GUI,sub_title_position,POSITION,NULL,NULL
+697,ECS_GUI,team_batter_l,좌타,NULL,NULL
+698,ECS_GUI,team_batter_r,우타,NULL,NULL
+699,ECS_GUI,team_pitcher_l,좌투,NULL,NULL
+700,ECS_GUI,team_pitcher_r,우투,NULL,NULL
+701,ECS_GUI,team_register,REGISTER,NULL,NULL
+702,ECS_GUI,text_lv,LV.,NULL,NULL
+703,ECS_GUI,top_btn_back,BACK,NULL,NULL
+704,ECS_GUI,top_btn_back_press,BACK,NULL,NULL
+705,ECS_GUI,top_btn_help,HELP,NULL,NULL
+706,ECS_GUI,top_btn_help_press,HELP,NULL,NULL
+707,ECS_GUI,top_btn_news,NEWS,NULL,NULL
+708,ECS_GUI,top_btn_news_press,NEWS,NULL,NULL
+709,ECS_GUI,top_title_coach,COACH,NULL,NULL
+710,ECS_GUI,top_title_create,CREATE,NULL,NULL
+711,ECS_GUI,top_title_friendly,FRIENDLY,NULL,NULL
+712,ECS_GUI,top_title_inven,INVEN,NULL,NULL
+713,ECS_GUI,top_title_master,MASTER,NULL,NULL
+714,ECS_GUI,top_title_match,MATCH,NULL,NULL
+715,ECS_GUI,top_title_myball,구종보기,NULL,NULL
+716,ECS_GUI,top_title_shop,SHOP,NULL,NULL
+717,ECS_GUI,top_title_single,SINGLE,NULL,NULL
+718,ECS_GUI,top_title_team,TEAM SETTING,NULL,NULL
+719,ECS_GUI,top_title_upgrade,UPGRADE,NULL,NULL
+720,ECS_GUI,up_btn_coach,Coach,NULL,NULL
+721,ECS_GUI,up_btn_coach_press,Coach,NULL,NULL
+722,ECS_GUI,up_btn_master,Master,NULL,NULL
+723,ECS_GUI,up_btn_master_press,Master,NULL,NULL
+724,ECS_GUI,up_icon_ing,ING,NULL,NULL
+725,ECS_GUI,up_tap_all,ALL,NULL,NULL
+726,ECS_GUI,up_tap_all_press,ALL,NULL,NULL
+727,ECS_GUI,up_tap_all_sel,ALL,NULL,NULL
+728,ECS_GUI,pbb_fourseam_explane,직구 계열의 기본 구종으로 공의 회전과 공기 저항이 일정하기 때문에 변화는 거의 없고 정확한 제구가 가능.,NULL,NULL
+729,ECS_GUI,pbb_twoseam_explane,투수의 던지는 손 방향으로 역회전을 하지만 직구의 구속을 유지하기 때문에 빗맞힘을 유도하기 좋다.,NULL,NULL
+730,ECS_GUI,pbb_risingfast_explane,구속을 극대화시켜 던지는 직구 계열로 홈 플레이트를 지나 솟아오르는 것 처럼 보이기 때문에 헛스윙 유도에 탁월하다.,NULL,NULL
+731,ECS_GUI,pbb_upshout_explane,구속을 극대화시켜 던지는 직구 계열로 홈 플레이트를 지나 솟아오르는 것 처럼 보이기 때문에 헛스윙 유도에 탁월하다.,NULL,NULL
+732,ECS_GUI,pbb_slider_explane,던지는 손의 안쪽 가로 방향으로 미끄러지듯 휘는 변화구로 게임의 초반부터 가장 많이 보게될 기본 변화구.,NULL,NULL
+733,ECS_GUI,pbb_hslider_explane,통상의 슬라이더보다 구속이 빠르지만 변화가 작다. 컷패스트볼과 슬라이더의 중간 형태.,NULL,NULL
+734,ECS_GUI,pbb_cutfast_explane,H슬라이더보다 구속이 빠르지만 변화가 작으며. 타자의 바로 앞에 와서야 변화를 시작한다.,NULL,NULL
+735,ECS_GUI,pbb_vslider_explane,슬라이더라는 이름을 쓰지만 수직으로 떨어지는 변화구. 변화의 시작이 빠른 편이라 궤적은 완만한 편.,NULL,NULL
+736,ECS_GUI,pbb_slub_explane,슬라이더와 커브의 혼합 형태로 커브보다는 완만한 궤적으로 변화하는 구종.,NULL,NULL
+737,ECS_GUI,pbb_changeup_explane,포크에 비해 변화는 비슷하나 구속은 느리다. 직구와 섞어 쓰며 타이밍을 빼앗는 용도에 적합한 구종.,NULL,NULL
+738,ECS_GUI,pbb_circlechangeup_explane,구속은 체인지업 수준이지만 싱커와 스크류처럼 던지는 손 방향으로 역회전이 걸려 휘는 변화구.,NULL,NULL
+739,ECS_GUI,pbb_knuckle_explane,공의 회전을 거의 주지 않고 던지는 변화구. 변화도 크지만 낙하지점이 일정치 않아 노리기 어렵다.,NULL,NULL
+740,ECS_GUI,pbb_curve_explane,던지는 손의 안쪽 대각선 아래로 휘어 들어가는 변화구. 궤적과 변화가 커서 타이밍을 맞추기 어렵다.,NULL,NULL
+741,ECS_GUI,pbb_slowcurve_explane,궤적은 커브와 동일하나 구속이 훨씬 느린 구종 이름 그대로 커브의 슬로우 버전이다.,NULL,NULL
+742,ECS_GUI,pbb_dropcurve_explane,궤적과 구속은 커브와 차이가 없으나 커브에 비해 타자 가까이에서 급격히 변화한다.,NULL,NULL
+743,ECS_GUI,pbb_powercurve_explane,커브에 비해 구속이 빠른 대신 변화가 작은 구종. 커브 계열에선 가장 빠르다.,NULL,NULL
+744,ECS_GUI,pbb_shout_explane,투수의 던지는 손 가로 방향으로 휘는 역회전 변화구. 투심패스트볼과 유사하나 구속이 느리다.,NULL,NULL
+745,ECS_GUI,pbb_hshout_explane,슈트보다 구속은 빠르나 변화가 작다. 컷패스트볼의 역회전 버전.,NULL,NULL
+746,ECS_GUI,pbb_fork_explane,직구와 같은 선상에서 타자의 앞에서 수직으로 떨어지며, 헛스윙 유도에 효과적인 변화구.,NULL,NULL
+747,ECS_GUI,pbb_palm_explane,투구 이후 솟구쳐 올라 가장 크게 떨어지는 변화구.구속이 느리지만 타이밍을 빼앗는 용도로 써보자.,NULL,NULL
+748,ECS_GUI,pbb_sff_explane,구속이 빠르고 타자의 바로 앞에서 작게 변화하기 때문에, 헛스윙보다는 빗맞은 타구를 유도하기 쉽다.,NULL,NULL
+749,ECS_GUI,pbb_sinker_explane,투수의 던지는 손 대각선 아래 방향으로 휘는 변화구. 왼손투수가 던지면 "스크류"라고도 한다. 땅볼 유도에 효과적.,NULL,NULL
+750,ECS_GUI,pbb_hsinker_explane,싱커의 고속 버전. 싱커에 비해 변화가 작은 대신, 맞았을 때 비거리는 적게 나오는 것이 특징.,NULL,NULL

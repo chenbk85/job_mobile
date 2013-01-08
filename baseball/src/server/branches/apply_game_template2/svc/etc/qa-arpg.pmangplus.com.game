@@ -1,0 +1,19 @@
+control_center:
+    ip: 127.0.0.1
+    port: 15500
+
+service:
+    port: 15530
+    enable-log: true
+    pid-file: /home/baseball_dev/svc/var/run/qa-arpg.pmangplus.com.game.pid
+
+log:
+    path: ~/svc/log
+    traffic: true
+    packet: true
+    session: true
+    room: true
+    debug: true
+    info: true
+    warning: true
+    error: true

@@ -1,0 +1,32 @@
+channels:
+# 10 골드
+  - id: 0
+    max_user: 4000
+    low_rank: 1
+    high_rank: 3
+
+# 1천 골드
+  - id: 1
+    max_user: 4000
+    low_rank: 3
+    high_rank: 5
+
+# 5만 골드
+  - id: 2
+    max_user: 4000
+    low_rank: 4
+    high_rank: 6
+
+# 50만 골드
+  - id: 3
+    max_user: 4000
+    low_rank: 5
+    high_rank: 8
+
+# 자유 - 10골드
+  - id: 4
+    max_user: 4000
+    low_rank: 0
+    high_rank: 2
+
+

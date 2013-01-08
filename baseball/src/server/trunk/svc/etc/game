@@ -1,0 +1,11 @@
+service:
+    port: 15300
+    enable-log: true
+
+log:
+    path: /home/baseball/svc/log
+    traffic: true
+    packet: true
+    session: true
+    room: true
+

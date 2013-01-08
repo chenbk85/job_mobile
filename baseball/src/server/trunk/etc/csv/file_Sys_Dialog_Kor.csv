@@ -1,0 +1,57 @@
+index,npc,image_type,situation,text
+1,ENS_MAESTRO,1,ENSS_STANDING_BY,장비의 강화는 게임의 필수 아닌가? 
+2,ENS_MAESTRO,3,ENSS_STANDING_BY,강한 장비는 시합 때 가장 든든 아군이 되지!
+3,ENS_MAESTRO,1,ENSS_STANDING_BY,장비는 E급 부터 S급까지 다양 하다네~
+4,ENS_MAESTRO,1,ENSS_STANDING_BY,타자 아이템 중 강화가 가능한 아이템은 헬멧, 배트, 장갑, 신발 이라네.
+5,ENS_MAESTRO,2,ENSS_STANDING_BY,투수 아이템 중 강화가 가능한 아이템은 모자, 볼, 글러브, 신발 이라네.
+6,ENS_MAESTRO,3,ENSS_STANDING_BY,강화가 오래 걸린다구? 그럼 시간 단축 아이템을 써보게.
+7,ENS_MAESTRO,3,ENSS_STANDING_BY,강화 확률을 높이고 싶다구? 그럼 확률 증가 아이템을 써보게.
+8,ENS_MAESTRO,5,ENSS_STANDING_BY,변화구 강화는 내가 아니라 투수코치한테 가봐!
+9,ENS_MAESTRO,4,ENSS_STANDING_BY,강화는 매번 최상의 결과를 주지는 못하지…
+10,ENS_MAESTRO,2,ENSS_STANDING_BY,강화 결과가 마음에 들지 않나? 그럼 강화 취소 아이템을 써봐~
+11,ENS_MAESTRO,5,ENSS_STANDING_BY,강화 의뢰비가 비싸? 그럼 기본 아이템으로 플레이 하라구. 지는 건 내 알바 아니니까~
+12,ENS_MAESTRO,1,ENSS_SELECTION,{ITEM_GRADE}급 {ITEM_NAME}의 강화에는 {X}볼과 {STUFF ITEM NAME}가 {X}개 필요하고, {X}시간 걸린다네.
+13,ENS_MAESTRO,1;2,ENSS_UPGRADE_WORKING,{ITEM_NAME}의 강화는 {XX}일 {XX}시간 {XX}분이 남았다네.
+14,ENS_MAESTRO,2,ENSS_COMPLETE,아이템 강화가 끝났으니 찾아가게.
+15,ENS_MAESTRO,5,ENSS_COMPLETE,왜 이제 오는거야? 내가 할일이 얼마나 많은 줄 알아!
+16,ENS_MAESTRO,5,ENSS_COMPLETE,내일까지 기다려서 오지 않으면 팔려구 했어~ 빨리 가져가!
+17,ENS_MAESTRO,3,ENSS_COMPLETE,흐흐흐 이번엔 아주 잘 나왔어! 믿고 가져 가라구~
+18,ENS_MAESTRO,2,ENSS_UPGRADE_RESULT,어때? 만족 하나?
+19,ENS_MAESTRO,2,ENSS_UPGRADE_RESULT,흠… 
+20,ENS_MAESTRO,3,ENSS_UPGRADE_RESULT,하하핫! 역시 난 최고야!
+21,ENS_MAESTRO,4,ENSS_UPGRADE_RESULT,크흠… 우리에겐 강화 취소란 명약이 있지…
+22,ENS_MAESTRO,5,ENSS_UPGRADE_RESULT,이 정도 나온게 어디야? 주제를 알아야지!
+23,ENS_MAESTRO,3,ENSS_UPGRADE_RESULT,또 보자구~ 허허허
+24,ENS_MAESTRO,4,ENSS_UPGRADE_RESULT,너무 인상 쓰지 말라구~ 인생은 다 그런거야~
+25,ENS_MAESTRO,3,ENSS_UPGRADE_RESULT,내 일생 최고의 명작이야! 받게!
+26,ENS_COACH,2,ENSS_STANDING_BY,투수가 구사 할 수 있는 구종이 많다는 것은 타자를 베이비로 만들 수 있다는 뜻이지. 
+27,ENS_COACH,1,ENSS_STANDING_BY,슬러브를 배우고 싶다면 슬라이더 계열과 커브 계열을 함께 습득 해야 된다구~
+28,ENS_COACH,2,ENSS_STANDING_BY,드랍커브를배우고 싶다면 커브 계열과 체인지 업 계열을 함께 습득 해야 된다구~
+29,ENS_COACH,3,ENSS_STANDING_BY,너클을 배우고 싶다면 체인지 업 계열과 포크 계열을 함께 습득 해야 된다구~
+30,ENS_COACH,7,ENSS_STANDING_BY,뭐야 그 따위로 던지고 여기서 살아남길 바라는 거야?  
+31,ENS_COACH,1,ENSS_STANDING_BY,나에게 배우는 걸 영광으로 알라구~
+32,ENS_COACH,3,ENSS_STANDING_BY,구종을 아무리 많이 보유하고 있어도 볼 배합이 나쁘다면 매번 엊어 맞기 쉽상이지.
+33,ENS_COACH,1,ENSS_STANDING_BY,변화구는 시합에 다섯개까지 들고 나갈 수 있어.
+34,ENS_COACH,7,ENSS_STANDING_BY,이런 바보! 변화구 습득 시에 제스처는 기본으로 제공 된다구...
+35,ENS_COACH,4,ENSS_STANDING_BY,포크, 싱커, 슈트는 기본 제공이 아니야… 사서 배워~ 호호홋~
+36,ENS_COACH,2,ENSS_STANDING_BY,지금 제스처가 맘에 안들어? 그럼 장착으로 가서 제스처를 변경 해~ 
+37,ENS_COACH,3,ENSS_STANDING_BY,이봐~ 내 몸매에 집중 말고 폼을 보라구~
+38,ENS_COACH,4,ENSS_SELECTION,{BREAKING BALL NAME}의 훈련에는 {X}볼이 필요 하다구~ 베이비~
+39,ENS_COACH,1,ENSS_SELECTION,{BREAKING BALL NAME}의 훈련에는 {X}볼이 필요해~ 강해지고 싶다면 대가를 지불 해야지?
+40,ENS_COACH,7,ENSS_SELECTION,{BREAKING BALL NAME}의 훈련에는 {X}볼이 필요해~ 디스카운트는 없어!
+41,ENS_COACH,2,ENSS_COMPLETE,{BREAKING BALL NAME}의 훈련이 끝났으니 확인 해~ 
+42,ENS_COACH,7,ENSS_COMPLETE,뭐야! 왜 이렇게 늦게와!
+43,ENS_COACH,3,ENSS_COMPLETE,흐음… 딱 맞추어 와 주었군~
+44,ENS_COACH,2;3,ENSS_TRANING_WORKING,{BREAKING BALL NAME}의 훈련는 {X}일 {X}시간 {X}분이 남았어.
+45,ENS_COACH,2,ENSS_TRANING_RESULT,이번 훈련으로 {BREAKING BALL NAME}의 습득까지 {X%} 남았어~ 힘내라구~
+46,ENS_COACH,3,ENSS_TRANING_RESULT,이번 훈련으로 {BREAKING BALL NAME}의 습득까지 {X%} 남았어~ 다음엔 더 잘하라구~
+47,ENS_COACH,7,ENSS_TRANING_RESULT,이번 훈련으로 {BREAKING BALL NAME}의 습득까지 {X%} 남았어~ 이것 밖에 못해?
+48,ENS_COACH,4,ENSS_TRANING_RESULT,이번 훈련으로 {BREAKING BALL NAME}의 습득까지 {X%} 남았어~ 이번 만큼만 해 주면 너에게 반할지도 몰라~ 호호홋
+49,ENS_COACH,7,ENSS_TRANING_RESULT,이번 훈련으로 {BREAKING BALL NAME}의 습득까지 {X%} 남았어~ 매일 노는 것 같더니 역시… 똑바로 못해?
+50,ENS_COACH,4,ENSS_TRANING_RESULT,이번 훈련으로 {BREAKING BALL NAME}의 습득까지 {X%} 남았어~ 역시 넌 재능이 있었어!
+51,ENS_COACH,3,ENSS_TRANING_RESULT,이번 훈련으로 {BREAKING BALL NAME}의 습득까지 {X%} 남았어~ 그냥 포기 하는게 어때? 베이비?
+52,ENS_COACH,5,ENSS_TRANING_RESULT,오호! 축하해! {BREAKING BALL NAME}를 습득했어!
+53,ENS_COACH,4,ENSS_TRANING_RESULT,오호! 축하해! {BREAKING BALL NAME}를 습득했어! 하지만 이 정도로 데이트 해 주진 않아!
+54,ENS_COACH,5,ENSS_TRANING_RESULT,드디어 {BREAKING BALL NAME}를 습득했군! 멋진걸? 
+55,ENS_COACH,6,ENSS_TRANING_RESULT,드디어 {BREAKING BALL NAME}를 습득했군! 하지만 자만은 금물이야~
+56,ENS_COACH,6,ENSS_TRANING_RESULT,좋아! 잘했어! {BREAKING BALL NAME}는 이제 니꺼야! 호호홋

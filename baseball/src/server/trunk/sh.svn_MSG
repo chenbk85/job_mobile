@@ -1,0 +1,16 @@
+pushd ~
+cd svn/MSG
+svn update
+cd src
+rm CMakeCache.txt
+cmake .
+make clean
+make all
+make install
+cd ../../baseball
+rm CMakeCache.txt
+cmake .
+make clean
+make all
+popd
+
