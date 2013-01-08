@@ -1,0 +1,51 @@
+option optimize_for = LITE_RUNTIME;
+
+
+enum PresenceCommand {
+	NONE = 0;
+	LOGIN = 1;
+	LOGOUT = 2;
+	GAMEENTER = 3;
+	GAMELEAVE = 4;
+	DETACH = 5;
+	PLUG = 6;
+	CATEGORY = 7;
+	// arg1 is for start room, arg2 is for end room
+	ROOMLIST = 8;
+}
+
+message PReqProtocol
+{
+	required PresenceCommand command = 1;
+	required int32 seqID = 2;
+	required int64 gameID = 3;
+	required int32 svcID = 4;
+	required int32 category = 5;
+
+	optional int32 arg1 = 6;
+	optional int32 arg2 = 7;
+}
+
+message PAnsProtocol
+{
+	required PresenceCommand command= 1;
+	required int32 seqID = 2;
+	required int64 gameID = 3;
+	required int32 svcID = 4;
+	
+	required int32 category = 5;
+
+	// true - success/false - fail
+	required bool result = 6;
+
+	required string status = 7;
+	required bool detached = 8;
+
+	optional string ip = 9;
+	optional int32 port = 10;
+	optional int32 roomID = 11;
+	optional int32 arg1 = 12;
+	optional int32 arg2 = 13;
+	optional string info = 14;
+}
+

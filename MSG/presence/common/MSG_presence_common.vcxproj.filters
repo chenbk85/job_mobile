@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="..\proto\presence.pb.cc">
+      <Filter>proto</Filter>
+    </ClCompile>
+    <ClCompile Include="MSG_presence_common.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="..\proto\presence.pb.h">
+      <Filter>proto</Filter>
+    </ClInclude>
+    <ClInclude Include="MSG_presence_common.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="..\proto\presence.proto">
+      <Filter>proto</Filter>
+    </None>
+    <None Include="..\proto\make_proto_presence.bat">
+      <Filter>proto</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="proto">
+      <UniqueIdentifier>{ae66f5c7-3af9-440e-a252-f008e5ce5ac0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

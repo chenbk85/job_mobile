@@ -1,0 +1,66 @@
+﻿#========================================
+#     프리젠스 서버 설정
+#---------------------------------------
+presence :
+ bind_ip_for_ug : 0.0.0.0
+ bind_port_for_ug : 6000	    
+ bind_ip_for_monitoring : 0.0.0.0
+ bind_port_for_monitoring : 6001
+
+modules  :
+-
+  name: modroom
+  version:   65
+  active: true
+
+services :
+#========================================
+#     맞고
+#---------------------------------------
+ - id : 1
+   name : 맞고
+   depmods:
+    - modroom
+    - modcore
+   max_user_per_room : 2
+   categories:
+    - id : 1
+      name : 하수 채널
+      game_servers :
+       - { ip : 127.0.0.1, port: 13000, begin_roomid : 0,    end_roomid : 1 }
+    - id : 2
+      name : 고수 채널
+      game_servers :
+       - { ip : 127.0.0.1, port: 13001, begin_roomid : 1, end_roomid : 2 }
+       - { ip : 127.0.0.1, port: 13002, begin_roomid : 2, end_roomid : 3 }
+    - id : 3
+      name : 자유 채널
+      game_servers :
+       - { ip : 127.0.0.1, port: 13004, begin_roomid : 3, end_roomid : 4 }
+       - { ip : 127.0.0.1, port: 13003, begin_roomid : 4, end_roomid : 5 }
+
+#========================================
+#     포커
+#---------------------------------------
+## - id : 0
+##   name : 포커
+##   depmods:
+##    - modroom
+##   max_user_per_room : 5
+##   categories :
+##    - id : 1
+##      name : 10원 채널
+##      game_servers :
+##       - { ip : 127.0.0.1, port: 13000, begin_roomid : 0, end_roomid : 10 }
+##    - id : 2
+##      name : 100원 채널
+##      game_servers :
+##       - { ip : 127.0.0.1, port: 13000, begin_roomid : 10, end_roomid : 20 }
+##    - id : 5
+##      name : 1000원 채널
+##      game_servers :
+##       - { ip : 127.0.0.1, port: 13000, begin_roomid : 20, end_roomid : 30 }
+##    - id : 6
+##      name : 자유 채널
+##      game_servers :
+##       - { ip : 127.0.0.1, port: 13003, begin_roomid : 30, end_roomid : 40 }

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="backend_handler.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="ug_request_handler.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="backend_room.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="connection.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="connection_manager.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="game_service.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="log.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="server.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <Filter>etc</Filter>
+    </ClCompile>
+    <ClCompile Include="MSG_presence_task.cpp">
+      <Filter>cpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="backend.hpp">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="backend_handler.hpp">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="backend_room.hpp">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="config.hpp">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="connection.hpp">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="connection_manager.hpp">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="game_service.hpp">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="log.hpp">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="server.hpp">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="ug_request_handler.hpp">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>etc</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>etc</Filter>
+    </ClInclude>
+    <ClInclude Include="MSG_presence_task.h">
+      <Filter>header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="cpp">
+      <UniqueIdentifier>{4f7c5f2b-bb92-4c34-b634-a7a473914911}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header">
+      <UniqueIdentifier>{1de6d1ee-01f1-45e8-835f-493cd69fd876}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="etc">
+      <UniqueIdentifier>{69934d90-b26f-4859-a0a7-a834064df602}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt">
+      <Filter>etc</Filter>
+    </None>
+    <None Include="..\..\..\lib\lib_mech\bin\client\UDebug_x64_vc2010\MSG_presence_server.properties" />
+  </ItemGroup>
+</Project>
