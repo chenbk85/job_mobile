@@ -1,0 +1,21 @@
+This archive is an **ALPHA** release of protobuf-net "v2", intended to help
+people who are playing with protobuf-net on iPhone (etc) and in particular
+with "unity" (http://unity3d.com/ - no association/affiliation).
+
+This is *just* the core dlls; no tooling is provided.
+
+The "Full Framework" protobuf-net  dll includes the pre-compiler code; an extra build
+step is required (using this dll, and typically a small console exe) to pre-generate
+the serialization dll for use with your DTO model.
+
+In your device project, you need to include:
+- your DTO / model library
+- the generated serialization dll
+- the "Mobile Devive" protobuf-net dll
+
+This last dll is a cut-down version (excluding features like the compiler), which
+uses different optimisations to ensure it can run unhindered on restricted runtimes.
+
+As a pre-release package, I offer even less guarantees (of 100% correct behaviour)
+than normal! Please run your own tests, and report any issues here:
+http://code.google.com/p/protobuf-net/issues/entry

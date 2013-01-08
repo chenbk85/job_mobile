@@ -1,0 +1,474 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "Resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "Resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PropertySheet.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CJSample.ico"
+
+IDI_CONTACTS            ICON    DISCARDABLE     "res\\icon4.ico"
+IDI_TASKS               ICON    DISCARDABLE     "res\\icon5.ico"
+IDI_NOTES               ICON    DISCARDABLE     "res\\icon6.ico"
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPERTYSHEET_DIALOG DIALOGEX 0, 0, 320, 243
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PropertySheet"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Standard CXTPPropertySheet",IDC_STATIC,7,7,306,45
+    PUSHBUTTON      "Show Sample",IDC_BUTTON_STANDARD,15,26,92,15
+    GROUPBOX        "CXTPPropertySheet with CXTPTabPageNavigatorList",
+                    IDC_STATIC,7,57,306,45
+    PUSHBUTTON      "Show Sample",IDC_BUTTON_LIST,15,75,92,15
+    PUSHBUTTON      "Show Sample",IDC_BUTTON_LIST2,118,74,92,15
+    GROUPBOX        "CXTPPropertySheet with CXTPTabPageNavigatorTree",
+                    IDC_STATIC,7,109,306,45
+    PUSHBUTTON      "Show Sample",IDC_BUTTON_TREE,15,128,92,15
+    GROUPBOX        "CXTPPropertySheet with custom navigator",IDC_STATIC,7,
+                    160,306,45
+    PUSHBUTTON      "Show Sample",IDC_BUTTON_TASKPANEL,15,179,92,15
+    PUSHBUTTON      "Close",IDOK,250,220,63,15
+END
+
+IDD_PAGE_TABCONTROL DIALOGEX 0, 0, 221, 122
+STYLE WS_CHILD | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Appearance Set",IDC_STATIC,4,5,52,10
+    COMBOBOX        IDC_COMBO_APPEARANCE,4,15,136,101,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Color Set",IDC_STATIC,4,29,41,8
+    COMBOBOX        IDC_COMBO_COLOR,4,38,135,75,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Layout",IDC_STATIC,4,53,22,8
+    COMBOBOX        IDC_COMBO_LAYOUT,4,62,135,101,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Position",IDC_STATIC,4,77,26,8
+    COMBOBOX        IDC_COMBO_POSITION,4,86,136,101,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Bold Selected",IDC_CHECK_BOLD_SELECTED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,154,15,60,10
+    CONTROL         "Hot Tracking",IDC_CHECK_HOTTRACKING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,154,25,57,10
+    CONTROL         "Luna Colors",IDC_CHECK_LUNA_COLORS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,154,35,53,10
+    CONTROL         "OneNote Colors",IDC_CHECK_ONENOTE_COLORS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,154,45,66,10
+    CONTROL         "Show Icons",IDC_CHECK_ICONS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,154,55,53,10
+END
+
+IDD_PAGE_SAMPLE1 DIALOG DISCARDABLE  0, 0, 186, 106
+STYLE WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Sample"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Options",IDC_STATIC,7,7,172,49
+    CONTROL         "Sample CheckBox",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,20,86,12
+    CONTROL         "Sample Option",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,35,86,12
+    GROUPBOX        "Edit",IDC_STATIC,7,63,172,36
+    EDITTEXT        IDC_EDIT_VALUE,15,75,124,16,ES_AUTOHSCROLL
+END
+
+IDD_PAGE_LISTCONTROL DIALOG DISCARDABLE  0, 0, 186, 81
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Flat Background",IDC_CHECK_FLAT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,6,110,15
+    COMBOBOX        IDC_COMBO_STYLE,7,42,129,62,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Listbox style:",IDC_STATIC,7,31,116,10
+END
+
+IDD_PAGE_TREECONTROL DIALOG DISCARDABLE  0, 0, 186, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Page Border",IDC_STATIC,7,6,152,10
+    COMBOBOX        IDC_COMBO_BORDER,7,17,154,71,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PAGE_RESIZABLE DIALOG DISCARDABLE  0, 0, 222, 137
+STYLE WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Resizable Page"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Center",IDC_BUTTON,81,115,59,15
+    GROUPBOX        "Static",IDC_STATIC_GROUP1,7,7,95,38
+    GROUPBOX        "Static",IDC_STATIC_GROUP2,120,7,95,38
+    CONTROL         "Check1",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,19,73,9
+    CONTROL         "Radio1",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,130,18,
+                    73,10
+    EDITTEXT        IDC_EDIT1,7,54,208,51,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_VSCROLL
+END
+
+IDD_PAGE_LONG DIALOG DISCARDABLE  0, 0, 230, 419
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Option Group",IDC_STATIC_SUBCAPTION1,7,7,216,14
+    CONTROL         "Check1",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,25,40,10
+    LTEXT           "Option Group",IDC_STATIC_SUBCAPTION2,7,48,216,13
+    CONTROL         "Check1",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,68,46,10
+    LTEXT           "Option Group",IDC_STATIC_SUBCAPTION3,7,92,216,13
+    CONTROL         "Check1",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,112,46,10
+    CONTROL         "Check1",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,126,44,10
+    CONTROL         "Check1",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,139,43,10
+    EDITTEXT        IDC_EDIT1,15,153,98,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "Button1",IDC_BUTTON1,15,174,70,18
+    LTEXT           "Option Group",IDC_STATIC_SUBCAPTION4,7,201,216,13
+    CONTROL         "Check1",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,223,41,10
+    CONTROL         "Check1",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,236,43,10
+    CONTROL         "Option Group",IDC_STATIC_SUBCAPTION5,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,7,260,216,13
+    PUSHBUTTON      "Button1",IDC_BUTTON2,15,281,70,18
+    PUSHBUTTON      "Button1",IDC_BUTTON3,15,306,70,18
+    PUSHBUTTON      "Button1",IDC_BUTTON4,15,329,70,18
+    PUSHBUTTON      "Button1",IDC_BUTTON5,15,352,70,18
+    CONTROL         "Check1",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,375,42,10
+    CONTROL         "Check1",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,387,41,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PAGE_TABCONTROL DLGINIT
+BEGIN
+    IDC_COMBO_APPEARANCE, 0x403, 29, 0
+0x7478, 0x5470, 0x6261, 0x7041, 0x6570, 0x7261, 0x6e61, 0x6563, 0x7250, 
+0x706f, 0x7265, 0x7974, 0x6150, 0x6567, "\000" 
+    IDC_COMBO_APPEARANCE, 0x403, 37, 0
+0x7478, 0x5470, 0x6261, 0x7041, 0x6570, 0x7261, 0x6e61, 0x6563, 0x7250, 
+0x706f, 0x7265, 0x7974, 0x6150, 0x6567, 0x6553, 0x656c, 0x7463, 0x6465, 
+"\000" 
+    IDC_COMBO_APPEARANCE, 0x403, 33, 0
+0x7478, 0x5470, 0x6261, 0x7041, 0x6570, 0x7261, 0x6e61, 0x6563, 0x7250, 
+0x706f, 0x7265, 0x7974, 0x6150, 0x6567, 0x6c46, 0x7461, "\000" 
+    IDC_COMBO_APPEARANCE, 0x403, 33, 0
+0x7478, 0x5470, 0x6261, 0x7041, 0x6570, 0x7261, 0x6e61, 0x6563, 0x7250, 
+0x706f, 0x7265, 0x7974, 0x6150, 0x6567, 0x3032, 0x3330, "\000" 
+    IDC_COMBO_APPEARANCE, 0x403, 29, 0
+0x7478, 0x5470, 0x6261, 0x7041, 0x6570, 0x7261, 0x6e61, 0x6563, 0x7453, 
+0x7461, 0x4265, 0x7475, 0x6f74, 0x736e, "\000" 
+    IDC_COMBO_APPEARANCE, 0x403, 29, 0
+0x7478, 0x5470, 0x6261, 0x7041, 0x6570, 0x7261, 0x6e61, 0x6563, 0x6956, 
+0x7573, 0x6c61, 0x7453, 0x6475, 0x6f69, "\000" 
+    IDC_COMBO_APPEARANCE, 0x403, 21, 0
+0x7478, 0x5470, 0x6261, 0x7041, 0x6570, 0x7261, 0x6e61, 0x6563, 0x6c46, 
+0x7461, "\000" 
+    IDC_COMBO_APPEARANCE, 0x403, 22, 0
+0x7478, 0x5470, 0x6261, 0x7041, 0x6570, 0x7261, 0x6e61, 0x6563, 0x7845, 
+0x6563, 0x006c, 
+    IDC_COMBO_APPEARANCE, 0x403, 22, 0
+0x7478, 0x5470, 0x6261, 0x7041, 0x6570, 0x7261, 0x6e61, 0x6563, 0x6956, 
+0x6973, 0x006f, 
+    IDC_COMBO_APPEARANCE, 0x403, 33, 0
+0x7478, 0x5470, 0x6261, 0x7041, 0x6570, 0x7261, 0x6e61, 0x6563, 0x6956, 
+0x7573, 0x6c61, 0x7453, 0x6475, 0x6f69, 0x3032, 0x3530, "\000" 
+    IDC_COMBO_COLOR, 0x403, 19, 0
+0x7478, 0x5470, 0x6261, 0x6f43, 0x6f6c, 0x4472, 0x6665, 0x7561, 0x746c, 
+"\000" 
+    IDC_COMBO_COLOR, 0x403, 24, 0
+0x7478, 0x5470, 0x6261, 0x6f43, 0x6f6c, 0x5672, 0x7369, 0x6175, 0x536c, 
+0x7574, 0x6964, 0x006f, 
+    IDC_COMBO_COLOR, 0x403, 22, 0
+0x7478, 0x5470, 0x6261, 0x6f43, 0x6f6c, 0x4f72, 0x6666, 0x6369, 0x3265, 
+0x3030, 0x0033, 
+    IDC_COMBO_COLOR, 0x403, 17, 0
+0x7478, 0x5470, 0x6261, 0x6f43, 0x6f6c, 0x5772, 0x6e69, 0x5058, "\000" 
+    IDC_COMBO_COLOR, 0x403, 19, 0
+0x7478, 0x5470, 0x6261, 0x6f43, 0x6f6c, 0x5772, 0x6968, 0x6264, 0x7965, 
+"\000" 
+    IDC_COMBO_LAYOUT, 0x403, 21, 0
+0x7478, 0x5470, 0x6261, 0x614c, 0x6f79, 0x7475, 0x7541, 0x6f74, 0x6953, 
+0x657a, "\000" 
+    IDC_COMBO_LAYOUT, 0x403, 22, 0
+0x7478, 0x5470, 0x6261, 0x614c, 0x6f79, 0x7475, 0x6953, 0x657a, 0x6f54, 
+0x6946, 0x0074, 
+    IDC_COMBO_LAYOUT, 0x403, 18, 0
+0x7478, 0x5470, 0x6261, 0x614c, 0x6f79, 0x7475, 0x6946, 0x6578, 0x0064, 
+
+    IDC_COMBO_LAYOUT, 0x403, 23, 0
+0x7478, 0x5470, 0x6261, 0x614c, 0x6f79, 0x7475, 0x6f43, 0x706d, 0x6572, 
+0x7373, 0x6465, "\000" 
+    IDC_COMBO_LAYOUT, 0x403, 21, 0
+0x7478, 0x5470, 0x6261, 0x614c, 0x6f79, 0x7475, 0x754d, 0x746c, 0x5269, 
+0x776f, "\000" 
+    IDC_COMBO_LAYOUT, 0x403, 20, 0
+0x7478, 0x5470, 0x6261, 0x614c, 0x6f79, 0x7475, 0x6f52, 0x6174, 0x6574, 
+0x0064, 
+    IDC_COMBO_POSITION, 0x403, 18, 0
+0x7478, 0x5470, 0x6261, 0x6f50, 0x6973, 0x6974, 0x6e6f, 0x6f54, 0x0070, 
+
+    IDC_COMBO_POSITION, 0x403, 19, 0
+0x7478, 0x5470, 0x6261, 0x6f50, 0x6973, 0x6974, 0x6e6f, 0x654c, 0x7466, 
+"\000" 
+    IDC_COMBO_POSITION, 0x403, 21, 0
+0x7478, 0x5470, 0x6261, 0x6f50, 0x6973, 0x6974, 0x6e6f, 0x6f42, 0x7474, 
+0x6d6f, "\000" 
+    IDC_COMBO_POSITION, 0x403, 20, 0
+0x7478, 0x5470, 0x6261, 0x6f50, 0x6973, 0x6974, 0x6e6f, 0x6952, 0x6867, 
+0x0074, 
+    0
+END
+
+IDD_PAGE_LISTCONTROL DLGINIT
+BEGIN
+    IDC_COMBO_STYLE, 0x403, 18, 0
+0x7478, 0x694c, 0x7473, 0x6f42, 0x5378, 0x6174, 0x646e, 0x7261, 0x0064, 
+
+    IDC_COMBO_STYLE, 0x403, 18, 0
+0x7478, 0x694c, 0x7473, 0x6f42, 0x4f78, 0x6666, 0x6369, 0x5865, 0x0050, 
+
+    IDC_COMBO_STYLE, 0x403, 20, 0
+0x7478, 0x694c, 0x7473, 0x6f42, 0x4f78, 0x6666, 0x6369, 0x3265, 0x3030, 
+0x0037, 
+    0
+END
+
+IDD_PAGE_TREECONTROL DLGINIT
+BEGIN
+    IDC_COMBO_BORDER, 0x403, 18, 0
+0x7478, 0x5070, 0x6761, 0x4265, 0x726f, 0x6564, 0x4e72, 0x6e6f, 0x0065, 
+
+    IDC_COMBO_BORDER, 0x403, 24, 0
+0x7478, 0x5070, 0x6761, 0x4265, 0x726f, 0x6564, 0x4272, 0x746f, 0x6f74, 
+0x4c6d, 0x6e69, 0x0065, 
+    IDC_COMBO_BORDER, 0x403, 19, 0
+0x7478, 0x5070, 0x6761, 0x4265, 0x726f, 0x6564, 0x4672, 0x6172, 0x656d, 
+"\000" 
+    0
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 12,0,0,4
+ PRODUCTVERSION 12,0,0,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "Codejock Software\0"
+            VALUE "FileDescription", "PropertySheet MFC Application\0"
+            VALUE "FileVersion", "12, 0, 0, 4\0"
+            VALUE "InternalName", "PropertySheet\0"
+            VALUE "LegalCopyright", "(c)1998-2008 Codejock Software, All Rights Reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "PropertySheet.EXE\0"
+            VALUE "ProductName", "PropertySheet Application\0"
+            VALUE "ProductVersion", "12, 0, 0, 4\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PROPERTYSHEET_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        VERTGUIDE, 15
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 235
+    END
+
+    IDD_PAGE_SAMPLE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_PAGE_LISTCONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 73
+    END
+
+    IDD_PAGE_TREECONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_PAGE_RESIZABLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_PAGE_LONG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        VERTGUIDE, 15
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 412
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About PropertySheet..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\PropertySheet.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

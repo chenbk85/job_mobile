@@ -1,0 +1,15 @@
+//
+// STATUSBAR.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+#include "Common/XTPVersion.h"
+
+#include "CodejockSample.rc"
+
+#ifdef _XTP_INCLUDE_RIBBON
+	#include "Styles\Office2007Blue\Office2007Blue.rc"
+#endif 

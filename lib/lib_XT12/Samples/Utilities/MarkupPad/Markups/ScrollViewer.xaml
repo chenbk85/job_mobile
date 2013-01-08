@@ -1,0 +1,89 @@
+<Grid xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'
+TextElement.FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5">
+
+	<Border>
+		<StackPanel Orientation="Horizontal" Background="Gold">
+		<ScrollViewer Width = "100" MaxHeight="100" Margin="4">
+		
+			<StackPanel>
+				<!--ContentControl Height="40" IsTabStop="True"><Rectangle Fill="Red"/></ContentControl-->
+				<RadioButton Content="Item 1"/>
+				<RadioButton Content="Item 2"/>
+				<RadioButton Content="Item 3"/>
+				<RadioButton Content="Item 4"/>
+				<RadioButton Content="Item 5"/>
+				<RadioButton Content="Item 6"/>
+				<RadioButton Content="Item 7"/>
+				<RadioButton Content="Item 8"/>
+				<RadioButton Content="Item 9"/>
+			</StackPanel>
+		</ScrollViewer>	
+
+		<ScrollViewer Width = "100" MaxHeight="100" Margin="4" >
+		
+			<Rectangle Height="200" Stroke="White">
+				<Rectangle.Fill>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5, 0">
+						<GradientStop Color="Red" Offset="0"/>
+						<GradientStop Color="Green" Offset="1"/>
+					</LinearGradientBrush>
+				</Rectangle.Fill>
+
+			</Rectangle>
+		</ScrollViewer>	
+
+		<ScrollViewer MaxWidth = "100" MaxHeight="100" Margin="4" >
+			<WrapPanel>
+				<Button Content=" 1 "/>
+				<Button Content=" 2 "/>
+				<Button Content=" 3 "/>
+				<Button Content=" 4 "/>
+				<Button Content=" 5 "/>
+				<Button Content=" 6 "/>
+				<Button Content=" 7 "/>
+				<Button Content=" 8 "/>
+				<Button Content=" 9 "/>
+				<Button Content="10" />
+				<Button Content="11"/>
+				<Button Content="12"/>
+				<Button Content="13"/>
+				<Button Content="14"/>
+				<Button Content="15"/>
+				<Button Content="16"/>
+				<Button Content="17"/>
+				<Button Content="18"/>
+				<Button Content="19"/>
+				<Button Content="20"/>
+			</WrapPanel>
+		</ScrollViewer>	
+
+		<ScrollViewer MaxWidth = "100" MaxHeight="100" Margin="4" VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Visible" >
+			<StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+				<Button Content=" 1 "/>
+				<Button Content=" 2 "/>
+				<Button Content=" 3 "/>
+				<Button Content=" 4 "/>
+				<Button Content=" 5 "/>
+				<Button Content=" 6 "/>
+				<Button Content=" 7 "/>
+				<Button Content=" 8 "/>
+				<Button Content=" 9 "/>
+				<Button Content="10" />
+				<Button Content="11"/>
+				<Button Content="12"/>
+				<Button Content="13"/>
+				<Button Content="14"/>
+				<Button Content="15"/>
+				<Button Content="16"/>
+				<Button Content="17"/>
+				<Button Content="18"/>
+				<Button Content="19"/>
+				<Button Content="20"/>
+			</StackPanel>
+		</ScrollViewer>	
+
+		</StackPanel>
+		
+	</Border>
+
+	</Grid>

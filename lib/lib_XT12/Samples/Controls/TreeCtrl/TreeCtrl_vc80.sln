@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TreeCtrl", ".\TreeCtrl_vc80.vcproj", "{53157924-3142-6252-9399-548533523281}"
+EndProject

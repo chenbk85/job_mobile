@@ -1,0 +1,388 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Button.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+LOVE.PNG                PNG     DISCARDABLE     "res\\Love.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+GLYPH.BMP               BITMAP  DISCARDABLE     "res\\glyph.bmp"
+IDB_IMAGELIST           BITMAP  DISCARDABLE     "res\\imagelist.bmp"
+IDB_OK                  BITMAP  DISCARDABLE     "res\\ok.bmp"
+IDB_ALPHA_SETTINGS      BITMAP  DISCARDABLE     "res\\AlphaSettings.bmp"
+IDB_ALPHA_FIND          BITMAP  DISCARDABLE     "res\\AlphaFind.bmp"
+IDB_ALPHA_HELP          BITMAP  DISCARDABLE     "res\\AlphaHelp.bmp"
+IDB_ALPHA_RUN           BITMAP  DISCARDABLE     "res\\AlphaRun.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PAGE_SIMPLEBUTTONS DIALOGEX 0, 0, 326, 197
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Simple Buttons"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Regular Buttons",IDC_GBOX_REGULAR,7,7,99,67
+    PUSHBUTTON      "&Settings",IDC_BUTTON_SETTINGS,16,19,76,20,BS_MULTILINE
+    PUSHBUTTON      "Fin&d",IDC_BUTTON_FIND,16,43,76,20,BS_MULTILINE
+    GROUPBOX        "Two Rows Buttons",IDC_GBOX_TWOROWS,7,79,99,94
+    PUSHBUTTON      "Help",IDC_BUTTON_HELP,16,92,76,35
+    PUSHBUTTON      "R&un...",IDC_BUTTON_RUN,16,132,76,35
+    COMBOBOX        IDC_COMBO_STYLE,7,178,99,77,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "CheckBoxes",IDC_GBOX_CHECKBOXES,116,7,93,40
+    CONTROL         "State 1",IDC_CHECK_STATE1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,116,18,63,10
+    CONTROL         "State 2",IDC_CHECK_STATE2,"Button",BS_AUTO3STATE | 
+                    WS_TABSTOP,116,30,55,10
+    GROUPBOX        "Radio Buttons",IDC_GBOX_RADIO,116,52,93,37
+    CONTROL         "Option 1",IDC_RADIO_OPTION1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,116,62,55,12
+    CONTROL         "Option 2",IDC_RADIO_OPTION2,"Button",BS_AUTORADIOBUTTON,
+                    116,73,55,12
+    GROUPBOX        "Justifications",IDC_GBOX_JUSTIFICATION,116,101,93,89
+    LTEXT           "Text Alignment",IDC_STATIC_TEXTALIGNEMNT,116,112,86,8
+    COMBOBOX        IDC_COMBO_TEXTALIGNMENT,116,122,93,58,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Image Alignment",IDC_STATIC_IMAGEALIGNMENT,116,138,86,8
+    COMBOBOX        IDC_COMBO_IMAGEALIGNMENT,116,149,93,99,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Text Image Relation",IDC_STATIC_RELATION,116,167,86,8
+    COMBOBOX        IDC_COMBO_RELATION,116,178,93,88,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Button Theme",IDC_GBOX_THEME,218,7,101,111
+    CONTROL         "Standar&d",IDC_RADIO_CLASSIC,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,224,17,45,10
+    CONTROL         "&Flat",IDC_RADIO_FLAT,"Button",BS_AUTORADIOBUTTON,224,
+                    27,27,10
+    CONTROL         "&Ultra Flat",IDC_RADIO_ULTRAFLAT,"Button",
+                    BS_AUTORADIOBUTTON,224,38,44,10
+    CONTROL         "Office 200&0",IDC_RADIO_OFFICE2000,"Button",
+                    BS_AUTORADIOBUTTON,224,49,53,10
+    CONTROL         "Office &XP",IDC_RADIO_OFFICEXP,"Button",
+                    BS_AUTORADIOBUTTON,224,59,46,10
+    CONTROL         "Office 200&3",IDC_RADIO_OFFICE2003,"Button",
+                    BS_AUTORADIOBUTTON,224,68,53,10
+    CONTROL         "Office 200&7",IDC_RADIO_OFFICE2007,"Button",
+                    BS_AUTORADIOBUTTON,224,79,53,8
+    CONTROL         "&Flat Style",IDC_CHECK_FLATSTYLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,224,94,45,10
+    CONTROL         "Use &Visual Style",IDC_CHECK_WINXP_THEMES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,224,104,67,10
+    GROUPBOX        "Option&s",IDC_GBOX_OPTIONS,218,122,101,68
+    CONTROL         "&Toggle Buttons",IDC_CHECK_TOGGLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,224,132,64,10
+    CONTROL         "&Enabled",IDC_CHECK_ENABLED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,224,143,42,10
+    CONTROL         "Alpha Icons",IDC_CHECK_ALPHA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,224,154,53,10
+    CONTROL         "Show Focus",IDC_CHECK_FOCUS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,224,165,55,10
+END
+
+IDD_PAGE_MARKUPBUTTONS DIALOGEX 0, 0, 326, 197
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Markup Buttons"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "<TextBlock>RadioButton with <Run Foreground=""Red"" FontWeight=""Bold"" TextDecorations=""Underline"">Markup</Run></TextBlock>",
+                    IDC_RADIO_MARKUP,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,7,7,125,9
+    CONTROL         "<TextBlock>Markup <Run Background=""Gold"" Text=""is""/> Cool<Run FontSize='7' BaselineAlignment='Top'>2</Run></TextBlock>",
+                    IDC_CHECK_MARKUP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    17,99,12
+    CONTROL         "Delete Inbox",IDC_CHECK_DELETEINBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,39,99,11
+    CONTROL         "Delete Outbox",IDC_CHECK_DELETEOUTBOX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,51,99,11
+    CONTROL         "Radio Button with link",IDC_RADIO_WITHLINK,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,7,70,99,12
+    PUSHBUTTON      "Turn on Firewall now",IDC_BUTTON_FIREWALL,170,7,149,30
+    PUSHBUTTON      "<TextBlock>I <InlineUIContainer BaselineAlignment='Bottom'><Image Source=""res://love.png""/></InlineUIContainer> Markup</TextBlock>",
+                    IDC_BUTTON_MARKUP,170,43,78,17
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 12,0,0,4
+ PRODUCTVERSION 12,0,0,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "Codejock Software\0"
+            VALUE "FileDescription", "Button MFC Application\0"
+            VALUE "FileVersion", "12, 0, 0, 4\0"
+            VALUE "InternalName", "Button\0"
+            VALUE "LegalCopyright", "(c)1998-2008 Codejock Software, All Rights Reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Button.EXE\0"
+            VALUE "ProductName", "Button Application\0"
+            VALUE "ProductVersion", "12, 0, 0, 4\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PAGE_SIMPLEBUTTONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 319
+        VERTGUIDE, 106
+        VERTGUIDE, 116
+        VERTGUIDE, 209
+        VERTGUIDE, 218
+        VERTGUIDE, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_PAGE_MARKUPBUTTONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 319
+        VERTGUIDE, 106
+        VERTGUIDE, 116
+        VERTGUIDE, 209
+        VERTGUIDE, 218
+        VERTGUIDE, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PAGE_SIMPLEBUTTONS DLGINIT
+BEGIN
+    IDC_COMBO_STYLE, 0x403, 7, 0
+0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_COMBO_STYLE, 0x403, 10, 0
+0x7244, 0x706f, 0x4420, 0x776f, 0x006e, 
+    IDC_COMBO_STYLE, 0x403, 15, 0
+0x7244, 0x706f, 0x4420, 0x776f, 0x5220, 0x6769, 0x7468, "\000" 
+    IDC_COMBO_STYLE, 0x403, 16, 0
+0x7053, 0x696c, 0x2074, 0x7244, 0x706f, 0x4420, 0x776f, 0x006e, 
+    IDC_COMBO_TEXTALIGNMENT, 0x403, 12, 0
+0x694d, 0x6464, 0x656c, 0x4c20, 0x6665, 0x0074, 
+    IDC_COMBO_TEXTALIGNMENT, 0x403, 13, 0
+0x694d, 0x6464, 0x656c, 0x5220, 0x6769, 0x7468, "\000" 
+    IDC_COMBO_TEXTALIGNMENT, 0x403, 14, 0
+0x694d, 0x6464, 0x656c, 0x4320, 0x6e65, 0x6574, 0x0072, 
+    IDC_COMBO_TEXTALIGNMENT, 0x403, 9, 0
+0x6f54, 0x2070, 0x654c, 0x7466, "\000" 
+    IDC_COMBO_TEXTALIGNMENT, 0x403, 10, 0
+0x6f54, 0x2070, 0x6952, 0x6867, 0x0074, 
+    IDC_COMBO_TEXTALIGNMENT, 0x403, 11, 0
+0x6f54, 0x2070, 0x6543, 0x746e, 0x7265, "\000" 
+    IDC_COMBO_TEXTALIGNMENT, 0x403, 12, 0
+0x6f42, 0x7474, 0x6d6f, 0x4c20, 0x6665, 0x0074, 
+    IDC_COMBO_TEXTALIGNMENT, 0x403, 13, 0
+0x6f42, 0x7474, 0x6d6f, 0x5220, 0x6769, 0x7468, "\000" 
+    IDC_COMBO_TEXTALIGNMENT, 0x403, 14, 0
+0x6f42, 0x7474, 0x6d6f, 0x4320, 0x6e65, 0x6574, 0x0072, 
+    IDC_COMBO_IMAGEALIGNMENT, 0x403, 12, 0
+0x694d, 0x6464, 0x656c, 0x4c20, 0x6665, 0x0074, 
+    IDC_COMBO_IMAGEALIGNMENT, 0x403, 13, 0
+0x694d, 0x6464, 0x656c, 0x5220, 0x6769, 0x7468, "\000" 
+    IDC_COMBO_IMAGEALIGNMENT, 0x403, 14, 0
+0x694d, 0x6464, 0x656c, 0x4320, 0x6e65, 0x6574, 0x0072, 
+    IDC_COMBO_IMAGEALIGNMENT, 0x403, 9, 0
+0x6f54, 0x2070, 0x654c, 0x7466, "\000" 
+    IDC_COMBO_IMAGEALIGNMENT, 0x403, 10, 0
+0x6f54, 0x2070, 0x6952, 0x6867, 0x0074, 
+    IDC_COMBO_IMAGEALIGNMENT, 0x403, 11, 0
+0x6f54, 0x2070, 0x6543, 0x746e, 0x7265, "\000" 
+    IDC_COMBO_IMAGEALIGNMENT, 0x403, 12, 0
+0x6f42, 0x7474, 0x6d6f, 0x4c20, 0x6665, 0x0074, 
+    IDC_COMBO_IMAGEALIGNMENT, 0x403, 13, 0
+0x6f42, 0x7474, 0x6d6f, 0x5220, 0x6769, 0x7468, "\000" 
+    IDC_COMBO_IMAGEALIGNMENT, 0x403, 14, 0
+0x6f42, 0x7474, 0x6d6f, 0x4320, 0x6e65, 0x6574, 0x0072, 
+    IDC_COMBO_RELATION, 0x403, 8, 0
+0x764f, 0x7265, 0x616c, 0x0079, 
+    IDC_COMBO_RELATION, 0x403, 17, 0
+0x6d49, 0x6761, 0x2065, 0x6241, 0x766f, 0x2065, 0x6554, 0x7478, "\000" 
+    IDC_COMBO_RELATION, 0x403, 17, 0
+0x6554, 0x7478, 0x4120, 0x6f62, 0x6576, 0x4920, 0x616d, 0x6567, "\000" 
+    IDC_COMBO_RELATION, 0x403, 18, 0
+0x6d49, 0x6761, 0x2065, 0x6542, 0x6f66, 0x6572, 0x5420, 0x7865, 0x0074, 
+
+    IDC_COMBO_RELATION, 0x403, 18, 0
+0x6554, 0x7478, 0x4220, 0x6665, 0x726f, 0x2065, 0x6d49, 0x6761, 0x0065, 
+
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_DROPDOWN MENU DISCARDABLE 
+BEGIN
+    POPUP "Drop Down Menu"
+    BEGIN
+        MENUITEM "Option Item 1",               ID_DROPDOWNMENU_OPTIONITEM1
+        MENUITEM "Option Item 2",               ID_DROPDOWNMENU_OPTIONITEM2
+        MENUITEM "Option Item 3",               ID_DROPDOWNMENU_OPTIONITEM3
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Button Style Sample..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Codejock Button Style Sample"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Button.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

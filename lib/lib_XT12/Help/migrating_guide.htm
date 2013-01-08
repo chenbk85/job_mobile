@@ -1,0 +1,284 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<title>Codejock Software Migrating Guide</title>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" title="default" href="includes/releasenotes.css"><script type="text/javascript">
+function outliner () {
+  oMe = window.event.srcElement
+  //get child element
+  var child = document.all[event.srcElement.getAttribute("child",false)];
+  //if child element exists, expand or collapse it.
+  if (null != child)
+    //child.className = child.className == "collapsed" ? "expanded" : "collapsed";
+    child.style.display = "none" == child.style.display ? "" : "none";
+}
+function changepic() {
+  uMe = window.event.srcElement;
+  var check = uMe.src.toLowerCase();
+  if (check.lastIndexOf("plus.gif") != -1) {
+    uMe.src = "images/minus.gif"
+  }
+  else {
+    uMe.src = "images/plus.gif"
+  }
+}
+function OnProductChanged(index) {
+  var i, child ;  for(i = 0; i < document.all.length; i++){
+    child = document.all(i)
+    //alert(child.tagName);
+    if (child.id != null) if (child.id.indexOf("divproduct") == 0) {
+      child.style.display = child.id.indexOf("divproduct_" + index) != 0? "none" : "";
+    }
+  }
+}
+function OnCategoryChanged(index) {
+  var i, child ;
+  for(i = 0; i < document.all.length; i++){
+    child = document.all(i)
+    //alert(child.tagName);
+    if (child.id != null) if (child.id.indexOf("divcategory") == 0) {
+      child.style.display = child.id.indexOf("divcategory_" + index) != 0? "none" : "";
+    }
+  }				
+}
+</script></head>
+<body onclick="outliner();">
+<table width="100%" cellSpacing="0" cellPadding="5" border="0" class="pageheading">
+<tr>
+<td class="pageheading" width="48"><img src="images/notes.gif" border="0" width="48" height="48"></td>
+<td class="pageheading" height="61" nowrap="1"><font class="title">Migration Guide</font><br>for Xtreme Toolkit Professional Edition product line</td>
+</tr>
+</table>
+<div style="width:575px;padding:10px;">
+Codejock Software's Xtreme Toolkit Professional Edition product line migrating guide notes include all api changes that you must apply in your application.
+</div>
+<div style="width:100%;padding-left:10px;padding-right:20px;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><img src="images/pixel.gif" width="16" height="16"></td>
+<td valign="top" style="background-image: url('images/dotsep.gif'); width: 100%; padding-left: 5px;"></td>
+</tr>
+<tr>
+<td valign="top"><img src="images/bluearrow.gif"></td>
+<td valign="top" style="padding-left: 5px;"><b>Select a Component Category:</b><br><div style="padding-top:2px;">To get started, select the development platform you will be working with from the Component Category list.</div></td>
+</tr>
+<tr>
+<td valign="top"><img src="images/pixel.gif" width="16" height="16"></td>
+<td valign="top" style="width: 100%; padding-left: 5px;padding-top: 10px;">
+<div style="padding-bottom: 0px;"><input style="cursor: pointer; cursor: hand;" type="radio" id="mfc" name="dev" onclick="OnCategoryChanged('mfc');" checked="1"><label style="cursor: pointer; cursor: hand;" for="mfc">Visual C++ Components</label></div>
+<div style="padding-bottom: 0px;"><input style="cursor: pointer; cursor: hand;" type="radio" id="ax" name="dev" onclick="OnCategoryChanged('ax');"><label style="cursor: pointer; cursor: hand;" for="ax">Active-X Components for Visual Basic and .NET</label></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="width:100%;padding:10px;">
+<table cellpadding="2" cellspacing="0" width="98%" border="1" bordercolor="white" class="infotable">
+<tr>
+<td nowrap="1" class="header" width="25%">Release</td>
+<td nowrap="1" class="header" width="75%">Date</td>
+</tr>
+<tr class="row">
+<td class="content"><IMG alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div10.1">Version 10.1</td>
+<td class="content">April 5, 2006</td>
+</tr>
+<tr id="div10.1" bgcolor="#ffffff">
+<td colspan="2" style="padding-top: 10px;padding-bottom: 10px;">
+<div id="divcategory_mfc_10.1" style="display:">
+<div id="divproduct_Calendar_mfc_10.1_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_Calendar_mfc_10.1_body"><i>Xtreme Calendar Pro</i></div>
+<div style="padding-left: 20px;" id="div_Calendar_mfc_10.1_body">
+<table width="97%" class="issuetable">
+<tr><td width="16" class="issuecontent" align="right" valign="top"><img src="images/bluearrow.gif"></td>
+<td class="issuecontent"><Note>The Data Base data provider DB structure changed: 					
+					<UL STYLE="margin-left:0px;"><b>* Table 'Event'	</b><LI STYLE="margin-left:10px;  list-style-type:none"> - Field renamed: from <b>Description</b> to <b>Body</b></LI><LI STYLE="margin-left:10px;  list-style-type:none"> - New field added: <b>ScheduleID</b> type: Number </LI><LI STYLE="margin-left:10px;  list-style-type:none"> - New field added: <b>IsReminder</b> type: Number </LI></UL><UL STYLE="margin-left:0px;"><b>* Table 'RecurrencePattern'	</b><LI STYLE="margin-left:10px;  list-style-type:none"> - New field added: <b>CustomPropertiesXMLData</b> type: Memo </LI></UL>
+
+					If you need to use old mdb data fiels with a version 10 - please make corresponding changes manually.
+				</Note></td></tr>
+<tr><td width="16" class="issuecontent" align="right" valign="top"><img src="images/bluearrow.gif"></td>
+<td class="issuecontent"><Note>
+					GetProperty(XTP_CALENDAR_PROP_DBProviderCacheMode) changed to GetCacheMode, SetProperty(XTP_CALENDAR_PROP_DBProviderCacheMode) to SetCacheMode
+				</Note></td></tr>
+<tr><td width="16" class="issuecontent" align="right" valign="top"><img src="images/bluearrow.gif"></td>
+<td class="issuecontent"><Note>
+					xtpCalendarDBCacheModeOnRepeat xtpCalendarDBCacheModeOnClear xtpCalendarDBCacheModeOff renamed as
+					xtpCalendarDPCacheModeOnRepeat xtpCalendarDPCacheModeOnClear xtpCalendarDPCacheModeOff
+				</Note></td></tr>
+</table></div></div>
+</div>
+<div id="divcategory_ax_10.1" style="display:none">
+<div id="divproduct_Calendar_ax_10.1_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_Calendar_ax_10.1_body"><i>Xtreme Calendar Pro</i></div>
+<div style="padding-left: 20px;" id="div_Calendar_ax_10.1_body">
+<table width="97%" class="issuetable">
+<tr><td width="16" class="issuecontent" align="right" valign="top"><img src="images/bluearrow.gif"></td>
+<td class="issuecontent"><Note>The Data Base data provider DB structure changed: 					
+					<UL STYLE="margin-left:0px;"><b>* Table 'Event'	</b><LI STYLE="margin-left:10px;  list-style-type:none"> - Field renamed: from <b>Description</b> to <b>Body</b></LI><LI STYLE="margin-left:10px;  list-style-type:none"> - New field added: <b>ScheduleID</b> type: Number </LI><LI STYLE="margin-left:10px;  list-style-type:none"> - New field added: <b>IsReminder</b> type: Number </LI></UL><UL STYLE="margin-left:0px;"><b>* Table 'RecurrencePattern'	</b><LI STYLE="margin-left:10px;  list-style-type:none"> - New field added: <b>CustomPropertiesXMLData</b> type: Memo </LI></UL>
+
+					If you need to use old mdb data fiels with a version 10 - please make corresponding changes manually.
+				</Note></td></tr>
+<tr><td width="16" class="issuecontent" align="right" valign="top"><img src="images/bluearrow.gif"></td>
+<td class="issuecontent"><Note>
+					GetProperty(XTP_CALENDAR_PROP_DBProviderCacheMode) changed to GetCacheMode, SetProperty(XTP_CALENDAR_PROP_DBProviderCacheMode) to SetCacheMode
+				</Note></td></tr>
+<tr><td width="16" class="issuecontent" align="right" valign="top"><img src="images/bluearrow.gif"></td>
+<td class="issuecontent"><Note>
+					xtpCalendarDBCacheModeOnRepeat xtpCalendarDBCacheModeOnClear xtpCalendarDBCacheModeOff renamed as
+					xtpCalendarDPCacheModeOnRepeat xtpCalendarDPCacheModeOnClear xtpCalendarDPCacheModeOff
+				</Note></td></tr>
+</table></div></div>
+</div>
+</td></tr>
+<tr class="row">
+<td class="content"><IMG alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div9.80">Version 9.80</td>
+<td class="content">September 26, 2005</td>
+</tr>
+<tr id="div9.80" bgcolor="#ffffff">
+<td colspan="2" style="padding-top: 10px;padding-bottom: 10px;">
+<div id="divcategory_mfc_9.80" style="display:">
+<div id="divproduct_CommandBars_mfc_9.80_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_CommandBars_mfc_9.80_body"><i>Xtreme CommandBars</i></div>
+<div style="padding-left: 20px;" id="div_CommandBars_mfc_9.80_body">
+<table width="97%" class="issuetable">
+<tr><td width="16" class="issuecontent" align="right" valign="top"><img src="images/bluearrow.gif"></td>
+<td class="issuecontent"><Note> Reworked CXTPShortcutManager to allow shortcuts customization in Dialogs. 
+				       <br>XTPShortcutManager glabal function removed, use pCommanBars-&gt;GetShortcutManager() instead. 
+				       <br>CXTPCommandBars::LoadCommandBars and CXTPCommandBars::SaveCommandBars now save/restore shortcuts too. 
+				       <br>Call pCommanBars-&gt;GetShortcutManager()-&gt;SetAccelerators(IDR_MAINFRAME) to enable it.
+				</Note></td></tr>
+<tr><td width="16" class="issuecontent" align="right" valign="top"><img src="images/bluearrow.gif"></td>
+<td class="issuecontent"><Note> Reworked CXTPDialog to allow Docking and Customization, Removed CXTPDialog::SetMenuBar because of it. use CXTPCommandBars::SetMenu(...) instead, for example:
+				       <pre>VERIFY(InitCommandBars());
+CXTPCommandBars* pCommandBars = GetCommandBars();
+pCommandBars-&gt;SetMenu(_T("Menu Bar"), IDR_MENU)</pre></Note></td></tr>
+<tr><td width="16" class="issuecontent" align="right" valign="top"><img src="images/bluearrow.gif"></td>
+<td class="issuecontent"><Note>Because of spell error CXTPControl::GetRawRect and CXTPControl::SetRawRect changed to CXTPControl::GetRowRect and CXTPControl::SetRowRect</Note></td></tr>
+</table></div></div>
+<div id="divproduct_ReportControl_mfc_9.80_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_ReportControl_mfc_9.80_body"><i>Xtreme Report Control</i></div>
+<div style="padding-left: 20px;" id="div_ReportControl_mfc_9.80_body">
+<table width="97%" class="issuetable">
+<tr><td width="16" class="issuecontent" align="right" valign="top"><img src="images/bluearrow.gif"></td>
+<td class="issuecontent"><Note>CXTPReportView::SetReportCtrl method added to allow custom CXTPReportControl child class, please use CXTPReportView::GetReportCtrl() instead of m_wndReport</Note></td></tr>
+<tr><td width="16" class="issuecontent" align="right" valign="top"><img src="images/bluearrow.gif"></td>
+<td class="issuecontent"><Note>Changed enumerators names: xtpGrid* to xtpReportGrid*; xtpColumn* to xtpReportColumn*</Note></td></tr>
+</table></div></div>
+</div>
+<div id="divcategory_ax_9.80" style="display:none">
+<div id="divproduct_Suite_ax_9.80_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_Suite_ax_9.80_body"><i>Xtreme Suite Pro</i></div>
+<div style="padding-left: 20px;" id="div_Suite_ax_9.80_body">
+<table width="97%" class="issuetable">
+<tr><td width="16" class="issuecontent" align="right" valign="top"><img src="images/bluearrow.gif"></td>
+<td class="issuecontent"><Note>Xtreme Suite ActiveX has had some significant changes made that need to be noted before updrading to 9.80 and above.
+					<br><br>The TaskPanel and ShortcutBar controls have been removed from the SuiteCtrls.OCX file.  Both the TaskPanel and ShortcutBar have their own OCX file.
+					<br><b>Important</b> Please note that all changes should be made by opening up the files in a text editor such as WordPad.  <b>Do not</b> open up the project and try to edit it with Visual Studio.
+					<br></Note></td></tr>
+<tr><td width="16" class="issuecontent" align="right" valign="top"><img src="images/bluearrow.gif"></td>
+<td class="issuecontent"><Note><b>To upgrade existing VB6 project please follow the steps below:</b><br><br><b>Adding the GUID for TaskPanel and ShortcutBar Controls</b><br>          1.  If you are using the TaskPanel control add the following GUID to the .vbp and all .frm files the TaskPanel is used on:
+					<br><pre>         Object={B8E5842E-102B-4289-9D57-3B3F5B5E15D3}#9.80#0; TaskPanel.ocx</pre><br>          2.  If you are using the ShortcutBar control add the following GUID to the .vbp and all .frm files the ShortcutBar is used on:
+					<br><pre>         Object={C8E5842E-102B-4289-9D57-3B3F5B5E15D3}#9.80#0; ShortcutBar.ocx</pre><br><br><b>Removing Uneeded GUIDs if Neccessary</b><br>          3.  If you do not use any other controls from the SuiteCtrls.OCX file from version before 9.80 then you can remove the GUID for the Suite Control from the .vbp and all .frm files:
+					<br><pre>        Object = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}#9.60#0"; "SuiteCtrls.ocx"</pre><br><br><b>Renaming Control Names in .frm Files</b><br>          4.  Change all occurences of XtremeSuiteControls.TaskPanel to XtremeTaskPanel.TaskPanel in each .frm file that contains a TaskPanel control.
+					<br>          5.  Change all occurences of XtremeSuiteControls.ShortcutBar to XtremeShortcutBar.ShortcutBar in each .frm file that contains a ShortcutBar control.	
+					<br><br><b>Renaming Event Handler Parameters</b><br>          6. Change all occurences of XtremeSuiteControls.ITaskPanel to XtremeTaskPanel.ITaskPanel in each .frm file that contains a TaskPanel control.
+					<br>          7. Change all occurences of XtremeSuiteControls.ITaskPanelItem to XtremeTaskPanel.ITaskPanelItem in each .frm file that contains a TaskPanel control.
+					<br>          8. Change all occurences of XtremeSuiteControls.ITaskPanelGroupItem to XtremeTaskPanel.ITaskPanelGroupItem in each .frm file that contains a TaskPanel control.
+					<br>          9. Change all occurences of XtremeSuiteControls.ITaskPanelGroup to XtremeTaskPanel.ITaskPanelGroup in each .frm file that contains a TaskPanel control.
+					<br>          10. Change all occurences of XtremeSuiteControls.IShortcutBarItem to XtremeShortcutBar.IShortcutBarItem in each .frm file that contains a ShortcutBar control.
+					<br><br><br><b>You can use Help\UpgradeFrom970.vbs script to upgrade all files.</b><br><br></Note></td></tr>
+<tr><td width="16" class="issuecontent" align="right" valign="top"><img src="images/bluearrow.gif"></td>
+<td class="issuecontent"><Note><b>To upgrade existing C# .NET project please follow the steps below:</b><br><br><b>Adding the TaskPanel and ShortcutBar References</b><br>          1.  If you are using the TaskPanel control add the reference after the XtremeSuiteControls reference in the .csproj file:
+					<br><pre>                
+&lt;Reference
+    Name = "XtremeTaskPanel"
+    Guid = "{B8E5842E-102B-4289-9D57-3B3F5B5E15D3}"
+    VersionMajor = "9"
+    VersionMinor = "80"
+    Lcid = "0"
+    WrapperTool = "tlbimp"
+/&gt;
+&lt;Reference
+    Name = "AxXtremeTaskPanel"
+    Guid = "{B8E5842E-102B-4289-9D57-3B3F5B5E15D3}"
+    VersionMajor = "9"
+    VersionMinor = "80"
+    Lcid = "0"
+    WrapperTool = "aximp"
+/&gt;
+                				</pre><br>          2.  If you are using the ShortcutBar control add the reference after the XtremeSuiteControls reference in the .csproj file:
+					<br><pre>                
+&lt;Reference
+	Name = "XtremeShortcutBar"
+	Guid = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}"
+	VersionMajor = "9"
+	VersionMinor = "80"
+	Lcid = "0"
+	WrapperTool = "tlbimp"
+/&gt;
+	&lt;Reference
+	Name = "AxXtremeShortcutBar"
+	Guid = "{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}"
+	VersionMajor = "9"
+	VersionMinor = "80"
+	Lcid = "0"
+	WrapperTool = "aximp"
+/&gt;
+                				</pre><br><br>          3.  <b>Important</b> If your application still uses the PopupControl or TabControl you must update the VersionMajor and VersionMinor 
+									properties of the XtremeSuiteControls and AxXtremeSuiteControls reference in the .csproj file to the current major and minor version to avoid ambiguities.
+					<br><br><br><b>Removing Uneeded References if Neccessary</b><br>          4.  If you do not use any other controls from the SuiteCtrls.OCX file from versions before 9.80 (Popup Control or Tab Control) then you can remove the XtremeSuiteControls reference in the .csproj file:
+					<br><pre>        
+&lt;Reference
+    Name = "XtremeSuiteControls"
+    Guid = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}"
+    VersionMajor = "9"
+    VersionMinor = "60"
+    Lcid = "0"
+    WrapperTool = "tlbimp"
+/&gt;
+&lt;Reference
+    Name = "AxXtremeSuiteControls"
+    Guid = "{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}"
+    VersionMajor = "9"
+    VersionMinor = "60"
+    Lcid = "0"
+    WrapperTool = "aximp"
+/&gt;					
+					  			   </pre><br><br><b>Updating "using" statements</b><br>          5.  If using the TaskPanel control, then add the following to all .cs files that may need it:
+					<br><pre>     using XtremeTaskPanel;</pre><br>          6.  If using the ShortcutBar control, then add the following to all .cs files that may need it:
+					<br><pre>     using XtremeShortcutBar;</pre><br><b>Renaming Control Names in .cs Files</b><br>          7.  Change all occurences of AxXtremeSuiteControls.AxTaskPanel to AxXtremeTaskPanel.AxTaskPanel in each .cs file that contains a TaskPanel control.
+					<br>          8.  Change all occurences of AxXtremeSuiteControls.AxShortcutBar to AxXtremeShortcutBar.AxShortcutBar in each .cs file that contains a ShortcutBar control.	
+					<br>          9.  Change all occurences of AxXtremeSuiteControls.AxShortcutCaption to AxXtremeShortcutBar.AxShortcutCaption in each .cs file that contains a ShortcutBar Caption control.						
+					<br><br><b>Renaming Event Handler Parameters</b><br>          10. Change all occurences of AxXtremeSuiteControls._DTaskPanelEvents_xxxxEvent to AxXtremeTaskPanel._DTaskPanelEvents_xxxxEvent in each .cs file that contains a TaskPanel control.										
+					<br>          11. Change all occurences of AxXtremeSuiteControls._DShortcutBarEvents_xxxxEvent to AxXtremeShortcutBar._DShortcutBarEvents_xxxxEvent in each .cs file that contains a ShortcutBar control.					
+					<br><br><b>Renaming XtremeSuiteControls Object References</b><br>          12. Search through all your .cs files for the "XtremeSuiteControls" string.  Update the string to "XtremeTaskPanel" if it refers to a TaskPanel Object.
+					<br>          13. Search through all your .cs files for the "XtremeSuiteControls" string.  Update the string to "XtremeShortcutBar" if it refers to a ShortcutBar Object.
+					<br>          14. Search through all your .cs files for the "XtremeSuiteControls" string.  Update the string to "XtremeShortcutBarCaption" if it refers to a ShortcutBarCaption Object.
+					<br></Note></td></tr>
+</table></div></div>
+<div id="divproduct_CommandBars_ax_9.80_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_CommandBars_ax_9.80_body"><i>Xtreme CommandBars</i></div>
+<div style="padding-left: 20px;" id="div_CommandBars_ax_9.80_body">
+<table width="97%" class="issuetable">
+<tr><td width="16" class="issuecontent" align="right" valign="top"><img src="images/bluearrow.gif"></td>
+<td class="issuecontent"><Note>Important Note:  The values for the theme enumeration have been changed.  You will need to check to make sure that your theme has been 
+					<br>set correctly if you used the CommandBars Designer Studio (*.XML or *.XCB), or if you set the theme at design time in Visual Studio.
+					<br>If you set the theme via code using a theme enumeration value then you do not need to make changes.  Effected themes are Default, Office XP, and Office 2003.
+					<br></Note></td></tr>
+</table></div></div>
+<div id="divproduct_DockingPane_ax_9.80_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_DockingPane_ax_9.80_body"><i>Xtreme Docking Pane</i></div>
+<div style="padding-left: 20px;" id="div_DockingPane_ax_9.80_body">
+<table width="97%" class="issuetable">
+<tr><td width="16" class="issuecontent" align="right" valign="top"><img src="images/bluearrow.gif"></td>
+<td class="issuecontent"><Note>Important Note:  The values for the theme enumeration have been changed.  You will need to check to make sure that your theme has been 
+					<br>set correctly if you hard coded the theme (used the integer representation of the theme), or if you set the theme at design time in Visual Studio.
+					<br>If you set the theme via code using a theme enumeration value then you do not need to make changes.  Effected themes are Office 2003 and Visio.
+					<br></Note></td></tr>
+</table></div></div>
+</div>
+</td></tr>
+</table>
+</div>
+</body>
+</html>

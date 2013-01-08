@@ -1,0 +1,23 @@
+//
+// SCRIBBLE.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+#if !defined(ID_MFCLOC_MANIFEST)  // VS2005
+
+IDR_MANIFEST            24      DISCARDABLE     "res\\manifest.xml"
+
+#endif
+
+#if !defined (_AFXDLL) || defined(_XTP_STATICLINK)
+#include <XTToolkitPro.rc>
+#endif

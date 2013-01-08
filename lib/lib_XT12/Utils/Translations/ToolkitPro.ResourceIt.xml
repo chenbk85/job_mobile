@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<resource CompactMode="1" Language="Italian (Italy)" LANGID="1040">
+	<string id="9000" value="Oggi"/>
+	<string id="9001" value="Nessuno"/>
+	<string id="9011" value="Conferma eliminazione\nElimina la ricorrenza.\nElimina la serie.\nEliminare tutte le ricorrenze dell'appuntamento ricorrente &quot;%s&quot; o solo una?"/>
+	<string id="9012" value="Apri elemento ricorrente\nApri la ricorrenza.\nApri serie.\n&quot;%s&quot; è un appuntamento ricorrente. Aprire la ricorrenza o l'intera serie?"/>
+	<string id="9013" value="Da"/>
+	<string id="9014" value="To"/>
+	<string id="9015" value="Dispon."/>
+	<string id="9016" value="Provv."/>
+	<string id="9017" value="Occupata"/>
+	<string id="9018" value="Fuori sede"/>
+	<string id="9019" value="Primo"/>
+	<string id="9020" value="Second"/>
+	<string id="9021" value="Terza"/>
+	<string id="9022" value="Quarta"/>
+	<string id="9023" value="Ultimo"/>
+	<string id="9024" value="0 minuti"/>
+	<string id="9025" value="1 minuto"/>
+	<string id="9026" value="5 minuti"/>
+	<string id="9027" value="10 minuti"/>
+	<string id="9028" value="15 minuti"/>
+	<string id="9029" value="30 minuti"/>
+	<string id="9030" value="1 ora"/>
+	<string id="9031" value="2 ore"/>
+	<string id="9032" value="3 ore"/>
+	<string id="9033" value="4 ore"/>
+	<string id="9034" value="5 ore"/>
+	<string id="9035" value="6 ore"/>
+	<string id="9036" value="7 ore"/>
+	<string id="9037" value="8 ore"/>
+	<string id="9038" value="9 ore"/>
+	<string id="9039" value="10 ore"/>
+	<string id="9040" value="11 ore"/>
+	<string id="9041" value="18 ore"/>
+	<string id="9042" value="0,5 giorni"/>
+	<string id="9043" value="1 giorno"/>
+	<string id="9044" value="2 giorni"/>
+	<string id="9045" value="3 giorni"/>
+	<string id="9046" value="1 settim."/>
+	<string id="9047" value="2 settimane"/>
+	<string id="9048" value="minuto/i"/>
+	<string id="9049" value="ora/e"/>
+	<string id="9050" value="giorno/i"/>
+	<string id="9051" value="settimana/e"/>
+	<string id="9052" value="minuti"/>
+	<string id="9053" value="A"/>
+	<string id="9054" value="e"/>
+	<string id="9055" value="s"/>
+	<string id="9056" value="Valore errato!"/>
+	<string id="9057" value="Le eccezioni associate a questo appuntamento ricorrente andranno perdute. Se le eccezioni sono riunioni, i partecipanti non verranno informati. Continuare?"/>
+	<string id="9058" value="Margini (millimetri)"/>
+	<string id="9059" value="Margini (pollici)"/>
+	<string id="9060" value="Nessuno"/>
+	<string id="9061" value="Importante"/>
+	<string id="9062" value="Ambito professionale"/>
+	<string id="9063" value="Ambito privato"/>
+	<string id="9064" value="Ferie"/>
+	<string id="9065" value="Partecipazione richiesta"/>
+	<string id="9066" value="Viaggio richiesto"/>
+	<string id="9067" value="Preparazione richiesta"/>
+	<string id="9068" value="Compleanno"/>
+	<string id="9069" value="Anniversario"/>
+	<string id="9070" value="Chiamata telefonica"/>
+	<string id="9071" value="%d Promemoria"/>
+	<string id="9072" value="Oggetto"/>
+	<string id="9073" value="Scadenza"/>
+	<string id="9074" value="scaduto da"/>
+	<string id="9075" value="0 reminders are selected"/>
+	<string id="9076" value="Nessun promemoria da visualizzare."/>
+	<string id="9077" value="Ora inizio"/>
+	<string id="9078" value="Immettere un valore compreso tra %s e %s."/>
+	<string id="9079" value="Categories"/>
+	<string id="9086" value="Giorno"/>
+	<string id="9087" value="Settimana"/>
+	<string id="9088" value="Mese"/>
+	<string id="9089" value="Mostra settimana lavorativa"/>
+	<string id="9090" value="Mostra intera settimana"/>
+	<string id="9091" value="Click to add appointment"/>
+	<string id="9092" value="Previous Appointment"/>
+	<string id="9093" value="Next Appointment"/>
+	<string id="9094" value="Category"/>
+	<string id="9122" value="\nAggiungi o rimuovi pulsanti"/>
+	<string id="9123" value="\nReimposta"/>
+	<string id="9135" value="\nMatita"/>
+	<string id="9136" value="\nColore riempimento"/>
+	<string id="9137" value="\nSeleziona colore"/>
+	<string id="9138" value="\nLinea"/>
+	<string id="9139" value="\nRettangolo"/>
+	<string id="9140" value="\nEllisse"/>
+	<string id="9141" value="\nCopia"/>
+	<string id="9142" value="\nIncolla"/>
+	<string id="9143" value="\nCancella"/>
+	<string id="9144" value="\nAnnulla"/>
+	<string id="9145" value="\nRipeti"/>
+	<string id="9146" value="\nImportare dal file:"/>
+	<string id="9148" value="\nOpzioni barra degli strumenti"/>
+	<string id="9149" value="\nChiudi"/>
+	<string id="9150" value="\nEspandi"/>
+	<string id="9151" value="\nChiudi finestra"/>
+	<string id="9152" value="\nRipristina finestra"/>
+	<string id="9153" value="\nRiduci finestra a icona"/>
+	<string id="9155" value="\nPassa al gruppo di schede precedente"/>
+	<string id="9156" value="\nPassa al gruppo di schede successivo"/>
+	<string id="9157" value="\nNuovo gruppo di schede orizzontali"/>
+	<string id="9158" value="\nNuovo gruppo di schede verticali"/>
+	<string id="9159" value="Annulla"/>
+	<string id="9160" value="Chiudi"/>
+	<string id="9161" value="Personalizza"/>
+	<string id="9162" value="Nuovo menu"/>
+	<string id="9163" value="Personalizzata %d"/>
+	<string id="9164" value="Impossibile lasciare vuoto il nome della barra degli strumenti. Immettere un nome."/>
+	<string id="9165" value="Spiacenti, avete raggiunto il vostro limite."/>
+	<string id="9166" value="Barra degli strumenti &quot;%s&quot; già esistente. Immettere un altro nome."/>
+	<string id="9167" value="Rinomina barra degli strumenti"/>
+	<string id="9168" value="Eliminare la barra degli strumenti &quot;%s&quot;?"/>
+	<string id="9169" value="Tutti i comandi"/>
+	<string id="9170" value="I dati relativi ai comandi usati nell'applicazione verranno cancellati e per i menu e le barre degli strumenti verranno ripristinati i comandi predefiniti. Le modifiche apportate direttamente non verranno annullate. Continuare?"/>
+	<string id="9171" value="Numero non valido."/>
+	<string id="9172" value="Il numero deve essere compreso tra 1 e 1638."/>
+	<string id="9173" value="Annullare le modifiche apportate a '%s' alla barra degli strumenti?"/>
+	<string id="9174" value="Menu incorporati"/>
+	<string id="9175" value="Sei sicuro di azzerare l'assegnamento dei tasti?  Quest'operazione rimuovera' tutti gli assegnamenti ai tasti a livello testo."/>
+	<string id="9176" value="Questa scorciatoia è già assegnata.\nVuoi riassegnarla?"/>
+	<string id="9177" value="A causa di un aggiornamento del programma la barra '%s' è stata modificata. Vuoi resettare la tua barra persoanalizzata e caricarne una nuova?"/>
+	<string id="9178" value="Tutti i file di immagini|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|Bitmap(*.Bmp;*.Dib)|*.bmp;*.dib|Metafile(*.Wmf;*.Emf)|*.wmf;*.emf|Icone(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|Tutti i file(*.*)|*.*||"/>
+	<string id="9179" value="(Predefinita dal sistema)"/>
+	<string id="9180" value="Casuale"/>
+	<string id="9181" value="Scorrimento 1"/>
+	<string id="9182" value="Diapositiva"/>
+	<string id="9183" value="Dissolvenza"/>
+	<string id="9184" value="Nessuno"/>
+	<string id="9185" value="Archivi attivi"/>
+	<string id="9186" value="Customize Status Bar"/>
+	<string id="9187" value="(%s) was pressed. Waiting for second key of chord..."/>
+	<string id="9194" value="Stampa l'elemento visualizzato\nStampa"/>
+	<string id="9195" value="Vai alla pagina precedente\nPagina Precedente"/>
+	<string id="9196" value="Vai alla pagina successiva\nPagina Successiva"/>
+	<string id="9197" value="Aumenta l'ingrandimento della pagina di anteprima\nIngrandisci"/>
+	<string id="9198" value="Diminuisce l'ingrandimento della pagina di anteprima\nRiduci"/>
+	<string id="9201" value="Chiude l'anteprima\nChiude Anteprima"/>
+	<string id="9202" value="Whole Page"/>
+	<string id="9203" value="Page Width"/>
+	<string id="9204" value="Page %i"/>
+	<string id="9205" value="Page %i of %i"/>
+	<string id="9320" value="Nuovo"/>
+	<string id="9321" value="Elimina"/>
+	<string id="9322" value="Sposta su"/>
+	<string id="9323" value="Sposta giù"/>
+	<string id="9325" value="Ordinamento crescente\nOrdinamento crescente"/>
+	<string id="9326" value="Ordinamento decrescente\nOrdinamento decrescente"/>
+	<string id="9327" value="Allinea il paragrafo al margine sinistro.\nAllinea a sinistra"/>
+	<string id="9328" value="Centra il paragrafo tra i margini.\nCentra"/>
+	<string id="9329" value="Allinea il paragrafo al margine destro.\nAllinea a destra"/>
+	<string id="9330" value="Mostra gli elementi utilizzando icone grandi.\nIcone grandi"/>
+	<string id="9331" value="Mostra gli elementi utilizzando icone piccole.\nIcone piccole"/>
+	<string id="9332" value="Rimuovi dalla barra di Outlook"/>
+	<string id="9333" value="Rinomina collegamento"/>
+	<string id="9334" value="Rimuovi gruppo"/>
+	<string id="9335" value="Rinomina gruppo"/>
+	<string id="9336" value="Nome"/>
+	<string id="9337" value="Dimensioni"/>
+	<string id="9338" value="Tipo"/>
+	<string id="9339" value="Modificato"/>
+	<string id="9340" value="Automatico"/>
+	<string id="9341" value="Personalizza..."/>
+	<string id="9342" value="Selezionare una directory:"/>
+	<string id="9343" value="..."/>
+	<string id="9344" value="*.*"/>
+	<string id="9345" value="Tutti i file (*.*)|*.*||"/>
+	<string id="9346" value="Nome cartella:"/>
+	<string id="9347" value="Per mantenere aperto, fare clic sullo spillo a pressione."/>
+	<string id="9348" value="Non tutti sanno che..."/>
+	<string id="9349" value="Il file specificato non esiste."/>
+	<string id="9350" value="Errore durante la lettura del file."/>
+	<string id="9351" value="Colori"/>
+	<string id="9352" value="Nuovo"/>
+	<string id="9353" value="Corrente"/>
+	<string id="9354" value="Cartella:"/>
+	<string id="9355" value="File:"/>
+	<string id="9356" value="Hex"/>
+	<string id="9357" value="Il sistema operativo e' oltre i limiti di memoria per le risorse."/>
+	<string id="9358" value="Il file specificato non e' stato trovato."/>
+	<string id="9359" value="Il percorso assegnato non e' stato trovato."/>
+	<string id="9360" value="Il sistema operativo ha negato l'accesso al file specificato."/>
+	<string id="9361" value="Memoria insufficiente per completare l'operazione."/>
+	<string id="9362" value="Il file .exe non e' valido (non-Win32® .exe o errore nell'immagine .exe)."/>
+	<string id="9363" value="E' avvenuto un errore di condivisione."/>
+	<string id="9364" value="L'associazione del nome file e' incompleta o non valida."/>
+	<string id="9365" value="La transazione DDE non puo' essere completata perche' la richiesta e' andata in time-out."/>
+	<string id="9366" value="La transazione DDE e' fallita."/>
+	<string id="9367" value="La transazione DDE non puo' essere completata perche' altre transazioni DDE erano in corso."/>
+	<string id="9368" value="Non c'e' nessuna applicazione associata con l'estensione del file assegnata."/>
+	<string id="9369" value="La libreria DDL assegnata non e' stata trovata."/>
+	<string id="9370" value="Un errore non riconosciuto numero %d e' avvenuto."/>
+	<string id="9424" value="Colori standard"/>
+	<string id="9425" value="Suggerimento"/>
+	<string id="9432" value="OK"/>
+	<string id="9433" value="Sì"/>
+	<string id="9434" value="No"/>
+	<string id="9435" value="Riprova"/>
+	<string id="9436" value="Annulla"/>
+	<string id="9437" value="Chiusura"/>
+	<string id="9438" value="Mostra dettagli"/>
+	<string id="9439" value="Nascondi dettagli"/>
+	<string id="9440" value="&amp;Applica"/>
+	<string id="9441" value="Aiuto"/>
+	<string id="9456" value="Nascondi automaticamente"/>
+	<string id="9457" value="Chiudi"/>
+	<string id="9458" value="Ingrandisci"/>
+	<string id="9459" value="Ripristina"/>
+	<string id="9460" value="Menu"/>
+	<string id="9461" value="Finestra strumenti attivi"/>
+	<string id="9462" value="File aperti"/>
+	<string id="9501" value="Categorizzato"/>
+	<string id="9502" value="Alfabetico"/>
+	<string id="9503" value="Vero\nFalso"/>
+	<string id="9552" value="Per raggruppare secondo una colonna, trascinare l'intestazione della colonna su quest'area."/>
+	<string id="9553" value="Nessun elemento da visualizzare."/>
+	<string id="9554" value="(nessun campo disponibile)"/>
+	<string id="9555" value="Ordina per:"/>
+	<string id="9557" value="Margini (millimetri)"/>
+	<string id="9558" value="Margini (pollici)"/>
+	<string id="9559" value="Inserire il testo con cui filtrare"/>
+	<string id="9603" value="\nPersonalizza il Menu Rapido"/>
+	<string id="9611" value="\nControlli aggiuntivi"/>
+	<string id="9615" value="Sei sicuro di voler ripristinare il Menu Rapido con le Impostazioni Predefinite?"/>
+	<string id="9651" value="Mostra più pulsanti"/>
+	<string id="9652" value="Mostra meno pulsanti"/>
+	<string id="9653" value="Configura pulsanti"/>
+	<string id="9711" value="Opzioni di modifica"/>
+	<string id="9714" value="Comando sconosciuto"/>
+	<string id="9715" value="Operazioni multiple"/>
+	<string id="9716" value="Elimina: "/>
+	<string id="9717" value="Inserisce: "/>
+	<string id="9718" value="Digitazione"/>
+	<string id="9719" value="Incolla"/>
+	<string id="9720" value="Muove"/>
+	<string id="9721" value="Copia"/>
+	<string id="9722" value="Rientro"/>
+	<string id="9723" value="Riduce rientro"/>
+	<string id="9724" value="Formato"/>
+	<string id="9725" value="Tabulazione"/>
+	<string id="9726" value="Elimina rientri"/>
+	<string id="9727" value="Sostituisce tutto"/>
+	<string id="9728" value="Modifica maiuscole della selezione"/>
+	<string id="9729" value="Elimina blocco di testo"/>
+	<string id="9730" value="&amp;Muove qui"/>
+	<string id="9731" value="&amp;Copia qui"/>
+	<string id="9732" value="&amp;Annulla"/>
+	<string id="9740" value="Personalizzato"/>
+	<string id="9741" value="Normale"/>
+	<string id="9742" value="Grassetto"/>
+	<string id="9743" value="Corsivo"/>
+	<string id="9744" value="Grassetto Corsivo"/>
+	<string id="9746" value="&amp;Linea numero (1 - %d):"/>
+	<string id="9747" value="Apre file modello"/>
+	<string id="9748" value="Vuoi chiudere &quot;Finestra Opzioni&quot; e aprire il file modello &quot;%s%s&quot; nella finestra di editazione?"/>
+	<string id="9749" value="Il file '%s' è stato modificato esternamente!\nVuoi ricaricarlo?"/>
+	<string id="9750" value="%d elementi trovati e sostituiti!"/>
+	<string id="9751" value="Ricerca terminata!"/>
+	<string id="9800" value="Scorre a sinistra"/>
+	<string id="9801" value="Scorre a destra"/>
+	<string id="9802" value="Chiudi"/>
+	<string id="9803" value="Scroll Up"/>
+	<string id="9804" value="Scroll Down"/>
+	<string id="9900" value="Nero"/>
+	<string id="9901" value="Marrone"/>
+	<string id="9902" value="Terra bruciata"/>
+	<string id="9903" value="Verde scuro"/>
+	<string id="9904" value="Blu notte"/>
+	<string id="9905" value="Blu scuro"/>
+	<string id="9906" value="Indaco"/>
+	<string id="9907" value="Grigio 80%"/>
+	<string id="9908" value="Rosso scuro"/>
+	<string id="9909" value="Arancione"/>
+	<string id="9910" value="Verde oliva"/>
+	<string id="9911" value="Verde"/>
+	<string id="9912" value="Verde acqua"/>
+	<string id="9913" value="Blu"/>
+	<string id="9914" value="Grigio blu"/>
+	<string id="9915" value="Grigio 50%"/>
+	<string id="9916" value="Rosso"/>
+	<string id="9917" value="Arancione chiaro"/>
+	<string id="9918" value="Verde limone"/>
+	<string id="9919" value="Verde muschio"/>
+	<string id="9920" value="Azzurro"/>
+	<string id="9921" value="Blu chiaro"/>
+	<string id="9922" value="Viola"/>
+	<string id="9923" value="Grigio 40%"/>
+	<string id="9924" value="Fucsia"/>
+	<string id="9925" value="Oro"/>
+	<string id="9926" value="Giallo"/>
+	<string id="9927" value="Verde limone"/>
+	<string id="9928" value="Turchese"/>
+	<string id="9929" value="Azzurro"/>
+	<string id="9930" value="Prugna"/>
+	<string id="9931" value="Grigio 25%"/>
+	<string id="9932" value="Rosa"/>
+	<string id="9933" value="Marrone chiaro"/>
+	<string id="9934" value="Giallo chiaro"/>
+	<string id="9935" value="Verde chiaro"/>
+	<string id="9936" value="Turchese chiaro"/>
+	<string id="9937" value="Celeste"/>
+	<string id="9938" value="Lilla"/>
+	<string id="9939" value="Bianco"/>
+	<string id="9940" value="Grigio"/>
+	<string id="9941" value="Bordeaux"/>
+	<string id="9942" value="Verde oliva"/>
+	<string id="9943" value="Blu scuro"/>
+	<string id="9944" value="Viola"/>
+	<string id="9945" value="Argento"/>
+	<string id="9946" value="Fucsia"/>
+	<string id="9947" value="Nessun riempimento\nNessun riempimento"/>
+	<string id="9948" value="Colore automatico\nColore automatico"/>
+	<string id="9949" value="Altri colori..."/>
+	<string id="9974" value="Una pagina"/>
+	<string id="9975" value="Due pagine"/>
+	<string id="35001" value="\nPersonalizza..."/>
+	<string id="35200" value="Arabo (Arabia Saudita)"/>
+	<string id="35202" value="Cinese (Rep. Popolare Cinese)"/>
+	<string id="35203" value="Cinese (Taiwan)"/>
+	<string id="35204" value="Croato"/>
+	<string id="35205" value="Ceco"/>
+	<string id="35206" value="Danese"/>
+	<string id="35207" value="Olandese"/>
+	<string id="35208" value="Inglese (Stati Uniti)"/>
+	<string id="35209" value="Estone"/>
+	<string id="35210" value="Finlandese"/>
+	<string id="35211" value="Francese (Francia)"/>
+	<string id="35212" value="Tedesco (Germania)"/>
+	<string id="35213" value="Greco"/>
+	<string id="35214" value="Ebraico"/>
+	<string id="35215" value="Ungherese"/>
+	<string id="35216" value="Italiano (Italia)"/>
+	<string id="35217" value="Giapponese"/>
+	<string id="35218" value="Coreano"/>
+	<string id="35219" value="Lettone"/>
+	<string id="35220" value="Lituano"/>
+	<string id="35221" value="Norvegese (Bokmal)"/>
+	<string id="35222" value="Polacco"/>
+	<string id="35223" value="Portoghese (Portogallo)"/>
+	<string id="35224" value="Portoghese (Brasile)"/>
+	<string id="35225" value="Rumeno"/>
+	<string id="35226" value="Russo"/>
+	<string id="35227" value="Slovacco"/>
+	<string id="35228" value="Sloveno"/>
+	<string id="35229" value="Spagnolo (Spagna - Ordinamento alfabetico moderno)"/>
+	<string id="35230" value="Svedese"/>
+	<string id="35231" value="Tailandese"/>
+	<string id="35233" value="Ucraino"/>
+	<menu id="9121">
+		<menuitem caption="Personalizza">
+			<menuitem id="9123" caption="Reimposta"/>
+			<menuitem id="9124" caption="Elimina"/>
+			<menuitem/>
+			<menuitem id="9125" caption="Nome:"/>
+			<menuitem/>
+			<menuitem id="9126" caption="Copia icona pulsante"/>
+			<menuitem id="9127" caption="Incolla icona pulsante"/>
+			<menuitem id="9128" caption="Reimposta icona pulsante"/>
+			<menuitem id="9129" caption="Modifica icona pulsante..."/>
+			<menuitem id="9130" caption="Cambia icona pulsante"/>
+			<menuitem/>
+			<menuitem id="9131" caption="Stile predefinito"/>
+			<menuitem id="9133" caption="Solo testo"/>
+			<menuitem id="9132" caption="Icona e testo"/>
+			<menuitem/>
+			<menuitem id="9134" caption="Inizia un gruppo"/>
+		</menuitem>
+	</menu>
+	<menu id="9316">
+		<menuitem caption="RClickOutlookBar">
+			<menuitem id="9331" caption="Icone piccole"/>
+			<menuitem id="9330" caption="Icone grandi"/>
+		</menuitem>
+		<menuitem caption="RClickHexEdit">
+			<menuitem id="57643" caption="Annulla"/>
+			<menuitem/>
+			<menuitem id="57635" caption="Taglia"/>
+			<menuitem id="57634" caption="Copia"/>
+			<menuitem id="57637" caption="Incolla"/>
+			<menuitem id="57632" caption="Elimina"/>
+			<menuitem/>
+			<menuitem id="57642" caption="Seleziona tutto"/>
+		</menuitem>
+		<menuitem caption="RClickHeader">
+			<menuitem id="9325" caption="Ordinamento crescente"/>
+			<menuitem id="9326" caption="Ordinamento decrescente"/>
+			<menuitem/>
+			<menuitem caption="Allineamento">
+				<menuitem id="9327" caption="Allinea a sinistra"/>
+				<menuitem id="9328" caption="Allinea al centro verticalmente"/>
+				<menuitem id="9329" caption="Allinea a destra"/>
+			</menuitem>
+		</menuitem>
+	</menu>
+	<menu id="9601">
+		<menuitem caption="Accesso rapido">
+			<menuitem id="9614" caption="&amp;Personalizza il Menu Rapido"/>
+			<menuitem id="9613" caption="[Comandi]"/>
+			<menuitem/>
+			<menuitem id="9607" caption="&amp;Funzioni Aggiuntive..."/>
+			<menuitem id="9608" caption="&amp;Mostra sotto la Barra"/>
+			<menuitem id="9610" caption="&amp;Mostra Sopra la Barra"/>
+			<menuitem/>
+			<menuitem id="9612" caption="Ri&amp;duci la Barra"/>
+		</menuitem>
+	</menu>
+	<menu id="9602">
+		<menuitem caption="Accesso rapido">
+			<menuitem id="9605" caption="&amp;Togli dal Menu Rapido"/>
+			<menuitem id="9606" caption="&amp;Aggiungi al Menu Rapido"/>
+			<menuitem/>
+			<menuitem id="9607" caption="&amp;Personalizza il Menu Rapido..."/>
+			<menuitem id="9608" caption="&amp;Mostra il Menu Rapido sotto la Barra"/>
+			<menuitem id="9610" caption="&amp;Mostra il Menu Rapido sopra la Barra"/>
+			<menuitem/>
+			<menuitem id="9612" caption="Ri&amp;duci la Barra"/>
+		</menuitem>
+	</menu>
+	<menu id="9977">
+		<menuitem caption="HF">
+			<menuitem id="101" caption="&amp;&amp;d   Formato data breve"/>
+			<menuitem id="102" caption="&amp;&amp;D   Formato data estesa"/>
+			<menuitem/>
+			<menuitem id="103" caption="&amp;&amp;t   Ora"/>
+			<menuitem id="104" caption="&amp;&amp;T   Ora (24 ore)"/>
+			<menuitem/>
+			<menuitem id="105" caption="&amp;&amp;p   Numero pagina"/>
+			<menuitem id="106" caption="&amp;&amp;P   Numero pagine"/>
+			<menuitem/>
+			<menuitem id="108" caption="&amp;&amp;b   Allineamento a sinistra &amp;&amp;b Allineamento al centro &amp;&amp;b Allineamento a destra"/>
+			<menuitem/>
+			<menuitem id="109" caption="&amp;&amp;w   Titolo finestra"/>
+			<menuitem id="110" caption="&amp;&amp;&amp;&amp;  E commerciale (&amp;&amp;)"/>
+			<menuitem id="111" caption="\\n   Nuova Riga"/>
+		</menuitem>
+	</menu>
+	<dialog id="9080" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 175, 90">
+		<control id="103" style="1342177283" position="9, 8, 20, 20"/>
+		<control id="100" position="43, 6, 120, 27"/>
+		<control id="101" class="BUTTON" style="1342177289" position="43, 39, 125, 10"/>
+		<control id="102" class="BUTTON" style="1342177289" position="43, 51, 127, 10"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342242817" position="35, 69, 50, 14"/>
+		<control id="2" class="BUTTON" caption="Annulla" style="1342242816" position="91, 69, 50, 14"/>
+	</dialog>
+	<dialog id="9081" caption="Imposta pagina calendario" fontface="MS Shell Dlg" style="-1865940788" position="32, 32, 283, 338">
+		<control id="100" class="BUTTON" caption="Opzioni di visualizzazione" style="1342177287" position="7, 5, 106, 66"/>
+		<control caption="Stampa da:" style="1342308354" position="10, 21, 43, 8"/>
+		<control id="101" class="COMBOBOX" style="1344339970" position="55, 19, 52, 104"/>
+		<control caption="Stampa su:" style="1342308354" position="10, 39, 42, 8"/>
+		<control id="102" class="COMBOBOX" style="1344339970" position="55, 36, 52, 104"/>
+		<control id="103" class="BUTTON" caption="Intervallo stampa" style="1342242819" position="14, 56, 95, 10"/>
+		<control id="104" class="BUTTON" caption="Data intestazione" style="1342177287" position="120, 5, 157, 65"/>
+		<control id="105" class="BUTTON" caption="Stampa data intestazione" style="1342242819" position="125, 17, 148, 10"/>
+		<control id="106" caption="Data intestazione carattere" position="138, 28, 136, 8"/>
+		<control id="107" caption="123456789 123456789 123456789\n2\n3" style="1342312576" position="138, 40, 115, 26"/>
+		<control id="108" class="BUTTON" caption="..." style="1342242816" position="257, 40, 16, 14"/>
+		<control class="BUTTON" caption="Impostazioni" style="1342177287" position="7, 74, 270, 27"/>
+		<control id="110" class="BUTTON" caption="Stampa gradazioni di grigio" style="1342242819" position="14, 87, 258, 10"/>
+		<control class="BUTTON" caption="Intestazioni e piè di pagina" style="1342177287" position="7, 105, 270, 70"/>
+		<control caption="Intestazione" position="13, 115, 190, 8"/>
+		<control id="111" class="EDIT" style="1350631552" position="13, 126, 247, 14"/>
+		<control id="113" class="BUTTON" style="1342242880" styleex="131072" position="260, 126, 13, 14"/>
+		<control caption="Piè di pagina" position="13, 145, 190, 8"/>
+		<control id="112" class="EDIT" style="1350631552" position="13, 155, 247, 14"/>
+		<control id="114" class="BUTTON" style="1342242880" styleex="131072" position="260, 155, 13, 14"/>
+		<control id="1073" class="BUTTON" caption="Foglio" style="1342308359" position="7, 183, 197, 51"/>
+		<control id="1089" caption="Dimensioni:" position="11, 199, 40, 8"/>
+		<control id="1137" class="COMBOBOX" style="1344471299" position="55, 197, 141, 160"/>
+		<control id="1090" caption="Alimentazione:" position="12, 216, 39, 8"/>
+		<control id="1138" class="COMBOBOX" style="1344471299" position="55, 214, 141, 160"/>
+		<control id="1072" class="BUTTON" caption="Orientamento" style="1342308359" position="211, 183, 66, 51"/>
+		<control id="1056" class="BUTTON" caption="Verticale" style="1342373892" position="216, 196, 56, 12"/>
+		<control id="1057" class="BUTTON" caption="Orizzontale" style="1342177284" position="216, 212, 58, 12"/>
+		<control id="1075" class="BUTTON" caption="Margini" style="1342308359" position="8, 238, 196, 58"/>
+		<control id="1102" caption="Sinistro:" position="16, 254, 36, 8"/>
+		<control id="1155" class="EDIT" style="1350762496" position="55, 251, 32, 12"/>
+		<control id="1103" caption="Destro:" position="123, 253, 35, 8"/>
+		<control id="1157" class="EDIT" style="1350762496" position="162, 250, 32, 12"/>
+		<control id="1104" caption="Superiore:" position="16, 274, 35, 8"/>
+		<control id="1156" class="EDIT" style="1350762496" position="55, 272, 32, 12"/>
+		<control id="1105" caption="Inferiore:" position="123, 274, 35, 8"/>
+		<control id="1158" class="EDIT" style="1350762496" position="162, 272, 32, 12"/>
+		<control id="109" class="BUTTON" caption="Anteprima" style="1342177287" position="212, 238, 66, 58"/>
+		<control id="1081" style="1342308357" position="261, 253, 4, 38"/>
+		<control id="1080" style="1342308358" position="230, 250, 31, 40"/>
+		<control id="1082" style="1342308357" position="235, 290, 29, 2"/>
+		<control id="57670" class="BUTTON" caption="?" style="1342242816" position="75, 320, 61, 14"/>
+		<control id="1026" class="BUTTON" caption="Stampante..." style="1342242816" position="8, 300, 60, 14"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342373889" position="175, 320, 48, 14"/>
+		<control id="2" class="BUTTON" caption="Annulla" style="1342242816" position="229, 320, 48, 14"/>
+	</dialog>
+	<dialog id="9082" caption="Dettagli appuntamenti ed eventi" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 450, 231">
+		<control caption="Oggetto:" position="6, 7, 45, 8"/>
+		<control id="100" class="EDIT" style="1350631552" position="55, 5, 234, 13"/>
+		<control caption="Percorso:" position="6, 27, 45, 8"/>
+		<control id="101" class="EDIT" style="1350631552" position="55, 25, 234, 13"/>
+		<control style="1342181381" position="6, 45, 283, 1"/>
+		<control id="157" caption="Ora di avvio:" position="6, 55, 42, 8"/>
+		<control id="102" class="SysDateTimePick32" caption="DateTimePicker1" style="1342242849" position="55, 53, 68, 13"/>
+		<control id="103" class="SysDateTimePick32" caption="DateTimePicker2" style="1342242857" position="129, 53, 68, 13"/>
+		<control id="106" class="BUTTON" caption="Giornata intera" style="1342242819" position="204, 55, 85, 10"/>
+		<control id="158" caption="Ora fine:" position="6, 75, 42, 8"/>
+		<control id="104" class="SysDateTimePick32" caption="DateTimePicker1" style="1342242849" position="55, 73, 68, 13"/>
+		<control id="105" class="SysDateTimePick32" caption="DateTimePicker2" style="1342242857" position="129, 73, 68, 13"/>
+		<control style="1342181381" position="6, 93, 283, 1"/>
+		<control id="111" class="BUTTON" caption="Promemoria:" style="1342243075" position="6, 102, 45, 10"/>
+		<control id="112" class="COMBOBOX" style="1344339970" position="55, 100, 68, 88"/>
+		<control id="110" caption="ID pianificazione:" style="1342308354" position="135, 102, 64, 10"/>
+		<control id="109" class="COMBOBOX" style="1344339971" position="204, 100, 85, 88"/>
+		<control style="1342181381" position="295, 5, 1, 110"/>
+		<control id="117" caption="La&amp;bel:" position="302, 7, 44, 8"/>
+		<control id="108" class="COMBOBOX" style="1344340003" position="350, 5, 94, 209"/>
+		<control caption="Mostra periodo come:" position="302, 27, 45, 8"/>
+		<control id="107" class="COMBOBOX" style="1344339971" position="350, 25, 94, 72"/>
+		<control style="1342181381" position="302, 45, 142, 1"/>
+		<control id="113" class="BUTTON" caption="Privato" style="1342242819" position="302, 55, 100, 10"/>
+		<control id="114" class="BUTTON" caption="Assemblea" style="1342242819" position="302, 66, 100, 10"/>
+		<control style="1342181381" position="302, 93, 142, 1"/>
+		<control id="115" class="BUTTON" caption="Ricorrenza..." style="1342242816" position="375, 100, 69, 14"/>
+		<control id="116" class="EDIT" style="1352732868" position="6, 125, 438, 75"/>
+		<control style="1073745925" position="6, 205, 438, 1"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342242817" position="171, 211, 50, 14"/>
+		<control id="2" class="BUTTON" caption="Annulla" style="1342242816" position="227, 211, 50, 14"/>
+	</dialog>
+	<dialog id="9083" caption="Ricorrenza appuntamento" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 340, 362">
+		<control class="BUTTON" caption="Orario appuntamento" style="1342177287" position="7, 3, 326, 62"/>
+		<control caption="Iniziale:" position="13, 17, 32, 8"/>
+		<control id="109" class="COMBOBOX" style="1344339970" position="46, 15, 106, 124"/>
+		<control caption="Fine:" position="13, 33, 32, 8"/>
+		<control id="102" class="COMBOBOX" style="1344339970" position="46, 31, 106, 158"/>
+		<control caption="Durata:" position="13, 49, 30, 8"/>
+		<control id="113" class="COMBOBOX" style="1344339970" position="46, 47, 106, 162"/>
+		<control class="BUTTON" caption="Criterio ricorrenza" style="1342177287" position="7, 68, 326, 68"/>
+		<control id="117" class="BUTTON" caption="Ogni giorno" style="1342308361" position="13, 80, 55, 10"/>
+		<control id="118" class="BUTTON" caption="Ogni settimana" style="1342177289" position="13, 94, 55, 10"/>
+		<control id="119" class="BUTTON" caption="Mensile" style="1342177289" position="13, 108, 55, 10"/>
+		<control id="120" class="BUTTON" caption="Annuale" style="1342177289" position="13, 122, 55, 10"/>
+		<control id="156" style="1342181383" position="73, 79, 1, 53"/>
+		<control id="124" class="BUTTON" caption="Ogni" style="1342308361" position="81, 78, 35, 10"/>
+		<control id="125" class="BUTTON" caption="Giorno lavorativo" style="1342177289" position="81, 93, 108, 10"/>
+		<control id="126" class="EDIT" style="1350639744" position="120, 77, 28, 12"/>
+		<control id="121" caption="giorno/i" position="152, 78, 40, 8"/>
+		<control id="134" caption="Ricorre ogni" position="82, 235, 43, 8"/>
+		<control id="123" class="EDIT" style="1350639744" position="127, 233, 26, 12"/>
+		<control id="135" caption="settimana/e di:" position="157, 235, 66, 8"/>
+		<control id="127" class="BUTTON" caption="lunedì" style="1342242819" position="82, 249, 41, 10"/>
+		<control id="128" class="BUTTON" caption="martedì" style="1342242819" position="127, 249, 50, 10"/>
+		<control id="129" class="BUTTON" caption="mercoledì" style="1342242819" position="184, 249, 54, 10"/>
+		<control id="130" class="BUTTON" caption="giovedì" style="1342242819" position="247, 249, 46, 10"/>
+		<control id="131" class="BUTTON" caption="venerdì" style="1342242819" position="82, 264, 41, 10"/>
+		<control id="132" class="BUTTON" caption="sabato" style="1342242819" position="127, 264, 45, 10"/>
+		<control id="133" class="BUTTON" caption="domenica" style="1342242819" position="184, 263, 62, 10"/>
+		<control id="136" class="BUTTON" caption="Giorno" style="1342308361" position="81, 284, 26, 10"/>
+		<control id="137" class="BUTTON" caption="I&amp;l" style="1342177289" position="81, 302, 28, 10"/>
+		<control id="138" class="EDIT" style="1350639744" position="111, 283, 24, 12"/>
+		<control id="143" caption="ogni" position="139, 285, 28, 8"/>
+		<control id="139" class="EDIT" style="1350639744" position="170, 283, 25, 12"/>
+		<control id="144" caption="mese/i" position="200, 285, 37, 8"/>
+		<control id="140" class="COMBOBOX" style="1344339971" position="111, 300, 50, 230"/>
+		<control id="141" class="COMBOBOX" style="1344339971" position="163, 300, 68, 287"/>
+		<control id="145" caption="ogni" position="234, 301, 28, 8"/>
+		<control id="142" class="EDIT" style="1350639744" position="265, 300, 26, 12"/>
+		<control id="146" caption="mese/i" position="296, 301, 29, 8"/>
+		<control id="147" class="BUTTON" caption="Ogni" style="1342308361" position="81, 326, 34, 10"/>
+		<control id="148" class="BUTTON" caption="I&amp;l" style="1342177289" position="81, 344, 31, 10"/>
+		<control id="150" class="COMBOBOX" style="1344339971" position="117, 324, 76, 230"/>
+		<control id="149" class="EDIT" style="1350631552" position="195, 324, 27, 12"/>
+		<control id="154" class="COMBOBOX" style="1344339971" position="117, 342, 48, 230"/>
+		<control id="155" class="COMBOBOX" style="1344339971" position="167, 342, 70, 230"/>
+		<control id="153" caption="di" position="241, 345, 10, 8"/>
+		<control id="151" class="COMBOBOX" style="1344339971" position="253, 342, 71, 230"/>
+		<control class="BUTTON" caption="Intervallo di ricorrenza" style="1342177287" position="7, 140, 326, 52"/>
+		<control caption="Iniziale:" position="13, 156, 28, 8"/>
+		<control id="101" class="SysDateTimePick32" style="1342242849" position="46, 153, 106, 12"/>
+		<control id="114" class="BUTTON" caption="No end date" style="1342308361" position="166, 149, 100, 9"/>
+		<control id="115" class="BUTTON" caption="Fine dopo:" style="1342177289" position="166, 162, 45, 10"/>
+		<control id="116" class="BUTTON" caption="Fine per:" style="1342177289" position="166, 176, 39, 10"/>
+		<control id="122" class="EDIT" style="1350639744" position="214, 159, 40, 12"/>
+		<control caption="occorrenze" position="257, 161, 49, 8"/>
+		<control id="159" class="SysDateTimePick32" style="1342242849" position="214, 174, 105, 12"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342242817" position="67, 197, 50, 14"/>
+		<control id="2" class="BUTTON" caption="Annulla" style="1342242816" position="124, 197, 50, 14"/>
+		<control id="100" class="BUTTON" caption="Rimuovi ricorrenza" style="1476460544" position="181, 197, 90, 14"/>
+	</dialog>
+	<dialog id="9084" caption="Fuso orario" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 274, 178">
+		<control class="BUTTON" caption="Fuso orario corrente" style="1342177287" position="7, 7, 260, 65"/>
+		<control caption="Etichetta:" position="15, 23, 20, 8"/>
+		<control id="101" class="EDIT" style="1350631552" position="60, 21, 40, 14"/>
+		<control caption="Fuso orario:" position="15, 42, 36, 8"/>
+		<control id="103" class="COMBOBOX" style="1478557698" position="60, 39, 195, 130"/>
+		<control id="105" class="BUTTON" caption="Passa automaticamente all'ora legale" style="1476460547" styleex="32" position="18, 56, 234, 8"/>
+		<control id="100" class="BUTTON" caption="Mostra fuso orario aggiuntivo" style="1342242819" styleex="32" position="7, 78, 260, 8"/>
+		<control class="BUTTON" style="1342177287" styleex="32" position="7, 88, 260, 62"/>
+		<control caption="Etichetta:" position="15, 101, 20, 8"/>
+		<control id="102" class="EDIT" style="1350631552" position="60, 99, 40, 14"/>
+		<control caption="Fuso orario:" position="15, 120, 36, 8"/>
+		<control id="104" class="COMBOBOX" style="1344339971" position="60, 117, 195, 135"/>
+		<control id="106" class="BUTTON" caption="Passa automaticamente all'ora legale" style="1342242819" styleex="32" position="16, 134, 234, 8"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342242817" position="150, 158, 50, 14"/>
+		<control id="2" class="BUTTON" caption="Annulla" style="1342242816" position="217, 158, 50, 14"/>
+	</dialog>
+	<dialog id="9085" caption="Promemoria" fontface="MS Shell Dlg" style="-2134245176" position="0, 0, 303, 181">
+		<control id="106" caption="Static" style="1342308480" position="25, 5, 270, 30"/>
+		<control id="100" class="SysListView32" caption="List1" style="1350664205" position="5, 40, 290, 90"/>
+		<control id="101" class="BUTTON" caption="Elimina tutti" style="1342242816" position="5, 135, 65, 14"/>
+		<control id="103" class="BUTTON" caption="Apri elemento" style="1342242816" position="160, 135, 65, 14"/>
+		<control id="102" class="BUTTON" caption="Ignora" style="1342242816" position="230, 135, 65, 14"/>
+		<control caption="Fare clic su Posponi per rivisualizzare il promemoria tra:" position="5, 155, 170, 8"/>
+		<control id="104" class="COMBOBOX" style="1344339970" position="5, 165, 220, 130"/>
+		<control id="105" class="BUTTON" caption="Posponi" style="1342242817" position="230, 165, 65, 14"/>
+	</dialog>
+	<dialog id="9114" caption="&amp;Menus" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control id="100" caption="Menu delle Applicazioni" position="4, 5, 222, 8"/>
+		<control id="101" caption="Menu dei Contenuti" position="4, 80, 222, 8"/>
+		<control caption="&amp;Mostra i Menu:" position="10, 20, 49, 11"/>
+		<control id="102" class="COMBOBOX" style="1344339971" position="63, 18, 150, 79"/>
+		<control id="103" class="BUTTON" caption="Reset" style="1342242816" position="10, 57, 70, 14"/>
+		<control id="106" caption="Menu Predefinito\nMenu delle Applicazioni Predefinito" position="37, 34, 181, 18"/>
+		<control id="107" resource="0" style="1342177283" position="10, 32, 21, 20"/>
+		<control caption="Seleziona &amp;Il menu dei contenuti:" position="10, 92, 105, 10"/>
+		<control id="104" class="COMBOBOX" style="1344339971" position="115, 90, 98, 79"/>
+		<control id="105" class="BUTTON" caption="Reset" style="1342242816" position="10, 108, 70, 14"/>
+	</dialog>
+	<dialog id="9115" caption="Editor di pulsanti" fontface="MS Shell Dlg" style="-1865940792" position="0, 0, 253, 185">
+		<control caption="Immagine" position="7, 7, 86, 8"/>
+		<control class="BUTTON" caption="Colori" style="1342177287" position="102, 106, 80, 71"/>
+		<control class="BUTTON" caption="Sposta" style="1342177287" position="101, 72, 81, 31"/>
+		<control class="BUTTON" caption="Anteprima" style="1342177287" position="7, 106, 86, 71"/>
+		<control class="BUTTON" caption="Strumenti" style="1342177287" position="101, 9, 81, 60"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342242817" position="193, 7, 50, 14"/>
+		<control id="2" class="BUTTON" caption="Annulla" style="1342242816" position="193, 25, 50, 14"/>
+		<control id="100" style="1342177543" position="7, 17, 86, 80"/>
+		<control id="101" style="1342308865" styleex="131072" position="14, 117, 73, 54"/>
+		<control caption="Trasparente" position="135, 156, 42, 8"/>
+		<control id="105" style="1342308608" position="116, 153, 15, 15"/>
+		<control id="103" caption="Strumenti" style="1082262017" position="112, 21, 60, 43"/>
+		<control id="104" caption="Sposta" style="1082262017" position="111, 83, 62, 12"/>
+		<control id="106" style="1342308620" position="109, 144, 15, 15"/>
+		<control id="102" caption="Colori" style="1082262017" position="107, 121, 68, 12"/>
+	</dialog>
+	<dialog id="9116" caption="Tastiera" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control caption="Categoria:" position="4, 5, 89, 8"/>
+		<control id="100" class="COMBOBOX" style="1344339971" position="4, 15, 91, 147"/>
+		<control id="101" caption="Comandi:" position="4, 28, 89, 8"/>
+		<control id="102" class="LISTBOX" style="1352728897" position="4, 38, 91, 77"/>
+		<control id="103" caption="Combinazioni correnti:" position="100, 28, 73, 8"/>
+		<control id="104" class="LISTBOX" style="1352728897" position="100, 38, 67, 51"/>
+		<control id="105" caption="Nuova combinazione:" position="100, 93, 100, 8"/>
+		<control id="106" class="EDIT" style="1350631552" position="100, 103, 67, 12"/>
+		<control id="107" class="BUTTON" caption="Assegna" style="1342242816" position="170, 39, 58, 14"/>
+		<control id="108" class="BUTTON" caption="Rimuovi" style="1342242816" position="170, 56, 58, 14"/>
+		<control id="109" class="BUTTON" caption="Reimposta tutto" style="1342242816" position="170, 73, 58, 14"/>
+		<control id="110" caption="Descrizione:" position="4, 117, 89, 8"/>
+		<control id="111" styleex="131072" position="4, 127, 171, 19"/>
+	</dialog>
+	<dialog id="9117" caption="Barre degli strumenti" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control caption="Barre degli strumenti:" position="4, 5, 148, 8"/>
+		<control id="100" class="LISTBOX" style="1352728913" position="4, 15, 150, 131"/>
+		<control id="101" class="BUTTON" caption="Nuovo..." style="1342242816" position="158, 15, 70, 14"/>
+		<control id="102" class="BUTTON" caption="Rinomina..." style="1342242816" position="158, 33, 70, 14"/>
+		<control id="103" class="BUTTON" caption="Elimina" style="1342242816" position="158, 51, 70, 14"/>
+		<control id="104" class="BUTTON" caption="Reimposta..." style="1342242816" position="158, 69, 70, 14"/>
+	</dialog>
+	<dialog id="9118" caption="Opzioni" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control id="108" caption="Menu e barre degli strumenti personalizzati" position="4, 5, 222, 8"/>
+		<control id="100" class="BUTTON" caption="Mostra sempre menu completi" style="1342242819" position="10, 17, 216, 10"/>
+		<control id="101" class="BUTTON" caption="Mostra menu completi dopo alcuni istanti" style="1342242819" position="22, 29, 204, 10"/>
+		<control id="102" class="BUTTON" caption="Reimposta informazioni sull'utilizzo di menu e barre degli strumenti" style="1342242816" position="7, 42, 216, 14"/>
+		<control id="107" caption="Altri" position="4, 70, 222, 8"/>
+		<control id="103" class="BUTTON" caption="Icone grandi" style="1342242819" position="10, 82, 216, 10"/>
+		<control id="104" class="BUTTON" caption="Mostra descrizione comandi" style="1342242819" position="10, 93, 216, 10"/>
+		<control id="105" class="BUTTON" caption="Mostra tasti di scelta rapida nella descrizione comandi" style="1342242819" position="22, 104, 204, 10"/>
+		<control caption="Animazioni menu:" position="10, 117, 56, 8"/>
+		<control id="106" class="COMBOBOX" style="1344339971" position="70, 115, 79, 65"/>
+	</dialog>
+	<dialog id="9119" caption="Comandi" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control caption="Per aggiungere un comando a una barra degli strumenti, selezionare una categoria e trascinare il comando da questa finestra nella barra degli strumenti." position="4, 5, 220, 25"/>
+		<control caption="Categorie:" position="4, 32, 80, 8"/>
+		<control id="100" class="LISTBOX" style="1352728833" position="4, 42, 81, 103"/>
+		<control caption="Comandi:" position="90, 32, 134, 8"/>
+		<control id="101" class="LISTBOX" style="1352728849" position="90, 42, 135, 103"/>
+	</dialog>
+	<dialog id="9120" caption="Nuova barra degli strumenti" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 186, 52">
+		<control caption="Nome:" position="4, 4, 178, 8"/>
+		<control id="100" class="EDIT" style="1350631552" position="4, 15, 178, 12"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342242817" position="78, 34, 50, 14"/>
+		<control id="2" class="BUTTON" caption="Annulla" style="1342242816" position="132, 34, 50, 14"/>
+	</dialog>
+	<dialog id="9312" caption="Suggerimenti" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 279, 127">
+		<control id="1" class="BUTTON" caption="Chiudi" style="1342242817" position="224, 108, 50, 14"/>
+		<control id="100" class="BUTTON" caption="&amp;Mostra consigli all'avvio" style="1342242819" position="6, 110, 120, 10"/>
+		<control id="101" class="BUTTON" caption="Suggerimento successivo" style="1342242816" position="132, 108, 88, 14"/>
+		<control id="102" style="1073741832" position="0, 0, 279, 103"/>
+	</dialog>
+	<dialog id="9313" caption="Personalizza" fontface="MS Shell Dlg" style="1321205832" position="0, 0, 147, 161">
+		<control id="100" caption="Colori:" position="2, 4, 43, 10"/>
+		<control id="101" style="1342242823" position="3, 15, 119, 86"/>
+		<control id="102" style="1342242823" position="126, 15, 20, 86"/>
+		<control id="104" caption="Tonalità:" position="7, 108, 28, 8"/>
+		<control id="115" class="EDIT" style="1350639744" position="38, 106, 33, 13"/>
+		<control id="112" class="msctls_updown32" caption="Spin1" style="1342177318" position="62, 105, 10, 14"/>
+		<control id="105" caption="Sat:" position="7, 125, 18, 8"/>
+		<control id="114" class="EDIT" style="1350639744" position="38, 122, 33, 13"/>
+		<control id="116" class="msctls_updown32" caption="Spin2" style="1342177318" position="62, 122, 10, 14"/>
+		<control id="106" caption="Lum:" position="7, 140, 18, 8"/>
+		<control id="113" class="EDIT" style="1350639744" position="38, 138, 33, 13"/>
+		<control id="117" class="msctls_updown32" caption="Spin3" style="1342177318" position="62, 137, 10, 14"/>
+		<control id="107" caption="Rosso:" position="78, 108, 23, 8"/>
+		<control id="110" class="EDIT" style="1350639744" position="102, 106, 33, 13"/>
+		<control id="119" class="msctls_updown32" caption="Spin1" style="1342177318" position="126, 105, 11, 14"/>
+		<control id="108" caption="Verde:" position="78, 125, 23, 8"/>
+		<control id="111" class="EDIT" style="1350639744" position="102, 122, 33, 13"/>
+		<control id="120" class="msctls_updown32" caption="Spin2" style="1342177318" position="126, 122, 11, 14"/>
+		<control id="109" caption="Blu:" position="78, 140, 23, 8"/>
+		<control id="118" class="EDIT" style="1350639744" position="102, 138, 33, 13"/>
+		<control id="121" class="msctls_updown32" caption="Spin3" style="1342177318" position="126, 137, 11, 14"/>
+	</dialog>
+	<dialog id="9314" caption="Standard" fontface="MS Shell Dlg" style="1321205832" position="0, 0, 147, 161">
+		<control id="100" caption="Colori:" position="2, 4, 43, 10"/>
+		<control id="103" style="1342242823" position="0, 15, 147, 145"/>
+	</dialog>
+	<dialog id="9315" caption="Disponi finestre" fontface="MS Shell Dlg" style="-1865678776" position="0, 0, 301, 164">
+		<control caption="Seleziona &amp;finestra:" position="7, 7, 147, 8"/>
+		<control id="100" class="LISTBOX" style="1353779539" position="7, 17, 209, 140"/>
+		<control id="101" class="BUTTON" caption="Attivazione" style="1342242816" position="218, 7, 81, 14"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342242816" position="218, 24, 81, 14"/>
+		<control id="105" class="BUTTON" caption="Salva" style="1342242816" position="218, 41, 81, 14"/>
+		<control id="104" class="BUTTON" caption="Chiudi finestra" style="1342242816" position="218, 58, 81, 14"/>
+		<control id="102" class="BUTTON" caption="Sovrapponi" style="1342242816" position="218, 75, 81, 14"/>
+		<control id="106" class="BUTTON" caption="Affianca orizzontalmente" style="1342242816" position="218, 92, 81, 14"/>
+		<control id="107" class="BUTTON" caption="Affianca verticalmente" style="1342242816" position="218, 109, 81, 14"/>
+		<control id="103" class="BUTTON" caption="Riduci a icona" style="1342242816" position="218, 126, 81, 14"/>
+	</dialog>
+	<dialog id="9556" caption="Imposta pagina" fontface="MS Shell Dlg" style="-1865940788" position="32, 32, 283, 250">
+		<control id="1073" class="BUTTON" caption="Foglio" style="1342308359" position="7, 80, 197, 51"/>
+		<control id="1089" caption="Dimensione:" position="11, 96, 40, 8"/>
+		<control id="1137" class="COMBOBOX" style="1344471299" position="55, 94, 141, 160"/>
+		<control id="1090" caption="Origine:" position="12, 113, 39, 8"/>
+		<control id="1138" class="COMBOBOX" style="1344471299" position="55, 111, 141, 160"/>
+		<control id="1072" class="BUTTON" caption="Orientamento" style="1342308359" position="211, 80, 66, 51"/>
+		<control id="1056" class="BUTTON" caption="Verticale" style="1342373892" position="216, 93, 56, 12"/>
+		<control id="1057" class="BUTTON" caption="Orizzontale" style="1342177284" position="216, 109, 58, 12"/>
+		<control id="1075" class="BUTTON" caption="Margini" style="1342308359" position="8, 135, 196, 58"/>
+		<control id="1102" caption="Da sinistra:" position="16, 151, 36, 8"/>
+		<control id="1155" class="EDIT" style="1350762496" position="55, 148, 32, 12"/>
+		<control id="1103" caption="Da destra:" position="123, 150, 35, 8"/>
+		<control id="1157" class="EDIT" style="1350762496" position="162, 147, 32, 12"/>
+		<control id="1104" caption="Dall'alto:" position="16, 171, 35, 8"/>
+		<control id="1156" class="EDIT" style="1350762496" position="55, 169, 32, 12"/>
+		<control id="1105" caption="Dal basso:" position="123, 171, 35, 8"/>
+		<control id="1158" class="EDIT" style="1350762496" position="162, 169, 32, 12"/>
+		<control class="BUTTON" caption="Anteprima" style="1342177287" position="212, 135, 66, 58"/>
+		<control id="1081" style="1342308357" position="261, 150, 4, 38"/>
+		<control id="1080" style="1342308358" position="230, 147, 31, 40"/>
+		<control id="1082" style="1342308357" position="235, 187, 29, 2"/>
+		<control id="57670" class="BUTTON" caption="Guida" style="1342242816" position="7, 230, 61, 14"/>
+		<control id="1026" class="BUTTON" caption="Stampante..." style="1342242816" position="8, 197, 60, 14"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342373889" position="177, 230, 48, 14"/>
+		<control id="2" class="BUTTON" caption="Annulla" style="1342242816" position="229, 230, 48, 14"/>
+		<control class="BUTTON" caption="Intestazioni e piè di pagina" style="1342177287" position="7, 5, 270, 70"/>
+		<control caption="Intestazione" position="12, 15, 190, 8"/>
+		<control caption="Piè di pagina" position="11, 44, 190, 8"/>
+		<control id="100" class="EDIT" style="1350631552" position="12, 25, 248, 14"/>
+		<control id="102" class="BUTTON" style="1342242880" styleex="131072" position="260, 25, 13, 14"/>
+		<control id="101" class="EDIT" style="1350631552" position="12, 55, 248, 14"/>
+		<control id="103" class="BUTTON" style="1342242880" styleex="131072" position="260, 55, 13, 14"/>
+	</dialog>
+	<dialog id="9600" caption="&amp;Accesso Rapido" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control caption="&amp;Seleziona i Comandi da:" position="4, 5, 106, 8"/>
+		<control id="102" class="COMBOBOX" style="1344339971" position="4, 15, 91, 85"/>
+		<control id="100" class="LISTBOX" style="1352728851" position="4, 32, 91, 101"/>
+		<control id="104" class="BUTTON" caption="&amp;&gt;&gt;" style="1342242816" position="99, 61, 31, 14"/>
+		<control id="105" class="BUTTON" caption="&amp;&lt;&lt;" style="1342242816" position="99, 78, 31, 14"/>
+		<control id="101" class="LISTBOX" style="1352728851" position="134, 32, 91, 84"/>
+		<control id="106" class="BUTTON" caption="&amp;Reset" style="1342242816" position="134, 119, 52, 14"/>
+		<control id="103" class="BUTTON" caption="&amp;Posiziona il Menu Rapido sotto la Barra" style="1342242819" position="4, 136, 221, 12"/>
+	</dialog>
+	<dialog id="9705" caption="Editor" fontface="MS Shell Dlg" style="1220542536" position="0, 0, 260, 180">
+		<control class="BUTTON" caption="Impostazioni finestra " style="1342177287" position="7, 7, 246, 76"/>
+		<control id="100" class="BUTTON" caption="Barra scorrimento &amp;Verticale" style="1342242819" position="15, 21, 105, 10"/>
+		<control id="101" class="BUTTON" caption="Barra scorrimento &amp;Orizzontale" style="1342242819" position="15, 32, 105, 10"/>
+		<control id="102" class="BUTTON" caption="&amp;Numero di linea" style="1342242819" position="15, 43, 105, 10"/>
+		<control id="103" class="BUTTON" caption="Seleziona &amp;margini" style="1342242819" position="15, 54, 105, 10"/>
+		<control id="114" class="BUTTON" caption="Nodi collassabili" style="1342242819" position="15, 65, 105, 10"/>
+		<control id="104" class="BUTTON" caption="&amp;Auto rientro" style="1342242819" position="130, 20, 115, 10"/>
+		<control id="113" class="BUTTON" caption="&amp;Spazi virtuali" style="1342242819" position="130, 35, 115, 10"/>
+		<control id="105" class="BUTTON" caption="Colorazione Synta&amp;x" style="1342242819" position="130, 50, 115, 10"/>
+		<control class="BUTTON" caption="Tabulazione" style="1342177287" position="7, 88, 162, 43"/>
+		<control caption="Dimensione &amp;Tab:" position="15, 103, 30, 8"/>
+		<control id="108" class="EDIT" style="1350631552" position="50, 100, 46, 14"/>
+		<control id="107" class="BUTTON" caption="Inserisci s&amp;pazi" style="1342373897" position="102, 102, 58, 10"/>
+		<control id="106" class="BUTTON" caption="&amp;Mantiene tabulazione" style="1342177289" position="102, 113, 51, 10"/>
+		<control id="109" class="BUTTON" caption="Cursore sovrascrittura" style="1342308359" position="175, 88, 78, 43"/>
+		<control id="110" class="BUTTON" caption="Sottile" style="1342373897" position="181, 102, 31, 10"/>
+		<control id="111" class="BUTTON" caption="Grosso" style="1342177289" position="181, 113, 36, 10"/>
+		<control class="BUTTON" caption="Salva Opzioni " style="1342177287" position="7, 135, 246, 37"/>
+		<control id="112" class="BUTTON" caption="Caricamento automatico dei file modificati esternamente" style="1342242819" position="15, 151, 155, 10"/>
+	</dialog>
+	<dialog id="9706" caption="Caratteri" fontface="MS Shell Dlg" style="1220542536" position="0, 0, 260, 180">
+		<control id="100" caption="&amp;Carattere:" position="7, 7, 40, 9"/>
+		<control id="101" class="COMBOBOX" style="1344342337" position="7, 18, 119, 55"/>
+		<control id="102" caption="Stile carattere:" position="134, 7, 45, 9"/>
+		<control id="103" class="COMBOBOX" style="1344342017" position="134, 18, 75, 55"/>
+		<control id="104" caption="Dimensione:" position="217, 7, 30, 9"/>
+		<control id="105" class="COMBOBOX" style="1344342017" position="217, 18, 36, 55"/>
+		<control caption="&amp;Testo normale:" position="7, 68, 100, 8"/>
+		<control id="106" class="COMBOBOX" style="1344340515" position="7, 78, 103, 100"/>
+		<control id="107" class="BUTTON" caption="..." style="1342242816" position="113, 78, 13, 12"/>
+		<control caption="&amp;Sfondo Normale:" position="7, 95, 100, 8"/>
+		<control id="108" class="COMBOBOX" style="1344340515" position="7, 105, 103, 100"/>
+		<control id="109" class="BUTTON" caption="..." style="1342242816" position="113, 105, 13, 12"/>
+		<control caption="Testo selezionato:" position="7, 122, 100, 8"/>
+		<control id="110" class="COMBOBOX" style="1344340515" position="7, 132, 103, 100"/>
+		<control id="111" class="BUTTON" caption="..." style="1342242816" position="113, 132, 13, 12"/>
+		<control caption="Sfondo selezionato:" position="7, 149, 100, 8"/>
+		<control id="112" class="COMBOBOX" style="1344340515" position="7, 159, 103, 100"/>
+		<control id="113" class="BUTTON" caption="..." style="1342242816" position="113, 159, 13, 12"/>
+		<control id="114" caption="Sc&amp;ript:" position="135, 69, 100, 9"/>
+		<control id="115" class="COMBOBOX" style="1352728643" position="134, 78, 119, 115"/>
+		<control id="118" class="BUTTON" caption="Esempio Normale / Selezionato:" style="1342308359" position="135, 128, 118, 44"/>
+		<control id="119" caption="AaBbCc" style="1342308865" styleex="512" position="143, 140, 49, 26"/>
+		<control id="120" caption="XxYyZz" style="1342308865" styleex="512" position="196, 140, 49, 26"/>
+	</dialog>
+	<dialog id="9707" caption="Colori" fontface="MS Shell Dlg" style="1220542536" position="0, 0, 260, 180">
+		<control id="200" caption="Tipologia File:" position="7, 7, 123, 9"/>
+		<control id="201" class="LISTBOX" style="1352728835" position="7, 17, 123, 64"/>
+		<control id="202" caption="&amp;Attributi:" position="7, 85, 123, 9"/>
+		<control id="203" class="LISTBOX" style="1352728835" position="7, 95, 123, 77"/>
+		<control caption="&amp;Testo normale:" position="135, 7, 100, 8"/>
+		<control id="106" class="COMBOBOX" style="1344340515" position="135, 17, 100, 100"/>
+		<control id="107" class="BUTTON" caption="..." style="1342242816" position="238, 17, 13, 12"/>
+		<control caption="Sfondo &amp;Normale:" position="135, 33, 100, 8"/>
+		<control id="108" class="COMBOBOX" style="1344340515" position="135, 43, 100, 100"/>
+		<control id="109" class="BUTTON" caption="..." style="1342242816" position="238, 43, 13, 12"/>
+		<control caption="Testo selezionato:" position="135, 59, 100, 8"/>
+		<control id="110" class="COMBOBOX" style="1344340515" position="135, 69, 100, 100"/>
+		<control id="111" class="BUTTON" caption="..." style="1342242816" position="238, 69, 13, 12"/>
+		<control caption="&amp;Sfondo selezionato:" position="135, 85, 100, 8"/>
+		<control id="112" class="COMBOBOX" style="1344340515" position="135, 95, 100, 100"/>
+		<control id="113" class="BUTTON" caption="..." style="1342242816" position="238, 95, 13, 12"/>
+		<control id="204" class="BUTTON" caption="&amp;Grassetto" style="1342242819" position="135, 114, 30, 10"/>
+		<control id="205" class="BUTTON" caption="&amp;Corsivo" style="1342242819" position="170, 114, 31, 10"/>
+		<control id="117" class="BUTTON" caption="&amp;Sottolineato" style="1342242819" position="206, 114, 46, 10"/>
+		<control id="118" class="BUTTON" caption="Esempio Normale / Selezionato:" style="1342308359" position="135, 128, 118, 44"/>
+		<control id="119" caption="AaBbCc" style="1342308865" styleex="512" position="143, 140, 49, 26"/>
+		<control id="120" caption="XxYyZz" style="1342308865" styleex="512" position="196, 140, 49, 26"/>
+	</dialog>
+	<dialog id="9708" caption="Trova e sostituisci" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 271, 86">
+		<control caption="Tr&amp;ova" style="1342177280" position="7, 9, 30, 8"/>
+		<control id="101" class="COMBOBOX" style="1344340034" position="61, 6, 143, 154"/>
+		<control caption="Sostituisci co&amp;n" style="1342177280" position="7, 25, 44, 8"/>
+		<control id="100" class="COMBOBOX" style="1344340034" position="61, 23, 143, 135"/>
+		<control class="BUTTON" caption="Opzioni" style="1342177287" position="7, 38, 113, 41"/>
+		<control id="105" class="BUTTON" caption="Solo paro&amp;le intere" style="1342242819" position="13, 51, 89, 10"/>
+		<control id="104" class="BUTTON" caption="Mauiscole/minuscole" style="1342242819" position="13, 64, 53, 10"/>
+		<control class="BUTTON" caption="Direzione" style="1342177287" position="126, 38, 80, 41"/>
+		<control id="103" class="BUTTON" caption="Ricerca sù" style="1342308361" position="134, 51, 50, 10"/>
+		<control id="102" class="BUTTON" caption="Ricerca giù" style="1342177289" position="134, 64, 59, 10"/>
+		<control id="106" class="BUTTON" caption="T&amp;rova successivo" style="1476460544" position="214, 7, 50, 14"/>
+		<control id="107" class="BUTTON" caption="Sostituis&amp;ci" style="1476460544" position="214, 23, 50, 14"/>
+		<control id="108" class="BUTTON" caption="Sostituisce t&amp;utto" style="1476460544" position="214, 39, 50, 14"/>
+		<control id="2" class="BUTTON" caption="Annulla" style="1342242816" position="214, 65, 50, 14"/>
+	</dialog>
+	<dialog id="9709" caption="Trova" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 271, 82">
+		<control caption="Tr&amp;ova" style="1342177280" position="7, 9, 34, 8"/>
+		<control id="101" class="COMBOBOX" style="1344340034" position="47, 6, 157, 153"/>
+		<control class="BUTTON" caption="Opzioni" style="1342177287" position="7, 30, 113, 45"/>
+		<control id="105" class="BUTTON" caption="Solo paro&amp;le intere" style="1342242819" position="13, 43, 100, 10"/>
+		<control id="104" class="BUTTON" caption="&amp;Maiuscole/minuscole" style="1342242819" position="13, 58, 100, 10"/>
+		<control class="BUTTON" caption="Direzione" style="1342177287" position="126, 30, 80, 45"/>
+		<control id="103" class="BUTTON" caption="Ricerca sù" style="1342177289" position="134, 43, 65, 10"/>
+		<control id="102" class="BUTTON" caption="Ricerca giù" style="1342177289" position="134, 58, 65, 10"/>
+		<control id="106" class="BUTTON" caption="T&amp;rova successivo" style="1476460544" position="214, 7, 50, 14"/>
+		<control id="2" class="BUTTON" caption="Annulla" style="1342242816" position="214, 26, 50, 14"/>
+	</dialog>
+	<dialog id="9710" caption="Vai alla linea" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 165, 55">
+		<control id="100" caption="&amp;Linea numero:" position="5, 5, 155, 8"/>
+		<control id="101" class="EDIT" style="1350639744" position="5, 17, 155, 14"/>
+		<control id="102" class="BUTTON" caption="&amp;Vai a" style="1342242816" position="56, 36, 50, 14"/>
+		<control id="2" class="BUTTON" caption="Annulla" style="1342242816" position="110, 36, 50, 14"/>
+	</dialog>
+	<dialog id="9976" fontface="MS Shell Dlg" style="1073741892" position="0, 0, 392, 16">
+		<control id="58116" class="BUTTON" caption="Stampa..." style="1342275584" position="2, 2, 44, 12"/>
+		<control id="58114" class="BUTTON" caption="Pagina successiva" style="1342275584" position="48, 2, 44, 12"/>
+		<control id="58115" class="BUTTON" caption="Precedente" style="1342275584" position="94, 2, 44, 12"/>
+		<control id="58113" class="BUTTON" style="1342275584" position="140, 2, 44, 12"/>
+		<control id="58117" class="BUTTON" caption="Zoom avanti" style="1342275584" position="186, 2, 44, 12"/>
+		<control id="58118" class="BUTTON" caption="Zoom indietro" style="1342275584" position="232, 2, 44, 12"/>
+		<control id="58112" class="BUTTON" caption="Chiudi" style="1342275584" position="278, 2, 44, 12"/>
+	</dialog>
+</resource>

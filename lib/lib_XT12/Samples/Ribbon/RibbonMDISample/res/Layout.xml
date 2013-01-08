@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Settings CompactMode="1">
+	<CommandBars>
+		<CommandBars>
+			<CommandBar Class="CXTPRibbonBar" Customizable="1" Type="3" BarID="1" Title="The Ribbon" MRUWidth="32767" EnableAnimation="1" Closeable="0">
+				<Controls>
+					<Control Class="CXTPControlButton" Id="57664" Flags="1" Caption="About" TooltipText="About" DescriptionText="Display program information, version number and copyright"/>
+				</Controls>
+				<SystemButton Type="2" Id="0" IconId="300" Flags="24" CommandBarId="16777216"/>
+				<Tabs>
+					<Tab Caption="&amp;Home" Id="130" Selected="1">
+						<Groups>
+							<Group Id="131" IconId="-1" Caption="&amp;File">
+								<Controls>
+									<Control Class="CXTPControlButton" Id="57600" Caption="New" TooltipText="New" DescriptionText="Create a new document"/>
+									<Control Class="CXTPControlButton" Id="57601" Caption="Open" TooltipText="Open" DescriptionText="Open an existing document"/>
+									<Control Class="CXTPControlButton" Id="57602" Caption="Close" TooltipText="Close" DescriptionText="Close the active document"/>
+									<Control Class="CXTPControlPopup" Type="4" Id="57603" Caption="Save" TooltipText="Save" DescriptionText="Save the active document" CommandBarId="16777217"/>
+									<Control Class="CXTPControlPopup" Type="4" Id="57607" BeginGroup="1" Caption="Print" TooltipText="Print" DescriptionText="Print the active document" CommandBarId="16777218"/>
+								</Controls>
+								<ControlGroupOption Id="131" HideFlags="1" Caption="&amp;File" TooltipText="&amp;File" DescriptionText="&amp;File"/>
+								<ControlGroupPopup Type="3" Id="131" Flags="8" HideFlags="1" Caption="&amp;File" TooltipText="&amp;File"/>
+							</Group>
+						</Groups>
+					</Tab>
+					<Tab Caption="&amp;Edit" Id="133">
+						<Groups>
+							<Group Id="137" IconId="-1" ShowOptionButton="1" Caption="&amp;Clipboard">
+								<Controls>
+									<Control Class="CXTPControlPopup" Type="4" Id="57637" HideFlags="128" Caption="Paste" TooltipText="Paste" DescriptionText="Insert Clipboard contents" CommandBarId="16777219"/>
+									<Control Class="CXTPControlButton" Id="57635" HideFlags="128" Caption="Cut" TooltipText="Cut" DescriptionText="Cut the selection and put it on the Clipboard"/>
+									<Control Class="CXTPControlButton" Id="57634" HideFlags="128" Caption="Copy" TooltipText="Copy" DescriptionText="Copy the selection and put it on the Clipboard"/>
+									<Control Class="CXTPControlButton" Id="138" HideFlags="128" Caption="Format Painter" TooltipText="Format Painter"/>
+								</Controls>
+								<ControlGroupOption Id="137" HideFlags="128" Caption="&amp;Clipboard" TooltipText="&amp;Clipboard" DescriptionText="&amp;Clipboard"/>
+								<ControlGroupPopup Type="3" Id="137" Flags="8" HideFlags="128" Caption="&amp;Clipboard" TooltipText="&amp;Clipboard"/>
+							</Group>
+							<Group Id="139" IconId="-1" Caption="&amp;Editing">
+								<Controls>
+									<Control Class="CXTPControlButton" Id="57636" HideFlags="128" Caption="Find" TooltipText="Find" DescriptionText="Find the specified text"/>
+									<Control Class="CXTPControlButton" Id="57641" HideFlags="128" Caption="Replace" TooltipText="Replace" DescriptionText="Replace specific text with different text"/>
+									<Control Class="CXTPControlButton" Id="140" HideFlags="128" Caption="&amp;Go To" TooltipText="&amp;Go To"/>
+									<Control Class="CXTPControlPopup" Type="2" Id="144" Flags="8" HideFlags="128" Caption="&amp;Select" TooltipText="&amp;Select" CommandBarId="16777220"/>
+								</Controls>
+								<ControlGroupOption Id="139" HideFlags="128" Caption="&amp;Editing" TooltipText="&amp;Editing" DescriptionText="&amp;Editing"/>
+								<ControlGroupPopup Type="3" Id="139" Flags="8" HideFlags="128" Caption="&amp;Editing" TooltipText="&amp;Editing"/>
+							</Group>
+						</Groups>
+					</Tab>
+					<Tab Caption="&amp;View" Id="132">
+						<Groups>
+							<Group Id="134" IconId="-1" Caption="&amp;Document Views">
+								<Controls>
+									<Control Class="CXTPControlButton" Id="141" HideFlags="128" Caption="&amp;Normal" TooltipText="&amp;Normal"/>
+									<Control Class="CXTPControlButton" Id="57609" HideFlags="128" Caption="Print Preview" TooltipText="Print Preview" DescriptionText="Display full pages"/>
+									<Control Class="CXTPControlButton" Id="142" HideFlags="128" Caption="&amp;Full Screen" TooltipText="&amp;Full Screen"/>
+								</Controls>
+								<ControlGroupOption Id="134" HideFlags="128" Caption="&amp;Document Views" TooltipText="&amp;Document Views" DescriptionText="&amp;Document Views"/>
+								<ControlGroupPopup Type="3" Id="134" Flags="8" HideFlags="128" Caption="&amp;Document Views" TooltipText="&amp;Document Views"/>
+							</Group>
+							<Group Id="135" IconId="-1" Caption="&amp;Show/Hide">
+								<Controls>
+									<Control Class="CXTPControlCheckBox" Type="9" Id="59393" HideFlags="128" Caption="StatusBar" TooltipText="StatusBar" DescriptionText="Show or hide the status bar"/>
+									<Control Class="CXTPControlCheckBox" Type="9" Id="59394" HideFlags="128" Caption="Workspace" TooltipText="Workspace" DescriptionText="Shpw or hide tab workspace"/>
+								</Controls>
+								<ControlGroupOption Id="135" HideFlags="128" Caption="&amp;Show/Hide" TooltipText="&amp;Show/Hide" DescriptionText="&amp;Show/Hide"/>
+								<ControlGroupPopup Type="3" Id="135" Flags="8" HideFlags="128" Caption="&amp;Show/Hide" TooltipText="&amp;Show/Hide"/>
+							</Group>
+							<Group Id="136" IconId="-1" Caption="&amp;Window">
+								<Controls>
+									<Control Class="CXTPControlButton" Id="57648" HideFlags="128" Caption="New Window" TooltipText="New Window" DescriptionText="Open another window for the active document"/>
+									<Control Class="CXTPControlButton" Id="57649" HideFlags="128" Caption="Arrange Icons" TooltipText="Arrange Icons" DescriptionText="Arrange icons at the bottom of the window"/>
+									<Control Class="CXTPControlPopup" Type="2" Id="143" HideFlags="128" Caption="&amp;Switch Windows" TooltipText="&amp;Switch Windows" CommandBarId="16777221"/>
+								</Controls>
+								<ControlGroupOption Id="136" HideFlags="128" Caption="&amp;Window" TooltipText="&amp;Window" DescriptionText="&amp;Window"/>
+								<ControlGroupPopup Type="3" Id="136" Flags="8" HideFlags="128" Caption="&amp;Window" TooltipText="&amp;Window"/>
+							</Group>
+						</Groups>
+					</Tab>
+				</Tabs>
+				<QuickAccessControls>
+					<Control Class="CXTPControlButton" Id="57603" Caption="Save" TooltipText="Save" DescriptionText="Save the active document"/>
+					<Control Class="CXTPControlButton" Id="57643" Caption="Undo" TooltipText="Undo" DescriptionText="Undo the last action"/>
+					<Control Class="CXTPControlButton" Id="57607" Caption="Print" TooltipText="Print" DescriptionText="Print the active document"/>
+				</QuickAccessControls>
+			</CommandBar>
+			<CommandBar Class="CXTPRibbonSystemPopupBar" Type="2" Position="5" BarID="16777216" Borders="6, 18, 6, 29">
+				<Controls>
+					<Control Class="CXTPControlButton" Id="57600" Caption="&amp;New" TooltipText="New" DescriptionText="Create a new document" ShortcutTextAuto="Ctrl+N"/>
+					<Control Class="CXTPControlButton" Id="57601" Caption="&amp;Open..." TooltipText="Open" DescriptionText="Open an existing document" ShortcutTextAuto="Ctrl+O"/>
+					<Control Class="CXTPControlButton" Id="57602" Caption="&amp;Close" TooltipText="Close" DescriptionText="Close the active document"/>
+					<Control Class="CXTPControlButton" Id="57603" Caption="&amp;Save" TooltipText="Save" DescriptionText="Save the active document" ShortcutTextAuto="Ctrl+S"/>
+					<Control Class="CXTPControlButton" Id="57604" Caption="Save &amp;As..." TooltipText="Save As" DescriptionText="Save the active document with a new name"/>
+					<Control Class="CXTPControlButton" Id="57607" BeginGroup="1" Caption="&amp;Print..." TooltipText="Print" DescriptionText="Print the active document" ShortcutTextAuto="Ctrl+P"/>
+					<Control Class="CXTPControlButton" Id="57609" Caption="Print Pre&amp;view" TooltipText="Print Preview" DescriptionText="Display full pages"/>
+					<Control Class="CXTPControlButton" Id="57606" Caption="P&amp;rint Setup..." TooltipText="Print Setup" DescriptionText="Change the printer and printing options"/>
+					<Control Class="CXTPControlRecentFileList" Id="57616" BeginGroup="1" Caption="Recent File" TooltipText="Open this document" DescriptionText="Open this document"/>
+					<Control Class="CXTPControlButton" Id="57665" BeginGroup="1" Caption="E&amp;xit" TooltipText="Exit" DescriptionText="Quit the application; prompts to save documents"/>
+				</Controls>
+			</CommandBar>
+			<CommandBar Class="CXTPPopupBar" Type="2" Position="5" BarID="16777217" Style="4194304">
+				<Controls>
+					<Control Class="CXTPControlButton" Id="57603" Caption="Save" TooltipText="Save" DescriptionText="Save the active document"/>
+					<Control Class="CXTPControlButton" Id="57604" Caption="Save As" TooltipText="Save As" DescriptionText="Save the active document with a new name"/>
+				</Controls>
+			</CommandBar>
+			<CommandBar Class="CXTPPopupBar" Type="2" Position="5" BarID="16777218" Style="4194304">
+				<Controls>
+					<Control Class="CXTPControlButton" Id="57607" Caption="Print" TooltipText="Print" DescriptionText="Print the active document"/>
+					<Control Class="CXTPControlButton" Id="57606" Caption="Print Setup" TooltipText="Print Setup" DescriptionText="Change the printer and printing options"/>
+				</Controls>
+			</CommandBar>
+			<CommandBar Class="CXTPPopupBar" Type="2" Position="5" BarID="16777219" Style="4194304">
+				<Controls>
+					<Control Class="CXTPControlButton" Id="57637" Caption="Paste" TooltipText="Paste" DescriptionText="Insert Clipboard contents"/>
+					<Control Class="CXTPControlButton" Id="57639" Caption="Paste Special" TooltipText="Paste Special" DescriptionText="Insert Clipboard contents with options"/>
+				</Controls>
+			</CommandBar>
+			<CommandBar Class="CXTPPopupBar" Type="2" Position="5" BarID="16777220" Style="4194304">
+				<Controls>
+					<Control Class="CXTPControlButton" Id="57642" Caption="Select All" TooltipText="Select All" DescriptionText="Select the entire document"/>
+				</Controls>
+			</CommandBar>
+			<CommandBar Class="CXTPPopupBar" Type="2" Position="5" BarID="16777221" Style="4194304">
+				<Controls>
+					<Control Class="CXTPControlWindowList" Id="35000"/>
+				</Controls>
+			</CommandBar>
+		</CommandBars>
+		<Layout>
+			<DockState Version="24" ScreenSize="1280, 1024" Count="1">
+				<BarInfo0 BarId="1" MRUWidth="32767"/>
+			</DockState>
+			<DockBars>
+				<DockBar0 Count="3" Id1="1"/>
+			</DockBars>
+		</Layout>
+	</CommandBars>
+</Settings>

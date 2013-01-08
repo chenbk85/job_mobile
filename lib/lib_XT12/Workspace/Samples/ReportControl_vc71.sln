@@ -1,0 +1,7 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReportDialog", "..\..\Samples\ReportControl\ReportDialog\ReportDialog_vc71.vcproj", "{68352277-7121-9123-4296-271523661772}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReportSample", "..\..\Samples\ReportControl\ReportSample\ReportSample_vc71.vcproj", "{34659573-5779-3728-2368-675248793531}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VirtualList", "..\..\Samples\ReportControl\VirtualList\VirtualList_vc71.vcproj", "{13135773-9356-7214-2248-273938478416}"
+EndProject

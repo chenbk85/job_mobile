@@ -1,0 +1,79 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Codejock.ToolkitPro.Shared", "ToolkitProShared_vc71.vcproj", "{99638143-4721-1311-2437-398584482468}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Codejock.ToolkitPro.Static", "ToolkitProStatic_vc71.vcproj", "{62382554-2773-8417-4434-184592366919}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Dynamic Debug = Dynamic Debug
+		Dynamic Release = Dynamic Release
+		Dynamic Unicode Debug = Dynamic Unicode Debug
+		Dynamic Unicode Release = Dynamic Unicode Release
+		Release = Release
+		Static Debug = Static Debug
+		Static Release = Static Release
+		Static Unicode Debug = Static Unicode Debug
+		Static Unicode Release = Static Unicode Release
+		Unicode Debug = Unicode Debug
+		Unicode Release = Unicode Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{99638143-4721-1311-2437-398584482468}.Debug.ActiveCfg = Debug|Win32
+		{99638143-4721-1311-2437-398584482468}.Debug.Build.0 = Debug|Win32
+		{99638143-4721-1311-2437-398584482468}.Dynamic Debug.ActiveCfg = Debug|Win32
+		{99638143-4721-1311-2437-398584482468}.Dynamic Debug.Build.0 = Debug|Win32
+		{99638143-4721-1311-2437-398584482468}.Dynamic Release.ActiveCfg = Release|Win32
+		{99638143-4721-1311-2437-398584482468}.Dynamic Release.Build.0 = Release|Win32
+		{99638143-4721-1311-2437-398584482468}.Dynamic Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{99638143-4721-1311-2437-398584482468}.Dynamic Unicode Debug.Build.0 = Unicode Debug|Win32
+		{99638143-4721-1311-2437-398584482468}.Dynamic Unicode Release.ActiveCfg = Unicode Release|Win32
+		{99638143-4721-1311-2437-398584482468}.Dynamic Unicode Release.Build.0 = Unicode Release|Win32
+		{99638143-4721-1311-2437-398584482468}.Release.ActiveCfg = Release|Win32
+		{99638143-4721-1311-2437-398584482468}.Release.Build.0 = Release|Win32
+		{99638143-4721-1311-2437-398584482468}.Static Debug.ActiveCfg = Debug|Win32
+		{99638143-4721-1311-2437-398584482468}.Static Debug.Build.0 = Debug|Win32
+		{99638143-4721-1311-2437-398584482468}.Static Release.ActiveCfg = Release|Win32
+		{99638143-4721-1311-2437-398584482468}.Static Release.Build.0 = Release|Win32
+		{99638143-4721-1311-2437-398584482468}.Static Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{99638143-4721-1311-2437-398584482468}.Static Unicode Debug.Build.0 = Unicode Debug|Win32
+		{99638143-4721-1311-2437-398584482468}.Static Unicode Release.ActiveCfg = Unicode Release|Win32
+		{99638143-4721-1311-2437-398584482468}.Static Unicode Release.Build.0 = Unicode Release|Win32
+		{99638143-4721-1311-2437-398584482468}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{99638143-4721-1311-2437-398584482468}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{99638143-4721-1311-2437-398584482468}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{99638143-4721-1311-2437-398584482468}.Unicode Release.Build.0 = Unicode Release|Win32
+		{62382554-2773-8417-4434-184592366919}.Debug.ActiveCfg = Static Debug|Win32
+		{62382554-2773-8417-4434-184592366919}.Debug.Build.0 = Static Debug|Win32
+		{62382554-2773-8417-4434-184592366919}.Dynamic Debug.ActiveCfg = Dynamic Debug|Win32
+		{62382554-2773-8417-4434-184592366919}.Dynamic Debug.Build.0 = Dynamic Debug|Win32
+		{62382554-2773-8417-4434-184592366919}.Dynamic Release.ActiveCfg = Dynamic Release|Win32
+		{62382554-2773-8417-4434-184592366919}.Dynamic Release.Build.0 = Dynamic Release|Win32
+		{62382554-2773-8417-4434-184592366919}.Dynamic Unicode Debug.ActiveCfg = Dynamic Unicode Debug|Win32
+		{62382554-2773-8417-4434-184592366919}.Dynamic Unicode Debug.Build.0 = Dynamic Unicode Debug|Win32
+		{62382554-2773-8417-4434-184592366919}.Dynamic Unicode Release.ActiveCfg = Dynamic Unicode Release|Win32
+		{62382554-2773-8417-4434-184592366919}.Dynamic Unicode Release.Build.0 = Dynamic Unicode Release|Win32
+		{62382554-2773-8417-4434-184592366919}.Release.ActiveCfg = Dynamic Unicode Release|Win32
+		{62382554-2773-8417-4434-184592366919}.Release.Build.0 = Dynamic Unicode Release|Win32
+		{62382554-2773-8417-4434-184592366919}.Static Debug.ActiveCfg = Static Debug|Win32
+		{62382554-2773-8417-4434-184592366919}.Static Debug.Build.0 = Static Debug|Win32
+		{62382554-2773-8417-4434-184592366919}.Static Release.ActiveCfg = Static Release|Win32
+		{62382554-2773-8417-4434-184592366919}.Static Release.Build.0 = Static Release|Win32
+		{62382554-2773-8417-4434-184592366919}.Static Unicode Debug.ActiveCfg = Static Unicode Debug|Win32
+		{62382554-2773-8417-4434-184592366919}.Static Unicode Debug.Build.0 = Static Unicode Debug|Win32
+		{62382554-2773-8417-4434-184592366919}.Static Unicode Release.ActiveCfg = Static Unicode Release|Win32
+		{62382554-2773-8417-4434-184592366919}.Static Unicode Release.Build.0 = Static Unicode Release|Win32
+		{62382554-2773-8417-4434-184592366919}.Unicode Debug.ActiveCfg = Dynamic Unicode Debug|Win32
+		{62382554-2773-8417-4434-184592366919}.Unicode Debug.Build.0 = Dynamic Unicode Debug|Win32
+		{62382554-2773-8417-4434-184592366919}.Unicode Release.ActiveCfg = Dynamic Unicode Release|Win32
+		{62382554-2773-8417-4434-184592366919}.Unicode Release.Build.0 = Dynamic Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

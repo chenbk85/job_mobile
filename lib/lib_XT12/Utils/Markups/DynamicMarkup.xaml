@@ -1,0 +1,19 @@
+<Page xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+<Border Padding = "3" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+<Grid >
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition/>
+		<ColumnDefinition/>
+		<ColumnDefinition/>
+		<ColumnDefinition/>
+		<ColumnDefinition/>
+	</Grid.ColumnDefinitions>
+
+	<Border Grid.Column="0" Background="Red"><TextBlock MouseEnter="MakeTextBold" MouseLeave="MakeTextNormal" Padding="4" Text="Column 1"/></Border>
+   	<Border Grid.Column="1" Background="Green"><TextBlock MouseEnter="MakeTextYellow" MouseLeave="MakeTextGreen" Padding="4" Text="Column 2"/></Border>
+	<Border Grid.Column="2" Background="Blue"><TextBlock MouseEnter="MoveColumn3" Padding="4" Text="Column 3"/></Border>
+	<Border Grid.Column="3" Background="Gray"><TextBlock Padding="4" Text="Column 4"/></Border>
+	<Border Grid.Column="4" Background="Magenta"><TextBlock MouseEnter="SetText1" MouseLeave="SetText2" Padding="4" Text="Column 5"/></Border>
+</Grid>
+</Border>
+</Page>

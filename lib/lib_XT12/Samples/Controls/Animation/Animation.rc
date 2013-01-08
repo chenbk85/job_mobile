@@ -1,0 +1,208 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Animation.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ANIMATION_DIALOG DIALOGEX 0, 0, 339, 230
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Codejock Animation Sample"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         129,IDC_BMP_GEAR,"Static",SS_BITMAP,7,7,233,215
+    GROUPBOX        "Standard Animation",IDC_STATIC,247,7,85,83
+    CONTROL         "System Default",IDC_RADIO_ANIMATION,"Button",BS_AUTORADIOBUTTON | WS_GROUP,258,22,66,10
+    CONTROL         "Random",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,258,32,42,10
+    CONTROL         "Unfold",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,258,42,37,10
+    CONTROL         "Slide",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,258,52,31,10
+    CONTROL         "Fade",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,258,62,32,10
+    CONTROL         "None",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,258,72,33,10
+    PUSHBUTTON      "Animate",IDC_ANIMATE,247,189,85,14
+    PUSHBUTTON      "&Done",IDCANCEL,247,209,85,14
+    GROUPBOX        "Custom Animation",IDC_STATIC,247,130,85,51
+    CONTROL         "Noise",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,258,143,33,10
+    CONTROL         "Stretch",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,258,153,39,10
+    CONTROL         "Circles",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,258,163,37,10
+    LTEXT           "Delay:",IDC_STATIC_DELAY,247,97,21,8
+    EDITTEXT        IDC_EDIT_DELAY,247,108,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Steps:",IDC_STATIC_STEPS,292,97,21,8
+    EDITTEXT        IDC_EDIT_STEPS,292,108,40,12,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 12,0,0,4
+ PRODUCTVERSION 12,0,0,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "Animation MFC Application"
+            VALUE "FileVersion", "12, 0, 0, 4\0"
+            VALUE "InternalName", "Animation"
+            VALUE "LegalCopyright", "(c)1998-2008 Codejock Software, All Rights Reserved.\0"
+            VALUE "OriginalFilename", "Animation.EXE"
+            VALUE "ProductName", "Animation Application"
+            VALUE "ProductVersion", "12, 0, 0, 4\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ANIMATION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 332
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CODEJOCKGEAR        BITMAP                  "res\\codejockgear.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CjSample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Animation Sample..."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Codejock Animation Sample"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Animation.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

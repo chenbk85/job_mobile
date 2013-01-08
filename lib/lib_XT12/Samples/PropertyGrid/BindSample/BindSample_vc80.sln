@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindSample", ".\BindSample_vc80.vcproj", "{78494275-2495-3828-1889-475998317496}"
+EndProject

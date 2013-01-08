@@ -1,0 +1,37 @@
+<Page xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+    
+<Page.Resources>
+	<Style x:Key="{x:Type Hyperlink}" TargetType="Hyperlink">
+		<Setter Property="Foreground" Value="Red"/>
+		<Setter Property="TextDecorations" Value=""/>
+		<Style.Triggers>
+			<Trigger Property="IsMouseOver" Value="True">
+				<Trigger.Setters>
+					<Setter Property="Foreground" Value="DarkRed"/>
+					<Setter Property="TextDecorations" Value="Underline"/>
+				</Trigger.Setters>
+			</Trigger>
+		</Style.Triggers>		
+	</Style>
+
+	<Style x:Key="hyp" TargetType="Hyperlink">
+		<Setter Property="Foreground" Value="Blue"/>
+		<Style.Triggers>
+			<Trigger Property="IsMouseOver" Value="True">
+				<Trigger.Setters>
+					<Setter Property="FontWeight" Value="Bold"/>
+				</Trigger.Setters>
+			</Trigger>
+		</Style.Triggers>	
+	</Style>
+
+</Page.Resources>
+	
+	<StackPanel TextElement.FontSize="20" Orientation="Horizontal" HorizontalAlignment="Center">
+		<TextBlock VerticalAlignment="Center">
+			<Hyperlink>Test1</Hyperlink> 
+			<Hyperlink Foreground="Green">Test2</Hyperlink> 
+			<Hyperlink Style="{StaticResource hyp}"> Test3</Hyperlink>
+		</TextBlock>
+	</StackPanel>
+</Page>

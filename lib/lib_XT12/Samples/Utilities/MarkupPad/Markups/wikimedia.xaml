@@ -1,0 +1,1426 @@
+<Page xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+
+<Page.Resources>
+	<Style x:Key="{x:Type Hyperlink}" TargetType="Hyperlink">
+		<Style.Triggers>
+			<Trigger Property="IsMouseOver" Value="True">
+				<Trigger.Setters>
+					<Setter Property="TextDecorations" Value="Underline"/>
+				</Trigger.Setters>
+			</Trigger>
+		</Style.Triggers>
+		<Setter Property="Foreground" Value="#482BD0"/>
+		<Setter Property="TextDecorations" Value=""/>
+	</Style>
+	<Style x:Key="Tab" TargetType="Border">
+		<Style.Triggers>
+			<Trigger Property="IsMouseOver" Value="True">
+				<Trigger.Setters>
+					<Setter Property="Margin" Value="0,0,0,-1"/>
+					<Setter Property="Hyperlink.TextDecorations" Value=""/>
+				</Trigger.Setters>			
+			</Trigger>
+		</Style.Triggers>
+		<Setter Property="Background" Value="White"/>
+	</Style>
+	<Style x:Key="{x:Type TextBlock}"TargetType="TextBlock">
+		<Setter Property="FontSize" Value="14"/>	
+		<!--<Setter Property="VerticalOffset" Value="2"/>-->
+	</Style>
+	<Style x:Key="{x:Type Rectangle}" TargetType="Rectangle">
+		<Setter Property="Fill" Value="#638c9c"/>
+	</Style>
+
+</Page.Resources>
+<ScrollViewer>	
+
+	<StackPanel Orientation="Vertical">
+	<Border Background="#F3F3F3">
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+			<Image Source="file://wikiLogin.bmp" Width="11" Height="12" />
+			<TextBlock Padding="5"><Hyperlink>Log in/create account</Hyperlink></TextBlock>
+		</StackPanel>
+	</Border>	
+		<Grid >
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="160"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+			<StackPanel Orientation="Vertical"  Background="#EEEEEE" Grid.Column="0"  TextBlock.FontSize="13" TextBlock.Padding="10,0,0,0"> 
+				<Image Source="file://wikimedia.bmp"/>
+				<TextBlock Padding="10,0,0,0">Navigation</TextBlock>
+				<Border BorderBrush="#AAAAAA" Background ="#FFFFFF" BorderThickness="1" Padding="10,0,5,5" HorizontalAlignment="Left" Width="150">
+					<StackPanel>
+						<StackPanel Orientation = "Horizontal" >
+							<Rectangle Width="5" Height ="5"/>
+							<TextBlock><Hyperlink>Main Page</Hyperlink></TextBlock>
+						</StackPanel>
+						<StackPanel Orientation = "Horizontal" >
+							<Rectangle Width="5" Height="5"/>
+							<TextBlock><Hyperlink>Goings-on</Hyperlink></TextBlock>
+						</StackPanel>
+						<StackPanel Orientation = "Horizontal" >
+							<Rectangle Width="5" Height="5"/>
+							<TextBlock><Hyperlink>Wikimedia News</Hyperlink></TextBlock>
+						</StackPanel>
+						<StackPanel Orientation = "Horizontal" >
+							<Rectangle Width="5" Height="5"/>
+							<TextBlock><Hyperlink>Translations</Hyperlink></TextBlock>
+						</StackPanel>
+						<StackPanel Orientation = "Horizontal" >
+							<Rectangle Width="5" Height="5"/>
+							<TextBlock><Hyperlink>Recent changes</Hyperlink></TextBlock>
+						</StackPanel>
+						<StackPanel Orientation = "Horizontal" >
+							<Rectangle Width="5" Height="5"/>
+							<TextBlock><Hyperlink>Random Page</Hyperlink></TextBlock>
+						</StackPanel>
+						<StackPanel Orientation = "Horizontal" >
+							<Rectangle Width="5" Height="5"/>
+							<TextBlock><Hyperlink>Help</Hyperlink></TextBlock>
+						</StackPanel>
+					</StackPanel>
+				</Border>
+				<TextBlock Padding="10,5,0,0">beyond the web</TextBlock>
+				<Border BorderBrush="#AAAAAA" Background ="White" BorderThickness="1" Padding="10,0,5,5" HorizontalAlignment="Left" Width="150">
+					<StackPanel TextBlock.Padding="10,0,0,0" TextBlock.FontSize="13">
+						<StackPanel Orientation = "Horizontal" >
+							<Rectangle Width="5" Height ="5"/>
+							<TextBlock ><Hyperlink>Meet Wikimedians</Hyperlink></TextBlock>
+						</StackPanel>
+						<StackPanel Orientation = "Horizontal" >
+							<Rectangle Width="5" Height="5"/>
+							<TextBlock><Hyperlink>Events</Hyperlink></TextBlock>
+						</StackPanel>
+						<StackPanel Orientation = "Horizontal" >
+							<Rectangle Width="5" Height="5"/>
+							<TextBlock><Hyperlink>Chapters</Hyperlink></TextBlock>
+						</StackPanel>
+						<StackPanel Orientation = "Horizontal" >
+							<Rectangle Width="5" Height="5"/>
+							<TextBlock><Hyperlink>DVDs</Hyperlink></TextBlock>
+						</StackPanel>
+						<StackPanel Orientation = "Horizontal" >
+							<Rectangle Width="5" Height="5"/>
+							<TextBlock><Hyperlink>Wikimania</Hyperlink></TextBlock>
+						</StackPanel>
+						<StackPanel Orientation = "Horizontal" >
+							<Rectangle Width="5" Height="5"/>
+							<TextBlock><Hyperlink>Donate</Hyperlink></TextBlock>
+						</StackPanel>
+					</StackPanel>
+				</Border>
+				<TextBlock Padding="10,5,0,0">beyond the web</TextBlock>
+				<Border BorderBrush="#AAAAAA" Background ="White" BorderThickness="1" Padding="10,0,5,5" HorizontalAlignment="Left" Width="150">
+					<StackPanel TextBlock.Padding="10,0,0,0" TextBlock.FontSize="13">
+						<StackPanel Orientation = "Horizontal"  >
+							<Rectangle Width="5" Height ="5"/>
+							<TextBlock><Hyperlink>Metapub</Hyperlink></TextBlock>
+						</StackPanel>
+						<StackPanel Orientation = "Horizontal" >
+							<Rectangle Width="5" Height="5"/>
+							<TextBlock><Hyperlink>Babel</Hyperlink></TextBlock>
+						</StackPanel>
+						<StackPanel Orientation = "Horizontal" >
+							<Rectangle Width="5" Height="5"/>
+							<TextBlock><Hyperlink>Babylon</Hyperlink></TextBlock>
+						</StackPanel>
+						<StackPanel Orientation = "Horizontal" >
+							<Rectangle Width="5" Height="5"/>
+							<TextBlock><Hyperlink>Planet Wikimedia</Hyperlink></TextBlock>
+						</StackPanel>
+						<StackPanel Orientation = "horizontal" >
+							<Rectangle Width="5" Height="5"/>
+							<TextBlock><Hyperlink>Wikimania Projects<LineBreak/> Group</Hyperlink></TextBlock>
+						</StackPanel>
+					</StackPanel>
+				</Border>
+				<TextBlock Padding="10,10,0,0">Search</TextBlock>
+				<Border BorderBrush="#AAAAAA" Background="#FFFFFF" BorderThickness="1" Padding="10,0,5,5" HorizontalAlignment= "Left" Width="150">
+					<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+						<Button Margin="0,5,5,5" Width="35">
+							<TextBlock HorizontalAlignment="Center" FontWeight="Bold">Go</TextBlock>
+						</Button>
+						<Button Margin="5,5,5,5" Width="50">
+							<TextBlock HorizontalAlignment="Center">Search</TextBlock>
+						</Button>
+					</StackPanel>
+				</Border>
+				<TextBlock Padding="10,10,0,0">Toolbox</TextBlock>
+				<Border BorderBrush="#AAAAAA" Background="#FFFFFF" BorderThickness="1" Padding="10,0,5,5" HorizontalAlignment="Left" Width="130">
+					<StackPanel TextBlock.Padding="10,5,1,1">
+						<StackPanel Orientation = "Horizontal">
+							<Rectangle Width="5" Height="5"/>
+							<TextBlock><Hyperlink>What links here</Hyperlink></TextBlock>
+						</StackPanel>
+						<StackPanel Orientation = "Horizontal" >
+							<Rectangle Width="5" Height="5"/>
+							<TextBlock ><Hyperlink>Related changes</Hyperlink></TextBlock>
+						</StackPanel>
+						<StackPanel Orientation = "Horizontal" >
+							<Rectangle Width="5" Height="5"/>
+							<TextBlock ><Hyperlink>Upload file</Hyperlink></TextBlock>
+						</StackPanel>
+						<StackPanel Orientation = "Horizontal" >
+							<Rectangle Width="5" Height="5"/>
+							<TextBlock ><Hyperlink>Special Pages</Hyperlink></TextBlock>
+						</StackPanel>
+						<StackPanel Orientation = "Horizontal" >
+							<Rectangle Width="5" Height="5"/>
+							<TextBlock ><Hyperlink>Printable version</Hyperlink></TextBlock>	
+						</StackPanel>
+						<StackPanel Orientation = "Horizontal" >
+							<Rectangle Width="5" Height="5"/>
+							<TextBlock ><Hyperlink>Permanent link</Hyperlink></TextBlock>
+						</StackPanel>
+					</StackPanel>
+				</Border>
+			</StackPanel>
+		
+			<StackPanel Orientation="Vertical" Grid.Column="1" Background="white">
+				<StackPanel Orientation="Horizontal" Background="#F3F3F3">
+					<Border Margin="5"/>
+						<Border Style="{StaticResource Tab}" Margin="0,0,0,-1" BorderBrush="#FABD23" BorderThickness="1" Padding="3">
+							<TextBlock FontWeight="Bold" Foreground="Blue" Cursor="Hand" FontSize="11">Content Page</TextBlock>
+						</Border>
+						<Border Margin="2"/><!--small space between Content and edit-->
+						<Border BorderBrush="#AAAAAA" Style="{StaticResource Tab}"Cursor="Hand" BorderThickness="1" Padding="3">
+							<TextBlock><Hyperlink FontSize="11">discussion</Hyperlink></TextBlock>
+						</Border>
+						<Border Margin="50,0,0,0"/><!--Space between Discussion and edit-->
+						<Border BorderBrush="#AAAAAA" Background="White" Style="{StaticResource Tab}"Cursor="Hand" BorderThickness="1" Padding="3">
+							<TextBlock><Hyperlink FontSize="11" >edit</Hyperlink></TextBlock>
+						</Border>
+						<Border Margin="2"/>
+						<Border BorderBrush="#AAAAAA" Style="{StaticResource Tab}" BorderThickness="1" Padding="3">
+							<TextBlock><Hyperlink FontSize="11">history</Hyperlink></TextBlock>
+					</Border>
+				</StackPanel>
+				<Rectangle Height="1" Fill="white" Margin="96,0,0,1" />
+
+				<Border BorderBrush="#AAAAAA" BorderThickness="1" Margin="0,-1,0,25">
+					<StackPanel>
+						<Rectangle Height="4" Fill="white" HorizontalAlignment="Left" Width="82" Margin="10,-4,0,1"/>
+				
+				<TextBlock  Margin="10,10,0,0" FontSize="25"> List of Wikipedias</TextBlock>
+				<Rectangle Margin="10,0,0,0" Fill="#AAAAAA" Height="2"/>
+				<TextBlock Margin="10,2,0,0" FontSize="16"> FromMeta </TextBlock>
+				<StackPanel>	
+					<Border Background="#eeffee" BorderBrush="#AAAAAA" BorderThickness="1"  Margin="10"Padding="10,5,0,5" >
+				<TextBlock TextWrapping="Wrap" FontSize="12">Languages: <Hyperlink> العربية </Hyperlink> (ar) • <Hyperlink> Azərbaycan </Hyperlink> (az) • <Hyperlink>Български </Hyperlink> (bg) •  <Hyperlink> Català </Hyperlink> (ca) •  <Hyperlink> Česky </Hyperlink> (cs) • <Hyperlink> Deutsch</Hyperlink> (de) • <Hyperlink> Ελληνικά </Hyperlink> (el) • <Hyperlink>English</Hyperlink> (en) • <Hyperlink> Esperanto</Hyperlink> (eo) • <Hyperlink> Español </Hyperlink> (es) • <Hyperlink> فارسی</Hyperlink> (fa) • <Hyperlink> Suomi </Hyperlink> (fi) • <Hyperlink> Français </Hyperlink> (fr) • <Hyperlink> 日本語 </Hyperlink> (ja) • <Hyperlink>한국어 </Hyperlink> (ko) • <Hyperlink> Lietuvių </Hyperlink> (lt) • <Hyperlink> മലയാളം </Hyperlink> (ml) • <Hyperlink> Македонски </Hyperlink> (mk)  • <Hyperlink> नेपाल भाषा </Hyperlink> (new) • <Hyperlink> ਪੰਜਾਬੀ </Hyperlink> (pa) • <Hyperlink> Polski </Hyperlink> (pl) • <Hyperlink> Português </Hyperlink> (pt) • <Hyperlink> Română</Hyperlink> (ro) • <Hyperlink> Русский </Hyperlink> (ru) • <Hyperlink> Svenska </Hyperlink> (sv) • <Hyperlink> தமிழ் </Hyperlink> (ta) • <Hyperlink> ไทย </Hyperlink> (th) • <Hyperlink> Türkçe </Hyperlink> (tr) • <Hyperlink> Українська</Hyperlink> (uk) • <Hyperlink> Tiếng Việt </Hyperlink> (vi) • <Hyperlink> 中文 (zh)</Hyperlink> • <Hyperlink> +/- </Hyperlink>
+						</TextBlock>
+					</Border>
+				</StackPanel>
+				<Grid >
+					<Grid.ColumnDefinitions >
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="297"/>
+					</Grid.ColumnDefinitions>
+					<StackPanel Grid.Column="0" >
+						<TextBlock TextWrapping="Wrap" Padding="10,5,0,0">
+							This page contains a list of the official <Hyperlink>Wikipedias</Hyperlink> under the auspices of the <Hyperlink>Wikimedia Foundation</Hyperlink> for various languages. Test Wikipedias are listed at the <Hyperlink>Wikimedia Incubator Wiki project</Hyperlink>.<LineBreak/><LineBreak/>
+							All 256 Wikipedias are ordered by article count. The table lists each language name in English (linked to the English Wikipedia entry for the language) and the "local" name, in the language itself (linked to the article in that language's wiki). It also lists for each wiki the <Hyperlink>language code</Hyperlink> used in its URL and in <Hyperlink>interwiki links</Hyperlink> to it (linked to the local Main Page), as well as statistics on articles, edits, administrators, users, and images (most linked to an appropriate local special page).<LineBreak/><LineBreak/>
+							<Run FontWeight="Bold">Note: Just adding a link below does not suddenly spring a</Run> <Hyperlink FontWeight="Bold">wiki</Hyperlink> <Run FontWeight="Bold"> into existence.</Run> For information on starting a Wikipedia in a new language, please see <Hyperlink>Meta:Language proposal policy</Hyperlink>. (Currently, Wikipedia's volunteer developers are overworked and understaffed. Your patience is appreciated.)<LineBreak/><LineBreak/>
+							If a wiki becomes active and is not listed here, please post a notice on <Hyperlink>this article's talk page</Hyperlink>, including a link to <Italic>all</Italic> the relevant Wikipedia pages, and help promote the effort by announcing it on the <Hyperlink>Wikipedia-L</Hyperlink> mailing list, and at <Hyperlink>Wikimedia News</Hyperlink>.
+							<LineBreak/><LineBreak/>
+							<Run FontWeight="Bold">The information in the main article count table below is regularly completely overwritten by editors</Run> (using automatically gathered data from Special:Statistics of each wiki), so edits to individual entries won't last long, and are therefore usually unnecessary. If something is wrong with an entry other than simply having slightly out of date statistics, post about it on the <Hyperlink>talk page</Hyperlink>.
+						</TextBlock>
+					</StackPanel>
+					<StackPanel Grid.Column="1">
+						<Border BorderThickness="1" Background="#F9F9F9" Margin="10,0,10,0"BorderBrush="#AAAAAA" Padding="5">
+							<StackPanel>
+								<TextBlock HorizontalAlignment="Center"><Run FontWeight="Bold">Contents </Run> [<Hyperlink> hide</Hyperlink>]</TextBlock>
+								<TextBlock><Hyperlink>1 Notes </Hyperlink><LineBreak/>
+								<Hyperlink>2 The list </Hyperlink></TextBlock>
+								<TextBlock Padding="20,0,0,0">
+								<Hyperlink>2.1 1 000 000+ articles<LineBreak/> </Hyperlink>
+								<Hyperlink>2.2 100 000+ articles <LineBreak/></Hyperlink>
+								<Hyperlink>2.3 10 000+ articles <LineBreak/></Hyperlink>
+								<Hyperlink>2.4 1 000+ articles <LineBreak/></Hyperlink>
+								<Hyperlink>2.5 100+ articles <LineBreak/></Hyperlink>
+								<Hyperlink>2.6 10+ articles <LineBreak/></Hyperlink>
+								<Hyperlink>2.7 1+ articles <LineBreak/></Hyperlink>
+									<Hyperlink>2.8 0 articles in language (other than main page) <LineBreak/></Hyperlink>
+									<Hyperlink>2.9 Grand Total </Hyperlink>
+								</TextBlock>
+								<TextBlock><Hyperlink>3 Deprecated, moved and other</Hyperlink></TextBlock>
+								<TextBlock Padding="20,0,0,0"><Hyperlink>3.1 Test Wikipedias </Hyperlink></TextBlock>	
+								<TextBlock>
+									<Hyperlink>4 References <LineBreak/></Hyperlink>
+									<Hyperlink>5 See also </Hyperlink>
+								</TextBlock>
+								<TextBlock Padding="20,0,0,0">
+									<Hyperlink>5.1 Additional resources and statistics <LineBreak/></Hyperlink>
+									<Hyperlink>5.2 Additional projects <LineBreak/></Hyperlink>
+								</TextBlock>
+							</StackPanel>
+						</Border>
+					</StackPanel>
+				</Grid>
+				<Border HorizontalAlignment="Center" Background="#F9F9F9"BorderBrush="#AAAAAA" BorderThickness="1">
+					<StackPanel>
+						<TextBlock HorizontalAlignment="Center" FontWeight="Bold">Lists of <Hyperlink>Wikimedia Foundation projects</Hyperlink>:</TextBlock>
+						<TextBlock Padding="5"> Wikipedias | <Hyperlink>Wikibooks </Hyperlink> | <Hyperlink> Wiktionary </Hyperlink> | <Hyperlink> Wikiquote </Hyperlink> | <Hyperlink> Wikinews </Hyperlink> | <Hyperlink>Wikisource </Hyperlink> | <Hyperlink> Wikiversity </Hyperlink></TextBlock>
+						<TextBlock HorizontalAlignment="Center" FontWeight="Bold"><Hyperlink>Table of Wikimedia Projects by Size</Hyperlink></TextBlock>
+					</StackPanel>
+				</Border>
+				<TextBlock Margin="10,10,0,0,"><Run FontWeight="Bold">See also:</Run><LineBreak/></TextBlock>
+				<StackPanel Margin="10,10,10,20" TextBlock.Padding="10,10,0,10">
+					<StackPanel Orientation="Horizontal">
+						<Rectangle Width="5"Height="5"/>
+						<TextBlock><Hyperlink>Wiki Stats</Hyperlink>, the source of the information below -- other data formats are available. </TextBlock>
+					</StackPanel>
+					<StackPanel Orientation="Horizontal">
+						<Rectangle Width="5" Height="5"/>
+						<TextBlock><Hyperlink>List of Wikipedias by edits per article </Hyperlink></TextBlock>
+					</StackPanel>
+					<StackPanel Orientation="Horizontal">
+						<Rectangle Width="5" Height="5"/>
+						<TextBlock><Hyperlink> List of Wikipedias by sample of articles</Hyperlink> </TextBlock>
+					</StackPanel>
+					<StackPanel Orientation="Horizontal">
+						<Rectangle Width="5" Height="5"/>
+						<TextBlock><Hyperlink>List of Wikipedias by language family</Hyperlink> and <Hyperlink> List of Wikipedias by language macrofamily</Hyperlink> </TextBlock>
+					</StackPanel>
+					<StackPanel Orientation="Horizontal">
+						<Rectangle Width="5" Height="5"/>
+						<TextBlock><Hyperlink>List of Wikipedias by speakers per article </Hyperlink></TextBlock>
+					</StackPanel>
+					<StackPanel Orientation="Horizontal">
+						<Rectangle Width="5" Height="5"/>
+						<TextBlock><Hyperlink>Wikipedia Milestones</Hyperlink> and <Hyperlink> List of largest wikis </Hyperlink></TextBlock>
+					</StackPanel>
+				</StackPanel>
+				<Grid Margin="10,0,0,0">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="50"/>
+					</Grid.ColumnDefinitions>
+
+<TextBlock   Grid.Column="1">[<Hyperlink>edit</Hyperlink>]</TextBlock>
+<TextBlock HorizontalAlignment="left"Grid.Column="0" FontSize="19">Notes</TextBlock>
+</Grid>
+<Rectangle Fill="#AAAAAA" Margin="10,5,20,10" Height="1"/>
+<Grid Margin="10,0,0,0">
+<Grid.RowDefinitions>
+	<RowDefinition />
+	<RowDefinition/>
+</Grid.RowDefinitions>
+<Grid.ColumnDefinitions>
+	<ColumnDefinition Width="25"/>
+	<ColumnDefinition Width="*"/>
+</Grid.ColumnDefinitions>
+	<Rectangle Width="5" Height="5" Grid.Column="0" Grid.Row="0" />
+<TextBlock TextWrapping="Wrap" Grid.Column="1" Grid.Row="0" TextWrapping="Wrap">The "<Run FontWeight="Bold">Total</Run>" column refers to the number of pages in all namespaces, including both <Run FontWeight="Bold">Articles</Run> (the <Hyperlink>official article count</Hyperlink> of each wiki) and <Run FontWeight="Bold">Non-Articles</Run> (<Run FontWeight="Bold">User</Run> pages, <Run FontWeight="Bold">Images</Run>, talk pages, "project" pages, categories, and templates). 
+</TextBlock>
+<Rectangle Width="5" Height="5" Grid.Row="1"Grid.Column="0"/>
+<TextBlock Grid.Row="1"Grid.Column="1" TextWrapping="Wrap">
+The "<Run FontWeight="Bold">Depth</Run>" column (<Run FontWeight="Bold">(Edits/Articles) × (Non-Articles/Articles) × (1 - Stub-ratio)</Run>) is a rough indicator of a Wikipedia’s quality, showing how frequently its articles are updated. Note that it doesn’t refer to <Italic>academic</Italic> quality (which obviously can’t be mathematically computed anyway), but to <Italic>Wikipedian</Italic> quality, i.e. the depth of collaborativeness—a descriptor that is highly relevant for a Wikipedia. Depths above 300 for Wikipedias below 100 000 articles are dismissed as irrelevant. 
+</TextBlock>
+</Grid>
+<Grid Margin="10,10,0,0">
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="*"/>
+<ColumnDefinition Width="50"/>
+</Grid.ColumnDefinitions>
+
+<TextBlock   Grid.Column="1">[<Hyperlink>edit</Hyperlink>]</TextBlock>
+<TextBlock HorizontalAlignment="left"Grid.Column="0"  FontSize="19">The list</TextBlock>
+</Grid>
+<Rectangle Fill="#AAAAAA" Margin="10,5,20,10" Height="1"/>
+<TextBlock TextWrapping="Wrap" Margin="10,0,5,10"> 
+The languages listed below are Wikipedias which have been created. Their progress should also be tracked at <Hyperlink>Multilingual statistics</Hyperlink>. These tables can be kept up to date by ordinary users. If you feel that an update is needed, simply cut and paste the wiki syntax from <Hyperlink>this page</Hyperlink> (which is updated by script fairly regularly) into <Hyperlink> this page</Hyperlink>, overwriting the existing tables
+</TextBlock>
+<Grid >
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="*"/>
+<ColumnDefinition Width="50"/>
+</Grid.ColumnDefinitions>
+
+<TextBlock  Margin="10,10,0,0" Grid.Column="1">[<Hyperlink>edit</Hyperlink>]</TextBlock>
+<TextBlock HorizontalAlignment="left"Grid.Column="0" Margin="10,10,0,0"FontSize="17">1 000 000+ articels</TextBlock>
+</Grid>
+<Border BorderThickness="1" BorderBrush="#AAAAAA"Background="#F9F9F9"Margin="10,00,0,0">
+<Grid>
+<Grid.RowDefinitions>
+<RowDefinition/>
+<RowDefinition/>
+
+</Grid.RowDefinitions>
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="25"/>
+<ColumnDefinition/>
+<ColumnDefinition />
+<ColumnDefinition Width="50"/>
+<ColumnDefinition Width="75"/>
+<ColumnDefinition Width="85"/>
+<ColumnDefinition Width="90"/>
+<ColumnDefinition MaxWidth="90"/>
+<ColumnDefinition MaxWidth="90"/>
+<ColumnDefinition MaxWidth="70"/>
+<ColumnDefinition MaxWidth="70"/>
+</Grid.ColumnDefinitions>
+<Border Grid.Row="0" Grid.Column="0" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">No              </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="1" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Language        </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="2" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Language (local)</TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="3" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Wiki            </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="4" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Articles        </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="5" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Total           </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="6" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Edits           </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="7" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Admins          </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="8" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Users           </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="9" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Images          </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="10"BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Depth          </TextBlock></Border>
+
+
+<Border Grid.Row="1" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1"><TextBlock HorizontalAlignment="Right">1	    </TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1"><TextBlock HorizontalAlignment="Right"><Hyperlink>English    </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1"><TextBlock HorizontalAlignment="Right"><Hyperlink>English    </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1"><TextBlock HorizontalAlignment="Right"><Hyperlink>en 	    </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1"><TextBlock HorizontalAlignment="Right"><Hyperlink>2 198 206  </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1"><TextBlock HorizontalAlignment="Right">11 686 494 </TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1"><TextBlock HorizontalAlignment="Right"><Hyperlink>197 061 860</Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1"><TextBlock HorizontalAlignment="Right"><Hyperlink>1 479      </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1"><TextBlock HorizontalAlignment="Right"><Hyperlink>6 306 027  </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1"><TextBlock HorizontalAlignment="Right"><Hyperlink>765 848    </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="10"BorderBrush="#ECE9D8"BorderThickness="1"><TextBlock HorizontalAlignment="Right">314        </TextBlock></Border>
+</Grid>
+</Border><Grid >
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="*"/>
+<ColumnDefinition Width="50"/>
+</Grid.ColumnDefinitions>
+
+<TextBlock  Margin="10,10,0,0" Grid.Column="1">[<Hyperlink>edit</Hyperlink>]</TextBlock>
+<TextBlock HorizontalAlignment="left"Grid.Column="0" Margin="10,10,0,0" FontSize="17">100 000+ articles</TextBlock>
+</Grid>
+<Border BorderThickness="1" BorderBrush="#AAAAAA" Margin="10,0,0,0"
+Background="#F9F9F9">
+	<Grid>
+<Grid.RowDefinitions>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+
+</Grid.RowDefinitions>
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="25"/>
+<ColumnDefinition/>
+<ColumnDefinition />
+<ColumnDefinition Width="50"/>
+<ColumnDefinition Width="75"/>
+<ColumnDefinition Width="85"/>
+<ColumnDefinition Width="90"/>
+<ColumnDefinition MaxWidth="90"/>
+<ColumnDefinition MaxWidth="90"/>
+<ColumnDefinition MaxWidth="70"/>
+<ColumnDefinition MaxWidth="70"/>
+</Grid.ColumnDefinitions>
+<Border Grid.Row="0" Grid.Column="0" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">No              </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="1" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Language        </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="2" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Language (local)</TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="3" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Wiki            </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="4" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Articles        </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="5" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Total           </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="6" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Edits           </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="7" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Admins          </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="8" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Users           </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="9" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Images          </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="10"BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Depth          </TextBlock></Border>
+
+
+<Border Grid.Row="1" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">2</TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>German </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Deutsch </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>de </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>699 457 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">1 946 791 </TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>43 458 562 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>295 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>509 143 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>127 527 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1"><TextBlock  HorizontalAlignment="Right">71 </TextBlock></Border>
+ 
+
+<Border Grid.Row="2" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">3</TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>French </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Français </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>fr </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>614 229 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">2 300 050</TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>26 433 014</Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>163</Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>348 237 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>37 304</Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1"><TextBlock HorizontalAlignment="Right">87 </TextBlock></Border>
+
+
+<Border Grid.Row="3" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">4</TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Polish </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Polski </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>pl </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>464 566</Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">793 669 </TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>11 687 265 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>138 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>168 642 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>16 937 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1"><TextBlock HorizontalAlignment="Right">7 </TextBlock></Border>
+ 
+<Border Grid.Row="4" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">5</TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink> Japanese</Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink> 日本語</Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink> ja</Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink> 461 808</Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"> 1 125 757</TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink> 18 075 788</Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink> 55</Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink> 187 075</Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink> 56 914 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1"><TextBlock HorizontalAlignment="Right">33 </TextBlock></Border>
+ 
+<Border Grid.Row="5" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">6</TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Dutch </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Nederlands </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>nl </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>403 801 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">915 969 </TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>11 321 919 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>86 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>151 700 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>8 005 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1"><TextBlock HorizontalAlignment="Right">20 </TextBlock></Border>
+ 
+<Border Grid.Row="6" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">7</TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink> Italian </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Italiano </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>it </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>403 010 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">1 146 521 </TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>14 453 471 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>90 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>240 190</Hyperlink> </TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>49 528 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1"><TextBlock HorizontalAlignment="Right">43 </TextBlock></Border>
+ 
+<Border Grid.Row="7" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">8 </TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Portuguese </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Português </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>pt </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>356 445 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">1 317 756 </TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>9 164 403 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>87 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>330 865</Hyperlink> </TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>1 274 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1"><TextBlock HorizontalAlignment="Right">51 </TextBlock></Border>
+ 
+<Border Grid.Row="8" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">9</TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink> Spanish </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Español </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>es </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>326 259 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">919 943 </TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>15 006 892 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>132 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>614 216 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink> O </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1"><TextBlock HorizontalAlignment="Right">54 </TextBlock></Border>
+ 
+</Grid> 
+</Border>
+<Grid >
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="*"/>
+<ColumnDefinition Width="50"/>
+</Grid.ColumnDefinitions>
+
+<TextBlock Margin="10,10,0,0"  Grid.Column="1">[<Hyperlink>edit</Hyperlink>]</TextBlock>
+<TextBlock HorizontalAlignment="left"Grid.Column="0" FontSize="17" Margin="10,10,0,0">10 000 + articles</TextBlock>
+</Grid>
+<Border BorderThickness="1" BorderBrush="#AAAAAA"Background="#F9F9F9"Margin="10,0,0,0">
+	<Grid>
+<Grid.RowDefinitions>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+
+</Grid.RowDefinitions>
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="25"/>
+<ColumnDefinition/>
+<ColumnDefinition />
+<ColumnDefinition Width="50"/>
+<ColumnDefinition Width="75"/>
+<ColumnDefinition Width="85"/>
+<ColumnDefinition Width="90"/>
+<ColumnDefinition MaxWidth="90"/>
+<ColumnDefinition MaxWidth="90"/>
+<ColumnDefinition MaxWidth="70"/>
+<ColumnDefinition MaxWidth="70"/>
+</Grid.ColumnDefinitions>
+<Border Grid.Row="0" Grid.Column="0" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">No              </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="1" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Language        </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="2" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Language (local)</TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="3" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Wiki            </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="4" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Articles        </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="5" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Total           </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="6" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Edits           </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="7" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Admins          </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="8" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Users           </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="9" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Images          </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="10"BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Depth          </TextBlock></Border>
+
+
+
+
+<Border Grid.Row="1" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">18</TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Turkish </Hyperlink> </TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Türkçe </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>tr </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>99 526 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">324 679 </TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>2 942 567 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>19 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>132 307</Hyperlink> </TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>13 161 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">46 </TextBlock></Border>
+
+<Border Grid.Row="2" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">19</TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink> Esperanto </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Esperanto </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>eo </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>93 793 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">215 161 </TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>1 474 775 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>12 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>3 751 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>22 950 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">11 </TextBlock></Border>
+
+<Border Grid.Row="3" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">20 </TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Ukrainian </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Українська  </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>uk </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>91 078 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">214 227 </TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>1 266 539 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>13 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>9 635 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>12 088 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">11 </TextBlock></Border>
+
+<Border Grid.Row="4" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">21 </TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Czech </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Čeština </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>cs </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>87 374 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">222 118 </TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>2 246 125 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>20 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>30 860</Hyperlink> </TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>6 242 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">24 </TextBlock></Border>
+
+<Border Grid.Row="5" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">22 </TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Slovak </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Slovencina </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>sk </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>85 952 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">167 037 </TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>1 415 332 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>27 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>11 889 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>73 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">8 </TextBlock></Border>
+
+<Border Grid.Row="6" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">23 </TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Hungarian </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Magyar </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>hu </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>84 619 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">244 925 </TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>2 781 473 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>24 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>39 972</Hyperlink> </TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>28 834</Hyperlink> </TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">41 </TextBlock></Border>
+
+<Border Grid.Row="7" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">24 </TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Danish</Hyperlink> </TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Dansk </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>da </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>79 340 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">193 632 </TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>1 959 492 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>39 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>34 118</Hyperlink> </TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>2 465 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">21 </TextBlock></Border>
+
+<Border Grid.Row="8" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">25 </TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Indonesian </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Bahasa </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>id </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>74 532 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">212 311 </TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>1 273 798 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>14 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>55 079 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>11 848 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">21 </TextBlock></Border>
+
+<Border Grid.Row="9" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">26 </TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Hebrew</Hyperlink> </TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>????? </Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>he </Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>70 960 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">262 666 </TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>4 759 456 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>45     </Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>50 635 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>21 926 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">132 </TextBlock></Border>
+
+</Grid>
+</Border>
+<Grid >
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="*"/>
+<ColumnDefinition Width="50"/>
+</Grid.ColumnDefinitions>
+
+<TextBlock Margin="10,10,0,0"  Grid.Column="1">[<Hyperlink>edit</Hyperlink>]</TextBlock>
+<TextBlock HorizontalAlignment="left"Grid.Column="0" Margin="10,10,0,0" FontSize="17">1 000+ articles</TextBlock>
+</Grid>
+<Border BorderThickness="1" BorderBrush="#AAAAAA"Margin="10,0,10,0"
+Background="#F9F9F9">
+	<Grid>
+<Grid.RowDefinitions>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+
+</Grid.RowDefinitions>
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="25"/>
+<ColumnDefinition/>
+<ColumnDefinition />
+<ColumnDefinition Width="50"/>
+<ColumnDefinition Width="75"/>
+<ColumnDefinition Width="85"/>
+<ColumnDefinition Width="90"/>
+<ColumnDefinition MaxWidth="90"/>
+<ColumnDefinition MaxWidth="90"/>
+<ColumnDefinition MaxWidth="70"/>
+<ColumnDefinition MaxWidth="70"/>
+</Grid.ColumnDefinitions>
+<Border Grid.Row="0" Grid.Column="0" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">No              </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="1" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Language        </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="2" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Language (local)</TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="3" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Wiki            </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="4" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Articles        </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="5" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Total           </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="6" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Edits           </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="7" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Admins          </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="8" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Users           </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="9" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Images          </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="10"BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Depth          </TextBlock></Border>
+
+
+<Border Grid.Row="1" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">76</TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink> Walloon </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Walon </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>wa </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>9 753 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">24 979 </TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>116 182 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>5 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>330 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>1 724 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">11 </TextBlock></Border>
+
+<Border Grid.Row="2" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">77 </TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Belarusian </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Беларуская
+ </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>be </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>9 159 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">17 053 </TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>120 896 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>5 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>435 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>163 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">5 </TextBlock></Border>
+
+<Border Grid.Row="3" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">78 </TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Afrikaans </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Afrikaans </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>af </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>9 120 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">23 202 </TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>284 393 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>11 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>2 405 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>1 563 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">29 </TextBlock></Border>
+
+<Border Grid.Row="4" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">79 </TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Tajik </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Тоҷикӣ
+</Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>tg </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>8 653 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">14 172 </TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>69 280 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>5 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>405 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>232 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">2 </TextBlock></Border>
+
+<Border Grid.Row="5" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">80 </TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Belarusian (Tarashkevitsa) </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Беларуская (тарашкевіца)
+</Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>be-x-old </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>8 447 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">19 073 </TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>171 108 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>8 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>969</Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink> 857 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">14 </TextBlock></Border>
+
+<Border Grid.Row="6" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">81 </TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Aragonese </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Aragonés </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>an </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>8 098 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">17 928 </TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>188 754 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>3 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>475 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>138 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">16 </TextBlock></Border>
+
+<Border Grid.Row="7" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">82 </TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Tarantino </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Tarandíne </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>roa-tara </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>7 586 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">7 975 </TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>9 847 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>4 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>107 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>0 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">0 </TextBlock></Border>
+
+<Border Grid.Row="8" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">83 </TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Haitian </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Krèyol ayisyen </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>ht</Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink> 7 290 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">11 969 </TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>100 491 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>2 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>273 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>17</Hyperlink> </TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">3 </TextBlock></Border>
+
+<Border Grid.Row="9" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">84 </TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Ripuarian </Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Ripoarisch </Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>ksh </Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>7 287 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">323 048 </TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>612 083 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>6 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>308</Hyperlink> </TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>61 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">-- </TextBlock></Border>
+
+</Grid>
+</Border>
+<Grid >
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="*"/>
+<ColumnDefinition Width="50"/>
+</Grid.ColumnDefinitions>
+
+<TextBlock Margin="10,10,0,0"   Grid.Column="1">[<Hyperlink>edit</Hyperlink>]</TextBlock>
+<TextBlock HorizontalAlignment="left"Grid.Column="0"  Margin="10,10,0,0" FontSize="17">100+ articles</TextBlock>
+</Grid>
+
+
+<Border BorderThickness="1" BorderBrush="#AAAAAA" Margin="10,0,0,0"
+Background="#F9F9F9">
+	<Grid Margin="10,0,10,0">
+<Grid.RowDefinitions>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+
+</Grid.RowDefinitions>
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="25"/>
+<ColumnDefinition/>
+<ColumnDefinition />
+<ColumnDefinition Width="50"/>
+<ColumnDefinition Width="75"/>
+<ColumnDefinition Width="85"/>
+<ColumnDefinition Width="90"/>
+<ColumnDefinition MaxWidth="90"/>
+<ColumnDefinition MaxWidth="90"/>
+<ColumnDefinition MaxWidth="70"/>
+<ColumnDefinition MaxWidth="70"/>
+</Grid.ColumnDefinitions>
+<Border Grid.Row="0" Grid.Column="0" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">No              </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="1" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Language        </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="2" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Language (local)</TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="3" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Wiki            </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="4" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Articles        </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="5" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Total           </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="6" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Edits           </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="7" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Admins          </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="8" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Users           </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="9" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Images          </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="10"BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Depth          </TextBlock></Border>
+
+
+
+<Border Grid.Row="1" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">149</TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Turkmen </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>?????? / Туркмен
+ </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>tk </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>957 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">3 311 </TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>13 547 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>4 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>272 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>171 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">25 </TextBlock></Border>
+
+<Border Grid.Row="2" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">150 </TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Wu </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>吴语  </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>wuu </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>712 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">2 471 </TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>10 805 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>3 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>287 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>78 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">27 </TextBlock></Border>
+
+<Border Grid.Row="3" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">151 </TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Interlingue </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Interlingue </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>ie </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>668 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">2 042 </TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>10 317 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>2 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>194 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>8 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">21 </TextBlock></Border>
+
+<Border Grid.Row="4" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">152 </TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Lojban </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Lojban </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>jbo </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>625 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">2 967 </TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>17 623 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>4 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>229 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>16 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">83 </TextBlock></Border>
+
+<Border Grid.Row="5" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">153 </TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Crimean Tatar </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Qirimtatarca </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>crh </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>589 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">1 617 </TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>8 764 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>2 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>89 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>0 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">17 </TextBlock></Border>
+
+<Border Grid.Row="6" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">154 </TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Khmer </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>????????? </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>km </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>572 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">3 145 </TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>11 333 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>3 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>298 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>132 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">73 </TextBlock></Border>
+
+<Border Grid.Row="7" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">155 </TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Tok Pisin </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Tok Pisin </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>tpi </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>559 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">2 782 </TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>10 728 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>5 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>248 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>10 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">61 </TextBlock></Border>
+
+<Border Grid.Row="8" Grid.Column="0" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">156 </TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="1" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Wolof </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="2" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Wolof </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="3" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>wo </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="4" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>538 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="5" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">2 869 </TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="6" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>9 591 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="7" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>3 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="8" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>185 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="9" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>12 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">63 </TextBlock></Border>
+
+
+</Grid>
+</Border>
+<Grid >
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="*"/>
+<ColumnDefinition Width="50"/>
+</Grid.ColumnDefinitions>
+
+<TextBlock Margin="10,10,0,0"  Grid.Column="1">[<Hyperlink>edit</Hyperlink>]</TextBlock>
+<TextBlock HorizontalAlignment="left"Grid.Column="0" Margin="10,10,0,0" FontSize="17">10+ articles</TextBlock>
+</Grid><Border BorderThickness="1" BorderBrush="#AAAAAA" Margin="10"
+Background="#F9F9F9">
+	<Grid>
+<Grid.RowDefinitions>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+
+</Grid.RowDefinitions>
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="25"/>
+<ColumnDefinition/>
+<ColumnDefinition />
+<ColumnDefinition Width="50"/>
+<ColumnDefinition Width="75"/>
+<ColumnDefinition Width="85"/>
+<ColumnDefinition Width="90"/>
+<ColumnDefinition MaxWidth="90"/>
+<ColumnDefinition MaxWidth="90"/>
+<ColumnDefinition MaxWidth="70"/>
+<ColumnDefinition MaxWidth="70"/></Grid.ColumnDefinitions>
+<Border Grid.Row="0" Grid.Column="0" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">No              </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="1" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Language        </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="2" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Language (local)</TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="3" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Wiki            </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="4" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Articles        </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="5" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Total           </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="6" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Edits           </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="7" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Admins          </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="8" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Users           </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="9" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Images          </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="10"BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Depth          </TextBlock></Border>
+
+
+
+
+<Border Grid.Row="1" Grid.Column="0"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">215  </TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="1"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Xhosa	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="2"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>isiXhosa</Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="3"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>xh  </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="4"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>91  </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="5"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">388  </TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="6"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>6 560  </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="7"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>2  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="8"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>170  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="9"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>3  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">180  </TextBlock></Border>
+
+<Border Grid.Row="2" Grid.Column="0"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">216  </TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="1"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Swati  	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="2"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>SiSwati  	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="3"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>ss  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="4"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>88 		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="5"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">565  </TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="6"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>8 105  	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="7"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>3  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="8"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>151		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="9"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>16 		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">--  </TextBlock></Border>
+
+<Border Grid.Row="3" Grid.Column="0"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">217  </TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="1"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Greenlandic	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="2"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Kalaallisut	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="3"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>kl		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="4"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>87		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="5"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">1 411  			</TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="6"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>3 257  	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="7"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>1  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="8"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>215  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="9"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>6  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">--  </TextBlock></Border>
+
+<Border Grid.Row="4" Grid.Column="0"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">218  </TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="1"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Klingon  	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="2"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>tlhIngan-Hol  	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="3"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>tlh  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="4"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>83  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="5"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">1 314  </TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="6"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>4 715  	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="7"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>4  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="8"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>71  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="9"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>3  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">--  </TextBlock></Border>
+
+<Border Grid.Row="5" Grid.Column="0"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">219  </TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="1"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Inupiak  	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="2"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Iñupiak  	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="3"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>ik  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="4"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>77  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="5"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">1 299  </TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="6"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>1 990  	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="7"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>1  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="8"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>145  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="9"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>0  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="5" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">--  </TextBlock></Border>
+
+<Border Grid.Row="6" Grid.Column="0"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">220  </TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="1"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Tsonga  	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="2"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Xitsonga 	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="3"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>ts  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="4"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>70  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="5"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">220  </TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="6"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>5 784  	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="7"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>0  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="8"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>127 		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="9"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>2  </Hyperlink></TextBlock></Border>
+<Border Grid.Row="6" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">121  </TextBlock></Border>
+
+<Border Grid.Row="7" Grid.Column="0"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">221 </TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="1"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Dzongkha  </Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="2"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>?????  </Hyperlink>	</TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="3"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>dz  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="4"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>69  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="5"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">229  		</TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="6"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>8 117  	</Hyperlink>		</TextBlock></Border><Border Grid.Row="7" Grid.Column="7"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>0  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="8"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>150  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="9"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>6  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="7" Grid.Column="10"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">191  		</TextBlock></Border>
+			 
+<Border Grid.Row="8" Grid.Column="0"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">222  </TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="1"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Abkhazian  	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="2"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Аҧсуа	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="3"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>ab  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="4"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>68  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="5"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">1 418  </TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="6"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>1 933  	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="7"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>1  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="8"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>212 		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="9"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>40  		</Hyperlink></TextBlock></Border>
+<Border Grid.Row="8" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">--  </TextBlock></Border>
+
+<Border Grid.Row="9" Grid.Column="0"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">223  </TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="1"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Komi  </Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="2"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Коми   </Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="3"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>kv    </Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="4"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>58    </Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="5"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">270  </TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="6"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>6 349 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="7"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>0	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="8"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>130  	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="9"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>4  	</Hyperlink></TextBlock></Border>
+<Border Grid.Row="9" Grid.Column="10" BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">--  </TextBlock></Border>
+</Grid>
+</Border>
+<Grid >
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="*"/>
+<ColumnDefinition Width="50"/>
+</Grid.ColumnDefinitions>
+
+<TextBlock   Grid.Column="1">[<Hyperlink>edit</Hyperlink>]</TextBlock>
+<TextBlock HorizontalAlignment="left"Grid.Column="0" FontWeight="Bold">1+ articles</TextBlock>
+</Grid>
+<Border BorderThickness="1" BorderBrush="#AAAAAA"
+Background="#F9F9F9" Margin="10">
+	<Grid >
+<Grid.RowDefinitions>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+</Grid.RowDefinitions>
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="25"/>
+<ColumnDefinition/>
+<ColumnDefinition />
+<ColumnDefinition Width="50"/>
+<ColumnDefinition Width="75"/>
+<ColumnDefinition Width="85"/>
+<ColumnDefinition Width="90"/>
+<ColumnDefinition MaxWidth="90"/>
+<ColumnDefinition MaxWidth="90"/>
+<ColumnDefinition MaxWidth="70"/>
+<ColumnDefinition MaxWidth="70"/>
+</Grid.ColumnDefinitions>
+<Border Grid.Row="0" Grid.Column="0" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">No              </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="1" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Language        </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="2" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Language (local)</TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="3" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Wiki            </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="4" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Articles        </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="5" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Total           </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="6" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Edits           </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="7" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Admins          </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="8" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Users           </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="9" BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Images          </TextBlock></Border>
+<Border Grid.Row="0" Grid.Column="10"BorderBrush="#ECE9D8" BorderThickness="1"><TextBlock FontWeight="Bold" HorizontalAlignment="Center">Depth          </TextBlock></Border>
+
+
+
+
+<Border Grid.Row="1" Grid.Column="0"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">251 </TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="1"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Kuanyama </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="2"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Kuanyama </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="3"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>kj   	   </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="4"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>6 	   </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="5"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">64 </TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="6"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>3 414    </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="7"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>2	   </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="8"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>82	   </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="9"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>0	   </Hyperlink></TextBlock></Border>
+<Border Grid.Row="1" Grid.Column="10"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">-- </TextBlock></Border>
+
+<Border Grid.Row="2" Grid.Column="0"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">252 </TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="1"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Hiri Motu </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="2"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Hiri Motu </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="3"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>ho	    </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="4"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>4	    </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="5"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">70 </TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="6"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>3 616	    </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="7"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>1	    </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="8"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>96	    </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="9"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>0	    </Hyperlink></TextBlock></Border>
+<Border Grid.Row="2" Grid.Column="10"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">-- </TextBlock></Border>
+
+<Border Grid.Row="3" Grid.Column="0"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">253 </TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="1"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Muscogee</Hyperlink> </TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="2"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Muskogee</Hyperlink> </TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="3"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>mus	  </Hyperlink> </TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="4"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>3 	  </Hyperlink> </TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="5"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">69 </TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="6"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>3 482   </Hyperlink> </TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="7"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>2 	  </Hyperlink> </TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="8"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>77	  </Hyperlink> </TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="9"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>0	  </Hyperlink> </TextBlock></Border>
+<Border Grid.Row="3" Grid.Column="10"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">-- </TextBlock></Border>
+
+<Border Grid.Row="4" Grid.Column="0"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">254 </TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="1"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Kanuri </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="2"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>Kanuri </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="3"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>kr 	 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="4"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>2 	 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="5"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">76 </TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="6"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>4 378  </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="7"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>1 	 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="8"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>142 	 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="9"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right"><Hyperlink>0 	 </Hyperlink></TextBlock></Border>
+<Border Grid.Row="4" Grid.Column="10"  BorderBrush="#ECE9D8"BorderThickness="1" ><TextBlock HorizontalAlignment="Right">-- </TextBlock></Border>
+
+</Grid>
+
+</Border>
+<Grid >
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="50"/>
+					</Grid.ColumnDefinitions>
+
+<TextBlock   Grid.Column="1">[<Hyperlink>edit</Hyperlink>]</TextBlock>
+<TextBlock HorizontalAlignment="left"Grid.Column="0" FontWeight="Bold">See also</TextBlock>
+</Grid>
+<Rectangle Fill="#AAAAAA" Margin="0,5,5,0" Height="1"/>
+<TextBlock FontWeight="Bold">Additional resources and statistics</TextBlock>
+<StackPanel TextBlock.Padding="10,5,1,1" TextBlock.TextWrapping="Wrap">
+
+<Grid>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="7"/>
+		<ColumnDefinition />
+	</Grid.ColumnDefinitions>
+	<Rectangle Grid.Column="0" Width="5" Height="5"/>
+	<TextBlock Grid.Column="1">See <Hyperlink>Template:Active Wikipedias</Hyperlink> for a simple enumeration of all the Wikipedias ordered by local language name. For a list ordered by the language names in English, see <Hyperlink>Wikipedia:Multilingual coordination.</Hyperlink> </TextBlock>
+</Grid>
+<Grid>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="7"/>
+		<ColumnDefinition />
+	</Grid.ColumnDefinitions>
+
+	<Rectangle Grid.Column="0" Width="5" Height="5"/>
+	<TextBlock Grid.Column="1" ></TextBlock>
+</Grid>
+<Grid>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="7"/>
+		<ColumnDefinition />
+	</Grid.ColumnDefinitions>
+
+	<Rectangle Grid.Column="0" Width="5" Height="5" Margin="10,5,20,10"/>
+	<TextBlock Grid.Column="1" >See <Hyperlink>Special:SiteMatrix</Hyperlink> for an automatically maintained table, with one row for each language, ordered by language code; the local names are also given, but not the English names. </TextBlock>
+</Grid>
+<Grid>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="7"/>
+		<ColumnDefinition />
+	</Grid.ColumnDefinitions>
+	<Rectangle Grid.Column="0" Width="5" Height="5"/>
+	<TextBlock Grid.Column="1" ><Hyperlink>List of Wikipedias/sortable</Hyperlink> - sortable, also by language family </TextBlock>
+</Grid>		
+<Grid>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="7"/>
+		<ColumnDefinition />
+	</Grid.ColumnDefinitions>
+	<Rectangle Grid.Column="0" Width="5" Height="5"/>
+	<TextBlock Grid.Column="1"><Hyperlink>List of Wikipedias by language family </Hyperlink></TextBlock>
+</Grid>
+<Grid>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="7"/>
+		<ColumnDefinition />
+	</Grid.ColumnDefinitions>
+	<Rectangle Grid.Column="0" Width="5" Height="5"/>
+	<TextBlock Grid.Column="1" ><Hyperlink>List of Wikipedias by edits per article </Hyperlink></TextBlock>
+</Grid>			
+<Grid>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="7"/>
+		<ColumnDefinition />
+	</Grid.ColumnDefinitions>
+	<Rectangle Grid.Column="0" Width="5" Height="5"/>
+	<TextBlock Grid.Column="1" ><Hyperlink>List of Wikipedias by articles per population </Hyperlink></TextBlock>
+</Grid>	
+<Grid>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="7"/>
+		<ColumnDefinition />
+	</Grid.ColumnDefinitions>
+	<Rectangle Grid.Column="0" Width="5" Height="5"/>
+	<TextBlock Grid.Column="1" ><Hyperlink>Wikipedia Milestones </Hyperlink></TextBlock>
+</Grid>	
+<Grid>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="7"/>
+		<ColumnDefinition />
+	</Grid.ColumnDefinitions>
+	<Rectangle Grid.Column="0" Width="5" Height="5"/>
+	<TextBlock Grid.Column="1" ><Hyperlink>Wikipedia Statistics </Hyperlink></TextBlock>
+</Grid>
+<Grid>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="7"/>
+		<ColumnDefinition />
+	</Grid.ColumnDefinitions>
+	<Rectangle Grid.Column="0" Width="5" Height="5"/>
+	<TextBlock Grid.Column="1" ><Hyperlink>Interlanguage link (software feature) </Hyperlink></TextBlock>
+</Grid>			
+<Grid>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="7"/>
+		<ColumnDefinition />
+	</Grid.ColumnDefinitions>
+	<Rectangle Grid.Column="0" Width="5" Height="5"/>
+	<TextBlock Grid.Column="1" ><Hyperlink>Administrators of various Wikipedias</Hyperlink> - with the numbers of users </TextBlock>
+</Grid>		
+<Grid>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="7"/>
+		<ColumnDefinition />
+	</Grid.ColumnDefinitions>
+	<Rectangle Grid.Column="0" Width="5" Height="5"/>
+	<TextBlock Grid.Column="1" ><Hyperlink>Names.php</Hyperlink> The list gives, and is ordered by, the language codes built into the Mediawiki software, and includes the local language name and the language name in English. </TextBlock>
+</Grid>
+<Grid>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="7"/>
+		<ColumnDefinition />
+	</Grid.ColumnDefinitions>
+	<Rectangle Grid.Column="0" Width="5" Height="5"/>
+	<TextBlock Grid.Column="1" ><Hyperlink>The name "Wikipedia" in different languages</Hyperlink> including logos </TextBlock>
+</Grid>
+<Grid>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="7"/>
+		<ColumnDefinition />
+	</Grid.ColumnDefinitions>
+	<Rectangle Grid.Column="0" Width="5" Height="5"/>
+	<TextBlock Grid.Column="1" ><Hyperlink>Meta:Templates for translating language names </Hyperlink></TextBlock>
+</Grid>
+<Grid>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="7"/>
+		<ColumnDefinition />
+	</Grid.ColumnDefinitions>
+	<Rectangle Grid.Column="0" Width="5" Height="5"/>
+	<TextBlock Grid.Column="1" ><Hyperlink>GeoNames</Hyperlink></TextBlock>
+</Grid>
+<Grid>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="7"/>
+		<ColumnDefinition />
+	</Grid.ColumnDefinitions>
+	<Rectangle Grid.Column="0" Width="5" Height="5"/>
+	<TextBlock Grid.Column="1" ><Hyperlink>Multilingual statistics </Hyperlink></TextBlock>
+</Grid>					</StackPanel>
+</StackPanel>
+	</Border>
+</StackPanel>
+
+		</Grid>	
+
+	</StackPanel>		
+</ScrollViewer>
+</Page>

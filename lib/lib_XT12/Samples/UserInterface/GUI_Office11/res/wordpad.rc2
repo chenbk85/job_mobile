@@ -1,0 +1,10 @@
+//
+// WORDPAD.RC2 - resources App Studio does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by App Studio
+#endif //APSTUDIO_INVOKED
+
+#include "CodejockSample.rc"
+#include "Styles\Office2007Blue\Office2007Blue.rc"

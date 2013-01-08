@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="shift-jis"?>
+<resource CompactMode="1" Language="Japanese" LANGID="1041">
+	<string id="9000" value="今日"/>
+	<string id="9001" value="枠線なし"/>
+	<string id="9011" value="削除の確認\nこのアイテムのみ削除する\n定期的なアイテムを削除する\n定期的な予定 &quot;%s&quot; をすべて削除しますか? または、この回だけを削除しますか?"/>
+	<string id="9012" value="定期的なアイテムを開く\nこのアイテムのみを開く\n定期的なアイテムとして開く\n&quot;%s&quot; は定期的な予定です。このアイテムだけ開きますか? それとも定期的なアイテムとして開きますか?"/>
+	<string id="9013" value="差出人"/>
+	<string id="9014" value="宛先"/>
+	<string id="9015" value="空き時間"/>
+	<string id="9016" value="仮承諾"/>
+	<string id="9017" value="ビジー"/>
+	<string id="9018" value="外出中"/>
+	<string id="9019" value="先頭"/>
+	<string id="9020" value="第2"/>
+	<string id="9021" value="第3"/>
+	<string id="9022" value="第4"/>
+	<string id="9023" value="最後"/>
+	<string id="9024" value="0 分"/>
+	<string id="9025" value="1 分"/>
+	<string id="9026" value="5 分"/>
+	<string id="9027" value="10 分"/>
+	<string id="9028" value="15 分"/>
+	<string id="9029" value="30 分"/>
+	<string id="9030" value="1 時間"/>
+	<string id="9031" value="2 時間"/>
+	<string id="9032" value="3 時間"/>
+	<string id="9033" value="4 時間"/>
+	<string id="9034" value="5 時間"/>
+	<string id="9035" value="6 時間"/>
+	<string id="9036" value="7 時間"/>
+	<string id="9037" value="8 時間"/>
+	<string id="9038" value="9 時間"/>
+	<string id="9039" value="10 時間"/>
+	<string id="9040" value="11 時間"/>
+	<string id="9041" value="18 時間"/>
+	<string id="9042" value="0,5 日"/>
+	<string id="9043" value="1 日"/>
+	<string id="9044" value="2 日"/>
+	<string id="9045" value="3 日"/>
+	<string id="9046" value="1 週間"/>
+	<string id="9047" value="2 週間"/>
+	<string id="9048" value="分ごと"/>
+	<string id="9049" value="時間"/>
+	<string id="9050" value="日ごと"/>
+	<string id="9051" value="週ごと"/>
+	<string id="9052" value="分"/>
+	<string id="9053" value="時"/>
+	<string id="9054" value="日"/>
+	<string id="9055" value="週"/>
+	<string id="9056" value="正しくない値です"/>
+	<string id="9057" value="この定期的な予定に関連付けられた例外アイテムはすべて失われます。 例外アイテムが会議の場合、出席者には通知されません。 よろしいですか?"/>
+	<string id="9058" value="余白 (ミリ)"/>
+	<string id="9059" value="余白 (インチ)"/>
+	<string id="9060" value="枠線なし"/>
+	<string id="9061" value="重要"/>
+	<string id="9062" value="ビジネス用"/>
+	<string id="9063" value="個人用"/>
+	<string id="9064" value="休暇"/>
+	<string id="9065" value="要出席"/>
+	<string id="9066" value="出張あり"/>
+	<string id="9067" value="要準備"/>
+	<string id="9068" value="誕生日"/>
+	<string id="9069" value="記念日"/>
+	<string id="9070" value="通話記録"/>
+	<string id="9071" value="%d アラーム"/>
+	<string id="9072" value="用件"/>
+	<string id="9073" value="期限"/>
+	<string id="9074" value="期限切れの仕事"/>
+	<string id="9075" value="0 個のアラームが選択されました"/>
+	<string id="9076" value="表示するアラームはありません。"/>
+	<string id="9077" value="開始時刻"/>
+	<string id="9078" value="%s と %s の間の値を入力してください。"/>
+	<string id="9079" value="Categories"/>
+	<string id="9086" value="日"/>
+	<string id="9087" value="週"/>
+	<string id="9088" value="月"/>
+	<string id="9089" value="稼働日"/>
+	<string id="9090" value="土日あり"/>
+	<string id="9091" value="Click to add appointment"/>
+	<string id="9092" value="Previous Appointment"/>
+	<string id="9093" value="Next Appointment"/>
+	<string id="9094" value="Category"/>
+	<string id="9122" value="\nボタンの表示/非表示"/>
+	<string id="9123" value="\nリセット"/>
+	<string id="9135" value="\n鉛筆"/>
+	<string id="9136" value="\n塗りつぶしの色"/>
+	<string id="9137" value="\n色の選択"/>
+	<string id="9138" value="\n直線"/>
+	<string id="9139" value="\n四角形"/>
+	<string id="9140" value="\n楕円"/>
+	<string id="9141" value="\nコピー"/>
+	<string id="9142" value="\n貼り付け"/>
+	<string id="9143" value="\n削除"/>
+	<string id="9144" value="\n元に戻す"/>
+	<string id="9145" value="\nやり直し"/>
+	<string id="9146" value="\n読み込むファイル名 "/>
+	<string id="9148" value="\nツールバー オプション"/>
+	<string id="9149" value="\n閉じる"/>
+	<string id="9150" value="\nExpand"/>
+	<string id="9151" value="\nウィンドウを閉じる"/>
+	<string id="9152" value="\nウィンドウを元のサイズに戻す"/>
+	<string id="9153" value="\nウィンドウの最小化"/>
+	<string id="9155" value="\n前のタブ グループへ移動"/>
+	<string id="9156" value="\n次のタブ グループへ移動"/>
+	<string id="9157" value="\n水平タブ グループの新規作成"/>
+	<string id="9158" value="\n垂直タブ グループの新規作成"/>
+	<string id="9159" value="キャンセル"/>
+	<string id="9160" value="閉じる"/>
+	<string id="9161" value="ユーザー設定"/>
+	<string id="9162" value="新しいメニュー"/>
+	<string id="9163" value="カスタム%d"/>
+	<string id="9164" value="ツールバーには名前が必要です。 ツールバー名を指定してください。"/>
+	<string id="9165" value="これ以上は設定できません。"/>
+	<string id="9166" value="'%s' という名前のツールバーが既に存在します。 別の名前を指定してください。"/>
+	<string id="9167" value="ツール バー名の変更"/>
+	<string id="9168" value="'%s'ツールバーを削除してもよろしいですか?"/>
+	<string id="9169" value="すべてのコマンド"/>
+	<string id="9170" value="このアプリケーションで使用したコマンドの記録を消去し、メニューとツールバーに表示するコマンドを既定の状態に戻します。 ユーザー設定は残ります。 実行しますか?"/>
+	<string id="9171" value="数値が正しくありません。"/>
+	<string id="9172" value="1 から 1638 の間の値を入力してください。"/>
+	<string id="9173" value="'%s' ツールバーへの変更をリセットしてもよろしいですか？"/>
+	<string id="9174" value="組み込みのメニュー"/>
+	<string id="9175" value="キー割付けをリセットしてよろしいですか？このコマンドを実行すると全てのカスタムキー割付けをテキストレベルで消去します。"/>
+	<string id="9176" value="キー割付は既に存在します.\n再度定義してよろしいですか?"/>
+	<string id="9177" value="ツールバー '%s' は変更されました. リセットして新しいツールバーにしますか?"/>
+	<string id="9178" value="すべての画像ファイル|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|ビットマップ(*.Bmp;*.Dib)|*.bmp;*.dib|メタファイル(*.Wmf;*.Emf)|*.wmf;*.emf|アイコン(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|すべてのファイル(*.*)|*.*||"/>
+	<string id="9179" value="(既定のシステム設定)"/>
+	<string id="9180" value="ランダム"/>
+	<string id="9181" value="展開"/>
+	<string id="9182" value="スライド"/>
+	<string id="9183" value="フェード"/>
+	<string id="9184" value="なし"/>
+	<string id="9185" value="アクティブなファイル"/>
+	<string id="9186" value="Customize Status Bar"/>
+	<string id="9187" value="(%s) was pressed. Waiting for second key of chord..."/>
+	<string id="9194" value="Print the previewed item\nPrint"/>
+	<string id="9195" value="Go to the previous page\nPrevious Page"/>
+	<string id="9196" value="Go to the next page\nNext Page"/>
+	<string id="9197" value="Increase magnification of preview page\nZoom In"/>
+	<string id="9198" value="Decrease magnification of preview page\nZoom Out"/>
+	<string id="9201" value="Close the preview\nClose Preview"/>
+	<string id="9202" value="Whole Page"/>
+	<string id="9203" value="Page Width"/>
+	<string id="9204" value="Page %i"/>
+	<string id="9205" value="Page %i of %i"/>
+	<string id="9320" value="新規作成"/>
+	<string id="9321" value="削除"/>
+	<string id="9322" value="1 つ上のレベルへ移動"/>
+	<string id="9323" value="1 つ下のレベルへ移動"/>
+	<string id="9325" value="昇順並べ替え\n昇順並べ替え"/>
+	<string id="9326" value="降順並べ替え\n降順並べ替え"/>
+	<string id="9327" value="段落を左に詰めて配置します。\n左詰め配置"/>
+	<string id="9328" value="段落を中央に配置します。\n中央に配置"/>
+	<string id="9329" value="段落を右に詰めて配置します。\n右詰め配置"/>
+	<string id="9330" value="大きいアイコンで表示します。\n大きいアイコン"/>
+	<string id="9331" value="小さいアイコンで表示します\n小さいアイコン"/>
+	<string id="9332" value="削除"/>
+	<string id="9333" value="ショートカット名の変更"/>
+	<string id="9334" value="グループの削除"/>
+	<string id="9335" value="グループ名の変更"/>
+	<string id="9336" value="プロパティ名"/>
+	<string id="9337" value="サイズ"/>
+	<string id="9338" value="種類"/>
+	<string id="9339" value="更新日時"/>
+	<string id="9340" value="自動"/>
+	<string id="9341" value="ユーザー設定..."/>
+	<string id="9342" value="選択フォルダ:"/>
+	<string id="9343" value="..."/>
+	<string id="9344" value="*.*"/>
+	<string id="9345" value="すべてのファイル (*.*)|*.*||"/>
+	<string id="9346" value="ディレクトリ名:"/>
+	<string id="9347" value="ピンでフォルダ一覧を固定"/>
+	<string id="9348" value="ワンポイント"/>
+	<string id="9349" value="指定のファイルは存在しません。"/>
+	<string id="9350" value="ファイルの読み込みエラーです。"/>
+	<string id="9351" value="色の設定"/>
+	<string id="9352" value="新規作成"/>
+	<string id="9353" value="最新"/>
+	<string id="9354" value="ファイルの場所:"/>
+	<string id="9355" value="ファイル:"/>
+	<string id="9356" value="16 進"/>
+	<string id="9357" value="オペレーティングシステムは、メモリ、またはリソースが不足しています。"/>
+	<string id="9358" value="指定されたファイルは見つかりませんでした。"/>
+	<string id="9359" value="指定されたパスは見つかりませんでした。"/>
+	<string id="9360" value="オペレーティングシステムは、指定されたファイルへのアクセスを拒否しました。"/>
+	<string id="9361" value="オペレーションを完了するための十分なメモリがありませんでした。"/>
+	<string id="9362" value="この.exeファイルは無効です(非Win32.exeあるいはエラーが含まれています)。"/>
+	<string id="9363" value="共有違反が発生しました。"/>
+	<string id="9364" value="このファイル名は無効です。"/>
+	<string id="9365" value="タイムアウトのため、DDEトランザクションは完了しませんでした。"/>
+	<string id="9366" value="DDE処理は失敗しました。"/>
+	<string id="9367" value="他のDDEトランザクションが実行されていたので、DDEトランザクションは完了することができませんでした。"/>
+	<string id="9368" value="指定したファイルの拡張子に関連付けられたアプリケーションはありません。"/>
+	<string id="9369" value="指定されたDLLは見つかりませんでした。"/>
+	<string id="9370" value="不明なエラー%d が起きました。"/>
+	<string id="9424" value="標準の色"/>
+	<string id="9425" value="ヒント"/>
+	<string id="9432" value="OK"/>
+	<string id="9433" value="はい"/>
+	<string id="9434" value="いいえ"/>
+	<string id="9435" value="再試行"/>
+	<string id="9436" value="キャンセル"/>
+	<string id="9437" value="閉じる"/>
+	<string id="9438" value="詳細の表示"/>
+	<string id="9439" value="詳細の非表示"/>
+	<string id="9440" value="&amp;Apply"/>
+	<string id="9441" value="Help"/>
+	<string id="9456" value="自動的に隠す"/>
+	<string id="9457" value="閉じる"/>
+	<string id="9458" value="最大化"/>
+	<string id="9459" value="元のサイズ"/>
+	<string id="9460" value="メニュー一覧"/>
+	<string id="9461" value="アクティブなウィンドウ"/>
+	<string id="9462" value="アクティブなファイル"/>
+	<string id="9501" value="項目順"/>
+	<string id="9502" value="アルファベット順"/>
+	<string id="9503" value="はい\nいいえ"/>
+	<string id="9552" value="フィールドごとにグループ分けするときは、ここにフィールド名をドラッグします。"/>
+	<string id="9553" value="このビューにはアイテムがありません。"/>
+	<string id="9554" value="(使用できるフィールドはありません)"/>
+	<string id="9555" value="最優先されるフィールド:"/>
+	<string id="9557" value="余白 (ミリ)"/>
+	<string id="9558" value="余白 (インチ)"/>
+	<string id="9559" value="Enter filter text here"/>
+	<string id="9603" value="\nクイック アクセス ツール バーのカスタマイズ"/>
+	<string id="9611" value="\n他のコントロール"/>
+	<string id="9615" value="クイック アクセス ツール バーを既定の状態に戻してもよろしいですか?"/>
+	<string id="9651" value="表示するボタンを増やす"/>
+	<string id="9652" value="表示するボタンを減らす"/>
+	<string id="9653" value="設定ボタン"/>
+	<string id="9711" value="編集オプション"/>
+	<string id="9714" value="未定義のコマンド"/>
+	<string id="9715" value="複数の操作"/>
+	<string id="9716" value="削除: "/>
+	<string id="9717" value="挿入: "/>
+	<string id="9718" value="入力"/>
+	<string id="9719" value="貼り付け"/>
+	<string id="9720" value="移動"/>
+	<string id="9721" value="コピー"/>
+	<string id="9722" value="行インデント"/>
+	<string id="9723" value="行インデント解除"/>
+	<string id="9724" value="フォーマット"/>
+	<string id="9725" value="タブに変換"/>
+	<string id="9726" value="空白に変換"/>
+	<string id="9727" value="全て置換"/>
+	<string id="9728" value="大文字/小文字を変更"/>
+	<string id="9729" value="テキストブロック削除"/>
+	<string id="9730" value="ここへ移動(&amp;M)"/>
+	<string id="9731" value="ここへコピー(&amp;C)"/>
+	<string id="9732" value="キャンセル(&amp;A)"/>
+	<string id="9740" value="カスタム"/>
+	<string id="9741" value="通常"/>
+	<string id="9742" value="ボールド"/>
+	<string id="9743" value="イタリック"/>
+	<string id="9744" value="ボールドイタリック"/>
+	<string id="9746" value="行番号(&amp;L) (1 - %d):"/>
+	<string id="9747" value="スキーマファイルを開く"/>
+	<string id="9748" value="&quot;オプションダイアログ&quot;を閉じて、スキーマファイル&quot;%s%s&quot;を開きますか？"/>
+	<string id="9749" value="ファイル '%s' は他のプログラムで変更されました。\n再読み込みしますか？"/>
+	<string id="9750" value="%d 個を置換しました"/>
+	<string id="9751" value="検索を終了します"/>
+	<string id="9800" value="左にスクロール"/>
+	<string id="9801" value="右にスクロール"/>
+	<string id="9802" value="閉じる"/>
+	<string id="9803" value="上にスクロール"/>
+	<string id="9804" value="下にスクロール"/>
+	<string id="9900" value="黒"/>
+	<string id="9901" value="茶"/>
+	<string id="9902" value="オリーブ"/>
+	<string id="9903" value="濃い緑"/>
+	<string id="9904" value="濃い青緑"/>
+	<string id="9905" value="濃い青"/>
+	<string id="9906" value="インディゴ"/>
+	<string id="9907" value="80% 灰色"/>
+	<string id="9908" value="濃い赤"/>
+	<string id="9909" value="オレンジ"/>
+	<string id="9910" value="濃い黄"/>
+	<string id="9911" value="緑"/>
+	<string id="9912" value="青緑"/>
+	<string id="9913" value="青"/>
+	<string id="9914" value="ブルーグレー"/>
+	<string id="9915" value="50% 灰色"/>
+	<string id="9916" value="赤"/>
+	<string id="9917" value="薄いオレンジ"/>
+	<string id="9918" value="ライム"/>
+	<string id="9919" value="シーグリーン"/>
+	<string id="9920" value="アクア"/>
+	<string id="9921" value="薄い青"/>
+	<string id="9922" value="紫"/>
+	<string id="9923" value="40% 灰色"/>
+	<string id="9924" value="ピンク"/>
+	<string id="9925" value="ゴールド"/>
+	<string id="9926" value="黄"/>
+	<string id="9927" value="明るい緑"/>
+	<string id="9928" value="水色"/>
+	<string id="9929" value="スカイブルー"/>
+	<string id="9930" value="プラム"/>
+	<string id="9931" value="25% 灰色"/>
+	<string id="9932" value="ローズ"/>
+	<string id="9933" value="ベージュ"/>
+	<string id="9934" value="薄い黄"/>
+	<string id="9935" value="薄い緑"/>
+	<string id="9936" value="薄い水色"/>
+	<string id="9937" value="ペールブルー"/>
+	<string id="9938" value="ラベンダー"/>
+	<string id="9939" value="白"/>
+	<string id="9940" value="灰色"/>
+	<string id="9941" value="マロン"/>
+	<string id="9942" value="オリーブ"/>
+	<string id="9943" value="紺"/>
+	<string id="9944" value="紫"/>
+	<string id="9945" value="シルバー"/>
+	<string id="9946" value="赤紫"/>
+	<string id="9947" value="塗りつぶしなし\n塗りつぶしなし"/>
+	<string id="9948" value="自動設定の色\n自動設定の色"/>
+	<string id="9949" value="その他の色..."/>
+	<string id="9974" value="1 ページ"/>
+	<string id="9975" value="2 ページ"/>
+	<string id="35001" value="\nカスタマイズ..."/>
+	<string id="35200" value="アラビア語 (サウジアラビア)"/>
+	<string id="35202" value="中国語 (中国)"/>
+	<string id="35203" value="中国語 (台湾)"/>
+	<string id="35204" value="クロアチア語"/>
+	<string id="35205" value="チェコ語"/>
+	<string id="35206" value="デンマーク語"/>
+	<string id="35207" value="オランダ語"/>
+	<string id="35208" value="英語 (米国)"/>
+	<string id="35209" value="エストニア語"/>
+	<string id="35210" value="フィンランド語"/>
+	<string id="35211" value="フランス語（フランス）"/>
+	<string id="35212" value="ドイツ語 (ドイツ)"/>
+	<string id="35213" value="ギリシャ語"/>
+	<string id="35214" value="ヘブライ語"/>
+	<string id="35215" value="ハンガリー語"/>
+	<string id="35216" value="イタリア語（イタリア）"/>
+	<string id="35217" value="日本語"/>
+	<string id="35218" value="韓国語"/>
+	<string id="35219" value="ラトビア語"/>
+	<string id="35220" value="リトアニア語"/>
+	<string id="35221" value="ノルウェー語 (ブークモール)"/>
+	<string id="35222" value="ポーランド語"/>
+	<string id="35223" value="ポルトガル語 (ポルトガル)"/>
+	<string id="35224" value="ポルトガル語 (ブラジル)"/>
+	<string id="35225" value="ルーマニア語"/>
+	<string id="35226" value="ロシア語"/>
+	<string id="35227" value="スロバキア語"/>
+	<string id="35228" value="スロベニア語"/>
+	<string id="35229" value="スペイン語 (スペイン - モダン ソート)"/>
+	<string id="35230" value="スウェーデン語"/>
+	<string id="35231" value="タイ語"/>
+	<string id="35233" value="ウクライナ語"/>
+	<menu id="9121">
+		<menuitem caption="ユーザー設定">
+			<menuitem id="9123" caption="リセット"/>
+			<menuitem id="9124" caption="削除"/>
+			<menuitem/>
+			<menuitem id="9125" caption="プロパティ名:"/>
+			<menuitem/>
+			<menuitem id="9126" caption="ボタン イメージのコピー"/>
+			<menuitem id="9127" caption="ボタン イメージの貼り付け"/>
+			<menuitem id="9128" caption="ボタン イメージを元に戻す"/>
+			<menuitem id="9129" caption="ボタン イメージの編集..."/>
+			<menuitem id="9130" caption="ボタン イメージの変更"/>
+			<menuitem/>
+			<menuitem id="9131" caption="既定のスタイル"/>
+			<menuitem id="9133" caption="テキストのみ"/>
+			<menuitem id="9132" caption="イメージとテキストを表示"/>
+			<menuitem/>
+			<menuitem id="9134" caption="グループの始まり"/>
+		</menuitem>
+	</menu>
+	<menu id="9316">
+		<menuitem caption="RClickOutlookBar">
+			<menuitem id="9331" caption="小さいアイコン"/>
+			<menuitem id="9330" caption="大きいアイコン"/>
+		</menuitem>
+		<menuitem caption="RClickHexEdit">
+			<menuitem id="57643" caption="元に戻す"/>
+			<menuitem/>
+			<menuitem id="57635" caption="切り取り"/>
+			<menuitem id="57634" caption="コピー"/>
+			<menuitem id="57637" caption="貼り付け"/>
+			<menuitem id="57632" caption="削除"/>
+			<menuitem/>
+			<menuitem id="57642" caption="すべて選択"/>
+		</menuitem>
+		<menuitem caption="RClickHeader">
+			<menuitem id="9325" caption="昇順で並べ替え"/>
+			<menuitem id="9326" caption="降順で並べ替え"/>
+			<menuitem/>
+			<menuitem caption="配置">
+				<menuitem id="9327" caption="左揃え"/>
+				<menuitem id="9328" caption="左右中央揃え"/>
+				<menuitem id="9329" caption="右揃え"/>
+			</menuitem>
+		</menuitem>
+	</menu>
+	<menu id="9601">
+		<menuitem caption="クイック アクセス">
+			<menuitem id="9614" caption="クイック アクセス ツール バーのカスタマイズ(&amp;C)"/>
+			<menuitem id="9613" caption="[Commands]"/>
+			<menuitem/>
+			<menuitem id="9616" caption="その他のコマンド(&amp;M)..."/>
+			<menuitem id="9617" caption="リボンの下に表示(&amp;S)"/>
+			<menuitem id="9618" caption="リボンの上に表示(&amp;S)"/>
+			<menuitem/>
+			<menuitem id="9612" caption="リボンの最小化(&amp;N)"/>
+		</menuitem>
+	</menu>
+	<menu id="9602">
+		<menuitem caption="クイック アクセス">
+			<menuitem id="9605" caption="クイック アクセス ツール バーから削除(&amp;R)"/>
+			<menuitem id="9606" caption="クイック アクセス ツール バーに追加(&amp;A)"/>
+			<menuitem/>
+			<menuitem id="9607" caption="クイック アクセス ツール バーのカスタマイズ(&amp;C)..."/>
+			<menuitem id="9608" caption="クイック アクセス ツール バーをリボンの下に表示(&amp;S)"/>
+			<menuitem id="9610" caption="クイック アクセス ツール バーをリボンの上に表示(&amp;S)"/>
+			<menuitem/>
+			<menuitem id="9612" caption="リボンの最小化(&amp;N)"/>
+		</menuitem>
+	</menu>
+	<menu id="9977">
+		<menuitem caption="HF">
+			<menuitem id="101" caption="&amp;&amp;d   短い形式"/>
+			<menuitem id="102" caption="&amp;&amp;D   長い形式"/>
+			<menuitem/>
+			<menuitem id="103" caption="&amp;&amp;t   時間"/>
+			<menuitem id="104" caption="&amp;&amp;T   時間 (24 時間)"/>
+			<menuitem/>
+			<menuitem id="105" caption="&amp;&amp;p   ページ番号"/>
+			<menuitem id="106" caption="&amp;&amp;P   ページ数"/>
+			<menuitem/>
+			<menuitem id="108" caption="&amp;&amp;b   左揃え &amp;&amp;b 中央揃え &amp;&amp;b 右揃え"/>
+			<menuitem/>
+			<menuitem id="109" caption="&amp;&amp;w   ウィンドウ タイトル"/>
+			<menuitem id="110" caption="&amp;&amp;&amp;&amp;  アンパサンド (&amp;&amp;)"/>
+			<menuitem id="111" caption="\\n   改行"/>
+		</menuitem>
+	</menu>
+	<dialog id="9080" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 175, 90">
+		<control id="103" style="1342177283" position="9, 8, 20, 20"/>
+		<control id="100" position="43, 6, 120, 27"/>
+		<control id="101" class="BUTTON" style="1342177289" position="43, 39, 125, 10"/>
+		<control id="102" class="BUTTON" style="1342177289" position="43, 51, 127, 10"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342242817" position="35, 69, 50, 14"/>
+		<control id="2" class="BUTTON" caption="キャンセル" style="1342242816" position="91, 69, 50, 14"/>
+	</dialog>
+	<dialog id="9081" caption="ページ設定 - カレンダー" fontface="MS Shell Dlg" style="-1865940788" position="32, 32, 283, 338">
+		<control id="100" class="BUTTON" caption="表示オプション" style="1342177287" position="7, 5, 106, 66"/>
+		<control caption="開始時刻:" style="1342308354" position="10, 21, 43, 8"/>
+		<control id="101" class="COMBOBOX" style="1344339970" position="55, 19, 52, 104"/>
+		<control caption="終了時刻:" style="1342308354" position="10, 39, 42, 8"/>
+		<control id="102" class="COMBOBOX" style="1344339970" position="55, 36, 52, 104"/>
+		<control id="103" class="BUTTON" caption="印刷範囲" style="1342242819" position="14, 56, 95, 10"/>
+		<control id="104" class="BUTTON" caption="日付 ヘッダー" style="1342177287" position="120, 5, 157, 65"/>
+		<control id="105" class="BUTTON" caption="印刷 日付 ヘッダー" style="1342242819" position="125, 17, 148, 10"/>
+		<control id="106" caption="日付 ヘッダー フォント" position="138, 28, 136, 8"/>
+		<control id="107" caption="123456789 123456789 123456789\n2\n3" style="1342312576" position="138, 40, 115, 26"/>
+		<control id="108" class="BUTTON" caption="..." style="1342242816" position="257, 40, 16, 14"/>
+		<control class="BUTTON" caption="設定" style="1342177287" position="7, 74, 270, 27"/>
+		<control id="110" class="BUTTON" caption="白黒印刷" style="1342242819" position="14, 87, 258, 10"/>
+		<control class="BUTTON" caption="ヘッダーとフッター" style="1342177287" position="7, 105, 270, 70"/>
+		<control caption="ヘッダー" position="13, 115, 190, 8"/>
+		<control id="111" class="EDIT" style="1350631552" position="13, 126, 247, 14"/>
+		<control id="113" class="BUTTON" style="1342242880" styleex="131072" position="260, 126, 13, 14"/>
+		<control caption="フッター" position="13, 145, 190, 8"/>
+		<control id="112" class="EDIT" style="1350631552" position="13, 155, 247, 14"/>
+		<control id="114" class="BUTTON" style="1342242880" styleex="131072" position="260, 155, 13, 14"/>
+		<control id="1073" class="BUTTON" caption="用紙" style="1342308359" position="7, 183, 197, 51"/>
+		<control id="1089" caption="用紙サイズ:" position="11, 199, 40, 8"/>
+		<control id="1137" class="COMBOBOX" style="1344471299" position="55, 197, 141, 160"/>
+		<control id="1090" caption="給紙方法:" position="12, 216, 39, 8"/>
+		<control id="1138" class="COMBOBOX" style="1344471299" position="55, 214, 141, 160"/>
+		<control id="1072" class="BUTTON" caption="印刷の向き" style="1342308359" position="211, 183, 66, 51"/>
+		<control id="1056" class="BUTTON" caption="縦" style="1342373892" position="216, 196, 56, 12"/>
+		<control id="1057" class="BUTTON" caption="横" style="1342177284" position="216, 212, 58, 12"/>
+		<control id="1075" class="BUTTON" caption="余白" style="1342308359" position="8, 238, 196, 58"/>
+		<control id="1102" caption="左:" position="16, 254, 36, 8"/>
+		<control id="1155" class="EDIT" style="1350762496" position="55, 251, 32, 12"/>
+		<control id="1103" caption="右:" position="123, 253, 35, 8"/>
+		<control id="1157" class="EDIT" style="1350762496" position="162, 250, 32, 12"/>
+		<control id="1104" caption="上:" position="16, 274, 35, 8"/>
+		<control id="1156" class="EDIT" style="1350762496" position="55, 272, 32, 12"/>
+		<control id="1105" caption="下:" position="123, 274, 35, 8"/>
+		<control id="1158" class="EDIT" style="1350762496" position="162, 272, 32, 12"/>
+		<control id="109" class="BUTTON" caption="印刷プレビュー" style="1342177287" position="212, 238, 66, 58"/>
+		<control id="1081" style="1342308357" position="261, 253, 4, 38"/>
+		<control id="1080" style="1342308358" position="230, 250, 31, 40"/>
+		<control id="1082" style="1342308357" position="235, 290, 29, 2"/>
+		<control id="57670" class="BUTTON" caption="ヘルプ(H)" style="1342242816" position="75, 320, 61, 14"/>
+		<control id="1026" class="BUTTON" caption="プリンタの設定..." style="1342242816" position="8, 300, 60, 14"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342373889" position="175, 320, 48, 14"/>
+		<control id="2" class="BUTTON" caption="キャンセル" style="1342242816" position="229, 320, 48, 14"/>
+	</dialog>
+	<dialog id="9082" caption="予定とイベントの詳細" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 450, 231">
+		<control caption="件名:" position="6, 7, 45, 8"/>
+		<control id="100" class="EDIT" style="1350631552" position="55, 5, 234, 13"/>
+		<control caption="場所" position="6, 27, 45, 8"/>
+		<control id="101" class="EDIT" style="1350631552" position="55, 25, 234, 13"/>
+		<control style="1342181381" position="6, 45, 283, 1"/>
+		<control id="157" caption="開始時刻:" position="6, 55, 42, 8"/>
+		<control id="102" class="SysDateTimePick32" caption="DateTimePicker1" style="1342242849" position="55, 53, 68, 13"/>
+		<control id="103" class="SysDateTimePick32" caption="DateTimePicker2" style="1342242857" position="129, 53, 68, 13"/>
+		<control id="106" class="BUTTON" caption="終日" style="1342242819" position="204, 55, 85, 10"/>
+		<control id="158" caption="終了時刻:" position="6, 75, 42, 8"/>
+		<control id="104" class="SysDateTimePick32" caption="DateTimePicker1" style="1342242849" position="55, 73, 68, 13"/>
+		<control id="105" class="SysDateTimePick32" caption="DateTimePicker2" style="1342242857" position="129, 73, 68, 13"/>
+		<control style="1342181381" position="6, 93, 283, 1"/>
+		<control id="111" class="BUTTON" caption="アラーム:" style="1342243075" position="6, 102, 45, 10"/>
+		<control id="112" class="COMBOBOX" style="1344339970" position="55, 100, 68, 88"/>
+		<control id="110" caption="スケジュール ID:" style="1342308354" position="135, 102, 64, 10"/>
+		<control id="109" class="COMBOBOX" style="1344339971" position="204, 100, 85, 88"/>
+		<control style="1342181381" position="295, 5, 1, 110"/>
+		<control id="117" caption="La&amp;bel:" position="302, 7, 44, 8"/>
+		<control id="108" class="COMBOBOX" style="1344340003" position="350, 5, 94, 209"/>
+		<control caption="予定の公開方法:" position="302, 27, 45, 8"/>
+		<control id="107" class="COMBOBOX" style="1344339971" position="350, 25, 94, 72"/>
+		<control style="1342181381" position="302, 45, 142, 1"/>
+		<control id="113" class="BUTTON" caption="プライベート" style="1342242819" position="302, 55, 100, 10"/>
+		<control id="114" class="BUTTON" caption="研修" style="1342242819" position="302, 66, 100, 10"/>
+		<control style="1342181381" position="302, 93, 142, 1"/>
+		<control id="115" class="BUTTON" caption="定期的なアイテム..." style="1342242816" position="375, 100, 69, 14"/>
+		<control id="116" class="EDIT" style="1352732868" position="6, 125, 438, 75"/>
+		<control style="1073745925" position="6, 205, 438, 1"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342242817" position="171, 211, 50, 14"/>
+		<control id="2" class="BUTTON" caption="キャンセル" style="1342242816" position="227, 211, 50, 14"/>
+	</dialog>
+	<dialog id="9083" caption="定期的な予定の設定" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 340, 362">
+		<control class="BUTTON" caption="時間の設定" style="1342177287" position="7, 3, 326, 62"/>
+		<control caption="初期値 :" position="13, 17, 32, 8"/>
+		<control id="109" class="COMBOBOX" style="1344339970" position="46, 15, 106, 124"/>
+		<control caption="終了:" position="13, 33, 32, 8"/>
+		<control id="102" class="COMBOBOX" style="1344339970" position="46, 31, 106, 158"/>
+		<control caption="時間:" position="13, 49, 30, 8"/>
+		<control id="113" class="COMBOBOX" style="1344339970" position="46, 47, 106, 162"/>
+		<control class="BUTTON" caption="パターンの設定" style="1342177287" position="7, 68, 326, 68"/>
+		<control id="117" class="BUTTON" caption="毎日" style="1342308361" position="13, 80, 55, 10"/>
+		<control id="118" class="BUTTON" caption="毎週" style="1342177289" position="13, 94, 55, 10"/>
+		<control id="119" class="BUTTON" caption="月" style="1342177289" position="13, 108, 55, 10"/>
+		<control id="120" class="BUTTON" caption="年" style="1342177289" position="13, 122, 55, 10"/>
+		<control id="156" style="1342181383" position="73, 79, 1, 53"/>
+		<control id="124" class="BUTTON" caption="間隔:" style="1342308361" position="81, 78, 35, 10"/>
+		<control id="125" class="BUTTON" caption="稼働日" style="1342177289" position="81, 93, 108, 10"/>
+		<control id="126" class="EDIT" style="1350639744" position="120, 77, 28, 12"/>
+		<control id="121" caption="日ごと" position="152, 78, 40, 8"/>
+		<control id="134" caption="間隔" position="82, 235, 43, 8"/>
+		<control id="123" class="EDIT" style="1350639744" position="127, 233, 26, 12"/>
+		<control id="135" caption="週ごと" position="157, 235, 66, 8"/>
+		<control id="127" class="BUTTON" caption="月曜日" style="1342242819" position="82, 249, 41, 10"/>
+		<control id="128" class="BUTTON" caption="火曜日" style="1342242819" position="127, 249, 50, 10"/>
+		<control id="129" class="BUTTON" caption="水曜日" style="1342242819" position="184, 249, 54, 10"/>
+		<control id="130" class="BUTTON" caption="木曜日" style="1342242819" position="247, 249, 46, 10"/>
+		<control id="131" class="BUTTON" caption="金曜日" style="1342242819" position="82, 264, 41, 10"/>
+		<control id="132" class="BUTTON" caption="土曜日" style="1342242819" position="127, 264, 45, 10"/>
+		<control id="133" class="BUTTON" caption="日曜日" style="1342242819" position="184, 263, 62, 10"/>
+		<control id="136" class="BUTTON" caption="日" style="1342308361" position="81, 284, 26, 10"/>
+		<control id="137" class="BUTTON" caption="この" style="1342177289" position="81, 302, 28, 10"/>
+		<control id="138" class="EDIT" style="1350639744" position="111, 283, 24, 12"/>
+		<control id="143" caption="に設定" position="139, 285, 28, 8"/>
+		<control id="139" class="EDIT" style="1350639744" position="170, 283, 25, 12"/>
+		<control id="144" caption="か月ごと" position="200, 285, 37, 8"/>
+		<control id="140" class="COMBOBOX" style="1344339971" position="111, 300, 50, 230"/>
+		<control id="141" class="COMBOBOX" style="1344339971" position="163, 300, 68, 287"/>
+		<control id="145" caption="に設定" position="234, 301, 28, 8"/>
+		<control id="142" class="EDIT" style="1350639744" position="265, 300, 26, 12"/>
+		<control id="146" caption="か月ごと" position="296, 301, 29, 8"/>
+		<control id="147" class="BUTTON" caption="間隔:" style="1342308361" position="81, 326, 34, 10"/>
+		<control id="148" class="BUTTON" caption="この" style="1342177289" position="81, 344, 31, 10"/>
+		<control id="150" class="COMBOBOX" style="1344339971" position="117, 324, 76, 230"/>
+		<control id="149" class="EDIT" style="1350631552" position="195, 324, 27, 12"/>
+		<control id="154" class="COMBOBOX" style="1344339971" position="117, 342, 48, 230"/>
+		<control id="155" class="COMBOBOX" style="1344339971" position="167, 342, 70, 230"/>
+		<control id="153" caption="of" position="241, 345, 10, 8"/>
+		<control id="151" class="COMBOBOX" style="1344339971" position="253, 342, 71, 230"/>
+		<control class="BUTTON" caption="期間" style="1342177287" position="7, 140, 326, 52"/>
+		<control caption="初期値 :" position="13, 156, 28, 8"/>
+		<control id="101" class="SysDateTimePick32" style="1342242849" position="46, 153, 106, 12"/>
+		<control id="114" class="BUTTON" caption="終了日未定" style="1342308361" position="166, 149, 100, 9"/>
+		<control id="115" class="BUTTON" caption="反復回数:" style="1342177289" position="166, 162, 45, 10"/>
+		<control id="116" class="BUTTON" caption="終了日:" style="1342177289" position="166, 176, 39, 10"/>
+		<control id="122" class="EDIT" style="1350639744" position="214, 159, 40, 12"/>
+		<control caption="回" position="257, 161, 49, 8"/>
+		<control id="159" class="SysDateTimePick32" style="1342242849" position="214, 174, 105, 12"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342242817" position="67, 197, 50, 14"/>
+		<control id="2" class="BUTTON" caption="キャンセル" style="1342242816" position="124, 197, 50, 14"/>
+		<control id="100" class="BUTTON" caption="定期的な設定を解除" style="1476460544" position="181, 197, 90, 14"/>
+	</dialog>
+	<dialog id="9084" caption="タイム ゾーン" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 274, 178">
+		<control class="BUTTON" caption="現在のタイムゾーン" style="1342177287" position="7, 7, 260, 65"/>
+		<control caption="タイトル:" position="15, 23, 20, 8"/>
+		<control id="101" class="EDIT" style="1350631552" position="60, 21, 40, 14"/>
+		<control caption="タイムゾーン:" position="15, 42, 36, 8"/>
+		<control id="103" class="COMBOBOX" style="1478557698" position="60, 39, 195, 130"/>
+		<control id="105" class="BUTTON" caption="自動的に夏時間の調整をする" style="1476460547" styleex="32" position="18, 56, 234, 8"/>
+		<control id="100" class="BUTTON" caption="1 日予定表に追加する別のタイムゾーン" style="1342242819" styleex="32" position="7, 78, 260, 8"/>
+		<control class="BUTTON" style="1342177287" styleex="32" position="7, 88, 260, 62"/>
+		<control caption="タイトル:" position="15, 101, 20, 8"/>
+		<control id="102" class="EDIT" style="1350631552" position="60, 99, 40, 14"/>
+		<control caption="タイムゾーン:" position="15, 120, 36, 8"/>
+		<control id="104" class="COMBOBOX" style="1344339971" position="60, 117, 195, 135"/>
+		<control id="106" class="BUTTON" caption="自動的に夏時間の調整をする" style="1342242819" styleex="32" position="16, 134, 234, 8"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342242817" position="150, 158, 50, 14"/>
+		<control id="2" class="BUTTON" caption="キャンセル" style="1342242816" position="217, 158, 50, 14"/>
+	</dialog>
+	<dialog id="9085" caption="アラーム" fontface="MS Shell Dlg" style="-2134245176" position="0, 0, 303, 181">
+		<control id="106" caption="Static" style="1342308480" position="25, 5, 270, 30"/>
+		<control id="100" class="SysListView32" caption="List1" style="1350664205" position="5, 40, 290, 90"/>
+		<control id="101" class="BUTTON" caption="すべてのアラームを消す" style="1342242816" position="5, 135, 65, 14"/>
+		<control id="103" class="BUTTON" caption="アイテムを開く" style="1342242816" position="160, 135, 65, 14"/>
+		<control id="102" class="BUTTON" caption="確認" style="1342242816" position="230, 135, 65, 14"/>
+		<control caption="[再通知] をクリックしてアラームを再表示します。" position="5, 155, 170, 8"/>
+		<control id="104" class="COMBOBOX" style="1344339970" position="5, 165, 220, 130"/>
+		<control id="105" class="BUTTON" caption="再通知" style="1342242817" position="230, 165, 65, 14"/>
+	</dialog>
+	<dialog id="9114" caption="&amp;Menus" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control id="100" caption="アプリケーションメニュー" position="4, 5, 222, 8"/>
+		<control id="101" caption="ポップアップメニュー" position="4, 80, 222, 8"/>
+		<control caption="表示メニュー(&amp;S):" position="10, 20, 44, 11"/>
+		<control id="102" class="COMBOBOX" style="1344339971" position="54, 18, 159, 79"/>
+		<control id="103" class="BUTTON" caption="リセット" style="1342242816" position="10, 57, 70, 14"/>
+		<control id="106" caption="Default menu\nDefault application menu" position="37, 34, 181, 18"/>
+		<control id="107" resource="0" style="1342177283" position="10, 32, 21, 20"/>
+		<control caption="ポップアップメニュー(&amp;C):" position="10, 92, 68, 10"/>
+		<control id="104" class="COMBOBOX" style="1344339971" position="83, 90, 130, 79"/>
+		<control id="105" class="BUTTON" caption="リセット" style="1342242816" position="10, 108, 70, 14"/>
+	</dialog>
+	<dialog id="9115" caption="ボタン エディタ" fontface="MS Shell Dlg" style="-1865940792" position="0, 0, 253, 185">
+		<control caption="図" position="7, 7, 86, 8"/>
+		<control class="BUTTON" caption="色の設定" style="1342177287" position="102, 106, 80, 71"/>
+		<control class="BUTTON" caption="移動" style="1342177287" position="101, 72, 81, 31"/>
+		<control class="BUTTON" caption="プレビュー" style="1342177287" position="7, 106, 86, 71"/>
+		<control class="BUTTON" caption="ツール" style="1342177287" position="101, 9, 81, 60"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342242817" position="193, 7, 50, 14"/>
+		<control id="2" class="BUTTON" caption="キャンセル" style="1342242816" position="193, 25, 50, 14"/>
+		<control id="100" style="1342177543" position="7, 17, 86, 80"/>
+		<control id="101" style="1342308865" styleex="131072" position="14, 117, 73, 54"/>
+		<control caption="透明" position="135, 156, 42, 8"/>
+		<control id="105" style="1342308608" position="116, 153, 15, 15"/>
+		<control id="103" caption="ツール" style="1082262017" position="112, 21, 60, 43"/>
+		<control id="104" caption="移動" style="1082262017" position="111, 83, 62, 12"/>
+		<control id="106" style="1342308620" position="109, 144, 15, 15"/>
+		<control id="102" caption="色の設定" style="1082262017" position="107, 121, 68, 12"/>
+	</dialog>
+	<dialog id="9116" caption="キーボード(&amp;K)" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 264, 176">
+		<control caption="分類(&amp;G):" position="4, 5, 89, 8"/>
+		<control id="100" class="COMBOBOX" style="1344339971" position="4, 15, 91, 147"/>
+		<control id="101" caption="コマンド(&amp;D):" position="4, 28, 89, 8"/>
+		<control id="102" class="LISTBOX" style="1352728897" position="4, 39, 91, 89"/>
+		<control id="103" caption="現在のキー(&amp;U):" position="100, 28, 73, 8"/>
+		<control id="104" class="LISTBOX" style="1352728897" position="100, 38, 96, 61"/>
+		<control id="105" caption="新規ショートカット キーを入力(&amp;N):" position="100, 106, 107, 8"/>
+		<control id="106" class="EDIT" style="1350631552" position="100, 116, 97, 12"/>
+		<control id="107" class="BUTTON" caption="割り当て(&amp;A)" style="1342242816" position="200, 39, 61, 14"/>
+		<control id="108" class="BUTTON" caption="削除(&amp;R)" style="1342242816" position="200, 56, 61, 14"/>
+		<control id="109" class="BUTTON" caption="すべて元に戻す(&amp;S)" style="1342242816" position="200, 73, 61, 14"/>
+		<control id="110" caption="説明:" position="4, 140, 38, 8"/>
+		<control id="111" styleex="131072" position="4, 152, 193, 19"/>
+	</dialog>
+	<dialog id="9117" caption="ツールバー(&amp;B)" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 264, 176">
+		<control caption="ツールバー(&amp;A):" position="4, 5, 148, 8"/>
+		<control id="100" class="LISTBOX" style="1352728913" position="4, 15, 180, 156"/>
+		<control id="101" class="BUTTON" caption="新規作成(&amp;N)..." style="1342242816" position="191, 15, 70, 14"/>
+		<control id="102" class="BUTTON" caption="名前の変更(&amp;E)..." style="1342242816" position="191, 33, 70, 14"/>
+		<control id="103" class="BUTTON" caption="削除(&amp;D)" style="1342242816" position="191, 51, 70, 14"/>
+		<control id="104" class="BUTTON" caption="リセット(&amp;R)" style="1342242816" position="191, 69, 70, 14"/>
+	</dialog>
+	<dialog id="9118" caption="オプション(&amp;O)" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 264, 154">
+		<control id="108" caption="メニューとツールバー" position="4, 5, 256, 8"/>
+		<control id="100" class="BUTTON" caption="常にすべてのメニューを表示する(&amp;N)" style="1342242819" position="10, 17, 216, 10"/>
+		<control id="101" class="BUTTON" caption="少し時間が経過したら、すべてのメニューを表示する(&amp;U)" style="1342242819" position="22, 29, 204, 10"/>
+		<control id="102" class="BUTTON" caption="初期状態に戻す(&amp;R)" style="1342242816" position="10, 42, 125, 14"/>
+		<control id="107" caption="その他" position="4, 70, 256, 8"/>
+		<control id="103" class="BUTTON" caption="大きいアイコン(&amp;L)" style="1342242819" position="10, 82, 216, 10"/>
+		<control id="104" class="BUTTON" caption="ツールバーにボタン名を表示する(&amp;T)" style="1342242819" position="10, 93, 216, 10"/>
+		<control id="105" class="BUTTON" caption="ボタン名と一緒にショートカット キーを表示する(&amp;H)" style="1342242819" position="22, 104, 204, 10"/>
+		<control caption="メニューの表示方法(&amp;M):" position="10, 117, 79, 8"/>
+		<control id="106" class="COMBOBOX" style="1344339971" position="93, 115, 79, 65"/>
+	</dialog>
+	<dialog id="9119" caption="コマンド(&amp;C)" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 264, 176">
+		<control caption="ツールバーにコマンドを追加するには、[分類] を選択しこのダイアログ ボックスからツール バーにコマンドをドラッグして移動します。" position="4, 5, 220, 19"/>
+		<control caption="分類(&amp;G):" position="4, 25, 80, 8"/>
+		<control id="100" class="LISTBOX" style="1352728833" position="4, 35, 103, 136"/>
+		<control caption="コマンド(&amp;D):" position="113, 25, 134, 8"/>
+		<control id="101" class="LISTBOX" style="1352728849" position="113, 35, 145, 136"/>
+	</dialog>
+	<dialog id="9120" caption="新しいツールバー" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 186, 52">
+		<control caption="ツールバー名(&amp;T):" position="4, 4, 178, 8"/>
+		<control id="100" class="EDIT" style="1350631552" position="4, 15, 178, 12"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342242817" position="78, 34, 50, 14"/>
+		<control id="2" class="BUTTON" caption="キャンセル" style="1342242816" position="132, 34, 50, 14"/>
+	</dialog>
+	<dialog id="9312" caption="ワンポイント" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 279, 127">
+		<control id="1" class="BUTTON" caption="閉じる" style="1342242817" position="224, 108, 50, 14"/>
+		<control id="100" class="BUTTON" caption="起動時にワンポイントを表示" style="1342242819" position="6, 110, 140, 10"/>
+		<control id="101" class="BUTTON" caption="次を表示" style="1342242816" position="170, 108, 50, 14"/>
+		<control id="102" style="1073741832" position="0, 0, 279, 103"/>
+	</dialog>
+	<dialog id="9313" caption="ユーザー設定" fontface="MS Shell Dlg" style="1321205832" position="0, 0, 147, 161">
+		<control id="100" caption="色:" position="2, 4, 43, 10"/>
+		<control id="101" style="1342242823" position="3, 15, 119, 86"/>
+		<control id="102" style="1342242823" position="126, 15, 20, 86"/>
+		<control id="104" caption="色合い:" position="7, 108, 21, 8"/>
+		<control id="115" class="EDIT" style="1350639744" position="34, 106, 33, 13"/>
+		<control id="112" class="msctls_updown32" caption="Spin1" style="1342177318" position="58, 105, 10, 14"/>
+		<control id="105" caption="鮮やかさ:" position="7, 125, 25, 8"/>
+		<control id="114" class="EDIT" style="1350639744" position="34, 122, 33, 13"/>
+		<control id="116" class="msctls_updown32" caption="Spin2" style="1342177318" position="58, 122, 10, 14"/>
+		<control id="106" caption="明るさ:" position="7, 140, 19, 8"/>
+		<control id="113" class="EDIT" style="1350639744" position="34, 138, 33, 13"/>
+		<control id="117" class="msctls_updown32" caption="Spin3" style="1342177318" position="58, 137, 10, 14"/>
+		<control id="107" caption="赤:" position="74, 108, 23, 8"/>
+		<control id="110" class="EDIT" style="1350639744" position="98, 106, 33, 13"/>
+		<control id="119" class="msctls_updown32" caption="Spin1" style="1342177318" position="122, 105, 11, 14"/>
+		<control id="108" caption="緑:" position="74, 125, 23, 8"/>
+		<control id="111" class="EDIT" style="1350639744" position="98, 122, 33, 13"/>
+		<control id="120" class="msctls_updown32" caption="Spin2" style="1342177318" position="122, 122, 11, 14"/>
+		<control id="109" caption="青:" position="74, 140, 23, 8"/>
+		<control id="118" class="EDIT" style="1350639744" position="98, 138, 33, 13"/>
+		<control id="121" class="msctls_updown32" caption="Spin3" style="1342177318" position="122, 137, 11, 14"/>
+	</dialog>
+	<dialog id="9314" caption="標準" fontface="MS Shell Dlg" style="1321205832" position="0, 0, 147, 161">
+		<control id="100" caption="色:" position="2, 4, 43, 10"/>
+		<control id="103" style="1342242823" position="0, 15, 147, 145"/>
+	</dialog>
+	<dialog id="9315" caption="ウィンドウの整列" fontface="MS Shell Dlg" style="-1865678776" position="0, 0, 301, 164">
+		<control caption="ウィンドウの選択:" position="7, 7, 147, 8"/>
+		<control id="100" class="LISTBOX" style="1353779539" position="7, 17, 216, 140"/>
+		<control id="101" class="BUTTON" caption="ウィンドウの選択" style="1342242816" position="233, 7, 62, 14"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342242816" position="233, 24, 62, 14"/>
+		<control id="105" class="BUTTON" caption="上書き保存" style="1342242816" position="233, 41, 62, 14"/>
+		<control id="104" class="BUTTON" caption="ウィンドウを閉じる" style="1342242816" position="233, 58, 62, 14"/>
+		<control id="102" class="BUTTON" caption="重ねて表示" style="1342242816" position="233, 75, 62, 14"/>
+		<control id="106" class="BUTTON" caption="上下に並べて表示" style="1342242816" position="233, 92, 62, 14"/>
+		<control id="107" class="BUTTON" caption="左右に並べて表示" style="1342242816" position="233, 109, 62, 14"/>
+		<control id="103" class="BUTTON" caption="最小化" style="1342242816" position="233, 126, 62, 14"/>
+	</dialog>
+	<dialog id="9556" caption="ページ設定" fontface="MS Shell Dlg" style="-1865940788" position="32, 32, 283, 250">
+		<control id="1073" class="BUTTON" caption="用紙" style="1342308359" position="7, 80, 197, 51"/>
+		<control id="1089" caption="サイズ :" position="11, 96, 40, 8"/>
+		<control id="1137" class="COMBOBOX" style="1344471299" position="55, 94, 141, 160"/>
+		<control id="1090" caption="リンク元:" position="12, 113, 39, 8"/>
+		<control id="1138" class="COMBOBOX" style="1344471299" position="55, 111, 141, 160"/>
+		<control id="1072" class="BUTTON" caption="印刷の向き" style="1342308359" position="211, 80, 66, 51"/>
+		<control id="1056" class="BUTTON" caption="縦" style="1342373892" position="216, 93, 56, 12"/>
+		<control id="1057" class="BUTTON" caption="横" style="1342177284" position="216, 109, 58, 12"/>
+		<control id="1075" class="BUTTON" caption="余白" style="1342308359" position="8, 135, 196, 58"/>
+		<control id="1102" caption="左:" position="16, 151, 36, 8"/>
+		<control id="1155" class="EDIT" style="1350762496" position="55, 148, 32, 12"/>
+		<control id="1103" caption="右:" position="123, 150, 35, 8"/>
+		<control id="1157" class="EDIT" style="1350762496" position="162, 147, 32, 12"/>
+		<control id="1104" caption="上:" position="16, 171, 35, 8"/>
+		<control id="1156" class="EDIT" style="1350762496" position="55, 169, 32, 12"/>
+		<control id="1105" caption="下:" position="123, 171, 35, 8"/>
+		<control id="1158" class="EDIT" style="1350762496" position="162, 169, 32, 12"/>
+		<control class="BUTTON" caption="プレビュー" style="1342177287" position="212, 135, 66, 58"/>
+		<control id="1081" style="1342308357" position="261, 150, 4, 38"/>
+		<control id="1080" style="1342308358" position="230, 147, 31, 40"/>
+		<control id="1082" style="1342308357" position="235, 187, 29, 2"/>
+		<control id="57670" class="BUTTON" caption="ヘルプ" style="1342242816" position="7, 230, 61, 14"/>
+		<control id="1026" class="BUTTON" caption="プリンタ..." style="1342242816" position="8, 197, 60, 14"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342373889" position="177, 230, 48, 14"/>
+		<control id="2" class="BUTTON" caption="キャンセル" style="1342242816" position="229, 230, 48, 14"/>
+		<control class="BUTTON" caption="ヘッダーとフッター" style="1342177287" position="7, 5, 270, 70"/>
+		<control caption="ヘッダー" position="12, 15, 190, 8"/>
+		<control caption="フッター" position="11, 44, 190, 8"/>
+		<control id="100" class="EDIT" style="1350631552" position="12, 25, 248, 14"/>
+		<control id="102" class="BUTTON" style="1342242880" styleex="131072" position="260, 25, 13, 14"/>
+		<control id="101" class="EDIT" style="1350631552" position="12, 55, 248, 14"/>
+		<control id="103" class="BUTTON" style="1342242880" styleex="131072" position="260, 55, 13, 14"/>
+	</dialog>
+	<dialog id="9600" caption="&amp;クイック アクセス" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control caption="コマンドの選択(&amp;C):" position="4, 5, 106, 8"/>
+		<control id="102" class="COMBOBOX" style="1344339971" position="4, 15, 91, 85"/>
+		<control id="100" class="LISTBOX" style="1352728851" position="4, 32, 91, 101"/>
+		<control id="104" class="BUTTON" caption="追加(&amp;A) &gt;&gt;" style="1342242816" position="99, 61, 31, 14"/>
+		<control id="105" class="BUTTON" caption="削除(&amp;R)" style="1342242816" position="99, 78, 31, 14"/>
+		<control id="101" class="LISTBOX" style="1352728851" position="134, 32, 91, 84"/>
+		<control id="106" class="BUTTON" caption="リセット(&amp;S)" style="1342242816" position="134, 119, 52, 14"/>
+		<control id="103" class="BUTTON" caption="クイック アクセス ツール バーをリボンの下に表示する(&amp;P)" style="1342242819" position="4, 136, 221, 12"/>
+	</dialog>
+	<dialog id="9705" caption="エディタ" fontface="MS Shell Dlg" style="1220542536" position="0, 0, 260, 180">
+		<control class="BUTTON" caption="ウィンドウ設定 " style="1342177287" position="7, 7, 246, 76"/>
+		<control id="100" class="BUTTON" caption="垂直スクロールバー(&amp;V)" style="1342242819" position="15, 21, 105, 10"/>
+		<control id="101" class="BUTTON" caption="水平スクロールバー(&amp;H)" style="1342242819" position="15, 32, 105, 10"/>
+		<control id="102" class="BUTTON" caption="行番号(&amp;N)" style="1342242819" position="15, 43, 105, 10"/>
+		<control id="103" class="BUTTON" caption="マージン(&amp;M)" style="1342242819" position="15, 54, 105, 10"/>
+		<control id="114" class="BUTTON" caption="折り畳み可能なノード(&amp;O)" style="1342242819" position="15, 65, 105, 10"/>
+		<control id="104" class="BUTTON" caption="自動インデント(&amp;A)" style="1342242819" position="130, 20, 115, 10"/>
+		<control id="113" class="BUTTON" caption="仮想空間(&amp;S)" style="1342242819" position="130, 35, 115, 10"/>
+		<control id="105" class="BUTTON" caption="構文カラー強調表示(&amp;X)" style="1342242819" position="130, 50, 115, 10"/>
+		<control class="BUTTON" caption="タブ" style="1342177287" position="7, 88, 162, 43"/>
+		<control caption="タブサイズ(&amp;T):" position="15, 103, 30, 8"/>
+		<control id="108" class="EDIT" style="1350631552" position="50, 100, 46, 14"/>
+		<control id="107" class="BUTTON" caption="空白の挿入(&amp;P)" style="1342373897" position="102, 102, 58, 10"/>
+		<control id="106" class="BUTTON" caption="タブの保持(&amp;K)" style="1342177289" position="102, 113, 51, 10"/>
+		<control id="109" class="BUTTON" caption="上書きカーソル" style="1342308359" position="175, 88, 78, 43"/>
+		<control id="110" class="BUTTON" caption="細く(&amp;I)" style="1342373897" position="181, 102, 31, 10"/>
+		<control id="111" class="BUTTON" caption="太く(&amp;C)" style="1342177289" position="181, 113, 36, 10"/>
+		<control class="BUTTON" caption="保存オプション " style="1342177287" position="7, 135, 246, 37"/>
+		<control id="112" class="BUTTON" caption="自動的に外部で変更されたファイルを再読み込みする(&amp;R)" style="1342242819" position="15, 151, 155, 10"/>
+	</dialog>
+	<dialog id="9706" caption="エディタのフォント" fontface="MS Shell Dlg" style="1220542536" position="0, 0, 260, 180">
+		<control id="100" caption="フォント(&amp;F):" position="7, 7, 40, 9"/>
+		<control id="101" class="COMBOBOX" style="1344342337" position="7, 18, 119, 55"/>
+		<control id="102" caption="スタイル(&amp;T):" position="134, 7, 45, 9"/>
+		<control id="103" class="COMBOBOX" style="1344342017" position="134, 18, 75, 55"/>
+		<control id="104" caption="サイズ(&amp;Z):" position="217, 7, 30, 9"/>
+		<control id="105" class="COMBOBOX" style="1344342017" position="217, 18, 36, 55"/>
+		<control caption="通常の文字(&amp;T):" position="7, 68, 100, 8"/>
+		<control id="106" class="COMBOBOX" style="1344340515" position="7, 78, 103, 100"/>
+		<control id="107" class="BUTTON" caption="..." style="1342242816" position="113, 78, 13, 12"/>
+		<control caption="通常の背景(&amp;N):" position="7, 95, 100, 8"/>
+		<control id="108" class="COMBOBOX" style="1344340515" position="7, 105, 103, 100"/>
+		<control id="109" class="BUTTON" caption="..." style="1342242816" position="113, 105, 13, 12"/>
+		<control caption="選択された文字(&amp;X):" position="7, 122, 100, 8"/>
+		<control id="110" class="COMBOBOX" style="1344340515" position="7, 132, 103, 100"/>
+		<control id="111" class="BUTTON" caption="..." style="1342242816" position="113, 132, 13, 12"/>
+		<control caption="選択された背景(&amp;S):" position="7, 149, 100, 8"/>
+		<control id="112" class="COMBOBOX" style="1344340515" position="7, 159, 103, 100"/>
+		<control id="113" class="BUTTON" caption="..." style="1342242816" position="113, 159, 13, 12"/>
+		<control id="114" caption="文字セット(&amp;R):" position="135, 69, 100, 9"/>
+		<control id="115" class="COMBOBOX" style="1352728643" position="134, 78, 119, 115"/>
+		<control id="118" class="BUTTON" caption="サンプル 通常 / 選択:" style="1342308359" position="135, 128, 118, 44"/>
+		<control id="119" caption="AaBbCc" style="1342308865" styleex="512" position="143, 140, 49, 26"/>
+		<control id="120" caption="XxYyZz" style="1342308865" styleex="512" position="196, 140, 49, 26"/>
+	</dialog>
+	<dialog id="9707" caption="構文カラー強調表示" fontface="MS Shell Dlg" style="1220542536" position="0, 0, 260, 180">
+		<control id="200" caption="ファイルタイプ(&amp;Y):" position="7, 7, 123, 9"/>
+		<control id="201" class="LISTBOX" style="1352728835" position="7, 17, 123, 64"/>
+		<control id="202" caption="属性(&amp;A):" position="7, 85, 123, 9"/>
+		<control id="203" class="LISTBOX" style="1352728835" position="7, 95, 123, 77"/>
+		<control caption="通常の文字(&amp;T):" position="135, 7, 100, 8"/>
+		<control id="106" class="COMBOBOX" style="1344340515" position="135, 17, 100, 100"/>
+		<control id="107" class="BUTTON" caption="..." style="1342242816" position="238, 17, 13, 12"/>
+		<control caption="通常の背景(&amp;N):" position="135, 33, 100, 8"/>
+		<control id="108" class="COMBOBOX" style="1344340515" position="135, 43, 100, 100"/>
+		<control id="109" class="BUTTON" caption="..." style="1342242816" position="238, 43, 13, 12"/>
+		<control caption="選択された文字(&amp;X):" position="135, 59, 100, 8"/>
+		<control id="110" class="COMBOBOX" style="1344340515" position="135, 69, 100, 100"/>
+		<control id="111" class="BUTTON" caption="..." style="1342242816" position="238, 69, 13, 12"/>
+		<control caption="選択された背景(&amp;S):" position="135, 85, 100, 8"/>
+		<control id="112" class="COMBOBOX" style="1344340515" position="135, 95, 100, 100"/>
+		<control id="113" class="BUTTON" caption="..." style="1342242816" position="238, 95, 13, 12"/>
+		<control id="204" class="BUTTON" caption="太字(&amp;B)" style="1342242819" position="135, 114, 30, 10"/>
+		<control id="205" class="BUTTON" caption="イタリック(&amp;I)" style="1342242819" position="170, 114, 31, 10"/>
+		<control id="117" class="BUTTON" caption="下線(&amp;U)" style="1342242819" position="206, 114, 46, 10"/>
+		<control id="118" class="BUTTON" caption="サンプル 通常 / 選択:" style="1342308359" position="135, 128, 118, 44"/>
+		<control id="119" caption="AaBbCc" style="1342308865" styleex="512" position="143, 140, 49, 26"/>
+		<control id="120" caption="XxYyZz" style="1342308865" styleex="512" position="196, 140, 49, 26"/>
+	</dialog>
+	<dialog id="9708" caption="検索と置換" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 271, 86">
+		<control caption="検索する文字列" style="1342177280" position="7, 9, 30, 8"/>
+		<control id="101" class="COMBOBOX" style="1344340034" position="61, 6, 143, 154"/>
+		<control caption="置換後の文字列" style="1342177280" position="7, 25, 44, 8"/>
+		<control id="100" class="COMBOBOX" style="1344340034" position="61, 23, 143, 135"/>
+		<control class="BUTTON" caption="Options" style="1342177287" position="7, 38, 113, 41"/>
+		<control id="105" class="BUTTON" caption="単語単位" style="1342242819" position="13, 51, 89, 10"/>
+		<control id="104" class="BUTTON" caption="大文字と小文字を区別する" style="1342242819" position="13, 64, 53, 10"/>
+		<control class="BUTTON" caption="検索する方向" style="1342177287" position="126, 38, 80, 41"/>
+		<control id="103" class="BUTTON" caption="上へ" style="1342308361" position="134, 51, 50, 10"/>
+		<control id="102" class="BUTTON" caption="下へ" style="1342177289" position="134, 64, 59, 10"/>
+		<control id="106" class="BUTTON" caption="次を検索(&amp;F)" style="1476460544" position="214, 7, 50, 14"/>
+		<control id="107" class="BUTTON" caption="置換(&amp;R)" style="1476460544" position="214, 23, 50, 14"/>
+		<control id="108" class="BUTTON" caption="すべて置換(&amp;A)" style="1476460544" position="214, 39, 50, 14"/>
+		<control id="2" class="BUTTON" caption="閉じる" style="1342242816" position="214, 65, 50, 14"/>
+	</dialog>
+	<dialog id="9709" caption="検索" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 271, 82">
+		<control caption="検索する文字列" style="1342177280" position="7, 9, 34, 8"/>
+		<control id="101" class="COMBOBOX" style="1344340034" position="47, 6, 157, 153"/>
+		<control class="BUTTON" caption="オプション" style="1342177287" position="7, 30, 113, 45"/>
+		<control id="105" class="BUTTON" caption="単語単位" style="1342242819" position="13, 43, 100, 10"/>
+		<control id="104" class="BUTTON" caption="大文字と小文字を区別する" style="1342242819" position="13, 58, 100, 10"/>
+		<control class="BUTTON" caption="検索する方向" style="1342177287" position="126, 30, 80, 45"/>
+		<control id="103" class="BUTTON" caption="上へ" style="1342177289" position="134, 43, 65, 10"/>
+		<control id="102" class="BUTTON" caption="下へ" style="1342177289" position="134, 58, 65, 10"/>
+		<control id="106" class="BUTTON" caption="次を検索(&amp;F)" style="1476460544" position="214, 7, 50, 14"/>
+		<control id="2" class="BUTTON" caption="閉じる" style="1342242816" position="214, 26, 50, 14"/>
+	</dialog>
+	<dialog id="9710" caption="指定行への移動" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 165, 55">
+		<control id="100" caption="行番号(&amp;L):" position="5, 5, 155, 8"/>
+		<control id="101" class="EDIT" style="1350639744" position="5, 17, 155, 14"/>
+		<control id="102" class="BUTTON" caption="移動(&amp;G)" style="1342242816" position="56, 36, 50, 14"/>
+		<control id="2" class="BUTTON" caption="キャンセル" style="1342242816" position="110, 36, 50, 14"/>
+	</dialog>
+	<dialog id="9976" fontface="MS Shell Dlg" style="1073741892" position="0, 0, 392, 16">
+		<control id="58116" class="BUTTON" caption="印刷..." style="1342275584" position="2, 2, 44, 12"/>
+		<control id="58114" class="BUTTON" caption="次のページ" style="1342275584" position="48, 2, 44, 12"/>
+		<control id="58115" class="BUTTON" caption="前ページ" style="1342275584" position="94, 2, 44, 12"/>
+		<control id="58113" class="BUTTON" style="1342275584" position="140, 2, 44, 12"/>
+		<control id="58117" class="BUTTON" caption="拡大" style="1342275584" position="186, 2, 44, 12"/>
+		<control id="58118" class="BUTTON" caption="縮小" style="1342275584" position="232, 2, 44, 12"/>
+		<control id="58112" class="BUTTON" caption="閉じる" style="1342275584" position="278, 2, 44, 12"/>
+	</dialog>
+</resource>

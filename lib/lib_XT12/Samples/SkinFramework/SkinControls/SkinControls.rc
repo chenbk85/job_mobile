@@ -1,0 +1,355 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SkinControls.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SKINCONTROLS_DIALOG DIALOGEX 0, 0, 322, 377
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Skin Controls"
+FONT 8, "Tahoma"
+BEGIN
+    GROUPBOX        "Buttons",IDC_STATIC,7,7,308,76
+    PUSHBUTTON      "&Sample Button",IDC_BUTTON_SAMPLE,17,19,76,19
+    CONTROL         "Sample Radio",IDC_RADIO_SAMPLE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,19,40,76,17
+    CONTROL         "Sample Check Box",IDC_CHECK_SAMPLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,60,76,17
+    LTEXT           "Hori&zontal aligment:",IDC_STATIC,116,15,74,9
+    COMBOBOX        IDC_COMBO_HORIZONTAL,116,25,67,75,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Ve&rtical aigment:",IDC_STATIC,116,41,69,9
+    COMBOBOX        IDC_COMBO_VERTICAL,116,51,67,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Enabled",IDC_CHECK_ENABLED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,199,19,80,9
+    CONTROL         "Right Button",IDC_CHECK_RIGHTBUTTON,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,199,31,80,9
+    CONTROL         "Multiline",IDC_CHECK_MULTILINE,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,199,43,80,9
+    GROUPBOX        "ScrollBars",IDC_STATIC,7,89,137,54
+    SCROLLBAR       IDC_SCROLLBAR_HORZ_SAMPLE,17,105,99,11,WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SCROLLPOS,17,121,99,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    SCROLLBAR       IDC_SCROLLBAR_VERT_SAMPLE,126,96,12,41,SBS_VERT
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,150,91,165,52
+    GROUPBOX        "Standard controls",IDC_STATIC,7,153,308,54
+    EDITTEXT        IDC_EDIT_SAMPLE,15,164,71,38,ES_MULTILINE | 
+                    ES_WANTRETURN | WS_HSCROLL
+    LISTBOX         IDC_LIST_SAMPLE,93,164,73,38,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_LISTCTRL_SAMPLE,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,171,164,84,39
+    GROUPBOX        "ComCtl32 controls",IDC_STATIC,7,210,308,94
+    LTEXT           "Tab Control",IDC_STATIC,17,222,52,11
+    CONTROL         "Tab1",IDC_TAB_SAMPLE,"SysTabControl32",WS_GROUP | 
+                    WS_TABSTOP,17,233,65,63
+    LTEXT           "Slider",IDC_STATIC,97,222,52,11
+    CONTROL         "Slider1",IDC_SLIDER_SAMPLE,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,91,241,55,23
+    CONTROL         "Slider1",IDC_SLIDER_SAMPLE2,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_VERT | TBS_TOP | WS_TABSTOP,93,265,
+                    23,37
+    LTEXT           "Progress",IDC_STATIC,159,222,52,11
+    CONTROL         "Progress1",IDC_PROGRESS_SAMPLE,"msctls_progress32",
+                    WS_BORDER,156,241,49,18
+    LTEXT           "Spin",IDC_STATIC,220,223,52,11
+    CONTROL         "Spin1",IDC_SPIN_SAMPLE,"msctls_updown32",UDS_ARROWKEYS | 
+                    UDS_HORZ,220,239,21,11
+    EDITTEXT        IDC_EDIT1,219,252,40,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,258,253,
+                    11,13
+    LTEXT           "ToolBar",IDC_STATIC,155,275,60,7
+    LTEXT           "ToolBar",IDC_STATIC_TOOLBAR,154,287,144,15,SS_SUNKEN
+    GROUPBOX        "Visual Theme",IDC_STATIC,7,307,308,34
+    CONTROL         "&Luna Theme",IDC_RADIO_VISUALTHEME,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,17,316,58,12
+    CONTROL         "&Default",IDC_RADIO_VISUALTHEME2,"Button",
+                    BS_AUTORADIOBUTTON,17,327,45,12
+    CONTROL         "&Royale Theme",IDC_RADIO_VISUALTHEME3,"Button",
+                    BS_AUTORADIOBUTTON,75,316,58,12
+    CONTROL         "&Office 2007",IDC_RADIO_VISUALTHEME4,"Button",
+                    BS_AUTORADIOBUTTON,75,328,58,11
+    CONTROL         "&Vista Theme",IDC_RADIO_VISUALTHEME5,"Button",
+                    BS_AUTORADIOBUTTON,139,318,58,12
+    PUSHBUTTON      "Filters",ID_BUTTON_FILTERS,255,319,50,14
+    DEFPUSHBUTTON   "OK",IDOK,99,356,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,162,356,50,14
+END
+
+IDD_DIALOG_FILTERS DIALOG DISCARDABLE  0, 0, 288, 125
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Filters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,90,104,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,146,104,50,14
+    GROUPBOX        "",IDC_STATIC,7,17,94,74
+    CONTROL         "Colorize",IDC_CHECK_COLORIZE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,7,79,10
+    CONTROL         "Slider1",IDC_SLIDER_HUE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,14,34,79,12
+    CONTROL         "Slider1",IDC_SLIDER_SATURATION,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,14,56,79,12
+    CONTROL         "Slider1",IDC_SLIDER_BLEND,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,14,77,79,12
+    LTEXT           "Hue",IDC_STATIC,14,26,28,8
+    LTEXT           "Saturation",IDC_STATIC,14,46,44,8
+    LTEXT           "Blend",IDC_STATIC,14,68,44,8
+    GROUPBOX        "",IDC_STATIC,111,17,94,74
+    CONTROL         "Shift RGB",IDC_CHECK_COLORSHIFT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,111,6,79,10
+    CONTROL         "Custom",IDC_CHECK_CUSTOM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,215,7,66,10
+    CONTROL         "Slider1",IDC_SLIDER_RED,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,119,33,79,12
+    CONTROL         "Slider1",IDC_SLIDER_GREEN,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,119,54,79,12
+    CONTROL         "Slider1",IDC_SLIDER_BLUE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,119,76,79,12
+    LTEXT           "Red",IDC_STATIC,119,25,28,8
+    LTEXT           "Green",IDC_STATIC,119,46,44,8
+    LTEXT           "Blue",IDC_STATIC,119,68,44,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 12,0,0,4
+ PRODUCTVERSION 12,0,0,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "SkinControls MFC Application\0"
+            VALUE "FileVersion", "12, 0, 0, 4\0"
+            VALUE "InternalName", "SkinControls\0"
+            VALUE "LegalCopyright", "(c)1998-2008 Codejock Software, All Rights Reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SkinControls.EXE\0"
+            VALUE "ProductName", "SkinControls Application\0"
+            VALUE "ProductVersion", "12, 0, 0, 4\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SKINCONTROLS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 315
+        VERTGUIDE, 17
+        VERTGUIDE, 116
+        VERTGUIDE, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 370
+        HORZGUIDE, 275
+    END
+
+    IDD_DIALOG_FILTERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        VERTGUIDE, 14
+        VERTGUIDE, 93
+        VERTGUIDE, 111
+        VERTGUIDE, 119
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SKINCONTROLS_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_HORIZONTAL, 0x403, 8, 0
+0x6544, 0x6166, 0x6c75, 0x0074, 
+    IDC_COMBO_HORIZONTAL, 0x403, 6, 0
+0x654c, 0x7466, 0x0020, 
+    IDC_COMBO_HORIZONTAL, 0x403, 7, 0
+0x6543, 0x746e, 0x7265, "\000" 
+    IDC_COMBO_HORIZONTAL, 0x403, 6, 0
+0x6952, 0x6867, 0x0074, 
+    IDC_COMBO_VERTICAL, 0x403, 8, 0
+0x6544, 0x6166, 0x6c75, 0x0074, 
+    IDC_COMBO_VERTICAL, 0x403, 4, 0
+0x6f54, 0x0070, 
+    IDC_COMBO_VERTICAL, 0x403, 7, 0
+0x6543, 0x746e, 0x7265, "\000" 
+    IDC_COMBO_VERTICAL, 0x403, 7, 0
+0x6f42, 0x7474, 0x6d6f, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_TOOLBAR      BITMAP  DISCARDABLE     "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "Menu"
+    BEGIN
+        MENUITEM "Item 1",                      ID_MENU_ITEM1
+        MENUITEM "Item 2",                      ID_MENU_ITEM2
+        POPUP "Popup"
+        BEGIN
+            MENUITEM "Item 3",                      ID_MENU_POPUP_ITEM3
+            MENUITEM "Item 4",                      ID_MENU_POPUP_ITEM4
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About SkinControls..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\SkinControls.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

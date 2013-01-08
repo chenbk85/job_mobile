@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DockingPaneLayouts CompactMode="1">
+	<Common>
+		<Summary Panes="32" TopContainer="1" Client="22"/>
+		<Pane-1 Type="2" Horiz="1" Panes="1" Pane-1="2"/>
+		<Pane-2 Type="2" Panes="2" Pane-1="3" Pane-2="5"/>
+		<Pane-3 Type="1" DockingCX="200" DockingCY="62" Panes="1" Selected="4" Pane-1="4"/>
+		<Pane-4 Type="0" DockingCX="200" DockingCY="120" Title="Pane 2" ID="131" DockingHolder="3" LastHolder="3"/>
+		<Pane-5 Type="2" DockingCY="387" Horiz="1" Panes="2" Pane-1="6" Pane-2="31"/>
+		<Pane-6 Type="2" DockingCX="880" Panes="2" Pane-1="7" Pane-2="29"/>
+		<Pane-7 Type="2" DockingCY="311" Horiz="1" Panes="2" Pane-1="8" Pane-2="10"/>
+		<Pane-8 Type="1" DockingCX="77" DockingCY="120" Panes="1" Selected="9" Pane-1="9"/>
+		<Pane-9 Type="0" DockingCX="200" DockingCY="120" Title="Pane 3" ID="132" DockingHolder="8" LastHolder="8"/>
+		<Pane-10 Type="2" DockingCX="799" Panes="2" Pane-1="11" Pane-2="13"/>
+		<Pane-11 Type="1" DockingCX="200" DockingCY="61" Panes="1" Selected="12" Pane-1="12"/>
+		<Pane-12 Type="0" DockingCX="200" DockingCY="120" Title="Pane 4" ID="133" DockingHolder="11" LastHolder="11"/>
+		<Pane-13 Type="2" DockingCY="246" Horiz="1" Panes="2" Pane-1="14" Pane-2="27"/>
+		<Pane-14 Type="2" DockingCX="724" Panes="2" Pane-1="15" Pane-2="25"/>
+		<Pane-15 Type="2" DockingCY="174" Horiz="1" Panes="2" Pane-1="16" Pane-2="18"/>
+		<Pane-16 Type="1" DockingCX="68" DockingCY="120" Panes="1" Selected="17" Pane-1="17"/>
+		<Pane-17 Type="0" DockingCX="200" DockingCY="120" Title="Pane 5" ID="134" DockingHolder="16" LastHolder="16"/>
+		<Pane-18 Type="2" DockingCX="652" Panes="2" Pane-1="19" Pane-2="21"/>
+		<Pane-19 Type="1" DockingCX="200" DockingCY="72" Panes="1" Selected="20" Pane-1="20"/>
+		<Pane-20 Type="0" DockingCX="200" DockingCY="120" Title="Pane 8" ID="137" DockingHolder="19" LastHolder="19"/>
+		<Pane-21 Type="2" DockingCY="98" Horiz="1" Panes="2" Pane-1="22" Pane-2="23"/>
+		<Pane-22 Type="4"/>
+		<Pane-23 Type="1" DockingCX="78" DockingCY="120" Panes="1" Selected="24" Pane-1="24"/>
+		<Pane-24 Type="0" DockingCX="200" DockingCY="120" Title="Pane 9" ID="138" DockingHolder="23" LastHolder="23"/>
+		<Pane-25 Type="1" DockingCX="200" DockingCY="68" Panes="1" Selected="26" Pane-1="26"/>
+		<Pane-26 Type="0" DockingCX="200" DockingCY="120" Title="Pane 6" ID="135" DockingHolder="25" LastHolder="25"/>
+		<Pane-27 Type="1" DockingCX="71" DockingCY="120" Panes="1" Selected="28" Pane-1="28"/>
+		<Pane-28 Type="0" DockingCX="200" DockingCY="120" Title="Pane 7" ID="136" DockingHolder="27" LastHolder="27"/>
+		<Pane-29 Type="1" DockingCX="200" DockingCY="72" Panes="1" Selected="30" Pane-1="30"/>
+		<Pane-30 Type="0" DockingCX="200" DockingCY="120" Title="Pane 10" ID="139" DockingHolder="29" LastHolder="29"/>
+		<Pane-31 Type="1" DockingCX="68" DockingCY="120" Panes="1" Selected="32" Pane-1="32"/>
+		<Pane-32 Type="0" DockingCX="200" DockingCY="120" Title="Pane 1" ID="130" DockingHolder="31" LastHolder="31"/>
+	</Common>
+</DockingPaneLayouts>

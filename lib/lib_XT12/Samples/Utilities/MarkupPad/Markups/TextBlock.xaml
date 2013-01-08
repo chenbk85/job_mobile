@@ -1,0 +1,131 @@
+<Page xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+	    <RowDefinition Height="Auto"/>
+
+        </Grid.RowDefinitions>
+
+        <TextBlock Margin = "0, 15, 0, 25" HorizontalAlignment="Center" FontSize="30">&lt;TextBlock&gt; Tag</TextBlock>
+
+        <Grid Grid.Row="1" TextElement.FontSize="14">
+            <WrapPanel HorizontalAlignment="Center">
+
+                <Border BorderBrush="Aqua" BorderThickness="1" Margin="8">
+                    <StackPanel Background="#f9f9f9">
+                        <Border Background="Aqua">
+                            <TextBlock FontWeight="Bold" Text=" Text Formatting:"/>
+                        </Border>
+
+                        <StackPanel Width = "215" Margin="4">
+                            <TextBlock >Text with <Bold>Bold</Bold> tag</TextBlock>
+                            <TextBlock >Text with <Italic>Italic</Italic> tag</TextBlock>
+                            <TextBlock >Text with <Underline>Underline</Underline> tag</TextBlock>
+                            <TextBlock >Text with <Run Foreground="Red">Run</Run> tag</TextBlock>
+                            <TextBlock >Text with <Hyperlink>Hyperlink</Hyperlink> tag</TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+                
+                <Border BorderBrush="Aqua" BorderThickness="1" Margin="8">
+                    <StackPanel Background="#f9f9f9">
+                        <Border Background="Aqua">
+                            <TextBlock FontWeight="Bold" Text=" Text Trimming:"/>
+                        </Border>
+
+                        <Grid Width = "215" Margin="4">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/><RowDefinition/><RowDefinition/><RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/><ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <TextBlock Grid.Row="0" Grid.Column="0" Margin="0, 0, 4, 0">No Trimming:</TextBlock> 
+                            <TextBlock Grid.Row="0" Grid.Column="1" >String String String </TextBlock>
+                            
+                            <TextBlock Grid.Row="1" Grid.Column="0" Margin="0, 0, 4, 0">CharacterEllipsis:</TextBlock>
+                            <TextBlock Grid.Row="1" Grid.Column="1" TextTrimming="CharacterEllipsis">String String String</TextBlock>
+                            
+                            <TextBlock Grid.Row="2" Grid.Column="0" Margin="0, 0, 4, 0">WordEllipsis:</TextBlock>
+                            <TextBlock Grid.Row="2" Grid.Column="1" TextTrimming="WordEllipsis">String String String</TextBlock>
+                            
+                            <TextBlock Grid.Row="3" Grid.Column="0" Margin="0, 0, 4, 0">Wrap:</TextBlock>
+                            <TextBlock Grid.Row="3" Grid.Column="1" TextWrapping="Wrap">String String String</TextBlock>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+
+                <Border BorderBrush="Aqua" BorderThickness="1" Margin="8">
+                    <StackPanel Background="#f9f9f9">
+                        <Border Background="Aqua">
+                            <TextBlock FontWeight="Bold" Text=" Text Alignment:"/>
+                        </Border>
+
+                        <Grid Width = "215" Margin="4">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Grid.Row="0" Grid.Column="0" Margin="0, 0, 4, 0">Left:</TextBlock>
+                            <TextBlock Grid.Row="0" Grid.Column="1" TextAlignment="Left">String String String </TextBlock>
+
+                            <TextBlock Grid.Row="1" Grid.Column="0" Margin="0, 0, 4, 0">Center:</TextBlock>
+                            <TextBlock Grid.Row="1" Grid.Column="1" TextAlignment="Center">String String String</TextBlock>
+
+                            <TextBlock Grid.Row="2" Grid.Column="0" Margin="0, 0, 4, 0">Right:</TextBlock>
+                            <TextBlock Grid.Row="2" Grid.Column="1" TextAlignment="Right">String String String</TextBlock>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+
+		<Border BorderBrush="Aqua" BorderThickness="1" Margin="8">
+                    <StackPanel Background="#f9f9f9">
+                        <Border Background="Aqua">
+                            <TextBlock FontWeight="Bold" Text=" Text Baseline:"/>
+                        </Border>
+
+                        <Grid Width = "215" Margin="4">
+                            <StackPanel>
+                                <TextBlock Margin = "1" Background="White">Top <Run BaselineAlignment="Top" FontSize="10">Baseline</Run> Text</TextBlock>
+				<TextBlock Margin = "1" Background="White">Center <Run BaselineAlignment="Center" FontSize="10">Baseline</Run> Text</TextBlock>
+                                <TextBlock Margin = "1" Background="White">Bottom <Run BaselineAlignment="Bottom" FontSize="10">Baseline</Run>Text</TextBlock>
+                                <TextBlock Margin = "1" Background="White">Superscript <Run BaselineAlignment="Superscript" FontSize="10">Baseline</Run> Text</TextBlock>
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+
+
+		<Border BorderBrush="Aqua" BorderThickness="1" Margin="8">
+                    <StackPanel Background="#f9f9f9">
+                        <Border Background="Aqua">
+                            <TextBlock FontWeight="Bold" Text=" Text Scrolling:"/>
+                        </Border>
+
+                        <ScrollViewer Width= "215" Height="85" Margin="4">                            
+                            <TextBlock TextWrapping="Wrap">
+				<Run Foreground="Blue">Q:</Run> Does Codejock follow the new Microsoft Office 2007 UI licensing requirements?
+				<LineBreak/>
+				<Run Foreground="Green">A:</Run> Yes, Codejock Software is a Microsoft Office 2007 UI Licensing partner, and all of our Office 2007 components have been developed to meet Microsoft Office 2007 UI Design Guideline specifications.
+			    </TextBlock>
+                        </ScrollViewer>
+                    </StackPanel>
+                </Border>
+
+            </WrapPanel>
+        </Grid>
+
+        <Border Grid.Row="2" Background="#FF0342C6">
+            <TextBlock TextAlignment="Right" Foreground="#FFFFFFFF" Margin="8,3,8,3"><Run>(c)1998-2008 Codejock Software.</Run> <Underline Cursor="Hand">All Rights Reserved</Underline></TextBlock>
+	</Border>
+    </Grid>
+</Page>

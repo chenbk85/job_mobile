@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SplitterWindow", ".\SplitterWindow_vc80.vcproj", "{36455366-7615-9756-1854-841731152297}"
+EndProject

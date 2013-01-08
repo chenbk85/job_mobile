@@ -1,0 +1,13 @@
+<Page xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+
+<StackPanel TextElement.FontSize="26" TextElement.FontFamily="Times New Roman" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock><Italic><Bold>C</Bold></Italic> = <Run> </Run></TextBlock>
+            <Polyline Margin="0, 0, 0, 5" Points="0 5, 2 4, 8 10, 16 0" Stroke="Black" Stretch="Fill" StrokeThickness="1"/>
+            <Grid>
+                <Polyline Points="0 0, 1 0" VerticalAlignment="Top" Stretch="Fill" Stroke="Black" StrokeThickness="1"/>
+                <TextBlock><Bold>A</Bold><Run BaselineAlignment="Top" FontSize="12">2</Run> + <Bold>B</Bold><Run BaselineAlignment="Top" FontSize="12">2</Run></TextBlock>
+            </Grid>
+        </StackPanel>
+    </StackPanel>
+</Page>

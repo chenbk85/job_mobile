@@ -1,0 +1,246 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "Resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "Resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MarkupSample.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+FAVORITES.PNG           PNG     DISCARDABLE     "res\\Favorites.png"
+LOVE.PNG                PNG     DISCARDABLE     "res\\Love.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+HELP.BMP                BITMAP  DISCARDABLE     "res\\Help.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MARKUPSAMPLE_DIALOG DIALOGEX 0, 0, 350, 233
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Codejock Markup Sample"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "TabControl",IDC_TABCONTROL,"XTPTabControl",WS_TABSTOP,7,
+                    7,336,16
+    LISTBOX         IDC_LIST_MARKUP,7,23,336,59,LBS_OWNERDRAWVARIABLE | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Tree View:",IDC_LABEL_TREEVIEW,7,89,51,9
+    CONTROL         "Tree1",IDC_TREE_MARKUP,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | WS_BORDER | WS_TABSTOP,7,99,163,68
+    LTEXT           "Static:",IDC_LABEL_STATIC,180,89,87,9
+    LTEXT           "Label",IDC_STATIC_MARKUP,180,99,163,68,SS_NOTIFY
+    LTEXT           "Buttons:",IDC_LABEL_BUTTONS,7,173,51,9
+    CONTROL         "<TextBlock>RadioButton with <Run Foreground='Red' FontWeight='Bold' TextDecorations='Underline'>Markup</Run></TextBlock>",
+                    IDC_RADIO_MARKUP,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,7,182,95,12
+    CONTROL         "<TextBlock FontFamily='Tahoma'>Markup <Run Background='Gold' Text='is'/> Cool<Run FontSize='7' BaselineAlignment='Top'>2</Run></TextBlock>",
+                    IDC_CHECK_MARKUP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    111,182,69,12
+    PUSHBUTTON      "<TextBlock>I <InlineUIContainer BaselineAlignment='Bottom'><Image Source='13'/></InlineUIContainer> Markup</TextBlock>",
+                    IDC_BUTTON_MARKUP,182,181,54,14
+    PUSHBUTTON      "More",IDC_BUTTON_MORE,121,212,50,14
+    DEFPUSHBUTTON   "OK",IDOK,178,212,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 12,0,0,4
+ PRODUCTVERSION 12,0,0,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MarkupSample MFC Application\0"
+            VALUE "FileVersion", "12, 0, 0, 4\0"
+            VALUE "InternalName", "MarkupSample\0"
+            VALUE "LegalCopyright", "Copyright (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MarkupSample.EXE\0"
+            VALUE "ProductName", "MarkupSample Application\0"
+            VALUE "ProductVersion", "12, 0, 0, 4\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MARKUPSAMPLE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        VERTGUIDE, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 226
+        HORZGUIDE, 17
+        HORZGUIDE, 82
+        HORZGUIDE, 89
+        HORZGUIDE, 99
+        HORZGUIDE, 167
+        HORZGUIDE, 182
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MORE MENU DISCARDABLE 
+BEGIN
+    POPUP "More"
+    BEGIN
+        MENUITEM "Popup Control",               ID_MORE_POPUPCONTROL
+        MENUITEM "Unicode support",             ID_MORE_UNICODESUPPORT
+        MENUITEM "Task Dialog",                 ID_MORE_TASKDIALOG
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About MarkupSample..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Codejock Markup Sample"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MarkupSample.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

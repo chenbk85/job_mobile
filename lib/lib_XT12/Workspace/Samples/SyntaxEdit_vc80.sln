@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MDITextEditor", "..\..\Samples\SyntaxEdit\MDITextEditor\MDITextEditor_vc80.vcproj", "{48954498-7135-8214-8975-556528856971}"
+EndProject

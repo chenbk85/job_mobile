@@ -1,0 +1,13 @@
+package tutorial;
+
+option java_package = "spot.tutorial";
+option java_outer_classname = "AddressBookDomain";
+option optimize_for = SPEED;
+
+import "Person.proto";
+
+
+message AddressBook
+{
+    repeated Person person = 1;
+}

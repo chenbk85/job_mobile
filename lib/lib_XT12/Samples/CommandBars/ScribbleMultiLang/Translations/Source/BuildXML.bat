@@ -1,0 +1,1 @@
+..\..\..\..\..\Workspace\Resource\XMLResource\XMLResource.exe ..\

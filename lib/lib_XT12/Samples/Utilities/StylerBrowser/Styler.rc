@@ -1,0 +1,944 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 25, 1\r\n"
+    "#pragma code_page(1251)\r\n"
+    "#include ""res\\Styler.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\ToolbarStandard_a.bmp"
+IDR_MENUBAR             BITMAP  MOVEABLE PURE   "res\\MenuBar_a.bmp"
+IDR_SEARCH              BITMAP  MOVEABLE PURE   "res\\ToolBarSearch_a.bmp"
+IDR_SWITCH              BITMAP  MOVEABLE PURE   "res\\ToolbarSwitch.bmp"
+IDB_BITMAP_TREE         BITMAP  MOVEABLE PURE   "res\\treelist.bmp"
+IDB_BITMAP_TABS         BITMAP  MOVEABLE PURE   "res\\Tabs.bmp"
+IDB_OPTIONS             BITMAP  MOVEABLE PURE   "res\\prop.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Styler.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OPTIONS DIALOG DISCARDABLE  0, 0, 350, 194
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tree1",IDC_LIST_OPTIONS,"SysTreeView32",WS_BORDER | 
+                    WS_TABSTOP,4,4,106,159
+    DEFPUSHBUTTON   "OK",IDOK,239,173,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,293,173,50,14
+    CONTROL         "",IDC_WORKSPACE,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,
+                    117,4,226,153
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,119,163,224,1
+END
+
+IDD_PAGE_GENERAL DIALOG DISCARDABLE  0, 0, 226, 154
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Options",IDC_STATIC,0,0,226,38
+    CONTROL         "Confirmation on Exit",IDC_CHECK_EXIT,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,9,11,78,10
+    CONTROL         "Confirmation on Close All",IDC_CHECK_CLOSEALL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,9,22,98,10
+    CONTROL         "Run Only One Instance",IDC_CHECK_RUN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,114,11,90,10
+    GROUPBOX        "Tabs Bar",IDC_STATIC,0,41,226,26
+    CONTROL         "Docking at Top",IDC_RADIO_DOCKING,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,7,52,65,10
+    CONTROL         "Docking at Bottom",IDC_RADIO_BOTTOM,"Button",
+                    BS_AUTORADIOBUTTON,114,51,75,10
+    GROUPBOX        "Startup",IDC_STATIC,0,70,226,35
+    CONTROL         "Open Blank",IDC_RADIO_STARTUP,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,9,80,53,10
+    CONTROL         "Open Home",IDC_RADIO_HOME,"Button",BS_AUTORADIOBUTTON,9,
+                    91,54,10
+    CONTROL         "Resume Last Visited Pages",IDC_RADIO_LAST,"Button",
+                    BS_AUTORADIOBUTTON,114,80,102,10
+    CONTROL         "Don't Open any Window",IDC_RADIO_DONT,"Button",
+                    BS_AUTORADIOBUTTON,114,91,93,10
+    GROUPBOX        "Delete Typed URLs",IDC_STATIC,0,110,226,43
+    COMBOBOX        IDC_COMBO_URLS,9,120,207,60,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Delete",IDC_BUTTON_DELETE,112,136,50,14
+    PUSHBUTTON      "Delete All",IDC_BUTTON_DELETEALL,166,136,50,14
+    CONTROL         "Restore Window Position",IDC_CHECK_RESTORE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,114,23,95,10
+END
+
+IDD_PAGE_KEYBOARD DIALOG DISCARDABLE  0, 0, 226, 153
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Show &commands containing:",IDC_STATIC,0,0,92,8
+    EDITTEXT        IDC_EDIT_FILTER,0,9,219,12,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST_ALL,0,26,219,52,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Shor&tcut(s) for selected command:",IDC_STATIC,0,80,108,
+                    8
+    COMBOBOX        IDC_COMBO_SHORTCUTS,0,89,164,47,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Press shortcut key:",IDC_STATIC,0,104,61,8
+    EDITTEXT        IDC_EDIT_ASSIGN,0,113,164,12,ES_AUTOHSCROLL
+    LTEXT           "Shortcut currently used by:",IDC_STATIC,0,128,85,8
+    COMBOBOX        IDC_COMBO_USED,0,137,164,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Remove",IDC_BUTTON_REMOVE,169,88,50,14
+    PUSHBUTTON      "&Assign",IDC_BUTTON_ASSIGN,169,112,50,14
+    PUSHBUTTON      "ResetAll",IDC_BUTTON_RESETALL,169,136,50,14
+END
+
+IDD_DIALOG_FILTER DIALOG DISCARDABLE  0, 0, 170, 158
+STYLE DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Content Filter"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,33,137,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,88,137,50,14
+    LISTBOX         IDC_LIST,7,7,156,116,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_POPUPFILTER DIALOG DISCARDABLE  0, 0, 170, 158
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Popup Filter"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,33,137,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,88,137,50,14
+    LISTBOX         IDC_LIST,7,31,156,92,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Filter All Popup Windows",IDC_CHECK_ALL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,7,94,10
+    CONTROL         "Filter Popup Windows in Following List",IDC_CHECK_LIST,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,18,136,10
+END
+
+IDD_PAGE_MOUSE DIALOG DISCARDABLE  0, 0, 226, 153
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Current commands:",IDC_STATIC,0,0,62,8
+    CONTROL         "List1",IDC_LIST_CURRENT,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,0,10,225,65
+    LTEXT           "&Mouse button:",IDC_STATIC,0,79,46,8
+    COMBOBOX        IDC_COMBO_MOUSE,0,88,109,62,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Holding key:",IDC_STATIC,117,79,40,8
+    EDITTEXT        IDC_EDIT_ASSIGN,116,88,109,12,ES_AUTOHSCROLL
+    LTEXT           "&Use new command in:",IDC_STATIC,1,103,71,8
+    COMBOBOX        IDC_COMBO_AREA,0,112,109,55,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&New command:",IDC_STATIC,117,102,50,8
+    COMBOBOX        IDC_COMBO_COMMAND,116,111,109,65,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_BUTTON_ADD,121,136,50,14
+    PUSHBUTTON      "Remove",IDC_BUTTON_REMOVE,175,136,50,14
+END
+
+IDD_PAGE_SEARCH DIALOG DISCARDABLE  0, 0, 226, 153
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_LIST_SEARCH,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,0,10,225,100
+    LTEXT           "Search engines:",IDC_STATIC,0,1,52,8
+    PUSHBUTTON      "Add",IDC_BUTTON_ADD,33,139,50,14
+    PUSHBUTTON      "Remove",IDC_BUTTON_REMOVE,87,139,50,14
+    PUSHBUTTON      "Edit",IDC_BUTTON_EDIT,141,139,50,14
+    LTEXT           "Entering 'g Styler' will search for 'Styler' using the Google search engine",
+                    IDC_STATIC,0,115,224,8
+END
+
+IDD_DIALOG_SEARCH DIALOG DISCARDABLE  0, 0, 195, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Search Engine"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Title",IDC_STATIC,7,7,14,8
+    EDITTEXT        IDC_EDIT_TITLE,7,16,116,12,ES_AUTOHSCROLL
+    LTEXT           "Keyword",IDC_STATIC,131,7,57,8
+    EDITTEXT        IDC_EDIT_KEYWORD,131,16,57,12,ES_AUTOHSCROLL
+    LTEXT           "Search string",IDC_STATIC,8,33,42,8
+    EDITTEXT        IDC_EDIT_SEARCH,7,42,181,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,45,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,74,50,14
+END
+
+IDD_DIALOG_LINKPROP DIALOG DISCARDABLE  0, 0, 186, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Link properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Title",IDC_STATIC,7,10,35,8
+    EDITTEXT        IDC_EDIT_TITLE,54,7,125,12,ES_AUTOHSCROLL
+    LTEXT           "Address",IDC_STATIC,7,25,26,8
+    EDITTEXT        IDC_EDIT_ADDRESS,54,22,125,12,ES_AUTOHSCROLL
+    LTEXT           "Parent folder",IDC_STATIC,7,42,41,8
+    LTEXT           "Static",IDC_STATIC_PARENT,54,42,125,13
+    DEFPUSHBUTTON   "OK",IDOK,77,66,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,66,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR MOVEABLE PURE  16, 16
+BEGIN
+    BUTTON      ID_GOTO_BACK
+    BUTTON      ID_GOTO_FORWARD
+    BUTTON      ID_VIEW_STOP
+    BUTTON      ID_VIEW_REFRESH
+    BUTTON      ID_GOTO_HOME
+    SEPARATOR
+    BUTTON      ID_EXPLORER_SEARCH
+    BUTTON      ID_EXPLORER_SOURCE
+    BUTTON      ID_EXPLORER_FOLDER
+    BUTTON      ID_EXPLORER_HISTORY
+    BUTTON      ID_EXPLORER_NOTEPAD
+    BUTTON      ID_ADD_TO_FAV
+    BUTTON      ID_GOTO_URL
+    SEPARATOR
+    BUTTON      ID_FILE_NEW_BLANK
+    BUTTON      ID_LINKS
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_TEXTSIZE
+    BUTTON      ID_VIEW_ENCODING
+    BUTTON      ID_SHOWIMAGES
+    BUTTON      ID_VIEW_FULLSCREEN
+END
+
+IDR_SWITCH TOOLBAR MOVEABLE PURE  16, 15
+BEGIN
+    BUTTON      ID_TOOLS_SWITCHTHEME
+END
+
+IDR_SEARCH TOOLBAR MOVEABLE PURE  16, 15
+BEGIN
+    BUTTON      ID_SEARCH_LIST
+    BUTTON      ID_GOTO_SEARCH
+END
+
+IDR_MENUBAR TOOLBAR MOVEABLE PURE  16, 16
+BEGIN
+    BUTTON      ID_WINDOW_CLOSE_ALL
+    BUTTON      ID_FILE_PROPERTIES
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_TOOLS_IMAGESFILTER
+    BUTTON      ID_VIEW_LOCK
+    BUTTON      ID_ORGANIZE_FAV
+    BUTTON      ID_FAVORITE_FOLDER
+    BUTTON      ID_FAVORITE_LINK
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Window\tCtrl+N",         ID_FILE_NEW_BLANK
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "Save &As...\tCtrl+S",         ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Properties",                  ID_FILE_PROPERTIES
+        MENUITEM "Work Offline",                ID_FILE_WORKOFFLINE
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Select &All\tCtrl+A",         ID_EDIT_SELECTALL
+        MENUITEM "&Find\tCtrl+F",               ID_EDIT_FIND
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "Toolbars",                    ID_VIEW_TOOLBAR
+            MENUITEM SEPARATOR
+            MENUITEM "Customize...",                35001
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        POPUP "Explorer Bar"
+        BEGIN
+            MENUITEM "&Search\tCtrl+E",             ID_EXPLORER_SEARCH
+            MENUITEM "&History\tCtrl+H",            ID_EXPLORER_HISTORY
+            MENUITEM "S&ource",                     ID_EXPLORER_SOURCE
+            MENUITEM "Folders",                     ID_EXPLORER_FOLDER
+            MENUITEM "Notepad\tCtrl+D",             ID_EXPLORER_NOTEPAD
+        END
+        MENUITEM SEPARATOR
+        POPUP "Go To "
+        BEGIN
+            MENUITEM "Back",                        ID_GOTO_BACK
+            MENUITEM "Forward",                     ID_GOTO_FORWARD
+        END
+        MENUITEM "Stop\tEsc",                   ID_VIEW_STOP
+        MENUITEM "Refresh\tF5",                 ID_VIEW_REFRESH
+        MENUITEM SEPARATOR
+        POPUP "Text Size"
+        BEGIN
+            MENUITEM "Largest",                     ID_TEXTSIZE_LARGEST
+            MENUITEM "Larger",                      ID_TEXTSIZE_LARGER
+            MENUITEM "Medium",                      ID_TEXTSIZE_MEDIUM
+            MENUITEM "Smaller",                     ID_TEXTSIZE_SMALER
+            MENUITEM "Smallest",                    ID_TEXTSIZE_SMALLEST
+        END
+        MENUITEM "Encoding",                    ID_VIEW_ENCODING
+        MENUITEM SEPARATOR
+        MENUITEM "Source",                      ID_VIEW_SOURCE
+        MENUITEM "Full Screen\tF11",            ID_VIEW_FULLSCREEN
+    END
+    POPUP "F&avorites"
+    BEGIN
+        MENUITEM "Organize Favorites...",       ID_ORGANIZE_FAV
+        MENUITEM "Favorites",                   ID_FAVORITES_EX
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "Content Filter...",           ID_TOOLS_IMAGESFILTER
+        MENUITEM "Popup Filter...",             ID_TOOLS_POPUPFILTER
+        MENUITEM "Skip Images",                 ID_SHOWIMAGES
+        MENUITEM "Show Table Structure",        ID_TOOLS_STRUCTURE
+        MENUITEM "Set as Default Browser",      ID_TOOLS_DEFAULTBROWSER
+        POPUP "Theme"
+        BEGIN
+            MENUITEM "Default",                     ID_THEME_DEFAULT
+            MENUITEM "Office",                      ID_THEME_OFFICE
+            MENUITEM "Office2003",                  ID_THEME_OFFICE2003
+            MENUITEM "NativeXP",                    ID_THEME_NATIVEXP
+            MENUITEM "Whidbey",                     ID_THEME_WHIDBEY
+            MENUITEM "Office 2007",                 ID_THEME_OFFICE2007
+            MENUITEM "Ribbon",                      ID_THEME_RIBBON
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Styler Options...",           ID_TOOLS_STYLEROPTIONS
+        MENUITEM "Internet Options...",         ID_TOOLS_OPTIONS
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Duplicate",                  ID_FILE_NEW_CURRENT
+        MENUITEM "&Close\tCtrl+F4",             ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Workspace Actions",           35002
+        MENUITEM "Close All",                   ID_WINDOW_CLOSE_ALL
+        MENUITEM "Window List",                 35000
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Styler...",            ID_APP_ABOUT
+    END
+END
+
+IDR_CUSTOMIZE MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Window\tCtrl+N",         129
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "Save &As...\tCtrl+S",         ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Properties",                  ID_FILE_PROPERTIES
+        MENUITEM "Work Offline",                ID_FILE_WORKOFFLINE
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Select &All\tCtrl+A",         ID_EDIT_SELECTALL
+        MENUITEM "&Find\tCtrl+F",               ID_EDIT_FIND
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "Toolbars",                    ID_VIEW_TOOLBAR
+            MENUITEM SEPARATOR
+            MENUITEM "Customize...",                35001
+        END
+        MENUITEM "Source",                      ID_VIEW_SOURCE
+        MENUITEM "Full Screen\tF11",            ID_VIEW_FULLSCREEN
+    END
+    POPUP "Explorer Bars"
+    BEGIN
+        MENUITEM "&Search\tCtrl+E",             ID_EXPLORER_SEARCH
+        MENUITEM "&History\tCtrl+H",            ID_EXPLORER_HISTORY
+        MENUITEM "S&ource",                     ID_EXPLORER_SOURCE
+        MENUITEM "Folders",                     ID_EXPLORER_FOLDER
+        MENUITEM "Notepad\tCtrl+D",             ID_EXPLORER_NOTEPAD
+    END
+    POPUP "Navigate"
+    BEGIN
+        MENUITEM "Stop\tEsc",                   ID_VIEW_STOP
+        MENUITEM "Refresh\tF5",                 ID_VIEW_REFRESH
+        MENUITEM "Back",                        ID_GOTO_BACK
+        MENUITEM "Forward",                     ID_GOTO_FORWARD
+    END
+    POPUP "Text Size"
+    BEGIN
+        MENUITEM "Largest",                     ID_TEXTSIZE_LARGEST
+        MENUITEM "Larger",                      ID_TEXTSIZE_LARGER
+        MENUITEM "Medium",                      ID_TEXTSIZE_MEDIUM
+        MENUITEM "Smaller",                     ID_TEXTSIZE_SMALER
+        MENUITEM "Smallest",                    ID_TEXTSIZE_SMALLEST
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "Content Filter...",           ID_TOOLS_IMAGESFILTER
+        MENUITEM "Popup Filter...",             ID_TOOLS_POPUPFILTER
+        MENUITEM "Skip Images",                 ID_SHOWIMAGES
+        MENUITEM "Show Table Structure",        ID_TOOLS_STRUCTURE
+        MENUITEM "Set as Default Browser",      ID_TOOLS_DEFAULTBROWSER
+        MENUITEM SEPARATOR
+        MENUITEM "Styler Options...",           ID_TOOLS_STYLEROPTIONS
+        MENUITEM "Internet Options...",         ID_TOOLS_OPTIONS
+    END
+    POPUP "Theme"
+    BEGIN
+        MENUITEM "Default",                     ID_THEME_DEFAULT
+        MENUITEM "Office",                      ID_THEME_OFFICE
+        MENUITEM "NativeXP",                    ID_THEME_NATIVEXP
+        MENUITEM "Office2003",                  ID_THEME_OFFICE2003
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Duplicate",                  ID_FILE_NEW_CURRENT
+        MENUITEM "&Close\tCtrl+F4",             ID_FILE_CLOSE
+        MENUITEM "Close All",                   ID_WINDOW_CLOSE_ALL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Styler...",            ID_APP_ABOUT
+    END
+END
+
+IDR_WORKSPACE_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "&Open in New Window",         ID_FILE_NEW_CURRENT
+        MENUITEM "Lock Tab \tCtrl+L",           ID_VIEW_LOCK
+        MENUITEM "&Close\tCtrl+F4",             ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Workspace Actions",           35002
+    END
+END
+
+IDR_MENU_FAVORITE_LINK MENU DISCARDABLE 
+BEGIN
+    POPUP "Link"
+    BEGIN
+        MENUITEM "&Open",                       ID_LINK_OPEN
+        MENUITEM "&Properties",                 ID_LINK_PROPERTIES
+    END
+END
+
+ID_TOOLS_SWITCHTHEME MENU DISCARDABLE 
+BEGIN
+    POPUP "&Switch Theme"
+    BEGIN
+        MENUITEM "Default",                     ID_THEME_DEFAULT
+        MENUITEM "Office",                      ID_THEME_OFFICE
+        MENUITEM "Office2003",                  ID_THEME_OFFICE2003
+        MENUITEM "NativeXP",                    ID_THEME_NATIVEXP
+        MENUITEM "Whidbey",                     ID_THEME_WHIDBEY
+        MENUITEM "Office 2007",                 ID_THEME_OFFICE2007
+        MENUITEM "Ribbon",                      ID_THEME_RIBBON
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_EXPLORER_NOTEPAD,    VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_EXPLORER_SEARCH,     VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_EXPLORER_HISTORY,    VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_VIEW_LOCK,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW_BLANK,      VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F11,         ID_VIEW_FULLSCREEN,     VIRTKEY, NOINVERT
+    VK_F4,          ID_FILE_CLOSE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 12,0,0,4
+ PRODUCTVERSION 12,0,0,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "Comments", "April 17, 2008\0"
+            VALUE "CompanyName", "Codejock Software\0"
+            VALUE "FileDescription", "Styler Browser\0"
+            VALUE "FileVersion", "12, 0, 0, 4\0"
+            VALUE "InternalName", "Styler.exe\0"
+            VALUE "LegalCopyright", "(c)1998-2008 Codejock Software, All Rights Reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Styler.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Styler Browser\0"
+            VALUE "ProductVersion", "12, 0, 0, 4\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_PAGE_GENERAL, DIALOG
+    BEGIN
+        VERTGUIDE, 9
+        VERTGUIDE, 114
+        HORZGUIDE, 11
+        HORZGUIDE, 97
+    END
+
+    IDD_PAGE_KEYBOARD, DIALOG
+    BEGIN
+        VERTGUIDE, 164
+    END
+
+    IDD_DIALOG_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_POPUPFILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_DIALOG_SEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG_LINKPROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        VERTGUIDE, 54
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Styler"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW_BLANK       "Open blank window\nBlank"
+    ID_FILE_NEW_CURRENT     "Create a new document\nNew"
+    ID_FILE_PROPERTIES      "Display the properties of this document\nProperties"
+    ID_GOTO_BACK            "Web Navigate Back\nBack"
+    ID_GOTO_FORWARD         "Web Navigate Forward\nForward"
+    ID_VIEW_STOP            "Stop Browser\nStop"
+    ID_VIEW_REFRESH         "Refresh Browser\nRefresh"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Styler"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "`"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_LOCK            "Lock\nLock"
+    IDS_CONFIRM_CLOSEALL    "Do you really want to close all windows"
+    ID_SEARC_LIST           "Search Engines\nSearch Engines"
+    ID_SEARCH_LIST          "Search Engines\nSearch Engines"
+    ID_FAVORITES_EX         "Favorites"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_SWITCHTHEME    "Switch Theme\nSwitch Theme"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ORGANIZE_FAV         "Organize Favorites\nOrganize Favorites"
+    ID_ADD_TO_FAV           "\nAdd to Favorites"
+    ID_GOTO_HOME            "\nHome"
+    ID_LINKS                "\nFavorites"
+    ID_GOTO_SEARCH          "Enter Internet search here\n&Search"
+    ID_GOTO_URL             "URL"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_ENCODING        "Encoding"
+    ID_VIEW_FULLSCREEN      "Maximizes Window to full screen.\nFull Screen"
+    ID_WINDOW_CLOSE_ALL     "Close All\nClose All"
+    ID_SHOWIMAGES           "Control of Downloading Images\nImages"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EXPLORER_HISTORY     "History Bar\nHistory Bar"
+    ID_TEXTSIZE             "Text Size\nText Size"
+    ID_EXPLORER_SEARCH      "Search Bar\nSearch Bar"
+    ID_EXPLORER_SOURCE      "Source Bar\nSource Bar"
+    ID_EXPLORER_FOLDER      "Folder Bar\nFolder Bar"
+    ID_EXPLORER_NOTEPAD     "Notepad\nNotepad"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TITLE_HIS           "History"
+    IDS_MY_COMPUTER         "My Computer"
+    IDS_WEEKS_AGO           " Weeks ago"
+    IDS_SUNDAY              "Sunday"
+    IDS_MONDAY              "Monday"
+    IDS_TUESDAY             "Tuesday"
+    IDS_WEDNESDAY           "Wednesday"
+    IDS_THURSDAY            "Thursday"
+    IDS_FRIDAY              "Friday"
+    IDS_SATURDAY            "Saturday"
+    IDS_TODAY               "Today"
+    IDS_LAST_WEEK           "Last Week"
+    IDS_TITLE_SEARCH        "Search"
+    IDS_TITLE_SOURCE        "Source"
+    IDS_TITLE_SHELL         "Folder"
+    IDS_TITLE_NOTEPAD       "Notepad"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TOOLS_IMAGESFILTER   "Filter"
+    ID_TOOLBAR_GO           "Go\nGo"
+    ID_TOOLBAR_ENCODING     "Encoding\nEncoding"
+    IDD_PAGE_MOUSE          "Mouse"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDD_PAGE_GENERAL        "General Options"
+    IDD_PAGE_KEYBOARD       "Keyboard"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    513                     "Left Button Click"
+    515                     "Left Button Doubleclick"
+    516                     "Right Button Click"
+    518                     "Right Button Doubleclick"
+    519                     "Middle Button Click"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDD_PAGE_SEARCH         "Search Engines"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NEEDKEYSTRING       "Search Engine must use %s to indicate the keyword."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR            " "
+    ID_EMPTY                " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_POPUP_ENCODING       "Encoding"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 25, 1
+#pragma code_page(1251)
+#include "res\Styler.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

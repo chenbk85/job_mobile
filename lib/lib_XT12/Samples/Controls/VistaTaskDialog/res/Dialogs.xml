@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialogs xmlns="http://www.codejock.com/schema/TDSchema.xsd">
+	<Dialog EnableHyperlinks="true" Name="Dialog001">
+		<WindowTitle>Change Password</WindowTitle>
+		<MainInstruction Image="*Warning">Are you sure you want to change the password on this account?</MainInstruction>
+		<Content>Microsoft Windows protects certain information with a user's password, making it impossible to access that information if the user's password is reset. You should only reset a password if the user has forgotten his or her password and does not have a password reset disk.\n&lt;a href="http://www.microsoft.com"&gt;Read more&lt;/a&gt;.</Content>
+		<Buttons Default="1">
+			<Cancel/>
+			<Button ID="1">Change Password</Button>
+		</Buttons>
+	</Dialog>
+	<Dialog AllowCancel="true" Name="Dialog002">
+		<WindowTitle>Windows Update</WindowTitle>
+		<MainInstruction Image="*Information">Do you want Windows to automatically install updates?</MainInstruction>
+		<Content>With automatic updates, Windows periodically checks for new security updates, program improvements, etc. and installs them for you.</Content>
+		<Buttons Default="1">
+			<CommandLink Shield="true" ID="1">
+				<Text>Turn on Automatic Updates now</Text>
+				<Explanation>(recommended)</Explanation>
+			</CommandLink>
+			<CommandLink ID="2">
+				<Text>Ask me later</Text>
+				<Explanation>Your computer will be more vulnerable to security problems until you turn on automatic updates.</Explanation>
+			</CommandLink>
+		</Buttons>
+	</Dialog>
+	<Dialog AllowCancel="true" Name="Dialog003">
+		<WindowTitle>Windows Update</WindowTitle>
+		<MainInstruction Image="*Information">Do you want Windows to automatically install updates?</MainInstruction>
+		<Content>With automatic updates, Windows periodically checks for new security updates, program improvements, etc. and installs them for you.</Content>
+		<RadioButtons Default="102">
+			<RadioButton ID="102">Turn on Automatic Updates now</RadioButton>
+			<RadioButton ID="103">Ask me later</RadioButton>
+		</RadioButtons>
+		<Buttons Default="1">
+			<Cancel/>
+			<Button Shield="true" ID="1">OK</Button>
+		</Buttons>
+	</Dialog>
+	<Dialog Name="Dialog004">
+		<WindowTitle>Paint</WindowTitle>
+		<MainInstruction Image="*Warning">Save changes to 'untitled'?</MainInstruction>
+		<Buttons Default="1">
+			<Cancel/>
+			<Button ID="1">Save</Button>
+			<Button ID="2">Don't Save</Button>
+		</Buttons>
+	</Dialog>
+	<Dialog Name="Dialog005">
+		<WindowTitle>Microsoft Windows</WindowTitle>
+		<MainInstruction Image="*Warning">Do you want to navigate to an unsecure page?</MainInstruction>
+		<Verification Checked="true">Don't ask me again</Verification>
+		<Buttons>
+			<Yes/>
+			<No/>
+		</Buttons>
+	</Dialog>
+	<Dialog Name="Dialog006" AllowCancel="true" EnableHyperlinks="true">
+		<WindowTitle>Microsoft Windows</WindowTitle>
+		<MainInstruction Image="*Warning">Your computer is almost out of virtual memory</MainInstruction>
+		<Content>To prevent information loss, save your files and close your programs. If that doesn't fix the problem, try restarting your computer.</Content>
+		<ExpandedInformation Footer="true">If restarting doesn't work, you can &lt;a href="http://www.microsoft.com"&gt;Read more&lt;/a&gt;</ExpandedInformation>
+		<ExpandedText>Less Information</ExpandedText>
+		<CollapsedText>More Information</CollapsedText>
+		<Buttons>
+			<Close/>
+		</Buttons>
+	</Dialog>
+	<Dialog Name="Dialog007" AllowCancel="true" EnableHyperlinks="true" MessageBoxStyle="true">
+		<WindowTitle>File Download</WindowTitle>
+		<MainInstruction Image="*Warning">Do you want to open or save this file?</MainInstruction>
+		<Content>Name:  %1\nType:  %2\nFrom:  %3</Content>
+		<Buttons Default="2">
+			<Cancel/>
+			<Button ID="100">&amp;Open</Button>
+			<Button ID="101">&amp;Save</Button>
+		</Buttons>
+		<Verification Checked="true">&amp;Always ask before open</Verification>
+		<Footer Image="*Shield">While files from Internet can be useful, some files can potentially harm your computer. If you do not trust the source, do not open or save this file. &lt;a href="http://www.microsoft.com"&gt;What's the risk?&lt;/a&gt;</Footer>
+	</Dialog>
+</Dialogs>

@@ -1,0 +1,178 @@
+<Page xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+
+    <Grid x:Name="LayoutRoot" TextBlock.FontQuality="ClearType">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel >
+            <Border >
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5, 1" StartPoint="0.5, 0">
+                        <GradientStop Color="#FF0134CD" Offset="0"/>
+                        <GradientStop Color="#FF3265FE" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <StackPanel Margin = "0, 6, 20, 6">
+                    <TextBlock HorizontalAlignment="Right" Text="Security Center" FontSize="26" Foreground="#FFFFFFFF"/>
+					<TextBlock HorizontalAlignment="Right" Text="Help protect your PC" FontSize="13" Foreground="#FFFFFFFF"/>
+				</StackPanel>
+            </Border>
+            <Rectangle Height="4">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop Color="#FF74A1FF" Offset="0"/>
+                        <GradientStop Color="#FF74A1FF" Offset="1"/>
+                        <GradientStop Color="#FFCDDDFF" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="240"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border Background="#FFEFF3FE">
+                <Border Margin="16, 25, 16, 25" VerticalAlignment="Top" BorderThickness="1" BorderBrush="#799eda">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Border BorderThickness="0, 0, 0, 1" BorderBrush="#799eda">
+                            <Border.Background>
+                                <LinearGradientBrush EndPoint="1, 0.5" StartPoint="0, 0.5">
+                                    <GradientStop Color="#FFCDDCFE" Offset="0"/>
+                                    <GradientStop Color="#FFEDF2FE" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                            <TextBlock Text="Resources" Foreground="#FF636366" FontWeight="Bold" FontSize="14" Margin="12,2,0,2"/>
+							
+						</Border>
+                        <Border Grid.Row="1" Background="White">
+                            <StackPanel Margin="6">
+                                <TextBlock Margin="5" TextWrapping="Wrap"><Hyperlink Foreground="#2118d5"><Run>Get the latest security and virus information from Microsoft</Run></Hyperlink></TextBlock>
+
+                                <TextBlock Margin="5" TextWrapping="Wrap"><Hyperlink Foreground="#2118d5"><Run>Check for the latest updates from Windows Update</Run></Hyperlink></TextBlock>
+                                <TextBlock Margin="5" TextWrapping="Wrap"><Hyperlink Foreground="#2118d5"><Run>Get support for secutity-related issues</Run></Hyperlink></TextBlock>
+
+                                <TextBlock Margin="5" TextWrapping="Wrap"><Hyperlink Foreground="#2118d5"><Run>Get help about Security Center</Run></Hyperlink></TextBlock>
+                                <TextBlock Margin="5" TextWrapping="Wrap"><Hyperlink Foreground="#2118d5"><Run>Change the way Security Center alerts me</Run></Hyperlink></TextBlock>
+
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                </Border>
+            </Border>
+		<ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="8, 12, 10, 8">
+                <TextBlock FontSize="17" Text="Security essentials"/>
+				<TextBlock TextWrapping="Wrap" Margin="0, 4, 0, 0"><Run>Security Center helps you manage your Windows security settings. To Help protext your computer,
+				make sure the three security essentials are marked ON. If the settings are not ON, follow the recommendations.
+				To return to the Security Center later, open Control Panel.</Run></TextBlock>
+				<TextBlock TextWrapping="Wrap"><Hyperlink>What's new in Windows to help protect my computer?</Hyperlink></TextBlock>
+
+				<Border Cursor="Hand" MouseLeftButtonDown="ToggleNextControl" Margin="0, 16, 0, 0" BorderThickness="1" BorderBrush="#bdcaea">
+							<Border.Background>
+								<LinearGradientBrush EndPoint="1, 0.5" StartPoint="0, 0.5">
+									<GradientStop Color="#c3d6ff" Offset="0"/>
+									<GradientStop Color="#eef2ff" Offset="1"/>
+								</LinearGradientBrush>
+							</Border.Background>
+							<Grid>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="*"/>
+									<ColumnDefinition Width="Auto"/>
+								</Grid.ColumnDefinitions>
+
+								<TextBlock Text="Firewall" Foreground="#30486e" FontSize="18" Margin="12,2,2,2"/>
+								<TextBlock Grid.Column="1" Text="ON" Foreground="#047c05" FontSize="18" Margin="2,2,12,2"/>
+							</Grid>
+							
+						</Border>
+				<Border  Margin="0, 0, 0, 0" BorderThickness="1, 0, 1, 1" BorderBrush="#bdcaea" Background="#eff3ff">
+					<TextBlock TextWrapping="Wrap" Margin="12, 4, 12, 4"><Run>Windows Firewall is ON. Windows Firewall help protected your computer
+					against viruses and other security threats</Run> 
+					<Hyperlink>How does a firewall help protect my computer?</Hyperlink></TextBlock>
+				</Border>
+                
+                       <Border Cursor="Hand" MouseLeftButtonDown="ToggleNextControl" Margin="0, 16, 0, 0" BorderThickness="1" BorderBrush="#e7c597">
+							<Border.Background>
+								<LinearGradientBrush EndPoint="1, 0.5" StartPoint="0, 0.5">
+									<GradientStop Color="#f1c714" Offset="0"/>
+									<GradientStop Color="#fff4df" Offset="1"/>
+								</LinearGradientBrush>
+							</Border.Background>
+							<Grid>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="*"/>
+									<ColumnDefinition Width="Auto"/>
+								</Grid.ColumnDefinitions>
+
+								<TextBlock Text="Automatic Updates" Foreground="#30486e" FontSize="18" Margin="12,2,2,2"/>
+								<TextBlock Grid.Column="1" Text="CHECK SETTINGS" Foreground="#705c33" FontSize="18" Margin="2,2,12,2"/>
+							</Grid>
+							
+						</Border>
+				<Border Margin="0, 0, 0, 0" BorderThickness="1, 0, 1, 1" BorderBrush="#e7c597" Background="#fff5e3">
+                        <StackPanel>
+					    <TextBlock TextWrapping="Wrap" Margin="12, 4, 12, 4"><Run>Automatic Updates is set up to download and install updates only
+					    after checking with you. Click Turn on Automatic Updates to have Windows automatically keep you computer current with 
+                        important updates (recommended). </Run> 
+					    <Hyperlink>How does Automatic Update help protect my computer?</Hyperlink></TextBlock>
+                        
+                        <Button HorizontalAlignment="Right" Margin="12, 4, 12, 4">Turn on Automatic Updates</Button>
+                    </StackPanel>
+				</Border> 
+                
+                        <Border Cursor="Hand" MouseLeftButtonDown="ToggleNextControl" Margin="0, 16, 0, 0" BorderThickness="1" BorderBrush="#e7c597">
+							<Border.Background>
+								<LinearGradientBrush EndPoint="1, 0.5" StartPoint="0, 0.5">
+									<GradientStop Color="#cc3501" Offset="0"/>
+									<GradientStop Color="#fdeedf" Offset="1"/>
+								</LinearGradientBrush>
+							</Border.Background>
+							<Grid>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="*"/>
+									<ColumnDefinition Width="Auto"/>
+								</Grid.ColumnDefinitions>
+
+								<TextBlock Text="Virus Protection" Foreground="#ffffff" FontSize="18" Margin="12,2,2,2"/>
+								<TextBlock Grid.Column="1" Text="OFF" Foreground="#ba4b14" FontSize="18" Margin="2,2,12,2"/>
+							</Grid>
+							
+						</Border>
+				<Border  Margin="0, 0, 0, 0" BorderThickness="1, 0, 1, 1" BorderBrush="#e7c597" Background="#fff5e7">
+					<StackPanel>
+                        <TextBlock TextWrapping="Wrap" Margin="12, 4, 12, 4"><Run>Antivirus software help protect your computer agains viruses
+					    and other security threats. Click Recommendations for suggested actions you can take.</Run> 
+					    <Hyperlink>How does antivirus software help protect my computer?</Hyperlink></TextBlock>
+                        
+                        <TextBlock TextWrapping="Wrap" Margin="12, 4, 12, 4">Note: Windows does not detect all antivirus programs.</TextBlock>
+                        
+                        <Button Margin="12, 4, 12, 4" HorizontalAlignment="Right">Recommendations...</Button>
+                       </StackPanel>
+				</Border> 
+				
+				<TextBlock Margin="0, 12, 12, 4" Foreground="#1e3962" FontSize="19" Text="Manage Security Settings for:"/>
+
+				<WrapPanel TextBlock.FontSize="15">
+					<TextBlock Margin="10"><Hyperlink>Internet Options</Hyperlink></TextBlock>
+					<TextBlock Margin="10"><Hyperlink>Windows Firewall</Hyperlink></TextBlock>
+					<TextBlock Margin="10"><Hyperlink>Automatic Updates</Hyperlink></TextBlock>
+				</WrapPanel>
+				
+			</StackPanel>
+			</ScrollViewer>
+
+        </Grid>
+
+        <Border Grid.Row="2" Background="#FF0342C6">
+            <TextBlock Foreground="#FFFFFFFF" Margin="8,3,8,3"><Run>At Microsoft, we care about your privacy.</Run> <Underline Cursor="Hand">Please read our privacy statement</Underline></TextBlock>
+		</Border>
+    </Grid>
+</Page>

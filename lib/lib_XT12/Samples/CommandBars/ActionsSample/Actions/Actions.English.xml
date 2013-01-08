@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Settings CompactMode="1">
+	<Actions Enabled="1">
+		<Action Id="35001" TooltipText="&amp;Customize..." DescriptionText="Customize application appearance, toolbars, and menus"/>
+		<Action Id="9123" TooltipText="&amp;Reset Toolbar"/>
+		<Action Id="9122" TooltipText="&amp;Add or Remove Buttons"/>
+		<Action Id="9148" TooltipText="Toolbar Options"/>
+		<Action Id="9149" TooltipText="Close"/>
+		<Action Id="57600" Caption="&amp;New" TooltipText="New" DescriptionText="Create a new document"/>
+		<Action Id="57601" Caption="&amp;Open..." TooltipText="Open" DescriptionText="Open an existing document"/>
+		<Action Id="57603" Caption="&amp;Save" TooltipText="Save" DescriptionText="Save the active document"/>
+		<Action Id="57604" Caption="Save &amp;As..." TooltipText="Save As" DescriptionText="Save the active document with a new name"/>
+		<Action Id="57607" Caption="&amp;Print..." TooltipText="Print" DescriptionText="Print the active document"/>
+		<Action Id="57609" Caption="Print Pre&amp;view" TooltipText="Print Preview" DescriptionText="Display full pages"/>
+		<Action Id="57606" Caption="P&amp;rint Setup..." TooltipText="Print Setup" DescriptionText="Change the printer and printing options"/>
+		<Action Id="57616" Caption="Recent File" TooltipText="Open this document" DescriptionText="Open this document"/>
+		<Action Id="57665" Caption="E&amp;xit" TooltipText="Exit" DescriptionText="Quit the application; prompts to save documents"/>
+		<Action Id="2000" Caption="&amp;File"/>
+		<Action Id="57643" Caption="&amp;Undo" TooltipText="Undo" DescriptionText="Undo the last action"/>
+		<Action Id="57635" Caption="Cu&amp;t" TooltipText="Cut" DescriptionText="Cut the selection and put it on the Clipboard"/>
+		<Action Id="57634" Caption="&amp;Copy" TooltipText="Copy" DescriptionText="Copy the selection and put it on the Clipboard"/>
+		<Action Id="57637" Caption="&amp;Paste" TooltipText="Paste" DescriptionText="Insert Clipboard contents"/>
+		<Action Id="57642" Caption="Select A&amp;ll" TooltipText="Select All" DescriptionText="Select the entire document"/>
+		<Action Id="32771" Caption="Bold" TooltipText="Bold" DescriptionText="Bold"/>
+		<Action Id="32772" Caption="Italic" TooltipText="Italic" DescriptionText="Italic"/>
+		<Action Id="32773" Caption="Underline" TooltipText="Underline" DescriptionText="Underline"/>
+		<Action Id="57636" Caption="&amp;Find..." TooltipText="Find" DescriptionText="Find the specified text"/>
+		<Action Id="57640" Caption="F&amp;ind Next" TooltipText="Repeat" DescriptionText="Repeat the last action"/>
+		<Action Id="57641" Caption="R&amp;eplace" TooltipText="Replace" DescriptionText="Replace specific text with different text"/>
+		<Action Id="2001" Caption="&amp;Edit"/>
+		<Action Id="59392" Caption="&amp;Toolbar" TooltipText="Toggle ToolBar" DescriptionText="Show or hide the toolbar"/>
+		<Action Id="59393" Caption="&amp;Status Bar" TooltipText="Toggle StatusBar" DescriptionText="Show or hide the status bar"/>
+		<Action Id="2002" Caption="&amp;View"/>
+		<Action Id="57664" Caption="&amp;About ActionsSample..." TooltipText="About" DescriptionText="Display program information, version number and copyright"/>
+		<Action Id="2003" Caption="&amp;Help"/>
+		<Action Id="32774" TooltipText="Left" DescriptionText="Left"/>
+		<Action Id="32775" TooltipText="Center" DescriptionText="Center"/>
+		<Action Id="32776" TooltipText="Right" DescriptionText="Right"/>
+	</Actions>
+</Settings>

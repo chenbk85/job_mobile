@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="gb2312"?>
+<resource CompactMode="1" Language="Chinese (PRC)" LANGID="2052">
+	<string id="9000" value="今天"/>
+	<string id="9001" value="无"/>
+	<string id="9011" value="确认删除\n删除该事件(&amp;O)。\n删除连续事件(&amp;S)。\n您确定要删除所有循环的连续事件 &quot;%s&quot; ，或者只是删除着一个?"/>
+	<string id="9012" value="打开循环条目\n打开事件。\n打开连续事件(&amp;S)\n&quot;%s&quot; 是一个循环事件. \n您希望打开这一个循环事件还是这一连续的循环事件？"/>
+	<string id="9013" value="从"/>
+	<string id="9014" value="到"/>
+	<string id="9015" value="空闲"/>
+	<string id="9016" value="暂时离开"/>
+	<string id="9017" value="忙"/>
+	<string id="9018" value="离开"/>
+	<string id="9019" value="第一个"/>
+	<string id="9020" value="第二个"/>
+	<string id="9021" value="第三个"/>
+	<string id="9022" value="第四个"/>
+	<string id="9023" value="最后一个"/>
+	<string id="9024" value="0  分钟"/>
+	<string id="9025" value="1  分钟"/>
+	<string id="9026" value="5  分钟"/>
+	<string id="9027" value="10 分钟"/>
+	<string id="9028" value="15 分钟"/>
+	<string id="9029" value="30 分钟"/>
+	<string id="9030" value="1 小时"/>
+	<string id="9031" value="2 小时"/>
+	<string id="9032" value="3 小时"/>
+	<string id="9033" value="4 小时"/>
+	<string id="9034" value="5 小时"/>
+	<string id="9035" value="6 小时"/>
+	<string id="9036" value="7 小时"/>
+	<string id="9037" value="8 小时"/>
+	<string id="9038" value="9 小时"/>
+	<string id="9039" value="10 小时"/>
+	<string id="9040" value="11 小时"/>
+	<string id="9041" value="18 小时"/>
+	<string id="9042" value="0.5 天"/>
+	<string id="9043" value="1 天"/>
+	<string id="9044" value="2 天"/>
+	<string id="9045" value="3 天"/>
+	<string id="9046" value="1 周"/>
+	<string id="9047" value="2 周"/>
+	<string id="9048" value="分"/>
+	<string id="9049" value="小时"/>
+	<string id="9050" value="天"/>
+	<string id="9051" value="周"/>
+	<string id="9052" value="分钟"/>
+	<string id="9053" value="h"/>
+	<string id="9054" value="d"/>
+	<string id="9055" value="w"/>
+	<string id="9056" value="错误的值!"/>
+	<string id="9057" value="与该循环约会相互联合的所有例外都将丢失，这样可以吗？"/>
+	<string id="9058" value="页面边距 (毫米)"/>
+	<string id="9059" value="页面边距 (英寸)"/>
+	<string id="9060" value="无"/>
+	<string id="9061" value="重要"/>
+	<string id="9062" value="商务"/>
+	<string id="9063" value="个人"/>
+	<string id="9064" value="假期"/>
+	<string id="9065" value="必须参加"/>
+	<string id="9066" value="需要旅行"/>
+	<string id="9067" value="需要准备"/>
+	<string id="9068" value="生日"/>
+	<string id="9069" value="周年纪念"/>
+	<string id="9070" value="打电话"/>
+	<string id="9071" value="%d 提醒"/>
+	<string id="9072" value="主题"/>
+	<string id="9073" value="到达"/>
+	<string id="9074" value="迟到"/>
+	<string id="9075" value="没有选择提醒方式."/>
+	<string id="9076" value="没有提醒方式."/>
+	<string id="9077" value="开始时间"/>
+	<string id="9078" value="错误. 清输入数据在 %s 到 %s 之间。"/>
+	<string id="9079" value="Categories"/>
+	<string id="9086" value="Day"/>
+	<string id="9087" value="Week"/>
+	<string id="9088" value="Month"/>
+	<string id="9089" value="Show work week"/>
+	<string id="9090" value="Show full week"/>
+	<string id="9091" value="Click to add appointment"/>
+	<string id="9092" value="Previous Appointment"/>
+	<string id="9093" value="Next Appointment"/>
+	<string id="9094" value="Category"/>
+	<string id="9122" value="\n添加或删除按钮(&amp;A)"/>
+	<string id="9123" value="\n重置工具栏(&amp;R)"/>
+	<string id="9135" value="\n鉛筆"/>
+	<string id="9136" value="\n填充颜色"/>
+	<string id="9137" value="\n选取颜色"/>
+	<string id="9138" value="\n线条"/>
+	<string id="9139" value="\n矩形"/>
+	<string id="9140" value="\n椭圆"/>
+	<string id="9141" value="\n复制"/>
+	<string id="9142" value="\n粘贴"/>
+	<string id="9143" value="\n清除"/>
+	<string id="9144" value="\n恢复"/>
+	<string id="9145" value="\n恢复"/>
+	<string id="9146" value="\n从文件导入"/>
+	<string id="9148" value="\n工具栏选项"/>
+	<string id="9149" value="\n关闭"/>
+	<string id="9150" value="\n展开"/>
+	<string id="9151" value="\n关闭窗口"/>
+	<string id="9152" value="\n还原窗口"/>
+	<string id="9153" value="\n窗口最小化"/>
+	<string id="9155" value="\n移动到上一个选项卡组"/>
+	<string id="9156" value="\n移动到下一个选项卡组"/>
+	<string id="9157" value="\n新建水平选项卡组"/>
+	<string id="9158" value="\n新建垂直选项卡组"/>
+	<string id="9159" value="取消"/>
+	<string id="9160" value="关闭"/>
+	<string id="9161" value="自定义"/>
+	<string id="9162" value="新菜单"/>
+	<string id="9163" value="自定义 %d"/>
+	<string id="9164" value="工具栏不能没有名称，请键入名称。"/>
+	<string id="9165" value="抱歉，不能创建更多的工具栏."/>
+	<string id="9166" value="已经有一个工具栏名为“%s”，请键入其他名称。"/>
+	<string id="9167" value="重命名工具栏"/>
+	<string id="9168" value="是否确认要删除“%s”工具栏?"/>
+	<string id="9169" value="所有命令"/>
+	<string id="9170" value="此操作将删除您在此应用程序中使用过的命令的记录，并使菜单和工具栏恢复其默认的命令设置。它不会撤消任何明显的自定义设置。是否确认要进行这项操作?"/>
+	<string id="9171" value="编号无效。"/>
+	<string id="9172" value="数字必须在 1 和 1638 之间。"/>
+	<string id="9173" value="是否确实要重置对“%s”工具栏 所做的更改?"/>
+	<string id="9174" value="内置菜单"/>
+	<string id="9175" value="您确定要重置所有热键？该操作会删掉所有自定义热键!"/>
+	<string id="9176" value="该热键已经被使用。\n您要继续使用这个热键吗？"/>
+	<string id="9177" value="由于版本不一致，以至工具栏 '%s' 改变。您希望重置自定义工具栏吗？"/>
+	<string id="9178" value="所有图片文件|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|位图(*.Bmp;*.Dib)|*.bmp;*.dib|元文件(*.Wmf;*.Emf)|*.wmf;*.emf|图标(*.Ico;*.Cur)|*.ico;*.cur|GIF图片(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|所有文件(*.*)|*.*||"/>
+	<string id="9179" value="(系统默认值)"/>
+	<string id="9180" value="随机"/>
+	<string id="9181" value="展开"/>
+	<string id="9182" value="滑动"/>
+	<string id="9183" value="淡出"/>
+	<string id="9184" value="无"/>
+	<string id="9185" value="活动文件"/>
+	<string id="9186" value="Customize Status Bar"/>
+	<string id="9187" value="(%s) was pressed. Waiting for second key of chord..."/>
+	<string id="9194" value="Print the previewed item\nPrint"/>
+	<string id="9195" value="Go to the previous page\nPrevious Page"/>
+	<string id="9196" value="Go to the next page\nNext Page"/>
+	<string id="9197" value="Increase magnification of preview page\nZoom In"/>
+	<string id="9198" value="Decrease magnification of preview page\nZoom Out"/>
+	<string id="9201" value="Close the preview\nClose Preview"/>
+	<string id="9202" value="Whole Page"/>
+	<string id="9203" value="Page Width"/>
+	<string id="9204" value="Page %i"/>
+	<string id="9205" value="Page %i of %i"/>
+	<string id="9320" value="新建"/>
+	<string id="9321" value="删除"/>
+	<string id="9322" value="上移"/>
+	<string id="9323" value="下移"/>
+	<string id="9325" value="升序排序\n升序排序"/>
+	<string id="9326" value="降序排序\n降序排序"/>
+	<string id="9327" value="将段落中各行的左边距对齐\n左对齐"/>
+	<string id="9328" value="使段落位于两边距之间的正中\n水平居中"/>
+	<string id="9329" value="将段落中各行的右边距对齐\n右对齐"/>
+	<string id="9330" value="显示大图标\n大图标"/>
+	<string id="9331" value="显示小图标\n小图标"/>
+	<string id="9332" value="从 Outlook 栏删除"/>
+	<string id="9333" value="重命名快捷方式"/>
+	<string id="9334" value="移除组"/>
+	<string id="9335" value="重命名组"/>
+	<string id="9336" value="名称"/>
+	<string id="9337" value="尺寸"/>
+	<string id="9338" value="类型"/>
+	<string id="9339" value="修改"/>
+	<string id="9340" value="自动"/>
+	<string id="9341" value="自定义..."/>
+	<string id="9342" value="选择目录:"/>
+	<string id="9343" value="..."/>
+	<string id="9344" value="*.*"/>
+	<string id="9345" value="所有文件(*.*)|*.*||"/>
+	<string id="9346" value="目录名称:"/>
+	<string id="9347" value="单击按钉保持打开状态"/>
+	<string id="9348" value="您是否知道..."/>
+	<string id="9349" value="指定的文件不存在。"/>
+	<string id="9350" value="读取文件时出错。"/>
+	<string id="9351" value="颜色"/>
+	<string id="9352" value="新增"/>
+	<string id="9353" value="当前"/>
+	<string id="9354" value="目录:"/>
+	<string id="9355" value="文件数:"/>
+	<string id="9356" value="十六进制"/>
+	<string id="9357" value="操作系统内存或资源已耗尽."/>
+	<string id="9358" value="指定的文件未发现."/>
+	<string id="9359" value="指定的路径未发现."/>
+	<string id="9360" value="操作系统拒绝访问指定的文件。"/>
+	<string id="9361" value="已经没有足够的内存完成操作。"/>
+	<string id="9362" value=".exe 文件无效 (不是Win32可执行文件或.exe映象错误)."/>
+	<string id="9363" value="发生了共享冲突。"/>
+	<string id="9364" value="相关的文件名不完全或无效。"/>
+	<string id="9365" value="指定的 DDE 任务因为超时而没有完成。"/>
+	<string id="9366" value="指定的 DDE 任务失败。"/>
+	<string id="9367" value="指定的 DDE 任务没有完成，因为另一个 DDE 任务正在进行中。"/>
+	<string id="9368" value="没有应用程序与指定的文件扩展名相关联。"/>
+	<string id="9369" value="没找到指定的动态链接库。"/>
+	<string id="9370" value="一个编号为 %d 错误发生。"/>
+	<string id="9424" value="标准色"/>
+	<string id="9425" value="提示文字"/>
+	<string id="9432" value="确定"/>
+	<string id="9433" value="是"/>
+	<string id="9434" value="否"/>
+	<string id="9435" value="重试"/>
+	<string id="9436" value="取消"/>
+	<string id="9437" value="关闭"/>
+	<string id="9438" value="显示明细数据"/>
+	<string id="9439" value="隐藏明细数据"/>
+	<string id="9440" value="&amp;Apply"/>
+	<string id="9441" value="Help"/>
+	<string id="9456" value="自动隐藏"/>
+	<string id="9457" value="关闭"/>
+	<string id="9458" value="最大化"/>
+	<string id="9459" value="向下还原"/>
+	<string id="9460" value="菜单"/>
+	<string id="9461" value="活动工具窗口"/>
+	<string id="9462" value="活动文件"/>
+	<string id="9501" value="分類"/>
+	<string id="9502" value="按字母順序"/>
+	<string id="9503" value="真\n假"/>
+	<string id="9552" value="拖动某个列标题到此处即可按该列分组。"/>
+	<string id="9553" value="此视图中没有项目可显示。"/>
+	<string id="9554" value="(没有字段可用)"/>
+	<string id="9555" value="排序按:"/>
+	<string id="9557" value="页面边距 (毫米)"/>
+	<string id="9558" value="页面边距 (英寸)"/>
+	<string id="9559" value="Enter filter text here"/>
+	<string id="9603" value="\n自定义快速访问工具栏"/>
+	<string id="9611" value="\n更多按钮"/>
+	<string id="9615" value="Are you sure you want to restore the Quick Access Toolbar to its default contents?"/>
+	<string id="9651" value="显示更多按钮"/>
+	<string id="9652" value="显示更少按钮"/>
+	<string id="9653" value="配置按钮"/>
+	<string id="9711" value="编辑选项"/>
+	<string id="9714" value="未定义的命令"/>
+	<string id="9715" value="多重操作"/>
+	<string id="9716" value="删除: "/>
+	<string id="9717" value="插入: "/>
+	<string id="9718" value="键入"/>
+	<string id="9719" value="粘贴"/>
+	<string id="9720" value="移动"/>
+	<string id="9721" value="复制"/>
+	<string id="9722" value="缩减"/>
+	<string id="9723" value="缩减量"/>
+	<string id="9724" value="格式"/>
+	<string id="9725" value="制表符号化"/>
+	<string id="9726" value="取消制表符号化"/>
+	<string id="9727" value="全部替换"/>
+	<string id="9728" value="改变选中文本大小写"/>
+	<string id="9729" value="删除选中文本"/>
+	<string id="9730" value="移动到这里(&amp;M)"/>
+	<string id="9731" value="复制到这里(&amp;C)"/>
+	<string id="9732" value="取消(&amp;A)"/>
+	<string id="9740" value="自定义"/>
+	<string id="9741" value="常规"/>
+	<string id="9742" value="粗体"/>
+	<string id="9743" value="斜体"/>
+	<string id="9744" value="粗斜体"/>
+	<string id="9746" value="行号(&amp;L) (1 - %d):"/>
+	<string id="9747" value="打开方案文件"/>
+	<string id="9748" value="您确定要关闭 &quot;选项对话框&quot; 然后在编辑器中打开方案文件 &quot;%s%s&quot; 吗?"/>
+	<string id="9749" value="文件 '%s' 已经在外部修改，\n您希望它重新载入吗?"/>
+	<string id="9750" value="找到 %d，并且已经替换!"/>
+	<string id="9751" value="查找结束！"/>
+	<string id="9800" value="向左滚动"/>
+	<string id="9801" value="向右滚动"/>
+	<string id="9802" value="关闭"/>
+	<string id="9803" value="Scroll Up"/>
+	<string id="9804" value="Scroll Down"/>
+	<string id="9900" value="黑色"/>
+	<string id="9901" value="褐色"/>
+	<string id="9902" value="橄榄绿"/>
+	<string id="9903" value="深绿"/>
+	<string id="9904" value="深青"/>
+	<string id="9905" value="深蓝"/>
+	<string id="9906" value="靛蓝"/>
+	<string id="9907" value="灰色-80%"/>
+	<string id="9908" value="深红"/>
+	<string id="9909" value="橙色"/>
+	<string id="9910" value="深黄"/>
+	<string id="9911" value="绿色"/>
+	<string id="9912" value="青色"/>
+	<string id="9913" value="蓝色"/>
+	<string id="9914" value="蓝-灰"/>
+	<string id="9915" value="灰色-50%"/>
+	<string id="9916" value="红色"/>
+	<string id="9917" value="浅橙色"/>
+	<string id="9918" value="酸橙色"/>
+	<string id="9919" value="海绿"/>
+	<string id="9920" value="水绿色"/>
+	<string id="9921" value="浅蓝"/>
+	<string id="9922" value="紫罗兰色"/>
+	<string id="9923" value="灰色-40%"/>
+	<string id="9924" value="粉红"/>
+	<string id="9925" value="金色年华"/>
+	<string id="9926" value="黄色"/>
+	<string id="9927" value="鲜绿"/>
+	<string id="9928" value="青绿"/>
+	<string id="9929" value="天蓝"/>
+	<string id="9930" value="梅红"/>
+	<string id="9931" value="灰色-25%"/>
+	<string id="9932" value="玫瑰红"/>
+	<string id="9933" value="茶色"/>
+	<string id="9934" value="浅黄"/>
+	<string id="9935" value="浅绿"/>
+	<string id="9936" value="浅青绿"/>
+	<string id="9937" value="淡蓝"/>
+	<string id="9938" value="淡紫"/>
+	<string id="9939" value="白色"/>
+	<string id="9940" value="灰度"/>
+	<string id="9941" value="褐紫红色"/>
+	<string id="9942" value="橄榄色"/>
+	<string id="9943" value="海军蓝"/>
+	<string id="9944" value="紫色"/>
+	<string id="9945" value="银白色"/>
+	<string id="9946" value="紫红色"/>
+	<string id="9947" value="无填充颜色\n无填充颜色"/>
+	<string id="9948" value="自动设置颜色\n自动设置颜色"/>
+	<string id="9949" value="其他颜色..."/>
+	<string id="9974" value="一页"/>
+	<string id="9975" value="两页"/>
+	<string id="35001" value="自定义程序外观，工具栏和菜单\n自定义(&amp;C)..."/>
+	<string id="35200" value="阿拉伯语(沙特阿拉伯)"/>
+	<string id="35202" value="中文(中国)"/>
+	<string id="35203" value="中文(台湾)"/>
+	<string id="35204" value="克罗地亚语"/>
+	<string id="35205" value="捷克语"/>
+	<string id="35206" value="丹麦语"/>
+	<string id="35207" value="荷兰语"/>
+	<string id="35208" value="英语(美国)"/>
+	<string id="35209" value="爱沙尼亚语"/>
+	<string id="35210" value="芬兰语"/>
+	<string id="35211" value="法语"/>
+	<string id="35212" value="德语(德国)"/>
+	<string id="35213" value="希腊语"/>
+	<string id="35214" value="希伯来语"/>
+	<string id="35215" value="匈牙利语"/>
+	<string id="35216" value="意大利语(意大利)"/>
+	<string id="35217" value="日语"/>
+	<string id="35218" value="朝鲜语"/>
+	<string id="35219" value="拉脱维亚语"/>
+	<string id="35220" value="立陶宛语"/>
+	<string id="35221" value="挪威语(博克马尔语)"/>
+	<string id="35222" value="波兰语"/>
+	<string id="35223" value="葡萄牙语(葡萄牙)"/>
+	<string id="35224" value="葡萄牙语(巴西)"/>
+	<string id="35225" value="罗马尼亚语"/>
+	<string id="35226" value="俄语"/>
+	<string id="35227" value="斯洛伐克语"/>
+	<string id="35228" value="斯洛文尼亚语"/>
+	<string id="35229" value="西班牙语(西班牙 - 现代风格)"/>
+	<string id="35230" value="瑞典语"/>
+	<string id="35231" value="泰语"/>
+	<string id="35233" value="乌克兰语"/>
+	<menu id="9121">
+		<menuitem caption="自定义">
+			<menuitem id="9123" caption="重置(&amp;R)"/>
+			<menuitem id="9124" caption="删除(&amp;D)"/>
+			<menuitem/>
+			<menuitem id="9125" caption="名称(&amp;N):"/>
+			<menuitem/>
+			<menuitem id="9126" caption="复制按钮图像(&amp;C)"/>
+			<menuitem id="9127" caption="粘贴按钮图像(&amp;P)"/>
+			<menuitem id="9128" caption="重置按钮图像(&amp;S)"/>
+			<menuitem id="9129" caption="编辑按钮图像(&amp;E)..."/>
+			<menuitem id="9130" caption="更改按钮图像(&amp;B)"/>
+			<menuitem/>
+			<menuitem id="9131" caption="默认样式(&amp;U)"/>
+			<menuitem id="9133" caption="只有文本(&amp;T)"/>
+			<menuitem id="9132" caption="图像与文本(&amp;A)"/>
+			<menuitem/>
+			<menuitem id="9134" caption="开始一组(&amp;G)"/>
+		</menuitem>
+	</menu>
+	<menu id="9316">
+		<menuitem caption="RClickOutlookBar">
+			<menuitem id="9331" caption="小图标(&amp;M)"/>
+			<menuitem id="9330" caption="大图标(&amp;G)"/>
+		</menuitem>
+		<menuitem caption="RClickHexEdit">
+			<menuitem id="57643" caption="撤消(&amp;U)"/>
+			<menuitem/>
+			<menuitem id="57635" caption="剪切(&amp;T)"/>
+			<menuitem id="57634" caption="复制(&amp;C)"/>
+			<menuitem id="57637" caption="粘贴(&amp;P)"/>
+			<menuitem id="57632" caption="删除(&amp;D)"/>
+			<menuitem/>
+			<menuitem id="57642" caption="全选(&amp;A)"/>
+		</menuitem>
+		<menuitem caption="RClickHeader">
+			<menuitem id="9325" caption="升序排序"/>
+			<menuitem id="9326" caption="降序排序"/>
+			<menuitem/>
+			<menuitem caption="对齐方式">
+				<menuitem id="9327" caption="左对齐"/>
+				<menuitem id="9328" caption="居中"/>
+				<menuitem id="9329" caption="右对齐"/>
+			</menuitem>
+		</menuitem>
+	</menu>
+	<menu id="9601">
+		<menuitem caption="快速访问">
+			<menuitem id="9614" caption="自定义快速访问工具栏(&amp;C)"/>
+			<menuitem id="9613" caption="[Commands]"/>
+			<menuitem/>
+			<menuitem id="9607" caption="更多命令(&amp;M)..."/>
+			<menuitem id="9608" caption="在功能区下方显示(&amp;S)"/>
+			<menuitem id="9610" caption="在功能区上方显示(&amp;S)"/>
+			<menuitem/>
+			<menuitem id="9612" caption="功能区最小化(&amp;N)"/>
+		</menuitem>
+	</menu>
+	<menu id="9602">
+		<menuitem caption="快速访问">
+			<menuitem id="9605" caption="从快速访问工具栏里面删除(&amp;R)"/>
+			<menuitem id="9606" caption="添加到快速访问工具栏(&amp;A)"/>
+			<menuitem/>
+			<menuitem id="9607" caption="自定义快速访问工具栏(&amp;C)..."/>
+			<menuitem id="9608" caption="在功能区下方显示快速访问工具栏(&amp;S)"/>
+			<menuitem id="9610" caption="在功能区上方显示快速访问工具栏(&amp;S)"/>
+			<menuitem/>
+			<menuitem id="9612" caption="功能区最小化(&amp;N)"/>
+		</menuitem>
+	</menu>
+	<menu id="9977">
+		<menuitem caption="HF">
+			<menuitem id="101" caption="&amp;&amp;d   短日期格式"/>
+			<menuitem id="102" caption="&amp;&amp;D   长日期格式"/>
+			<menuitem/>
+			<menuitem id="103" caption="&amp;&amp;t   时间"/>
+			<menuitem id="104" caption="&amp;&amp;T   时间 (24 小时制)"/>
+			<menuitem/>
+			<menuitem id="105" caption="&amp;&amp;p   页码"/>
+			<menuitem id="106" caption="&amp;&amp;P   页数"/>
+			<menuitem/>
+			<menuitem id="108" caption="&amp;&amp;b   左对齐 &amp;&amp;b 居中 &amp;&amp;b 右对齐"/>
+			<menuitem/>
+			<menuitem id="109" caption="&amp;&amp;w   窗口标题"/>
+			<menuitem id="110" caption="&amp;&amp;&amp;&amp;  符号 (&amp;&amp;)"/>
+			<menuitem id="111" caption="\\n   新行"/>
+		</menuitem>
+	</menu>
+	<dialog id="9080" fontsize="9" fontface="宋体" style="-2134376248" position="0, 0, 175, 90">
+		<control id="103" style="1342177283" position="9, 8, 20, 20"/>
+		<control id="100" position="43, 6, 120, 27"/>
+		<control id="101" class="BUTTON" style="1342177289" position="43, 39, 125, 10"/>
+		<control id="102" class="BUTTON" style="1342177289" position="43, 51, 127, 10"/>
+		<control id="1" class="BUTTON" caption="确定" style="1342242817" position="35, 69, 50, 14"/>
+		<control id="2" class="BUTTON" caption="取消" style="1342242816" position="91, 69, 50, 14"/>
+	</dialog>
+	<dialog id="9081" caption="日历页面设置" fontsize="9" fontface="宋体" style="-1865940788" position="32, 32, 283, 338">
+		<control id="100" class="BUTTON" caption="时间查看选项" style="1342177287" position="7, 5, 106, 66"/>
+		<control caption="打印从:" style="1342308354" position="10, 21, 43, 8"/>
+		<control id="101" class="COMBOBOX" style="1344339970" position="55, 19, 52, 104"/>
+		<control caption="打印到:" style="1342308354" position="10, 39, 42, 8"/>
+		<control id="102" class="COMBOBOX" style="1344339970" position="55, 36, 52, 104"/>
+		<control id="103" class="BUTTON" caption="精确打印 从-到" style="1342242819" position="14, 56, 95, 10"/>
+		<control id="104" class="BUTTON" caption="日期页眉" style="1342177287" position="120, 5, 157, 65"/>
+		<control id="105" class="BUTTON" caption="打印日期页眉" style="1342242819" position="125, 17, 148, 10"/>
+		<control id="106" caption="日期页眉字体:" position="138, 28, 136, 8"/>
+		<control id="107" caption="123456789 123456789 123456789\n2\n3" style="1342312576" position="138, 40, 115, 26"/>
+		<control id="108" class="BUTTON" caption="..." style="1342242816" position="257, 40, 16, 14"/>
+		<control class="BUTTON" caption="公共设置" style="1342177287" position="7, 74, 270, 27"/>
+		<control id="110" class="BUTTON" caption="使用灰度，黑白双色打印。" style="1342242819" position="14, 87, 258, 10"/>
+		<control class="BUTTON" caption="页眉和页脚" style="1342177287" position="7, 105, 270, 70"/>
+		<control caption="页眉(&amp;H)" position="13, 115, 190, 8"/>
+		<control id="111" class="EDIT" style="1350631552" position="13, 126, 247, 14"/>
+		<control id="113" class="BUTTON" style="1342242880" styleex="131072" position="260, 126, 13, 14"/>
+		<control caption="页脚(&amp;F)" position="13, 145, 190, 8"/>
+		<control id="112" class="EDIT" style="1350631552" position="13, 155, 247, 14"/>
+		<control id="114" class="BUTTON" style="1342242880" styleex="131072" position="260, 155, 13, 14"/>
+		<control id="1073" class="BUTTON" caption="纸张" style="1342308359" position="7, 183, 197, 51"/>
+		<control id="1089" caption="尺寸(&amp;Z):" position="11, 199, 40, 8"/>
+		<control id="1137" class="COMBOBOX" style="1344471299" position="55, 197, 141, 160"/>
+		<control id="1090" caption="数据源(&amp;S):" position="12, 216, 39, 8"/>
+		<control id="1138" class="COMBOBOX" style="1344471299" position="55, 214, 141, 160"/>
+		<control id="1072" class="BUTTON" caption="方向" style="1342308359" position="211, 183, 66, 51"/>
+		<control id="1056" class="BUTTON" caption="肖像(&amp;O)" style="1342373892" position="216, 196, 56, 12"/>
+		<control id="1057" class="BUTTON" caption="风景(&amp;A)" style="1342177284" position="216, 212, 58, 12"/>
+		<control id="1075" class="BUTTON" caption="页面边距" style="1342308359" position="8, 238, 196, 58"/>
+		<control id="1102" caption="左(&amp;L):" position="16, 254, 36, 8"/>
+		<control id="1155" class="EDIT" style="1350762496" position="55, 251, 32, 12"/>
+		<control id="1103" caption="右(&amp;R):" position="123, 253, 35, 8"/>
+		<control id="1157" class="EDIT" style="1350762496" position="162, 250, 32, 12"/>
+		<control id="1104" caption="上(&amp;T):" position="16, 274, 35, 8"/>
+		<control id="1156" class="EDIT" style="1350762496" position="55, 272, 32, 12"/>
+		<control id="1105" caption="下(&amp;B):" position="123, 274, 35, 8"/>
+		<control id="1158" class="EDIT" style="1350762496" position="162, 272, 32, 12"/>
+		<control id="109" class="BUTTON" caption="打印预览" style="1342177287" position="212, 238, 66, 58"/>
+		<control id="1081" style="1342308357" position="261, 253, 4, 38"/>
+		<control id="1080" style="1342308358" position="230, 250, 31, 40"/>
+		<control id="1082" style="1342308357" position="235, 290, 29, 2"/>
+		<control id="57670" class="BUTTON" caption="帮助(&amp;H)" style="1342242816" position="75, 320, 61, 14"/>
+		<control id="1026" class="BUTTON" caption="打印机(&amp;P)..." style="1342242816" position="8, 300, 60, 14"/>
+		<control id="1" class="BUTTON" caption="确定" style="1342373889" position="175, 320, 48, 14"/>
+		<control id="2" class="BUTTON" caption="取消" style="1342242816" position="229, 320, 48, 14"/>
+	</dialog>
+	<dialog id="9082" caption="约会属性" fontsize="9" fontface="宋体" style="-2134376248" position="0, 0, 450, 231">
+		<control caption="主题:  " position="6, 7, 45, 8"/>
+		<control id="100" class="EDIT" style="1350631552" position="55, 5, 234, 13"/>
+		<control caption="地点:  " position="6, 27, 45, 8"/>
+		<control id="101" class="EDIT" style="1350631552" position="55, 25, 234, 13"/>
+		<control style="1342181381" position="6, 45, 283, 1"/>
+		<control id="157" caption="开始时间:  " position="6, 55, 42, 8"/>
+		<control id="102" class="SysDateTimePick32" caption="DateTimePicker1" style="1342242849" position="55, 53, 68, 13"/>
+		<control id="103" class="SysDateTimePick32" caption="DateTimePicker2" style="1342242857" position="129, 53, 68, 13"/>
+		<control id="106" class="BUTTON" caption="全天事件(&amp;Y)" style="1342242819" position="204, 55, 85, 10"/>
+		<control id="158" caption="结束时间:  " position="6, 75, 42, 8"/>
+		<control id="104" class="SysDateTimePick32" caption="DateTimePicker1" style="1342242849" position="55, 73, 68, 13"/>
+		<control id="105" class="SysDateTimePick32" caption="DateTimePicker2" style="1342242857" position="129, 73, 68, 13"/>
+		<control style="1342181381" position="6, 93, 283, 1"/>
+		<control id="111" class="BUTTON" caption="提醒(&amp;R):" style="1342243075" position="6, 102, 45, 10"/>
+		<control id="112" class="COMBOBOX" style="1344339970" position="55, 100, 68, 88"/>
+		<control id="110" caption="计划编号:" style="1342308354" position="135, 102, 64, 10"/>
+		<control id="109" class="COMBOBOX" style="1344339971" position="204, 100, 85, 88"/>
+		<control style="1342181381" position="295, 5, 1, 110"/>
+		<control id="117" caption="La&amp;bel:" position="302, 7, 44, 8"/>
+		<control id="108" class="COMBOBOX" style="1344340003" position="350, 5, 94, 209"/>
+		<control caption="显示为(&amp;W):" position="302, 27, 45, 8"/>
+		<control id="107" class="COMBOBOX" style="1344339971" position="350, 25, 94, 72"/>
+		<control style="1342181381" position="302, 45, 142, 1"/>
+		<control id="113" class="BUTTON" caption="私事(&amp;P)" style="1342242819" position="302, 55, 100, 10"/>
+		<control id="114" class="BUTTON" caption="会议(&amp;M)" style="1342242819" position="302, 66, 100, 10"/>
+		<control style="1342181381" position="302, 93, 142, 1"/>
+		<control id="115" class="BUTTON" caption="循环(&amp;U)..." style="1342242816" position="375, 100, 69, 14"/>
+		<control id="116" class="EDIT" style="1352732868" position="6, 125, 438, 75"/>
+		<control style="1073745925" position="6, 205, 438, 1"/>
+		<control id="1" class="BUTTON" caption="确定" style="1342242817" position="171, 211, 50, 14"/>
+		<control id="2" class="BUTTON" caption="取消" style="1342242816" position="227, 211, 50, 14"/>
+	</dialog>
+	<dialog id="9083" caption="约会循环" fontsize="9" fontface="宋体" style="-2134376248" position="0, 0, 340, 362">
+		<control class="BUTTON" caption="约会时间" style="1342177287" position="7, 3, 326, 62"/>
+		<control caption="开始(&amp;T):" position="13, 17, 32, 8"/>
+		<control id="109" class="COMBOBOX" style="1344339970" position="46, 15, 106, 124"/>
+		<control caption="结束(&amp;N):" position="13, 33, 32, 8"/>
+		<control id="102" class="COMBOBOX" style="1344339970" position="46, 31, 106, 158"/>
+		<control caption="持续时间(&amp;U):" position="13, 49, 30, 8"/>
+		<control id="113" class="COMBOBOX" style="1344339970" position="46, 47, 106, 162"/>
+		<control class="BUTTON" caption="循环方案:" style="1342177287" position="7, 68, 326, 68"/>
+		<control id="117" class="BUTTON" caption="每天" style="1342308361" position="13, 80, 55, 10"/>
+		<control id="118" class="BUTTON" caption="每周" style="1342177289" position="13, 94, 55, 10"/>
+		<control id="119" class="BUTTON" caption="每月" style="1342177289" position="13, 108, 55, 10"/>
+		<control id="120" class="BUTTON" caption="每年" style="1342177289" position="13, 122, 55, 10"/>
+		<control id="156" style="1342181383" position="73, 79, 1, 53"/>
+		<control id="124" class="BUTTON" caption="每" style="1342308361" position="81, 78, 35, 10"/>
+		<control id="125" class="BUTTON" caption="每个工作日" style="1342177289" position="81, 93, 108, 10"/>
+		<control id="126" class="EDIT" style="1350639744" position="120, 77, 28, 12"/>
+		<control id="121" caption="天" position="152, 78, 40, 8"/>
+		<control id="134" caption="循环每(&amp;C)" position="82, 235, 43, 8"/>
+		<control id="123" class="EDIT" style="1350639744" position="127, 233, 26, 12"/>
+		<control id="135" caption="周 在:" position="157, 235, 66, 8"/>
+		<control id="127" class="BUTTON" caption="星期一" style="1342242819" position="82, 249, 41, 10"/>
+		<control id="128" class="BUTTON" caption="星期二" style="1342242819" position="127, 249, 50, 10"/>
+		<control id="129" class="BUTTON" caption="星期三" style="1342242819" position="184, 249, 54, 10"/>
+		<control id="130" class="BUTTON" caption="星期四" style="1342242819" position="247, 249, 46, 10"/>
+		<control id="131" class="BUTTON" caption="星期五" style="1342242819" position="82, 264, 41, 10"/>
+		<control id="132" class="BUTTON" caption="星期六" style="1342242819" position="127, 264, 45, 10"/>
+		<control id="133" class="BUTTON" caption="星期日" style="1342242819" position="184, 263, 62, 10"/>
+		<control id="136" class="BUTTON" caption="天(&amp;A)" style="1342308361" position="81, 284, 26, 10"/>
+		<control id="137" class="BUTTON" caption="在(&amp;E)" style="1342177289" position="81, 302, 28, 10"/>
+		<control id="138" class="EDIT" style="1350639744" position="111, 283, 24, 12"/>
+		<control id="143" caption="天的每" position="139, 285, 28, 8"/>
+		<control id="139" class="EDIT" style="1350639744" position="170, 283, 25, 12"/>
+		<control id="144" caption="月" position="200, 285, 37, 8"/>
+		<control id="140" class="COMBOBOX" style="1344339971" position="111, 300, 50, 230"/>
+		<control id="141" class="COMBOBOX" style="1344339971" position="163, 300, 68, 287"/>
+		<control id="145" caption="天的每" position="234, 301, 28, 8"/>
+		<control id="142" class="EDIT" style="1350639744" position="265, 300, 26, 12"/>
+		<control id="146" caption="月" position="296, 301, 29, 8"/>
+		<control id="147" class="BUTTON" caption="每(&amp;V)" style="1342308361" position="81, 326, 34, 10"/>
+		<control id="148" class="BUTTON" caption="在" style="1342177289" position="81, 344, 31, 10"/>
+		<control id="150" class="COMBOBOX" style="1344339971" position="117, 324, 76, 230"/>
+		<control id="149" class="EDIT" style="1350631552" position="195, 324, 27, 12"/>
+		<control id="154" class="COMBOBOX" style="1344339971" position="117, 342, 48, 230"/>
+		<control id="155" class="COMBOBOX" style="1344339971" position="167, 342, 70, 230"/>
+		<control id="153" caption="的" position="241, 345, 10, 8"/>
+		<control id="151" class="COMBOBOX" style="1344339971" position="253, 342, 71, 230"/>
+		<control class="BUTTON" caption="循环范围" style="1342177287" position="7, 140, 326, 52"/>
+		<control caption="开始:" position="13, 156, 28, 8"/>
+		<control id="101" class="SysDateTimePick32" style="1342242849" position="46, 153, 106, 12"/>
+		<control id="114" class="BUTTON" caption="没有结束日期" style="1342308361" position="166, 149, 100, 9"/>
+		<control id="115" class="BUTTON" caption="在" style="1342177289" position="166, 162, 45, 10"/>
+		<control id="116" class="BUTTON" caption="结束时间:" style="1342177289" position="166, 176, 39, 10"/>
+		<control id="122" class="EDIT" style="1350639744" position="214, 159, 40, 12"/>
+		<control caption="次后结束" position="257, 161, 49, 8"/>
+		<control id="159" class="SysDateTimePick32" style="1342242849" position="214, 174, 105, 12"/>
+		<control id="1" class="BUTTON" caption="确定" style="1342242817" position="67, 197, 50, 14"/>
+		<control id="2" class="BUTTON" caption="取消" style="1342242816" position="124, 197, 50, 14"/>
+		<control id="100" class="BUTTON" caption="删除循环" style="1476460544" position="181, 197, 90, 14"/>
+	</dialog>
+	<dialog id="9084" caption="时区" fontsize="9" fontface="宋体" style="-2134376248" position="0, 0, 274, 178">
+		<control class="BUTTON" caption="当前时区" style="1342177287" position="7, 7, 260, 65"/>
+		<control caption="标签:" position="15, 23, 20, 8"/>
+		<control id="101" class="EDIT" style="1350631552" position="60, 21, 40, 14"/>
+		<control caption="时区:" position="15, 42, 36, 8"/>
+		<control id="103" class="COMBOBOX" style="1478557698" position="60, 39, 195, 130"/>
+		<control id="105" class="BUTTON" caption="保存后自动调整时间(&amp;U)" style="1476460547" styleex="32" position="18, 56, 234, 8"/>
+		<control id="100" class="BUTTON" caption="现实附加时区(&amp;S)" style="1342242819" styleex="32" position="7, 78, 260, 8"/>
+		<control class="BUTTON" style="1342177287" styleex="32" position="7, 88, 260, 62"/>
+		<control caption="标签:" position="15, 101, 20, 8"/>
+		<control id="102" class="EDIT" style="1350631552" position="60, 99, 40, 14"/>
+		<control caption="时区:" position="15, 120, 36, 8"/>
+		<control id="104" class="COMBOBOX" style="1344339971" position="60, 117, 195, 135"/>
+		<control id="106" class="BUTTON" caption="保存后自动调整时间(&amp;U)" style="1342242819" styleex="32" position="16, 134, 234, 8"/>
+		<control id="1" class="BUTTON" caption="确定" style="1342242817" position="150, 158, 50, 14"/>
+		<control id="2" class="BUTTON" caption="取消" style="1342242816" position="217, 158, 50, 14"/>
+	</dialog>
+	<dialog id="9085" caption="激活提醒" fontsize="9" fontface="宋体" style="-2134245176" position="0, 0, 303, 181">
+		<control id="106" caption="Static" style="1342308480" position="25, 5, 270, 30"/>
+		<control id="100" class="SysListView32" caption="List1" style="1350664205" position="5, 40, 290, 90"/>
+		<control id="101" class="BUTTON" caption="取消所有(&amp;A)" style="1342242816" position="5, 135, 65, 14"/>
+		<control id="103" class="BUTTON" caption="打开条目(&amp;O)" style="1342242816" position="160, 135, 65, 14"/>
+		<control id="102" class="BUTTON" caption="取消(&amp;D)" style="1342242816" position="230, 135, 65, 14"/>
+		<control caption="等待，下次提醒时间: " position="5, 155, 170, 8"/>
+		<control id="104" class="COMBOBOX" style="1344339970" position="5, 165, 220, 130"/>
+		<control id="105" class="BUTTON" caption="小睡(&amp;S)" style="1342242817" position="230, 165, 65, 14"/>
+	</dialog>
+	<dialog id="9114" caption="菜单(&amp;M)" fontsize="9" fontface="宋体" style="1086324808" position="0, 0, 230, 150">
+		<control id="100" caption="应用程序菜单" position="4, 5, 222, 8"/>
+		<control id="101" caption="快捷菜单" position="4, 80, 222, 8"/>
+		<control caption="显示菜单(&amp;S):" position="10, 20, 44, 11"/>
+		<control id="102" class="COMBOBOX" style="1344339971" position="54, 18, 159, 79"/>
+		<control id="103" class="BUTTON" caption="重置" style="1342242816" position="10, 57, 70, 14"/>
+		<control id="106" caption="默认菜单\n程序默认菜单" position="37, 34, 181, 18"/>
+		<control id="107" resource="0" style="1342177283" position="10, 32, 21, 20"/>
+		<control caption="选择快捷菜单(&amp;C):" position="10, 92, 68, 10"/>
+		<control id="104" class="COMBOBOX" style="1344339971" position="83, 90, 130, 79"/>
+		<control id="105" class="BUTTON" caption="重置" style="1342242816" position="10, 108, 70, 14"/>
+	</dialog>
+	<dialog id="9115" caption="按钮编辑器" fontsize="9" fontface="宋体" style="-1865940792" position="0, 0, 253, 185">
+		<control caption="图片" position="7, 7, 86, 8"/>
+		<control class="BUTTON" caption="颜色" style="1342177287" position="102, 106, 80, 71"/>
+		<control class="BUTTON" caption="移动" style="1342177287" position="101, 72, 81, 31"/>
+		<control class="BUTTON" caption="预览" style="1342177287" position="7, 106, 86, 71"/>
+		<control class="BUTTON" caption="工具" style="1342177287" position="101, 9, 81, 60"/>
+		<control id="1" class="BUTTON" caption="确定" style="1342242817" position="193, 7, 50, 14"/>
+		<control id="2" class="BUTTON" caption="取消" style="1342242816" position="193, 25, 50, 14"/>
+		<control id="100" style="1342177543" position="7, 17, 86, 80"/>
+		<control id="101" style="1342308865" styleex="131072" position="14, 117, 73, 54"/>
+		<control caption="透明" position="135, 156, 42, 8"/>
+		<control id="105" style="1342308608" position="116, 153, 15, 15"/>
+		<control id="103" caption="工具" style="1082262017" position="112, 21, 60, 43"/>
+		<control id="104" caption="移动" style="1082262017" position="111, 83, 62, 12"/>
+		<control id="106" style="1342308620" position="109, 144, 15, 15"/>
+		<control id="102" caption="颜色" style="1082262017" position="107, 121, 68, 12"/>
+	</dialog>
+	<dialog id="9116" caption="键盘(&amp;K)" fontsize="9" fontface="宋体" style="1086324808" position="0, 0, 230, 150">
+		<control caption="类别(&amp;G):" position="4, 5, 89, 8"/>
+		<control id="100" class="COMBOBOX" style="1344339971" position="4, 15, 91, 147"/>
+		<control id="101" caption="命令(&amp;M):" position="4, 28, 89, 8"/>
+		<control id="102" class="LISTBOX" style="1352728897" position="4, 38, 91, 77"/>
+		<control id="103" caption="热键分配(&amp;E):" position="100, 28, 73, 8"/>
+		<control id="104" class="LISTBOX" style="1352728897" position="100, 38, 75, 51"/>
+		<control id="105" caption="请按新热键(&amp;N):" position="100, 93, 100, 8"/>
+		<control id="106" class="EDIT" style="1350631552" position="100, 103, 75, 12"/>
+		<control id="107" class="BUTTON" caption="分派(&amp;A)" style="1342242816" position="179, 39, 49, 14"/>
+		<control id="108" class="BUTTON" caption="删除(&amp;R)" style="1342242816" position="179, 56, 49, 14"/>
+		<control id="109" class="BUTTON" caption="全部重置(&amp;S" style="1342242816" position="179, 73, 49, 14"/>
+		<control id="110" caption="说明:" position="4, 117, 89, 8"/>
+		<control id="111" styleex="131072" position="4, 127, 171, 19"/>
+	</dialog>
+	<dialog id="9117" caption="工具栏(&amp;B)" fontsize="9" fontface="宋体" style="1086324808" position="0, 0, 230, 150">
+		<control caption="工具栏(&amp;A):" position="4, 5, 148, 8"/>
+		<control id="100" class="LISTBOX" style="1352728913" position="4, 15, 150, 131"/>
+		<control id="101" class="BUTTON" caption="新建(&amp;N)..." style="1342242816" position="158, 15, 70, 14"/>
+		<control id="102" class="BUTTON" caption="重命名(&amp;R)..." style="1342242816" position="158, 33, 70, 14"/>
+		<control id="103" class="BUTTON" caption="删除(&amp;D)" style="1342242816" position="158, 51, 70, 14"/>
+		<control id="104" class="BUTTON" caption="重置(&amp;R)..." style="1342242816" position="158, 69, 70, 14"/>
+	</dialog>
+	<dialog id="9118" caption="选项(&amp;O)" fontsize="9" fontface="宋体" style="1086324808" position="0, 0, 230, 150">
+		<control id="108" caption="个性化菜单和工具栏" position="4, 5, 222, 8"/>
+		<control id="100" class="BUTTON" caption="始终显示整个菜单(&amp;N)" style="1342242819" position="10, 17, 216, 10"/>
+		<control id="101" class="BUTTON" caption="鼠标指针短暂停留后显示完整菜单(&amp;D)" style="1342242819" position="22, 29, 204, 10"/>
+		<control id="102" class="BUTTON" caption="重置菜单和工具栏惯用数据(&amp;R)" style="1342242816" position="10, 42, 125, 14"/>
+		<control id="107" caption="其他" position="4, 70, 222, 8"/>
+		<control id="103" class="BUTTON" caption="大图标(&amp;L)" style="1342242819" position="10, 82, 216, 10"/>
+		<control id="104" class="BUTTON" caption="显示关于工具栏的屏幕提示(&amp;T)" style="1342242819" position="10, 93, 216, 10"/>
+		<control id="105" class="BUTTON" caption="在屏幕提示中显示快捷键(&amp;H)" style="1342242819" position="22, 104, 204, 10"/>
+		<control caption="菜单的打开方式(&amp;M):" position="10, 117, 60, 8"/>
+		<control id="106" class="COMBOBOX" style="1344339971" position="74, 115, 79, 65"/>
+	</dialog>
+	<dialog id="9119" caption="命令(&amp;C)" fontsize="9" fontface="宋体" style="1086324808" position="0, 0, 230, 150">
+		<control caption="在工具栏中添加新命令: 选择类别并将命令从此对话框拖放至工具栏。" position="4, 5, 220, 19"/>
+		<control caption="类别(&amp;G):" position="4, 25, 80, 8"/>
+		<control id="100" class="LISTBOX" style="1352728833" position="4, 35, 81, 111"/>
+		<control caption="命令(&amp;D):" position="90, 25, 134, 8"/>
+		<control id="101" class="LISTBOX" style="1352728849" position="90, 35, 135, 111"/>
+	</dialog>
+	<dialog id="9120" caption="新建工具栏" fontsize="9" fontface="宋体" style="-2134376248" position="0, 0, 186, 52">
+		<control caption="工具栏名称(&amp;T):" position="4, 4, 178, 8"/>
+		<control id="100" class="EDIT" style="1350631552" position="4, 15, 178, 12"/>
+		<control id="1" class="BUTTON" caption="确定" style="1342242817" position="78, 34, 50, 14"/>
+		<control id="2" class="BUTTON" caption="取消" style="1342242816" position="132, 34, 50, 14"/>
+	</dialog>
+	<dialog id="9312" caption="每日提示" fontsize="9" fontface="宋体" style="-2134376248" position="0, 0, 279, 127">
+		<control id="1" class="BUTTON" caption="关闭(&amp;C)" style="1342242817" position="224, 108, 50, 14"/>
+		<control id="100" class="BUTTON" caption="启动时显示“日积月累”(&amp;S)" style="1342242819" position="6, 110, 140, 10"/>
+		<control id="101" class="BUTTON" caption="下一个提示(&amp;N)" style="1342242816" position="164, 108, 58, 14"/>
+		<control id="102" style="1073741832" position="0, 0, 279, 103"/>
+	</dialog>
+	<dialog id="9313" caption="自定义" fontsize="9" fontface="宋体" style="1321205832" position="0, 0, 147, 161">
+		<control id="100" caption="颜色(&amp;C):" position="2, 4, 43, 10"/>
+		<control id="101" style="1342242823" position="4, 15, 116, 86"/>
+		<control id="102" style="1342242823" position="126, 15, 17, 86"/>
+		<control id="104" caption="色调(&amp;H):" position="4, 108, 33, 8"/>
+		<control id="115" class="EDIT" style="1350639744" position="45, 106, 32, 13"/>
+		<control id="112" class="msctls_updown32" caption="Spin1" style="1342177318" position="67, 105, 10, 14"/>
+		<control id="105" caption="饱和度(&amp;S):" position="4, 125, 41, 8"/>
+		<control id="114" class="EDIT" style="1350639744" position="45, 122, 32, 13"/>
+		<control id="116" class="msctls_updown32" caption="Spin2" style="1342177318" position="67, 122, 10, 14"/>
+		<control id="106" caption="亮度(&amp;L):" position="4, 140, 33, 8"/>
+		<control id="113" class="EDIT" style="1350639744" position="45, 138, 32, 13"/>
+		<control id="117" class="msctls_updown32" caption="Spin3" style="1342177318" position="67, 137, 10, 14"/>
+		<control id="107" caption="红色(&amp;R):" position="81, 108, 30, 8"/>
+		<control id="110" class="EDIT" style="1350639744" position="111, 106, 32, 13"/>
+		<control id="119" class="msctls_updown32" caption="Spin1" style="1342177318" position="132, 105, 11, 14"/>
+		<control id="108" caption="绿色(&amp;G):" position="81, 125, 30, 8"/>
+		<control id="111" class="EDIT" style="1350639744" position="111, 122, 32, 13"/>
+		<control id="120" class="msctls_updown32" caption="Spin2" style="1342177318" position="132, 122, 11, 14"/>
+		<control id="109" caption="蓝色(&amp;B):" position="81, 140, 30, 8"/>
+		<control id="118" class="EDIT" style="1350639744" position="111, 138, 32, 13"/>
+		<control id="121" class="msctls_updown32" caption="Spin3" style="1342177318" position="132, 137, 11, 14"/>
+	</dialog>
+	<dialog id="9314" caption="常用" fontsize="9" fontface="宋体" style="1321205832" position="0, 0, 147, 161">
+		<control id="100" caption="颜色(&amp;C):" position="2, 4, 43, 10"/>
+		<control id="103" style="1342242823" position="0, 15, 147, 145"/>
+	</dialog>
+	<dialog id="9315" caption="重排窗口" fontsize="9" fontface="宋体" style="-1865678776" position="0, 0, 301, 164">
+		<control caption="选择窗口(&amp;W):" position="7, 7, 147, 8"/>
+		<control id="100" class="LISTBOX" style="1353779539" position="7, 17, 216, 140"/>
+		<control id="101" class="BUTTON" caption="激活(&amp;A)" style="1342242816" position="233, 7, 62, 14"/>
+		<control id="1" class="BUTTON" caption="确定(&amp;O)" style="1342242816" position="233, 24, 62, 14"/>
+		<control id="105" class="BUTTON" caption="保存(&amp;S)" style="1342242816" position="233, 41, 62, 14"/>
+		<control id="104" class="BUTTON" caption="关闭窗口(&amp;C)" style="1342242816" position="233, 58, 62, 14"/>
+		<control id="102" class="BUTTON" caption="层叠窗口(&amp;D)" style="1342242816" position="233, 75, 62, 14"/>
+		<control id="106" class="BUTTON" caption="水平平铺(&amp;H)" style="1342242816" position="233, 92, 62, 14"/>
+		<control id="107" class="BUTTON" caption="垂直平铺(&amp;V)" style="1342242816" position="233, 109, 62, 14"/>
+		<control id="103" class="BUTTON" caption="最小化(&amp;Z)" style="1342242816" position="233, 126, 62, 14"/>
+	</dialog>
+	<dialog id="9556" caption="报表页面设置" fontsize="9" fontface="宋体" style="-1865940788" position="32, 32, 283, 250">
+		<control id="1073" class="BUTTON" caption="纸张" style="1342308359" position="7, 80, 197, 51"/>
+		<control id="1089" caption="尺寸(&amp;Z):" position="11, 96, 40, 8"/>
+		<control id="1137" class="COMBOBOX" style="1344471299" position="55, 94, 141, 160"/>
+		<control id="1090" caption="源(&amp;S):" position="12, 113, 39, 8"/>
+		<control id="1138" class="COMBOBOX" style="1344471299" position="55, 111, 141, 160"/>
+		<control id="1072" class="BUTTON" caption="方向" style="1342308359" position="211, 80, 66, 51"/>
+		<control id="1056" class="BUTTON" caption="肖像(&amp;O)" style="1342373892" position="216, 93, 56, 12"/>
+		<control id="1057" class="BUTTON" caption="风景(&amp;A)" style="1342177284" position="216, 109, 58, 12"/>
+		<control id="1075" class="BUTTON" caption="页面边距" style="1342308359" position="8, 135, 196, 58"/>
+		<control id="1102" caption="左(&amp;L):" position="16, 151, 36, 8"/>
+		<control id="1155" class="EDIT" style="1350762496" position="55, 148, 32, 12"/>
+		<control id="1103" caption="右(&amp;R):" position="123, 150, 35, 8"/>
+		<control id="1157" class="EDIT" style="1350762496" position="162, 147, 32, 12"/>
+		<control id="1104" caption="上(&amp;T):" position="16, 171, 35, 8"/>
+		<control id="1156" class="EDIT" style="1350762496" position="55, 169, 32, 12"/>
+		<control id="1105" caption="下(&amp;B):" position="123, 171, 35, 8"/>
+		<control id="1158" class="EDIT" style="1350762496" position="162, 169, 32, 12"/>
+		<control class="BUTTON" caption="预览" style="1342177287" position="212, 135, 66, 58"/>
+		<control id="1081" style="1342308357" position="261, 150, 4, 38"/>
+		<control id="1080" style="1342308358" position="230, 147, 31, 40"/>
+		<control id="1082" style="1342308357" position="235, 187, 29, 2"/>
+		<control id="57670" class="BUTTON" caption="帮助(&amp;H)" style="1342242816" position="7, 230, 61, 14"/>
+		<control id="1026" class="BUTTON" caption="打印机(&amp;P)..." style="1342242816" position="8, 197, 60, 14"/>
+		<control id="1" class="BUTTON" caption="确定" style="1342373889" position="177, 230, 48, 14"/>
+		<control id="2" class="BUTTON" caption="取消" style="1342242816" position="229, 230, 48, 14"/>
+		<control class="BUTTON" caption="页眉/页脚" style="1342177287" position="7, 5, 270, 70"/>
+		<control caption="页眉(&amp;H)" position="12, 15, 190, 8"/>
+		<control caption="页脚(&amp;F)" position="11, 44, 190, 8"/>
+		<control id="100" class="EDIT" style="1350631552" position="12, 25, 248, 14"/>
+		<control id="102" class="BUTTON" style="1342242880" styleex="131072" position="260, 25, 13, 14"/>
+		<control id="101" class="EDIT" style="1350631552" position="12, 55, 248, 14"/>
+		<control id="103" class="BUTTON" style="1342242880" styleex="131072" position="260, 55, 13, 14"/>
+	</dialog>
+	<dialog id="9600" caption="快速访问(&amp;Q)" fontsize="9" fontface="宋体" style="1086324808" position="0, 0, 230, 150">
+		<control caption="从下列位置选择命令(&amp;C):" position="4, 5, 106, 8"/>
+		<control id="102" class="COMBOBOX" style="1344339971" position="4, 15, 91, 85"/>
+		<control id="100" class="LISTBOX" style="1352728851" position="4, 32, 91, 101"/>
+		<control id="104" class="BUTTON" caption="添加(&amp;A) &gt;&gt;" style="1342242816" position="99, 61, 31, 14"/>
+		<control id="105" class="BUTTON" caption="删除(&amp;R)" style="1342242816" position="99, 78, 31, 14"/>
+		<control id="101" class="LISTBOX" style="1352728851" position="134, 32, 91, 84"/>
+		<control id="106" class="BUTTON" caption="重置(&amp;S)" style="1342242816" position="134, 119, 52, 14"/>
+		<control id="103" class="BUTTON" caption="将快速访问工具栏置于功能区下方(&amp;P)" style="1342242819" position="4, 136, 221, 12"/>
+	</dialog>
+	<dialog id="9705" caption="编辑器" fontsize="9" fontface="宋体" style="1220542536" position="0, 0, 260, 180">
+		<control class="BUTTON" caption="窗口设置" style="1342177287" position="7, 7, 246, 76"/>
+		<control id="100" class="BUTTON" caption="垂直滚动条(&amp;V)" style="1342242819" position="15, 21, 105, 10"/>
+		<control id="101" class="BUTTON" caption="水平滚动条(&amp;H)" style="1342242819" position="15, 32, 105, 10"/>
+		<control id="102" class="BUTTON" caption="行号(&amp;N)" style="1342242819" position="15, 43, 105, 10"/>
+		<control id="103" class="BUTTON" caption="选择页面边距(&amp;M)" style="1342242819" position="15, 54, 105, 10"/>
+		<control id="114" class="BUTTON" caption="C&amp;ollapsible Nodes" style="1342242819" position="15, 65, 105, 10"/>
+		<control id="104" class="BUTTON" caption="自动缩进(&amp;A)" style="1342242819" position="130, 20, 115, 10"/>
+		<control id="113" class="BUTTON" caption="Virtual &amp;space" style="1342242819" position="130, 35, 115, 10"/>
+		<control id="105" class="BUTTON" caption="语法高亮(&amp;X)" style="1342242819" position="130, 50, 115, 10"/>
+		<control class="BUTTON" caption="制表符" style="1342177287" position="7, 88, 162, 43"/>
+		<control caption="制表符尺寸(&amp;T):" position="15, 103, 30, 8"/>
+		<control id="108" class="EDIT" style="1350631552" position="50, 100, 46, 14"/>
+		<control id="107" class="BUTTON" caption="插入空格(&amp;P)" style="1342373897" position="102, 102, 58, 10"/>
+		<control id="106" class="BUTTON" caption="保留制表符(&amp;K)" style="1342177289" position="102, 113, 51, 10"/>
+		<control id="109" class="BUTTON" caption="覆盖光标" style="1342308359" position="175, 88, 78, 43"/>
+		<control id="110" class="BUTTON" caption="细(&amp;I)" style="1342373897" position="181, 102, 31, 10"/>
+		<control id="111" class="BUTTON" caption="粗(&amp;C)" style="1342177289" position="181, 113, 36, 10"/>
+		<control class="BUTTON" caption="保存选项" style="1342177287" position="7, 135, 246, 37"/>
+		<control id="112" class="BUTTON" caption="自动重新载入外部编辑过的文件" style="1342242819" position="15, 151, 155, 10"/>
+	</dialog>
+	<dialog id="9706" caption="编辑器字体" fontsize="9" fontface="宋体" style="1220542536" position="0, 0, 260, 180">
+		<control id="100" caption="字体(&amp;F):" position="7, 7, 40, 9"/>
+		<control id="101" class="COMBOBOX" style="1344342337" position="7, 18, 119, 55"/>
+		<control id="102" caption="字形(&amp;Y):" position="134, 7, 45, 9"/>
+		<control id="103" class="COMBOBOX" style="1344342017" position="134, 18, 75, 55"/>
+		<control id="104" caption="大小(&amp;Z):" position="217, 7, 30, 9"/>
+		<control id="105" class="COMBOBOX" style="1344342017" position="217, 18, 36, 55"/>
+		<control caption="正常文字(&amp;T):" position="7, 68, 100, 8"/>
+		<control id="106" class="COMBOBOX" style="1344340515" position="7, 78, 103, 100"/>
+		<control id="107" class="BUTTON" caption="..." style="1342242816" position="113, 78, 13, 12"/>
+		<control caption="正常背景颜色(&amp;N):" position="7, 95, 100, 8"/>
+		<control id="108" class="COMBOBOX" style="1344340515" position="7, 105, 103, 100"/>
+		<control id="109" class="BUTTON" caption="..." style="1342242816" position="113, 105, 13, 12"/>
+		<control caption="选择文字(&amp;X):" position="7, 122, 100, 8"/>
+		<control id="110" class="COMBOBOX" style="1344340515" position="7, 132, 103, 100"/>
+		<control id="111" class="BUTTON" caption="..." style="1342242816" position="113, 132, 13, 12"/>
+		<control caption="选择背景颜色(&amp;S):" position="7, 149, 100, 8"/>
+		<control id="112" class="COMBOBOX" style="1344340515" position="7, 159, 103, 100"/>
+		<control id="113" class="BUTTON" caption="..." style="1342242816" position="113, 159, 13, 12"/>
+		<control id="114" caption="脚本(&amp;R):" position="135, 69, 100, 9"/>
+		<control id="115" class="COMBOBOX" style="1352728643" position="134, 78, 119, 115"/>
+		<control id="118" class="BUTTON" caption="样本 正常/选择:" style="1342308359" position="135, 128, 118, 44"/>
+		<control id="119" caption="AaBbCc" style="1342308865" styleex="512" position="143, 140, 49, 26"/>
+		<control id="120" caption="XxYyZz" style="1342308865" styleex="512" position="196, 140, 49, 26"/>
+	</dialog>
+	<dialog id="9707" caption="语法颜色" fontsize="9" fontface="宋体" style="1220542536" position="0, 0, 260, 180">
+		<control id="200" caption="文件类型(&amp;Y):" position="7, 7, 123, 9"/>
+		<control id="201" class="LISTBOX" style="1352728835" position="7, 17, 123, 64"/>
+		<control id="202" caption="属性(&amp;A):" position="7, 85, 123, 9"/>
+		<control id="203" class="LISTBOX" style="1352728835" position="7, 95, 123, 77"/>
+		<control caption="正常文字(&amp;T):" position="135, 7, 100, 8"/>
+		<control id="106" class="COMBOBOX" style="1344340515" position="135, 17, 100, 100"/>
+		<control id="107" class="BUTTON" caption="..." style="1342242816" position="238, 17, 13, 12"/>
+		<control caption="正常背景颜色(&amp;N):" position="135, 33, 100, 8"/>
+		<control id="108" class="COMBOBOX" style="1344340515" position="135, 43, 100, 100"/>
+		<control id="109" class="BUTTON" caption="..." style="1342242816" position="238, 43, 13, 12"/>
+		<control caption="选择文字(&amp;X):" position="135, 59, 100, 8"/>
+		<control id="110" class="COMBOBOX" style="1344340515" position="135, 69, 100, 100"/>
+		<control id="111" class="BUTTON" caption="..." style="1342242816" position="238, 69, 13, 12"/>
+		<control caption="选择背景颜色(&amp;S):" position="135, 85, 100, 8"/>
+		<control id="112" class="COMBOBOX" style="1344340515" position="135, 95, 100, 100"/>
+		<control id="113" class="BUTTON" caption="..." style="1342242816" position="238, 95, 13, 12"/>
+		<control id="204" class="BUTTON" caption="粗体(&amp;B)" style="1342242819" position="135, 114, 30, 10"/>
+		<control id="205" class="BUTTON" caption="斜体(&amp;I)" style="1342242819" position="170, 114, 31, 10"/>
+		<control id="117" class="BUTTON" caption="下划线(&amp;U)" style="1342242819" position="206, 114, 46, 10"/>
+		<control id="118" class="BUTTON" caption="样本 正常/选择:" style="1342308359" position="135, 128, 118, 44"/>
+		<control id="119" caption="AaBbCc" style="1342308865" styleex="512" position="143, 140, 49, 26"/>
+		<control id="120" caption="XxYyZz" style="1342308865" styleex="512" position="196, 140, 49, 26"/>
+	</dialog>
+	<dialog id="9708" caption="查找/替换" fontsize="9" fontface="宋体" style="-2134376248" position="0, 0, 271, 86">
+		<control caption="查找内容" style="1342177280" position="7, 9, 30, 8"/>
+		<control id="101" class="COMBOBOX" style="1344340034" position="61, 6, 143, 154"/>
+		<control caption="替换为" style="1342177280" position="7, 25, 44, 8"/>
+		<control id="100" class="COMBOBOX" style="1344340034" position="61, 23, 143, 135"/>
+		<control class="BUTTON" caption="选项" style="1342177287" position="7, 38, 113, 41"/>
+		<control id="105" class="BUTTON" caption="全字匹配" style="1342242819" position="13, 51, 89, 10"/>
+		<control id="104" class="BUTTON" caption="区分大小写" style="1342242819" position="13, 64, 53, 10"/>
+		<control class="BUTTON" caption="搜索方向" style="1342177287" position="126, 38, 80, 41"/>
+		<control id="103" class="BUTTON" caption="向上搜索" style="1342308361" position="134, 51, 50, 10"/>
+		<control id="102" class="BUTTON" caption="向下搜索" style="1342177289" position="134, 64, 59, 10"/>
+		<control id="106" class="BUTTON" caption="查找下一个(&amp;F)" style="1476460544" position="214, 7, 50, 14"/>
+		<control id="107" class="BUTTON" caption="替换(&amp;R)" style="1476460544" position="214, 23, 50, 14"/>
+		<control id="108" class="BUTTON" caption="全部替换(&amp;A)" style="1476460544" position="214, 39, 50, 14"/>
+		<control id="2" class="BUTTON" caption="关闭" style="1342242816" position="214, 65, 50, 14"/>
+	</dialog>
+	<dialog id="9709" caption="查找" fontsize="9" fontface="宋体" style="-2134376248" position="0, 0, 271, 82">
+		<control caption="查找内容" style="1342177280" position="7, 9, 34, 8"/>
+		<control id="101" class="COMBOBOX" style="1344340034" position="47, 6, 157, 153"/>
+		<control class="BUTTON" caption="选项" style="1342177287" position="7, 30, 113, 45"/>
+		<control id="105" class="BUTTON" caption="全字匹配" style="1342242819" position="13, 43, 100, 10"/>
+		<control id="104" class="BUTTON" caption="区分大小写" style="1342242819" position="13, 58, 100, 10"/>
+		<control class="BUTTON" caption="搜索方向" style="1342177287" position="126, 30, 80, 45"/>
+		<control id="103" class="BUTTON" caption="向上搜索" style="1342177289" position="134, 43, 65, 10"/>
+		<control id="102" class="BUTTON" caption="向下搜索" style="1342177289" position="134, 58, 65, 10"/>
+		<control id="106" class="BUTTON" caption="查找下一个(&amp;N)" style="1476460544" position="214, 7, 50, 14"/>
+		<control id="2" class="BUTTON" caption="关闭" style="1342242816" position="214, 26, 50, 14"/>
+	</dialog>
+	<dialog id="9710" caption="定位行号" fontsize="9" fontface="宋体" style="-2134376248" position="0, 0, 165, 55">
+		<control id="100" caption="行号(&amp;L):" position="5, 5, 155, 8"/>
+		<control id="101" class="EDIT" style="1350639744" position="5, 17, 155, 14"/>
+		<control id="102" class="BUTTON" caption="到(&amp;G)" style="1342242816" position="56, 36, 50, 14"/>
+		<control id="2" class="BUTTON" caption="取消" style="1342242816" position="110, 36, 50, 14"/>
+	</dialog>
+	<dialog id="9976" fontsize="9" fontface="宋体" style="1073741892" position="0, 0, 392, 16">
+		<control id="58116" class="BUTTON" caption="打印(&amp;P)..." style="1342275584" position="2, 2, 44, 12"/>
+		<control id="58114" class="BUTTON" caption="下一页(&amp;N)" style="1342275584" position="48, 2, 44, 12"/>
+		<control id="58115" class="BUTTON" caption="上一页(&amp;V)" style="1342275584" position="94, 2, 44, 12"/>
+		<control id="58113" class="BUTTON" style="1342275584" position="140, 2, 44, 12"/>
+		<control id="58117" class="BUTTON" caption="放大(&amp;I)" style="1342275584" position="186, 2, 44, 12"/>
+		<control id="58118" class="BUTTON" caption="缩小(&amp;O)" style="1342275584" position="232, 2, 44, 12"/>
+		<control id="58112" class="BUTTON" caption="关闭(&amp;C)" style="1342275584" position="278, 2, 44, 12"/>
+	</dialog>
+</resource>

@@ -1,0 +1,12 @@
+<Page xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+  <WrapPanel VerticalAlignment="Center" HorizontalAlignment="Center" TextElement.FontSize="20">
+    <TextBlock Cursor="Hand" Padding="8" Background="Green">Try to Reesize Window</TextBlock>
+    <TextBlock Cursor="Hand" Padding="8" Background="Black" Foreground="White">Text2</TextBlock>
+    <TextBlock Cursor="Hand" Padding="8" Background="Yellow">Text3</TextBlock>
+    <TextBlock Cursor="Hand" Padding="8" Background="Red">Text4</TextBlock>
+    <TextBlock Cursor="Hand" Padding="8" Background="Orange">Text5</TextBlock>
+    <TextBlock Cursor="Hand" Padding="8" Background="Blue">Try to Reesize Window</TextBlock>
+    <TextBlock Cursor="Hand" Padding="8" Background="Green">Text7</TextBlock>
+    <TextBlock Cursor="Hand" Padding="8" Background="gray">Text8</TextBlock>
+</WrapPanel>
+</Page>

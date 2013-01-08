@@ -1,0 +1,1200 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "Resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "Resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\RibbonSample.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxolecl.rc""       // OLE container resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CJSample.ico"
+IDR_RIBBONTYPE          ICON    DISCARDABLE     "res\\RibbonSampleDoc.ico"
+ID_GROUP_BUTTONPOPUP    ICON    DISCARDABLE     "res\\GroupPopup.ico"
+IDC_MESSAGEBAR_WARNING  ICON    DISCARDABLE     "res\\Warning.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDR_SMALLICONS          PNG     MOVEABLE PURE   "res\\SmallIcons.png"
+IDR_LARGEICONS          PNG     DISCARDABLE     "res\\LargeIcons.png"
+IDB_INSERTTAB           PNG     DISCARDABLE     "res\\InsertTab.png"
+IDR_LAYOUTTABSMALL      PNG     DISCARDABLE     "res\\LayoutTab.png"
+IDR_LAYOUTTABLARGE      PNG     DISCARDABLE     "res\\LayoutTabLarge.png"
+ID_GROUP_PARAGRAPH      PNG     DISCARDABLE     "res\\GroupParagraph.png"
+ID_GROUP_CLIPBOARD      PNG     DISCARDABLE     "res\\GroupClipboard.png"
+ID_GROUP_FONT           PNG     DISCARDABLE     "res\\GroupFont.png"
+ID_GROUP_FIND           PNG     DISCARDABLE     "res\\GroupFind.png"
+ID_GROUP_STYLES         PNG     DISCARDABLE     "res\\GroupStyles.png"
+IDB_BITMAPS_GROUPS      PNG     DISCARDABLE     "res\\GroupIcons.png"
+IDB_GEAR                PNG     DISCARDABLE     "res\\shiny-gear.png"
+ID_TAB_REFERENCES       PNG     DISCARDABLE     "res\\TabReferences.png"
+ID_TAB_VIEW             PNG     DISCARDABLE     "res\\TabView.png"
+IDB_GROUPOPTIONTOOLTIP  PNG     DISCARDABLE     "res\\GroupOptionToolTip.png"
+IDB_SYSTEMMENULARGE     PNG     DISCARDABLE     "res\\SystemMenuLarge.png"
+ID_GROUP_PAGEPARAGRAPH  PNG     DISCARDABLE     "res\\GroupPageParagraph.png"
+ID_TAB_PAGELAYOUT       PNG     DISCARDABLE     "res\\TabPageLayout.png"
+ID_GALLERY_SHAPES       PNG     DISCARDABLE     "res\\GalleryShapes.png"
+ID_GALLERY_STYLES       PNG     DISCARDABLE     "res\\GalleryStyles.png"
+ID_GALLERY_COLUMNS      PNG     DISCARDABLE     "res\\GalleryColumns.png"
+IDB_STATUSBAR_VIEWSWITCH PNG     DISCARDABLE     "res\\StatusBarViewSwitches.png"
+IDC_BUTTON_STYLEINSPECTOR PNG     DISCARDABLE     "res\\StylesStyleInspector.png"
+IDC_BUTTON_NEWSTYLE     PNG     DISCARDABLE     "res\\StylesPaneNewStyle.png"
+IDC_BUTTON_MANAGESTYLES PNG     DISCARDABLE     "res\\StylesManageStyles.png"
+ID_INDICATOR_MACRORECORDING PNG     DISCARDABLE     "res\\IndicatorMacroRecording.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_PICTURE      BITMAP  DISCARDABLE     "res\\BitmapPicture.bmp"
+IDB_BITMAP_GRAPHIC      BITMAP  DISCARDABLE     "res\\BitmapGraphic.bmp"
+IDB_BITMAP_CHART        BITMAP  DISCARDABLE     "res\\BitmapChart.bmp"
+IDB_BITMAP_TABLE        BITMAP  DISCARDABLE     "res\\BitmapTable.bmp"
+ID_GROUP_TABLEOFCONTENTS BITMAP  DISCARDABLE     "res\\GroupTableOfContents.bmp"
+ID_GROUP_FOOTNOTES      BITMAP  DISCARDABLE     "res\\GroupFootnotes.bmp"
+ID_GROUP_INDEX          BITMAP  DISCARDABLE     "res\\GroupIndex.bmp"
+ID_GROUP_CAPTIONS       BITMAP  DISCARDABLE     "res\\GroupCaptions.bmp"
+ID_GROUP_DOCUMENTVIEWS  BITMAP  DISCARDABLE     "res\\GroupDocumentViews.bmp"
+ID_GROUP_ZOOM           BITMAP  DISCARDABLE     "res\\GroupZoom.bmp"
+ID_GROUP_WINDOW         BITMAP  DISCARDABLE     "res\\GroupWindow.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RTF
+//
+
+FEEDBACK.RTF            RTF     DISCARDABLE     "res\\Feedback.rtf"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_SMALLICONS TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_APP_EXIT
+    BUTTON      ID_APP_OPTIONS
+END
+
+IDR_LARGEICONS TOOLBAR DISCARDABLE  32, 32
+BEGIN
+    BUTTON      ID_EDIT_PASTE
+    BUTTON      1
+    SEPARATOR
+    BUTTON      ID_PAGES_NEW
+    BUTTON      ID_PAGES_COVER
+    BUTTON      ID_PAGES_BREAK
+    SEPARATOR
+    BUTTON      ID_TABLE_NEW
+    SEPARATOR
+    BUTTON      ID_ILLUSTRATION_PICTURE
+    BUTTON      ID_ILLUSTRATION_GRAPHIC
+    BUTTON      ID_ILLUSTRATION_CHART
+    SEPARATOR
+    BUTTON      ID_INSERT_HEADER
+    BUTTON      ID_INSERT_FOOTER
+    BUTTON      ID_INSERT_PAGENUMBER
+    SEPARATOR
+    BUTTON      ID_TEXT_TEXTBOX
+    BUTTON      ID_TEXT_PARTS
+    BUTTON      ID_TEXT_WORDART
+    BUTTON      ID_TEXT_DROPCAP
+    SEPARATOR
+    BUTTON      ID_SYMBOL_EQUATIONS
+    BUTTON      ID_SYMBOL_SYMBOL
+    BUTTON      ID_GALLERY_SHAPES
+END
+
+IDR_LAYOUTTABSMALL TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_THEMES_COLORS
+    BUTTON      ID_THEMES_FONTS
+    BUTTON      ID_THEMES_EFFECTS
+    SEPARATOR
+    BUTTON      ID_PAGE_ORIENTATION
+    BUTTON      ID_PAGE_SIZE
+    BUTTON      ID_PAGE_COLUMNS
+    SEPARATOR
+    BUTTON      ID_PAGE_BREAKS
+    BUTTON      ID_PAGE_LINENUMBERS
+    BUTTON      ID_PAGE_HYPHENATATION
+    SEPARATOR
+    BUTTON      ID_PAGE_WATERMARK
+    BUTTON      ID_PAGE_COLOR
+    BUTTON      ID_PAGE_BORDERS
+    SEPARATOR
+    BUTTON      ID_ARRANGE_FRONT
+    BUTTON      ID_ARRANGE_BACK
+    BUTTON      ID_ARRANGE_ALIGN
+    SEPARATOR
+    BUTTON      ID_ARRANGE_GROUP
+    BUTTON      ID_ARRANGE_UNGROUP
+    BUTTON      ID_ARRANGE_ROTATE
+END
+
+IDR_LAYOUTTABLARGE TOOLBAR DISCARDABLE  32, 32
+BEGIN
+    BUTTON      ID_THEMES_THEMES
+    SEPARATOR
+    BUTTON      ID_PAGE_MARGINS
+    BUTTON      ID_PAGE_ORIENTATION
+    BUTTON      ID_PAGE_SIZE
+    BUTTON      ID_PAGE_COLUMNS
+    SEPARATOR
+    BUTTON      ID_PAGE_WATERMARK
+    BUTTON      ID_PAGE_COLOR
+    BUTTON      ID_PAGE_BORDERS
+    SEPARATOR
+    BUTTON      ID_ARRANGE_POSITION
+    BUTTON      ID_ARRANGE_TEXTWRAPPING
+END
+
+ID_GROUP_TABLEOFCONTENTS TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_CONTENTS_TABLE
+    BUTTON      ID_CONTENTS_ADDTEXT
+    BUTTON      ID_CONTENTS_UPDATE
+END
+
+ID_GROUP_FOOTNOTES TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_FOOTNOTES_INSERT
+    BUTTON      ID_FOOTNOTES_INSEREND
+    BUTTON      ID_FOOTNOTES_NEXT
+    BUTTON      ID_FOOTNOTES_SHOW
+END
+
+ID_GROUP_INDEX TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_INDEX_MARK
+    BUTTON      ID_INDEX_INSERT
+    BUTTON      ID_INDEX_UPDATE
+END
+
+ID_GROUP_CAPTIONS TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_CAPTIONS_INSERT
+    BUTTON      ID_CAPTIONS_FIGURES
+    BUTTON      ID_CAPTIONS_UPDATE
+    BUTTON      IOD_CAPTIONS_CROSSREFERENCE
+END
+
+ID_GROUP_DOCUMENTVIEWS TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_VIEW_PRINTLAYOUT
+    BUTTON      ID_VIEW_FULLSCREENREADING
+    BUTTON      ID_VIEW_WEBLAYOUT
+    BUTTON      ID_VIEW_OUTLINE
+    BUTTON      ID_VIEW_DRAFT
+END
+
+ID_GROUP_ZOOM TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_ZOOM_ZOOM
+    BUTTON      ID_ZOOM_ONEPAGE
+    BUTTON      ID_ZOOM_TWOPAGES
+    BUTTON      ID_ZOOM_PAGEWIDTH
+END
+
+ID_GROUP_WINDOW TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_WINDOW_NEW
+    BUTTON      ID_WINDOW_ARRANGE
+    BUTTON      ID_WINDOW_SPLIT
+    SEPARATOR
+    BUTTON      ID_WINDOW_SIDEBYSIDE
+    BUTTON      ID_WINDOW_SYNCHRONOUSSCROLLING
+    BUTTON      ID_WINDOW_RESET
+    SEPARATOR
+    BUTTON      ID_WINDOW_SWITCH
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print",                      ID_FILE_PRINT
+        MENUITEM "Pr&epare",                    ID_FILE_PREPARE
+        MENUITEM "Sen&d",                       ID_FILE_SEND
+        MENUITEM "P&ublish",                    ID_FILE_PREPARE
+        MENUITEM SEPARATOR
+        MENUITEM "Close",                       ID_APP_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Recent Documents",            ID_FILE_RECENTDOCUMENTS
+        , MENUBARBREAK
+        MENUITEM "Opt&ions",                    ID_APP_OPTIONS
+        MENUITEM "E&xit Sample",                ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Paste &Special...",           ID_EDIT_PASTE_SPECIAL
+        MENUITEM "Select A&ll\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Find...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM "F&ind Next\tF3",              ID_EDIT_REPEAT
+        MENUITEM "R&eplace\tCtrl+H",            ID_EDIT_REPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "Insert &New Object...",       ID_OLE_INSERT_NEW
+        MENUITEM "Lin&ks...",                   ID_OLE_EDIT_LINKS
+        MENUITEM "Object P&roperties\tAlt+Enter", ID_OLE_EDIT_PROPERTIES
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About RibbonSample...",      ID_APP_ABOUT
+    END
+END
+
+IDR_CNTR_INPLACE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+END
+
+ID_ILLUSTRATION_PICTURE MENU DISCARDABLE 
+BEGIN
+    POPUP "&Picture"
+    BEGIN
+        MENUITEM "&Picture...",                 ID_ILLUSTRATION_PICTURE
+        MENUITEM "&Clip Art...",                ID_ILLUSTRATION_CLIPART
+        MENUITEM "From &Scanner or Camera...",  ID_ILLUSTRATION_FROMCAMERA
+    END
+END
+
+ID_INSERT_PAGENUMBER MENU DISCARDABLE 
+BEGIN
+    POPUP "&Page Number"
+    BEGIN
+        MENUITEM "&Format Page Numbers",        ID_PAGENUMBER_FORMATPAGENUMBERS
+
+        MENUITEM "&Remove Page Numbers",        ID_PAGENUMBER_REMOVEPAGENUMBERS
+
+    END
+END
+
+ID_PAGES_NEW MENU DISCARDABLE 
+BEGIN
+    POPUP "&New Page"
+    BEGIN
+        MENUITEM "&Blank Page",                 ID_NEWPAGE_BLANKPAGE
+        MENUITEM "&Save Selection as New Page", ID_NEWPAGE_SELECTION
+    END
+END
+
+ID_PAGES_COVER MENU DISCARDABLE 
+BEGIN
+    POPUP "&Cover Page"
+    BEGIN
+        MENUITEM "&Remove Current Cover Page",  ID_COVERPAGE_REMOVECURRENTCOVERPAGE
+
+        MENUITEM "Save Selection as New Cover Page...", 
+                                                ID_COVERPAGE_SAVESELECTIONASNEWCOVERPAGE
+
+    END
+END
+
+ID_TABLE_NEW MENU DISCARDABLE 
+BEGIN
+    POPUP "&Table"
+    BEGIN
+        MENUITEM "&Insert Table...",            ID_TABLE_INSERTTABLE
+        MENUITEM "Dra&w Table",                 ID_TABLE_DRAWTABLE
+        MENUITEM "Con&vert Text to Table...",   ID_TABLE_CONVERTTEXTTOTABLE
+    END
+END
+
+ID_TEXT_TEXTBOX MENU DISCARDABLE 
+BEGIN
+    POPUP "&Text Box"
+    BEGIN
+        MENUITEM "&Draw Text Box",              ID_TEXTBOX_DRAWTEXTBOX
+        MENUITEM "&Save Selection as new Text Box", 
+                                                ID_TEXTBOX_SAVESELECTIONASNEWTEXTBOX
+
+    END
+END
+
+ID_TEXT_PARTS MENU DISCARDABLE 
+BEGIN
+    POPUP "&Document Parts"
+    BEGIN
+        MENUITEM "AutoText",                    ID_DOCUMENTPARTS_AUTOTEXT
+        MENUITEM "Property",                    ID_DOCUMENTPARTS_PROPERTY
+        MENUITEM "Field...",                    ID_DOCUMENTPARTS_FIELD
+        MENUITEM "Building Block Organizer",    ID_DOCUMENTPARTS_BUILDINGBLOCKORGANIZER
+
+    END
+END
+
+ID_SYMBOL_EQUATIONS MENU DISCARDABLE 
+BEGIN
+    POPUP "&Equations"
+    BEGIN
+        MENUITEM "&Math",                       ID_EQUATIONS_MATH
+    END
+END
+
+IDR_MENU_CONTEXT MENU DISCARDABLE 
+BEGIN
+    POPUP "Context"
+    BEGIN
+        MENUITEM "Cu&t",                        ID_EDIT_CUT
+        MENUITEM "&Copy",                       ID_EDIT_COPY
+        MENUITEM "&Paste",                      ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "&Font...",                    ID_CONTEXT_FONT
+        MENUITEM "&Paragraph...",               ID_PARA_PARAGRAPH
+        MENUITEM "Bullets",                     ID_INSERT_BULLET
+        MENUITEM SEPARATOR
+        POPUP "Options"
+        BEGIN
+            POPUP "Style"
+            BEGIN
+                MENUITEM "Blue",                        ID_OPTIONS_STYLEBLUE
+                MENUITEM "Black",                       ID_OPTIONS_STYLEBLACK
+
+                MENUITEM "Silver",                      ID_OPTIONS_STYLESILVER
+
+                MENUITEM "Aqua",                        ID_OPTIONS_STYLEAQUA
+            END
+            POPUP "Font"
+            BEGIN
+                MENUITEM "System Default",              ID_OPTIONS_FONT_SYSTEM
+
+                MENUITEM SEPARATOR
+                MENUITEM "Normal",                      ID_OPTIONS_FONT_NORMAL
+
+                MENUITEM "Large",                       ID_OPTIONS_FONT_LARGE
+
+                MENUITEM "Extra Large",                 ID_OPTIONS_FONT_EXTRALARGE
+
+                MENUITEM SEPARATOR
+                MENUITEM "Auto Resize Icons",           ID_OPTIONS_FONT_AUTORESIZEICONS
+
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "Right To Left",               ID_OPTIONS_RIGHTTOLEFT
+            MENUITEM "Animation",                   ID_OPTIONS_ANIMATION
+            MENUITEM "Frame Theme",                 ID_OPTIONS_FRAMETHEME
+        END
+    END
+END
+
+ID_APP_THEME MENU DISCARDABLE 
+BEGIN
+    POPUP "&Theme"
+    BEGIN
+        MENUITEM "Office 2003",                 ID_THEME_OFFICE2003
+        MENUITEM "Office 2007",                 ID_THEME_OFFICE2007
+    END
+END
+
+ID_STYLES_QUICKSTYLES MENU DISCARDABLE 
+BEGIN
+    POPUP "Quick Styles"
+    BEGIN
+        MENUITEM "Styles",                      ID_GALLERY_STYLES
+        MENUITEM "Save Style",                  ID_QUICKSTYLES_SAVESTYLE
+        MENUITEM "Apply Style",                 ID_QUICKSTYLES_APPLYSTYLE
+    END
+END
+
+ID_STYLES_CHANGE MENU DISCARDABLE 
+BEGIN
+    POPUP "Change Styles"
+    BEGIN
+        POPUP "Style Set"
+        BEGIN
+            MENUITEM "Style Set",                   ID_GALLERY_STYLESET
+            MENUITEM "Reset",                       ID_CHANGESTYLES_STYLESET_RESET
+
+        END
+        POPUP "Colors"
+        BEGIN
+            MENUITEM "Colors",                      ID_GALLERY_COLORS
+            MENUITEM "Create New Theme Colors...",  ID_CHANGESTYLES_COLORS_CREATENEWTHEMECOLORS
+
+        END
+        POPUP "Fonts"
+        BEGIN
+            MENUITEM "Fonts",                       ID_GALLERY_FONTS
+            MENUITEM "Create New Theme Fonts...",   ID_CHANGESTYLES_FONTS_CREATENEWFONT
+
+        END
+    END
+END
+
+ID_GALLERY_FONTTEXTCOLOR MENU DISCARDABLE 
+BEGIN
+    POPUP "Font Color"
+    BEGIN
+        MENUITEM "Automatic",                   ID_FORMAT_FONTCOLOR_AUTOMATIC
+
+        MENUITEM "Font Color",                  ID_GALLERY_FONTTEXTCOLOR
+        MENUITEM "More Colors...",              ID_FORMAT_FONTCOLOR_MORECOLORS
+
+    END
+END
+
+ID_GALLERY_FONTBACKCOLOR MENU DISCARDABLE 
+BEGIN
+    POPUP "Font Back Color"
+    BEGIN
+        MENUITEM "Font Back Color",             ID_GALLERY_FONTBACKCOLOR
+        MENUITEM "No Colors",                   ID_FORMAT_FONTCOLOR_NOHIGHLIGHT
+
+    END
+END
+
+ID_INSERT_SHAPES MENU DISCARDABLE 
+BEGIN
+    POPUP "Shapes"
+    BEGIN
+        MENUITEM "Shapes",                      ID_GALLERY_SHAPES
+        MENUITEM "New Drawing",                 ID_SHAPES_NEWDRAWING
+    END
+END
+
+IDR_MENU_OPTIONS MENU DISCARDABLE 
+BEGIN
+    POPUP "Options"
+    BEGIN
+        POPUP "Style"
+        BEGIN
+            MENUITEM "Blue",                        ID_OPTIONS_STYLEBLUE
+            MENUITEM "Black",                       ID_OPTIONS_STYLEBLACK
+            MENUITEM "Silver",                      ID_OPTIONS_STYLESILVER
+            MENUITEM "Aqua",                        ID_OPTIONS_STYLEAQUA
+        END
+        POPUP "Font"
+        BEGIN
+            MENUITEM "System Default",              ID_OPTIONS_FONT_SYSTEM
+            MENUITEM SEPARATOR
+            MENUITEM "Normal",                      ID_OPTIONS_FONT_NORMAL
+            MENUITEM "Large",                       ID_OPTIONS_FONT_LARGE
+            MENUITEM "Extra Large",                 ID_OPTIONS_FONT_EXTRALARGE
+
+            MENUITEM SEPARATOR
+            MENUITEM "Auto Resize Icons",           ID_OPTIONS_FONT_AUTORESIZEICONS
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Right To Left",               ID_OPTIONS_RIGHTTOLEFT
+        MENUITEM "Animation",                   ID_OPTIONS_ANIMATION
+        MENUITEM "Frame Theme",                 ID_OPTIONS_FRAMETHEME
+    END
+END
+
+ID_TEXT_HIGHLIGHTCOLOR MENU DISCARDABLE 
+BEGIN
+    POPUP "Back Color"
+    BEGIN
+        MENUITEM "Back Color",                  ID_GALLERY_FONTBACKCOLOR
+        MENUITEM "No Colors",                   ID_BACKCOLOR_NOCOLORS
+    END
+END
+
+IDR_MENU_PRINT MENU DISCARDABLE 
+BEGIN
+    POPUP "Print"
+    BEGIN
+        MENUITEM "&Print",                      ID_FILE_PRINT
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+    END
+END
+
+IDR_MENU_SEND MENU DISCARDABLE 
+BEGIN
+    POPUP "Send"
+    BEGIN
+        MENUITEM "E-Mail",                      ID_FILE_SEND_MAIL
+        MENUITEM "Intenet Fax",                 ID_FILE_SEND_INTERNETFAX
+    END
+END
+
+ID_TEXT_INSERTOBJECT MENU DISCARDABLE 
+BEGIN
+    POPUP "Object"
+    BEGIN
+        MENUITEM "Insert &New Object...",       ID_OLE_INSERT_NEW
+        MENUITEM "Lin&ks...",                   ID_OLE_EDIT_LINKS
+        MENUITEM "<<OLE VERBS GO HERE>>",       ID_OLE_VERB_FIRST
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_EDIT_REPLACE,        VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+    VK_F1,          ID_TOGGLE_GROUPS,       VIRTKEY, CONTROL, NOINVERT
+    VK_F3,          ID_EDIT_REPEAT,         VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_RETURN,      ID_OLE_EDIT_PROPERTIES, VIRTKEY, ALT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+IDR_CNTR_INPLACE ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 12,0,0,4
+ PRODUCTVERSION 12,0,0,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "RibbonSample MFC Application\0"
+            VALUE "FileVersion", "12, 0, 0, 4\0"
+            VALUE "InternalName", "RibbonSample\0"
+            VALUE "LegalCopyright", "(c)1998-2008 Codejock Software, All Rights Reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "RibbonSample.EXE\0"
+            VALUE "ProductName", "RibbonSample Application\0"
+            VALUE "ProductVersion", "12, 0, 0, 4\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PANE_STYLES DIALOG DISCARDABLE  0, 0, 186, 269
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LIST_STYLES,7,7,172,201,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Show Preview",IDC_CHECK_PREVIEW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,223,94,9
+    CONTROL         "Disable Linked Styles",IDC_CHECK_LINKEDSTYLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,233,94,9
+    PUSHBUTTON      "",IDC_BUTTON_NEWSTYLE,7,248,16,14
+    PUSHBUTTON      "",IDC_BUTTON_STYLEINSPECTOR,29,248,16,14
+    PUSHBUTTON      "",IDC_BUTTON_MANAGESTYLES,51,248,16,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PANE_STYLES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 262
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDP_FAILED_TO_CREATE    "Failed to create object.  Make sure the object is entered in the system registry."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Codejock Ribbon Sample\n\nRibbon\n\n\nRibbonSample.Document\nRibbon Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Codejock Ribbon Sample"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Select a printer, number of copies, and other printing options before printing\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Preview and make changes to pages before printing\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CHAR_BOLD            "Makes the selection bold (toggle).\nBold"
+    ID_CHAR_ITALIC          "Makes the selection italic (toggle)\nItalic"
+    ID_CHAR_UNDERLINE       "Formats the selection with a continuous underline (toggle)\nUnderline"
+    ID_EDIT_GOTO            "Navigate to a specific page, line, numer, footnote, comment, or other object\nGo To"
+    ID_EDIT_SELECT_OBJECTS  "\n&Select Objects"
+    ID_EDIT_SELECT          "\nSelect"
+    ID_EDIT_SELECT_MULTIPLE_OBJECTS "\nSelect Multiple Objects"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "\nNew Window"
+    ID_WINDOW_ARRANGE       "\nArrabge All"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_PASTE_LINK      "Insert Clipboard contents and a link to its source\nPaste Link"
+    ID_EDIT_PASTE_SPECIAL   "Insert Clipboard contents with options\nPaste &Special"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nStatus Bar"
+    ID_VIEW_MESSAGE_BAR     "Show or hide the message bar\nMessage Bar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OLE_INSERT_NEW       "Insert new embedded object\nNew Object"
+    ID_OLE_EDIT_LINKS       "Edit linked objects\nEdit Links"
+    ID_OLE_EDIT_CONVERT     "Convert object to different type\nConvert Object"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OLE_VERB_FIRST       "Activate embedded or linked object"
+    57873                   "Activate embedded or linked object"
+    57874                   "Activate embedded or linked object"
+    57875                   "Activate embedded or linked object"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PAGES_NEW            "Insert a fully-formatted page. You replace the sample text with you own content\nNew Page"
+    ID_GALLERY_FONTFACE     "Font Face"
+    ID_PAGES_BREAK          "Start a new page at the insertion point.\nPage Break"
+    ID_TABLE_NEW            "Insert or draw a table into the document.\nTable"
+    ID_ILLUSTRATION_PICTURE "Insert Picture from a file\nPicture"
+    ID_ILLUSTRATION_GRAPHIC "Insert a diagram to illustrate processes of relationships\nIGX Graphic"
+    ID_ILLUSTRATION_CHART   "Insert a chart to illustrate and compare data.\nChart"
+    ID_FILE_PRINT_LABEL     "\nPreview and print the document"
+    ID_INSERT_HEADER        "\nHeader"
+    ID_INSERT_FOOTER        "\nFooter"
+    ID_INSERT_PAGENUMBER    "\nPage Number"
+    ID_TEXT_TEXTBOX         "\nText Box"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TEXT_PARTS           "\nDocument Parts"
+    ID_TEXT_WORDART         "\nWordArt"
+    ID_TEXT_DROPCAP         "\nDrop Cap"
+    ID_SYMBOL_EQUATIONS     "\nEquations"
+    ID_SYMBOL_SYMBOL        "\nSymbol"
+    ID_PAGES_COVER          "Insert a fully-formatted cover page. You fill in the title, author, date, and other information.\nCover Page"
+    ID_GROUP_CLIPBOARD_OPTION "Show the Office clipboard Task Pane\nClipboard"
+    ID_INSERT_BOOKMARK      "\nBookmark"
+    ID_FONT_GROW            "\nGrow Font"
+    ID_FONT_SHRINK          "\nShrink Font"
+    ID_FONT_CLEAR           "\nClear Formatting"
+    ID_TEXT_CHANGECASE      "Change Case"
+    ID_INSERT_NUMBERING     "\nNumbering"
+    ID_INSERT_LIST          "\nMultilevel List"
+    ID_PARA_DECREASEINDENT  "\nDecrease Indent"
+    ID_PARA_INCREASEINDENT  "\nIncrease Indent"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INSERT_HYPERLINK     "Create a link to a Web page, a picture, an e-mail address, or a program.\nHyperlink"
+    ID_INSERT_CROSS_REFERENCE "\nCross-reference"
+    ID_TEXT_SIGNATURE       "\nSignature Line"
+    ID_TEXT_DATETIME        "\nDate && Time"
+    ID_TEXT_INSERTOBJECT    "\nInsert Object"
+    ID_GALLERY_FONTSIZE     "Font Size"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FORMAT_PAINTER       "Copy formatting from one place and apply it to another\nFormat Painter"
+    ID_TEXT_FONT            "\nFont"
+    ID_FONT_FACE            "\nFont Face"
+    ID_FONT_SIZE            "\nFont Size"
+    ID_CHAR_STRIKETHROUGH   "Draw a line through the middle of the selected text\nStrikethrough"
+    ID_TEXT_SUBSCRIPT       "Subscript"
+    ID_TEXT_SUPERSCRIPT     "\nSuperscript"
+    ID_TEXT_COLOR           "\nColor"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INSERT_BULLET        "Inserts a bullet on this line\nBullets"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PARA_LEFT            "Left-justifies paragraph\nAlign Left"
+    ID_PARA_CENTER          "Center-justifies paragraph\nCenter"
+    ID_PARA_RIGHT           "Right-justifies paragraph\nAlign Right"
+    ID_THEMES_COLORS        "\nColors"
+    ID_THEMES_FONTS         "\nFonts"
+    ID_THEMES_EFFECTS       "\nEffects"
+    ID_PAGE_ORIENTATION     "\nOrientation"
+    ID_PAGE_SIZE            "\nSize"
+    ID_PAGE_COLUMNS         "\nColumns"
+    ID_PAGE_BREAKS          "\nBreaks"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PAGE_LINENUMBERS     "\nLine Numbers"
+    ID_PAGE_HYPHENATATION   "\nHyphenation"
+    ID_PAGE_WATERMARK       "\nWatermark"
+    ID_PAGE_COLOR           "Page Color"
+    ID_PAGE_BORDERS         "Page Borders"
+    ID_ARRANGE_FRONT        "\nBring to Front"
+    ID_ARRANGE_BACK         "\nSend to Back"
+    ID_ARRANGE_ALIGN        "\nAlign"
+    ID_ARRANGE_GROUP        "\nGroup"
+    ID_ARRANGE_UNGROUP      "\nUngroup"
+    ID_ARRANGE_ROTATE       "\nRotate"
+    ID_THEMES_THEMES        "\nThemes"
+    ID_PAGE_MARGINS         "Margins"
+    ID_ARRANGE_POSITION     "\nPosition"
+    ID_ARRANGE_TEXTWRAPPING "\nText Wrapping"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PARA_SORT            "\nSort"
+    ID_PARA_JUSTIFY         "\nJustify"
+    ID_PARA_SHOWMARKS       "\nShow/Hide Marks"
+    ID_PARA_LINESPACING     "\nLine spacing"
+    ID_PARA_SHADING         "\nShading"
+    ID_BORDERS_NOBORDER     "\nNo Border"
+    ID_TEXT_HIGHLIGHTCOLOR  "\nHighlight Color"
+    ID_VIEW_RULER           "\n&Ruler"
+    ID_VIEW_GRIDLINES       "\n&Gridlines"
+    ID_VIEW_PROPERTIES      "\n&Properties"
+    ID_VIEW_DOCUMENTMAP     "\nDocument Map"
+    ID_VIEW_THUMBNAILS      "\nThumbnails"
+    ID_VIEW_ACTINBAR        "\nDocument Action Bar"
+    ID_THEMES_OFFICE        "Office"
+    ID_STYLES_CHANGE        "Changethe set of styles, colors, and fonts used in this document\nChange Styles"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_THEMES_BUILTIN       "Built-in"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GROUP_PAGEBACKGROUND "Page Background"
+    ID_GROUP_ARRANGE        "Arrange"
+    ID_GROUP_SHOWHIDE       "&Show/Hide"
+    ID_GROUP_PARAGRAPH      "\n&Paragraph"
+    ID_GROUP_CLIPBOARD      "\n&Clipboard"
+    ID_GROUP_FONT           "\nF&ont"
+    ID_GROUP_FIND           "\n&Editing"
+    ID_GROUP_STYLES         "&Styles"
+    ID_GROUP_SHAPES         "&Shapes"
+    ID_GROUP_FONT_OPTION    "Show the Font dialog box\nF&ont"
+    ID_GROUP_STYLES_OPTION  "Show the Styles window\nStyles"
+    ID_GROUP_PARAGRAPH_OPTION "Show the Paragraph dialog box\nParagraph"
+    ID_GROUP_PAGEPARAGRAPH  "Paragraph"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TAB_HOME             "&Home"
+    ID_TAB_INSERT           "I&nsert"
+    ID_TAB_PAGELAYOUT       "&Page Layout"
+    ID_TAB_ADDINS           "&Add-Ins"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TAB_TABLEDESIGN      "&Design"
+    ID_TAB_TABLELAYOUT      "&Layout"
+    ID_TAB_CHARTDESIGN      "&Design"
+    ID_TAB_CHARTFORMAT      "&Format"
+    ID_TAB_CHARTLAYOUT      "&Layout"
+    ID_TAB_CONTEXTCHART     "Chart Tools"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TAB_VIEW             "Vie&w"
+    ID_TAB_REFERENCES       "Reference&s"
+    ID_TAB_MAILINGS         "&Mailings"
+    ID_TAB_REVIEW           "&Review"
+    ID_TAB_PICTUREFORMAT    "Picture Format"
+    ID_MENU_FILE            "Click here to see everything you can do with your document\n&File"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GROUP_TABLEOFCONTENTS "&Table of Contents"
+    ID_GROUP_FOOTNOTES      "&Footnotes"
+    ID_GROUP_INDEX          "Index"
+    ID_GROUP_DOCUMENTVIEWS  "Document Views"
+    ID_GROUP_ZOOM           "Zoom"
+    ID_GROUP_CAPTIONS       "Captions"
+    ID_GROUP_WINDOW         "Window"
+    ID_GROUP_PAGES          "&Pages"
+    ID_GROUP_TABLE          "&Tables"
+    ID_GROUP_ILLUSTRATIONS  "&Illustrations"
+    ID_GROUP_HEADERFOOTERS  "&Header && Footer"
+    ID_GROUP_LINKS          "&Links"
+    ID_GROUP_TEXT           "&Text"
+    ID_GROUP_SYMBOLS        "&Symbols"
+    ID_GROUP_THEMES         "Themes"
+    ID_GROUP_PAGESETUP      "Page Setup"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CONTENTS_TABLE       "\nTable of Contents"
+    ID_CONTENTS_ADDTEXT     "\nAdd Text"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CONTENTS_UPDATE      "\nUpdate Table"
+    ID_FOOTNOTES_INSERT     "\nInsert Footnote"
+    ID_FOOTNOTES_INSEREND   "\n&Insert Endnote"
+    ID_FOOTNOTES_NEXT       "\nNext Footnote"
+    ID_FOOTNOTES_SHOW       "\nShow Notes"
+    ID_INDEX_MARK           "\nMark Entry"
+    ID_INDEX_INSERT         "\nInsert Index"
+    ID_INDEX_UPDATE         "\nUpdate Index"
+    ID_CAPTIONS_INSERT      "\nInsert Caption"
+    ID_CAPTIONS_FIGURES     "\nInsert Table of Figures"
+    ID_CAPTIONS_UPDATE      "\nUpdate Table"
+    IOD_CAPTIONS_CROSSREFERENCE "\nCross-reference"
+    ID_VIEW_PRINTLAYOUT     "\nPrint Layout"
+    ID_VIEW_WEBLAYOUT       "Web Layout"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_OUTLINE         "Outline"
+    ID_VIEW_DRAFT           "\nDraft"
+    ID_ZOOM_ZOOM            "\nZoom"
+    ID_ZOOM_ONEPAGE         "One Page"
+    ID_ZOOM_TWOPAGES        "Two Pages"
+    ID_ZOOM_PAGEWIDTH       "Page Width"
+    ID_WINDOW_SIDEBYSIDE    "View Side by Side"
+    ID_WINDOW_SYNCHRONOUSSCROLLING "\nSynchronous Scrolling"
+    ID_WINDOW_RESET         "\nReset Window Position"
+    ID_WINDOW_SWITCH        "Switch Windows"
+    ID_VIEW_FULLSCREENREADING "\nFull Screen Reading"
+    ID_FILE_SEND_INTERNETFAX 
+                            "Use an Internet fax service to fax the document.\nInternet Fax"
+    ID_APP_CLOSE            "Close the active document\nClose"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PARAGRAPH_INDENT     "Indent"
+    ID_PARAGRAPH_INDENTLEFT "Move in the left side of the paragraph\nIndent Left\nLeft:   "
+    ID_PARAGRAPH_INDENTRIGHT 
+                            "Move in the right side of the paragraph\nIndent Right\nRight:"
+    ID_PARAGRAPH_SPACING    "Spacing"
+    ID_PARAGRAPH_SPACINGBEFORE "Before:"
+    ID_PARAGRAPH_SPACINGAFTER "After:   "
+    ID_FILE_SEND_LABEL      "Send a copy of the document to other people"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GALLERY_SHAPES       "Insert ready-made shapes, such as rectangles and circles, arrows, lines, flowchart symbols, and callouts.\nShapes"
+    ID_GALLERY_STYLES       "\nQuick Styles"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SWITCH_PRINTLAYOUT   "Print Layout"
+    ID_SWITCH_FULLSCREENREADING "Full Screen Reading"
+    ID_SWITCH_WEBLAYOUT     "Web Layout"
+    ID_SWITCH_OUTLINE       "Outline"
+    ID_SWITCH_DRAFT         "Draft"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\RibbonSample.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#include "afxolecl.rc"       // OLE container resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

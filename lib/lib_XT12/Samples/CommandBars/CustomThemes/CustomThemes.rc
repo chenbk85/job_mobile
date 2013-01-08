@@ -1,0 +1,819 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "CommandBars/Resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""CommandBars/Resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CustomThemes.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+IDR_CUSTOMTYPE          ICON    DISCARDABLE     "res\\CustomThemesDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_LEFT                BITMAP  MOVEABLE PURE   "res\\toolbar1.bmp"
+IDR_COMBOBOX_BAR        BITMAP  MOVEABLE PURE   "res\\toolbar2.bmp"
+IDR_SWITCH              BITMAP  MOVEABLE PURE   "res\\toolbar3.bmp"
+IDR_CUSTOM              BITMAP  MOVEABLE PURE   "res\\bmp00002.bmp"
+IDR_TOOLBAR3            BITMAP  MOVEABLE PURE   "res\\bmp00003.bmp"
+IDR_EXPLORER_BAR        BITMAP  MOVEABLE PURE   "res\\explorer_bar.bmp"
+IDB_BACKGROUND          BITMAP  MOVEABLE PURE   "res\\normal.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR MOVEABLE PURE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_TOOLS_HEX
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    BUTTON      XTP_ID_CUSTOMIZE
+END
+
+IDR_LEFT TOOLBAR MOVEABLE PURE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT_EX
+    BUTTON      IDR_MENU_POPUP
+END
+
+IDR_COMBOBOX_BAR TOOLBAR MOVEABLE PURE  16, 15
+BEGIN
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_COMBO_DISABLED
+    BUTTON      ID_EDIT_FIND
+    BUTTON      ID_EDIT_CUT
+    SEPARATOR
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_EDIT_STATE
+    SEPARATOR
+    BUTTON      ID_COMBO_MASKED
+    SEPARATOR
+    BUTTON      ID_COMBO_OWNERDRAW
+    SEPARATOR
+    BUTTON      ID_COMBO_POPUP
+    BUTTON      ID_COMBO_DATE
+END
+
+IDR_SWITCH TOOLBAR MOVEABLE PURE  16, 15
+BEGIN
+    BUTTON      ID_THEME_DEFAULT
+    BUTTON      ID_THEME_OFFICE_XP
+    BUTTON      ID_THEME_OFFICE_2003
+    BUTTON      ID_THEME_VISUALSTUDIO2008
+    BUTTON      ID_THEME_WINDOWS_XP
+    SEPARATOR
+    BUTTON      ID_THEME_OFFICE2007
+    BUTTON      ID_THEME_RIBBON
+    BUTTON      ID_VIEW_OFFICE2007FRAME
+    SEPARATOR
+    BUTTON      ID_THEME_CUSTOM
+END
+
+IDR_CUSTOM TOOLBAR MOVEABLE PURE  16, 15
+BEGIN
+    BUTTON      ID_BUTTONLINE
+    BUTTON      ID_BUTTONSTYLE
+    BUTTON      ID_BUTTONARROW
+    BUTTON      ID_BUTTON_TEXT
+    BUTTON      ID_BUTTON_BACK
+END
+
+IDR_TOOLBAR3 TOOLBAR MOVEABLE PURE  16, 15
+BEGIN
+    BUTTON      ID_BUTTON32799
+    BUTTON      ID_BUTTON32800
+    BUTTON      ID_BUTTON32801
+    BUTTON      ID_BUTTON32802
+    BUTTON      ID_BUTTON32803
+    BUTTON      ID_BUTTON32804
+    BUTTON      ID_BUTTON32805
+    BUTTON      ID_BUTTON32806
+    BUTTON      ID_BUTTON32807
+    BUTTON      ID_BUTTON32808
+    BUTTON      ID_BUTTON32809
+    BUTTON      ID_BUTTON32810
+    BUTTON      ID_BUTTON32811
+    BUTTON      ID_BUTTON32812
+    BUTTON      ID_BUTTON32813
+    BUTTON      ID_BUTTON32814
+    BUTTON      ID_BUTTON32815
+    BUTTON      ID_BUTTON32816
+    BUTTON      ID_BUTTON32818
+END
+
+IDR_EXPLORER_BAR TOOLBAR MOVEABLE PURE  16, 16
+BEGIN
+    BUTTON      ID_BACK
+    BUTTON      ID_FORWARD
+    BUTTON      ID_UP
+    SEPARATOR
+    BUTTON      ID_VIEW_SEARCH
+    BUTTON      ID_VIEW_FOLDERS
+    BUTTON      ID_VIEW_HISTORY
+    SEPARATOR
+    BUTTON      ID_MOVETO
+    BUTTON      ID_COPYTO
+    BUTTON      ID_DELETE
+    BUTTON      ID_UNDO
+    SEPARATOR
+    BUTTON      ID_VIEWS
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CUSTOMTYPE MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        POPUP "&Open..."
+        BEGIN
+            MENUITEM "Recent Files",                ID_FILE_MRU_FILE1
+            , GRAYED
+        END
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        POPUP "Print"
+        BEGIN
+            MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+            MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+            MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        END
+        MENUITEM SEPARATOR
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "Toolbars"
+        BEGIN
+            MENUITEM "Toolbars",                    ID_VIEW_TOOLBAR
+            MENUITEM SEPARATOR
+            MENUITEM "&Customize...",               XTP_ID_CUSTOMIZE
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Message Bar",                ID_VIEW_MESSAGE_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Text Below Icons",            ID_VIEW_TEXTBELOWICONS
+        MENUITEM "Right To Left",               ID_VIEW_RIGHTTOLEFT
+    END
+    POPUP "Test"
+    BEGIN
+        POPUP "Test"
+        BEGIN
+            MENUITEM "AAA",                         132
+        END
+        POPUP "Scroll"
+        BEGIN
+            MENUITEM "Item1",                       ID_SCROLL_ITEM1
+            MENUITEM "Item2",                       ID_SCROLL_ITEM2
+            MENUITEM "Item3",                       ID_SCROLL_ITEM3
+            MENUITEM "Item4",                       ID_SCROLL_ITEM4
+            MENUITEM "Item5",                       ID_SCROLL_ITEM5
+            MENUITEM "Item6",                       ID_SCROLL_ITEM6
+            MENUITEM "Item7",                       ID_SCROLL_ITEM7
+            MENUITEM "Item8",                       ID_SCROLL_ITEM8
+            MENUITEM "Item9",                       ID_SCROLL_ITEM9
+            MENUITEM "Item10",                      ID_SCROLL_ITEM10
+            MENUITEM "Item11",                      ID_SCROLL_ITEM11
+            MENUITEM "Item12",                      ID_SCROLL_ITEM12
+            MENUITEM "Item13",                      ID_SCROLL_ITEM13
+            MENUITEM "Item14",                      ID_SCROLL_ITEM14
+            MENUITEM "Item15",                      ID_SCROLL_ITEM15
+            MENUITEM "Item16",                      ID_SCROLL_ITEM16
+            MENUITEM "Item17",                      ID_SCROLL_ITEM17
+            MENUITEM "Item18",                      ID_SCROLL_ITEM18
+            MENUITEM "Item19",                      ID_SCROLL_ITEM19
+            MENUITEM "Item20",                      ID_SCROLL_ITEM20
+            MENUITEM "Item21",                      ID_SCROLL_ITEM21
+            MENUITEM "Item22",                      ID_SCROLL_ITEM22
+            MENUITEM "Item23",                      ID_SCROLL_ITEM23
+            MENUITEM "Item24",                      ID_SCROLL_ITEM24
+            MENUITEM "Item25",                      ID_SCROLL_ITEM25
+            MENUITEM "Item26",                      ID_SCROLL_ITEM26
+            MENUITEM "Item27",                      ID_SCROLL_ITEM27
+            MENUITEM "Item28",                      ID_SCROLL_ITEM28
+            MENUITEM "Item29",                      ID_SCROLL_ITEM29
+            MENUITEM "Item30",                      ID_SCROLL_ITEM30
+            MENUITEM "Item31",                      300
+            MENUITEM "Item32",                      300
+            MENUITEM "Item33",                      300
+            MENUITEM "Item34",                      300
+            MENUITEM "Item35",                      300
+            MENUITEM "Item36",                      300
+            MENUITEM "Item37",                      300
+            MENUITEM "Item38",                      300
+            MENUITEM "Item39",                      300
+            MENUITEM "Item40",                      300
+            MENUITEM "Item41",                      300
+            MENUITEM "Item32",                      300
+            MENUITEM "Item33",                      300
+            MENUITEM "Item34",                      300
+            MENUITEM "Item45",                      300
+            MENUITEM "Item46",                      300
+            MENUITEM "Item47",                      300
+            MENUITEM "Item48",                      300
+            MENUITEM "Item49",                      300
+        END
+        POPUP "MultiColumn"
+        BEGIN
+            MENUITEM "Column 1",                    ID_MULTICOLUMN_COLUMN1
+            MENUITEM "Item1",                       ID_SCROLL_ITEM1
+            MENUITEM "Item2",                       ID_SCROLL_ITEM2
+            MENUITEM "Item3",                       ID_SCROLL_ITEM3
+            MENUITEM "Item4",                       ID_SCROLL_ITEM4
+            MENUITEM "Item5",                       ID_SCROLL_ITEM5
+            MENUITEM "Item6",                       ID_SCROLL_ITEM6
+            MENUITEM "Item7",                       ID_SCROLL_ITEM7
+            MENUITEM "Item8",                       ID_SCROLL_ITEM8
+            MENUITEM "Item9",                       ID_SCROLL_ITEM9
+            MENUITEM "Item10",                      ID_SCROLL_ITEM10
+            MENUITEM "Column 2",                    ID_MULTICOLUMN_COLUMN2
+            , MENUBARBREAK
+            MENUITEM "Item11",                      ID_SCROLL_ITEM11
+            MENUITEM "Item12",                      ID_SCROLL_ITEM12
+            MENUITEM "Item13",                      ID_SCROLL_ITEM13
+            MENUITEM "Item14",                      ID_SCROLL_ITEM14
+            MENUITEM "Item15",                      ID_SCROLL_ITEM15
+            MENUITEM "Item16",                      ID_SCROLL_ITEM16
+            MENUITEM "Ietm17",                      ID_SCROLL_ITEM17
+            MENUITEM "Item18",                      ID_SCROLL_ITEM18
+            MENUITEM "Item19",                      ID_SCROLL_ITEM19
+            MENUITEM "Item20",                      ID_SCROLL_ITEM20
+        END
+        MENUITEM "Find",                        ID_EDIT_FIND
+        MENUITEM "Indent",                      ID_PARA_INDENT
+        MENUITEM "Hex",                         ID_TOOLS_HEX
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 57648
+        MENUITEM "&Cascade",                    57650
+        MENUITEM "&Tile",                       57651
+        MENUITEM "&Arrange Icons",              57649
+        MENUITEM "Window List",                 35000
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Custom Themes Sample...", ID_APP_ABOUT
+    END
+END
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        POPUP "Print"
+        BEGIN
+            MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+            MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+            MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "Toolbars"
+        BEGIN
+            MENUITEM "Toolbars",                    ID_VIEW_TOOLBAR
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Hex",                         ID_TOOLS_HEX
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Custom Themes Sample...", ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Save",                        ID_FILE_SAVE
+        MENUITEM "Copy",                        ID_EDIT_COPY
+    END
+END
+
+24866 MENU DISCARDABLE 
+BEGIN
+    POPUP "Copy"
+    BEGIN
+        MENUITEM "Copy",                        ID_EDIT_COPY
+        MENUITEM "Paste",                       ID_EDIT_PASTE
+    END
+END
+
+24835 MENU DISCARDABLE 
+BEGIN
+    POPUP "Save"
+    BEGIN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+    END
+END
+
+ID_FILE_PRINT_EX MENU DISCARDABLE 
+BEGIN
+    POPUP "Print"
+    BEGIN
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+    END
+END
+
+IDR_MENU3 MENU DISCARDABLE 
+BEGIN
+    POPUP "Menu"
+    BEGIN
+        POPUP "Test"
+        BEGIN
+            POPUP "Test"
+            BEGIN
+                MENUITEM "AAA",                         132
+            END
+        END
+        MENUITEM "ColorPopup",                  174
+    END
+END
+
+ID_TOOLS_HEX MENU DISCARDABLE 
+BEGIN
+    POPUP "&Hex"
+    BEGIN
+        MENUITEM "Save",                        57603
+        MENUITEM "Copy",                        57634
+    END
+END
+
+IDR_MENU_SAVEAS MENU DISCARDABLE 
+BEGIN
+    POPUP "Save As"
+    BEGIN
+        MENUITEM "Save As XML",                 ID_SAVEAS_XML
+        MENUITEM "Save As Text",                ID_SAVEAS_TEXT
+        MENUITEM "Save As Binary",              ID_SAVEAS_BINARY
+    END
+END
+
+IDR_MENU_TASKPANEL MENU DISCARDABLE 
+BEGIN
+    POPUP "&Task Panel"
+    BEGIN
+        MENUITEM "&New Document",               ID_TASKPANEL_NEWDOCUMENT
+        MENUITEM "&Help",                       ID_TASKPANEL_HELP
+        MENUITEM "&Search",                     ID_TASKPANEL_SEARCH
+    END
+END
+
+ID_THEME_CUSTOM MENU DISCARDABLE 
+BEGIN
+    POPUP "&Custom Themes"
+    BEGIN
+        MENUITEM "Icy",                         ID_THEME_ICY
+        MENUITEM "Mac",                         ID_THEME_MAC
+        MENUITEM "Gray",                        ID_THEME_GRAY
+        MENUITEM "Gradient",                    ID_THEME_GRAD
+        MENUITEM "Bevel",                       ID_THEME_BEVEL
+        MENUITEM "Fancy",                       ID_THEME_FANCY
+        MENUITEM "ACD",                         ID_THEME_ACD
+    END
+END
+
+IDR_CONTEXT_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&Context Menu"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 12,0,0,4
+ PRODUCTVERSION 12,0,0,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "April 17, 2008\0"
+            VALUE "CompanyName", "Codejock Software\0"
+            VALUE "FileDescription", "CustomThemes MFC Application\0"
+            VALUE "FileVersion", "12, 0, 0, 4\0"
+            VALUE "InternalName", "CustomThemes\0"
+            VALUE "LegalCopyright", "(c)1998-2008 Codejock Software, All Rights Reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CustomThemes.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "CustomThemes Application\0"
+            VALUE "ProductVersion", "12, 0, 0, 4\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Codejock Custom Themes Sample"
+    IDR_CUSTOMTYPE          "\nCustom\nCustom\n\n\nCustomThemes.Document\nCustom Document"
+    ID_COLOR_SELECT         "Select"
+    ID_TEXT_AUTO            "Auto\nAuto"
+    ID_BACK_NONE            "Default Background\nNone"
+    ID_TEXT_MORE            "More Colors...\nMore Colors..."
+    ID_BACK_MORE            "More Colors...\nMore Colors..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Codejock Custom Themes Sample"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_THEME_DEFAULT        "Office 2000 Theme\n&Office 2000"
+    ID_THEME_OFFICE_XP      "Office XP Theme\n&Office XP"
+    ID_THEME_ICY            "Icy Theme\nIcy"
+    ID_THEME_MAC            "Mac Theme\nMac"
+    ID_THEME_GRAY           "Gray Theme\nGray"
+    ID_THEME_WINDOWS_XP     "System Theme\n&System"
+    ID_THEME_GRAD           "Gradient Theme\nGradient"
+    ID_THEME_BEVEL          "Bevel Theme\nBevel"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_THEME_OFFICE_2003    "Office 2003 Theme\nOffice 200&3"
+    ID_THEME_FANCY          "Fancy Theme\nFancy"
+    ID_THEME_OFFICE2007     "Office 2007 Theme\nOffice2007"
+    ID_THEME_VISUALSTUDIO2008 "Visual Studio 2008 Theme\nVisual Studio 2008"
+    ID_THEME_RIBBON         "Ribbon Theme\nRibbon"
+    ID_VIEW_OFFICE2007FRAME "Office2007 Frame"
+    ID_THEME_CUSTOM         "Custom Themes"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_COMBO_DISABLED       "Disabled\nDisabled"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_COMBO_MASKED         "Masked Combo box\nMasked"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_PRINT_EX        "Print the active document\nPrint"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MENU_POPUP          "Desctiption of Popup\nPopup"
+    ID_TOOLS_HEX            "Hex\nHex"
+    ID_EDIT_STATE           "State\nState"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_COMBO_OWNERDRAW      "Custom Draw Combo box\nCustomDraw"
+    ID_COMBO_POPUP          "Popup Combo\nPopup"
+    ID_SAVEAS_XML           "Save As XML"
+    ID_SAVEAS_TEXT          "Save As Text"
+    ID_SAVEAS_BINARY        "Save As Binary"
+    ID_BUTTONSTYLE          "Styles\nStyles"
+    ID_BUTTONARROW          "Arrow"
+    ID_BUTTONLINE           "Lines\nLines"
+    ID_BUTTON_TEXT          "Text Color\nText Color"
+    ID_BUTTON_BACK          "Background Color\nBackground Color"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BACK                 "Back\nBack"
+    ID_FORWARD              "Forward\nForward"
+    ID_UP                   "Up\nUp"
+    ID_VIEW_SEARCH          "Search\nSearch"
+    ID_VIEW_FOLDERS         "Folders\nFolders"
+    ID_VIEW_HISTORY         "History\nHistory"
+    ID_MOVETO               "MoveTo\nMoveTo"
+    ID_COPYTO               "Copy To\nCopy To"
+    ID_DELETE               "Delete\nDelete"
+    ID_UNDO                 "Undo\nUndo"
+    ID_VIEWS                "Views\nViews"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_COMBO_DATE           "Date Picker"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\CustomThemes.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

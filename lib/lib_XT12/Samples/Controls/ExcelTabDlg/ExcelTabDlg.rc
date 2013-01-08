@@ -1,0 +1,257 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ExcelTabDlg.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_EXCELTAB_DIALOG DIALOGEX 0, 0, 256, 110
+STYLE DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CLIPCHILDREN | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Codejock Excel Tab Sample"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,145,89,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,199,89,50,14
+    CONTROL         "",IDC_BORDER_TAB,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,7,7,242,75,WS_EX_STATICEDGE
+    PUSHBUTTON      "&Properties...",IDC_PROPERTIES,7,89,81,14
+END
+
+IDD_EXCELTAB_PROPERTIES DIALOGEX 0, 0, 258, 250
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CLIPCHILDREN | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Excel Tab Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Tab Item Properties: ",IDC_STATIC,7,7,244,141,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "Index:",IDC_STATIC,24,33,20,8
+    EDITTEXT        IDC_TAB_NUM,48,30,30,14,ES_AUTOHSCROLL
+    LTEXT           "Label:",IDC_STATIC,22,49,20,8
+    EDITTEXT        IDC_TEXT,48,46,186,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Insert Tab",IDC_ADD_TAB,48,66,60,14,WS_DISABLED
+    PUSHBUTTON      "&Modify Tab",IDC_MODIFY_TAB,111,66,60,14
+    PUSHBUTTON      "&Delete Tab",IDC_DELETE_TAB,174,66,60,14
+    LTEXT           "Text:",IDC_STATIC,25,102,17,8
+    PUSHBUTTON      "Text",IDC_CLR_TEXT,48,99,60,14
+    LTEXT           "Selected Text:",IDC_STATIC,124,102,47,8
+    PUSHBUTTON      "Selected Text",IDC_CLR_SELTEXT,174,99,60,14
+    LTEXT           "Back:",IDC_STATIC,21,118,20,8
+    PUSHBUTTON      "Back",IDC_CLR_BACK,48,115,60,14
+    LTEXT           "Selected Back:",IDC_STATIC,120,118,50,8
+    PUSHBUTTON      "Selected Back",IDC_CLR_SELBACK,174,115,60,14
+    GROUPBOX        "Tab Control: ",IDC_STATIC,7,153,244,69,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Show Navigation Arrows",IDC_FTS_XT_HASARROWS,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,48,170,93,10
+    CONTROL         "Show Home / End Arrows",IDC_FTS_XT_HASHOMEEND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,48,181,98,10
+    CONTROL         "Show Tabs at Bottom",IDC_FTS_XT_BOTTOM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,48,192,84,10
+    CONTROL         "Show Horizontal ScrollBar",IDC_FTS_XT_HSCROLL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,48,203,97,10
+    PUSHBUTTON      "Delete &All Tabs",IDC_DELETE_ALL,176,200,60,14
+    DEFPUSHBUTTON   "OK",IDOK,99,229,60,14
+END
+
+IDD_FORMVIEW DIALOGEX 0, 0, 150, 86
+STYLE WS_CHILD | WS_CLIPCHILDREN
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Favorite Season",IDC_GBOX_SEASON,7,7,136,71,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Spring",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,17,22,
+                    117,10
+    CONTROL         "Summer",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,17,34,
+                    117,10
+    CONTROL         "Autumn",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,17,46,
+                    117,10
+    CONTROL         "Winter",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,17,58,
+                    117,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 12,0,0,4
+ PRODUCTVERSION 12,0,0,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ExcelTabDlg MFC Application\0"
+            VALUE "FileVersion", "12, 0, 0, 4\0"
+            VALUE "InternalName", "ExcelTab\0"
+            VALUE "LegalCopyright", "(c)1998-2008 Codejock Software, All Rights Reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ExcelTabDlg.EXE\0"
+            VALUE "ProductName", "ExcelTabDlg Application\0"
+            VALUE "ProductVersion", "12, 0, 0, 4\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_EXCELTAB_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_EXCELTAB_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        VERTGUIDE, 48
+        VERTGUIDE, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Excel Tab Sample..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Codejock Excel Tab Sample"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ExcelTabDlg.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

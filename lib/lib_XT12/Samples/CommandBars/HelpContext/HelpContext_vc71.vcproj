@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="HelpContext"
+	Keyword="MFCProj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="Debug"
+			ConfigurationType="1"
+			UseOfMFC="2"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				AdditionalIncludeDirectories="&quot;$(IntDir)&quot;;../../../Source;../../AboutDlg"
+				PreprocessorDefinitions="WIN32;_WINDOWS;_DEBUG"
+				MinimalRebuild="TRUE"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				TreatWChar_tAsBuiltInType="TRUE"
+				UsePrecompiledHeader="3"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="TRUE"
+				DebugInformationFormat="4"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				OutputFile="../../../bin/vc71/HelpContext.exe"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="../../../lib/vc71"
+				GenerateDebugInformation="TRUE"
+				SubSystem="2"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="_DEBUG"
+				MkTypLibCompatible="FALSE"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_DEBUG"
+				Culture="1033"
+				AdditionalIncludeDirectories="&quot;$(IntDir)&quot;;../../../Source;../../AboutDlg"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="Release"
+			ConfigurationType="1"
+			UseOfMFC="2"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;$(IntDir)&quot;;../../../Source;../../AboutDlg"
+				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG"
+				MinimalRebuild="FALSE"
+				RuntimeLibrary="2"
+				TreatWChar_tAsBuiltInType="TRUE"
+				UsePrecompiledHeader="3"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="TRUE"
+				DebugInformationFormat="0"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				OutputFile="../../../bin/vc71/HelpContext.exe"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="../../../lib/vc71"
+				GenerateDebugInformation="TRUE"
+				SubSystem="2"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="NDEBUG"
+				MkTypLibCompatible="FALSE"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"
+				Culture="1033"
+				AdditionalIncludeDirectories="&quot;$(IntDir)&quot;;../../../Source;../../AboutDlg"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Unicode Debug|Win32"
+			OutputDirectory="Unicode Debug"
+			IntermediateDirectory="Unicode Debug"
+			ConfigurationType="1"
+			UseOfMFC="2"
+			CharacterSet="1">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				AdditionalIncludeDirectories="&quot;$(IntDir)&quot;;../../../Source;../../AboutDlg"
+				PreprocessorDefinitions="WIN32;_WINDOWS;_DEBUG"
+				MinimalRebuild="TRUE"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				TreatWChar_tAsBuiltInType="TRUE"
+				UsePrecompiledHeader="3"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="TRUE"
+				DebugInformationFormat="4"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				OutputFile="../../../bin/vc71/HelpContext.exe"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories="../../../lib/vc71"
+				GenerateDebugInformation="TRUE"
+				SubSystem="2"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="_DEBUG"
+				MkTypLibCompatible="FALSE"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_DEBUG"
+				Culture="1033"
+				AdditionalIncludeDirectories="&quot;$(IntDir)&quot;;../../../Source;../../AboutDlg"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Unicode Release|Win32"
+			OutputDirectory="Unicode Release"
+			IntermediateDirectory="Unicode Release"
+			ConfigurationType="1"
+			UseOfMFC="2"
+			CharacterSet="1">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;$(IntDir)&quot;;../../../Source;../../AboutDlg"
+				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG"
+				MinimalRebuild="FALSE"
+				RuntimeLibrary="2"
+				TreatWChar_tAsBuiltInType="TRUE"
+				UsePrecompiledHeader="3"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="TRUE"
+				DebugInformationFormat="0"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				OutputFile="../../../bin/vc71/HelpContext.exe"
+				LinkIncremental="1"
+				AdditionalLibraryDirectories="../../../lib/vc71"
+				GenerateDebugInformation="TRUE"
+				SubSystem="2"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="NDEBUG"
+				MkTypLibCompatible="FALSE"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"
+				Culture="1033"
+				AdditionalIncludeDirectories="&quot;$(IntDir)&quot;;../../../Source;../../AboutDlg"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm">
+			<File
+				RelativePath=".\ChildFrm.cpp">
+			</File>
+			<File
+				RelativePath=".\HelpContext.cpp">
+			</File>
+			<File
+				RelativePath=".\HelpContextDoc.cpp">
+			</File>
+			<File
+				RelativePath=".\HelpContextView.cpp">
+			</File>
+			<File
+				RelativePath=".\MainFrm.cpp">
+			</File>
+			<File
+				RelativePath=".\stdafx.cpp">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			<File
+				RelativePath=".\ChildFrm.h">
+			</File>
+			<File
+				RelativePath=".\HelpContext.h">
+			</File>
+			<File
+				RelativePath=".\HelpContextDoc.h">
+			</File>
+			<File
+				RelativePath=".\HelpContextView.h">
+			</File>
+			<File
+				RelativePath=".\MainFrm.h">
+			</File>
+			<File
+				RelativePath=".\Resource.h">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Generating map file for help compiler..."
+						CommandLine="echo // Generated Help Map file.  Used by HelpContext.HHP. &gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo. &gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo // Commands (ID_* and IDM_*) &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+makehm /h ID_,HID_,0x10000 IDM_,HIDM_,0x10000 &quot;$(InputFileName)&quot; &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo. &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo // Prompts (IDP_*) &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+makehm /h IDP_,HIDP_,0x30000 &quot;$(InputFileName)&quot; &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo. &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo // Resources (IDR_*) &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+makehm /h IDR_,HIDR_,0x20000 &quot;$(InputFileName)&quot; &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo. &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo // Dialogs (IDD_*) &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+makehm /h IDD_,HIDD_,0x20000 &quot;$(InputFileName)&quot; &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo. &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo // Frame Controls (IDW_*) &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+makehm /h /a afxhh.h IDW_,HIDW_,0x50000 &quot;$(InputFileName)&quot; &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+"
+						Outputs="HtmlHelp\HTMLDefines.h"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Generating map file for help compiler..."
+						CommandLine="echo // Generated Help Map file.  Used by HelpContext.HHP. &gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo. &gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo // Commands (ID_* and IDM_*) &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+makehm /h ID_,HID_,0x10000 IDM_,HIDM_,0x10000 &quot;$(InputFileName)&quot; &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo. &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo // Prompts (IDP_*) &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+makehm /h IDP_,HIDP_,0x30000 &quot;$(InputFileName)&quot; &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo. &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo // Resources (IDR_*) &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+makehm /h IDR_,HIDR_,0x20000 &quot;$(InputFileName)&quot; &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo. &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo // Dialogs (IDD_*) &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+makehm /h IDD_,HIDD_,0x20000 &quot;$(InputFileName)&quot; &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo. &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo // Frame Controls (IDW_*) &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+makehm /h /a afxhh.h IDW_,HIDW_,0x50000 &quot;$(InputFileName)&quot; &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+"
+						Outputs="HtmlHelp\HTMLDefines.h"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Generating map file for help compiler..."
+						CommandLine="echo // Generated Help Map file.  Used by HelpContext.HHP. &gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo. &gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo // Commands (ID_* and IDM_*) &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+makehm /h ID_,HID_,0x10000 IDM_,HIDM_,0x10000 &quot;$(InputFileName)&quot; &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo. &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo // Prompts (IDP_*) &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+makehm /h IDP_,HIDP_,0x30000 &quot;$(InputFileName)&quot; &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo. &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo // Resources (IDR_*) &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+makehm /h IDR_,HIDR_,0x20000 &quot;$(InputFileName)&quot; &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo. &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo // Dialogs (IDD_*) &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+makehm /h IDD_,HIDD_,0x20000 &quot;$(InputFileName)&quot; &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo. &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo // Frame Controls (IDW_*) &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+makehm /h /a afxhh.h IDW_,HIDW_,0x50000 &quot;$(InputFileName)&quot; &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+"
+						Outputs="HtmlHelp\HTMLDefines.h"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Generating map file for help compiler..."
+						CommandLine="echo // Generated Help Map file.  Used by HelpContext.HHP. &gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo. &gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo // Commands (ID_* and IDM_*) &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+makehm /h ID_,HID_,0x10000 IDM_,HIDM_,0x10000 &quot;$(InputFileName)&quot; &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo. &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo // Prompts (IDP_*) &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+makehm /h IDP_,HIDP_,0x30000 &quot;$(InputFileName)&quot; &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo. &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo // Resources (IDR_*) &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+makehm /h IDR_,HIDR_,0x20000 &quot;$(InputFileName)&quot; &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo. &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo // Dialogs (IDD_*) &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+makehm /h IDD_,HIDD_,0x20000 &quot;$(InputFileName)&quot; &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo. &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+echo // Frame Controls (IDW_*) &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+makehm /h /a afxhh.h IDW_,HIDW_,0x50000 &quot;$(InputFileName)&quot; &gt;&gt; &quot;HtmlHelp\HTMLDefines.h&quot;
+"
+						Outputs="HtmlHelp\HTMLDefines.h"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath=".\stdafx.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx"
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}">
+			<File
+				RelativePath=".\HtmlHelp\Images\Bullet.gif">
+			</File>
+			<File
+				RelativePath=".\res\HelpContext.ico">
+			</File>
+			<File
+				RelativePath=".\HelpContext.rc">
+			</File>
+			<File
+				RelativePath=".\res\HelpContext.rc2">
+			</File>
+			<File
+				RelativePath=".\res\HelpContextDoc.ico">
+			</File>
+			<File
+				RelativePath=".\res\Toolbar.bmp">
+			</File>
+		</Filter>
+		<Filter
+			Name="HTML Help Files"
+			Filter="hhp;hhc;hhk;gif;jpg">
+			<File
+				RelativePath=".\HtmlHelp\HelpContext.hhc">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\HelpContext.hhk">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\HelpContext.hhp">
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Making help file..."
+						CommandLine="start /wait hhc &quot;HtmlHelp\HelpContext.hhp&quot;
+if not exist &quot;HtmlHelp\HelpContext.chm&quot; goto :HelpError
+copy &quot;HtmlHelp\HelpContext.chm&quot; &quot;../../../bin/vc71/$(InputName).chm&quot;
+goto :HelpDone
+:HelpError
+echo HtmlHelp\HelpContext.hhp(1) : error:Problem encountered creating help file
+echo.
+:HelpDone
+echo.
+"
+						AdditionalDependencies="HtmlHelp\HTMLDefines.h"
+						Outputs="../../../bin/vc71/$(InputName).chm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Making help file..."
+						CommandLine="start /wait hhc &quot;HtmlHelp\HelpContext.hhp&quot;
+if not exist &quot;HtmlHelp\HelpContext.chm&quot; goto :HelpError
+copy &quot;HtmlHelp\HelpContext.chm&quot; &quot;../../../bin/vc71/$(InputName).chm&quot;
+goto :HelpDone
+:HelpError
+echo HtmlHelp\HelpContext.hhp(1) : error:Problem encountered creating help file
+echo.
+:HelpDone
+echo.
+"
+						AdditionalDependencies="HtmlHelp\HTMLDefines.h"
+						Outputs="../../../bin/vc71/$(InputName).chm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Making help file..."
+						CommandLine="start /wait hhc &quot;HtmlHelp\HelpContext.hhp&quot;
+if not exist &quot;HtmlHelp\HelpContext.chm&quot; goto :HelpError
+copy &quot;HtmlHelp\HelpContext.chm&quot; &quot;../../../bin/vc71/$(InputName).chm&quot;
+goto :HelpDone
+:HelpError
+echo HtmlHelp\HelpContext.hhp(1) : error:Problem encountered creating help file
+echo.
+:HelpDone
+echo.
+"
+						AdditionalDependencies="HtmlHelp\HTMLDefines.h"
+						Outputs="../../../bin/vc71/$(InputName).chm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Making help file..."
+						CommandLine="start /wait hhc &quot;HtmlHelp\HelpContext.hhp&quot;
+if not exist &quot;HtmlHelp\HelpContext.chm&quot; goto :HelpError
+copy &quot;HtmlHelp\HelpContext.chm&quot; &quot;../../../bin/vc71/$(InputName).chm&quot;
+goto :HelpDone
+:HelpError
+echo HtmlHelp\HelpContext.hhp(1) : error:Problem encountered creating help file
+echo.
+:HelpDone
+echo.
+"
+						AdditionalDependencies="HtmlHelp\HTMLDefines.h"
+						Outputs="../../../bin/vc71/$(InputName).chm"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="HTML Help Topics"
+			Filter="htm;html">
+			<File
+				RelativePath=".\HtmlHelp\afx_hidd_color.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\afx_hidd_fileopen.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\afx_hidd_filesave.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\afx_hidd_find.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\afx_hidd_font.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\afx_hidd_newtypedlg.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\afx_hidd_print.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\afx_hidd_printdlg.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\afx_hidd_printsetup.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\afx_hidd_replace.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\afx_hidp_default.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\afx_hidw_dockbar_top.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\afx_hidw_preview_bar.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\afx_hidw_status_bar.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\afx_hidw_toolbar.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_app_about.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_app_exit.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_context_help.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_edit_clear.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_edit_clear_all.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_edit_copy.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_edit_cut.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_edit_find.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_edit_paste.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_edit_redo.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_edit_repeat.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_edit_replace.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_edit_undo.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_file_close.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_file_mru_file1.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_file_new.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_file_open.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_file_page_setup.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_file_print.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_file_print_preview.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_file_print_setup.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_file_save.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_file_save_as.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_file_send_mail.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_help_index.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_help_using.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_ht_caption.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_ht_nowhere.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_next_pane.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_prev_pane.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_sc_close.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_sc_maximize.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_sc_minimize.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_sc_move.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_sc_nextwindow.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_sc_prevwindow.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_sc_restore.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_sc_size.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_sc_tasklist.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_view_ruler.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_view_status_bar.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_view_toolbar.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_window_all.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_window_arrange.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_window_cascade.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_window_new.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_window_split.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_window_tile.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_window_tile_horz.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hid_window_tile_vert.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\hidr_doc1type.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\main_index.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\menu_edit.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\menu_file.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\menu_help.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\menu_view.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\menu_window.htm"
+				DeploymentContent="TRUE">
+			</File>
+			<File
+				RelativePath=".\HtmlHelp\scrollbars.htm"
+				DeploymentContent="TRUE">
+			</File>
+		</Filter>
+	</Files>
+</VisualStudioProject>

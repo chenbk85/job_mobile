@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GUI_Eclipse", ".\GUI_Eclipse_vc90.vcproj", "{28671118-1551-4915-8364-612873562694}"
+EndProject

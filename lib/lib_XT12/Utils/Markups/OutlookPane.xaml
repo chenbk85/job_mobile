@@ -1,0 +1,76 @@
+<Page xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' >
+<Page.Resources>
+	<LinearGradientBrush x:Key="FolderBrush" StartPoint="0, 0" EndPoint="1,0">
+		<GradientStop Color="#d6e8ff" Offset="0"/>
+		<GradientStop Color="#e3efff" Offset="0.5"/>
+		<GradientStop Color="#d6e8ff" Offset="1"/>
+	</LinearGradientBrush>
+
+</Page.Resources>
+
+<Border VerticalAlignment='Center' HorizontalAlignment='Center' Padding="4">
+		<Border.Background>
+			<LinearGradientBrush StartPoint="0, 0" EndPoint="0,1">
+				<GradientStop Color="#bedafe" Offset="0"/>
+				<GradientStop Color="#6591cd" Offset="1"/>
+			</LinearGradientBrush>
+		</Border.Background>
+
+
+<Border BorderBrush='#6593cf' BorderThickness='1' VerticalAlignment='Center' HorizontalAlignment='Center'>
+
+	<StackPanel Background="White">
+		<Border Padding = '5, 1, 6, 1' BorderBrush='White' BorderThickness='1, 1, 0, 0'>
+			<Border.Background>
+				<LinearGradientBrush StartPoint="0, 0" EndPoint="0,1">
+					<GradientStop Color="#e3efff" Offset="0"/>
+					<GradientStop Color="#afd2ff" Offset="1"/>
+				</LinearGradientBrush>
+			</Border.Background>
+
+			<TextBlock FontFamily="Arial" FontSize="20" FontWeight='Bold' Foreground='#15428b'>Mail</TextBlock>
+		</Border>
+		<Rectangle Fill="#6593cf" Height="1"/>
+
+		<Border Padding = '5, 3, 6, 3' BorderBrush='White' BorderThickness='1, 1, 0, 0' Background="{StaticResource FolderBrush}">
+			<TextBlock FontWeight='Bold' Foreground='#15428b'>Favorite Folders</TextBlock>
+		</Border>
+		<Rectangle Fill="#add1ff" Height="1"/>
+		<Border Padding="20, 0, 40, 2">
+			<StackPanel Margin='3'>
+				<TextBlock HorizontalAlignment="Left" Cursor="Hand">Drafts</TextBlock>
+				<TextBlock HorizontalAlignment="Left"  Cursor="Hand">
+					<Bold>Inbox</Bold>
+					<Run Foreground='Blue'>(490)</Run>
+				</TextBlock>
+				<TextBlock HorizontalAlignment="Left" Cursor="Hand">Sent items</TextBlock>
+				<TextBlock HorizontalAlignment="Left" Cursor="Hand">
+					<Italic>Large Mail</Italic>
+				</TextBlock>
+				<TextBlock HorizontalAlignment="Left" Cursor="Hand"> 
+					<Bold>Junk E-mail</Bold>
+					<Run Foreground='Green'>[490]</Run>
+				</TextBlock>
+			</StackPanel>
+		</Border>
+
+		<Rectangle Fill="#6593cf" Height="1"/>
+
+		<Border Padding = '5, 3, 6, 3' BorderBrush='White' BorderThickness='1, 1, 0, 0' Background="{StaticResource FolderBrush}">
+			<TextBlock FontWeight='Bold' Foreground='#15428b'>Current View</TextBlock>
+		</Border>
+		<Rectangle Fill="#add1ff" Height="1"/>
+		<Border Padding="2, 0, 0, 2">
+			<StackPanel Margin='3'>
+				<RadioButton Margin="0, 1, 0, 1" IsChecked="True" Content=" Icons"/>
+				<RadioButton Margin="0, 1, 0, 1" Content=" Notes List"/>
+				<RadioButton Margin="0, 1, 0, 1" Content=" Last Seven Days"/>
+				<RadioButton Margin="0, 1, 0, 1" Content=" By Category"/>
+			</StackPanel>
+		</Border>
+
+	</StackPanel>
+</Border>
+</Border>
+</Page>
+

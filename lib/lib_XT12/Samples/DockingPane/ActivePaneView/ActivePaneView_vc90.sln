@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ActivePaneView", ".\ActivePaneView_vc90.vcproj", "{99779833-1347-4847-9769-848972377165}"
+EndProject

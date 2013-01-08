@@ -1,0 +1,171 @@
+<Page xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Border Grid.Row="0" BorderBrush="White" BorderThickness="0, 0, 0, 1">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 0">
+                    <GradientStop Offset="0" Color="#1b5d98"/>
+                    <GradientStop Offset="0.5" Color="#3383c2"/>
+                    <GradientStop Offset="1" Color="#1b5d98"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <StackPanel Margin="40, 15, 20, 7" TextBlock.FontFamily="Sergoe UI">
+                <TextBlock FontSize="12" Foreground="White"><Run>Microsoft</Run><Run FontSize="10" BaselineAlignment="Top">&#xae;</Run></TextBlock>
+                <TextBlock Margin ="0, -6, 0, 0"  FontSize="33" Foreground="White"><Run>Visual Studio</Run><Run FontSize="15" BaselineAlignment="Superscript">&#xae;</Run> <Run>Team System</Run> <Run FontSize="25">2008</Run></TextBlock>
+            </StackPanel>
+            
+        </Border>
+
+        <Border Grid.Row="1" BorderBrush="White" BorderThickness="0, 0, 0, 1">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0, 0" EndPoint="0, 1">
+                    <GradientStop Offset="0" Color="#699cd2"/>
+                    <GradientStop Offset="1" Color="#eaf3fd"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                   <ColumnDefinition Width="Auto"/>
+                   <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Width="250" Margin="15, 15, 15, 15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" MinHeight="140"/>
+                        <RowDefinition Height="*" MinHeight="120"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    
+                    <Border  Margin="0, 5, 0, 5" Background="White" BorderBrush="#16538c" BorderThickness="2">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Border Margin="4, -6, 4, 0" BorderThickness="2" BorderBrush="#16538c">
+                                <Border.Background>
+                                    <LinearGradientBrush StartPoint="0, 0" EndPoint="0, 1">
+                                        <GradientStop Offset="0" Color="#519bdd"/>
+                                        <GradientStop Offset="1" Color="#155094"/>
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                                <TextBlock Margin="4" Foreground="White" FontWeight="Bold">Recent Projects</TextBlock>
+                            </Border>
+                            
+                            <StackPanel  Grid.Row="1" Margin="10">
+                                <TextBlock TextWrapping="Wrap"><Run Cursor="Hand">1. WPP Application</Run></TextBlock>
+                                <TextBlock TextWrapping="Wrap"><Run Cursor="Hand">2. MFC Application</Run></TextBlock>
+                                <TextBlock TextWrapping="Wrap"><Run Cursor="Hand">3. Ribbon Sample</Run></TextBlock>
+                                <TextBlock TextWrapping="Wrap"><Run Cursor="Hand">4. Windows Forms Application</Run></TextBlock>
+                            </StackPanel>
+
+                            <Grid Grid.Row="2" Margin="10, 0, 10, 10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                
+                                <TextBlock Grid.Row="0">Open:</TextBlock>
+                                <TextBlock  Grid.Row="1">Create:</TextBlock>
+                                <TextBlock Grid.Row="0" Grid.Column="1" Foreground="#2f719c" Cursor="Hand">Project...</TextBlock>
+                                <TextBlock  Grid.Row="1" Grid.Column="1" Foreground="#2f719c" Cursor="Hand">Project...</TextBlock>
+                            </Grid>
+                            
+                        </Grid>
+                    </Border>
+
+                    <Border Grid.Row="1" Margin="0, 5, 0, 5" Background="White" BorderBrush="#16538c" BorderThickness="2">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Border Margin="4, -6, 4, 0" BorderThickness="2" BorderBrush="#16538c">
+                                <Border.Background>
+                                    <LinearGradientBrush StartPoint="0, 0" EndPoint="0, 1">
+                                        <GradientStop Offset="0" Color="#519bdd"/>
+                                        <GradientStop Offset="1" Color="#155094"/>
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                                <TextBlock Margin="4" Foreground="White" FontWeight="Bold">Getting Started</TextBlock>
+                            </Border>
+                            
+                            <StackPanel  Grid.Row="1" Margin="10">
+                                <TextBlock TextWrapping="Wrap"><Run Cursor="Hand" Foreground="#2f719c">What's new in Visual Studio 2008?</Run></TextBlock>
+                                <TextBlock TextWrapping="Wrap"><Run Cursor="Hand" Foreground="#2f719c">Samples and Walkthroughs</Run></TextBlock>
+                                <TextBlock TextWrapping="Wrap"><Run Cursor="Hand" Foreground="#2f719c">Use a Starter Kit</Run></TextBlock>
+                                <TextBlock TextWrapping="Wrap"><Run Cursor="Hand" Foreground="#2f719c">New Project From Existing Code...</Run></TextBlock>
+                                <TextBlock TextWrapping="Wrap"><Run Cursor="Hand" Foreground="#2f719c">How do I... ?</Run></TextBlock>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+
+                    <Border Grid.Row="2" Margin="0, 5, 0, 5" Background="White" BorderBrush="#16538c" BorderThickness="2">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Border Margin="4, -6, 4, 0" BorderThickness="2" BorderBrush="#16538c">
+                                <Border.Background>
+                                    <LinearGradientBrush StartPoint="0, 0" EndPoint="0, 1">
+                                        <GradientStop Offset="0" Color="#519bdd"/>
+                                        <GradientStop Offset="1" Color="#155094"/>
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                                <TextBlock Margin="4" Foreground="White" FontWeight="Bold">Visual Studio Headlines</TextBlock>
+                            </Border>
+                            
+                            <TextBlock Margin="10" Grid.Row="1" FontWeight="Bold" TextWrapping="Wrap"><Run Cursor="Hand" Foreground="#2f719c">Window Vista SP1 Release Candidate Now Available to MSDN Subscribers</Run></TextBlock>
+                        </Grid>
+                    </Border>
+                </Grid>
+
+                <Border Grid.Column="1" Margin="0, 20, 15, 20" Background="White" BorderBrush="#16538c" BorderThickness="2">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Border Margin="4, -6, 4, 0" BorderThickness="2" BorderBrush="#16538c">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0, 0" EndPoint="0, 1">
+                                    <GradientStop Offset="0" Color="#519bdd"/>
+                                    <GradientStop Offset="1" Color="#155094"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                            <TextBlock Margin="4" Foreground="White" FontWeight="Bold">Visual Studio Developer News</TextBlock>
+                        </Border>
+				<ScrollViewer Grid.Row="1" Margin="10">
+                        <StackPanel  >
+                            <TextBlock FontWeight="Bold" TextWrapping="Wrap"><Run Cursor="Hand" Foreground="#2f719c">Give Us Your Feedback on Visual Studio Documentation</Run></TextBlock>
+                            <TextBlock TextWrapping="Wrap">Wed, 17 Oct 2007 14:55:29 -0700 - Help us help you by taking 10 minutes to fill out our Visual Studio Content Survey on how to improve the Visual Studio documentation. We appreciate it!</TextBlock>
+
+                            <TextBlock Margin="0, 9, 0, 0" FontWeight="Bold" TextWrapping="Wrap"><Run Cursor="Hand" Foreground="#2f719c">Soma's Blog: Tell Us What You'd Like to See in Future Versions of Visual C++</Run></TextBlock>
+                            <TextBlock TextWrapping="Wrap">Thu, 30 Aug  2007 14:55 29 -0700 - Developer Division VP. S. Somasegar talks about what's coming up in future editions of Visual C++ and invites your input.</TextBlock>
+
+                            <TextBlock Margin="0, 9, 0, 0" FontWeight="Bold" TextWrapping="Wrap"><Run Cursor="Hand" Foreground="#2f719c">"Refactor! For Visual C++ 2005" Access Page</Run></TextBlock>
+                            <TextBlock TextWrapping="Wrap">Fri, 24 Aug 2007 00:54:02 +0000 - Refactor! for Visual C++ 2005 is a free plug-in from Developer Express Inc., in partnership with Microsoft, that enables Visual C++  developers to simplify and re-structure source code inside of Visual Studio 2005.</TextBlock>
+
+                            <TextBlock Margin="0, 9, 0, 0" FontWeight="Bold" TextWrapping="Wrap"><Run Cursor="Hand" Foreground="#2f719c">An Inside Look At The Next Generation Of Visual C++</Run></TextBlock>
+                            <TextBlock TextWrapping="Wrap">Sat, 2 Jun 2007 00:54 02 +0000 - Tarek Madkour shows C++ developers how to take full advantage of the new capabilities in Windows Vista with Visual Studio 2008.</TextBlock>
+
+                            <TextBlock Margin="0, 9, 0, 0" FontWeight="Bold" TextWrapping="Wrap"><Run Cursor="Hand" Foreground="#2f719c">Introduction to the Visual C++ Annotated Travel Log Starter Kit</Run></TextBlock>
+                            <TextBlock TextWrapping="Wrap">Fri,26 May 2006 00:56 45 +0000 - Thinking about a road trip this summer? The Visual C++ Annotated Travel Log Starter Kit is a travel planning and tracking application that comes ready to compile and run.</TextBlock>
+                        </StackPanel>
+				</ScrollViewer>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

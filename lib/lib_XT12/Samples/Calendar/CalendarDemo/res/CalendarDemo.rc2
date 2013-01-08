@@ -1,0 +1,17 @@
+//
+// CALENDARDEMO.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+#include "Common/XTPVersion.h"
+
+#include "CodejockSample.rc"
+
+
+#include "Styles\Office2007Blue\Office2007Blue.rc"
+//#include "Styles\Office2007Silver\Office2007Silver.rc"
+//#include "Styles\Office2007Black\Office2007Black.rc"
+

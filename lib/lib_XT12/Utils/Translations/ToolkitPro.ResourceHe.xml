@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="windows-1255"?>
+<resource CompactMode="1" Language="Hebrew" LANGID="1037">
+	<string id="9000" value="היום"/>
+	<string id="9001" value="ללא"/>
+	<string id="9011" value="אישור מחיקה\nמחק מופע זה\nמחק את כל הסידרה.\nהאם ברצונך למחוק את כל המופעים של הפעילות החוזרת &quot;%s&quot;, או רק את מופע זה?"/>
+	<string id="9012" value="‏‏פתיחת פריט חוזר\nפתח מופע זה\nפתח את הסידרה\n&quot;%s&quot; היא פעילות חוזרת. האם ברצונך לפתוח מופע זה בלבד או את כל הסידרה?"/>
+	<string id="9013" value="מאת"/>
+	<string id="9014" value="ל"/>
+	<string id="9015" value="פנוי"/>
+	<string id="9016" value="לא סופי"/>
+	<string id="9017" value="תפוס"/>
+	<string id="9018" value="מחוץ למשרד"/>
+	<string id="9019" value="ראשון"/>
+	<string id="9020" value="שניה"/>
+	<string id="9021" value="שלישי"/>
+	<string id="9022" value="רביעי"/>
+	<string id="9023" value="אחרון"/>
+	<string id="9024" value="0 דקות"/>
+	<string id="9025" value="דקה 1"/>
+	<string id="9026" value="5 דקות"/>
+	<string id="9027" value="10 דקות"/>
+	<string id="9028" value="15 דקות"/>
+	<string id="9029" value="30 דקות"/>
+	<string id="9030" value="1 שעה"/>
+	<string id="9031" value="2 שעות"/>
+	<string id="9032" value="3 שעות"/>
+	<string id="9033" value="4 שעות"/>
+	<string id="9034" value="5 שעות"/>
+	<string id="9035" value="6 שעות"/>
+	<string id="9036" value="7 שעות"/>
+	<string id="9037" value="8 שעות"/>
+	<string id="9038" value="9 שעות"/>
+	<string id="9039" value="10 שעות"/>
+	<string id="9040" value="11 שעות"/>
+	<string id="9041" value="18 שעות"/>
+	<string id="9042" value="0,5 ימים"/>
+	<string id="9043" value="1 יום"/>
+	<string id="9044" value="2 ימים"/>
+	<string id="9045" value="בעוד 3 ימים"/>
+	<string id="9046" value="בעוד שבוע"/>
+	<string id="9047" value="בעוד שבועיים"/>
+	<string id="9048" value="דקות"/>
+	<string id="9049" value="שעות"/>
+	<string id="9050" value="ימים"/>
+	<string id="9051" value="שבועות"/>
+	<string id="9052" value="דק"/>
+	<string id="9053" value="ר"/>
+	<string id="9054" value="ט"/>
+	<string id="9055" value="ש"/>
+	<string id="9056" value="‏‏ערך שגוי בבקשת"/>
+	<string id="9057" value="חריגים המשויכים אל פעילות חוזרת זו יאבדו. אם אחדים מהחריגים הם פגישות, לא תוצג הודעה מתאימה למשתתפים. האם ברצונך להמשיך?"/>
+	<string id="9058" value="שוליים (מילימטרים)‏"/>
+	<string id="9059" value="שוליים (אינצ'ים)‏"/>
+	<string id="9060" value="ללא"/>
+	<string id="9061" value="חשוב"/>
+	<string id="9062" value="עסקי"/>
+	<string id="9063" value="אישי"/>
+	<string id="9064" value="חופשה"/>
+	<string id="9065" value="חייב להשתתף"/>
+	<string id="9066" value="דרושה נסיעה"/>
+	<string id="9067" value="מחייב הכנות"/>
+	<string id="9068" value="יום הולדת"/>
+	<string id="9069" value="יום נשואין"/>
+	<string id="9070" value="שיחת טלפון"/>
+	<string id="9071" value="%d תזכורות"/>
+	<string id="9072" value="נושא"/>
+	<string id="9073" value="תאריך היעד יחול עוד"/>
+	<string id="9074" value="תאריך היעד חלף"/>
+	<string id="9075" value="0 תזכורות נבחרו"/>
+	<string id="9076" value="לא קיימות תזכורות שניתן להציג."/>
+	<string id="9077" value="מועד התחלה"/>
+	<string id="9078" value="‏‏נא הזן ערך בין %s ל- %s."/>
+	<string id="9079" value="Categories"/>
+	<string id="9086" value="Day"/>
+	<string id="9087" value="Week"/>
+	<string id="9088" value="Month"/>
+	<string id="9089" value="Show work week"/>
+	<string id="9090" value="Show full week"/>
+	<string id="9091" value="Click to add appointment"/>
+	<string id="9092" value="Previous Appointment"/>
+	<string id="9093" value="Next Appointment"/>
+	<string id="9094" value="Category"/>
+	<string id="9122" value="\nהוסף או הסר לחצנים"/>
+	<string id="9123" value="\nאיפוס"/>
+	<string id="9135" value="\nעיפרון"/>
+	<string id="9136" value="\nצבע מילוי"/>
+	<string id="9137" value="\nבחירת צבע"/>
+	<string id="9138" value="\nקו"/>
+	<string id="9139" value="\nמלבן"/>
+	<string id="9140" value="\nאליפסה"/>
+	<string id="9141" value="\nהעתק"/>
+	<string id="9142" value="\nהדבק"/>
+	<string id="9143" value="\nנקה"/>
+	<string id="9144" value="\nבטל"/>
+	<string id="9145" value="\nבצע שוב"/>
+	<string id="9146" value="\nייבוא מקובץ"/>
+	<string id="9148" value="\nאפשרויות סרגל כלים"/>
+	<string id="9149" value="\nסגור"/>
+	<string id="9150" value="\nExpand"/>
+	<string id="9151" value="\nסגור חלון"/>
+	<string id="9152" value="\nשחזר חלון"/>
+	<string id="9153" value="\nמזער חלון"/>
+	<string id="9155" value="\nלך אל לשונית קודמת"/>
+	<string id="9156" value="\nלך אל לשונית הבאה"/>
+	<string id="9157" value="\nלשונית אנכית חדשה"/>
+	<string id="9158" value="\nלשונית אופקית חדשה"/>
+	<string id="9159" value="ביטול"/>
+	<string id="9160" value="סגור "/>
+	<string id="9161" value="התאמה אישית"/>
+	<string id="9162" value="תפריט חדש"/>
+	<string id="9163" value="התאמה אישית %d"/>
+	<string id="9164" value="שם סרגל הכלים אינו יכול להיות ריק. הקלד שם."/>
+	<string id="9165" value="סליחה, הגעת אל הגבול שלך."/>
+	<string id="9166" value="סרגל כלים בשם '%s' כבר קיים. הקלד שם אחר."/>
+	<string id="9167" value="שינוי שם סרגל כלים"/>
+	<string id="9168" value="האם אתה בטוח שברצונך למחוק את סרגל הכלים '%s'?"/>
+	<string id="9169" value="כל הפקודות"/>
+	<string id="9170" value="פעולה זו תגרום למחיקת רשומת הפקודות בהן השתמשת ביישום זה ולשחזור קבוצת הפקודות הגלויות המשמשת כברירת מחדל בתפריטים ובסרגלי כלים. פעולה זו לא תבטל התאמות אישיות מפורשות. האם אתה בטוח שברצונך לבצע פעולה זו?"/>
+	<string id="9171" value="מספר זה אינו מספר חוקי."/>
+	<string id="9172" value="‏‏המספר חייב להיות בין 1 ל- 1638."/>
+	<string id="9173" value="האם אתה בטוח שברצונך לאפס את השינויים שבוצעו בסרגל הכלים '%s' סרגל כלים?"/>
+	<string id="9174" value="תפריטים מוכללים"/>
+	<string id="9175" value="האם אתה בטוח שברצונך לאפס את הקצאות המקשים? פעולה זו תסיר את כל הקצאות המקשים המותאמות אישית."/>
+	<string id="9176" value="קיצור דרך זה מוקצה.\nהאם ברצונך להקצות מחדש קיצור דרך זה?"/>
+	<string id="9177" value="בעיקבות עידכון התוכנה '%s' השתנה. האם ברצונך לאפס את השינויים ?"/>
+	<string id="9178" value="כל קבצי התמונה|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|Bitmaps(*.Bmp;*.Dib)|*.bmp;*.dib|Metafiles(*.Wmf;*.Emf)|*.wmf;*.emf|Icons(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|All Files(*.*)|*.*||"/>
+	<string id="9179" value="(ברירת מחדל של המערכת)"/>
+	<string id="9180" value="אקראי"/>
+	<string id="9181" value="חשיפה"/>
+	<string id="9182" value="גלישה"/>
+	<string id="9183" value="מעומעם"/>
+	<string id="9184" value="ללא"/>
+	<string id="9185" value="Active Files"/>
+	<string id="9186" value="Customize Status Bar"/>
+	<string id="9187" value="(%s) was pressed. Waiting for second key of chord..."/>
+	<string id="9194" value="Print the previewed item\nPrint"/>
+	<string id="9195" value="Go to the previous page\nPrevious Page"/>
+	<string id="9196" value="Go to the next page\nNext Page"/>
+	<string id="9197" value="Increase magnification of preview page\nZoom In"/>
+	<string id="9198" value="Decrease magnification of preview page\nZoom Out"/>
+	<string id="9201" value="Close the preview\nClose Preview"/>
+	<string id="9202" value="Whole Page"/>
+	<string id="9203" value="Page Width"/>
+	<string id="9204" value="Page %i"/>
+	<string id="9205" value="Page %i of %i"/>
+	<string id="9320" value="חדש"/>
+	<string id="9321" value="מחיקה"/>
+	<string id="9322" value="העבר למעלה"/>
+	<string id="9323" value="העבר למטה"/>
+	<string id="9325" value="מיין בסדר עולה\nמיין בסדר עולה"/>
+	<string id="9326" value="מיין בסדר יורד\nמיין בסדר יורד"/>
+	<string id="9327" value="יישור הפיסקה לשוליים השמאליים\nישר לשמאל"/>
+	<string id="9328" value="מרכוז הפיסקה בין השוליים\nמרכז"/>
+	<string id="9329" value="יישור הפיסקה לשוליים הימניים\nישר לימין"/>
+	<string id="9330" value="הצג סמלים גדולים\nסמלים גדולים"/>
+	<string id="9331" value="הצג סמלים קטנים\nסמלים קטנים"/>
+	<string id="9332" value="הסר מסרגל Outlook"/>
+	<string id="9333" value="שנה שם קיצור דרך"/>
+	<string id="9334" value="הסר קבוצה"/>
+	<string id="9335" value="שנה שם קבוצה"/>
+	<string id="9336" value="שם"/>
+	<string id="9337" value="גודל‏"/>
+	<string id="9338" value="סוג"/>
+	<string id="9339" value="שונה"/>
+	<string id="9340" value="אוטומטי"/>
+	<string id="9341" value="התאמה אישית..."/>
+	<string id="9342" value="בחירת ספריה:"/>
+	<string id="9343" value="..."/>
+	<string id="9344" value="*.*"/>
+	<string id="9345" value="כל הקבצים (*.*)|*.*||"/>
+	<string id="9346" value="שם הספריה:"/>
+	<string id="9347" value="‏‏לחץ על הסיכה כדי לשמור פתוח"/>
+	<string id="9348" value="הידעת..."/>
+	<string id="9349" value="‏‏הקובץ שצוין אינו קיים."/>
+	<string id="9350" value="שגיאה בקריאת קובץ."/>
+	<string id="9351" value="צבעים"/>
+	<string id="9352" value="חדש"/>
+	<string id="9353" value="נוכחי"/>
+	<string id="9354" value="ספריות:"/>
+	<string id="9355" value="קבצים:"/>
+	<string id="9356" value="הקסדצימאלית"/>
+	<string id="9357" value="‏‏למערכת ההפעלה אין זכרון או משאבים פנויים."/>
+	<string id="9358" value="‏‏‏‏הקובץ המצורף שצוין לא נמצא."/>
+	<string id="9359" value="‏‏הנתיב המצורף שצוין לא נמצא."/>
+	<string id="9360" value="מערכת ההפעלה מנעה גישה לקובץ המצויין."/>
+	<string id="9361" value="‏‏לא היה די זיכרון להשלמת הפעולה."/>
+	<string id="9362" value="קובץ ‎.exe אינו חוקי (קובץ ‎.exe לא תואם Win32®  או שגיאה ב- ‎.exe image)."/>
+	<string id="9363" value="‏‏אירעה הפרת שיתוף."/>
+	<string id="9364" value="שיוך שם קובץ חסר או לא חוקי."/>
+	<string id="9365" value="‏‏אין אפשרות להשלים את פעולת DDE מאחר ‏‏ופרק הזמן שהוקצב לבקשה הסתיים."/>
+	<string id="9366" value="‏‏פעולת DDE נכשלה."/>
+	<string id="9367" value="‏‏אין אפשרות להשלים את פעולת DDE מאחר ופעולות DDE אחרות בתהליך עיבוד כעת."/>
+	<string id="9368" value="‏‏לא קיים יישום המשויך לסיומת שם הקובץ הנתון."/>
+	<string id="9369" value="‏‏‏‏‏‏ספריית הקישור הדינאמית שצוינה לא נמצאה."/>
+	<string id="9370" value="‏‏שגיאה לא ידועה אירעה בעת נסיון פתיחת %d.'."/>
+	<string id="9424" value="צבעים רגילים"/>
+	<string id="9425" value="טקסט עצה"/>
+	<string id="9432" value="אישור"/>
+	<string id="9433" value="כן"/>
+	<string id="9434" value="לא"/>
+	<string id="9435" value="נסה שנית"/>
+	<string id="9436" value="ביטול"/>
+	<string id="9437" value="סגור"/>
+	<string id="9438" value="הצג פרטים"/>
+	<string id="9439" value="הסתר פרטים"/>
+	<string id="9440" value="&amp;Apply"/>
+	<string id="9441" value="Help"/>
+	<string id="9456" value="הסתר אוטומטית"/>
+	<string id="9457" value="סגור"/>
+	<string id="9458" value="הגדל"/>
+	<string id="9459" value="שחזר"/>
+	<string id="9460" value="תפריט"/>
+	<string id="9461" value="Active Tool Windows"/>
+	<string id="9462" value="Active Files"/>
+	<string id="9501" value="בקטגוריה"/>
+	<string id="9502" value="באָלֶפְבֵּית"/>
+	<string id="9503" value="אמת\nשקר"/>
+	<string id="9552" value=".גרור כותרת עמודה לכאן כדי לקבץ לפי עמודה זו"/>
+	<string id="9553" value=".‏‏אין פריטים להצגה בתצוגה זו"/>
+	<string id="9554" value="(אין שדות זמינים)"/>
+	<string id="9555" value="מיון לפי:"/>
+	<string id="9557" value="שוליים (מילימטרים)‏"/>
+	<string id="9558" value="שוליים (אינצ'ים)‏"/>
+	<string id="9559" value="Enter filter text here"/>
+	<string id="9603" value="\nCustomize Quick Access Toolbar"/>
+	<string id="9611" value="\nMore controls"/>
+	<string id="9615" value="Are you sure you want to restore the Quick Access Toolbar to its default contents?"/>
+	<string id="9651" value="הצג לחצנים נוספים"/>
+	<string id="9652" value="הצג פחות לחצנים"/>
+	<string id="9653" value="הגדרת לחצנים"/>
+	<string id="9711" value="Edit Options"/>
+	<string id="9714" value="Undefined command"/>
+	<string id="9715" value="Multiple operations"/>
+	<string id="9716" value="Delete: "/>
+	<string id="9717" value="Insert: "/>
+	<string id="9718" value="Typing"/>
+	<string id="9719" value="Paste"/>
+	<string id="9720" value="Move"/>
+	<string id="9721" value="Copy"/>
+	<string id="9722" value="Indentation"/>
+	<string id="9723" value="Decrease Indent"/>
+	<string id="9724" value="Format"/>
+	<string id="9725" value="Tabify"/>
+	<string id="9726" value="Untabify"/>
+	<string id="9727" value="Replace all"/>
+	<string id="9728" value="Change selection case"/>
+	<string id="9729" value="Delete text block"/>
+	<string id="9730" value="&amp;Move Here"/>
+	<string id="9731" value="&amp;Copy Here"/>
+	<string id="9732" value="C&amp;ancel"/>
+	<string id="9740" value="Custom"/>
+	<string id="9741" value="Regular"/>
+	<string id="9742" value="Bold"/>
+	<string id="9743" value="Italic"/>
+	<string id="9744" value="Bold Italic"/>
+	<string id="9746" value="&amp;Line number (1 - %d):"/>
+	<string id="9747" value="Open Schema File"/>
+	<string id="9748" value="Do you wish to close the &quot;Options Dialog&quot; and open the schema file &quot;%s%s&quot; in the editor window?"/>
+	<string id="9749" value="File '%s' is modified by outside source!\nDo you want to reload?"/>
+	<string id="9750" value="%d match found and replaced!"/>
+	<string id="9751" value="Finished searching!"/>
+	<string id="9800" value="גלול שמאלה"/>
+	<string id="9801" value="גלול ימינה"/>
+	<string id="9802" value="סגור"/>
+	<string id="9803" value="Scroll Up"/>
+	<string id="9804" value="Scroll Down"/>
+	<string id="9900" value="שחור"/>
+	<string id="9901" value="חום"/>
+	<string id="9902" value="ירוק-זית"/>
+	<string id="9903" value="ירוק כהה"/>
+	<string id="9904" value="כחול-ירקרק כהה"/>
+	<string id="9905" value="כחול כהה"/>
+	<string id="9906" value="כחול-אינדיגו"/>
+	<string id="9907" value="אפור-80%"/>
+	<string id="9908" value="אדום כהה"/>
+	<string id="9909" value="כתום"/>
+	<string id="9910" value="צהוב כהה"/>
+	<string id="9911" value="ירוק"/>
+	<string id="9912" value="כחול-ירקרק"/>
+	<string id="9913" value="כחול"/>
+	<string id="9914" value="כחול-אפור"/>
+	<string id="9915" value="אפור-50%"/>
+	<string id="9916" value="אדום"/>
+	<string id="9917" value="כתום בהיר"/>
+	<string id="9918" value="ירוק-לימון"/>
+	<string id="9919" value="ירוק-ים"/>
+	<string id="9920" value="תכלת"/>
+	<string id="9921" value="כחול בהיר"/>
+	<string id="9922" value="סיגלית"/>
+	<string id="9923" value="אפור-40%"/>
+	<string id="9924" value="ורוד"/>
+	<string id="9925" value="זהב"/>
+	<string id="9926" value="צהוב"/>
+	<string id="9927" value="ירוק מבריק"/>
+	<string id="9928" value="טורקיז"/>
+	<string id="9929" value="כחול-שמים"/>
+	<string id="9930" value="סגול-שזיף"/>
+	<string id="9931" value="אפור-‎25%‎"/>
+	<string id="9932" value="שושנה"/>
+	<string id="9933" value="חום-צהבהב"/>
+	<string id="9934" value="צהוב בהיר"/>
+	<string id="9935" value="ירוק בהיר"/>
+	<string id="9936" value="טורקיז בהיר"/>
+	<string id="9937" value="כחול חיוור"/>
+	<string id="9938" value="סגול-לבנדר"/>
+	<string id="9939" value="לבן"/>
+	<string id="9940" value="אפור"/>
+	<string id="9941" value="חום-ערמוני"/>
+	<string id="9942" value="ירוק-זית"/>
+	<string id="9943" value="כחול-צי"/>
+	<string id="9944" value="סגול"/>
+	<string id="9945" value="כסף"/>
+	<string id="9946" value="ורוד-פוקסיה"/>
+	<string id="9947" value="ללא מילוי\nללא מילוי"/>
+	<string id="9948" value="צבע אוטומטי\nצבע אוטומטי"/>
+	<string id="9949" value="צבעים נוספים...‏"/>
+	<string id="9974" value="עמוד אחד"/>
+	<string id="9975" value="שני עמודים"/>
+	<string id="35001" value="\nהתאמה אישית..."/>
+	<string id="35200" value="ערבית (ערב הסעודית)"/>
+	<string id="35202" value="סינית (סין)"/>
+	<string id="35203" value="סינית (טיוואן)"/>
+	<string id="35204" value="קרואטית"/>
+	<string id="35205" value="צ'כית"/>
+	<string id="35206" value="דנית"/>
+	<string id="35207" value="הולנדית"/>
+	<string id="35208" value="אנגלית (ארצות הברית)"/>
+	<string id="35209" value="אסטונית"/>
+	<string id="35210" value="פינית"/>
+	<string id="35211" value="צרפתית (צרפת)‏‏"/>
+	<string id="35212" value="גרמנית (גרמניה)‏‏"/>
+	<string id="35213" value="יוונית"/>
+	<string id="35214" value="עברית"/>
+	<string id="35215" value="הונגרית"/>
+	<string id="35216" value="איטלקית (איטליה)‏‏"/>
+	<string id="35217" value="יפנית"/>
+	<string id="35218" value="קוריאנית"/>
+	<string id="35219" value="לטבית"/>
+	<string id="35220" value="ליטאית"/>
+	<string id="35221" value="נורווגית (Bokmal)"/>
+	<string id="35222" value="פולנית"/>
+	<string id="35223" value="פורטוגזית (פורטוגל)"/>
+	<string id="35224" value="פורטוגזית (ברזיל)"/>
+	<string id="35225" value="רומנית"/>
+	<string id="35226" value="רוסית"/>
+	<string id="35227" value="סלובקית"/>
+	<string id="35228" value="סלובנית"/>
+	<string id="35229" value="ספרדית (ספרד - ספרדית מודרנית)"/>
+	<string id="35230" value="שוודית"/>
+	<string id="35231" value="תאי"/>
+	<string id="35233" value="אוקראינית"/>
+	<menu id="9121">
+		<menuitem caption="התאמה אישית">
+			<menuitem id="9123" caption="איפוס"/>
+			<menuitem id="9124" caption="מחיקה"/>
+			<menuitem/>
+			<menuitem id="9125" caption="שם:"/>
+			<menuitem/>
+			<menuitem id="9126" caption="העתק תמונת פקד"/>
+			<menuitem id="9127" caption="הדבק תמונת פקד"/>
+			<menuitem id="9128" caption="אפס תמונת פקד"/>
+			<menuitem id="9129" caption="עריכת תמונת פקד..."/>
+			<menuitem id="9130" caption="שנה תמונת פקד"/>
+			<menuitem/>
+			<menuitem id="9131" caption="סגנון ברירת מחדל"/>
+			<menuitem id="9133" caption="טקסט בלבד"/>
+			<menuitem id="9132" caption="תמונה וטקסט"/>
+			<menuitem/>
+			<menuitem id="9134" caption="התחל קבוצה"/>
+		</menuitem>
+	</menu>
+	<menu id="9316">
+		<menuitem caption="RClickOutlookBar">
+			<menuitem id="9331" caption="סמלים קטנים "/>
+			<menuitem id="9330" caption="סמלים גדולים"/>
+		</menuitem>
+		<menuitem caption="RClickHexEdit">
+			<menuitem id="57643" caption="בטל"/>
+			<menuitem/>
+			<menuitem id="57635" caption="גזור"/>
+			<menuitem id="57634" caption="העתק"/>
+			<menuitem id="57637" caption="הדבק"/>
+			<menuitem id="57632" caption="מחיקה"/>
+			<menuitem/>
+			<menuitem id="57642" caption="בחר הכל"/>
+		</menuitem>
+		<menuitem caption="RClickHeader">
+			<menuitem id="9325" caption="מיין בסדר עולה"/>
+			<menuitem id="9326" caption="מיין בסדר יורד"/>
+			<menuitem/>
+			<menuitem caption="יישור">
+				<menuitem id="9327" caption="ישר לשמאל"/>
+				<menuitem id="9328" caption="ישר למרכז"/>
+				<menuitem id="9329" caption="ישר לימין"/>
+			</menuitem>
+		</menuitem>
+	</menu>
+	<menu id="9601">
+		<menuitem caption="Quick Access">
+			<menuitem id="9614" caption="&amp;Customize Quick Access Toolbar"/>
+			<menuitem id="9613" caption="[Commands]"/>
+			<menuitem/>
+			<menuitem id="9607" caption="&amp;More Commands..."/>
+			<menuitem id="9608" caption="&amp;Show Below the Ribbon"/>
+			<menuitem id="9610" caption="&amp;Show Above the Ribbon"/>
+			<menuitem/>
+			<menuitem id="9612" caption="Mi&amp;nimize the Ribbon"/>
+		</menuitem>
+	</menu>
+	<menu id="9602">
+		<menuitem caption="Quick Access">
+			<menuitem id="9605" caption="&amp;Remove from Quick Access Toolbar"/>
+			<menuitem id="9606" caption="&amp;Add to Quick Access Toolbar"/>
+			<menuitem/>
+			<menuitem id="9607" caption="&amp;Customize Quick Access Toolbar..."/>
+			<menuitem id="9608" caption="&amp;Show Quick Access Toolbar Below the Ribbon"/>
+			<menuitem id="9610" caption="&amp;Show Quick Access Toolbar Above the Ribbon"/>
+			<menuitem/>
+			<menuitem id="9612" caption="Mi&amp;nimize the Ribbon"/>
+		</menuitem>
+	</menu>
+	<menu id="9977">
+		<menuitem caption="HF">
+			<menuitem id="101" caption="&amp;&amp;d   תבנית תאריך קצר"/>
+			<menuitem id="102" caption="&amp;&amp;D   תבנית תאריך ארוך"/>
+			<menuitem/>
+			<menuitem id="103" caption="&amp;&amp;t   שעה"/>
+			<menuitem id="104" caption="&amp;&amp;T  שעה (24 שעות)"/>
+			<menuitem/>
+			<menuitem id="105" caption="&amp;&amp;p   מספר עמוד"/>
+			<menuitem id="106" caption="&amp;&amp;P   מספר עמודים"/>
+			<menuitem/>
+			<menuitem id="108" caption="&amp;&amp;b   יישור לשמאל &amp;&amp;b מרכוז &amp;&amp;b יישור לימין"/>
+			<menuitem/>
+			<menuitem id="109" caption="&amp;&amp;w   כותרת חלון"/>
+			<menuitem id="110" caption="&amp;&amp;&amp;&amp;  אמפרסנד (&amp;&amp;)"/>
+			<menuitem id="111" caption="\\n   שורה חדשה"/>
+		</menuitem>
+	</menu>
+	<dialog id="9080" fontface="MS Shell Dlg" style="-2134376248" styleex="12288" position="0, 0, 175, 90">
+		<control id="103" style="1342177283" position="146, 8, 20, 20"/>
+		<control id="100" styleex="12288" position="12, 6, 120, 27"/>
+		<control id="101" class="BUTTON" style="1342177289" styleex="12288" position="7, 39, 125, 10"/>
+		<control id="102" class="BUTTON" style="1342177289" styleex="12288" position="5, 51, 127, 10"/>
+		<control id="1" class="BUTTON" caption="אישור" style="1342242817" styleex="8192" position="90, 69, 50, 14"/>
+		<control id="2" class="BUTTON" caption="ביטול" style="1342242816" styleex="8192" position="34, 69, 50, 14"/>
+	</dialog>
+	<dialog id="9081" caption="גופני הגדרת עמוד לוח תאריכים" fontface="MS Shell Dlg" style="-1865940788" styleex="12288" position="32, 32, 283, 338">
+		<control id="100" class="BUTTON" caption="אפשרויות &amp;תצוגה" style="1342177287" styleex="12288" position="170, 5, 106, 66"/>
+		<control caption="הדפס מ:" style="1342308354" styleex="12288" position="230, 21, 43, 8"/>
+		<control id="101" class="COMBOBOX" style="1344339970" styleex="12288" position="176, 19, 52, 104"/>
+		<control caption="הדפס עד:" style="1342308354" styleex="12288" position="231, 39, 42, 8"/>
+		<control id="102" class="COMBOBOX" style="1344339970" styleex="12288" position="176, 36, 52, 104"/>
+		<control id="103" class="BUTTON" caption="טווח הדפסה" style="1342242819" styleex="12288" position="174, 56, 95, 10"/>
+		<control id="104" class="BUTTON" caption="כותרת עליונה תאריך" style="1342177287" styleex="12288" position="6, 5, 157, 65"/>
+		<control id="105" class="BUTTON" caption="כותרת עליונה תאריך הדפס" style="1342242819" styleex="12288" position="10, 17, 148, 10"/>
+		<control id="106" caption="גופן כותרת עליונה תאריך" styleex="12288" position="9, 28, 136, 8"/>
+		<control id="107" caption="123456789 123456789 123456789\n2\n3" style="1342312576" styleex="12288" position="30, 40, 115, 26"/>
+		<control id="108" class="BUTTON" caption="..." style="1342242816" styleex="12288" position="10, 40, 16, 14"/>
+		<control class="BUTTON" caption="הגדרות" style="1342177287" styleex="12288" position="6, 74, 270, 27"/>
+		<control id="110" class="BUTTON" caption="גווני אפור הדפס" style="1342242819" styleex="12288" position="11, 87, 258, 10"/>
+		<control class="BUTTON" caption="כותרות עליונות ותחתונות" style="1342177287" styleex="12288" position="6, 105, 270, 70"/>
+		<control caption="כותרת עליונה" styleex="12288" position="80, 115, 190, 8"/>
+		<control id="111" class="EDIT" style="1350631552" styleex="12288" position="23, 126, 247, 14"/>
+		<control id="113" class="BUTTON" style="1342242880" styleex="143360" position="10, 126, 13, 14"/>
+		<control caption="כותרת תחתונה" styleex="12288" position="80, 145, 190, 8"/>
+		<control id="112" class="EDIT" style="1350631552" styleex="12288" position="23, 155, 247, 14"/>
+		<control id="114" class="BUTTON" style="1342242880" styleex="143360" position="10, 155, 13, 14"/>
+		<control id="1073" class="BUTTON" caption="נייר" style="1342308359" styleex="12288" position="79, 183, 197, 51"/>
+		<control id="1089" caption="גודל:" styleex="12288" position="232, 199, 40, 8"/>
+		<control id="1137" class="COMBOBOX" style="1344471299" styleex="12288" position="87, 197, 141, 160"/>
+		<control id="1090" caption="מקור:" styleex="12288" position="232, 216, 39, 8"/>
+		<control id="1138" class="COMBOBOX" style="1344471299" styleex="12288" position="87, 214, 141, 160"/>
+		<control id="1072" class="BUTTON" caption="כיוון הדפסה" style="1342308359" styleex="12288" position="6, 183, 66, 51"/>
+		<control id="1056" class="BUTTON" caption="לאורך" style="1342373892" styleex="12288" position="11, 196, 56, 12"/>
+		<control id="1057" class="BUTTON" caption="לרוחב" style="1342177284" styleex="12288" position="9, 212, 58, 12"/>
+		<control id="1075" class="BUTTON" caption="שוליים" style="1342308359" styleex="12288" position="79, 238, 196, 58"/>
+		<control id="1102" caption="שמאליים:" styleex="12288" position="231, 254, 36, 8"/>
+		<control id="1155" class="EDIT" style="1350762496" styleex="12288" position="196, 251, 32, 12"/>
+		<control id="1103" caption="ימניים:" styleex="12288" position="125, 253, 35, 8"/>
+		<control id="1157" class="EDIT" style="1350762496" styleex="12288" position="89, 250, 32, 12"/>
+		<control id="1104" caption="עליונים:" styleex="12288" position="232, 274, 35, 8"/>
+		<control id="1156" class="EDIT" style="1350762496" styleex="12288" position="196, 272, 32, 12"/>
+		<control id="1105" caption="תחתונים:" styleex="12288" position="125, 274, 35, 8"/>
+		<control id="1158" class="EDIT" style="1350762496" styleex="12288" position="89, 272, 32, 12"/>
+		<control id="109" class="BUTTON" caption="תצוגה מקדימה" style="1342177287" styleex="12288" position="5, 238, 66, 58"/>
+		<control id="1081" style="1342308357" styleex="12288" position="18, 253, 4, 38"/>
+		<control id="1080" style="1342308358" styleex="12288" position="22, 250, 31, 40"/>
+		<control id="1082" style="1342308357" styleex="12288" position="19, 290, 29, 2"/>
+		<control id="57670" class="BUTTON" caption="עזרה" style="1342242816" styleex="8192" position="75, 320, 61, 14"/>
+		<control id="1026" class="BUTTON" caption="מדפסת..." style="1342242816" styleex="8192" position="215, 300, 60, 14"/>
+		<control id="1" class="BUTTON" caption="אישור" style="1342373889" styleex="8192" position="175, 320, 48, 14"/>
+		<control id="2" class="BUTTON" caption="ביטול" style="1342242816" styleex="8192" position="229, 320, 48, 14"/>
+	</dialog>
+	<dialog id="9082" caption="פרטי פגישה ואירוע" fontface="MS Shell Dlg" style="-2134376248" styleex="12288" position="0, 0, 450, 231">
+		<control caption="נושא:" styleex="12288" position="399, 7, 45, 8"/>
+		<control id="100" class="EDIT" style="1350631552" styleex="12288" position="161, 5, 234, 13"/>
+		<control caption="מיקום:" styleex="12288" position="399, 27, 45, 8"/>
+		<control id="101" class="EDIT" style="1350631552" styleex="12288" position="161, 25, 234, 13"/>
+		<control style="1342181381" styleex="12288" position="161, 45, 283, 1"/>
+		<control id="157" caption="זמן התחלה:" styleex="12288" position="402, 55, 42, 8"/>
+		<control id="102" class="SysDateTimePick32" caption="DateTimePicker1" style="1342242849" styleex="12288" position="327, 53, 68, 13"/>
+		<control id="103" class="SysDateTimePick32" caption="DateTimePicker2" style="1342242857" styleex="12288" position="253, 53, 68, 13"/>
+		<control id="106" class="BUTTON" caption="אירוע של יום שלם" style="1342242819" styleex="12288" position="161, 55, 85, 10"/>
+		<control id="158" caption="זמן סיום:" styleex="12288" position="402, 75, 42, 8"/>
+		<control id="104" class="SysDateTimePick32" caption="DateTimePicker1" style="1342242849" styleex="12288" position="327, 73, 68, 13"/>
+		<control id="105" class="SysDateTimePick32" caption="DateTimePicker2" style="1342242857" styleex="12288" position="253, 73, 68, 13"/>
+		<control style="1342181381" styleex="12288" position="161, 93, 283, 1"/>
+		<control id="111" class="BUTTON" caption="תזכורת:" style="1342243075" styleex="12288" position="399, 102, 45, 10"/>
+		<control id="112" class="COMBOBOX" style="1344339970" styleex="12288" position="327, 100, 68, 88"/>
+		<control id="110" caption="קוד לוח זמנים" style="1342308354" styleex="12288" position="251, 102, 64, 10"/>
+		<control id="109" class="COMBOBOX" style="1344339971" styleex="12288" position="161, 100, 85, 88"/>
+		<control style="1342181381" styleex="12288" position="154, 5, 1, 110"/>
+		<control id="117" caption="La&amp;bel:" styleex="12288" position="104, 7, 44, 8"/>
+		<control id="108" class="COMBOBOX" style="1344340003" styleex="12288" position="6, 5, 94, 209"/>
+		<control caption="הצג זמן כ:" styleex="12288" position="103, 27, 45, 8"/>
+		<control id="107" class="COMBOBOX" style="1344339971" styleex="12288" position="6, 25, 94, 72"/>
+		<control style="1342181381" styleex="12288" position="6, 45, 142, 1"/>
+		<control id="113" class="BUTTON" caption="פרטי" style="1342242819" styleex="12288" position="48, 55, 100, 10"/>
+		<control id="114" class="BUTTON" caption="פגישה" style="1342242819" styleex="12288" position="48, 66, 100, 10"/>
+		<control style="1342181381" styleex="12288" position="6, 93, 142, 1"/>
+		<control id="115" class="BUTTON" caption="מופע חוזר..." style="1342242816" styleex="8192" position="6, 100, 69, 14"/>
+		<control id="116" class="EDIT" style="1352732868" styleex="12288" position="6, 125, 438, 75"/>
+		<control style="1073745925" styleex="12288" position="6, 205, 438, 1"/>
+		<control id="1" class="BUTTON" caption="אישור" style="1342242817" styleex="8192" position="229, 211, 50, 14"/>
+		<control id="2" class="BUTTON" caption="ביטול" style="1342242816" styleex="8192" position="173, 211, 50, 14"/>
+	</dialog>
+	<dialog id="9083" caption="פעילות חוזרת" fontface="MS Shell Dlg" style="-2134376248" styleex="12288" position="0, 0, 340, 362">
+		<control class="BUTTON" caption="זמן הפעילות" style="1342177287" styleex="12288" position="7, 3, 326, 62"/>
+		<control caption="התחל:" styleex="12288" position="295, 17, 32, 8"/>
+		<control id="109" class="COMBOBOX" style="1344339970" styleex="12288" position="188, 15, 106, 124"/>
+		<control caption="סיום:" styleex="12288" position="295, 33, 32, 8"/>
+		<control id="102" class="COMBOBOX" style="1344339970" styleex="12288" position="188, 31, 106, 158"/>
+		<control caption="משך זמן:" styleex="12288" position="297, 49, 30, 8"/>
+		<control id="113" class="COMBOBOX" style="1344339970" styleex="12288" position="188, 47, 106, 162"/>
+		<control class="BUTTON" caption="תבנית מופע חוזר" style="1342177287" styleex="12288" position="7, 68, 326, 68"/>
+		<control id="117" class="BUTTON" caption="מדי יום" style="1342308361" styleex="12288" position="272, 80, 55, 10"/>
+		<control id="118" class="BUTTON" caption="מדי שבוע" style="1342177289" styleex="12288" position="272, 94, 55, 10"/>
+		<control id="119" class="BUTTON" caption="מדי חודש" style="1342177289" styleex="12288" position="272, 108, 55, 10"/>
+		<control id="120" class="BUTTON" caption="מדי שנה" style="1342177289" styleex="12288" position="272, 122, 55, 10"/>
+		<control id="156" style="1342181383" position="266, 79, 1, 53"/>
+		<control id="124" class="BUTTON" caption="כל" style="1342308361" styleex="12288" position="224, 78, 35, 10"/>
+		<control id="125" class="BUTTON" caption="יום עבודה" style="1342177289" styleex="12288" position="151, 93, 108, 10"/>
+		<control id="126" class="EDIT" style="1350639744" styleex="12288" position="192, 77, 28, 12"/>
+		<control id="121" caption="ימים" styleex="12288" position="148, 78, 40, 8"/>
+		<control id="134" caption="חזרה כל" styleex="12288" position="215, 235, 43, 8"/>
+		<control id="123" class="EDIT" style="1350639744" styleex="12288" position="187, 233, 26, 12"/>
+		<control id="135" caption="שבועות ב:" styleex="12288" position="117, 235, 66, 8"/>
+		<control id="127" class="BUTTON" caption="יום שני" style="1342242819" styleex="12288" position="217, 249, 41, 10"/>
+		<control id="128" class="BUTTON" caption="יום שלישי" style="1342242819" styleex="12288" position="163, 249, 50, 10"/>
+		<control id="129" class="BUTTON" caption="יום רביעי" style="1342242819" styleex="12288" position="102, 249, 54, 10"/>
+		<control id="130" class="BUTTON" caption="יום חמישי" style="1342242819" styleex="12288" position="47, 249, 46, 10"/>
+		<control id="131" class="BUTTON" caption="יום שישי" style="1342242819" styleex="12288" position="217, 264, 41, 10"/>
+		<control id="132" class="BUTTON" caption="שבת" style="1342242819" styleex="12288" position="168, 264, 45, 10"/>
+		<control id="133" class="BUTTON" caption="יום ראשון" style="1342242819" styleex="12288" position="94, 263, 62, 10"/>
+		<control id="136" class="BUTTON" caption="יום" style="1342308361" styleex="12288" position="233, 284, 26, 10"/>
+		<control id="137" class="BUTTON" caption="&amp;כל יום" style="1342177289" styleex="12288" position="231, 302, 28, 10"/>
+		<control id="138" class="EDIT" style="1350639744" styleex="12288" position="205, 283, 24, 12"/>
+		<control id="143" caption="בכל" styleex="12288" position="173, 285, 28, 8"/>
+		<control id="139" class="EDIT" style="1350639744" styleex="12288" position="145, 283, 25, 12"/>
+		<control id="144" caption="חודשים" styleex="12288" position="103, 285, 37, 8"/>
+		<control id="140" class="COMBOBOX" style="1344339971" styleex="12288" position="179, 300, 50, 230"/>
+		<control id="141" class="COMBOBOX" style="1344339971" styleex="12288" position="109, 300, 68, 287"/>
+		<control id="145" caption="בכל" styleex="12288" position="78, 301, 28, 8"/>
+		<control id="142" class="EDIT" style="1350639744" styleex="12288" position="49, 300, 26, 12"/>
+		<control id="146" caption="חודשים" styleex="12288" position="15, 301, 29, 8"/>
+		<control id="147" class="BUTTON" caption="כל" style="1342308361" styleex="12288" position="225, 326, 34, 10"/>
+		<control id="148" class="BUTTON" caption="&amp;כל יום" style="1342177289" styleex="12288" position="228, 344, 31, 10"/>
+		<control id="150" class="COMBOBOX" style="1344339971" styleex="12288" position="147, 324, 76, 230"/>
+		<control id="149" class="EDIT" style="1350631552" styleex="12288" position="118, 324, 27, 12"/>
+		<control id="154" class="COMBOBOX" style="1344339971" styleex="12288" position="175, 342, 48, 230"/>
+		<control id="155" class="COMBOBOX" style="1344339971" styleex="12288" position="103, 342, 70, 230"/>
+		<control id="153" caption="מ" styleex="12288" position="89, 345, 10, 8"/>
+		<control id="151" class="COMBOBOX" style="1344339971" styleex="12288" position="16, 342, 71, 230"/>
+		<control class="BUTTON" caption="טווח מופע חוזר" style="1342177287" styleex="12288" position="7, 140, 326, 52"/>
+		<control caption="התחל:" styleex="12288" position="299, 156, 28, 8"/>
+		<control id="101" class="SysDateTimePick32" style="1342242849" styleex="12288" position="188, 153, 106, 12"/>
+		<control id="114" class="BUTTON" caption="אין תאריך סיום" style="1342308361" styleex="12288" position="112, 149, 62, 9"/>
+		<control id="115" class="BUTTON" caption="סיום &amp;לאחר:" style="1342177289" styleex="12288" position="129, 162, 45, 10"/>
+		<control id="116" class="BUTTON" caption="סיום עד:" style="1342177289" styleex="12288" position="135, 176, 39, 10"/>
+		<control id="122" class="EDIT" style="1350639744" styleex="12288" position="86, 159, 40, 12"/>
+		<control caption="מופעים" styleex="12288" position="34, 161, 49, 8"/>
+		<control id="159" class="SysDateTimePick32" style="1342242849" styleex="12288" position="21, 174, 105, 12"/>
+		<control id="1" class="BUTTON" caption="אישור" style="1342242817" styleex="8192" position="223, 197, 50, 14"/>
+		<control id="2" class="BUTTON" caption="ביטול" style="1342242816" styleex="8192" position="166, 197, 50, 14"/>
+		<control id="100" class="BUTTON" caption="הסר מופע חוזר" style="1476460544" styleex="8192" position="69, 197, 90, 14"/>
+	</dialog>
+	<dialog id="9084" caption="אזור זמן" fontface="MS Shell Dlg" style="-2134376248" styleex="12288" position="0, 0, 274, 178">
+		<control class="BUTTON" caption="אזור זמן נוכחי" style="1342177287" styleex="12288" position="7, 7, 260, 65"/>
+		<control caption="תווית:" styleex="12288" position="239, 23, 20, 8"/>
+		<control id="101" class="EDIT" style="1350631552" styleex="12288" position="174, 21, 40, 14"/>
+		<control caption="אזור זמן:" styleex="12288" position="223, 42, 36, 8"/>
+		<control id="103" class="COMBOBOX" style="1478557698" styleex="12288" position="19, 39, 195, 130"/>
+		<control id="105" class="BUTTON" caption="התאם את השעון באופן אוטומטי לשינויי שעון קיץ" style="1476460547" styleex="12320" position="22, 56, 234, 8"/>
+		<control id="100" class="BUTTON" caption="הצג אזור זמן נוסף" style="1342242819" styleex="12320" position="7, 78, 260, 8"/>
+		<control class="BUTTON" style="1342177287" styleex="12320" position="7, 88, 260, 62"/>
+		<control caption="תווית:" styleex="12288" position="239, 101, 20, 8"/>
+		<control id="102" class="EDIT" style="1350631552" styleex="12288" position="174, 99, 40, 14"/>
+		<control caption="אזור זמן:" styleex="12288" position="223, 120, 36, 8"/>
+		<control id="104" class="COMBOBOX" style="1344339971" styleex="12288" position="19, 117, 195, 135"/>
+		<control id="106" class="BUTTON" caption="התאם את השעון באופן אוטומטי לשינויי שעון קיץ" style="1342242819" styleex="12320" position="24, 134, 234, 8"/>
+		<control id="1" class="BUTTON" caption="אישור" style="1342242817" styleex="8192" position="74, 158, 50, 14"/>
+		<control id="2" class="BUTTON" caption="ביטול" style="1342242816" styleex="8192" position="7, 158, 50, 14"/>
+	</dialog>
+	<dialog id="9085" caption="תזכורות" fontface="MS Shell Dlg" style="-2134245176" styleex="12288" position="0, 0, 303, 181">
+		<control id="106" caption="Static" style="1342308480" styleex="12288" position="8, 5, 270, 30"/>
+		<control id="100" class="SysListView32" caption="רשימה1" style="1350664205" position="8, 40, 290, 90"/>
+		<control id="101" class="BUTTON" caption="התעלם מהכל" style="1342242816" styleex="8192" position="233, 135, 65, 14"/>
+		<control id="103" class="BUTTON" caption="פתח פריט" style="1342242816" styleex="8192" position="78, 135, 65, 14"/>
+		<control id="102" class="BUTTON" caption="התעלם" style="1342242816" styleex="8192" position="8, 135, 65, 14"/>
+		<control caption="לחץ על השהה כדי לקבל תזכורת נוספת:" styleex="12288" position="128, 155, 170, 8"/>
+		<control id="104" class="COMBOBOX" style="1344339970" styleex="12288" position="78, 165, 220, 130"/>
+		<control id="105" class="BUTTON" caption="השהה" style="1342242817" styleex="8192" position="8, 165, 65, 14"/>
+	</dialog>
+	<dialog id="9114" caption="&amp;Menus" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control id="100" caption="Application Menus" position="4, 5, 222, 8"/>
+		<control id="101" caption="Context Menus" position="4, 80, 222, 8"/>
+		<control caption="&amp;Show Menu:" position="10, 20, 44, 11"/>
+		<control id="102" class="COMBOBOX" style="1344339971" position="54, 18, 159, 79"/>
+		<control id="103" class="BUTTON" caption="Reset" style="1342242816" position="10, 57, 70, 14"/>
+		<control id="106" caption="Default menu\nDefault application menu" position="37, 34, 181, 18"/>
+		<control id="107" resource="0" style="1342177283" position="10, 32, 21, 20"/>
+		<control caption="Select &amp;context menu:" position="10, 92, 68, 10"/>
+		<control id="104" class="COMBOBOX" style="1344339971" position="83, 90, 130, 79"/>
+		<control id="105" class="BUTTON" caption="Reset" style="1342242816" position="10, 108, 70, 14"/>
+	</dialog>
+	<dialog id="9115" caption="עורך הלחצנים" fontface="MS Shell Dlg" style="-1865940792" position="0, 0, 253, 185">
+		<control caption="תמונה" styleex="12288" position="223, 7, 23, 8"/>
+		<control class="BUTTON" caption="צבעים" style="1342177287" styleex="12288" position="71, 106, 80, 71"/>
+		<control class="BUTTON" caption="העבר" style="1342177287" styleex="12288" position="71, 72, 81, 31"/>
+		<control class="BUTTON" caption="תצוגה מקדימה" style="1342177287" styleex="12288" position="160, 106, 86, 71"/>
+		<control class="BUTTON" caption="כלים" style="1342177287" styleex="12288" position="71, 9, 81, 60"/>
+		<control id="1" class="BUTTON" caption="אישור" style="1342242817" styleex="12288" position="10, 7, 50, 14"/>
+		<control id="2" class="BUTTON" caption="ביטול" style="1342242816" styleex="12288" position="10, 25, 50, 14"/>
+		<control id="100" style="1342177543" styleex="12288" position="160, 17, 86, 80"/>
+		<control id="101" style="1342308865" styleex="143360" position="166, 117, 73, 54"/>
+		<control caption="שקוף" styleex="12288" position="79, 156, 39, 8"/>
+		<control id="105" style="1342308608" position="116, 153, 15, 15"/>
+		<control id="103" caption="כלים" style="1082262017" styleex="12288" position="81, 21, 60, 43"/>
+		<control id="104" caption="העבר" style="1082262017" styleex="12288" position="80, 83, 62, 12"/>
+		<control id="106" style="1342308620" position="109, 144, 15, 15"/>
+		<control id="102" caption="צבעים" style="1082262017" styleex="12288" position="78, 121, 68, 12"/>
+	</dialog>
+	<dialog id="9116" caption="לוח המקשים" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control caption="קטגוריה:" styleex="12288" position="195, 5, 31, 8"/>
+		<control id="100" class="COMBOBOX" style="1344339971" styleex="12288" position="133, 15, 93, 147"/>
+		<control id="101" caption="פקודות:" styleex="12288" position="188, 28, 38, 8"/>
+		<control id="102" class="LISTBOX" style="1352728897" styleex="12288" position="135, 38, 91, 77"/>
+		<control id="103" caption="הקצאות מקשים:" styleex="12288" position="64, 28, 67, 8"/>
+		<control id="104" class="LISTBOX" style="1352728897" styleex="12288" position="56, 38, 75, 51"/>
+		<control id="105" caption="הקש מקש קיצור חדש:" styleex="12288" position="55, 93, 76, 8"/>
+		<control id="106" class="EDIT" style="1350631552" styleex="12288" position="56, 103, 75, 12"/>
+		<control id="107" class="BUTTON" caption="הקצה" style="1342242816" styleex="12288" position="2, 39, 49, 14"/>
+		<control id="108" class="BUTTON" caption="הסר" style="1342242816" styleex="12288" position="2, 56, 49, 14"/>
+		<control id="109" class="BUTTON" caption="איפוס הכל" style="1342242816" styleex="12288" position="2, 73, 49, 14"/>
+		<control id="110" caption="תיאור:" styleex="12288" position="188, 117, 38, 8"/>
+		<control id="111" styleex="143360" position="53, 127, 171, 19"/>
+	</dialog>
+	<dialog id="9117" caption="סרגלי כלים" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control caption="סרגלי כלים:" styleex="12288" position="183, 5, 43, 8"/>
+		<control id="100" class="LISTBOX" style="1352728913" styleex="12288" position="76, 15, 150, 131"/>
+		<control id="101" class="BUTTON" caption="חדש..." style="1342242816" styleex="12288" position="2, 15, 70, 14"/>
+		<control id="102" class="BUTTON" caption="שינוי שם..." style="1342242816" styleex="12288" position="2, 33, 70, 14"/>
+		<control id="103" class="BUTTON" caption="מחיקה" style="1342242816" styleex="12288" position="2, 51, 70, 14"/>
+		<control id="104" class="BUTTON" caption="איפוס..." style="1342242816" styleex="12288" position="2, 69, 70, 14"/>
+	</dialog>
+	<dialog id="9118" caption="אפשרויות" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control id="108" caption="תפריטים וסרגלי כלים מותאמים אישית" styleex="12288" position="4, 5, 222, 8"/>
+		<control id="100" class="BUTTON" caption="הצג תמיד תפריטים מלאים" style="1342242819" styleex="12288" position="4, 17, 216, 10"/>
+		<control id="101" class="BUTTON" caption="הצג תפריטים מלאים לאחר השהיה קצרה" style="1342242819" styleex="12288" position="4, 29, 204, 10"/>
+		<control id="102" class="BUTTON" caption="אפס נתוני שימוש בסרגלי כלים ובתפריטים" style="1342242816" styleex="12288" position="60, 42, 160, 14"/>
+		<control id="107" caption="אחר" styleex="12288" position="4, 70, 222, 8"/>
+		<control id="103" class="BUTTON" caption="סמלים גדולים" style="1342242819" styleex="12288" position="4, 82, 216, 10"/>
+		<control id="104" class="BUTTON" caption="הצג תיאורי כלים בסרגלי כלים" style="1342242819" styleex="12288" position="4, 93, 216, 10"/>
+		<control id="105" class="BUTTON" caption="הצג מקשי קיצור בתיאורי כלים" style="1342242819" styleex="12288" position="4, 104, 204, 10"/>
+		<control caption="הנפשות תפריט:" styleex="12288" position="164, 117, 56, 8"/>
+		<control id="106" class="COMBOBOX" style="1344339971" styleex="12288" position="81, 115, 79, 65"/>
+	</dialog>
+	<dialog id="9119" caption="פקודות" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control caption="להוספת פקודה לסרגל כלים: בחר קטגוריה וגרור את הפקודה מחוץ לתיבת דו-שיח זו אל סרגל כלים." styleex="12288" position="6, 5, 220, 19"/>
+		<control caption="קטגוריות:" styleex="12288" position="188, 25, 38, 8"/>
+		<control id="100" class="LISTBOX" style="1352728833" styleex="12288" position="145, 35, 81, 103"/>
+		<control caption="פקודות:" styleex="12288" position="102, 25, 38, 8"/>
+		<control id="101" class="LISTBOX" style="1352728849" styleex="12288" position="4, 35, 136, 103"/>
+	</dialog>
+	<dialog id="9120" caption="סרגל כלים חדש" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 186, 52">
+		<control caption="שם סרגל הכלים:" styleex="12288" position="82, 4, 100, 8"/>
+		<control id="100" class="EDIT" style="1350631552" styleex="12288" position="4, 15, 178, 12"/>
+		<control id="1" class="BUTTON" caption="אישור" style="1342242817" styleex="12288" position="58, 34, 50, 14"/>
+		<control id="2" class="BUTTON" caption="ביטול" style="1342242816" styleex="12288" position="4, 34, 50, 14"/>
+	</dialog>
+	<dialog id="9312" caption="העצה היומית" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 279, 127">
+		<control id="1" class="BUTTON" caption="סגור " style="1342242817" position="224, 108, 50, 14"/>
+		<control id="100" class="BUTTON" caption="הצג עצות אודות" style="1342242819" position="6, 110, 140, 10"/>
+		<control id="101" class="BUTTON" caption="חפש את הבא" style="1342242816" position="170, 108, 50, 14"/>
+		<control id="102" style="1073741832" position="0, 0, 279, 103"/>
+	</dialog>
+	<dialog id="9313" caption="התאמה אישית" fontface="MS Shell Dlg" style="1321205832" position="0, 0, 147, 161">
+		<control id="100" caption="צבעים:" position="2, 4, 43, 10"/>
+		<control id="101" style="1342242823" position="3, 15, 119, 86"/>
+		<control id="102" style="1342242823" position="126, 15, 20, 86"/>
+		<control id="104" caption="גוון:" position="7, 108, 18, 8"/>
+		<control id="115" class="EDIT" style="1350639744" position="31, 106, 33, 13"/>
+		<control id="112" class="msctls_updown32" caption="Spin1" style="1342177318" position="55, 105, 10, 14"/>
+		<control id="105" caption="רוויה:" position="7, 125, 21, 8"/>
+		<control id="114" class="EDIT" style="1350639744" position="31, 122, 33, 13"/>
+		<control id="116" class="msctls_updown32" caption="Spin2" style="1342177318" position="55, 122, 10, 14"/>
+		<control id="106" caption="זוהר:" position="7, 140, 18, 8"/>
+		<control id="113" class="EDIT" style="1350639744" position="31, 138, 33, 13"/>
+		<control id="117" class="msctls_updown32" caption="Spin3" style="1342177318" position="55, 137, 10, 14"/>
+		<control id="107" caption="אדום:" position="71, 108, 23, 8"/>
+		<control id="110" class="EDIT" style="1350639744" position="95, 106, 33, 13"/>
+		<control id="119" class="msctls_updown32" caption="Spin1" style="1342177318" position="119, 105, 11, 14"/>
+		<control id="108" caption="ירוק:" position="71, 125, 23, 8"/>
+		<control id="111" class="EDIT" style="1350639744" position="95, 122, 33, 13"/>
+		<control id="120" class="msctls_updown32" caption="Spin2" style="1342177318" position="119, 122, 11, 14"/>
+		<control id="109" caption="כחול:" position="71, 140, 23, 8"/>
+		<control id="118" class="EDIT" style="1350639744" position="95, 138, 33, 13"/>
+		<control id="121" class="msctls_updown32" caption="Spin3" style="1342177318" position="119, 137, 11, 14"/>
+	</dialog>
+	<dialog id="9314" caption="רגיל" fontface="MS Shell Dlg" style="1321205832" position="0, 0, 147, 161">
+		<control id="100" caption="צבעים:" position="2, 4, 43, 10"/>
+		<control id="103" style="1342242823" position="0, 15, 147, 145"/>
+	</dialog>
+	<dialog id="9315" caption="סידור חלונות" fontface="MS Shell Dlg" style="-1865678776" position="0, 0, 301, 164">
+		<control caption="בחירת חלון:" position="7, 7, 147, 8"/>
+		<control id="100" class="LISTBOX" style="1353779539" position="7, 17, 216, 140"/>
+		<control id="101" class="BUTTON" caption="הפעל" style="1342242816" position="233, 7, 62, 14"/>
+		<control id="1" class="BUTTON" caption="אישור" style="1342242816" position="233, 24, 62, 14"/>
+		<control id="105" class="BUTTON" caption="שמור" style="1342242816" position="233, 41, 62, 14"/>
+		<control id="104" class="BUTTON" caption="סגור חלון" style="1342242816" position="233, 58, 62, 14"/>
+		<control id="102" class="BUTTON" caption="דרג" style="1342242816" position="233, 75, 62, 14"/>
+		<control id="106" class="BUTTON" caption="פרוש אופקית" style="1342242816" position="233, 92, 62, 14"/>
+		<control id="107" class="BUTTON" caption="פרוש אנכית" style="1342242816" position="233, 109, 62, 14"/>
+		<control id="103" class="BUTTON" caption="מזער" style="1342242816" position="233, 126, 62, 14"/>
+	</dialog>
+	<dialog id="9556" caption="הגדרת עמוד" fontface="MS Shell Dlg" style="-1865940788" position="32, 32, 283, 250">
+		<control id="1073" class="BUTTON" caption="נייר" style="1342308359" position="7, 80, 197, 51"/>
+		<control id="1089" caption="גודל:" position="11, 96, 40, 8"/>
+		<control id="1137" class="COMBOBOX" style="1344471299" position="55, 94, 141, 160"/>
+		<control id="1090" caption="מקור:" position="12, 113, 39, 8"/>
+		<control id="1138" class="COMBOBOX" style="1344471299" position="55, 111, 141, 160"/>
+		<control id="1072" class="BUTTON" caption="כיוון הדפסה" style="1342308359" position="211, 80, 66, 51"/>
+		<control id="1056" class="BUTTON" caption="לאורך" style="1342373892" position="216, 93, 56, 12"/>
+		<control id="1057" class="BUTTON" caption="לרוחב" style="1342177284" position="216, 109, 58, 12"/>
+		<control id="1075" class="BUTTON" caption="שוליים" style="1342308359" position="8, 135, 196, 58"/>
+		<control id="1102" caption="שמאליים:" position="16, 151, 36, 8"/>
+		<control id="1155" class="EDIT" style="1350762496" position="55, 148, 32, 12"/>
+		<control id="1103" caption="ימניים:" position="123, 150, 35, 8"/>
+		<control id="1157" class="EDIT" style="1350762496" position="162, 147, 32, 12"/>
+		<control id="1104" caption="עליונים:" position="16, 171, 35, 8"/>
+		<control id="1156" class="EDIT" style="1350762496" position="55, 169, 32, 12"/>
+		<control id="1105" caption="תחתונים:" position="123, 171, 35, 8"/>
+		<control id="1158" class="EDIT" style="1350762496" position="162, 169, 32, 12"/>
+		<control class="BUTTON" caption="תצוגה מקדימה" style="1342177287" position="212, 135, 66, 58"/>
+		<control id="1081" style="1342308357" position="261, 150, 4, 38"/>
+		<control id="1080" style="1342308358" position="230, 147, 31, 40"/>
+		<control id="1082" style="1342308357" position="235, 187, 29, 2"/>
+		<control id="57670" class="BUTTON" caption="עזרה" style="1342242816" position="7, 230, 61, 14"/>
+		<control id="1026" class="BUTTON" caption="מדפסת..." style="1342242816" position="8, 197, 60, 14"/>
+		<control id="1" class="BUTTON" caption="אישור" style="1342373889" position="177, 230, 48, 14"/>
+		<control id="2" class="BUTTON" caption="ביטול" style="1342242816" position="229, 230, 48, 14"/>
+		<control class="BUTTON" caption="כותרות עליונות ותחתונות" style="1342177287" position="7, 5, 270, 70"/>
+		<control caption="כותרת עליונה‏" position="12, 15, 190, 8"/>
+		<control caption="כותרת תחתונה‏" position="11, 44, 190, 8"/>
+		<control id="100" class="EDIT" style="1350631552" position="12, 25, 248, 14"/>
+		<control id="102" class="BUTTON" style="1342242880" styleex="131072" position="260, 25, 13, 14"/>
+		<control id="101" class="EDIT" style="1350631552" position="12, 55, 248, 14"/>
+		<control id="103" class="BUTTON" style="1342242880" styleex="131072" position="260, 55, 13, 14"/>
+	</dialog>
+	<dialog id="9600" caption="&amp;Quick Access" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control caption="&amp;Choose commands from:" position="4, 5, 106, 8"/>
+		<control id="102" class="COMBOBOX" style="1344339971" position="4, 15, 91, 85"/>
+		<control id="100" class="LISTBOX" style="1352728851" position="4, 32, 91, 101"/>
+		<control id="104" class="BUTTON" caption="&amp;Add &gt;&gt;" style="1342242816" position="99, 61, 31, 14"/>
+		<control id="105" class="BUTTON" caption="&amp;Remove" style="1342242816" position="99, 78, 31, 14"/>
+		<control id="101" class="LISTBOX" style="1352728851" position="134, 32, 91, 84"/>
+		<control id="106" class="BUTTON" caption="Re&amp;set" style="1342242816" position="134, 119, 52, 14"/>
+		<control id="103" class="BUTTON" caption="&amp;Place Quick Access Toolbar below the Ribbon" style="1342242819" position="4, 136, 221, 12"/>
+	</dialog>
+	<dialog id="9705" caption="Editor" fontface="MS Shell Dlg" style="1220542536" position="0, 0, 260, 180">
+		<control class="BUTTON" caption="Window Settings " style="1342177287" position="7, 7, 246, 76"/>
+		<control id="100" class="BUTTON" caption="&amp;Vertical scrollbar" style="1342242819" position="15, 21, 105, 10"/>
+		<control id="101" class="BUTTON" caption="&amp;Horizontal scrollbar" style="1342242819" position="15, 32, 105, 10"/>
+		<control id="102" class="BUTTON" caption="Line &amp;Number" style="1342242819" position="15, 43, 105, 10"/>
+		<control id="103" class="BUTTON" caption="Selection &amp;margin" style="1342242819" position="15, 54, 105, 10"/>
+		<control id="114" class="BUTTON" caption="C&amp;ollapsible Nodes" style="1342242819" position="15, 65, 105, 10"/>
+		<control id="104" class="BUTTON" caption="&amp;Auto indentation" style="1342242819" position="130, 20, 115, 10"/>
+		<control id="113" class="BUTTON" caption="Virtual &amp;space" style="1342242819" position="130, 35, 115, 10"/>
+		<control id="105" class="BUTTON" caption="Synta&amp;x Colorization" style="1342242819" position="130, 50, 115, 10"/>
+		<control class="BUTTON" caption="Tabs" style="1342177287" position="7, 88, 162, 43"/>
+		<control caption="&amp;Tab size:" position="15, 103, 30, 8"/>
+		<control id="108" class="EDIT" style="1350631552" position="50, 100, 46, 14"/>
+		<control id="107" class="BUTTON" caption="Insert s&amp;paces" style="1342373897" position="102, 102, 58, 10"/>
+		<control id="106" class="BUTTON" caption="&amp;Keep Tabs" style="1342177289" position="102, 113, 51, 10"/>
+		<control id="109" class="BUTTON" caption="Overwrite Caret" style="1342308359" position="175, 88, 78, 43"/>
+		<control id="110" class="BUTTON" caption="Th&amp;in" style="1342373897" position="181, 102, 31, 10"/>
+		<control id="111" class="BUTTON" caption="Thi&amp;ck" style="1342177289" position="181, 113, 36, 10"/>
+		<control class="BUTTON" caption="Save Options " style="1342177287" position="7, 135, 246, 37"/>
+		<control id="112" class="BUTTON" caption="Automatic &amp;reload of externally modified files" style="1342242819" position="15, 151, 155, 10"/>
+	</dialog>
+	<dialog id="9706" caption="Editor Font" fontface="MS Shell Dlg" style="1220542536" position="0, 0, 260, 180">
+		<control id="100" caption="&amp;Font:" position="7, 7, 40, 9"/>
+		<control id="101" class="COMBOBOX" style="1344342337" position="7, 18, 119, 55"/>
+		<control id="102" caption="Font St&amp;yle:" position="134, 7, 45, 9"/>
+		<control id="103" class="COMBOBOX" style="1344342017" position="134, 18, 75, 55"/>
+		<control id="104" caption="Si&amp;ze:" position="217, 7, 30, 9"/>
+		<control id="105" class="COMBOBOX" style="1344342017" position="217, 18, 36, 55"/>
+		<control caption="Normal &amp;Text:" position="7, 68, 100, 8"/>
+		<control id="106" class="COMBOBOX" style="1344340515" position="7, 78, 103, 100"/>
+		<control id="107" class="BUTTON" caption="..." style="1342242816" position="113, 78, 13, 12"/>
+		<control caption="&amp;Normal Background:" position="7, 95, 100, 8"/>
+		<control id="108" class="COMBOBOX" style="1344340515" position="7, 105, 103, 100"/>
+		<control id="109" class="BUTTON" caption="..." style="1342242816" position="113, 105, 13, 12"/>
+		<control caption="Selected Te&amp;xt:" position="7, 122, 100, 8"/>
+		<control id="110" class="COMBOBOX" style="1344340515" position="7, 132, 103, 100"/>
+		<control id="111" class="BUTTON" caption="..." style="1342242816" position="113, 132, 13, 12"/>
+		<control caption="&amp;Selected Background:" position="7, 149, 100, 8"/>
+		<control id="112" class="COMBOBOX" style="1344340515" position="7, 159, 103, 100"/>
+		<control id="113" class="BUTTON" caption="..." style="1342242816" position="113, 159, 13, 12"/>
+		<control id="114" caption="Sc&amp;ript:" position="135, 69, 100, 9"/>
+		<control id="115" class="COMBOBOX" style="1352728643" position="134, 78, 119, 115"/>
+		<control id="118" class="BUTTON" caption="Sample Normal / Selected:" style="1342308359" position="135, 128, 118, 44"/>
+		<control id="119" caption="AaBbCc" style="1342308865" styleex="512" position="143, 140, 49, 26"/>
+		<control id="120" caption="XxYyZz" style="1342308865" styleex="512" position="196, 140, 49, 26"/>
+	</dialog>
+	<dialog id="9707" caption="Syntax Color" fontface="MS Shell Dlg" style="1220542536" position="0, 0, 260, 180">
+		<control id="200" caption="File T&amp;ype:" position="7, 7, 123, 9"/>
+		<control id="201" class="LISTBOX" style="1352728835" position="7, 17, 123, 64"/>
+		<control id="202" caption="&amp;Attributes:" position="7, 85, 123, 9"/>
+		<control id="203" class="LISTBOX" style="1352728835" position="7, 95, 123, 77"/>
+		<control caption="Normal &amp;Text:" position="135, 7, 100, 8"/>
+		<control id="106" class="COMBOBOX" style="1344340515" position="135, 17, 100, 100"/>
+		<control id="107" class="BUTTON" caption="..." style="1342242816" position="238, 17, 13, 12"/>
+		<control caption="&amp;Normal Background:" position="135, 33, 100, 8"/>
+		<control id="108" class="COMBOBOX" style="1344340515" position="135, 43, 100, 100"/>
+		<control id="109" class="BUTTON" caption="..." style="1342242816" position="238, 43, 13, 12"/>
+		<control caption="Selected Te&amp;xt:" position="135, 59, 100, 8"/>
+		<control id="110" class="COMBOBOX" style="1344340515" position="135, 69, 100, 100"/>
+		<control id="111" class="BUTTON" caption="..." style="1342242816" position="238, 69, 13, 12"/>
+		<control caption="&amp;Selected Background:" position="135, 85, 100, 8"/>
+		<control id="112" class="COMBOBOX" style="1344340515" position="135, 95, 100, 100"/>
+		<control id="113" class="BUTTON" caption="..." style="1342242816" position="238, 95, 13, 12"/>
+		<control id="204" class="BUTTON" caption="&amp;Bold" style="1342242819" position="135, 114, 30, 10"/>
+		<control id="205" class="BUTTON" caption="&amp;Italic" style="1342242819" position="170, 114, 31, 10"/>
+		<control id="117" class="BUTTON" caption="&amp;Underline" style="1342242819" position="206, 114, 46, 10"/>
+		<control id="118" class="BUTTON" caption="Sample Normal / Selected:" style="1342308359" position="135, 128, 118, 44"/>
+		<control id="119" caption="AaBbCc" style="1342308865" styleex="512" position="143, 140, 49, 26"/>
+		<control id="120" caption="XxYyZz" style="1342308865" styleex="512" position="196, 140, 49, 26"/>
+	</dialog>
+	<dialog id="9708" caption="Find &amp; Replace" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 271, 86">
+		<control caption="Find Text" style="1342177280" position="7, 9, 30, 8"/>
+		<control id="101" class="COMBOBOX" style="1344340034" position="61, 6, 143, 154"/>
+		<control caption="Replace With" style="1342177280" position="7, 25, 44, 8"/>
+		<control id="100" class="COMBOBOX" style="1344340034" position="61, 23, 143, 135"/>
+		<control class="BUTTON" caption="Options" style="1342177287" position="7, 38, 113, 41"/>
+		<control id="105" class="BUTTON" caption="Match whole word only" style="1342242819" position="13, 51, 89, 10"/>
+		<control id="104" class="BUTTON" caption="Match case" style="1342242819" position="13, 64, 53, 10"/>
+		<control class="BUTTON" caption="Direction" style="1342177287" position="126, 38, 80, 41"/>
+		<control id="103" class="BUTTON" caption="Search Up" style="1342308361" position="134, 51, 50, 10"/>
+		<control id="102" class="BUTTON" caption="Search Down" style="1342177289" position="134, 64, 59, 10"/>
+		<control id="106" class="BUTTON" caption="&amp;Find Next" style="1476460544" position="214, 7, 50, 14"/>
+		<control id="107" class="BUTTON" caption="&amp;Replace" style="1476460544" position="214, 23, 50, 14"/>
+		<control id="108" class="BUTTON" caption="Replace &amp;All" style="1476460544" position="214, 39, 50, 14"/>
+		<control id="2" class="BUTTON" caption="Close" style="1342242816" position="214, 65, 50, 14"/>
+	</dialog>
+	<dialog id="9709" caption="Find" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 271, 82">
+		<control caption="Find What" style="1342177280" position="7, 9, 34, 8"/>
+		<control id="101" class="COMBOBOX" style="1344340034" position="47, 6, 157, 153"/>
+		<control class="BUTTON" caption="Options" style="1342177287" position="7, 30, 113, 45"/>
+		<control id="105" class="BUTTON" caption="Match whole word only" style="1342242819" position="13, 43, 100, 10"/>
+		<control id="104" class="BUTTON" caption="Match case" style="1342242819" position="13, 58, 100, 10"/>
+		<control class="BUTTON" caption="Direction" style="1342177287" position="126, 30, 80, 45"/>
+		<control id="103" class="BUTTON" caption="Search Up" style="1342177289" position="134, 43, 65, 10"/>
+		<control id="102" class="BUTTON" caption="Search Down" style="1342177289" position="134, 58, 65, 10"/>
+		<control id="106" class="BUTTON" caption="&amp;Find Next" style="1476460544" position="214, 7, 50, 14"/>
+		<control id="2" class="BUTTON" caption="Close" style="1342242816" position="214, 26, 50, 14"/>
+	</dialog>
+	<dialog id="9710" caption="Go To Line" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 165, 55">
+		<control id="100" caption="&amp;Line number:" position="5, 5, 155, 8"/>
+		<control id="101" class="EDIT" style="1350639744" position="5, 17, 155, 14"/>
+		<control id="102" class="BUTTON" caption="&amp;Go To" style="1342242816" position="56, 36, 50, 14"/>
+		<control id="2" class="BUTTON" caption="Cancel" style="1342242816" position="110, 36, 50, 14"/>
+	</dialog>
+	<dialog id="9976" fontface="MS Shell Dlg" style="1073741892" position="0, 0, 392, 16">
+		<control id="58116" class="BUTTON" caption="הדפסה..." style="1342275584" position="2, 2, 44, 12"/>
+		<control id="58114" class="BUTTON" caption="הדף הבא" style="1342275584" position="48, 2, 44, 12"/>
+		<control id="58115" class="BUTTON" caption="הדף הקודם" style="1342275584" position="94, 2, 44, 12"/>
+		<control id="58113" class="BUTTON" style="1342275584" position="140, 2, 44, 12"/>
+		<control id="58117" class="BUTTON" caption="הגדל" style="1342275584" position="186, 2, 44, 12"/>
+		<control id="58118" class="BUTTON" caption="הקטן" style="1342275584" position="232, 2, 44, 12"/>
+		<control id="58112" class="BUTTON" caption="סגור" style="1342275584" position="278, 2, 44, 12"/>
+	</dialog>
+</resource>

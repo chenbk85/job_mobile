@@ -1,0 +1,43 @@
+<Page xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' 
+VerticalAlignment="Center" HorizontalAlignment="Center">
+
+
+<Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Column='0' Grid.Row='0' Background="#eeeeee"><TextBlock><Hyperlink>FTSE 100</Hyperlink></TextBlock></Border>
+        <Border Grid.Column='0' Grid.Row='1' Background="#ffffff"><TextBlock><Hyperlink>FTSE TechMark</Hyperlink></TextBlock></Border>
+        <Border Grid.Column='0' Grid.Row='2' Background="#eeeeee"><TextBlock><Hyperlink>Dow Jones</Hyperlink></TextBlock></Border>
+        <Border Grid.Column='0' Grid.Row='3' Background="#ffffff"><TextBlock><Hyperlink>S&amp;P 500</Hyperlink></TextBlock></Border>
+        <Border Grid.Column='0' Grid.Row='4' Background="#eeeeee"><TextBlock><Hyperlink>Dollar</Hyperlink></TextBlock></Border>
+        <Border Grid.Column='0' Grid.Row='5' Background="#ffffff"><TextBlock><Hyperlink>Euro</Hyperlink></TextBlock></Border>
+
+        <Border Margin="1, 0, 1, 0" Grid.Column='1' Grid.Row='0' Background="#eeeeee"><TextBlock TextAlignment="Right">5,990.12</TextBlock></Border>
+        <Border Margin="1, 0, 1, 0" Grid.Column='1' Grid.Row='1' Background="#ffffff"><TextBlock TextAlignment="Right">804.10</TextBlock></Border>
+        <Border Margin="1, 0, 1, 0" Grid.Column='1' Grid.Row='2' Background="#eeeeee"><TextBlock TextAlignment="Right">8,322.12</TextBlock></Border>
+        <Border Margin="1, 0, 1, 0" Grid.Column='1' Grid.Row='3' Background="#ffffff"><TextBlock TextAlignment="Right">860</TextBlock></Border>
+        <Border Margin="1, 0, 1, 0" Grid.Column='1' Grid.Row='4' Background="#eeeeee"><TextBlock TextAlignment="Right">1.56</TextBlock></Border>
+        <Border Margin="1, 0, 1, 0" Grid.Column='1' Grid.Row='5' Background="#ffffff"><TextBlock TextAlignment="Right">1.59</TextBlock></Border>
+
+        <Border Grid.Column='2' Grid.Row='0' Background="#eeeeee"><TextBlock TextAlignment="Right" Foreground="Green">+50.1</TextBlock></Border>
+        <Border Grid.Column='2' Grid.Row='1' Background="#ffffff"><TextBlock TextAlignment="Right" Foreground="Red">-0.4</TextBlock></Border>
+        <Border Grid.Column='2' Grid.Row='2' Background="#eeeeee"><TextBlock TextAlignment="Right" Foreground="Green">+78</TextBlock></Border>
+        <Border Grid.Column='2' Grid.Row='3' Background="#ffffff"><TextBlock TextAlignment="Right" Foreground="Green">+15.43</TextBlock></Border>
+        <Border Grid.Column='2' Grid.Row='4' Background="#eeeeee"><TextBlock TextAlignment="Right" Foreground="Green">+0.06</TextBlock></Border>
+        <Border Grid.Column='2' Grid.Row='5' Background="#ffffff"><TextBlock TextAlignment="Right" Foreground="Red">-0.11</TextBlock></Border>
+    </Grid>
+    
+</Page>

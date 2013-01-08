@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TabbedToolbar", ".\TabbedToolbar_vc90.vcproj", "{37842647-4782-8586-8466-736954659215}"
+EndProject

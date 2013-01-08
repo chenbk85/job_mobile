@@ -1,0 +1,274 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\DatePickerDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DATEPICKERDEMO_DIALOG DIALOGEX 0, 0, 386, 298
+STYLE DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CLIPCHILDREN | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Codejock Date Picker Sample"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Columns:",IDC_STATIC,7,7,30,8
+    EDITTEXT        IDC_EDIT_COLS,42,7,101,12,ES_AUTOHSCROLL
+    LTEXT           "Rows:",IDC_STATIC,7,23,21,8
+    EDITTEXT        IDC_EDIT_ROWS,42,22,104,12,ES_AUTOHSCROLL
+    LTEXT           "First day of week:",IDC_STATIC,7,53,67,9
+    COMBOBOX        IDC_COMBO_FIRST_WEEK_DAY,74,50,72,103,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Max selected days:",IDC_STATIC,7,67,67,9
+    COMBOBOX        IDC_COMBO_MAX_SELECTED,74,65,72,109,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Show week numbers",IDC_CHECK_SHOWWEEKNRS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,158,7,81,10
+    CONTROL         "Highlight today",IDC_CHECK_HIGHLIGHT_TODAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,158,18,64,10
+    CONTROL         "Show non-month days",IDC_CHECK_NON_MONTH_DAYS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,158,29,87,10
+    CONTROL         "Show 3D border",IDC_CHECK_SHOW_3D_BORDER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,158,40,67,10
+    CONTROL         "Show Today button",IDC_CHECK_SHOWTODAYBTN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,158,50,76,8
+    CONTROL         "Show None button",IDC_CHECK_SHOWNONEBTN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,158,59,75,10
+    CONTROL         "Enable Luna Theme",IDC_CHECK_THEME,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,158,68,83,11
+    GROUPBOX        "Test Popup",IDC_STATIC,260,7,113,51,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_POPUP,269,18,79,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "V",IDC_BTN_POPUP,353,18,14,12
+    CONTROL         "Auto Size",IDC_CHECK_AUTO_SIZE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,42,37,46,10
+    PUSHBUTTON      "Change Selected Days Font...",IDC_BTN_CHANGE_SEL_FONT,
+                    260,64,113,14
+    CONTROL         "",IDC_DATEPICKER,"XTPDatePicker",WS_TABSTOP,7,101,372,
+                    190
+    COMBOBOX        IDC_COMBO_DATEPICKER,269,36,98,12,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Enable Office 2007 Theme",IDC_CHECK_THEME_OFFICE_2007,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,158,79,102,11
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 12,0,0,4
+ PRODUCTVERSION 12,0,0,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Codejock Software\0"
+            VALUE "FileDescription", "DatePicker Demo application\0"
+            VALUE "FileVersion", "12, 0, 0, 4\0"
+            VALUE "InternalName", "DatePickerDemo.exe\0"
+            VALUE "LegalCopyright", "(c)1998-2008 Codejock Software, All Rights Reserved.\0"
+            VALUE "OriginalFilename", "DatePickerDemo.exe\0"
+            VALUE "ProductName", "DatePicker\0"
+            VALUE "ProductVersion", "12, 0, 0, 4\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_DATEPICKERDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 379
+        VERTGUIDE, 42
+        VERTGUIDE, 74
+        VERTGUIDE, 146
+        VERTGUIDE, 158
+        VERTGUIDE, 260
+        VERTGUIDE, 373
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 291
+        HORZGUIDE, 78
+        HORZGUIDE, 101
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DATEPICKERDEMO_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_FIRST_WEEK_DAY, 0x403, 11, 0
+0x2031, 0x202d, 0x7553, 0x646e, 0x7961, "\000" 
+    IDC_COMBO_FIRST_WEEK_DAY, 0x403, 11, 0
+0x2032, 0x202d, 0x6f4d, 0x646e, 0x7961, "\000" 
+    IDC_COMBO_FIRST_WEEK_DAY, 0x403, 12, 0
+0x2033, 0x202d, 0x7554, 0x7365, 0x6164, 0x0079, 
+    IDC_COMBO_FIRST_WEEK_DAY, 0x403, 14, 0
+0x2034, 0x202d, 0x6557, 0x6e64, 0x7365, 0x6164, 0x0079, 
+    IDC_COMBO_FIRST_WEEK_DAY, 0x403, 13, 0
+0x2035, 0x202d, 0x6854, 0x7275, 0x6473, 0x7961, "\000" 
+    IDC_COMBO_FIRST_WEEK_DAY, 0x403, 11, 0
+0x2036, 0x202d, 0x7246, 0x6469, 0x7961, "\000" 
+    IDC_COMBO_FIRST_WEEK_DAY, 0x403, 13, 0
+0x2037, 0x202d, 0x6153, 0x7574, 0x6472, 0x7961, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Date Picker Sample..."
+    IDS_NOLIMIT             "No limit"
+    IDS_HINT_COLUMNS        "Change the number of columns in a date picker grid."
+    IDS_HINT_ROWS           "Change the number of rows in a date picker grid."
+    IDS_HINT_FIRST_WEEK_DAY "Change the first day of the week here.\n1 - Monday, ..., 7 - Sunday"
+    IDS_HINT_MAX_SEL_DAYS   "Change maximum number of selected days here."
+    IDS_HINT_WEEK_NUMBERS   "Enable/disable week numbers showing"
+    IDS_HINT_TODAY          "Enable/disable highlighting Today date by a rectangle."
+    IDS_HINT_NONMONTH_DAYS  "Enable/disable showing days prior the begginning of the first month and after the ending of the last month in the date picker month grid."
+    IDS_HINT_3DBORDER       "Enable/disable drawing of the 3D border around the DatePicker control."
+    IDS_HINT_BTN_TODAY      "Shows/hides Today button"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HINT_BTN_NONE       "Shows/hides None button"
+    IDS_HINT_LUNA_THEME     "Enables/disables using Office 2003 Luna theme"
+    IDS_HINT_AUTOSIZE       "Enables/disables autosize mode, when control is stretched on all control's coordinates rectangle."
+    IDS_HINT_TEST_POPUP     "Click here to run Date Picker control in a modal state."
+    IDS_HINT_FONT_SELECTED  "Click here to change font and color for all selected days."
+    IDS_HINT_POPUP_RESULTS  "This range is a result of running Date Picker in modal mode ans selecting a required dates interval. "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Codejock Date Picker Sample"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\DatePickerDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

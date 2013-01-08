@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GUI_Gnome", ".\GUI_Gnome_vc80.vcproj", "{96873199-4692-4419-9499-433398493296}"
+EndProject

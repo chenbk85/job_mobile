@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="UDebug|x64">
+      <Configuration>UDebug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="URelease|x64">
+      <Configuration>URelease</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\yaml-cpp\aliasmanager.h" />
+    <ClInclude Include="include\yaml-cpp\anchor.h" />
+    <ClInclude Include="include\yaml-cpp\binary.h" />
+    <ClInclude Include="include\yaml-cpp\contrib\anchordict.h" />
+    <ClInclude Include="include\yaml-cpp\contrib\graphbuilder.h" />
+    <ClInclude Include="include\yaml-cpp\conversion.h" />
+    <ClInclude Include="include\yaml-cpp\dll.h" />
+    <ClInclude Include="include\yaml-cpp\emitfromevents.h" />
+    <ClInclude Include="include\yaml-cpp\emitter.h" />
+    <ClInclude Include="include\yaml-cpp\emittermanip.h" />
+    <ClInclude Include="include\yaml-cpp\eventhandler.h" />
+    <ClInclude Include="include\yaml-cpp\exceptions.h" />
+    <ClInclude Include="include\yaml-cpp\iterator.h" />
+    <ClInclude Include="include\yaml-cpp\ltnode.h" />
+    <ClInclude Include="include\yaml-cpp\mark.h" />
+    <ClInclude Include="include\yaml-cpp\node.h" />
+    <ClInclude Include="include\yaml-cpp\nodeimpl.h" />
+    <ClInclude Include="include\yaml-cpp\nodereadimpl.h" />
+    <ClInclude Include="include\yaml-cpp\nodeutil.h" />
+    <ClInclude Include="include\yaml-cpp\noncopyable.h" />
+    <ClInclude Include="include\yaml-cpp\null.h" />
+    <ClInclude Include="include\yaml-cpp\ostream.h" />
+    <ClInclude Include="include\yaml-cpp\parser.h" />
+    <ClInclude Include="include\yaml-cpp\stlemitter.h" />
+    <ClInclude Include="include\yaml-cpp\stlnode.h" />
+    <ClInclude Include="include\yaml-cpp\traits.h" />
+    <ClInclude Include="include\yaml-cpp\yaml.h" />
+    <ClInclude Include="src\collectionstack.h" />
+    <ClInclude Include="src\contrib\graphbuilderadapter.h" />
+    <ClInclude Include="src\directives.h" />
+    <ClInclude Include="src\emitterstate.h" />
+    <ClInclude Include="src\emitterutils.h" />
+    <ClInclude Include="src\exp.h" />
+    <ClInclude Include="src\indentation.h" />
+    <ClInclude Include="src\iterpriv.h" />
+    <ClInclude Include="src\nodebuilder.h" />
+    <ClInclude Include="src\nodeownership.h" />
+    <ClInclude Include="src\ptr_stack.h" />
+    <ClInclude Include="src\ptr_vector.h" />
+    <ClInclude Include="src\regex.h" />
+    <ClInclude Include="src\regeximpl.h" />
+    <ClInclude Include="src\scanner.h" />
+    <ClInclude Include="src\scanscalar.h" />
+    <ClInclude Include="src\scantag.h" />
+    <ClInclude Include="src\setting.h" />
+    <ClInclude Include="src\singledocparser.h" />
+    <ClInclude Include="src\stream.h" />
+    <ClInclude Include="src\streamcharsource.h" />
+    <ClInclude Include="src\stringsource.h" />
+    <ClInclude Include="src\tag.h" />
+    <ClInclude Include="src\token.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\aliasmanager.cpp" />
+    <ClCompile Include="src\binary.cpp" />
+    <ClCompile Include="src\contrib\graphbuilder.cpp" />
+    <ClCompile Include="src\contrib\graphbuilderadapter.cpp" />
+    <ClCompile Include="src\conversion.cpp" />
+    <ClCompile Include="src\directives.cpp" />
+    <ClCompile Include="src\emitfromevents.cpp" />
+    <ClCompile Include="src\emitter.cpp" />
+    <ClCompile Include="src\emitterstate.cpp" />
+    <ClCompile Include="src\emitterutils.cpp" />
+    <ClCompile Include="src\exp.cpp" />
+    <ClCompile Include="src\iterator.cpp" />
+    <ClCompile Include="src\node.cpp" />
+    <ClCompile Include="src\nodebuilder.cpp" />
+    <ClCompile Include="src\nodeownership.cpp" />
+    <ClCompile Include="src\null.cpp" />
+    <ClCompile Include="src\ostream.cpp" />
+    <ClCompile Include="src\parser.cpp" />
+    <ClCompile Include="src\regex.cpp" />
+    <ClCompile Include="src\scanner.cpp" />
+    <ClCompile Include="src\scanscalar.cpp" />
+    <ClCompile Include="src\scantag.cpp" />
+    <ClCompile Include="src\scantoken.cpp" />
+    <ClCompile Include="src\simplekey.cpp" />
+    <ClCompile Include="src\singledocparser.cpp" />
+    <ClCompile Include="src\stream.cpp" />
+    <ClCompile Include="src\tag.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0648B045-2C0C-4ECE-7BDF-C4BF22863AE9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>template_vc2010_lib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='URelease|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\lib_mech\src\mech_vc2010.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='URelease|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\lib_mech\src\mech_vc2010.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+    <OutDir>$(MECH_LIB_OUT)\</OutDir>
+    <IntDir>$(MECH_TEMP)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+    <OutDir>$(MECH_LIB_OUT)\</OutDir>
+    <IntDir>$(MECH_TEMP)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UDebug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='URelease|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

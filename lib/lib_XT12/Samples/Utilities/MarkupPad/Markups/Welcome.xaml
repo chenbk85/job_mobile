@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Border xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' Background="Yellow">
+
+<ScrollViewer HorizontalAlignment="Center" VerticalAlignment="Center" VerticalScrollBarVisibility="Auto">
+<StackPanel TextElement.FontSize="14" TextElement.FontFamily="Tahoma" Background="LightGreen">
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="Arabic"/>             <TextBlock Text="مـرحبــاً"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="Danish"/>             <TextBlock Text="Velkommen"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="Dutch"/>             <TextBlock Text="Welkom"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="English"/>             <TextBlock Text="Welcome"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="Farsi"/>             <TextBlock Text="خـوش آمديـد"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="French"/>             <TextBlock Text="Bienvenue"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="Gaelic"/>             <TextBlock Text="Fбilte"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="German"/>             <TextBlock Text="Willkommen"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="Greek"/>             <TextBlock Text="Καλώς ήλθατε"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock Width= "100" Text="Gujarati"/>             <TextBlock Text="આવો યઘારો"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="Hebrew"/>             <TextBlock Text="בִּרוּבִים חַבָּאִים"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="Hindi"/>             <TextBlock Text="रवागत"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="Italian"/>             <TextBlock Text="Benvenuto"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="Japanese"/>             <TextBlock Text="よろてそ"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="Korean"/>             <TextBlock Text="여보세요"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="Polish"/>             <TextBlock Text="Witamy"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="Portuguese"/>             <TextBlock Text="Bemvindo"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="Punjabi"/>             <TextBlock Text="ਜੀ ਆਇਆਂ ਨੂੰ"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="Russian"/>             <TextBlock Text="Добро пожаловать"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="Simplified Chinese"/>             <TextBlock Text="欢迎"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="Slovak"/>             <TextBlock Text="Vнtame vбs"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="Spanish"/>             <TextBlock Text="Bienvenido"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="Traditional Chinese"/>             <TextBlock Text="歡迎"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="Turkish"/>             <TextBlock Text="Hoş geldiniz"/></StackPanel>
+	<StackPanel Orientation="Horizontal"><TextBlock MinWidth= "100" Text="Welsh"/>             <TextBlock Text="Croeso"/></StackPanel>
+</StackPanel>
+</ScrollViewer>
+
+</Border>

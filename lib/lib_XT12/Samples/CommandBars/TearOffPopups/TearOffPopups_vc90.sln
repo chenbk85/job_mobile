@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TearOffPopups", ".\TearOffPopups_vc90.vcproj", "{29637912-2259-2199-2741-596835684163}"
+EndProject

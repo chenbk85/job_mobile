@@ -1,0 +1,172 @@
+<Page xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+
+<Page.Resources>
+	<Style x:Key="{x:Type Hyperlink}" TargetType="Hyperlink">
+		<Setter Property="Foreground" Value="#0033cc"/>
+	</Style>
+</Page.Resources>
+
+    <ScrollViewer TextBlock.FontSize="12" TextBlock.FontQuality="ClearType">
+        <Border Margin="18" BorderBrush="#999999" BorderThickness="1" MaxWidth="680" VerticalAlignment="Top">
+            <StackPanel Margin="1">
+                <Border Background="#24849c" Padding="4">
+                    <TextBlock HorizontalAlignment="Right" Foreground="White" FontSize="10">
+                        <Hyperlink Foreground="White">Windows Home</Hyperlink> | 
+                        <Hyperlink Foreground="White">Secutity</Hyperlink> | 
+                        <Hyperlink Foreground="White">Support</Hyperlink> | 
+                        <Hyperlink Foreground="White">Unsubscribe</Hyperlink>
+                    </TextBlock>
+                </Border>
+
+                <Border Padding="4, 0, 10, 4">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0, 0" EndPoint="0, 1">
+                            <GradientStop Offset="0" Color="#7fbcd9"/>
+                            <GradientStop Offset="0.5" Color="#3a95b4"/>
+                            <GradientStop Offset="1" Color="#24849c"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <StackPanel>
+                        <TextBlock HorizontalAlignment="Right" Foreground="White" FontSize="43" FontFamily="Segoe UI" Text="Exploring Windows"/>
+                        <TextBlock HorizontalAlignment="Right" Foreground="White" Text="Volume 88"/>
+                        <TextBlock HorizontalAlignment="Right" Foreground="White" Text="December 18, 2007"/>
+                    
+                    </StackPanel>
+                </Border>
+
+                <TextBlock TextWrapping="Wrap" Margin="25, 10, 10, 10" FontSize="10">
+                    <Italic>Exploring Windows</Italic> brings you tips, tricks, downloads, and updates to help you get the most out of Windows. Was this newsletter forwarded to you? 
+                    <Hyperlink>Subscribe to Exploring Windows.</Hyperlink> 
+                </TextBlock>
+
+			 <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+			<Border Grid.Column = "0" Margin="25, 10, 10, 10" Background="#bbccdd" VerticalAlignment="Top">
+				<TextBlock FontFamily="Wingdings" FontSize="170" Foreground="#962e25" Padding="30, 0, 30, 0">&#x43;</TextBlock>
+			</Border>
+
+
+                    <StackPanel Grid.Column = "1">
+
+                <TextBlock TextWrapping="Wrap" Margin="25, 10, 10, 10" >
+                    <Run FontSize="16" FontWeight="Bold">Get the perfect PC present</Run>
+                    <LineBreak/>
+                    Whether you're buying a new PC for someone else or looking for cool accessories, get what you need to make the holidays bright.
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" Margin="25, 10, 10, 10" >
+                    <Run FontWeight="Bold">Have a fantastic PC</Run>
+                    <LineBreak/><Run Foreground="#3c63d9" FontWeight="Bold">&#xbb;</Run> <Hyperlink>Enhance your PC experience for free. See how.</Hyperlink>
+                    <LineBreak/><Run Foreground="#3c63d9" FontWeight="Bold">&#xbb;</Run> <Hyperlink>See cool new PCs designed specifically for Windows Vista</Hyperlink>
+                    <LineBreak/><Run Foreground="#3c63d9" FontWeight="Bold">&#xbb;</Run> <Hyperlink>Check out SeniorPCs--PCs specifically geared for easier senior living</Hyperlink>
+                    
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" Margin="25, 10, 10, 10" >
+                    <Run FontWeight="Bold">Take advantage of special offers</Run>
+                    <LineBreak/><Run Foreground="#3c63d9" FontWeight="Bold">&#xbb;</Run> <Hyperlink>Shop safer and enter to win a $10,000 shopping spree</Hyperlink>
+                    <LineBreak/><Run Foreground="#3c63d9" FontWeight="Bold">&#xbb;</Run> <Hyperlink>50% off ALL PC download games on MSN (limited-time offer)</Hyperlink>
+                    <LineBreak/><Run Foreground="#3c63d9" FontWeight="Bold">&#xbb;</Run> <Hyperlink>Enter to win Certified for Windows Vista products (expires Dec. 31)</Hyperlink>                    
+                </TextBlock>
+
+			</StackPanel>
+			</Grid>
+
+
+                <Grid Margin="0, 20, 0, 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="180"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel>
+
+                 <TextBlock TextWrapping="Wrap" Margin="25, 10, 10, 0" >
+                    <Run FontWeight="Bold" FontSize="14">What's new</Run>
+                    <LineBreak/><Hyperlink FontWeight="Bold" >Free holiday ringtones and wallpapers </Hyperlink>
+                    <LineBreak/>Get in the holiday mood with these cool new ringtones and wintry wallpapers for your Windows Mobile phone.
+                </TextBlock>
+
+                        <TextBlock TextWrapping="Wrap" Margin="25, 10, 10, 10" >
+                    <Hyperlink FontWeight="Bold" >The world's first "stay-at-home" server </Hyperlink>
+                    <LineBreak/>Organize, share, and protect your family's documents, photos, videos, and music with Windows Home Server. Learn more and explore a home connected by this new software room by room.
+                </TextBlock>
+
+
+                        <TextBlock TextWrapping="Wrap" Margin="25, 10, 10, 10" >
+                    <Hyperlink FontWeight="Bold" >New Microsoft hardware for work and play</Hyperlink>
+                    <LineBreak/>The <Hyperlink>Wireless Entertainment Desktop 7000</Hyperlink> with rechargeable mouse delivers top-notch performance from up to 30 feet away. The <Hyperlink>Mobile Memory Mouse 8000</Hyperlink> is also a fully functional 1-GB flash drive, so you can use it to store and transfer files.
+                </TextBlock>
+
+                    </StackPanel>
+                    
+                    <StackPanel Grid.Column="1">
+                        <Border Background="#e1f6ff" Padding="5, 5, 5, 15">
+                            <TextBlock>
+                                <Bold>Windows websites</Bold>
+                                <LineBreak/><Hyperlink>Windows Vista</Hyperlink>
+                                <LineBreak/><Hyperlink>Windows XP</Hyperlink>
+                                <LineBreak/><Hyperlink>Earlier Windows versions</Hyperlink>
+                            </TextBlock>
+                            
+                        </Border>
+
+                        <Border Background="#c5e5f6" Padding="5, 5, 5, 15">
+                            <TextBlock TextWrapping="Wrap">
+                                <Bold>Technical troubleshooter</Bold> 
+                                <LineBreak/><LineBreak/><Bold>Problem:</Bold>  You want to use the Disk Cleanup tool in Windows XP to improve your PC's performance, but you aren't sure how.
+                                
+                                <LineBreak/><LineBreak/><Bold>Solution:</Bold> Find out how Disk Cleanup works and how to use it to remove files, Windows components, programs, and more. 
+                            </TextBlock>
+                        </Border>
+                    </StackPanel>
+                </Grid>
+                
+                <Rectangle Margin="25, 10, 10, 10" Fill="#cccccc" Height="1"/>
+
+                <TextBlock TextWrapping="Wrap" Margin="25, 10, 10, 0">
+                    <Run FontWeight="Bold" FontSize="14">Tips and tricks</Run>
+			<LineBreak/> <Run FontWeight="Bold" FontSize="13">For Windows Vista</Run>
+                    <LineBreak/><Hyperlink FontWeight="Bold" >Burn your holiday videos to DVD </Hyperlink>
+                    <LineBreak/>Once you've shot your holiday videos, share them by creating a DVD in Windows DVD Maker, a cool feature in Windows Vista Home Premium and Windows Vista Ultimate. 
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" Margin="25, 10, 10, 0" >
+                    <Hyperlink FontWeight="Bold" >Optimize Windows Vista for better performance </Hyperlink>
+                    <LineBreak/>Use any of these simple ways to help speed up Windows Vista and make your PC run faster--even without upgrading your hardware.
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" Margin="25, 10, 10, 0" >
+                    <Run FontWeight="Bold" FontSize="13">For Windows XP</Run>
+                    <LineBreak/><Hyperlink FontWeight="Bold">Create a video greeting card </Hyperlink>
+                    <LineBreak/>Send your holiday wishes afar or close to home this season with a custom video. Learn how using Windows Movie Maker in Windows XP.
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" Margin="25, 10, 10, 0" >
+                    <Hyperlink FontWeight="Bold" >Protect your network from viruses and malicious software </Hyperlink>
+                    <LineBreak/>Help keep unauthorized people and software--such as hackers, viruses, and worms--from connecting to your home network.
+                </TextBlock>
+
+                <Rectangle Margin="25, 10, 10, 10" Fill="#cccccc" Height="1"/>
+
+                <TextBlock TextWrapping="Wrap" Margin="25, 10, 10, 25" FontSize="10" >
+                    To cancel your subscription to this newsletter, reply to this message with the word UNSUBSCRIBE in the Subject line. You can also unsubscribe <Hyperlink>here.</Hyperlink> You can manage all your Microsoft.com communication preferences at this site. 
+                </TextBlock>
+
+                <Border Background="#24849c" Padding="10, 4, 4, 4">
+                    <TextBlock HorizontalAlignment="Left" Foreground="White" FontSize="10">
+                        <Hyperlink Foreground="White">Windows Home</Hyperlink> | 
+                        <Hyperlink Foreground="White">Secutity</Hyperlink> | 
+                        <Hyperlink Foreground="White">Support</Hyperlink> | 
+                        <Hyperlink Foreground="White">Unsubscribe</Hyperlink>
+                    </TextBlock>
+                </Border>
+
+            </StackPanel>
+
+        </Border>
+    </ScrollViewer>
+</Page>

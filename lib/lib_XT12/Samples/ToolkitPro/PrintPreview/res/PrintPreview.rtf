@@ -1,0 +1,193 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033\deflangfe1033{\fonttbl{\f0\fmodern\fprq1\fcharset204{\*\fname Courier New;}Courier New CYR;}{\f1\fswiss\fprq2\fcharset204 Calibri;}}
+{\colortbl ;\red0\green128\blue0;\red0\green0\blue255;\red163\green21\blue21;\red2\green0\blue2;}
+{\*\generator Msftedit 5.41.15.1507;}\viewkind4\uc1\pard\cf1\lang1049\f0\fs16 // PrintPreviewView.cpp : implementation of the CPrintPreviewView class\par
+//\par
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.\par
+// (c)1998-2008 Codejock Software, All Rights Reserved.\par
+//\par
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE\par
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN\par
+// CONSENT OF CODEJOCK SOFTWARE.\par
+//\par
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED\par
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO\par
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A\par
+// SINGLE COMPUTER.\par
+//\par
+// CONTACT INFORMATION:\par
+// support@codejock.com\par
+// http://www.codejock.com\par
+//\par
+/////////////////////////////////////////////////////////////////////////////\par
+\par
+\cf2 #include\cf0  \cf3 "stdafx.h"\par
+\cf2 #include\cf0  \cf3 "PrintPreview.h"\par
+\par
+\cf2 #include\cf0  \cf3 "PrintPreviewDoc.h"\par
+\cf2 #include\cf0  \cf3 "PrintPreviewView.h"\par
+\par
+\cf2 #ifdef\cf0  \cf4 _DEBUG\par
+\cf2 #define\cf0  \cf2 new\cf0  \cf4 DEBUG_NEW\par
+\cf2 #undef\cf0  \cf4 THIS_FILE\par
+\cf2 static\cf0  \cf2 char\cf0  \cf4 THIS_FILE\cf0 [] = \cf4 __FILE__\cf0 ;\par
+\cf2 #endif\par
+\par
+\cf1 /////////////////////////////////////////////////////////////////////////////\par
+// CPrintPreviewView\par
+\par
+\cf4 IMPLEMENT_DYNCREATE\cf0 (\cf4 CPrintPreviewView\cf0 , \cf4 CRichEditView\cf0 )\par
+\par
+\cf4 BEGIN_MESSAGE_MAP\cf0 (\cf4 CPrintPreviewView\cf0 , \cf4 CRichEditView\cf0 )\par
+\tab\cf1 //\{\{AFX_MSG_MAP(CPrintPreviewView)\par
+\cf0\tab\tab\cf1 // NOTE - the ClassWizard will add and remove mapping macros here.\par
+\cf0\tab\tab\cf1 //    DO NOT EDIT what you see in these blocks of generated code!\par
+\cf0\tab\cf1 //\}\}AFX_MSG_MAP\par
+\cf0\tab\cf1 // Standard printing commands\par
+\cf0\tab\cf4 ON_COMMAND\cf0 (\cf4 ID_FILE_PRINT\cf0 , \cf4 CRichEditView\cf0 ::\cf4 OnFilePrint\cf0 )\par
+\tab\cf4 ON_COMMAND\cf0 (\cf4 ID_FILE_PRINT_DIRECT\cf0 , \cf4 CRichEditView\cf0 ::\cf4 OnFilePrint\cf0 )\par
+\tab\cf4 ON_COMMAND\cf0 (\cf4 ID_FILE_PRINT_PREVIEW\cf0 , \cf4 OnFilePrintPreview\cf0 )\par
+\cf4 END_MESSAGE_MAP\cf0 ()\par
+\par
+\cf1 /////////////////////////////////////////////////////////////////////////////\par
+// CPrintPreviewView construction/destruction\par
+\par
+\cf4 CPrintPreviewView\cf0 ::\cf4 CPrintPreviewView\cf0 ()\par
+\{\par
+\tab\cf1 // TODO: add construction code here\par
+\par
+\cf0\}\par
+\par
+\cf4 CPrintPreviewView\cf0 ::~\cf4 CPrintPreviewView\cf0 ()\par
+\{\par
+\}\par
+\par
+\cf4 BOOL\cf0  \cf4 CPrintPreviewView\cf0 ::\cf4 PreCreateWindow\cf0 (\cf4 CREATESTRUCT\cf0 & \cf4 cs\cf0 )\par
+\{\par
+\tab\cf1 // TODO: Modify the Window class or styles here by modifying\par
+\cf0\tab\cf1 //  the CREATESTRUCT cs\par
+\par
+\cf0\tab\cf4 BOOL\cf0  \cf4 bPreCreated\cf0  = \cf4 CRichEditView\cf0 ::\cf4 PreCreateWindow\cf0 (\cf4 cs\cf0 );\par
+\par
+\tab\cf2 return\cf0  \cf4 bPreCreated\cf0 ;\par
+\}\par
+\par
+\cf2 void\cf0  \cf4 CPrintPreviewView\cf0 ::\cf4 OnInitialUpdate\cf0 ()\par
+\{\par
+\tab\cf4 CRichEditView\cf0 ::\cf4 OnInitialUpdate\cf0 ();\par
+\par
+\par
+\tab\cf4 USES_CONVERSION\cf0 ;\par
+\par
+\par
+\par
+\tab\cf1 // Set the printing margins (720 twips = 1/2 inch).\par
+\cf0\tab\cf4 SetMargins\cf0 (\cf4 CRect\cf0 (720, 720, 720, 720));\par
+\par
+\tab\cf4 CHARFORMAT\cf0  \cf4 cf\cf0 ;\par
+\tab\cf4 ZeroMemory\cf0 (&\cf4 cf\cf0 , \cf2 sizeof\cf0 (\cf4 CHARFORMAT\cf0 ));\par
+\tab\par
+\tab\cf4 CString\cf0  \cf4 strDefFont\cf0  = \cf4 _T\cf0 (\cf3 "Tahoma"\cf0 );\par
+\tab\cf4 cf\cf0 .\cf4 cbSize\cf0  = \cf2 sizeof\cf0 (\cf4 CHARFORMAT\cf0 );\par
+\tab\cf4 cf\cf0 .\cf4 dwMask\cf0  = \cf4 CFM_BOLD\cf0  |\cf4 CFM_ITALIC\cf0  | \cf4 CFM_UNDERLINE\cf0  | \cf4 CFM_STRIKEOUT\cf0  | \cf4 CFM_SIZE\cf0  |\par
+\tab\tab\cf4 CFM_COLOR\cf0  | \cf4 CFM_OFFSET\cf0  | \cf4 CFM_PROTECTED\cf0  | \cf4 CFM_FACE\cf0 ;\par
+\tab\cf4 cf\cf0 .\cf4 dwEffects\cf0  = \cf4 CFE_AUTOCOLOR\cf0 ;\par
+\tab\cf4 cf\cf0 .\cf4 yHeight\cf0  = 200; \cf1 //10pt\par
+\cf0\tab\cf4 cf\cf0 .\cf4 bPitchAndFamily\cf0  = \cf4 DEFAULT_PITCH\cf0  | \cf4 FF_DONTCARE\cf0 ;\par
+\par
+\cf2 #if\cf0  (\cf4 _RICHEDIT_VER\cf0  >= 0x0200)\par
+\tab\cf4 lstrcpyn\cf0 (\cf4 cf\cf0 .\cf4 szFaceName\cf0 , \cf4 strDefFont\cf0 , \cf4 LF_FACESIZE\cf0 );\par
+\cf2 #else\par
+\cf0\tab\cf4 lstrcpynA\cf0 (\cf4 cf\cf0 .\cf4 szFaceName\cf0 , \cf4 T2A\cf0 ((\cf4 LPTSTR\cf0 ) (\cf4 LPCTSTR\cf0 ) \cf4 strDefFont\cf0 ), \cf4 LF_FACESIZE\cf0 );\par
+\cf2 #endif\par
+\par
+\cf0\tab\cf4 GetRichEditCtrl\cf0 ().\cf4 SetDefaultCharFormat\cf0 (\cf4 cf\cf0 );\par
+\par
+\}\par
+\par
+\par
+\cf1 /////////////////////////////////////////////////////////////////////////////\par
+// CPrintPreviewView drawing\par
+\par
+\cf2 void\cf0  \cf4 CPrintPreviewView\cf0 ::\cf4 OnDraw\cf0 (\cf4 CDC\cf0 * \cf1 /*pDC*/\cf0 )\par
+\{\par
+\tab\cf4 CPrintPreviewDoc\cf0 * \cf4 pDoc\cf0  = \cf4 GetDocument\cf0 ();\par
+\tab\cf4 ASSERT_VALID\cf0 (\cf4 pDoc\cf0 );\par
+\tab\cf1 // TODO: add draw code for native data here\par
+\cf0\}\par
+\par
+\cf1 /////////////////////////////////////////////////////////////////////////////\par
+// CPrintPreviewView printing\par
+\par
+\cf4 BOOL\cf0  \cf4 CPrintPreviewView\cf0 ::\cf4 OnPreparePrinting\cf0 (\cf4 CPrintInfo\cf0 * \cf4 pInfo\cf0 )\par
+\{\par
+\tab\cf1 // default CRichEditView preparation\par
+\cf0\tab\cf2 return\cf0  \cf4 CRichEditView\cf0 ::\cf4 DoPreparePrinting\cf0 (\cf4 pInfo\cf0 );\par
+\}\par
+\par
+\cf2 void\cf0  \cf4 CPrintPreviewView\cf0 ::\cf4 OnBeginPrinting\cf0 (\cf4 CDC\cf0 * \cf4 pDC\cf0 , \cf4 CPrintInfo\cf0 * \cf4 pInfo\cf0 )\par
+\{\par
+\tab\cf1 // Default CRichEditView begin printing.\par
+\cf0\tab\cf4 CRichEditView\cf0 ::\cf4 OnBeginPrinting\cf0 (\cf4 pDC\cf0 , \cf4 pInfo\cf0 );\par
+\}\par
+\par
+\cf2 void\cf0  \cf4 CPrintPreviewView\cf0 ::\cf4 OnEndPrinting\cf0 (\cf4 CDC\cf0 * \cf4 pDC\cf0 , \cf4 CPrintInfo\cf0 * \cf4 pInfo\cf0 )\par
+\{\par
+\tab\cf1 // Default CRichEditView end printing\par
+\cf0\tab\cf4 CRichEditView\cf0 ::\cf4 OnEndPrinting\cf0 (\cf4 pDC\cf0 , \cf4 pInfo\cf0 );\par
+\}\par
+\par
+\cf2 void\cf0  \cf4 CPrintPreviewView\cf0 ::\cf4 OnFilePrintPreview\cf0 ()\par
+\{\par
+\tab\cf1 // In derived classes, implement special window handling here\par
+\cf0\tab\cf1 // Be sure to Unhook Frame Window close if hooked.\par
+\par
+\cf0\tab\cf1 // must not create this on the frame.  Must outlive this function\par
+\cf0\tab\cf4 CPrintPreviewState\cf0 * \cf4 pState\cf0  = \cf2 new\cf0  \cf4 CPrintPreviewState\cf0 ;\par
+\par
+\tab\cf1 // DoPrintPreview's return value does not necessarily indicate that\par
+\cf0\tab\cf1 // Print preview succeeded or failed, but rather what actions are necessary\par
+\cf0\tab\cf1 // at this point.  If DoPrintPreview returns TRUE, it means that\par
+\cf0\tab\cf1 // OnEndPrintPreview will be (or has already been) called and the\par
+\cf0\tab\cf1 // pState structure will be/has been deleted.\par
+\cf0\tab\cf1 // If DoPrintPreview returns FALSE, it means that OnEndPrintPreview\par
+\cf0\tab\cf1 // WILL NOT be called and that cleanup, including deleting pState\par
+\cf0\tab\cf1 // must be done here.\par
+\par
+\cf0\tab\cf2 if\cf0  ( !\cf4 DoPrintPreview\cf0 ( \cf4 XTP_IDD_PREVIEW_DIALOGBAR\cf0 , \cf2 this\cf0 ,\par
+\tab\tab\cf4 RUNTIME_CLASS\cf0 ( \cf4 CXTPPreviewView\cf0  ), \cf4 pState\cf0  ))\par
+\tab\{\par
+\tab\tab\cf1 // In derived classes, reverse special window handling here for\par
+\cf0\tab\tab\cf1 // Preview failure case\par
+\cf0\tab\tab\cf4 TRACE0\cf0 ( \cf3 "Error: DoPrintPreview failed.\\n"\cf0  );\par
+\tab\tab\cf4 AfxMessageBox\cf0 ( \cf4 AFX_IDP_COMMAND_FAILURE\cf0  );\par
+\tab\tab\cf2 delete\cf0  \cf4 pState\cf0 ;      \cf1 // preview failed to initialize, delete State now\par
+\par
+\cf0\tab\}\par
+\}\par
+\par
+\cf1 /////////////////////////////////////////////////////////////////////////////\par
+// CPrintPreviewView diagnostics\par
+\par
+\cf2 #ifdef\cf0  \cf4 _DEBUG\par
+\cf2 void\cf0  \cf4 CPrintPreviewView\cf0 ::\cf4 AssertValid\cf0 () \cf2 const\par
+\cf0\{\par
+\tab\cf4 CRichEditView\cf0 ::\cf4 AssertValid\cf0 ();\par
+\}\par
+\par
+\cf2 void\cf0  \cf4 CPrintPreviewView\cf0 ::\cf4 Dump\cf0 (\cf4 CDumpContext\cf0 & \cf4 dc\cf0 ) \cf2 const\par
+\cf0\{\par
+\tab\cf4 CRichEditView\cf0 ::\cf4 Dump\cf0 (\cf4 dc\cf0 );\par
+\}\par
+\par
+\cf4 CPrintPreviewDoc\cf0 * \cf4 CPrintPreviewView\cf0 ::\cf4 GetDocument\cf0 () \cf1 // non-debug version is inline\par
+\cf0\{\par
+\tab\cf4 ASSERT\cf0 (\cf4 m_pDocument\cf0 ->\cf4 IsKindOf\cf0 (\cf4 RUNTIME_CLASS\cf0 (\cf4 CPrintPreviewDoc\cf0 )));\par
+\tab\cf2 return\cf0  (\cf4 CPrintPreviewDoc\cf0 *)\cf4 m_pDocument\cf0 ;\par
+\}\par
+\cf2 #endif\cf0  \cf1 //_DEBUG\par
+\par
+/////////////////////////////////////////////////////////////////////////////\par
+// CPrintPreviewView message handlers\par
+\pard\sa200\sl276\slmult1\cf0\f1\fs22\par
+}
+ 

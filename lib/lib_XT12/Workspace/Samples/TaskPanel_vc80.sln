@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TaskPanel", "..\..\Samples\TaskPanel\TaskPanel\TaskPanel_vc80.vcproj", "{53277591-3887-6211-5357-695552196795}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ToolBox", "..\..\Samples\TaskPanel\ToolBox\ToolBox_vc80.vcproj", "{43626682-3425-1789-3885-841729119492}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Unicode Debug|Win32 = Unicode Debug|Win32
+		Unicode Release|Win32 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53277591-3887-6211-5357-695552196795}.Debug|Win32.ActiveCfg = Debug|Win32
+		{53277591-3887-6211-5357-695552196795}.Debug|Win32.Build.0 = Debug|Win32
+		{53277591-3887-6211-5357-695552196795}.Release|Win32.ActiveCfg = Release|Win32
+		{53277591-3887-6211-5357-695552196795}.Release|Win32.Build.0 = Release|Win32
+		{53277591-3887-6211-5357-695552196795}.Unicode Debug|Win32.ActiveCfg = Unicode Debug|Win32
+		{53277591-3887-6211-5357-695552196795}.Unicode Debug|Win32.Build.0 = Unicode Debug|Win32
+		{53277591-3887-6211-5357-695552196795}.Unicode Release|Win32.ActiveCfg = Unicode Release|Win32
+		{53277591-3887-6211-5357-695552196795}.Unicode Release|Win32.Build.0 = Unicode Release|Win32
+		{43626682-3425-1789-3885-841729119492}.Debug|Win32.ActiveCfg = Debug|Win32
+		{43626682-3425-1789-3885-841729119492}.Debug|Win32.Build.0 = Debug|Win32
+		{43626682-3425-1789-3885-841729119492}.Release|Win32.ActiveCfg = Release|Win32
+		{43626682-3425-1789-3885-841729119492}.Release|Win32.Build.0 = Release|Win32
+		{43626682-3425-1789-3885-841729119492}.Unicode Debug|Win32.ActiveCfg = Unicode Debug|Win32
+		{43626682-3425-1789-3885-841729119492}.Unicode Debug|Win32.Build.0 = Unicode Debug|Win32
+		{43626682-3425-1789-3885-841729119492}.Unicode Release|Win32.ActiveCfg = Unicode Release|Win32
+		{43626682-3425-1789-3885-841729119492}.Unicode Release|Win32.Build.0 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

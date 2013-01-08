@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<Settings CompactMode="1">
+	<Actions Enabled="1">
+		<Action Id="35001" Caption="&amp;Anpassen..."/>
+		<Action Id="9123" Caption="Zurücksetzen"/>
+		<Action Id="9122" Caption="&amp;Schaltflächen hinzufügen oder entfernen"/>
+		<Action Id="9148" TooltipText="Optionen für Symbolleisten"/>
+		<Action Id="9149" TooltipText="Schließen"/>
+		<Action Id="59392" Caption="&amp;Symbolleiste" TooltipText="Symbolleiste ein-/ausblenden" DescriptionText="Ein- oder Ausblenden der Symbolleiste"/>
+		<Action Id="57600" Caption="&amp;Neu" TooltipText="Neu" DescriptionText="Neues Dokument erstellen" Category="Datei"/>
+		<Action Id="57601" Caption="Ö&amp;ffnen..." TooltipText="Öffnen" DescriptionText="Vorhandenes Dokument öffnen" Category="Datei"/>
+		<Action Id="57603" Caption="&amp;Speichern" TooltipText="Speichern" DescriptionText="Aktives Dokument speichern" Category="Datei"/>
+		<Action Id="57607" Caption="&amp;Drucken..." TooltipText="Drucken" DescriptionText="Drucken des aktiven Dokuments" Category="Datei"/>
+		<Action Id="57606" Caption="Druckereinric&amp;htung..." TooltipText="Druckereinrichtung" DescriptionText="Ändern der Drucker- und Druckoptionen" Category="Datei"/>
+		<Action Id="57665" Caption="&amp;Beenden" TooltipText="Beenden" DescriptionText="Anwendung beenden; Dokumente nach Rückfrage speichern" Category="Datei"/>
+		<Action Id="2000" Caption="&amp;Datei"/>
+		<Action Id="57643" Caption="&amp;Rückgängig" TooltipText="Rückgängig" DescriptionText="Rückgängig" Category="Änderung"/>
+		<Action Id="57635" Caption="Ausschneiden" TooltipText="Ausschneiden" DescriptionText="Ausschneiden der Auswahl und Ablegen in der Zwischenablage" Category="Änderung"/>
+		<Action Id="57634" Caption="Kopieren" TooltipText="Kopieren" DescriptionText="Kopieren der Auswahl in die Zwischenablage" Category="Änderung"/>
+		<Action Id="57637" Caption="E&amp;infügen" TooltipText="Einfügen" DescriptionText="Inhalt der Zwischenablage einfügen" Category="Änderung"/>
+		<Action Id="32771" Caption="&amp;Bold" TooltipText="Bold" Category="Änderung"/>
+		<Action Id="32772" Caption="&amp;Italic" TooltipText="Italic" Category="Änderung"/>
+		<Action Id="32773" Caption="&amp;Underline" TooltipText="Underline" Category="Änderung"/>
+		<Action Id="59393" Caption="Statusleiste" TooltipText="Statuszeile ein-/ausblenden" DescriptionText="Ein- oder Ausblenden der Statuszeile" Category="Ansicht"/>
+		<Action Id="57664" Caption="&amp;Über" TooltipText="Info" DescriptionText="Programminformationen, Versionsnummer und Urheberrechte anzeigen" Category="Hilfe"/>
+		<Action Id="2001" Caption="&amp;Stift"/>
+		<Action Id="2002" Caption="&amp;Ansicht"/>
+		<Action Id="2003" Caption="&amp;Hilfe"/>	
+	
+	</Actions>
+</Settings>

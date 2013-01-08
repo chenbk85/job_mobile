@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="windows-1256"?>
+<resource CompactMode="1" Language="Arabic (Saudi Arabia)" LANGID="1025">
+	<string id="129" value="\n خربشة \n خربشة \n خربشة ......"/>
+	<string id="130" value="نظامية"/>
+	<string id="131" value="شريط القوائم"/>
+	<string id="9122" value="\nإضافة أو إزالة الأزرار"/>
+	<string id="9123" value="\nإعادة تعيين"/>
+	<string id="9135" value="\nقلم"/>
+	<string id="9136" value="\nلون التعبئة"/>
+	<string id="9137" value="\nانتقاء لون"/>
+	<string id="9138" value="\nسطر"/>
+	<string id="9139" value="\nمستطيل"/>
+	<string id="9140" value="\nقطع ناقص"/>
+	<string id="9141" value="\nنسخ"/>
+	<string id="9142" value="\nلصق"/>
+	<string id="9143" value="\nمسح"/>
+	<string id="9144" value="\nتراجع"/>
+	<string id="9145" value="\nإعادة"/>
+	<string id="9146" value="\nاستيراد من ملف"/>
+	<string id="9148" value="\nخيارات شريط الأدوات"/>
+	<string id="9149" value="\nإغلاق"/>
+	<string id="9150" value="\nExpand"/>
+	<string id="9151" value="\nإغلاق الإطار"/>
+	<string id="9152" value="\nاستعادة الإطار"/>
+	<string id="9153" value="\nتصغير الإطار"/>
+	<string id="9155" value="\nإنتقل إلى مقبض المجموعة الاولى"/>
+	<string id="9156" value="\nإنتقل إلى مقبض المجموعة الثانية"/>
+	<string id="9157" value="\nمقبض مجموعة افقي جديد"/>
+	<string id="9158" value="\nمقبض مجموعة عمودي جديد"/>
+	<string id="9159" value="إلغاء الأمر"/>
+	<string id="9160" value="إغلاق"/>
+	<string id="9161" value="تخصيص"/>
+	<string id="9162" value="قائمة جديدة"/>
+	<string id="9163" value="مخصص %d"/>
+	<string id="9164" value="لا يمكن أن يكون اسم شريط الأدوات فارغاً. اكتب اسماً معيناً."/>
+	<string id="9165" value="ناًسف لقد وصلت إلى النهاية المحددة"/>
+	<string id="9166" value="يوجد شريط أدوات اسمه '%s' بشكل مسبق. اكتب اسماً آخر."/>
+	<string id="9167" value="إعادة تسمية شريط أدوات"/>
+	<string id="9168" value="هل تريد بالتأكيد حذف شريط الأدوات '%s'؟"/>
+	<string id="9169" value="كافة الأوامر"/>
+	<string id="9170" value="سيؤدي هذا إلى حذف سجل الأوامر التي استخدمتها في هذا التطبيق وإلى استعادة المجموعة الافتراضية من الأوامر المرئية إلى القوائم وأشرطة الأدوات. وهو لن يؤدي إلى التراجع عن أي تخصيصات صريحة. هل تريد بالتأكيد القيام بذلك؟"/>
+	<string id="9171" value="هذا العدد غير صالح."/>
+	<string id="9172" value="‏‏يجب أن يكون الرقم بين 1 و 1638."/>
+	<string id="9173" value="هل تريد بالتأكيد إعادة تعيين التغييرات التي أجريت على '%s' شريط الأدوات؟"/>
+	<string id="9174" value="قوائم مضمّنة"/>
+	<string id="9175" value="هل أنت متأكد أنك تريد إعادة تعيين تعيينات المفاتيح؟ إن هذا الإجراء سيلغي كافة التعيينات المخصصة للمفاتيح على مستوى الكتابة."/>
+	<string id="9176" value="هذا الاختصار معين حاليا.\nهل تريد أعادة تعيينه؟"/>
+	<string id="9177" value="سبب تحديث البرامج تغير في شريط الأدوات '%s' . هل ترغب بإعادة تعيين شريط الأدوات المخصص وتحميله من جديد؟"/>
+	<string id="9178" value="كافة ملفات الصور|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|Bitmaps(*.Bmp;*.Dib)|*.bmp;*.dib|Metafiles(*.Wmf;*.Emf)|*.wmf;*.emf|Icons(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|All Files(*.*)|*.*||"/>
+	<string id="9179" value="(إعداد افتراضي للنظام)"/>
+	<string id="9180" value="عشوائية"/>
+	<string id="9181" value="منكشفة"/>
+	<string id="9182" value="شريحة"/>
+	<string id="9183" value="تضاؤل"/>
+	<string id="9184" value="بلا"/>
+	<string id="9185" value="Active Files"/>
+	<string id="9186" value="أسود"/>
+	<string id="9187" value="بني"/>
+	<string id="9188" value="أخضر زيتي"/>
+	<string id="9189" value="أخضر داكن"/>
+	<string id="9190" value="أزرق مخضر داكن"/>
+	<string id="9191" value="أزرق داكن"/>
+	<string id="9192" value="نيلي"/>
+	<string id="9193" value="رمادي-80%"/>
+	<string id="9194" value="أحمر داكن"/>
+	<string id="9195" value="برتقالي"/>
+	<string id="9196" value="أصفر داكن"/>
+	<string id="9197" value="أخضر"/>
+	<string id="9198" value="أزرق مخضر"/>
+	<string id="9199" value="أزرق"/>
+	<string id="9200" value="أزرق-رمادي"/>
+	<string id="9201" value="رمادي-50%"/>
+	<string id="9202" value="أحمر"/>
+	<string id="9203" value="برتقالي فاتح"/>
+	<string id="9204" value="ليموني"/>
+	<string id="9205" value="أخضر بحري"/>
+	<string id="9206" value="أزرق مائي"/>
+	<string id="9207" value="أزرق فاتح"/>
+	<string id="9208" value="بنفسجي"/>
+	<string id="9209" value="رمادي-40%"/>
+	<string id="9210" value="زهري"/>
+	<string id="9211" value="ذهب"/>
+	<string id="9212" value="أصفر"/>
+	<string id="9213" value="أخضر ساطع"/>
+	<string id="9214" value="فيروزي"/>
+	<string id="9215" value="أزرق سماوي"/>
+	<string id="9216" value="أرجواني مزرق داكن"/>
+	<string id="9217" value="رمادي-25%"/>
+	<string id="9218" value="وردي"/>
+	<string id="9219" value="أسمر مصفر"/>
+	<string id="9220" value="أصفر فاتح"/>
+	<string id="9221" value="أخضر فاتح"/>
+	<string id="9222" value="فيروزي فاتح"/>
+	<string id="9223" value="أزرق شاحب"/>
+	<string id="9224" value="أرجواني شاحب"/>
+	<string id="9225" value="أبيض"/>
+	<string id="9226" value="رمادي"/>
+	<string id="9227" value="كستنائي"/>
+	<string id="9228" value="زيتي"/>
+	<string id="9229" value="أزرق داكن"/>
+	<string id="9230" value="أرجواني"/>
+	<string id="9231" value="فضي"/>
+	<string id="9232" value="زهري غامق"/>
+	<string id="9233" value="بلا تعبئة\nبلا تعبئة"/>
+	<string id="9234" value="لون تلقائي\nلون تلقائي"/>
+	<string id="9235" value="ألوان إضافية...‏"/>
+	<string id="32772" value="يفصل الخط العريض بين الرفيع والعريض المفتاح الفاصل\nتبديل"/>
+	<string id="32773" value="يحدد الحجم بين القلم الرفيع والعريض"/>
+	<string id="32775" value="English\nEnglish"/>
+	<string id="32776" value="German\nGerman"/>
+	<string id="32777" value="Japanese\nJapanese"/>
+	<string id="32778" value="Arabic\nArabic"/>
+	<string id="35001" value="تخصيص أشرطة الأدوات\n&amp;تخصيص ..."/>
+	<string id="57344" value="خربشة"/>
+	<string id="57345" value="للحصول على &quot;تعليمات&quot;، اضغط F1"/>
+	<string id="57346" value="حدد كائناً للحصول على تعليمات حوله"/>
+	<string id="57600" value="انشاء وثيقة جديدة\nجديد"/>
+	<string id="57601" value="فتح الوثيقة الموجودة\nفتح"/>
+	<string id="57602" value="إغلاق الوثيقة النشطة\nإغلاق"/>
+	<string id="57603" value="حفظ الوثيقة النشطة\nحفظ"/>
+	<string id="57604" value="حفظ الوثيقة النشطة باسم جديد\nحفظ باسم"/>
+	<string id="57605" value="تغيير خيارات الطباعة\nإعداد الصفحة"/>
+	<string id="57606" value="تغيير الطابعة وخيارات الطباعة \nإعداد الطباعة"/>
+	<string id="57607" value="طباعة المستند النشط\nطباعة"/>
+	<string id="57609" value="عرض صفحات كاملة\nمعاينة قبل الطباعة"/>
+	<string id="57610" value="تحديث الحاوية لإظهار أية تغييرات\nتحديث"/>
+	<string id="57611" value=" إحفظ نسخة الوثيقة  النشيطة بإسم جديد \n إحفظ النسخة"/>
+	<string id="57612" value="إرسل النسخة النشيطة خلال البريد الالكتروني \n إرسل البريد "/>
+	<string id="57616" value="فتح هذا المستند"/>
+	<string id="57617" value="فتح هذا المستند"/>
+	<string id="57618" value="فتح هذا المستند"/>
+	<string id="57619" value="فتح هذا المستند"/>
+	<string id="57632" value="مسح التحديد\nمسح"/>
+	<string id="57633" value="يوضح الرسم"/>
+	<string id="57634" value="نسخ التحديد ووضعه في الحافظة\nنسخ"/>
+	<string id="57635" value="قص التحديد ووضعه في الحافظة\nقص"/>
+	<string id="57636" value="بحث عن النص المحدد\nبحث"/>
+	<string id="57637" value="‏‏إدراج محتويات الحافظة\nلصق"/>
+	<string id="57640" value="إعادة الإجراء السابق\nإعادة"/>
+	<string id="57641" value="استبدال النص المحدد بنص مختلف\nاستبدال"/>
+	<string id="57642" value="تحديد الوثيقة بأكملها\nتحديد الكل"/>
+	<string id="57643" value="التراجع عن الإجراء الأخير\nتراجع"/>
+	<string id="57644" value="إعادة الإجراء السابق الذي تم التراجع عنه\nإعادة"/>
+	<string id="57648" value="‏‏فتح إطار آخر للمستند النشط\nإطار جديد"/>
+	<string id="57649" value="‏‏ترتيب الرموز أسفل الإطار\nترتيب الرموز"/>
+	<string id="57650" value="‏‏ترتيب الإطارات بحيث تتراكب\nتتالي الإطارات"/>
+	<string id="57651" value="ترتيب الإطارات في تجانب غير متراكب\nتجانب الإطارات"/>
+	<string id="57652" value="ترتيب الإطارات في تجانب غير متراكب\nتجانب الإطارات"/>
+	<string id="57653" value="انقسام الإطار النشط إلى ألواح\nانقسام"/>
+	<string id="57664" value="عرض معلومات البرنامج ورقم الإصدار وحقوق النشر\nحول"/>
+	<string id="57665" value="إنهاء التطبيق والمطالبة بحفظ المستندات\nإنهاء"/>
+	<string id="57666" value="‏‏فتح التعليمات\n مواضيع التعليمات"/>
+	<string id="57667" value="‏‏سرد مواضيع التعليمات\nمواضيع التعليمات"/>
+	<string id="57668" value="عرض إرشادات حول كيفية استخدام التعليمات\nالتعليمات"/>
+	<string id="57669" value="عرض التعليمات للأزرار  والقوائم والإطارات التي يتم النقر فوقها\nتعليمات"/>
+	<string id="57670" value="عرض التعليمات للمهمة الحالية أو الأمر الحالي\nالتعليمات"/>
+	<string id="57680" value="تبديل إلى لوح الإطار التالي\nاللوح التالي"/>
+	<string id="57681" value="تبديل إلى لوح الإطار السابق\nاللوح السابق"/>
+	<string id="59136" value="اخرج"/>
+	<string id="59137" value="الوسيلة"/>
+	<string id="59138" value="العدد"/>
+	<string id="59139" value="حرك لاًعلى واًسفل"/>
+	<string id="59140" value="فوق"/>
+	<string id="59141" value="البيان المسجل"/>
+	<string id="59392" value="عرض شريط الأدوات أو إخفاؤه\nتبديل شريط الأدوات"/>
+	<string id="59393" value="إظهار شريط المعلومات أو إخفاؤه\nتبديل شريط المعلومات"/>
+	<menu id="129">
+		<menuitem caption="ملف\t200">
+			<menuitem id="57600" caption="جديد\tCtrl+N"/>
+			<menuitem id="57601" caption="فتح...\tCtrl+O"/>
+			<menuitem id="57602" caption="إغلاق"/>
+			<menuitem id="57603" caption="حفظ\tCtrl+S"/>
+			<menuitem id="57604" caption="حفظ باسم..."/>
+			<menuitem/>
+			<menuitem id="57607" caption="طباعة...\tCtrl+P"/>
+			<menuitem id="57609" caption="معاينة قبل الطباعة"/>
+			<menuitem id="57606" caption="إعداد الطباعة..."/>
+			<menuitem/>
+			<menuitem id="57612" caption="إرسال..."/>
+			<menuitem/>
+			<menuitem id="57616" caption="ملف حديث"/>
+			<menuitem/>
+			<menuitem id="57665" caption="إنهاء"/>
+		</menuitem>
+		<menuitem caption="اللغة\t201">
+			<menuitem id="32775" caption="اللغة الإنكليزية"/>
+			<menuitem id="32776" caption="الألمانية"/>
+			<menuitem id="32777" caption="اليابانية"/>
+			<menuitem id="32778" caption="العربية"/>
+			<menuitem id="32779" caption="Russian"/>
+		</menuitem>
+		<menuitem caption="تحرير\t202">
+			<menuitem id="57643" caption="تراجع\tCtrl+Z"/>
+			<menuitem/>
+			<menuitem id="57635" caption="قص\tCtrl+X"/>
+			<menuitem id="57634" caption="نسخ\tEnter"/>
+			<menuitem id="57637" caption="لصق\tCtrl+V"/>
+			<menuitem id="57633" caption="مسح الكل"/>
+		</menuitem>
+		<menuitem caption="قلم\t203">
+			<menuitem id="32772" caption="سطر خميل"/>
+			<menuitem id="32773" caption="عرض خط الكتابة..."/>
+		</menuitem>
+		<menuitem caption="عرض\t204">
+			<menuitem id="59392" caption="شريط الأدوات"/>
+			<menuitem id="59393" caption="شريط المعلومات"/>
+		</menuitem>
+		<menuitem caption="إطار\t205">
+			<menuitem id="57648" caption="إطار جديد"/>
+			<menuitem id="57650" caption="تتالي"/>
+			<menuitem id="57651" caption="تجانب"/>
+			<menuitem id="57649" caption="ترتيب الرموز"/>
+			<menuitem id="35000" caption="Window List"/>
+		</menuitem>
+		<menuitem caption="تعليمات\t206">
+			<menuitem id="57667" caption="مواضيع التعليمات"/>
+			<menuitem/>
+			<menuitem id="57664" caption="بشاْن الخربشة"/>
+		</menuitem>
+	</menu>
+	<menu id="9121">
+		<menuitem caption="تخصيص">
+			<menuitem id="9123" caption="إعادة تعيين"/>
+			<menuitem id="9124" caption="حذف"/>
+			<menuitem/>
+			<menuitem id="9125" caption="الاسم:"/>
+			<menuitem/>
+			<menuitem id="9126" caption="نسخ شكل الزر"/>
+			<menuitem id="9127" caption="لصق شكل الزر"/>
+			<menuitem id="9128" caption="إعادة تعيين شكل الزر"/>
+			<menuitem id="9129" caption="تحرير شكل الزر..."/>
+			<menuitem id="9130" caption="تغيير شكل الزر"/>
+			<menuitem/>
+			<menuitem id="9131" caption="نمط افتراضي"/>
+			<menuitem id="9133" caption="نص فقط"/>
+			<menuitem id="9132" caption="صورة ونص"/>
+			<menuitem/>
+			<menuitem id="9134" caption="بدء مجموعة"/>
+		</menuitem>
+	</menu>
+	<dialog id="100" caption="بشأن الخربشة" style="-2134376256" styleex="12288" position="0, 0, 246, 151">
+		<control id="1005" caption="خربشة نص 1.0 " styleex="12288" position="5, 74, 151, 10"/>
+		<control id="1" class="BUTTON" caption="موافق" style="1342373889" position="5, 130, 70, 14"/>
+		<control id="1003" caption="اللغة : الانجليزية" styleex="12288" position="5, 104, 151, 8"/>
+		<control id="1004" caption="عينة ملف لمورد اللغات المتعددة" styleex="12288" position="5, 83, 151, 10"/>
+		<control resource="135" style="1342177294" position="162, 74, 75, 37"/>
+		<control id="1002" caption="Copyright ©2005 Codejock Software, All Rights Reserved" style="1342308353" position="28, 41, 190, 8"/>
+		<control id="1000" caption="http://www.codejock.com" style="1342308353" position="28, 50, 190, 8"/>
+		<control resource="101" style="1342177294" position="28, 7, 190, 31"/>
+		<control style="1342177296" position="7, 120, 232, 1"/>
+		<control style="1342177296" position="8, 66, 231, 1"/>
+	</dialog>
+	<dialog id="131" caption="عرض خط الكتابة" style="-1865940800" position="0, 0, 203, 65">
+		<control id="1" class="BUTTON" caption="موافق" style="1342242817" position="148, 7, 50, 14"/>
+		<control id="2" class="BUTTON" caption="إلغاء الأمر" style="1342242816" position="148, 24, 50, 14"/>
+		<control id="1002" class="BUTTON" caption="افتراضي" style="1342242816" position="148, 41, 50, 14"/>
+		<control id="1006" caption="خط كتابة رفيع" position="10, 12, 70, 10"/>
+		<control id="1007" caption="خط كتابة عريض" position="10, 33, 70, 10"/>
+		<control id="1000" class="EDIT" style="1350631552" position="86, 12, 40, 13"/>
+		<control id="1001" class="EDIT" style="1350631552" position="86, 33, 40, 13"/>
+	</dialog>
+	<dialog id="9115" caption="محرر الأزرار" fontface="MS Shell Dlg" style="-1865940792" styleex="12288" position="0, 0, 253, 185">
+		<control caption="صورة" styleex="12288" position="162, 7, 82, 8"/>
+		<control class="BUTTON" caption="الألوانن" style="1342177287" styleex="12288" position="71, 106, 80, 71"/>
+		<control class="BUTTON" caption="نقلل" style="1342177287" styleex="12288" position="71, 72, 81, 31"/>
+		<control class="BUTTON" caption="&amp;معاينة" style="1342177287" styleex="12288" position="160, 106, 86, 71"/>
+		<control class="BUTTON" caption="أدوات" style="1342177287" styleex="12288" position="71, 9, 81, 60"/>
+		<control id="1" class="BUTTON" caption="موافق" style="1342242817" styleex="12288" position="10, 7, 50, 14"/>
+		<control id="2" class="BUTTON" caption="إلغاء الأمر" style="1342242816" styleex="12288" position="10, 25, 50, 14"/>
+		<control id="100" style="1342177543" position="160, 17, 86, 80"/>
+		<control id="101" style="1342308865" styleex="131072" position="166, 117, 73, 54"/>
+		<control caption="شفاف" styleex="12288" position="82, 157, 27, 8"/>
+		<control id="105" style="1342308608" position="116, 153, 15, 15"/>
+		<control id="103" caption="أدوات" style="1082262017" position="81, 21, 60, 43"/>
+		<control id="104" caption="نقلل" style="1082262017" position="80, 83, 62, 12"/>
+		<control id="106" style="1342308620" position="109, 144, 15, 15"/>
+		<control id="102" caption="الألوانن" style="1082262017" position="78, 121, 68, 12"/>
+	</dialog>
+	<dialog id="9116" caption="لوحة مفاتيح" fontface="MS Shell Dlg" style="1086324808" styleex="12288" position="0, 0, 230, 150">
+		<control caption="الفئة:" styleex="12288" position="195, 5, 31, 8"/>
+		<control id="100" class="COMBOBOX" style="1344339971" styleex="12288" position="133, 15, 93, 147"/>
+		<control id="101" caption="الأوامر:" styleex="12288" position="41, 28, 90, 8"/>
+		<control id="102" class="LISTBOX" style="1352728897" styleex="12288" position="135, 39, 91, 74"/>
+		<control id="103" caption="تعيينات المفاتيح:" styleex="12288" position="159, 28, 67, 8"/>
+		<control id="104" class="LISTBOX" style="1352728897" styleex="12288" position="62, 38, 69, 49"/>
+		<control id="105" caption="اضغط مفتاح الاختصار الجديد:" styleex="12288" position="41, 91, 90, 8"/>
+		<control id="106" class="EDIT" style="1350631552" position="62, 101, 69, 12"/>
+		<control id="107" class="BUTTON" caption="تعيين" style="1342242816" position="2, 39, 55, 14"/>
+		<control id="108" class="BUTTON" caption="إزالة" style="1342242816" position="2, 56, 55, 14"/>
+		<control id="109" class="BUTTON" caption="إعادة تعيين الكل" style="1342242816" position="2, 73, 55, 14"/>
+		<control id="110" caption="الوصف:" styleex="12288" position="188, 119, 38, 8"/>
+		<control id="111" styleex="143360" position="62, 129, 164, 19"/>
+	</dialog>
+	<dialog id="9117" caption="أشرطة أدوات" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control caption=":أشرطة الأدوات" styleex="4096" position="4, 5, 222, 8"/>
+		<control id="100" class="LISTBOX" style="1352728913" styleex="12288" position="76, 15, 150, 131"/>
+		<control id="101" class="BUTTON" caption="...جديد" style="1342242816" position="2, 15, 70, 14"/>
+		<control id="102" class="BUTTON" caption="...إعادة تسمية" style="1342242816" position="2, 33, 70, 14"/>
+		<control id="103" class="BUTTON" caption="حذف" style="1342242816" position="2, 51, 70, 14"/>
+		<control id="104" class="BUTTON" caption="...إعادة تعيين" style="1342242816" position="2, 69, 70, 14"/>
+	</dialog>
+	<dialog id="9118" caption="خيارات" fontface="MS Shell Dlg" style="1086324808" styleex="12288" position="0, 0, 230, 150">
+		<control id="108" caption="القوائم وأشرطة الأدوات المخصصة" styleex="12288" position="4, 5, 222, 8"/>
+		<control id="100" class="BUTTON" caption="إظهار القوائم الكاملة دوماً" style="1342242819" styleex="12288" position="4, 17, 216, 10"/>
+		<control id="101" class="BUTTON" caption="إظهار القوائم الكاملة بعد مهلة قصيرة" style="1342242819" styleex="12288" position="4, 29, 204, 10"/>
+		<control id="102" class="BUTTON" caption="إعادة تعيين بيانات استخدام القوائم وأشرطة الأدوات" style="1342242816" styleex="12288" position="56, 42, 165, 14"/>
+		<control id="107" caption="غير ذلك" styleex="12288" position="4, 70, 222, 8"/>
+		<control id="103" class="BUTTON" caption="رموز كبيرة" style="1342242819" styleex="12288" position="4, 82, 216, 10"/>
+		<control id="104" class="BUTTON" caption="إظهار تلميحات الشاشة على أشرطة الأدوات" style="1342242819" styleex="12288" position="4, 93, 216, 10"/>
+		<control id="105" class="BUTTON" caption="إظهار مفاتيح الاختصار في تلميحات الشاشة" style="1342242819" styleex="12288" position="4, 104, 204, 10"/>
+		<control caption="حركة القوائم:" styleex="12288" position="172, 117, 46, 8"/>
+		<control id="106" class="COMBOBOX" style="1344339971" styleex="12288" position="90, 115, 79, 65"/>
+	</dialog>
+	<dialog id="9119" caption="الأوامر" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control caption="لإضافة أمر إلى شريط أدوات: حدد فئة واسحب الأمر من مربع الحوار هذا إلى شريط الأدوات." styleex="12288" position="4, 5, 222, 19"/>
+		<control caption="الفئات:" styleex="12288" position="4, 25, 133, 8"/>
+		<control id="100" class="LISTBOX" style="1352728833" styleex="12288" position="145, 35, 81, 103"/>
+		<control caption="الأوامر:" styleex="12288" position="152, 25, 74, 8"/>
+		<control id="101" class="LISTBOX" style="1352728849" styleex="12288" position="0, 35, 140, 103"/>
+	</dialog>
+	<dialog id="9120" caption="شريط أدوات جديد" fontface="MS Shell Dlg" style="-2134376248" styleex="12288" position="0, 0, 186, 52">
+		<control caption="اسم شريط الأدوات:" styleex="12288" position="82, 4, 100, 8"/>
+		<control id="100" class="EDIT" style="1350631552" styleex="12288" position="4, 15, 178, 12"/>
+		<control id="1" class="BUTTON" caption="موافق" style="1342242817" styleex="12288" position="78, 34, 50, 14"/>
+		<control id="2" class="BUTTON" caption="إلغاء الأمر" style="1342242816" styleex="12288" position="132, 34, 50, 14"/>
+	</dialog>
+</resource>

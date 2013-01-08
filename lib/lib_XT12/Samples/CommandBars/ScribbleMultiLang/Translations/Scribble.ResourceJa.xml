@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="shift-jis"?>
+<resource CompactMode="1" Language="Japanese" LANGID="1041">
+	<string id="129" value="\nScribb\nScribb\nScribble Files (*.scb)\n.SCB\nScribble.Document\nScribb Document"/>
+	<string id="130" value="標準方式"/>
+	<string id="131" value="ﾒﾆｭｰ ﾊﾞｰ"/>
+	<string id="9122" value="\nボタンの表示/非表示"/>
+	<string id="9123" value="\nリセット"/>
+	<string id="9135" value="\n鉛筆"/>
+	<string id="9136" value="\n塗りつぶしの色"/>
+	<string id="9137" value="\n色の選択"/>
+	<string id="9138" value="\n直線"/>
+	<string id="9139" value="\n四角形"/>
+	<string id="9140" value="\n楕円"/>
+	<string id="9141" value="\nコピー"/>
+	<string id="9142" value="\n貼り付け"/>
+	<string id="9143" value="\n削除"/>
+	<string id="9144" value="\n元に戻す"/>
+	<string id="9145" value="\nやり直し"/>
+	<string id="9146" value="\n読み込むファイル名 "/>
+	<string id="9148" value="\nツールバー オプション"/>
+	<string id="9149" value="\n閉じる"/>
+	<string id="9150" value="\nExpand"/>
+	<string id="9151" value="\nウィンドウを閉じる"/>
+	<string id="9152" value="\nウィンドウを元のサイズに戻す"/>
+	<string id="9153" value="\nウィンドウの最小化"/>
+	<string id="9155" value="\n前のタブ グループへ移動"/>
+	<string id="9156" value="\n次のタブ グループへ移動"/>
+	<string id="9157" value="\n水平タブ グループの新規作成"/>
+	<string id="9158" value="\n垂直タブ グループの新規作成"/>
+	<string id="9159" value="キャンセル"/>
+	<string id="9160" value="閉じる"/>
+	<string id="9161" value="ユーザー設定"/>
+	<string id="9162" value="新しいメニュー"/>
+	<string id="9163" value="カスタム%d"/>
+	<string id="9164" value="ツールバーには名前が必要です。 ツールバー名を指定してください。"/>
+	<string id="9165" value="これ以上は設定できません。"/>
+	<string id="9166" value="'%s' という名前のツールバーが既に存在します。 別の名前を指定してください。"/>
+	<string id="9167" value="ツール バー名の変更"/>
+	<string id="9168" value="'%s'ツールバーを削除してもよろしいですか?"/>
+	<string id="9169" value="すべてのコマンド"/>
+	<string id="9170" value="このアプリケーションで使用したコマンドの記録を消去し、メニューとツールバーに表示するコマンドを既定の状態に戻します。 ユーザー設定は残ります。 実行しますか?"/>
+	<string id="9171" value="数値が正しくありません。"/>
+	<string id="9172" value="1 から 1638 の間の値を入力してください。"/>
+	<string id="9173" value="'%s' ツールバーへの変更をリセットしてもよろしいですか？"/>
+	<string id="9174" value="組み込みのメニュー"/>
+	<string id="9175" value="キー割付けをリセットしてよろしいですか？このコマンドを実行すると全てのカスタムキー割付けをテキストレベルで消去します。"/>
+	<string id="9176" value="キー割付は既に存在します.\n再度定義してよろしいですか?"/>
+	<string id="9177" value="ツールバー '%s' は変更されました. リセットして新しいツールバーにしますか?"/>
+	<string id="9178" value="すべての画像ファイル|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|ビットマップ(*.Bmp;*.Dib)|*.bmp;*.dib|メタファイル(*.Wmf;*.Emf)|*.wmf;*.emf|アイコン(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|すべてのファイル(*.*)|*.*||"/>
+	<string id="9179" value="(既定のシステム設定)"/>
+	<string id="9180" value="ランダム"/>
+	<string id="9181" value="展開"/>
+	<string id="9182" value="スライド"/>
+	<string id="9183" value="フェード"/>
+	<string id="9184" value="なし"/>
+	<string id="9185" value="Active Files"/>
+	<string id="9186" value="黒"/>
+	<string id="9187" value="茶"/>
+	<string id="9188" value="オリーブ"/>
+	<string id="9189" value="濃い緑"/>
+	<string id="9190" value="濃い青緑"/>
+	<string id="9191" value="濃い青"/>
+	<string id="9192" value="インディゴ"/>
+	<string id="9193" value="80% 灰色"/>
+	<string id="9194" value="濃い赤"/>
+	<string id="9195" value="オレンジ"/>
+	<string id="9196" value="濃い黄"/>
+	<string id="9197" value="緑"/>
+	<string id="9198" value="青緑"/>
+	<string id="9199" value="青"/>
+	<string id="9200" value="ブルーグレー"/>
+	<string id="9201" value="50% 灰色"/>
+	<string id="9202" value="赤"/>
+	<string id="9203" value="薄いオレンジ"/>
+	<string id="9204" value="ライム"/>
+	<string id="9205" value="シーグリーン"/>
+	<string id="9206" value="アクア"/>
+	<string id="9207" value="薄い青"/>
+	<string id="9208" value="紫"/>
+	<string id="9209" value="40% 灰色"/>
+	<string id="9210" value="ピンク"/>
+	<string id="9211" value="ゴールド"/>
+	<string id="9212" value="黄"/>
+	<string id="9213" value="明るい緑"/>
+	<string id="9214" value="水色"/>
+	<string id="9215" value="スカイブルー"/>
+	<string id="9216" value="プラム"/>
+	<string id="9217" value="25% 灰色"/>
+	<string id="9218" value="ローズ"/>
+	<string id="9219" value="ベージュ"/>
+	<string id="9220" value="薄い黄"/>
+	<string id="9221" value="薄い緑"/>
+	<string id="9222" value="薄い水色"/>
+	<string id="9223" value="ペールブルー"/>
+	<string id="9224" value="ラベンダー"/>
+	<string id="9225" value="白"/>
+	<string id="9226" value="灰色"/>
+	<string id="9227" value="マロン"/>
+	<string id="9228" value="オリーブ"/>
+	<string id="9229" value="紺"/>
+	<string id="9230" value="紫"/>
+	<string id="9231" value="シルバー"/>
+	<string id="9232" value="赤紫"/>
+	<string id="9233" value="塗りつぶしなし\n塗りつぶしなし"/>
+	<string id="9234" value="自動設定の色\n自動設定の色"/>
+	<string id="9235" value="その他の色..."/>
+	<string id="32772" value="トグル\nトグル"/>
+	<string id="32773" value="Sets the size of the thin and thick pen"/>
+	<string id="32775" value="English\nEnglish"/>
+	<string id="32776" value="German\nGerman"/>
+	<string id="32777" value="Japanese\nJapanese"/>
+	<string id="32778" value="Arabic\nArabic"/>
+	<string id="35001" value="\nカスタマイズ..."/>
+	<string id="57344" value="フリーハンド"/>
+	<string id="57345" value="ﾍﾙﾌﾟを表示するには [F1] を押してください。"/>
+	<string id="57346" value="ﾍﾙﾌﾟを使用するｵﾌﾞｼﾞｪｸﾄを選択"/>
+	<string id="57600" value="新規にﾌｧｲﾙを作成\n新規ﾌｧｲﾙ"/>
+	<string id="57601" value="既存のﾌｧｲﾙを開く\n開く"/>
+	<string id="57602" value="作業中のﾌｧｲﾙを閉じる\n閉じる"/>
+	<string id="57603" value="作業中のﾌｧｲﾙを保存\n保存"/>
+	<string id="57604" value="作業中のﾌｧｲﾙに名前をつけて保存\n名前をつけて保存"/>
+	<string id="57605" value="印刷ｵﾌﾟｼｮﾝの変更\nﾍﾟｰｼﾞ設定"/>
+	<string id="57606" value="ﾌﾟﾘﾝﾀおよび印刷ｵﾌﾟｼｮﾝの変更\n印刷設定"/>
+	<string id="57607" value="ｱｸﾃｨﾌﾞなﾄﾞｷｭﾒﾝﾄの印刷\n印刷"/>
+	<string id="57609" value="ﾍﾟｰｼﾞ全体を表示\n印刷ﾌﾟﾚﾋﾞｭｰ"/>
+	<string id="57610" value="コンテナを更新して、変更内容を表示します。\nUpdate"/>
+	<string id="57611" value="現在作業中のドキュメントのコピーを新しい名前を付けて保存します。\nSave Copy"/>
+	<string id="57612" value="現在開いているファイルを電子メールに添付して送信します。\nSend Mail"/>
+	<string id="57616" value="このﾌｧｲﾙを開く"/>
+	<string id="57617" value="このﾌｧｲﾙを開く"/>
+	<string id="57618" value="このﾌｧｲﾙを開く"/>
+	<string id="57619" value="このﾌｧｲﾙを開く"/>
+	<string id="57632" value="選択範囲を消去\n消去"/>
+	<string id="57633" value="絵または選択範囲をクリアします。"/>
+	<string id="57634" value="選択範囲をｺﾋﾟｰしてｸﾘｯﾌﾟﾎﾞｰﾄﾞに保存\n保存"/>
+	<string id="57635" value="選択範囲を切り取ってｸﾘｯﾌﾟﾎﾞｰﾄﾞに保存\n切り取り"/>
+	<string id="57636" value="指定した文字列の検索\n検索"/>
+	<string id="57637" value="ｸﾘｯﾌﾟﾎﾞｰﾄﾞの内容を貼り付け\n貼り付け"/>
+	<string id="57640" value="直前に行った動作を繰り返す\nﾘﾋﾟｰﾄ"/>
+	<string id="57641" value="指定した文字列を他の文字列で置換\n置換"/>
+	<string id="57642" value="ﾌｧｲﾙ全体を選択\nすべて選択"/>
+	<string id="57643" value="直前に行った動作を元に戻す\n元に戻す"/>
+	<string id="57644" value="直前に行った動作をやり直す\nやり直し"/>
+	<string id="57648" value="現在のファイルを、別のウィンドウで開きます。\nNew Window"/>
+	<string id="57649" value="最小化したアイコンを、ウィンドウの下部で整列します。\nArrange Icons"/>
+	<string id="57650" value="ウィンドウが重なるように配置します。\nCascade Windows"/>
+	<string id="57651" value="ウィンドウが重ならないように並べて配置します。\nTile Windows"/>
+	<string id="57652" value="ウィンドウが重ならないように並べて配置します。\nTile Windows"/>
+	<string id="57653" value="作業中のｳｨﾝﾄﾞｳを分割\n分割"/>
+	<string id="57664" value="ﾌﾟﾛｸﾞﾗﾑの情報、ﾊﾞｰｼﾞｮﾝそして著作権を表示\nﾊﾞｰｼﾞｮﾝ情報"/>
+	<string id="57665" value="ｱﾌﾟﾘｹｰｼｮﾝを終了し、ﾌｧｲﾙの保存を指示\n終了"/>
+	<string id="57666" value="ヘルプを表示します。\nHelp Topics"/>
+	<string id="57667" value="ﾍﾙﾌﾟのﾄﾋﾟｯｸを表示\nﾍﾙﾌﾟのﾄﾋﾟｯｸ"/>
+	<string id="57668" value="ヘルプの使い方についてのヘルプを表示します。\nHelp"/>
+	<string id="57669" value="ﾎﾞﾀﾝ、ﾒﾆｭｰおよびｳｨﾝﾄﾞｳのﾍﾙﾌﾟを表示\nﾍﾙﾌﾟ"/>
+	<string id="57670" value="現在選択しているアイテムまたはコマンドについてのヘルプを表示します。\nHelp"/>
+	<string id="57680" value="次のウィンドウ ペインに切り替えます。\nNext Pane"/>
+	<string id="57681" value="前のｳｨﾝﾄﾞｳに切り替える\n前ﾍﾟｰｼﾞ"/>
+	<string id="59136" value="EXT"/>
+	<string id="59137" value="MAJ"/>
+	<string id="59138" value="NUM"/>
+	<string id="59139" value="DﾉF"/>
+	<string id="59140" value="上書"/>
+	<string id="59141" value="記録"/>
+	<string id="59392" value="ツールバーの表示/非表示を切り替えます。\nツールバーの表示/非表示"/>
+	<string id="59393" value="ステータス バーの表示/非表示を切り替えます。\nステータスバーの表示/非表示"/>
+	<menu id="129">
+		<menuitem caption="ファイル\t200">
+			<menuitem id="57600" caption="新規作成\tCtrl+&amp;N"/>
+			<menuitem id="57601" caption="開く...\tCtrl+&amp;O"/>
+			<menuitem id="57602" caption="閉じる"/>
+			<menuitem id="57603" caption="保存\tCtrl+&amp;S"/>
+			<menuitem id="57604" caption="名前を付けて保存..."/>
+			<menuitem/>
+			<menuitem id="57607" caption="印刷...\tCtrl+&amp;P"/>
+			<menuitem id="57609" caption="ﾌﾟﾚﾋﾞｭｰ"/>
+			<menuitem id="57606" caption="印刷設定..."/>
+			<menuitem/>
+			<menuitem id="57612" caption="送信..."/>
+			<menuitem/>
+			<menuitem id="57616" caption="最近使ったﾌｧｲﾙ"/>
+			<menuitem/>
+			<menuitem id="57665" caption="ｱﾌﾟﾘｹｰｼｮﾝの終了"/>
+		</menuitem>
+		<menuitem caption="言語\t201">
+			<menuitem id="32775" caption="英語"/>
+			<menuitem id="32776" caption="ﾄﾞｲﾂ語 "/>
+			<menuitem id="32777" caption="日本語"/>
+			<menuitem id="32778" caption="ｱﾗﾋﾞｱ語"/>
+			<menuitem id="32779" caption="Russian"/>
+		</menuitem>
+		<menuitem caption="編集\t202">
+			<menuitem id="57643" caption="切り取り\tCtrl+Z"/>
+			<menuitem/>
+			<menuitem id="57635" caption="切り取り\tCtrl+X"/>
+			<menuitem id="57634" caption="ｺﾋﾟｰ\tCtrl+C"/>
+			<menuitem id="57637" caption="貼り付け\tCtrl+V"/>
+			<menuitem id="57633" caption="すべてｸﾘｱ"/>
+		</menuitem>
+		<menuitem caption="ﾍﾟﾝ\t203">
+			<menuitem id="32772" caption="太線"/>
+			<menuitem id="32773" caption="厚紙ペンの太さ..."/>
+		</menuitem>
+		<menuitem caption="表示\t204">
+			<menuitem id="59392" caption="ﾂｰﾙ ﾊﾞｰ"/>
+			<menuitem id="59393" caption="ｽﾃｰﾀｽ ﾊﾞｰ"/>
+		</menuitem>
+		<menuitem caption="ｳｨﾝﾄﾞｳ\t205">
+			<menuitem id="57648" caption="新規ｳｨﾝﾄﾞｳ"/>
+			<menuitem id="57650" caption="重ねて表示"/>
+			<menuitem id="57651" caption="並べて表示"/>
+			<menuitem id="57649" caption="ｱｲｺﾝの整列"/>
+			<menuitem id="35000" caption="Window List"/>
+		</menuitem>
+		<menuitem caption="ﾍﾙﾌﾟ\t206">
+			<menuitem id="57667" caption="ﾍﾙﾌﾟのﾄﾋﾟｯｸ"/>
+			<menuitem/>
+			<menuitem id="57664" caption="バージョン情報 Scribble... (&amp;A)"/>
+		</menuitem>
+	</menu>
+	<menu id="9121">
+		<menuitem caption="ユーザー設定">
+			<menuitem id="9123" caption="リセット"/>
+			<menuitem id="9124" caption="削除"/>
+			<menuitem/>
+			<menuitem id="9125" caption="プロパティ名:"/>
+			<menuitem/>
+			<menuitem id="9126" caption="ボタン イメージのコピー"/>
+			<menuitem id="9127" caption="ボタン イメージの貼り付け"/>
+			<menuitem id="9128" caption="ボタン イメージを元に戻す"/>
+			<menuitem id="9129" caption="ボタン イメージの編集..."/>
+			<menuitem id="9130" caption="ボタン イメージの変更"/>
+			<menuitem/>
+			<menuitem id="9131" caption="既定のスタイル"/>
+			<menuitem id="9133" caption="テキストのみ"/>
+			<menuitem id="9132" caption="イメージとテキストを表示"/>
+			<menuitem/>
+			<menuitem id="9134" caption="グループの始まり"/>
+		</menuitem>
+	</menu>
+	<dialog id="100" caption="ﾊﾞｰｼﾞｮﾝ情報 Scribble" style="-2134376256" position="0, 0, 246, 151">
+		<control id="1005" caption="Scribble バージョン 1.0" position="88, 74, 151, 10"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342373889" position="169, 130, 70, 14"/>
+		<control id="1003" caption="言語: 日本語" position="88, 104, 151, 8"/>
+		<control id="1004" caption="Multiple-Language Resource File Sample" position="88, 83, 151, 10"/>
+		<control resource="134" style="1342177294" position="7, 74, 75, 37"/>
+		<control id="1002" caption="Copyright ｩ2005 Codejock Software, All Rights Reserved" style="1342308353" position="28, 41, 190, 8"/>
+		<control id="1000" caption="http://www.codejock.com" style="1342308353" position="28, 50, 190, 8"/>
+		<control resource="101" style="1342177294" position="28, 7, 190, 31"/>
+		<control style="1342177296" position="7, 120, 232, 1"/>
+		<control style="1342177296" position="8, 66, 231, 1"/>
+	</dialog>
+	<dialog id="131" caption="ﾍﾟﾝ 幅:" style="-1865940800" position="0, 0, 203, 65">
+		<control id="1" class="BUTTON" caption="OK" style="1342242817" position="148, 7, 50, 14"/>
+		<control id="2" class="BUTTON" caption="ｷｬﾝｾﾙ" style="1342242816" position="148, 24, 50, 14"/>
+		<control id="1002" class="BUTTON" caption="初期値" style="1342242816" position="148, 41, 50, 14"/>
+		<control id="1006" caption="細枠 ﾍﾟﾝ 幅:" position="10, 12, 70, 10"/>
+		<control id="1007" caption="厚紙ペンの太さ:" position="10, 33, 70, 10"/>
+		<control id="1000" class="EDIT" style="1350631552" position="86, 12, 40, 13"/>
+		<control id="1001" class="EDIT" style="1350631552" position="86, 33, 40, 13"/>
+	</dialog>
+	<dialog id="9115" caption="ボタン エディタ" fontface="MS Shell Dlg" style="-1865940792" position="0, 0, 253, 185">
+		<control caption="図" position="7, 7, 86, 8"/>
+		<control class="BUTTON" caption="色の設定" style="1342177287" position="102, 106, 80, 71"/>
+		<control class="BUTTON" caption="移動" style="1342177287" position="101, 72, 81, 31"/>
+		<control class="BUTTON" caption="プレビュー" style="1342177287" position="7, 106, 86, 71"/>
+		<control class="BUTTON" caption="ツール" style="1342177287" position="101, 9, 81, 60"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342242817" position="193, 7, 50, 14"/>
+		<control id="2" class="BUTTON" caption="キャンセル" style="1342242816" position="193, 25, 50, 14"/>
+		<control id="100" style="1342177543" position="7, 17, 86, 80"/>
+		<control id="101" style="1342308865" styleex="131072" position="14, 117, 73, 54"/>
+		<control caption="透明" position="135, 156, 42, 8"/>
+		<control id="105" style="1342308608" position="116, 153, 15, 15"/>
+		<control id="103" caption="ツール" style="1082262017" position="112, 21, 60, 43"/>
+		<control id="104" caption="移動" style="1082262017" position="111, 83, 62, 12"/>
+		<control id="106" style="1342308620" position="109, 144, 15, 15"/>
+		<control id="102" caption="色の設定" style="1082262017" position="107, 121, 68, 12"/>
+	</dialog>
+	<dialog id="9116" caption="キーボード(&amp;K)" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 264, 176">
+		<control caption="分類(&amp;G):" position="4, 5, 89, 8"/>
+		<control id="100" class="COMBOBOX" style="1344339971" position="4, 15, 91, 147"/>
+		<control id="101" caption="コマンド(&amp;D):" position="4, 28, 89, 8"/>
+		<control id="102" class="LISTBOX" style="1352728897" position="4, 39, 91, 89"/>
+		<control id="103" caption="現在のキー(&amp;U):" position="100, 28, 73, 8"/>
+		<control id="104" class="LISTBOX" style="1352728897" position="100, 38, 96, 61"/>
+		<control id="105" caption="新規ショートカット キーを入力(&amp;N):" position="100, 106, 107, 8"/>
+		<control id="106" class="EDIT" style="1350631552" position="100, 116, 97, 12"/>
+		<control id="107" class="BUTTON" caption="割り当て(&amp;A)" style="1342242816" position="200, 39, 61, 14"/>
+		<control id="108" class="BUTTON" caption="削除(&amp;R)" style="1342242816" position="200, 56, 61, 14"/>
+		<control id="109" class="BUTTON" caption="すべて元に戻す(&amp;S)" style="1342242816" position="200, 73, 61, 14"/>
+		<control id="110" caption="説明:" position="4, 140, 38, 8"/>
+		<control id="111" styleex="131072" position="4, 152, 193, 19"/>
+	</dialog>
+	<dialog id="9117" caption="ツールバー(&amp;B)" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 264, 176">
+		<control caption="ツールバー(&amp;A):" position="4, 5, 148, 8"/>
+		<control id="100" class="LISTBOX" style="1352728913" position="4, 15, 180, 156"/>
+		<control id="101" class="BUTTON" caption="新規作成(&amp;N)..." style="1342242816" position="191, 15, 70, 14"/>
+		<control id="102" class="BUTTON" caption="名前の変更(&amp;E)..." style="1342242816" position="191, 33, 70, 14"/>
+		<control id="103" class="BUTTON" caption="削除(&amp;D)" style="1342242816" position="191, 51, 70, 14"/>
+		<control id="104" class="BUTTON" caption="リセット(&amp;R)" style="1342242816" position="191, 69, 70, 14"/>
+	</dialog>
+	<dialog id="9118" caption="オプション(&amp;O)" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 264, 154">
+		<control id="108" caption="メニューとツールバー" position="4, 5, 256, 8"/>
+		<control id="100" class="BUTTON" caption="常にすべてのメニューを表示する(&amp;N)" style="1342242819" position="10, 17, 216, 10"/>
+		<control id="101" class="BUTTON" caption="少し時間が経過したら、すべてのメニューを表示する(&amp;U)" style="1342242819" position="22, 29, 204, 10"/>
+		<control id="102" class="BUTTON" caption="初期状態に戻す(&amp;R)" style="1342242816" position="10, 42, 125, 14"/>
+		<control id="107" caption="その他" position="4, 70, 256, 8"/>
+		<control id="103" class="BUTTON" caption="大きいアイコン(&amp;L)" style="1342242819" position="10, 82, 216, 10"/>
+		<control id="104" class="BUTTON" caption="ツールバーにボタン名を表示する(&amp;T)" style="1342242819" position="10, 93, 216, 10"/>
+		<control id="105" class="BUTTON" caption="ボタン名と一緒にショートカット キーを表示する(&amp;H)" style="1342242819" position="22, 104, 204, 10"/>
+		<control caption="メニューの表示方法(&amp;M):" position="10, 117, 79, 8"/>
+		<control id="106" class="COMBOBOX" style="1344339971" position="93, 115, 79, 65"/>
+	</dialog>
+	<dialog id="9119" caption="コマンド(&amp;C)" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 264, 176">
+		<control caption="ツールバーにコマンドを追加するには、[分類] を選択しこのダイアログ ボックスからツール バーにコマンドをドラッグして移動します。" position="4, 5, 220, 19"/>
+		<control caption="分類(&amp;G):" position="4, 25, 80, 8"/>
+		<control id="100" class="LISTBOX" style="1352728833" position="4, 35, 103, 136"/>
+		<control caption="コマンド(&amp;D):" position="113, 25, 134, 8"/>
+		<control id="101" class="LISTBOX" style="1352728849" position="113, 35, 145, 136"/>
+	</dialog>
+	<dialog id="9120" caption="新しいツールバー" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 186, 52">
+		<control caption="ツールバー名(&amp;T):" position="4, 4, 178, 8"/>
+		<control id="100" class="EDIT" style="1350631552" position="4, 15, 178, 12"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342242817" position="78, 34, 50, 14"/>
+		<control id="2" class="BUTTON" caption="キャンセル" style="1342242816" position="132, 34, 50, 14"/>
+	</dialog>
+</resource>

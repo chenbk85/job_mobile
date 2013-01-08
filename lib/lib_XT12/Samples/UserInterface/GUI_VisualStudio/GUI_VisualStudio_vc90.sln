@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GUI_VisualStudio", ".\GUI_VisualStudio_vc90.vcproj", "{16628187-5977-6386-8167-152216665992}"
+EndProject

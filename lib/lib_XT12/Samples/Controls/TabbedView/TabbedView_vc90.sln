@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TabbedView", ".\TabbedView_vc90.vcproj", "{18348382-8512-5893-7132-763468721934}"
+EndProject

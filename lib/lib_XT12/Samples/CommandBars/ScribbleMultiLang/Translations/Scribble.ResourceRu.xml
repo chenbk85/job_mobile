@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<resource CompactMode="1" Language="Russian" LANGID="1049">
+	<string id="130" value="Стандартная"/>
+	<string id="131" value="Строка меню"/>
+	<string id="9122" value="\n&amp;Добавить или удалить кнопки"/>
+	<string id="9123" value="\nСброс"/>
+	<string id="9135" value="\nКарандаш"/>
+	<string id="9136" value="\nЗаливка"/>
+	<string id="9137" value="\nВыбор цвета"/>
+	<string id="9138" value="\nЛиния"/>
+	<string id="9139" value="\nПрямоугольник"/>
+	<string id="9140" value="\nЭллипс"/>
+	<string id="9141" value="\nКопировать"/>
+	<string id="9142" value="\nВставить"/>
+	<string id="9143" value="\nОчистить"/>
+	<string id="9144" value="\nОтменить"/>
+	<string id="9145" value="\nВернуть"/>
+	<string id="9146" value="\nЗагрузить"/>
+	<string id="9148" value="\nПараметры панелей инструментов"/>
+	<string id="9149" value="\nЗакрыть"/>
+	<string id="9150" value="\nРазвернуть"/>
+	<string id="9151" value="\nЗакрыть окно"/>
+	<string id="9152" value="\nВосстановить окно"/>
+	<string id="9153" value="\nСвернуть окно"/>
+	<string id="9155" value="\nПереместить в предыдыдущую группу"/>
+	<string id="9156" value="\nПереместить в следующую группу"/>
+	<string id="9157" value="\nНовая горизонтальная группа"/>
+	<string id="9158" value="\nНовая вертикальная группа"/>
+	<string id="9159" value="Отмена"/>
+	<string id="9160" value="Закрыть"/>
+	<string id="9161" value="Настройка"/>
+	<string id="9162" value="Новое меню"/>
+	<string id="9163" value="Настраиваемая %d"/>
+	<string id="9164" value="Необходимо ввести имя панели инструментов."/>
+	<string id="9165" value="Извините, ваш лимит исчерпан."/>
+	<string id="9166" value="Панель инструментов '%s' уже существует. Укажите другое имя."/>
+	<string id="9167" value="Переименование панели"/>
+	<string id="9168" value="Удалить панель инструментов '%s'?"/>
+	<string id="9169" value="Все команды"/>
+	<string id="9170" value="Будут удалены сведения о командах, использованных в данном приложении, и восстановлен набор команд по умолчанию, отображаемых в меню и на панелях инструментов.  Все явные настройки будут сохранены.   Выполнить операцию?"/>
+	<string id="9171" value="Указано неверное число."/>
+	<string id="9172" value="Число должно лежать в диапазоне от 1 до 1638."/>
+	<string id="9173" value="Отменить изменения панели инструментов '%s'?"/>
+	<string id="9174" value="Встроенные меню"/>
+	<string id="9175" value="Вы действительно хотите сбросить назначения клавиш? Это действие удалит все индивидуальные назначения клавиш на текстовом уровне."/>
+	<string id="9176" value="Эта комбинация клавиш уже используется\nНазначать новою команду для этой комбинации клавиш?"/>
+	<string id="9177" value="Due to a software update the toolbar '%s' has changed. Would you like to reset your customized toolbar and load the new one?"/>
+	<string id="9178" value="Все файлы рисунков|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|Точечные(*.Bmp;*.Dib)|*.bmp;*.dib|Мета-файлы(*.Wmf;*.Emf)|*.wmf;*.emf|Значки(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|Все файлы(*.*)|*.*||"/>
+	<string id="9179" value="(По умолчанию)"/>
+	<string id="9180" value="Случайный выбор"/>
+	<string id="9181" value="Развертывание"/>
+	<string id="9182" value="Соскальзывание"/>
+	<string id="9183" value="Угасание"/>
+	<string id="9184" value="Нет"/>
+	<string id="9185" value="Active Files"/>
+	<string id="9186" value="Черный"/>
+	<string id="9187" value="Коричневый"/>
+	<string id="9188" value="Оливковый"/>
+	<string id="9189" value="Темно-зеленый"/>
+	<string id="9190" value="Темно-сизый"/>
+	<string id="9191" value="Темно-синий"/>
+	<string id="9192" value="Индиго"/>
+	<string id="9193" value="Серый 80%"/>
+	<string id="9194" value="Темно-красный"/>
+	<string id="9195" value="Оранжевый"/>
+	<string id="9196" value="Коричнево-зеленый"/>
+	<string id="9197" value="Зеленый"/>
+	<string id="9198" value="Сине-зеленый"/>
+	<string id="9199" value="Синий"/>
+	<string id="9200" value="Сизый"/>
+	<string id="9201" value="Серый 50%"/>
+	<string id="9202" value="Красный"/>
+	<string id="9203" value="Светло-оранжевый"/>
+	<string id="9204" value="Травяной"/>
+	<string id="9205" value="Изумрудный"/>
+	<string id="9206" value="Темно-бирюзовый"/>
+	<string id="9207" value="Темно-голубой"/>
+	<string id="9208" value="Фиолетовый"/>
+	<string id="9209" value="Серый 40%"/>
+	<string id="9210" value="Лиловый"/>
+	<string id="9211" value="Золотистый"/>
+	<string id="9212" value="Желтый"/>
+	<string id="9213" value="Ярко-зеленый"/>
+	<string id="9214" value="Бирюзовый"/>
+	<string id="9215" value="Голубой"/>
+	<string id="9216" value="Вишневый"/>
+	<string id="9217" value="Серый 25%"/>
+	<string id="9218" value="Розовый"/>
+	<string id="9219" value="Светло-коричневый"/>
+	<string id="9220" value="Светло-желтый"/>
+	<string id="9221" value="Бледно-зеленый"/>
+	<string id="9222" value="Светло-бирюзовый"/>
+	<string id="9223" value="Бледно-голубой"/>
+	<string id="9224" value="Сиреневый"/>
+	<string id="9225" value="Белый"/>
+	<string id="9226" value="Темно-серый"/>
+	<string id="9227" value="Малиновый"/>
+	<string id="9228" value="Оливковый"/>
+	<string id="9229" value="Темно-синий"/>
+	<string id="9230" value="Сиреневый"/>
+	<string id="9231" value="Серебро"/>
+	<string id="9232" value="Розовый"/>
+	<string id="9233" value="отказ от заливки\nотказ от заливки"/>
+	<string id="9234" value="Автоцвет\nАвтоцвет"/>
+	<string id="9235" value="Дополнительные цвета..."/>
+	<string id="32772" value="\nПоменять карандаш"/>
+	<string id="32773" value="Настройки толщины карандаша"/>
+	<string id="32775" value="Английский\nАнглийский"/>
+	<string id="32776" value="Немецкий\nНемецкий"/>
+	<string id="32777" value="Японский\nЯпонский"/>
+	<string id="32778" value="Арабский\nАрабский"/>
+	<string id="35001" value="\n&amp;Настройка..."/>
+	<string id="57600" value="\nНовый"/>
+	<string id="57601" value="\nОткрыть"/>
+	<string id="57602" value="\nЗакрыть"/>
+	<string id="57603" value="\nСохранить"/>
+	<string id="57604" value="\nnСохранить как"/>
+	<menu id="129">
+		<menuitem caption="&amp;Файл\t200">
+			<menuitem id="57600" caption="&amp;Новый\tCtrl+N"/>
+			<menuitem id="57601" caption="&amp;Открыть...\tCtrl+O"/>
+			<menuitem id="57602" caption="&amp;Закрыть"/>
+			<menuitem id="57603" caption="&amp;Сохранить\tCtrl+S"/>
+			<menuitem id="57604" caption="Сохранить как..."/>
+			<menuitem/>
+			<menuitem id="57607" caption="&amp;Печать...\tCtrl+P"/>
+			<menuitem id="57609" caption="Просмотр печати"/>
+			<menuitem id="57606" caption="Настройка печати..."/>
+			<menuitem/>
+			<menuitem id="57612" caption="Послать по почте..."/>
+			<menuitem/>
+			<menuitem id="57616" caption="Recent File"/>
+			<menuitem/>
+			<menuitem id="57665" caption="&amp;Выход"/>
+		</menuitem>
+		<menuitem caption="&amp;Языки\t201">
+			<menuitem id="32775" caption="Английский"/>
+			<menuitem id="32776" caption="Немецкий"/>
+			<menuitem id="32777" caption="Японский"/>
+			<menuitem id="32778" caption="Арабский"/>
+			<menuitem id="32779" caption="Русский"/>
+		</menuitem>
+		<menuitem caption="&amp;Редактор\t202">
+			<menuitem id="57643" caption="&amp;Отмена\tCtrl+Z"/>
+			<menuitem/>
+			<menuitem id="57635" caption="&amp;Стереть\tCtrl+X"/>
+			<menuitem id="57634" caption="&amp;Копировать\tCtrl+C"/>
+			<menuitem id="57637" caption="&amp;Вставить\tCtrl+V"/>
+			<menuitem id="57633" caption="Удалить все"/>
+		</menuitem>
+		<menuitem caption="&amp;Карандаш\t203">
+			<menuitem id="32772" caption="&amp;Толcтый"/>
+			<menuitem id="32773" caption="Параметры..."/>
+		</menuitem>
+		<menuitem caption="&amp;Вид\t204">
+			<menuitem id="59392" caption="&amp;Тулбар"/>
+			<menuitem id="59393" caption="&amp;Строка статуса"/>
+		</menuitem>
+		<menuitem caption="&amp;Окна\t205">
+			<menuitem id="57648" caption="&amp;Новое окно"/>
+			<menuitem id="57650" caption="&amp;Каскад"/>
+			<menuitem id="57651" caption="&amp;Черепица"/>
+			<menuitem id="57649" caption="&amp;Выровнять иконки"/>
+			<menuitem id="35000" caption="Список окон"/>
+		</menuitem>
+		<menuitem caption="&amp;Помощь\t206">
+			<menuitem id="57667" caption="&amp;Оглавление"/>
+			<menuitem/>
+			<menuitem id="57664" caption="&amp;О Scribble..."/>
+		</menuitem>
+	</menu>
+	<menu id="9121">
+		<menuitem caption="Настройка">
+			<menuitem id="9123" caption="С&amp;брос"/>
+			<menuitem id="9124" caption="&amp;Удалить"/>
+			<menuitem/>
+			<menuitem id="9125" caption="Им&amp;я:"/>
+			<menuitem/>
+			<menuitem id="9126" caption="&amp;Копировать значок на кнопке"/>
+			<menuitem id="9127" caption="Вст&amp;авить значок для кнопки"/>
+			<menuitem id="9128" caption="&amp;Восстановить значок на кнопке"/>
+			<menuitem id="9129" caption="&amp;Изменить значок на кнопке..."/>
+			<menuitem id="9130" caption="Выбрать з&amp;начок для кнопки"/>
+			<menuitem/>
+			<menuitem id="9131" caption="&amp;Основной стиль"/>
+			<menuitem id="9133" caption="Тол&amp;ько текст"/>
+			<menuitem id="9132" caption="Значок и &amp;текст"/>
+			<menuitem/>
+			<menuitem id="9134" caption="Начать &amp;группу"/>
+		</menuitem>
+	</menu>
+	<dialog id="100" caption="О Программе Scribble" style="-2134376256" position="0, 0, 246, 151">
+		<control id="1005" caption="Scribble Version 1.0" position="88, 74, 151, 10"/>
+		<control id="1" class="BUTTON" caption="OK" style="1342373889" position="169, 130, 70, 14"/>
+		<control id="1003" caption="Язык: Русский" position="88, 104, 151, 8"/>
+		<control id="1004" caption="Multiple-Language Resource File Sample" position="88, 83, 151, 10"/>
+		<control resource="136" style="1342177294" position="7, 74, 75, 37"/>
+		<control id="1002" caption="Copyright ©2005 Codejock Software, All Rights Reserved" style="1342308353" position="28, 41, 190, 8"/>
+		<control id="1000" caption="http://www.codejock.com" style="1342308353" position="28, 50, 190, 8"/>
+		<control resource="101" style="1342177294" position="28, 7, 190, 31"/>
+		<control style="1342177296" position="7, 120, 232, 1"/>
+		<control style="1342177296" position="8, 66, 231, 1"/>
+	</dialog>
+	<dialog id="131" caption="Настроки Карандаша" style="-1865940800" position="0, 0, 203, 65">
+		<control id="1" class="BUTTON" caption="OK" style="1342242817" position="148, 7, 50, 14"/>
+		<control id="2" class="BUTTON" caption="Cancel" style="1342242816" position="148, 24, 50, 14"/>
+		<control id="1002" class="BUTTON" caption="Default" style="1342242816" position="148, 41, 50, 14"/>
+		<control id="1006" caption="Тонкий карандаш:" position="10, 12, 70, 10"/>
+		<control id="1007" caption="Толстый карандаш:" position="10, 33, 70, 10"/>
+		<control id="1000" class="EDIT" style="1350631552" position="86, 12, 40, 13"/>
+		<control id="1001" class="EDIT" style="1350631552" position="86, 33, 40, 13"/>
+	</dialog>
+	<dialog id="9115" caption="Редактор кнопок" fontface="MS Shell Dlg" style="-1865940792" position="0, 0, 253, 185">
+		<control caption="Рисунок" position="7, 7, 86, 8"/>
+		<control class="BUTTON" caption="Цвета" style="1342177287" position="102, 106, 80, 71"/>
+		<control class="BUTTON" caption="Перемещение" style="1342177287" position="101, 72, 81, 31"/>
+		<control class="BUTTON" caption="Просмотр" style="1342177287" position="7, 106, 86, 71"/>
+		<control class="BUTTON" caption="Инструменты" style="1342177287" position="101, 9, 81, 60"/>
+		<control id="1" class="BUTTON" caption="ОК" style="1342242817" position="193, 7, 50, 14"/>
+		<control id="2" class="BUTTON" caption="Отмена" style="1342242816" position="193, 25, 50, 14"/>
+		<control id="100" style="1342177543" position="7, 17, 86, 80"/>
+		<control id="101" style="1342308865" styleex="131072" position="14, 117, 73, 54"/>
+		<control caption="Удалить" position="135, 156, 42, 8"/>
+		<control id="105" style="1342308608" position="116, 153, 15, 15"/>
+		<control id="103" caption="Инструменты" style="1082262017" position="112, 21, 60, 43"/>
+		<control id="104" caption="Перемещение" style="1082262017" position="111, 83, 62, 12"/>
+		<control id="106" style="1342308620" position="109, 144, 15, 15"/>
+		<control id="102" caption="Цвета" style="1082262017" position="107, 121, 68, 12"/>
+	</dialog>
+	<dialog id="9116" caption="&amp;Клавиатура" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control caption="Ка&amp;тегория:" position="4, 5, 89, 8"/>
+		<control id="100" class="COMBOBOX" style="1344339971" position="4, 15, 91, 147"/>
+		<control id="101" caption="Ко&amp;манды:" position="4, 28, 89, 8"/>
+		<control id="102" class="LISTBOX" style="1352728897" position="4, 38, 91, 77"/>
+		<control id="103" caption="У&amp;же назначены:" position="100, 28, 73, 8"/>
+		<control id="104" class="LISTBOX" style="1352728897" position="100, 38, 75, 51"/>
+		<control id="105" caption="&amp;Новая клавиша:" position="100, 93, 100, 8"/>
+		<control id="106" class="EDIT" style="1350631552" position="100, 103, 75, 12"/>
+		<control id="107" class="BUTTON" caption="Н&amp;азначить" style="1342242816" position="179, 39, 49, 14"/>
+		<control id="108" class="BUTTON" caption="&amp;Удалить" style="1342242816" position="179, 56, 49, 14"/>
+		<control id="109" class="BUTTON" caption="С&amp;брос" style="1342242816" position="179, 73, 49, 14"/>
+		<control id="110" caption="Описание:" position="4, 117, 89, 8"/>
+		<control id="111" styleex="131072" position="4, 127, 171, 19"/>
+	</dialog>
+	<dialog id="9117" caption="Панели &amp;инструментов" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control caption="Па&amp;нели инструментов:" position="4, 5, 148, 8"/>
+		<control id="100" class="LISTBOX" style="1352728913" position="4, 15, 150, 131"/>
+		<control id="101" class="BUTTON" caption="Со&amp;здать..." style="1342242816" position="158, 15, 70, 14"/>
+		<control id="102" class="BUTTON" caption="П&amp;ереименовать..." style="1342242816" position="158, 33, 70, 14"/>
+		<control id="103" class="BUTTON" caption="&amp;Удалить" style="1342242816" position="158, 51, 70, 14"/>
+		<control id="104" class="BUTTON" caption="С&amp;брос..." style="1342242816" position="158, 69, 70, 14"/>
+	</dialog>
+	<dialog id="9118" caption="П&amp;араметры" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control id="108" caption="Настраиваемые меню и панели инструментов" position="4, 5, 222, 8"/>
+		<control id="100" class="BUTTON" caption="Всегда показывать полные &amp;меню" style="1342242819" position="10, 17, 216, 10"/>
+		<control id="101" class="BUTTON" caption="Показывать &amp;полные меню после короткой задержки" style="1342242819" position="22, 29, 204, 10"/>
+		<control id="102" class="BUTTON" caption="С&amp;брос" style="1342242816" position="10, 42, 60, 14"/>
+		<control id="107" caption="Другие" position="4, 70, 222, 8"/>
+		<control id="103" class="BUTTON" caption="Крупны&amp;е значки" style="1342242819" position="10, 82, 216, 10"/>
+		<control id="104" class="BUTTON" caption="&amp;Отображать подсказки для кнопок" style="1342242819" position="10, 93, 216, 10"/>
+		<control id="105" class="BUTTON" caption="Вклю&amp;чить в подсказки сочетания клавиш" style="1342242819" position="22, 104, 204, 10"/>
+		<control caption="&amp;Эффект при выводе меню:" position="10, 117, 94, 8"/>
+		<control id="106" class="COMBOBOX" style="1344339971" position="107, 115, 81, 65"/>
+	</dialog>
+	<dialog id="9119" caption="&amp;Команды" fontface="MS Shell Dlg" style="1086324808" position="0, 0, 230, 150">
+		<control caption="Чтобы добавить команду на панель инструментов, выберите категорию и перетащите команду из этого окна на панель." position="4, 5, 220, 19"/>
+		<control caption="Кате&amp;гории:" position="4, 25, 80, 8"/>
+		<control id="100" class="LISTBOX" style="1352728833" position="4, 35, 81, 111"/>
+		<control caption="Ко&amp;манды:" position="90, 25, 134, 8"/>
+		<control id="101" class="LISTBOX" style="1352728849" position="90, 35, 135, 111"/>
+	</dialog>
+	<dialog id="9120" caption="Создание панели инструментов" fontface="MS Shell Dlg" style="-2134376248" position="0, 0, 186, 52">
+		<control caption="Панель &amp;инструментов:" position="4, 4, 119, 8"/>
+		<control id="100" class="EDIT" style="1350631552" position="4, 15, 178, 12"/>
+		<control id="1" class="BUTTON" caption="ОК" style="1342242817" position="78, 34, 50, 14"/>
+		<control id="2" class="BUTTON" caption="Отмена" style="1342242816" position="132, 34, 50, 14"/>
+	</dialog>
+</resource>

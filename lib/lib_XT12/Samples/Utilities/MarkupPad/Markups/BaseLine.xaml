@@ -1,0 +1,15 @@
+<Border xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'
+	VerticalAlignment="Center" HorizontalAlignment="Center" Padding="4" BorderThickness="1" BorderBrush="#767676" Background="#e4ecf7">
+	
+	<StackPanel>
+		<TextBlock TextWrapping="Wrap" FontSize="30" Background="Red" FontWeight="Bold">
+			Baseline<Run FontSize="20" BaselineAlignment="Top">2</Run>
+			
+			<InlineUIContainer BaselineAlignment="Bottom"><Border Width="20" Height="20" Background="Gold"/>
+			</InlineUIContainer><InlineUIContainer BaselineAlignment="Center"><Border Width="20" Height="20" Background="Green"/>
+			</InlineUIContainer><InlineUIContainer BaselineAlignment="Top"> <Border Width="20" Height="20" Background="White"/></InlineUIContainer>
+			
+			<Run>Sample Text</Run>
+		</TextBlock>
+	</StackPanel>
+</Border>

@@ -1,0 +1,6 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Codejock.ToolkitPro.Shared", ".\ToolkitProShared_vc90.vcproj", "{13565757-3778-4296-5135-541495248944}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Codejock.ToolkitPro.Static", ".\ToolkitProStatic_vc90.vcproj", "{75329178-1739-2383-8133-226493123486}"
+EndProject

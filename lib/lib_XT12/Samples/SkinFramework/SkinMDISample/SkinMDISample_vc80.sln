@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SkinMDISample", ".\SkinMDISample_vc80.vcproj", "{91997281-5921-7495-9576-325867165959}"
+EndProject

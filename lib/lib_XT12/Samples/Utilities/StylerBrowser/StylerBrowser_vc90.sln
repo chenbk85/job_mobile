@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StylerBrowser", ".\StylerBrowser_vc90.vcproj", "{26679899-5664-3138-5875-763976812935}"
+EndProject

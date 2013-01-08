@@ -1,0 +1,228 @@
+<HTML>
+<HEAD>
+  <TITLE>Search</TITLE>
+  <META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+  <SCRIPT language="JavaScript">
+
+function GetCookie(sName)
+{
+  var aCookie = document.cookie.split(";");
+  for (var i=0; i < aCookie.length; i++)
+  {
+    var aCrumb = aCookie[i].split("="); aCrumb[0] = trim(aCrumb[0]);
+    if (sName == aCrumb[0]) return unescape(aCrumb[1]);
+  }
+  return null;
+}
+
+function SetCookie(sName, sValue)
+{
+  document.cookie = sName + "=" + escape(sValue) + ";expires=Mon, 31 Dec 2100 23:59:59 UTC;";
+}
+
+aSearch = GetCookie("StylerSearch");
+
+if(aSearch!=null)
+  aSearch = aSearch.split(',');
+
+function SaveSearch()
+{
+  var strsearch="";
+
+  for (var i=0; i<se.length; i++)
+  if (se[i].checked) strsearch += "1,";  else strsearch += "0,";
+  SetCookie("StylerSearch", strsearch);
+}
+
+
+function SearchEngine(name, url, checked, parameter1, parameter2)
+{
+  this.name = name;
+  this.url = url;
+  this.checked = checked;
+  this.p1 = parameter1;
+  this.p2 = parameter2;
+}
+
+function SearchEngineArray()
+{
+  with(SearchEngineArray)
+  {
+    this.length = arguments.length / 5;
+    var j = 0;
+    for (var i = 0; i < this.length; i++)
+    {
+      this[i] = new SearchEngine(arguments[j+1], arguments[j], arguments[j+2], arguments[j+3], arguments[j+4]);
+
+      if(aSearch!=null && i<aSearch.length)
+      {
+         this[i].checked = (aSearch[i]== 1);
+      }
+      j += 5;
+    }
+  }
+}
+
+
+var se = new SearchEngineArray(
+
+    "", "World search", false, "", "",
+    "http://www.alltheweb.com/", "AllTheWeb", false, "http://www.alltheweb.com/search?cat=web&lang=russian&query=", "",
+    "http://www.google.com/", "Google", true, "http://www.google.com/search?q=", "",
+    "http://www.altavista.com/", "AltaVista", false, "http://www.altavista.com/sites/search/web?q=", "",
+    "http://www.lycos.com/", "Lycos", false, "http://www.lycos.com/cgi-bin/pursuit?cat=dir&query=", "&maxhits=10",
+    "http://www.msn.com/", "MSN", false, "http://search.msn.com/results.asp?q=", "",
+
+    "", "Russian search", false, "", "",
+    "http://www.google.com.ru/", "Google", true, "http://www.google.com.ru/search?q=", "",
+    "http://www.ya.ru/", "Yandex", true, "http://www.ya.ru/yandsearch?text=", "",
+    "http://www.rambler.ru/", "Rambler", true, "http://search.rambler.ru/cgi-bin/rambler_search?words=", "",
+    "http://www.aport.ru/", "Aport", false, "http://sm.aport.ru/scripts/template.dll?r=", "",
+
+    "", "File search", false, "", "",
+    "http://astalavista.box.sk/", "Astalavista", false, "http://astalavista.box.sk/cgi-bin/robot?srch=", "",
+    "http://www.filesearch.ru/", "FileSearch", false, "http://www.filesearch.ru/cgi-bin/s?q=", "",
+                "http://www.metabot.ru/", "MetaBot", false, "http://results2.metabot.ru/?wd=2&st=", "",
+    "http://www.cnet.com/", "CNET", false, "http://cnet.search.com/search?timeout=3&tag=ex.cn.1.srch.cnet&q=", "",
+    "http://www.tucows.com/", "Tucows", false, "http://www.tucows.com/perl/tucowsSearch?word=", "",
+    "http://www.softfind.com/", "SoftFind", false, "http://www.softfind.com/SF_Search?Type=KeyWord&StartAfter=&maxHits=10&AndOr=all&SearchText=", "",
+
+    "", "MP3 search", false, "", "",
+    "http://www.mp3box.com/", "MP3Box", false, "http://mp3.box.sk/mp3ftp.php3?srch=", "&submit=+search+",
+    "http://www.mp3.com/", "MP3.com", false, "http://search.mp3.com/bin/search?query=", "&display=default",
+                "http://www.metabot.ru/", "MetaBot", false, "http://results2.metabot.ru/?wd=3&st=", "",
+    "http://www.seekmp3.com/", "SeekMP3", false, "http://www.seekmp3.com/http_search/search.php3?type=search&search=", "",
+    "http://mp3search.astraweb.com/", "Astraweb", false, "http://mp3search.astraweb.com/cgi-bin/search.cgi?word=", "&submit=%B2%E9%D5%D2",
+    "http://music.lycos.com/", "Lycos", false, "http://music.lycos.com/default.asp?form=lycosnet&QT=S&QW=", "&doit=%B2%E9%D5%D2",
+
+    "", "", false, "", ""
+  );
+
+
+function trim(string)
+{
+  var str2="";
+  for(var i=0;i<string.length;i++)
+  {
+    if(string.charAt(i)!=" ")
+       str2+=string.charAt(i);
+  }
+  return str2;
+}
+
+function Search()
+{
+  if (trim(document.searchtable.keyword.value)=="")
+    return;
+
+  SaveSearch();
+
+  for (var i = 0; i < se.length; i++)
+  if (se[i].checked && se[i].p1 != "")
+  {
+     window.open(se[i].p1 + document.searchtable.keyword.value + se[i].p2);
+  }
+}
+
+
+function initIt()
+{
+  divColl = document.all.tags("DIV");
+  for (i=0; i<divColl.length; i++) 
+  {
+     whichEl = divColl(i);
+     if (whichEl.className == "child") whichEl.style.display = "none";
+  }
+}
+
+function expandIt(el) 
+{
+  whichEl = eval(el + "Child");
+  whichEl.style.display = whichEl.style.display != "block" ? "block" :  "none";
+}
+
+</SCRIPT>
+
+
+<STYLE type="text/css">
+<!--
+  body {BACKGROUND-COLOR: #ffffff; MARGIN-top: 10px; MARGIN-left: 10px; font-family: "Tahoma";font-size: 8pt}
+  .child {display:none}
+  .d1   {font-family: "";font-size: 8pt; cursor: hand; width:170}
+  .d  {font-family: "Tahoma";font-size: 8pt; font-weight: bold;background: #ffffff; color: #000000}
+  td.d2   {font-family: "Tahoma";font-size: 8pt; background: #ffffff; color: #000000; width:90}
+  a   {text-decoration: none; font-size: 8pt; color: #000000; cursor: hand; }
+  a:hover {color: #000000; text-decoration: underline; font-size: 8pt; cursor: hand}
+-->
+</STYLE>
+</HEAD>
+
+
+
+<BODY link="#000000" alink=#000000 onunload="SaveSearch()">
+
+  <FORM name="searchtable" onSubmit="Search(); return false;">
+    A word or phrase to find:  <INPUT type="text" name="keyword" style = "width: 150">
+
+    <br>
+    <script language="javascript">
+
+      with (document)
+      {
+         var tb=0, selected=0, cates=0;
+         for (var i=0; i<se.length; i++)
+         {
+            if (se[i].url == ''&& se[i].name!='')
+            {
+               if (tb > 0)
+                  write('</TR>');
+
+                write('</table></div><div align=left class="d"><span onClick="expandIt(\'category'+cates+'\')" class="d1">' + se[i].name + '</span>  </div>');
+                write('<div align=left id="category'+cates+'Child" class="child"><table border=0 cellpadding="0" cellspacing="0">');
+
+               if(selected > 0 )
+                  expandIt('category'+(cates-1));
+           
+               tb = 0;
+               selected = 0;
+               cates++;
+            }
+            else if (se[i].name!='')
+            {
+              tb++;
+              if (tb==1)
+                 write('<TR>\n');
+        
+              write('<TD NOWRAP class="d2"><INPUT TYPE="CHECKBOX" ' + (se[i].checked?' CHECKED':'') + ' NAME="w' + i + '" onClick="se[' + i + '].checked = document.searchtable.w'+i+'.checked">' +
+              '<A HREF="' + se[i].url + '" TARGET="w' + i + '">' + se[i].name + '</A></TD>');
+
+             if (tb > 1)
+             {
+                write('</TR>\n');
+                tb = 0;
+             }
+   
+             if(se[i].checked)
+                selected++
+     
+           } else
+	   {
+		write('</table></div>');
+           }
+        }
+     }
+
+     if(selected > 0)
+       expandIt('category'+(cates-1));
+
+
+    </script>
+
+    <BR>
+    <center> <input type="submit" value="Search"> <center>
+
+</form>
+
+</body>
+</html>

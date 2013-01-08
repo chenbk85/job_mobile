@@ -1,0 +1,423 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\VistaTaskDialog.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CJSample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_DIALOGS             HTML    MOVEABLE PURE   "res\\Dialogs.xml"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 12,0,0,4
+ PRODUCTVERSION 12,0,0,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "Codejock Software\0"
+            VALUE "FileDescription", "VistaTaskDialog MFC Application\0"
+            VALUE "FileVersion", "12, 0, 0, 4\0"
+            VALUE "InternalName", "VistaTaskDialog\0"
+            VALUE "LegalCopyright", "(c)1998-2008 Codejock Software, All Rights Reserved.\0"
+            VALUE "OriginalFilename", "VistaTaskDialog.EXE\0"
+            VALUE "ProductName", "VistaTaskDialog Application\0"
+            VALUE "ProductVersion", "12, 0, 0, 4\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_TASKDIALOG_BUTTONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        VERTGUIDE, 118
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_TASKDIALOG_EXPANDED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        VERTGUIDE, 118
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_TASKDIALOG_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        VERTGUIDE, 118
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_TASKDIALOG_ICONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        VERTGUIDE, 118
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_TASKDIALOG_RADIOBUTTONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        VERTGUIDE, 118
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_TASKDIALOG_BUTTONEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TASKDIALOG_BUTTONS DIALOGEX 0, 0, 250, 200
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Buttons"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "OK",IDC_CHK_OK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,
+                    22,26,10
+    CONTROL         "Yes",IDC_CHK_YES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    18,33,28,10
+    GROUPBOX        "Standard Buttons",IDC_STATIC,7,7,236,45
+    CONTROL         "Cancel",IDC_CHK_CANCEL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,57,22,38,10
+    CONTROL         "No",IDC_CHK_NO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,57,
+                    33,25,10
+    CONTROL         "Retry",IDC_CHK_RETRY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,103,22,33,10
+    CONTROL         "Close",IDC_CHK_CLOSE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,103,33,33,10
+    GROUPBOX        "Custom Buttons",IDC_STATIC,7,58,236,115
+    CONTROL         "List1",IDC_LIST_CUSTOM,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,18,72,163,76
+    PUSHBUTTON      "Add",IDC_BTN_ADD,187,72,50,14
+    PUSHBUTTON      "Edit",IDC_BTN_EDIT,187,89,50,14
+    PUSHBUTTON      "Remove",IDC_BTN_REMOVE,187,106,50,14
+    CONTROL         "Use command links",IDC_CHK_USELINKS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,155,77,10
+    CONTROL         "Show command link icons",IDC_CHK_SHOWICONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,103,155,98,10
+    LTEXT           "Default button:",IDC_STATIC,7,183,48,8
+    COMBOBOX        IDC_COMBO_DEFAULT,61,181,182,87,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_TASKDIALOG_EXPANDED DIALOG DISCARDABLE  0, 0, 250, 200
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Expanded"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Expanded information:",IDC_STATIC,9,10,80,8
+    EDITTEXT        IDC_EDIT_EXPANDEDINFO,98,7,145,14,ES_AUTOHSCROLL
+    LTEXT           "Expanded control text:",IDC_STATIC,9,26,80,8
+    EDITTEXT        IDC_EDIT_EXPANDEDCONT,98,23,145,14,ES_AUTOHSCROLL
+    LTEXT           "Collapsed control text:",IDC_STATIC,9,42,80,8
+    EDITTEXT        IDC_EDIT_COLLAPSEDCONT,98,39,145,14,ES_AUTOHSCROLL
+    CONTROL         "Expanded by default",IDC_CHK_BYDEFAULT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,66,81,10
+    CONTROL         "Expanded footer area",IDC_CHK_FOOTERAREA,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,78,84,10
+END
+
+IDD_TASKDIALOG_GENERAL DIALOG DISCARDABLE  0, 0, 250, 200
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "General"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Title:",IDC_STATIC,9,10,80,8
+    EDITTEXT        IDC_EDIT_TITLE,98,7,145,14,ES_AUTOHSCROLL
+    LTEXT           "Main instruction:",IDC_STATIC,9,26,80,8
+    EDITTEXT        IDC_EDIT_MAIN,98,23,145,14,ES_AUTOHSCROLL
+    LTEXT           "Content:",IDC_STATIC,9,42,80,8
+    EDITTEXT        IDC_EDIT_CONTENT,98,39,145,14,ES_AUTOHSCROLL
+    LTEXT           "Footer:",IDC_STATIC,9,58,80,8
+    EDITTEXT        IDC_EDIT_FOOTER,98,55,145,14,ES_AUTOHSCROLL
+    LTEXT           "Verification text:",IDC_STATIC,9,86,80,8
+    EDITTEXT        IDC_EDIT_VERIFY,98,83,145,14,ES_AUTOHSCROLL
+    CONTROL         "Verification checked",IDC_CHK_VERIFY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,100,81,10
+    CONTROL         "Use preferred width:",IDC_CHK_WIDTH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,126,79,10
+    EDITTEXT        IDC_EDIT_WIDTH,98,124,40,14,ES_AUTOHSCROLL
+    CONTROL         "Enable hyperlinks",IDC_CHK_HYPERLINKS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,153,71,10
+    CONTROL         "Allow dialog cancellation",IDC_CHK_ALLOWCANCEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,165,93,10
+    CONTROL         "Position relative to window",IDC_CHK_POSITION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,177,99,10
+    CONTROL         "Show progress bar",IDC_CHK_PROGRESS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,117,153,75,10
+    CONTROL         "Use marquee style",IDC_CHK_MARQUEE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,117,165,74,10
+    CONTROL         "Right to left layout",IDC_CHK_RTL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,117,177,73,10
+    PUSHBUTTON      "Add (+5)",IDC_BTN_ADDFIVE,98,102,50,14
+    PUSHBUTTON      "Sub (-5)",IDC_BTN_SUBFIVE,151,102,50,14
+    LTEXT           "Static",IDC_TXT_COUNTBYFIVE,204,102,39,14,
+                    SS_CENTERIMAGE
+END
+
+IDD_TASKDIALOG_ICONS DIALOG DISCARDABLE  0, 0, 250, 200
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Icons"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Main Icon",IDC_STATIC,7,7,236,75
+    PUSHBUTTON      "Browse...",IDC_BTN_MAINPATH,184,54,50,14
+    COMBOBOX        IDC_COMBO_MAINICON,17,24,125,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_MAINPATH,18,54,162,14,ES_AUTOHSCROLL
+    LTEXT           "Custom icon path:",IDC_STATIC,18,43,58,8
+    GROUPBOX        "Footer Icon",IDC_STATIC,7,90,236,75
+    PUSHBUTTON      "Browse...",IDC_BTN_FOOTPATH,184,137,50,14
+    COMBOBOX        IDC_COMBO_FOOTICON,17,107,125,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_FOOTPATH,18,137,162,14,ES_AUTOHSCROLL
+    LTEXT           "Custom icon path:",IDC_STATIC,18,126,58,8
+    CONTROL         "Use System Icons ( when available )",IDC_CHK_SYSICON,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,173,130,10
+END
+
+IDD_TASKDIALOG_RADIOBUTTONS DIALOG DISCARDABLE  0, 0, 250, 200
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Radio Buttons"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Custom Radio Buttons",IDC_STATIC,7,7,236,115
+    CONTROL         "List1",IDC_LIST_CUSTOM,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,18,21,163,76
+    PUSHBUTTON      "Add",IDC_BTN_ADD,187,21,50,14
+    PUSHBUTTON      "Edit",IDC_BTN_EDIT,187,38,50,14
+    PUSHBUTTON      "Remove",IDC_BTN_REMOVE,187,55,50,14
+    CONTROL         "No default radio button",IDC_CHK_NODEFAULT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,18,106,88,10
+    LTEXT           "Default button:",IDC_TXT_DEFAULT,7,132,48,8
+    COMBOBOX        IDC_COMBO_DEFAULT,61,130,182,30,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_TASKDIALOG_BUTTONEDIT DIALOGEX 0, 0, 186, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Button"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,73,58,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,58,50,14
+    LTEXT           "Text:",IDC_STATIC,7,13,17,8
+    LTEXT           "Id:",IDC_STATIC,7,32,9,8
+    EDITTEXT        IDC_EDIT_TEXT,44,10,135,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ID,44,29,40,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_ID,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,87,29,10,
+                    14
+END
+
+IDD_TASKDIALOG_SAMPLES DIALOG DISCARDABLE  0, 0, 250, 200
+STYLE DS_FIXEDSYS | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Samples"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Show progressbar functionality sample",IDC_STATIC,9,10,
+                    135,9
+    PUSHBUTTON      "Show Sample",IDC_BUTTON_PROGRESSDIALOG,9,20,60,14
+    LTEXT           "Show timer usage",IDC_STATIC,146,10,64,9
+    PUSHBUTTON      "Show Sample",IDC_BUTTON_TIMERDIALOG,146,20,60,14
+    LTEXT           "Show how to assign text dynamically",IDC_STATIC,9,40,
+                    135,9
+    PUSHBUTTON      "Show Sample",IDC_BUTTON_DYNAMICDIALOG,9,50,60,14
+    LTEXT           "Show wizard sample",IDC_STATIC,146,40,94,9
+    PUSHBUTTON      "Show Sample",IDC_BUTTON_SHEET,146,50,60,14
+    LTEXT           "Show xml usage. Use <a href=""http://shellrevealed.com/files/folders/code/tags/TDPad/default.aspx"">TDPad</a> to edit XML Dialogs",
+                    IDC_STATIC_TDPAD,9,70,230,9,WS_TABSTOP
+    PUSHBUTTON      "Dialog1",IDC_BUTTON_XMLDIALOG1,9,80,60,14
+    PUSHBUTTON      "Dialog2",IDC_BUTTON_XMLDIALOG2,77,80,60,14
+    PUSHBUTTON      "Dialog3",IDC_BUTTON_XMLDIALOG3,146,80,60,14
+    PUSHBUTTON      "Dialog4",IDC_BUTTON_XMLDIALOG4,9,98,60,14
+    PUSHBUTTON      "Dialog5",IDC_BUTTON_XMLDIALOG5,77,98,60,14
+    PUSHBUTTON      "Dialog6",IDC_BUTTON_XMLDIALOG6,146,98,60,14
+    PUSHBUTTON      "Dialog7",IDC_BUTTON_XMLDIALOG7,9,116,60,14
+    CONTROL         "Enable SkinFramework",IDC_CHECK_SKINFRAMEWORK,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,9,151,94,11
+    LTEXT           "You can use <a href=""See SymbolReference.chm"">CXTPTaskDialogLinkCtrl</a> control in your dialogs to enable hyperlinks",
+                    IDC_STATIC_LINK,9,167,231,26,WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About VistaTaskDialog..."
+    IDS_ERROR_RESERVED      "The button ID ""%d"" is reserved for the common dialog button ""%s"", please choose another ID."
+    IDS_PROPSHT_CAPTION     "Vista Task Dialog Sample"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WINDOWTITLE         "Internet Explorer - Security Warning"
+    IDS_CONTENT             "Name:        <A HREF=""executablestring 1"">Xtreme ToolkitPro</A>\nPublisher:   <A HREF=""executablestring 1"">Codejock Software</A>"
+    IDS_MAININSTRUCTION     "Do you want to run this software?"
+    IDS_EXPANDEDINFORMATION "Expanded Text"
+    IDS_FOOTER              "While files from the Internet can be useful, this file type can ponentially harm your computer.  Only run software from publishers you trust.  <A HREF=""executablestring 2"">What's the risk?</A>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RB_GOOD             "L&ots"
+    IDS_RB_OK               "A &little"
+    IDS_RB_BAD              "No&t at all"
+    IDS_CB_SAVE             "&Save my response\nThis will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. This will save your response. "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EDIT_VERIFY         "Do not show me the warning for this program again."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\VistaTaskDialog.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

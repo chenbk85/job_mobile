@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PopupControl", ".\PopupControl_vc90.vcproj", "{54942256-2237-8735-6558-239222842773}"
+EndProject

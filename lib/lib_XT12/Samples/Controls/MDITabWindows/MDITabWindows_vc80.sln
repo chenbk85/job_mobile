@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MDITabWindows", ".\MDITabWindows_vc80.vcproj", "{31433533-3284-2684-4349-668625547117}"
+EndProject

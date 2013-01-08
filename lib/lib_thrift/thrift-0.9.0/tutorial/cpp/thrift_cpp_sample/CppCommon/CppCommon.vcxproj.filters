@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="cassandra">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="CCalculator">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="async">
+      <UniqueIdentifier>{7a00f069-e8dd-4c70-be05-68d8643aff5e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="..\..\..\thrift.bat">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\..\..\cassandra.thrift">
+      <Filter>cassandra</Filter>
+    </None>
+    <None Include="..\..\..\tutorial.thrift">
+      <Filter>CCalculator</Filter>
+    </None>
+    <None Include="..\..\..\shared.thrift">
+      <Filter>CCalculator</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\gen-cpp\shared_constants.h">
+      <Filter>CCalculator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\gen-cpp\shared_types.h">
+      <Filter>CCalculator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\gen-cpp\SharedService.h">
+      <Filter>CCalculator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\gen-cpp\tutorial_constants.h">
+      <Filter>CCalculator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\gen-cpp\tutorial_types.h">
+      <Filter>CCalculator</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\gen_cpp_cassandra\cassandra_types.h">
+      <Filter>cassandra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\gen-cpp\Calculator.h">
+      <Filter>CCalculator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\gen_cpp_cassandra\Cassandra.h">
+      <Filter>cassandra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\gen_cpp_cassandra\cassandra_constants.h">
+      <Filter>cassandra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\async\TAsioAsync.h">
+      <Filter>async</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\async\TAsync.h">
+      <Filter>async</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\async\TFuture.h">
+      <Filter>async</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>리소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\gen-cpp\shared_types.cpp">
+      <Filter>CCalculator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\gen-cpp\tutorial_types.cpp">
+      <Filter>CCalculator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\gen-cpp\SharedService.cpp">
+      <Filter>CCalculator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\gen-cpp\Calculator.cpp">
+      <Filter>CCalculator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\gen_cpp_cassandra\cassandra_types.cpp">
+      <Filter>cassandra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\gen_cpp_cassandra\cassandra_constants.cpp">
+      <Filter>cassandra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\gen_cpp_cassandra\Cassandra_server.skeleton.cpp">
+      <Filter>cassandra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\gen_cpp_cassandra\Cassandra.cpp">
+      <Filter>cassandra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\async\TAsioAsync.cpp">
+      <Filter>async</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

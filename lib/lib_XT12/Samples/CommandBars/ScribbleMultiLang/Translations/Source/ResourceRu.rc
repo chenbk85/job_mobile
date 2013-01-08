@@ -1,0 +1,291 @@
+//
+#include "../../resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#include ""res\\Scribble.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxolesv.rc""       // OLE server resources\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_SCRIBBTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Файл\t200"
+    BEGIN
+        MENUITEM "&Новый\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Открыть...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Закрыть",                      ID_FILE_CLOSE
+        MENUITEM "&Сохранить\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Сохранить как...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Печать...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Просмотр печати",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "Настройка печати...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Послать по почте...",                    ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Выход",                       ID_APP_EXIT
+    END
+    POPUP "&Языки\t201"
+    BEGIN
+        MENUITEM "Английский",                     ID_LANGUAGE_ENGLISH
+        MENUITEM "Немецкий",                      ID_LANGUAGE_GERMAN
+        MENUITEM "Японский",                    ID_LANGUAGE_JAPANESE
+        MENUITEM "Арабский",                      ID_LANGUAGE_ARABIC
+        MENUITEM "Русский",                     ID_LANGUAGE_RUSSIAN
+    END
+    POPUP "&Редактор\t202"
+    BEGIN
+        MENUITEM "&Отмена\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "&Стереть\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Копировать\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Вставить\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Удалить все",                  ID_EDIT_CLEAR_ALL
+    END
+    POPUP "&Карандаш\t203"
+    BEGIN
+        MENUITEM "&Толcтый",                 ID_PEN_THICK_OR_THIN
+        MENUITEM "Параметры...",              ID_PEN_WIDTHS
+    END
+    POPUP "&Вид\t204"
+    BEGIN
+        MENUITEM "&Тулбар",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Строка статуса",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Окна\t205"
+    BEGIN
+        MENUITEM "&Новое окно",                 ID_WINDOW_NEW
+        MENUITEM "&Каскад",                    ID_WINDOW_CASCADE
+        MENUITEM "&Черепица",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Выровнять иконки",              ID_WINDOW_ARRANGE
+		MENUITEM "Список окон",                 35000
+    END
+    POPUP "&Помощь\t206"
+    BEGIN
+        MENUITEM "&Оглавление", ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&О Scribble...", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 246, 151
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "О Программе Scribble"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Scribble Version 1.0",IDC_STATIC_SCRIBBLE,88,74,151,10
+    DEFPUSHBUTTON   "OK",IDOK,169,130,70,14,WS_GROUP
+    LTEXT           "Язык: Русский",IDC_STATIC_LANGUAGE,88,104,151,8
+    LTEXT           "Multiple-Language Resource File Sample",
+                    IDC_STATIC_MULLANG,88,83,151,10
+    CONTROL         IDB_FLAG_RUSSIAN,IDC_STATIC,"Static",SS_BITMAP,7,74,75,37
+    CTEXT           "Copyright ©2005 Codejock Software, All Rights Reserved",
+                    IDC_TXT_COPYRIGHT,28,41,190,8
+    CTEXT           "http://www.codejock.com",IDC_TXT_URL,28,50,190,8
+    CONTROL         101,IDC_STATIC,"Static",SS_BITMAP,28,7,190,31
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,120,232,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,66,231,1
+END
+
+IDD_PEN_WIDTHS DIALOG DISCARDABLE  0, 0, 203, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Настроки Карандаша"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,148,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,148,24,50,14
+    PUSHBUTTON      "Default",IDC_DEFAULT_PEN_WIDTHS,148,41,50,14
+    LTEXT           "Тонкий карандаш:",IDC_STATIC_THIN,10,12,70,10
+    LTEXT           "Толстый карандаш:",IDC_STATIC_THICK,10,33,70,10
+    EDITTEXT        IDC_THIN_PEN_WIDTH,86,12,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_THICK_PEN_WIDTH,86,33,40,13,ES_AUTOHSCROLL
+END
+
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 12,0,0,4
+ PRODUCTVERSION 12,0,0,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040104E8"
+        BEGIN
+            VALUE "CompanyName", "Codejock Software\0"
+            VALUE "FileDescription", "SCRIBBLE MFC Application\0"
+            VALUE "FileVersion", "12, 0, 0, 4\0"
+            VALUE "InternalName", "SCRIBBLE\0"
+            VALUE "LegalCopyright", "(c)1998-2008 Codejock Software, All Rights Reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SCRIBBLE.EXE\0"
+            VALUE "ProductName", "SCRIBBLE Application\0"
+            VALUE "ProductVersion", "12, 0, 0, 4\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0401, 1256
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_PEN_WIDTHS, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 198
+        VERTGUIDE, 1
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_STANDARD            "Стандартная"
+    IDS_MENUBAR             "Строка меню"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "\nНовый"
+    ID_FILE_OPEN            "\nОткрыть"
+    ID_FILE_CLOSE           "\nЗакрыть"
+    ID_FILE_SAVE            "\nСохранить"
+    ID_FILE_SAVE_AS         "\nnСохранить как"
+END
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PEN_THICK_OR_THIN    "\nПоменять карандаш"
+    ID_PEN_WIDTHS           "Настройки толщины карандаша"
+    ID_LANGUAGE_ENGLISH     "Английский\nАнглийский"
+    ID_LANGUAGE_GERMAN      "Немецкий\nНемецкий"
+    ID_LANGUAGE_JAPANESE    "Японский\nЯпонский"
+    ID_LANGUAGE_ARABIC      "Арабский\nАрабский"
+END
+
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+       // OLE server resources
+
+#define _XTP_NO_BINARY_RESOURCES
+#include <CommandBars\res\Resource_Ru.rc>	// Command Bars Arabic
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

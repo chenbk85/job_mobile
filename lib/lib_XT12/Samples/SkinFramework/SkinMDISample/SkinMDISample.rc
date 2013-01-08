@@ -1,0 +1,636 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SkinMDISample.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+IDR_SKINMDTYPE          ICON    DISCARDABLE     "res\\SkinMDISampleDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_VIEW_THEME
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+            MENUITEM SEPARATOR
+            MENUITEM "&Customize...",               35001
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Theme Dialog...",             ID_VIEW_THEME_DIALOG
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About SkinMDISample...",     ID_APP_ABOUT
+    END
+END
+
+IDR_SKINMDTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+            MENUITEM SEPARATOR
+            MENUITEM "&Customize...",               35001
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Theme Dialog...",             ID_VIEW_THEME_DIALOG
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "Window List",                 35000
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About SkinMDISample...",     ID_APP_ABOUT
+    END
+END
+
+ID_VIEW_THEME MENU DISCARDABLE 
+BEGIN
+    POPUP "&Theme"
+    BEGIN
+        MENUITEM "Office 2000",                 ID_THEME_OFFICE2000
+        MENUITEM "Office XP",                   ID_THEME_OFFICEXP
+        MENUITEM "Office 2003",                 ID_THEME_OFFICE2003
+        MENUITEM "Win XP",                      ID_THEME_WINXP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PANE_DIALOGS DIALOG DISCARDABLE  0, 0, 71, 95
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Color Dialog",IDC_BUTTON_COLORDIALOG,7,20,62,15
+    LTEXT           "System dialogs:",IDC_STATIC,7,7,62,9
+    PUSHBUTTON      "Font Dialog",IDC_BUTTON_FONTDIALOG,7,39,62,15
+    PUSHBUTTON      "Print Dialog",IDC_BUTTON_PRINTDIALOG,7,57,62,15
+    PUSHBUTTON      "Open Dialog",IDC_BUTTON_OPENDIALOG,7,77,62,15
+END
+
+IDD_PROPPAGE_CONTROLS DIALOGEX 0, 0, 415, 261
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Controls"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Push Buttons ",IDC_STATIC,7,7,113,85,0,
+                    WS_EX_TRANSPARENT
+    DEFPUSHBUTTON   "Default",IDC_BTN_DEFAULT,22,25,83,14
+    PUSHBUTTON      "Normal",IDC_BTN_NORMAL,22,44,83,14
+    PUSHBUTTON      "Disabled",IDC_BTN_DISABLED,22,64,83,14,WS_DISABLED
+    GROUPBOX        "Radio Buttons ",IDC_STATIC,128,7,67,85,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Selected",IDC_RADIO_SELECTED,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,138,32,45,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Normal",IDC_RADIO_NORMAL,"Button",BS_AUTORADIOBUTTON,
+                    138,45,38,10,WS_EX_TRANSPARENT
+    CONTROL         "Disabled",IDC_RADIO_DISABLED,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,138,59,43,10,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "Check Boxes ",IDC_STATIC,202,7,68,85,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Selected",IDC_CHK_SELECTED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,213,32,44,10,WS_EX_TRANSPARENT
+    CONTROL         "Normal",IDC_CHK_NORMAL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,213,45,38,10,WS_EX_TRANSPARENT
+    CONTROL         "Disabled",IDC_CHK_DISABLED,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,213,59,43,10,WS_EX_TRANSPARENT
+    LTEXT           "Slider:",IDC_STATIC,280,9,128,8,0,WS_EX_TRANSPARENT
+    CONTROL         "Slider1",IDC_SLIDER_NORMAL,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,280,19,128,15,WS_EX_TRANSPARENT
+    LTEXT           "ProgressBar:",IDC_STATIC,280,40,128,8,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    280,51,128,12
+    LTEXT           "ScrollBar:",IDC_STATIC,280,66,128,8,0,WS_EX_TRANSPARENT
+    SCROLLBAR       IDC_SCROLLBAR_NORMAL,280,78,128,11
+    LTEXT           "Tree Control",IDC_STATIC,7,99,113,8,0,WS_EX_TRANSPARENT
+    CONTROL         "Tree1",IDC_TREE_SAMPLE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    7,110,113,67
+    LTEXT           "List Control",IDC_STATIC,128,99,142,8,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "List1",IDC_LIST_SAMPLE,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,128,110,142,67
+    LTEXT           "Combo Box",IDC_STATIC,280,99,128,8,0,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_COMBO_NORMAL,280,110,128,35,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DISABLED,280,126,128,35,CBS_DROPDOWN | 
+                    CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Edit:",IDC_STATIC,282,145,126,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_NORMAL,280,154,128,16,ES_AUTOHSCROLL
+    LTEXT           "Tab Control:",IDC_STATIC,7,186,113,8,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Tab1",IDC_TAB_SAMPLE,"SysTabControl32",0x0,7,199,113,54
+    LTEXT           "ListBox:",IDC_STATIC,128,186,142,8,0,WS_EX_TRANSPARENT
+    LISTBOX         IDC_LISTBOX_SAMPLE,128,199,142,54,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_DISABLED,280,177,128,16,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT_SAMPLE,280,199,128,54,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_PROPPAGE_THEMES DIALOGEX 0, 0, 418, 260
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Skins and Themes"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "&Local Skins",IDC_RADIO_SKINPATH,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,7,7,53,10
+    CONTROL         "&System Skins",IDC_RADIO_SKINPATH2,"Button",
+                    BS_AUTORADIOBUTTON,68,7,58,10
+    LISTBOX         IDC_LIST_THEMES,7,26,211,226,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Apply frame skin",IDC_CHECK_APPLYFRAME,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,225,26,186,10
+    CONTROL         "Apply metrics",IDC_CHECK_APPLYMETRICS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,225,36,186,10
+    CONTROL         "Apply colors",IDC_CHECK_APPLYCOLORS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,225,47,186,10
+    LTEXT           "&Color scheme:",IDC_STATIC,225,63,186,8
+    COMBOBOX        IDC_COMBO_COLORS,225,74,186,62,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Font size:",IDC_STATIC,225,90,186,8
+    COMBOBOX        IDC_COMBO_FONTS,225,101,186,58,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Default Skins",IDC_STATIC,225,125,186,50,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Office 2007",IDC_RADIO_OFFICE2007,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,232,137,53,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Luna",IDC_RADIO_LUNA,"Button",BS_AUTORADIOBUTTON,232,
+                    148,32,10,WS_EX_TRANSPARENT
+    CONTROL         "Royale",IDC_RADIO_ROYALE,"Button",BS_AUTORADIOBUTTON,
+                    268,148,38,10,WS_EX_TRANSPARENT
+    CONTROL         "Vista",IDC_RADIO_VISTA,"Button",BS_AUTORADIOBUTTON,311,
+                    148,31,10,WS_EX_TRANSPARENT
+    CONTROL         "Default",IDC_RADIO_DEFAULT,"Button",BS_AUTORADIOBUTTON,
+                    232,160,39,10,WS_EX_TRANSPARENT
+    GROUPBOX        "CommandBars Theme",IDC_STATIC,225,182,186,70
+    CONTROL         "Office 2000",IDC_RADIO_OFFICE2000,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,232,193,53,10
+    CONTROL         "Office XP",IDC_RADIO_OFFICEXP,"Button",
+                    BS_AUTORADIOBUTTON,232,205,46,10
+    CONTROL         "Office 2003",IDC_RADIO_OFFICE2003,"Button",
+                    BS_AUTORADIOBUTTON,232,217,53,10
+    CONTROL         "Native WinXP",IDC_RADIO_WINTHEME,"Button",
+                    BS_AUTORADIOBUTTON,232,229,61,10
+    CONTROL         "Blue",IDC_RADIO_OFFICE2003_BLUE,"Button",
+                    BS_AUTORADIOBUTTON,292,217,30,10
+    CONTROL         "Olive",IDC_RADIO_OFFICE2003_OLIVE,"Button",
+                    BS_AUTORADIOBUTTON,325,217,32,10
+    CONTROL         "Metallic",IDC_RADIO_OFFICE2003_METALLIC,"Button",
+                    BS_AUTORADIOBUTTON,364,217,40,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 12,0,0,4
+ PRODUCTVERSION 12,0,0,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "SkinMDISample MFC Application\0"
+            VALUE "FileVersion", "12, 0, 0, 4\0"
+            VALUE "InternalName", "SkinMDISample\0"
+            VALUE "LegalCopyright", "(c)1998-2008 Codejock Software, All Rights Reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SkinMDISample.EXE\0"
+            VALUE "ProductName", "SkinMDISample Application\0"
+            VALUE "ProductVersion", "12, 0, 0, 4\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PANE_DIALOGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 69
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_PROPPAGE_CONTROLS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 408
+        VERTGUIDE, 22
+        VERTGUIDE, 105
+        VERTGUIDE, 120
+        VERTGUIDE, 128
+        VERTGUIDE, 195
+        VERTGUIDE, 202
+        VERTGUIDE, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 253
+        HORZGUIDE, 99
+        HORZGUIDE, 177
+    END
+
+    IDD_PROPPAGE_THEMES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 411
+        VERTGUIDE, 218
+        VERTGUIDE, 225
+        VERTGUIDE, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 252
+        HORZGUIDE, 26
+        HORZGUIDE, 182
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PROPPAGE_CONTROLS DLGINIT
+BEGIN
+    IDC_COMBO_NORMAL, 0x403, 7, 0
+0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_COMBO_DISABLED, 0x403, 9, 0
+0x6944, 0x6173, 0x6c62, 0x6465, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "SkinMDISample"
+    IDR_SKINMDTYPE          "\nSkinMD\nSkinMD\n\n\nSkinMDISample.Document\nSkinMD Document"
+    IDD_PAGE_THEME          "Styles"
+    IDD_PAGE_APP            "Themes"
+    IDD_PANE_DIALOGS        "System Dialogs"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Codejock Skin MDI Sample"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_THEME_DIALOG    "View Theme Dialog\nTheme Dialog"
+    ID_VIEW_THEME           "Theme\nTheme"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROPSHT_CAPTION     "SkinFramework"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\SkinMDISample.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

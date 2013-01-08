@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MarkupSample", ".\MarkupSample_vc80.vcproj", "{58228141-7615-7131-6998-427317932132}"
+EndProject
