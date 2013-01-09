@@ -1,4 +1,0 @@
-// 22_baseball_table_etc.xlsx
-#ifndef table_const_excel_baseball_table_etc_header_h_define4456
-
-#endif //table_const_excel_baseball_table_etc_header_h_define4456

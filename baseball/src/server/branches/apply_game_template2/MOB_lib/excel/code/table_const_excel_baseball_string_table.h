@@ -1,4 +1,0 @@
-// 22_baseball_table_Error.xlsx
-#ifndef table_const_excel_baseball_string_table_header_h_define4456
-
-#endif //table_const_excel_baseball_string_table_header_h_define4456

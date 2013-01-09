@@ -1,3 +1,0 @@
-ln -s ~/svn/baseball/bin/game ~/svc/bin/game
-ln -s ~/svn/baseball/bin/gateway ~/svc/bin/gateway
-

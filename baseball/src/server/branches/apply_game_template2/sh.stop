@@ -1,4 +1,0 @@
-pushd ~/svc/bin
-~/svc/bin/baseball.sh stop
-popd
-
